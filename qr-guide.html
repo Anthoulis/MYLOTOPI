@@ -1,58 +1,15 @@
 <!DOCTYPE html>
-<html lang="el">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f3ecdf">
+  <meta http-equiv="refresh" content="0; url=./index.html">
   <title>Mylotopi QR Guide</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/qr-guide.css">
+  <script>
+    window.location.replace("./index.html" + window.location.search + window.location.hash);
+  </script>
 </head>
 <body>
-  <div class="guide-page">
-    <div class="guide-atmosphere" aria-hidden="true"></div>
-
-    <header class="guide-shell guide-hero" aria-labelledby="guide-title">
-      <p class="guide-kicker" id="guide-kicker"></p>
-      <h1 class="guide-title" id="guide-title"></h1>
-      <p class="guide-intro" id="guide-intro"></p>
-      <div class="guide-ornament" aria-hidden="true">
-        <span></span>
-        <i></i>
-        <span></span>
-      </div>
-    </header>
-
-    <div class="guide-shell guide-controls" id="guide-controls">
-      <section class="guide-control-card" aria-labelledby="guide-language-label">
-        <div class="guide-control-head">
-          <p class="guide-control-label" id="guide-language-label"></p>
-        </div>
-        <div class="guide-language-switcher" id="language-switcher" role="group"></div>
-      </section>
-
-      <section class="guide-control-card" aria-labelledby="guide-spots-label">
-        <div class="guide-control-head">
-          <p class="guide-control-label" id="guide-spots-label"></p>
-        </div>
-        <nav class="guide-spot-nav" id="spot-nav" aria-label="Guide spots"></nav>
-      </section>
-    </div>
-
-    <main class="guide-shell guide-main" id="guide-main"></main>
-  </div>
-
-  <p class="sr-only" id="guide-announcer" aria-live="polite"></p>
-
-  <noscript>
-    <div class="guide-noscript">
-      This guide needs JavaScript enabled to switch language, jump to a section, and display the correct QR destination.
-    </div>
-  </noscript>
-
-  <script src="./assets/qr-guide-content.js" defer></script>
-  <script src="./assets/qr-guide.js" defer></script>
+  <p>This guide has moved to <a href="./index.html">index.html</a>.</p>
 </body>
 </html>

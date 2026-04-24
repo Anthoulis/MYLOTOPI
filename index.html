@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3ecdf">
+  <title>Mylotopi QR Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <div class="guide-page">
+    <div class="guide-atmosphere" aria-hidden="true"></div>
+
+    <header class="guide-site-header" id="guide-topbar">
+      <nav class="guide-shell guide-nav-bar" aria-label="Guide navigation">
+        <details class="guide-menu guide-spot-menu" id="spot-menu">
+          <summary class="guide-menu-trigger guide-spot-trigger" id="spot-menu-trigger">
+            <span class="guide-menu-trigger-text" id="active-spot-label"></span>
+            <span class="guide-menu-trigger-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="guide-menu-popover guide-spot-popover" id="spot-switcher" role="group"></div>
+        </details>
+
+        <details class="guide-menu guide-language-menu" id="language-menu">
+          <summary class="guide-menu-trigger guide-language-trigger" id="language-menu-trigger">
+            <span class="guide-menu-trigger-text" id="active-language-label"></span>
+            <span class="guide-menu-trigger-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="guide-menu-popover guide-language-popover" id="language-switcher" role="group"></div>
+        </details>
+      </nav>
+    </header>
+
+    <header class="guide-shell guide-hero" aria-labelledby="guide-title">
+      <p class="guide-kicker" id="guide-kicker"></p>
+      <h1 class="guide-title" id="guide-title"></h1>
+      <p class="guide-intro" id="guide-intro"></p>
+      <div class="guide-ornament" aria-hidden="true">
+        <span></span>
+        <i></i>
+        <span></span>
+      </div>
+    </header>
+
+    <main class="guide-shell guide-main" id="guide-main"></main>
+  </div>
+
+  <p class="sr-only" id="guide-announcer" aria-live="polite"></p>
+
+  <noscript>
+    <div class="guide-noscript">
+      This guide needs JavaScript enabled to switch language, jump to a section, and display the correct QR destination.
+    </div>
+  </noscript>
+
+  <script src="./assets/js/content-meta.js" defer></script>
+  <script src="./assets/locales/en.js" defer></script>
+  <script src="./assets/locales/el.js" defer></script>
+  <script src="./assets/locales/de.js" defer></script>
+  <script src="./assets/js/i18n.js" defer></script>
+  <script src="./assets/js/app.js" defer></script>
+</body>
+</html>

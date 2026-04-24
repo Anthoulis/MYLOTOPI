@@ -1,8 +1,8 @@
 # AGENTS.md
 
 ## Project intent
-This repository contains the Mylotopi QR guide experience.
-It is currently implemented as a lightweight static single-page app with deep-linking, multilingual content, and per-spot audio.
+This repository contains the standalone Mylotopi QR guide microsite.
+It is implemented as a lightweight static single-page app with deep-linking, multilingual content, per-spot galleries, and per-spot audio.
 
 Codex should treat this project as a mobile-first cultural guide for tourists visiting Mylotopi.
 
@@ -29,56 +29,64 @@ Codex should treat this project as a mobile-first cultural guide for tourists vi
 - Business/content data belongs in the content model, not in repeated HTML strings spread across the codebase.
 
 ## Repo layout
+- [index.html](/C:/dev/MYLOTOPI/index.html)
+  Main static microsite entry point.
 - [qr-guide.html](/C:/dev/MYLOTOPI/qr-guide.html)
-  Single HTML entry point for the QR guide.
-- [assets/qr-guide.css](/C:/dev/MYLOTOPI/assets/qr-guide.css)
+  Compatibility redirect to `index.html` that preserves query params.
+- [assets/css/main.css](/C:/dev/MYLOTOPI/assets/css/main.css)
   All guide styling and responsive layout rules.
-- [assets/qr-guide.js](/C:/dev/MYLOTOPI/assets/qr-guide.js)
-  Runtime logic for query params, rendering, fallback behavior, active-state handling, and audio coordination.
-- [assets/qr-guide-content.js](/C:/dev/MYLOTOPI/assets/qr-guide-content.js)
-  Structured multilingual guide data. This is the source of truth for content.
-- [assets/audio/qr-guide](/C:/dev/MYLOTOPI/assets/audio/qr-guide)
+- [assets/js/content-meta.js](/C:/dev/MYLOTOPI/assets/js/content-meta.js)
+  Non-localized guide metadata: language config, spot order, spot visual metadata, and image arrays.
+- [assets/js/i18n.js](/C:/dev/MYLOTOPI/assets/js/i18n.js)
+  Lightweight i18n helper and fallback logic.
+- [assets/js/app.js](/C:/dev/MYLOTOPI/assets/js/app.js)
+  Runtime state, rendering, URL/deep-link behavior, events, gallery logic, and audio coordination.
+- [assets/locales](/C:/dev/MYLOTOPI/assets/locales)
+  One locale file per supported language.
+- [assets/images](/C:/dev/MYLOTOPI/assets/images)
+  Spot image folders.
+- [assets/audio](/C:/dev/MYLOTOPI/assets/audio)
   Audio assets organized by spot and language.
 
 ## How to run the project
 There is no framework build step in the current repository.
 
 Preferred local run options:
-1. Open [qr-guide.html](/C:/dev/MYLOTOPI/qr-guide.html) directly in a browser for quick checks.
-2. If a local server is needed, serve the repository as static files and open `/qr-guide.html`.
+1. Open [index.html](/C:/dev/MYLOTOPI/index.html) directly in a browser for quick checks.
+2. If a local server is needed, serve the repository as static files and open `/index.html`.
 
 Do not add a build system unless the project scope has clearly changed and the added complexity is justified.
 
 ## Where guide content should live
-- All guide copy, localized UI labels, spot metadata, and audio path mappings should live in [assets/qr-guide-content.js](/C:/dev/MYLOTOPI/assets/qr-guide-content.js).
-- Do not hardcode translated content directly inside [assets/qr-guide.js](/C:/dev/MYLOTOPI/assets/qr-guide.js) or [qr-guide.html](/C:/dev/MYLOTOPI/qr-guide.html).
-- Presentation concerns belong in [assets/qr-guide.css](/C:/dev/MYLOTOPI/assets/qr-guide.css).
-- Runtime behavior belongs in [assets/qr-guide.js](/C:/dev/MYLOTOPI/assets/qr-guide.js).
+- Non-localized metadata belongs in [assets/js/content-meta.js](/C:/dev/MYLOTOPI/assets/js/content-meta.js).
+- Localized UI and spot copy belongs in [assets/locales](/C:/dev/MYLOTOPI/assets/locales).
+- Do not hardcode translated content directly inside [assets/js/app.js](/C:/dev/MYLOTOPI/assets/js/app.js) or [index.html](/C:/dev/MYLOTOPI/index.html).
+- Presentation concerns belong in [assets/css/main.css](/C:/dev/MYLOTOPI/assets/css/main.css).
+- Runtime behavior belongs in [assets/js/app.js](/C:/dev/MYLOTOPI/assets/js/app.js).
 
 ## How to add a new language
-1. Add the language code to `supportedLanguages` in [assets/qr-guide-content.js](/C:/dev/MYLOTOPI/assets/qr-guide-content.js).
-2. Add any URL aliases to `languageAliases`.
-3. Add the localized UI strings under `ui.<lang>`.
-4. For each spot, add `translations.<lang>` with at least:
+1. Add the language code to `languages` in [assets/js/content-meta.js](/C:/dev/MYLOTOPI/assets/js/content-meta.js).
+2. Add its fixed native label and URL aliases.
+3. Add a matching locale file under [assets/locales](/C:/dev/MYLOTOPI/assets/locales).
+4. For each spot, add localized content with at least:
    - `title`
    - `shortText`
-   - `audioPath`
+   - `audio.path`
 5. Add `shortTitle` when the navigation chip needs a shorter label than the full title.
-6. Add `audioCaption` and `body` when localized long-form content exists.
+6. Add `audio.caption` and `body` when localized long-form content exists.
 7. Add localized `imageAlt` text for the spot if needed.
-8. Place the audio file in the matching folder under `assets/audio/qr-guide/<spot>/<lang>.<ext>`.
-9. If the audio file is not ready yet, keep `audioReady: false` so the UI falls back safely.
+8. Place the audio file in the matching folder under `assets/audio/<spot>/<lang>.<ext>`.
+9. If the audio file is not ready yet, keep `audio.ready: false` so the UI falls back safely.
 
 ## How to add a new QR spot
-1. Add a new spot object to `spots` in [assets/qr-guide-content.js](/C:/dev/MYLOTOPI/assets/qr-guide-content.js).
-2. Give it a stable `id`. This id is the deep-link key used in QR URLs.
+1. Add the new spot id to `spotOrder` in [assets/js/content-meta.js](/C:/dev/MYLOTOPI/assets/js/content-meta.js).
+2. Add a matching spot object to `spots`. This id is the deep-link key used in QR URLs.
 3. Add its visual metadata:
    - `accent`
    - `accentSoft`
-   - `imageSrc` if available
-   - `imageAlt`
-4. Add translations for all supported languages.
-5. Add the corresponding audio files in `assets/audio/qr-guide/<spot-id>/`.
+   - `images`
+4. Add translations for all supported locales.
+5. Add the corresponding audio files in `assets/audio/<spot-id>/`.
 6. Verify the new spot appears correctly in:
    - the section list
    - the sticky spot navigation
