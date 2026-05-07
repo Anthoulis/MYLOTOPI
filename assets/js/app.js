@@ -693,11 +693,13 @@
       return;
     }
 
+    event.preventDefault();
     closeMenus();
-    state.activeSpot = targetSpot;
-    syncActiveState();
-    updateUrl();
-    announceActiveSpot();
+    moveToSpot(targetSpot, {
+      behavior: REDUCED_MOTION_QUERY.matches ? "auto" : "smooth",
+      focus: true,
+      updateUrl: true,
+    });
   }
 
   function handleGalleryClick(event) {
