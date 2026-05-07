@@ -35,44 +35,99 @@
     }
   },
   "spotOrder": [
-    "aloni",
-    "tunnel",
-    "fournos",
-    "spiti",
-    "anemomylos"
+    "welcome",
+    "herb-garden",
+    "windmill-first-floor",
+    "windmill-second-floor",
+    "windmill-third-floor",
+    "threshing-floor-donkeys",
+    "cellar-italian-tunnel",
+    "traditional-house",
+    "bakery"
   ],
+  "spotAliases": {
+    "aloni": "threshing-floor-donkeys",
+    "tunnel": "cellar-italian-tunnel",
+    "fournos": "bakery",
+    "spiti": "traditional-house",
+    "anemomylos": "windmill-first-floor"
+  },
   "spots": {
-    "aloni": {
+    "welcome": {
+      "anchorId": "welcome",
+      "accent": "#8b6d3d",
+      "accentSoft": "rgba(139, 109, 61, 0.16)",
+      "images": []
+    },
+    "herb-garden": {
+      "anchorId": "herb-garden",
+      "accent": "#6f7d3d",
+      "accentSoft": "rgba(111, 125, 61, 0.16)",
+      "images": []
+    },
+    "windmill-first-floor": {
+      "anchorId": "windmill-first-floor",
+      "accent": "#58708a",
+      "accentSoft": "rgba(88, 112, 138, 0.18)",
+      "images": [],
+      "audioPlaceholder": true
+    },
+    "windmill-second-floor": {
+      "anchorId": "windmill-second-floor",
+      "accent": "#58708a",
+      "accentSoft": "rgba(88, 112, 138, 0.14)",
+      "images": []
+    },
+    "windmill-third-floor": {
+      "anchorId": "windmill-third-floor",
+      "accent": "#58708a",
+      "accentSoft": "rgba(88, 112, 138, 0.12)",
+      "images": []
+    },
+    "threshing-floor-donkeys": {
+      "anchorId": "threshing-floor-donkeys",
       "accent": "#a77733",
       "accentSoft": "rgba(167, 119, 51, 0.18)",
       "images": [],
       "audioPlaceholder": true
     },
-    "tunnel": {
+    "cellar-italian-tunnel": {
+      "anchorId": "cellar-italian-tunnel",
       "accent": "#5f7260",
       "accentSoft": "rgba(95, 114, 96, 0.18)",
       "images": [
-        "./assets/images/tunnel/1692269653-IMG_8786.jpeg",
-        "./assets/images/tunnel/1692269915-IMG_9880.jpeg",
-        "./assets/images/tunnel/1692270479-IMG_9871.jpeg"
+        {
+          "src": "./assets/images/tunnel/1692269653-IMG_8786.jpeg",
+          "alt": "Tunnel entrance and stone passage at Mylotopi",
+          "fit": "contain",
+          "position": "center"
+        },
+        {
+          "src": "./assets/images/tunnel/1692269915-IMG_9880.jpeg",
+          "alt": "Interior view of the Mylotopi tunnel",
+          "fit": "contain",
+          "position": "center"
+        },
+        {
+          "src": "./assets/images/tunnel/1692270479-IMG_9871.jpeg",
+          "alt": "Stone tunnel detail at Mylotopi",
+          "fit": "contain",
+          "position": "center"
+        }
       ],
       "audioPlaceholder": true
     },
-    "fournos": {
-      "accent": "#b56840",
-      "accentSoft": "rgba(181, 104, 64, 0.18)",
-      "images": [],
-      "audioPlaceholder": true
-    },
-    "spiti": {
+    "traditional-house": {
+      "anchorId": "traditional-house",
       "accent": "#7b5d7c",
       "accentSoft": "rgba(123, 93, 124, 0.18)",
       "images": [],
       "audioPlaceholder": true
     },
-    "anemomylos": {
-      "accent": "#58708a",
-      "accentSoft": "rgba(88, 112, 138, 0.18)",
+    "bakery": {
+      "anchorId": "bakery",
+      "accent": "#b56840",
+      "accentSoft": "rgba(181, 104, 64, 0.18)",
       "images": [],
       "audioPlaceholder": true
     }

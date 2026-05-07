@@ -23,7 +23,7 @@
       "imageAlt": "Bildplatzhalter für den Dreschplatz",
       "audio": {
         "path": "./assets/audio/aloni/de.wav",
-        "ready": false
+        "ready": true
       }
     },
     "tunnel": {
@@ -33,7 +33,7 @@
       "imageAlt": "Bildplatzhalter für den Tunnel",
       "audio": {
         "path": "./assets/audio/tunnel/de.wav",
-        "ready": false
+        "ready": true
       }
     },
     "fournos": {
@@ -43,7 +43,7 @@
       "imageAlt": "Bildplatzhalter für den Steinofen",
       "audio": {
         "path": "./assets/audio/fournos/de.wav",
-        "ready": false
+        "ready": true
       }
     },
     "spiti": {
@@ -53,7 +53,7 @@
       "imageAlt": "Bildplatzhalter für das Haus",
       "audio": {
         "path": "./assets/audio/spiti/de.wav",
-        "ready": false
+        "ready": true
       }
     },
     "anemomylos": {
@@ -63,7 +63,7 @@
       "imageAlt": "Bildplatzhalter für die Windmühle",
       "audio": {
         "path": "./assets/audio/anemomylos/de.wav",
-        "ready": false
+        "ready": true
       }
     }
   }

@@ -4,7 +4,9 @@
   "ui": {
     "kicker": "Mylotopi QR Guide",
     "pageTitle": "Heritage Walk",
-    "intro": "Explore the five heritage spots of Mylotopi from your phone. Choose a language, listen to the short narration, and move naturally from one stop to the next.",
+    "intro": "Explore the nine tour stops of Mylotopi from your phone. Choose a language, listen to the short narration, and move naturally from one stop to the next.",
+    "miniMapTitle": "Mini-map",
+    "miniMapDescription": "Choose a stop to jump directly to that point in the walk.",
     "languageLabel": "Language",
     "spotsLabel": "Guide stops",
     "audioHeading": "Audio guide",
@@ -18,9 +20,52 @@
     "galleryNext": "Next image"
   },
   "spots": {
-    "aloni": {
-      "title": "The Threshing Floor",
-      "shortTitle": "Aloni",
+    "welcome": {
+      "title": "Welcome / Introduction",
+      "shortTitle": "Welcome",
+      "shortText": "Begin the Heritage Walk with a short orientation before moving through the Mylotopi route.",
+      "imageAlt": "Image slot for the Welcome stop",
+      "body": []
+    },
+    "herb-garden": {
+      "title": "Garden with Herbs",
+      "shortTitle": "Herb Garden",
+      "shortText": "A garden stop focused on the herbs and aromas connected with Mylotopi's village character.",
+      "imageAlt": "Image slot for the Herb Garden",
+      "body": []
+    },
+    "windmill-first-floor": {
+      "title": "Windmill – First Floor",
+      "shortTitle": "Windmill – First Floor",
+      "shortText": "One of the oldest windmills in the Dodecanese, a heritage monument and a living witness to grain milling.",
+      "imageAlt": "Image slot for the Windmill",
+      "audio": {
+        "path": "./assets/audio/anemomylos/en.wav",
+        "ready": true,
+        "caption": "Listen to a short narration about the windmill's history, its ancient timber, and its restoration."
+      },
+      "body": [
+        "The Mylotopi windmill belongs to the oldest mills in the Dodecanese and carries the history of grain milling within its very structure. Its old timber and heavy stone body testify to the long continuity of its use across the centuries.",
+        "Its restoration lasted several months and returned the mill to working condition. The roof, formed from an overturned boat, adds another layer of local craftsmanship and maritime memory to the monument as a whole."
+      ]
+    },
+    "windmill-second-floor": {
+      "title": "Windmill – Second Floor",
+      "shortTitle": "Windmill – Second Floor",
+      "shortText": "Continue the windmill visit on the second floor.",
+      "imageAlt": "Image slot for the Windmill second floor",
+      "body": []
+    },
+    "windmill-third-floor": {
+      "title": "Windmill – Third Floor",
+      "shortTitle": "Windmill – Third Floor",
+      "shortText": "Continue the windmill visit on the third floor.",
+      "imageAlt": "Image slot for the Windmill third floor",
+      "body": []
+    },
+    "threshing-floor-donkeys": {
+      "title": "Threshing Floor & Donkeys",
+      "shortTitle": "Threshing Floor & Donkeys",
       "shortText": "The stone threshing floor where grain was separated from the husk and the physical rhythm of rural life unfolded.",
       "imageAlt": "Image slot for the Threshing Floor",
       "audio": {
@@ -33,9 +78,9 @@
         "This reconstructed stop helps visitors picture the tempo of everyday labor in Kefalos, where grain production depended on cooperation, endurance, and practical knowledge passed from one generation to the next."
       ]
     },
-    "tunnel": {
-      "title": "The Tunnel",
-      "shortTitle": "Tunnel",
+    "cellar-italian-tunnel": {
+      "title": "Cellar / Italian Tunnel",
+      "shortTitle": "Cellar / Italian Tunnel",
       "shortText": "The underground passage that links the courtyards of Mylotopi and preserves the memory of the Italian presence on the island.",
       "imageAlt": "Image slot for the Tunnel",
       "audio": {
@@ -48,24 +93,9 @@
         "Its exit leads to the former outpost, a space whose purpose has changed over time and now links the memory of defense with contemporary hospitality and the visitor journey."
       ]
     },
-    "fournos": {
-      "title": "The Stone Oven",
-      "shortTitle": "Fournos",
-      "shortText": "The traditional stone oven, more than a century old, that remains fully functional today.",
-      "imageAlt": "Image slot for the Stone Oven",
-      "audio": {
-        "path": "./assets/audio/fournos/en.wav",
-        "ready": true,
-        "caption": "Listen to a short narration about the oven's construction, its local materials, and the baking of bread."
-      },
-      "body": [
-        "The oven is built with the distinctive porous stones of Kefalos, shaped by volcanic ash from Nisyros. Its thick masonry walls retain heat and reveal the care and technical understanding behind traditional construction.",
-        "It still functions today for baking kneaded bread and local dishes. This stop brings together vernacular architecture and culinary memory in a very direct and tangible way."
-      ]
-    },
-    "spiti": {
-      "title": "The House",
-      "shortTitle": "Spiti",
+    "traditional-house": {
+      "title": "Traditional House",
+      "shortTitle": "Traditional House",
       "shortText": "A reconstruction of the life of a 19th-century rural family through domestic objects, habits, and everyday routines.",
       "imageAlt": "Image slot for the House",
       "audio": {
@@ -78,19 +108,19 @@
         "Utensils, furniture, and household organization reveal a form of intelligence rooted in repair, adaptation, and the careful use of every available material."
       ]
     },
-    "anemomylos": {
-      "title": "The Windmill",
-      "shortTitle": "Anemomylos",
-      "shortText": "One of the oldest windmills in the Dodecanese, a heritage monument and a living witness to grain milling.",
-      "imageAlt": "Image slot for the Windmill",
+    "bakery": {
+      "title": "Bakery",
+      "shortTitle": "Bakery",
+      "shortText": "The traditional stone oven, more than a century old, that remains fully functional today.",
+      "imageAlt": "Image slot for the Bakery",
       "audio": {
-        "path": "./assets/audio/anemomylos/en.wav",
+        "path": "./assets/audio/fournos/en.wav",
         "ready": true,
-        "caption": "Listen to a short narration about the windmill's history, its ancient timber, and its restoration."
+        "caption": "Listen to a short narration about the oven's construction, its local materials, and the baking of bread."
       },
       "body": [
-        "The Mylotopi windmill belongs to the oldest mills in the Dodecanese and carries the history of grain milling within its very structure. Its old timber and heavy stone body testify to the long continuity of its use across the centuries.",
-        "Its restoration lasted several months and returned the mill to working condition. The roof, formed from an overturned boat, adds another layer of local craftsmanship and maritime memory to the monument as a whole."
+        "The oven is built with the distinctive porous stones of Kefalos, shaped by volcanic ash from Nisyros. Its thick masonry walls retain heat and reveal the care and technical understanding behind traditional construction.",
+        "It still functions today for baking kneaded bread and local dishes. This stop brings together vernacular architecture and culinary memory in a very direct and tangible way."
       ]
     }
   }
