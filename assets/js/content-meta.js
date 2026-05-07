@@ -4,17 +4,19 @@
   "languages": {
     "en": {
       "nativeName": "English",
+      "flag": "🇬🇧",
       "aliases": [
         "en",
         "english",
         "en-gb",
-        "en_us",
         "en-us",
-        "en_gb"
+        "en_gb",
+        "en_us"
       ]
     },
     "el": {
       "nativeName": "Ελληνικά",
+      "flag": "🇬🇷",
       "aliases": [
         "el",
         "gr",
@@ -25,12 +27,35 @@
     },
     "de": {
       "nativeName": "Deutsch",
+      "flag": "🇩🇪",
       "aliases": [
         "de",
         "german",
         "deutsch",
         "de-de",
         "de_de"
+      ]
+    },
+    "nl": {
+      "nativeName": "Nederlands",
+      "flag": "🇳🇱",
+      "aliases": [
+        "nl",
+        "dutch",
+        "nederlands",
+        "nl-nl",
+        "nl_nl"
+      ]
+    },
+    "pl": {
+      "nativeName": "Polski",
+      "flag": "🇵🇱",
+      "aliases": [
+        "pl",
+        "polish",
+        "polski",
+        "pl-pl",
+        "pl_pl"
       ]
     }
   },
@@ -57,13 +82,15 @@
       "anchorId": "welcome",
       "accent": "#8b6d3d",
       "accentSoft": "rgba(139, 109, 61, 0.16)",
-      "images": []
+      "images": [],
+      "audioPlaceholder": true
     },
     "herb-garden": {
       "anchorId": "herb-garden",
       "accent": "#6f7d3d",
       "accentSoft": "rgba(111, 125, 61, 0.16)",
-      "images": []
+      "images": [],
+      "audioPlaceholder": true
     },
     "windmill-first-floor": {
       "anchorId": "windmill-first-floor",
@@ -76,13 +103,15 @@
       "anchorId": "windmill-second-floor",
       "accent": "#58708a",
       "accentSoft": "rgba(88, 112, 138, 0.14)",
-      "images": []
+      "images": [],
+      "audioPlaceholder": true
     },
     "windmill-third-floor": {
       "anchorId": "windmill-third-floor",
       "accent": "#58708a",
       "accentSoft": "rgba(88, 112, 138, 0.12)",
-      "images": []
+      "images": [],
+      "audioPlaceholder": true
     },
     "threshing-floor-donkeys": {
       "anchorId": "threshing-floor-donkeys",

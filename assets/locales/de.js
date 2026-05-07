@@ -3,68 +3,148 @@
   window.MYLOTOPI_GUIDE_LOCALES.de = {
   "ui": {
     "kicker": "Mylotopi QR Guide",
-    "pageTitle": "Kulturrundgang",
-    "intro": "Entdecken Sie die fünf Stationen von Mylotopi auf Ihrem Handy. Wählen Sie eine Sprache, hören Sie die kurze Erzählung und gehen Sie bequem von Ort zu Ort.",
-    "languageLabel": "Sprache",
-    "spotsLabel": "Stationen",
-    "audioHeading": "Audioguide",
-    "selectedBadge": "Ausgewählte Station",
-    "imagePlaceholderLabel": "Bildplatzhalter",
-    "imagePlaceholderHint": "Fügen Sie ein Bild dieses Ortes hinzu, sobald es verfügbar ist.",
-    "audioFallback": "Für diese Sprache ist noch keine Audiodatei verfügbar.",
-    "audioPlaceholderNotice": "Vorläufige Audiodatei. Ersetzen Sie sie durch die endgültige Aufnahme für diese Station.",
-    "announcerPrefix": "Aktive Station"
+    "pageTitle": "Heritage Walk - German content pending",
+    "intro": "German guide content is pending. This placeholder keeps the full 9-stop tour structure available until final translated text and narration are ready.",
+    "miniMapTitle": "Mini-map",
+    "miniMapDescription": "Choose a stop to jump directly to that point in the walk.",
+    "languageLabel": "Language",
+    "spotsLabel": "Guide stops",
+    "audioHeading": "Audio guide",
+    "selectedBadge": "Selected stop",
+    "imagePlaceholderLabel": "Image slot",
+    "imagePlaceholderHint": "Add a location image when it becomes available.",
+    "audioFallback": "The audio file is not available in this language yet.",
+    "audioPlaceholderNotice": "Temporary audio placeholder. Replace it with the final narration for this stop.",
+    "announcerPrefix": "Active stop",
+    "galleryPrevious": "Previous image",
+    "galleryNext": "Next image"
   },
   "spots": {
-    "aloni": {
-      "title": "Tenne",
-      "shortTitle": "Tenne",
-      "shortText": "Der steinerne Dreschplatz, auf dem das Getreide bearbeitet wurde und der körperliche Rhythmus des ländlichen Lebens sichtbar wurde.",
-      "imageAlt": "Bildplatzhalter für den Dreschplatz",
+    "welcome": {
+      "title": "Welcome / Introduction",
+      "shortTitle": "Welcome",
+      "shortText": "German content pending for Welcome / Introduction.",
+      "imageAlt": "Image slot for Welcome / Introduction",
       "audio": {
-        "path": "./assets/audio/aloni/de.wav",
-        "ready": true
-      }
+        "path": "./assets/audio/de/01-welcome.wav",
+        "ready": true,
+        "caption": "Silent German audio placeholder. Replace this file with final narration using the same filename."
+      },
+      "body": [
+        "German translated content is pending for this stop."
+      ]
     },
-    "tunnel": {
-      "title": "Der Tunnel",
-      "shortTitle": "Tunnel",
-      "shortText": "Der unterirdische Gang verbindet die Höfe von Mylotopi und bewahrt die Erinnerung an die italienische Präsenz auf der Insel.",
-      "imageAlt": "Bildplatzhalter für den Tunnel",
+    "herb-garden": {
+      "title": "Garden with Herbs",
+      "shortTitle": "Herb Garden",
+      "shortText": "German content pending for Garden with Herbs.",
+      "imageAlt": "Image slot for Garden with Herbs",
       "audio": {
-        "path": "./assets/audio/tunnel/de.wav",
-        "ready": true
-      }
+        "path": "./assets/audio/de/02-herb-garden.wav",
+        "ready": true,
+        "caption": "Silent German audio placeholder. Replace this file with final narration using the same filename."
+      },
+      "body": [
+        "German translated content is pending for this stop."
+      ]
     },
-    "fournos": {
-      "title": "Der Steinofen",
-      "shortTitle": "Ofen",
-      "shortText": "Der traditionelle Steinofen ist über hundert Jahre alt und bis heute funktionsfähig.",
-      "imageAlt": "Bildplatzhalter für den Steinofen",
+    "windmill-first-floor": {
+      "title": "Windmill - First Floor",
+      "shortTitle": "Windmill - First Floor",
+      "shortText": "German content pending for Windmill - First Floor.",
+      "imageAlt": "Image slot for Windmill - First Floor",
       "audio": {
-        "path": "./assets/audio/fournos/de.wav",
-        "ready": true
-      }
+        "path": "./assets/audio/de/03-windmill-first-floor.wav",
+        "ready": true,
+        "caption": "Silent German audio placeholder. Replace this file with final narration using the same filename."
+      },
+      "body": [
+        "German translated content is pending for this stop."
+      ]
     },
-    "spiti": {
-      "title": "Das Haus",
-      "shortTitle": "Haus",
-      "shortText": "Eine Rekonstruktion des Lebens einer ländlichen Familie des 19. Jahrhunderts mit Alltagsgegenständen und Gewohnheiten jener Zeit.",
-      "imageAlt": "Bildplatzhalter für das Haus",
+    "windmill-second-floor": {
+      "title": "Windmill - Second Floor",
+      "shortTitle": "Windmill - Second Floor",
+      "shortText": "German content pending for Windmill - Second Floor.",
+      "imageAlt": "Image slot for Windmill - Second Floor",
       "audio": {
-        "path": "./assets/audio/spiti/de.wav",
-        "ready": true
-      }
+        "path": "./assets/audio/de/04-windmill-second-floor.wav",
+        "ready": true,
+        "caption": "Silent German audio placeholder. Replace this file with final narration using the same filename."
+      },
+      "body": [
+        "German translated content is pending for this stop."
+      ]
     },
-    "anemomylos": {
-      "title": "Die Windmühle",
-      "shortTitle": "Windmühle",
-      "shortText": "Eine der ältesten Windmühlen des Dodekanes, ein Denkmal des kulturellen Erbes und lebendiges Zeugnis der Getreidemüllerei.",
-      "imageAlt": "Bildplatzhalter für die Windmühle",
+    "windmill-third-floor": {
+      "title": "Windmill - Third Floor",
+      "shortTitle": "Windmill - Third Floor",
+      "shortText": "German content pending for Windmill - Third Floor.",
+      "imageAlt": "Image slot for Windmill - Third Floor",
       "audio": {
-        "path": "./assets/audio/anemomylos/de.wav",
-        "ready": true
-      }
+        "path": "./assets/audio/de/05-windmill-third-floor.wav",
+        "ready": true,
+        "caption": "Silent German audio placeholder. Replace this file with final narration using the same filename."
+      },
+      "body": [
+        "German translated content is pending for this stop."
+      ]
+    },
+    "threshing-floor-donkeys": {
+      "title": "Threshing Floor & Donkeys",
+      "shortTitle": "Threshing Floor & Donkeys",
+      "shortText": "German content pending for Threshing Floor & Donkeys.",
+      "imageAlt": "Image slot for Threshing Floor & Donkeys",
+      "audio": {
+        "path": "./assets/audio/de/06-threshing-floor-donkeys.wav",
+        "ready": true,
+        "caption": "Silent German audio placeholder. Replace this file with final narration using the same filename."
+      },
+      "body": [
+        "German translated content is pending for this stop."
+      ]
+    },
+    "cellar-italian-tunnel": {
+      "title": "Cellar / Italian Tunnel",
+      "shortTitle": "Cellar / Italian Tunnel",
+      "shortText": "German content pending for Cellar / Italian Tunnel.",
+      "imageAlt": "Image slot for Cellar / Italian Tunnel",
+      "audio": {
+        "path": "./assets/audio/de/07-cellar-italian-tunnel.wav",
+        "ready": true,
+        "caption": "Silent German audio placeholder. Replace this file with final narration using the same filename."
+      },
+      "body": [
+        "German translated content is pending for this stop."
+      ]
+    },
+    "traditional-house": {
+      "title": "Traditional House",
+      "shortTitle": "Traditional House",
+      "shortText": "German content pending for Traditional House.",
+      "imageAlt": "Image slot for Traditional House",
+      "audio": {
+        "path": "./assets/audio/de/08-traditional-house.wav",
+        "ready": true,
+        "caption": "Silent German audio placeholder. Replace this file with final narration using the same filename."
+      },
+      "body": [
+        "German translated content is pending for this stop."
+      ]
+    },
+    "bakery": {
+      "title": "Bakery",
+      "shortTitle": "Bakery",
+      "shortText": "German content pending for Bakery.",
+      "imageAlt": "Image slot for Bakery",
+      "audio": {
+        "path": "./assets/audio/de/09-bakery.wav",
+        "ready": true,
+        "caption": "Silent German audio placeholder. Replace this file with final narration using the same filename."
+      },
+      "body": [
+        "German translated content is pending for this stop."
+      ]
     }
   }
 };

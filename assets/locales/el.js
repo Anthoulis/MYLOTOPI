@@ -2,93 +2,148 @@
   window.MYLOTOPI_GUIDE_LOCALES = window.MYLOTOPI_GUIDE_LOCALES || {};
   window.MYLOTOPI_GUIDE_LOCALES.el = {
   "ui": {
-    "kicker": "Οδηγός QR Μυλοτόπι",
-    "pageTitle": "Πολιτιστική Διαδρομή",
-    "intro": "Περιηγήσου στα πέντε σημεία του Μυλοτοπιού από το κινητό σου. Επίλεξε γλώσσα, άκουσε τη σύντομη αφήγηση και κύλησε φυσικά από χώρο σε χώρο.",
-    "languageLabel": "Γλώσσα",
-    "spotsLabel": "Σημεία διαδρομής",
-    "audioHeading": "Ηχητική ξενάγηση",
-    "selectedBadge": "Επιλεγμένο σημείο",
-    "imagePlaceholderLabel": "Θέση εικόνας",
-    "imagePlaceholderHint": "Προσθέστε φωτογραφία του χώρου όταν είναι διαθέσιμη.",
-    "audioFallback": "Το ηχητικό αρχείο δεν είναι διαθέσιμο σε αυτή τη γλώσσα.",
-    "audioPlaceholderNotice": "Προσωρινό ηχητικό δείγμα. Αντικαταστήστε το με την τελική αφήγηση για το συγκεκριμένο σημείο.",
-    "announcerPrefix": "Ενεργό σημείο"
+    "kicker": "Mylotopi QR Guide",
+    "pageTitle": "Heritage Walk - Greek content pending",
+    "intro": "Greek guide content is pending. This placeholder keeps the full 9-stop tour structure available until final translated text and narration are ready.",
+    "miniMapTitle": "Mini-map",
+    "miniMapDescription": "Choose a stop to jump directly to that point in the walk.",
+    "languageLabel": "Language",
+    "spotsLabel": "Guide stops",
+    "audioHeading": "Audio guide",
+    "selectedBadge": "Selected stop",
+    "imagePlaceholderLabel": "Image slot",
+    "imagePlaceholderHint": "Add a location image when it becomes available.",
+    "audioFallback": "The audio file is not available in this language yet.",
+    "audioPlaceholderNotice": "Temporary audio placeholder. Replace it with the final narration for this stop.",
+    "announcerPrefix": "Active stop",
+    "galleryPrevious": "Previous image",
+    "galleryNext": "Next image"
   },
   "spots": {
-    "aloni": {
-      "title": "Το Αλώνι",
-      "shortTitle": "Αλώνι",
-      "shortText": "Ο πέτρινος χώρος όπου γινόταν το αλώνισμα των σιτηρών και αποτυπωνόταν η πιο σωματική πλευρά της αγροτικής ζωής.",
-      "imageAlt": "Θέση εικόνας για το Αλώνι",
+    "welcome": {
+      "title": "Welcome / Introduction",
+      "shortTitle": "Welcome",
+      "shortText": "Greek content pending for Welcome / Introduction.",
+      "imageAlt": "Image slot for Welcome / Introduction",
       "audio": {
-        "path": "./assets/audio/aloni/el.wav",
+        "path": "./assets/audio/el/01-welcome.wav",
         "ready": true,
-        "caption": "Άκουσε μια σύντομη αφήγηση για τον τρόπο αλωνίσματος και τον ρόλο των ανθρώπων και των ζώων στον κύκλο της σοδειάς."
+        "caption": "Silent Greek audio placeholder. Replace this file with final narration using the same filename."
       },
       "body": [
-        "Στο αλώνι ξεχώριζαν τον καρπό από το στάχυ με επίμονη κυκλική κίνηση πάνω στην πέτρα. Ο αγωγιάτης καθοδηγούσε τα ζώα, οι θεριστές παρακολουθούσαν τη διαδικασία και το γαϊδούρι ολοκλήρωνε τον επίπονο κύκλο του αλωνίσματος.",
-        "Ο ανακατασκευασμένος αυτός χώρος βοηθά τον επισκέπτη να φανταστεί τον ρυθμό της καθημερινής εργασίας στην Κέφαλο, όπου η παραγωγή του σιταριού ήταν δεμένη με συνεργασία, αντοχή και γνώση που περνούσε από γενιά σε γενιά."
+        "Greek translated content is pending for this stop."
       ]
     },
-    "tunnel": {
-      "title": "Το Τούνελ",
-      "shortTitle": "Τούνελ",
-      "shortText": "Η υπόγεια διαδρομή που ενώνει τις αυλές του Μυλοτοπιού και διατηρεί τη μνήμη της ιταλικής παρουσίας στο νησί.",
-      "imageAlt": "Θέση εικόνας για το Τούνελ",
+    "herb-garden": {
+      "title": "Garden with Herbs",
+      "shortTitle": "Herb Garden",
+      "shortText": "Greek content pending for Garden with Herbs.",
+      "imageAlt": "Image slot for Garden with Herbs",
       "audio": {
-        "path": "./assets/audio/tunnel/el.wav",
+        "path": "./assets/audio/el/02-herb-garden.wav",
         "ready": true,
-        "caption": "Άκουσε μια σύντομη αφήγηση για τη στρατιωτική χρήση του τούνελ και τη σημερινή εμπειρία της διάβασης."
+        "caption": "Silent Greek audio placeholder. Replace this file with final narration using the same filename."
       },
       "body": [
-        "Το τούνελ διασχίζει τις αυλές του Μυλοτοπιού και θυμίζει την περίοδο της Ιταλοκρατίας στα Δωδεκάνησα. Μέσα στη δροσερή του διαδρομή ο επισκέπτης συναντά το κελάρι και ίχνη από τη στρατιωτική καθημερινότητα των Ιταλών φαντάρων.",
-        "Η έξοδός του οδηγεί στο παλιό πολυβολείο, έναν χώρο που έχει αλλάξει χρήση και σήμερα συνδέει τη μνήμη της άμυνας με τη σύγχρονη φιλοξενία και την εμπειρία της περιήγησης."
+        "Greek translated content is pending for this stop."
       ]
     },
-    "fournos": {
-      "title": "Ο Φούρνος",
-      "shortTitle": "Φούρνος",
-      "shortText": "Ο πετρόχτιστος παραδοσιακός φούρνος άνω των εκατό ετών που παραμένει λειτουργικός μέχρι σήμερα.",
-      "imageAlt": "Θέση εικόνας για τον Φούρνο",
+    "windmill-first-floor": {
+      "title": "Windmill - First Floor",
+      "shortTitle": "Windmill - First Floor",
+      "shortText": "Greek content pending for Windmill - First Floor.",
+      "imageAlt": "Image slot for Windmill - First Floor",
       "audio": {
-        "path": "./assets/audio/fournos/el.wav",
+        "path": "./assets/audio/el/03-windmill-first-floor.wav",
         "ready": true,
-        "caption": "Άκουσε μια σύντομη αφήγηση για την κατασκευή του φούρνου, τα τοπικά υλικά και το ψήσιμο του ψωμιού."
+        "caption": "Silent Greek audio placeholder. Replace this file with final narration using the same filename."
       },
       "body": [
-        "Ο φούρνος είναι χτισμένος με τις χαρακτηριστικές πέτρες της Κεφάλου, τους λεγόμενους πόρους, που οφείλουν την ιδιαίτερη σύστασή τους στην ηφαιστειακή τέφρα της Νισύρου. Οι χοντροί τοίχοι του κρατούν τη θερμότητα και δείχνουν πόσο προσεκτική ήταν η παραδοσιακή τεχνική κατασκευής.",
-        "Ακόμη και σήμερα παραμένει λειτουργικός και συνδέεται με το ψήσιμο του ζυμωτού ψωμιού και των παραδοσιακών φαγητών. Είναι ένας χώρος όπου η τοπική αρχιτεκτονική και η γαστρονομική μνήμη συναντιούνται άμεσα."
+        "Greek translated content is pending for this stop."
       ]
     },
-    "spiti": {
-      "title": "Το Σπίτι",
-      "shortTitle": "Σπίτι",
-      "shortText": "Η αναπαράσταση της ζωής μιας αγροτικής οικογένειας του 19ου αιώνα, με αντικείμενα και συνήθειες της εποχής.",
-      "imageAlt": "Θέση εικόνας για το Σπίτι",
+    "windmill-second-floor": {
+      "title": "Windmill - Second Floor",
+      "shortTitle": "Windmill - Second Floor",
+      "shortText": "Greek content pending for Windmill - Second Floor.",
+      "imageAlt": "Image slot for Windmill - Second Floor",
       "audio": {
-        "path": "./assets/audio/spiti/el.wav",
+        "path": "./assets/audio/el/04-windmill-second-floor.wav",
         "ready": true,
-        "caption": "Άκουσε μια σύντομη αφήγηση για τον οικιακό χώρο, τα καθημερινά σκεύη και την ευρηματικότητα των ανθρώπων."
+        "caption": "Silent Greek audio placeholder. Replace this file with final narration using the same filename."
       },
       "body": [
-        "Το παραδοσιακό σπίτι φέρνει κοντά στον επισκέπτη την καθημερινότητα μιας αγροτικής οικογένειας του 19ου αιώνα. Στα αντικείμενα και στη διάταξη του χώρου διαβάζει κανείς την ανάγκη για οικονομία, πρακτικότητα και πολλαπλές χρήσεις μέσα στο ίδιο δωμάτιο.",
-        "Μέσα από τα σκεύη, τα έπιπλα και τον τρόπο οργάνωσης του σπιτιού αναδεικνύεται μια μορφή ευφυΐας που στηριζόταν στην επιδιόρθωση, στην προσαρμογή και στην αξιοποίηση κάθε διαθέσιμου υλικού."
+        "Greek translated content is pending for this stop."
       ]
     },
-    "anemomylos": {
-      "title": "Ο Ανεμόμυλος",
-      "shortTitle": "Ανεμόμυλος",
-      "shortText": "Ένας από τους παλαιότερους δωδεκανησιακούς μύλους, μνημείο πολιτιστικής κληρονομιάς και ζωντανή μαρτυρία της άλεσης των σιτηρών.",
-      "imageAlt": "Θέση εικόνας για τον Ανεμόμυλο",
+    "windmill-third-floor": {
+      "title": "Windmill - Third Floor",
+      "shortTitle": "Windmill - Third Floor",
+      "shortText": "Greek content pending for Windmill - Third Floor.",
+      "imageAlt": "Image slot for Windmill - Third Floor",
       "audio": {
-        "path": "./assets/audio/anemomylos/el.wav",
+        "path": "./assets/audio/el/05-windmill-third-floor.wav",
         "ready": true,
-        "caption": "Άκουσε μια σύντομη αφήγηση για την ιστορία του μύλου, τα παλιά ξύλα του και την αποκατάστασή του."
+        "caption": "Silent Greek audio placeholder. Replace this file with final narration using the same filename."
       },
       "body": [
-        "Ο ανεμόμυλος του Μυλοτοπιού συγκαταλέγεται στους παλαιότερους μύλους των Δωδεκανήσων και μεταφέρει την ιστορία της άλεσης των σιτηρών μέσα από την ίδια τη δομή του. Η παλιά ξυλεία του και ο λιθόκτιστος όγκος του μαρτυρούν τη μακρά συνέχεια της χρήσης του στον χρόνο.",
-        "Η αποκατάστασή του κράτησε μήνες και τον επανέφερε σε λειτουργική κατάσταση. Η στέγη του, σχηματισμένη από αναποδογυρισμένο καΐκι, προσθέτει ένα ακόμη στοιχείο τοπικής δεξιοτεχνίας και ναυτικής μνήμης στο σύνολο του μνημείου."
+        "Greek translated content is pending for this stop."
+      ]
+    },
+    "threshing-floor-donkeys": {
+      "title": "Threshing Floor & Donkeys",
+      "shortTitle": "Threshing Floor & Donkeys",
+      "shortText": "Greek content pending for Threshing Floor & Donkeys.",
+      "imageAlt": "Image slot for Threshing Floor & Donkeys",
+      "audio": {
+        "path": "./assets/audio/el/06-threshing-floor-donkeys.wav",
+        "ready": true,
+        "caption": "Silent Greek audio placeholder. Replace this file with final narration using the same filename."
+      },
+      "body": [
+        "Greek translated content is pending for this stop."
+      ]
+    },
+    "cellar-italian-tunnel": {
+      "title": "Cellar / Italian Tunnel",
+      "shortTitle": "Cellar / Italian Tunnel",
+      "shortText": "Greek content pending for Cellar / Italian Tunnel.",
+      "imageAlt": "Image slot for Cellar / Italian Tunnel",
+      "audio": {
+        "path": "./assets/audio/el/07-cellar-italian-tunnel.wav",
+        "ready": true,
+        "caption": "Silent Greek audio placeholder. Replace this file with final narration using the same filename."
+      },
+      "body": [
+        "Greek translated content is pending for this stop."
+      ]
+    },
+    "traditional-house": {
+      "title": "Traditional House",
+      "shortTitle": "Traditional House",
+      "shortText": "Greek content pending for Traditional House.",
+      "imageAlt": "Image slot for Traditional House",
+      "audio": {
+        "path": "./assets/audio/el/08-traditional-house.wav",
+        "ready": true,
+        "caption": "Silent Greek audio placeholder. Replace this file with final narration using the same filename."
+      },
+      "body": [
+        "Greek translated content is pending for this stop."
+      ]
+    },
+    "bakery": {
+      "title": "Bakery",
+      "shortTitle": "Bakery",
+      "shortText": "Greek content pending for Bakery.",
+      "imageAlt": "Image slot for Bakery",
+      "audio": {
+        "path": "./assets/audio/el/09-bakery.wav",
+        "ready": true,
+        "caption": "Silent Greek audio placeholder. Replace this file with final narration using the same filename."
+      },
+      "body": [
+        "Greek translated content is pending for this stop."
       ]
     }
   }

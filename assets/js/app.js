@@ -322,18 +322,24 @@
 
   function renderLanguageButtons() {
     const ui = i18n.getUi(state.lang);
+    const activeLanguageName = i18n.getLanguageName
+      ? i18n.getLanguageName(state.lang)
+      : i18n.getLanguageLabel(state.lang);
 
     elements.activeLanguageLabel.textContent = i18n.getLanguageLabel(state.lang);
-    elements.languageTrigger.setAttribute("aria-label", ui.languageLabel);
+    elements.languageTrigger.setAttribute("aria-label", ui.languageLabel + ": " + activeLanguageName);
     elements.languageMenu.setAttribute("aria-label", ui.languageLabel);
     elements.languageSwitcher.setAttribute("aria-label", ui.languageLabel);
 
     elements.languageSwitcher.innerHTML = i18n.supportedLanguages.map(function (langKey) {
       const pressed = langKey === state.lang;
+      const languageName = i18n.getLanguageName ? i18n.getLanguageName(langKey) : i18n.getLanguageLabel(langKey);
 
       return (
         '<button class="guide-lang-button" type="button" data-lang="' +
         langKey +
+        '" aria-label="' +
+        escapeHtml(ui.languageLabel + ": " + languageName) +
         '" aria-pressed="' +
         String(pressed) +
         '" aria-current="' +

@@ -83,13 +83,21 @@
     return fallbackLang ? getSpotText(spotId, fallbackLang).audio : { path: "" };
   }
 
+  function getLanguageName(lang) {
+    return (languages[lang] && languages[lang].nativeName) || lang.toUpperCase();
+  }
+
+  function getLanguageDisplayLabel(lang) {
+    const language = languages[lang] || {};
+    return language.flag ? language.flag + " " + getLanguageName(lang) : getLanguageName(lang);
+  }
+
   window.MYLOTOPI_GUIDE_I18N = {
     defaultLanguage: defaultLanguage,
     supportedLanguages: supportedLanguages,
     normalizeLanguage: normalizeLanguage,
-    getLanguageLabel: function (lang) {
-      return (languages[lang] && languages[lang].nativeName) || lang.toUpperCase();
-    },
+    getLanguageName: getLanguageName,
+    getLanguageLabel: getLanguageDisplayLabel,
     getUi: getUi,
     getSpotText: getSpotText,
     getSpotLabel: getSpotLabel,
