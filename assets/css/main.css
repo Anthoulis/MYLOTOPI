@@ -1,3 +1,4 @@
+/* Base */
 :root {
   --page-bg: #f6efe3;
   --page-bg-deep: #e8dcc8;
@@ -61,6 +62,7 @@ button {
   border: 0;
 }
 
+/* Page shell */
 .guide-page {
   position: relative;
   overflow-x: clip;
@@ -84,6 +86,7 @@ button {
   margin: 0 auto;
 }
 
+/* Sticky navigation */
 .guide-site-header {
   position: sticky;
   top: 0;
@@ -255,6 +258,7 @@ button {
   box-shadow: none;
 }
 
+/* Hero */
 .guide-hero {
   padding: 12px 0 10px;
 }
@@ -313,6 +317,7 @@ button {
   opacity: 0.75;
 }
 
+/* Guide content */
 .guide-main {
   position: relative;
   display: grid;
@@ -321,6 +326,7 @@ button {
   padding-bottom: clamp(120px, 45vh, 320px);
 }
 
+/* Mini-map index */
 .guide-mini-map {
   position: relative;
   padding: 14px;
@@ -415,6 +421,7 @@ button {
   color: #fffaf2;
 }
 
+/* Tour sections */
 /* Per-stop accent colors are injected from metadata as CSS variables. */
 .guide-section {
   position: relative;
@@ -534,6 +541,7 @@ button {
   object-fit: cover;
 }
 
+/* Gallery */
 .guide-gallery {
   display: grid;
   gap: 8px;
@@ -632,6 +640,7 @@ button {
   line-height: 1.4;
 }
 
+/* Audio */
 .guide-audio-card {
   margin-bottom: 10px;
   border: 1px solid color-mix(in srgb, var(--section-accent, #8b6d3d) 10%, white);
@@ -678,6 +687,7 @@ button {
   min-height: 44px;
 }
 
+/* Body copy */
 .guide-copy {
   display: grid;
   gap: 8px;
@@ -701,6 +711,7 @@ button {
   line-height: 1.6;
 }
 
+/* Utilities */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -717,6 +728,7 @@ button {
   outline-offset: 3px;
 }
 
+/* Responsive adjustments */
 @media (min-width: 720px) {
   :root {
     --header-height: 66px;

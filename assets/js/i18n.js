@@ -12,18 +12,22 @@
   const aliasMap = supportedLanguages.reduce(function (aliases, lang) {
     aliases[lang] = lang;
     (languages[lang].aliases || []).forEach(function (alias) {
-      const key = alias.toString().trim().toLowerCase().replace(/\s+/g, "").replace(/_/g, "-");
+      const key = normalizeKey(alias);
       aliases[key] = lang;
     });
     return aliases;
   }, {});
+
+  function normalizeKey(value) {
+    return value.toString().trim().toLowerCase().replace(/\s+/g, "").replace(/_/g, "-");
+  }
 
   function normalizeLanguage(value) {
     if (!value) {
       return null;
     }
 
-    const key = value.toString().trim().toLowerCase().replace(/\s+/g, "").replace(/_/g, "-");
+    const key = normalizeKey(value);
     return aliasMap[key] || null;
   }
 

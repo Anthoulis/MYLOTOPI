@@ -10,6 +10,21 @@
   const SPOTS_BY_ID = meta.spots || {};
   const SPOT_ALIASES = meta.spotAliases || {};
   const REDUCED_MOTION_QUERY = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const DOM_IDS = {
+    kicker: "guide-kicker",
+    title: "guide-title",
+    intro: "guide-intro",
+    activeSpotLabel: "active-spot-label",
+    activeLanguageLabel: "active-language-label",
+    spotMenu: "spot-menu",
+    spotTrigger: "spot-menu-trigger",
+    spotSwitcher: "spot-switcher",
+    languageMenu: "language-menu",
+    languageTrigger: "language-menu-trigger",
+    languageSwitcher: "language-switcher",
+    main: "guide-main",
+    announcer: "guide-announcer",
+  };
 
   const state = {
     lang: i18n.defaultLanguage,
@@ -18,21 +33,26 @@
     shouldNormalizeUrl: false,
   };
 
-  const elements = {
-    kicker: document.getElementById("guide-kicker"),
-    title: document.getElementById("guide-title"),
-    intro: document.getElementById("guide-intro"),
-    activeSpotLabel: document.getElementById("active-spot-label"),
-    activeLanguageLabel: document.getElementById("active-language-label"),
-    spotMenu: document.getElementById("spot-menu"),
-    spotTrigger: document.getElementById("spot-menu-trigger"),
-    spotSwitcher: document.getElementById("spot-switcher"),
-    languageMenu: document.getElementById("language-menu"),
-    languageTrigger: document.getElementById("language-menu-trigger"),
-    languageSwitcher: document.getElementById("language-switcher"),
-    main: document.getElementById("guide-main"),
-    announcer: document.getElementById("guide-announcer"),
-  };
+  const elements = Object.keys(DOM_IDS).reduce(function (result, key) {
+    result[key] = document.getElementById(DOM_IDS[key]);
+    return result;
+  }, {});
+
+  assertRequiredElements();
+
+  function assertRequiredElements() {
+    const missingIds = Object.keys(DOM_IDS)
+      .filter(function (key) {
+        return !elements[key];
+      })
+      .map(function (key) {
+        return "#" + DOM_IDS[key];
+      });
+
+    if (missingIds.length) {
+      throw new Error("Mylotopi guide DOM is missing required elements: " + missingIds.join(", "));
+    }
+  }
 
   function normalizeSpot(value) {
     if (!value) {
@@ -322,9 +342,7 @@
 
   function renderLanguageButtons() {
     const ui = i18n.getUi(state.lang);
-    const activeLanguageName = i18n.getLanguageName
-      ? i18n.getLanguageName(state.lang)
-      : i18n.getLanguageLabel(state.lang);
+    const activeLanguageName = i18n.getLanguageName(state.lang);
 
     elements.activeLanguageLabel.textContent = i18n.getLanguageLabel(state.lang);
     elements.languageTrigger.setAttribute("aria-label", ui.languageLabel + ": " + activeLanguageName);
@@ -333,7 +351,7 @@
 
     elements.languageSwitcher.innerHTML = i18n.supportedLanguages.map(function (langKey) {
       const pressed = langKey === state.lang;
-      const languageName = i18n.getLanguageName ? i18n.getLanguageName(langKey) : i18n.getLanguageLabel(langKey);
+      const languageName = i18n.getLanguageName(langKey);
 
       return (
         '<button class="guide-lang-button" type="button" data-lang="' +
@@ -544,6 +562,14 @@
     elements.languageMenu.open = false;
   }
 
+  function getNavigationOptions() {
+    return {
+      behavior: REDUCED_MOTION_QUERY.matches ? "auto" : "smooth",
+      focus: true,
+      updateUrl: true,
+    };
+  }
+
   function moveToSpot(spotId, options) {
     const settings = Object.assign(
       {
@@ -681,11 +707,7 @@
     }
 
     closeMenus();
-    moveToSpot(targetSpot, {
-      behavior: REDUCED_MOTION_QUERY.matches ? "auto" : "smooth",
-      focus: true,
-      updateUrl: true,
-    });
+    moveToSpot(targetSpot, getNavigationOptions());
   }
 
   function handleMiniMapClick(event) {
@@ -701,11 +723,7 @@
 
     event.preventDefault();
     closeMenus();
-    moveToSpot(targetSpot, {
-      behavior: REDUCED_MOTION_QUERY.matches ? "auto" : "smooth",
-      focus: true,
-      updateUrl: true,
-    });
+    moveToSpot(targetSpot, getNavigationOptions());
   }
 
   function handleGalleryClick(event) {
