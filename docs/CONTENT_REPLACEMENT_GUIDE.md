@@ -9,6 +9,11 @@ This guide explains how to replace placeholder content without changing the QR G
 - `de`: German
 - `nl`: Dutch
 - `pl`: Polish
+- `it`: Italian
+- `fr`: French
+- `es`: Spanish
+- `ru`: Russian
+- `tr`: Turkish
 
 Keep this order in the UI unless there is an explicit product decision to change it.
 
@@ -28,19 +33,24 @@ Do not rename these keys unless all metadata, locale, URL, and asset references 
 
 ## Replacing Audio
 
-Current project audio format: `.wav`.
+Current project audio formats:
 
-Each language folder under `assets/audio/` contains 9 placeholder audio files:
+- `.mp3` for languages with complete real incoming narration: `en`, `de`, `nl`, `pl`, `fr`, `es`.
+- `.wav` for languages still using silent placeholders: `el`, `it`, `ru`, `tr`.
 
-- `01-welcome.wav`
-- `02-herb-garden.wav`
-- `03-windmill-first-floor.wav`
-- `04-windmill-second-floor.wav`
-- `05-windmill-third-floor.wav`
-- `06-threshing-floor-donkeys.wav`
-- `07-cellar-italian-tunnel.wav`
-- `08-traditional-house.wav`
-- `09-bakery.wav`
+Greek audio is pending and currently uses valid silent `.wav` placeholders.
+
+Each language folder under `assets/audio/` contains 9 audio files:
+
+- `01-welcome.<ext>`
+- `02-herb-garden.<ext>`
+- `03-windmill-first-floor.<ext>`
+- `04-windmill-second-floor.<ext>`
+- `05-windmill-third-floor.<ext>`
+- `06-threshing-floor-donkeys.<ext>`
+- `07-cellar-italian-tunnel.<ext>`
+- `08-traditional-house.<ext>`
+- `09-bakery.<ext>`
 
 Replace placeholder files with final narration using the same filenames whenever possible.
 
@@ -80,7 +90,8 @@ Do not hardcode translated visitor copy in `index.html` or `assets/js/app.js`.
 
 ## Filename And Path Rules
 
-- Keep audio paths in the form `./assets/audio/<language>/<number>-<slug>.wav`.
+- Keep audio paths in the form `./assets/audio/<language>/<number>-<slug>.<ext>`.
+- Match `<ext>` to the actual file extension used in that language folder.
 - Keep stop image folders in the form `assets/images/stops/<number>-<slug>/`.
 - Use lowercase kebab-case for new asset filenames where practical.
 - Keep existing public paths stable unless every reference is updated safely.
@@ -88,7 +99,7 @@ Do not hardcode translated visitor copy in `index.html` or `assets/js/app.js`.
 
 ## Deployment Checklist
 
-- All 5 locale files load without JavaScript errors.
+- All 10 locale files load without JavaScript errors.
 - All locales contain the same 9 spot keys.
 - Every `audio.path` points to an existing valid file.
 - No audio file is zero-byte.

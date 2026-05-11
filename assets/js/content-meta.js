@@ -57,6 +57,64 @@
         "pl-pl",
         "pl_pl"
       ]
+    },
+    "it": {
+      "nativeName": "Italiano",
+      "flag": "🇮🇹",
+      "aliases": [
+        "it",
+        "italian",
+        "italiano",
+        "it-it",
+        "it_it"
+      ]
+    },
+    "fr": {
+      "nativeName": "Français",
+      "flag": "🇫🇷",
+      "aliases": [
+        "fr",
+        "french",
+        "français",
+        "francais",
+        "fr-fr",
+        "fr_fr"
+      ]
+    },
+    "es": {
+      "nativeName": "Español",
+      "flag": "🇪🇸",
+      "aliases": [
+        "es",
+        "spanish",
+        "español",
+        "espanol",
+        "es-es",
+        "es_es"
+      ]
+    },
+    "ru": {
+      "nativeName": "Русский",
+      "flag": "🇷🇺",
+      "aliases": [
+        "ru",
+        "russian",
+        "русский",
+        "ru-ru",
+        "ru_ru"
+      ]
+    },
+    "tr": {
+      "nativeName": "Türkçe",
+      "flag": "🇹🇷",
+      "aliases": [
+        "tr",
+        "turkish",
+        "türkçe",
+        "turkce",
+        "tr-tr",
+        "tr_tr"
+      ]
     }
   },
   "spotOrder": [

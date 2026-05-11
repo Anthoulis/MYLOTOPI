@@ -1,4 +1,5 @@
 # Local print/source bundles not part of the public static guide structure.
+_incoming/
 assets/print/Dutch/
 assets/print/English/
 assets/print/French/

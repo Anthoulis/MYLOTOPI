@@ -6,7 +6,7 @@ Mylotopi QR Guide is a lightweight static microsite for the visitor audio/text t
 
 Technical skeleton complete.
 
-The guide structure, navigation, language setup, placeholder audio contract, image placeholder folders, print asset folder, and operations documentation are in place. Final visitor copy, final translations, final audio, final images, mobile testing, and deployment checks are still pending.
+The guide structure, navigation, language setup, audio asset contract, image placeholder folders, print asset folder, and operations documentation are in place. Real audio has replaced placeholders where complete incoming MP3 sets were available. Final visitor copy, final translations, remaining final audio, final images, mobile testing, and deployment checks are still pending.
 
 ## App Structure
 
@@ -33,6 +33,11 @@ Configured language order:
 3. German (`de`)
 4. Dutch (`nl`)
 5. Polish (`pl`)
+6. Italian (`it`)
+7. French (`fr`)
+8. Spanish (`es`)
+9. Russian (`ru`)
+10. Turkish (`tr`)
 
 ## Tour Stops
 
@@ -49,7 +54,7 @@ Configured language order:
 ## Replacing Content
 
 - Text: update the matching language file in `assets/locales/`.
-- Audio: replace files in `assets/audio/<language>/` using the same `.wav` filenames unless locale paths are intentionally updated.
+- Audio: replace files in `assets/audio/<language>/` using the same filenames and extension currently referenced by that language's locale file. Real audio languages currently use `.mp3`; pending placeholder languages use `.wav`.
 - Images: add final images to `assets/images/stops/<numbered-stop>/` and wire display metadata through `assets/js/content-meta.js`.
 - Print materials: update files in `assets/print/`, keeping stable filenames where possible.
 

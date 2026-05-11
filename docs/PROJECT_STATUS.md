@@ -8,10 +8,13 @@ Technical skeleton complete.
 
 - 9-stop QR guide structure.
 - Mini-map navigation.
-- 5 languages configured: `en`, `el`, `de`, `nl`, `pl`.
+- 10 languages configured: `en`, `el`, `de`, `nl`, `pl`, `it`, `fr`, `es`, `ru`, `tr`.
 - English default.
 - Language flags.
 - Audio placeholder contract.
+- Real MP3 audio added for `en`, `de`, `nl`, `pl`, `fr`, and `es`.
+- Greek audio pending; Greek currently uses valid silent WAV placeholders.
+- Italian, Russian, and Turkish audio pending; these languages currently use valid silent WAV placeholders.
 - Image placeholder structure.
 - Print asset folder added.
 - Staff operation flow documented.
@@ -22,7 +25,7 @@ Technical skeleton complete.
 
 - Final English text.
 - Final translations.
-- Final audio files.
+- Final audio files for Greek, Italian, Russian, and Turkish.
 - Final images.
 - Final designed mini-map if the draft changes.
 - Final designed sketch if the draft changes.

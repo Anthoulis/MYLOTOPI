@@ -14,7 +14,7 @@
     "imagePlaceholderLabel": "Image slot",
     "imagePlaceholderHint": "Add a location image when it becomes available.",
     "audioFallback": "The audio file is not available in this language yet.",
-    "audioPlaceholderNotice": "Temporary audio placeholder. Replace it with the final narration for this stop.",
+    "audioPlaceholderNotice": "Temporary Greek audio placeholder. Final narration is pending for this stop.",
     "announcerPrefix": "Active stop",
     "galleryPrevious": "Previous image",
     "galleryNext": "Next image"

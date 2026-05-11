@@ -14,7 +14,7 @@
     "imagePlaceholderLabel": "Image slot",
     "imagePlaceholderHint": "Add a location image when it becomes available.",
     "audioFallback": "The audio file is not available in this language yet.",
-    "audioPlaceholderNotice": "Temporary audio placeholder. Replace it with the final narration for this stop.",
+    "audioPlaceholderNotice": "Dutch audio narration is available for this stop.",
     "announcerPrefix": "Active stop",
     "galleryPrevious": "Previous image",
     "galleryNext": "Next image"
@@ -26,9 +26,8 @@
       "shortText": "Dutch content pending for Welcome / Introduction.",
       "imageAlt": "Image slot for Welcome / Introduction",
       "audio": {
-        "path": "./assets/audio/nl/01-welcome.wav",
-        "ready": true,
-        "caption": "Silent Dutch audio placeholder. Replace this file with final narration using the same filename."
+        "path": "./assets/audio/nl/01-welcome.mp3",
+        "ready": true
       },
       "body": [
         "Dutch translated content is pending for this stop."
@@ -40,9 +39,8 @@
       "shortText": "Dutch content pending for Garden with Herbs.",
       "imageAlt": "Image slot for Garden with Herbs",
       "audio": {
-        "path": "./assets/audio/nl/02-herb-garden.wav",
-        "ready": true,
-        "caption": "Silent Dutch audio placeholder. Replace this file with final narration using the same filename."
+        "path": "./assets/audio/nl/02-herb-garden.mp3",
+        "ready": true
       },
       "body": [
         "Dutch translated content is pending for this stop."
@@ -54,9 +52,8 @@
       "shortText": "Dutch content pending for Windmill - First Floor.",
       "imageAlt": "Image slot for Windmill - First Floor",
       "audio": {
-        "path": "./assets/audio/nl/03-windmill-first-floor.wav",
-        "ready": true,
-        "caption": "Silent Dutch audio placeholder. Replace this file with final narration using the same filename."
+        "path": "./assets/audio/nl/03-windmill-first-floor.mp3",
+        "ready": true
       },
       "body": [
         "Dutch translated content is pending for this stop."
@@ -68,9 +65,8 @@
       "shortText": "Dutch content pending for Windmill - Second Floor.",
       "imageAlt": "Image slot for Windmill - Second Floor",
       "audio": {
-        "path": "./assets/audio/nl/04-windmill-second-floor.wav",
-        "ready": true,
-        "caption": "Silent Dutch audio placeholder. Replace this file with final narration using the same filename."
+        "path": "./assets/audio/nl/04-windmill-second-floor.mp3",
+        "ready": true
       },
       "body": [
         "Dutch translated content is pending for this stop."
@@ -82,9 +78,8 @@
       "shortText": "Dutch content pending for Windmill - Third Floor.",
       "imageAlt": "Image slot for Windmill - Third Floor",
       "audio": {
-        "path": "./assets/audio/nl/05-windmill-third-floor.wav",
-        "ready": true,
-        "caption": "Silent Dutch audio placeholder. Replace this file with final narration using the same filename."
+        "path": "./assets/audio/nl/05-windmill-third-floor.mp3",
+        "ready": true
       },
       "body": [
         "Dutch translated content is pending for this stop."
@@ -96,9 +91,8 @@
       "shortText": "Dutch content pending for Threshing Floor & Donkeys.",
       "imageAlt": "Image slot for Threshing Floor & Donkeys",
       "audio": {
-        "path": "./assets/audio/nl/06-threshing-floor-donkeys.wav",
-        "ready": true,
-        "caption": "Silent Dutch audio placeholder. Replace this file with final narration using the same filename."
+        "path": "./assets/audio/nl/06-threshing-floor-donkeys.mp3",
+        "ready": true
       },
       "body": [
         "Dutch translated content is pending for this stop."
@@ -110,9 +104,8 @@
       "shortText": "Dutch content pending for Cellar / Italian Tunnel.",
       "imageAlt": "Image slot for Cellar / Italian Tunnel",
       "audio": {
-        "path": "./assets/audio/nl/07-cellar-italian-tunnel.wav",
-        "ready": true,
-        "caption": "Silent Dutch audio placeholder. Replace this file with final narration using the same filename."
+        "path": "./assets/audio/nl/07-cellar-italian-tunnel.mp3",
+        "ready": true
       },
       "body": [
         "Dutch translated content is pending for this stop."
@@ -124,9 +117,8 @@
       "shortText": "Dutch content pending for Traditional House.",
       "imageAlt": "Image slot for Traditional House",
       "audio": {
-        "path": "./assets/audio/nl/08-traditional-house.wav",
-        "ready": true,
-        "caption": "Silent Dutch audio placeholder. Replace this file with final narration using the same filename."
+        "path": "./assets/audio/nl/08-traditional-house.mp3",
+        "ready": true
       },
       "body": [
         "Dutch translated content is pending for this stop."
@@ -138,9 +130,8 @@
       "shortText": "Dutch content pending for Bakery.",
       "imageAlt": "Image slot for Bakery",
       "audio": {
-        "path": "./assets/audio/nl/09-bakery.wav",
-        "ready": true,
-        "caption": "Silent Dutch audio placeholder. Replace this file with final narration using the same filename."
+        "path": "./assets/audio/nl/09-bakery.mp3",
+        "ready": true
       },
       "body": [
         "Dutch translated content is pending for this stop."

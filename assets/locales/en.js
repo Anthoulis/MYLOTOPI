@@ -14,7 +14,7 @@
     "imagePlaceholderLabel": "Image slot",
     "imagePlaceholderHint": "Add a location image when it becomes available.",
     "audioFallback": "The audio file is not available in this language yet.",
-    "audioPlaceholderNotice": "Temporary audio sample. Replace it with the final narration for this stop.",
+    "audioPlaceholderNotice": "English audio narration is available for this stop.",
     "announcerPrefix": "Active stop",
     "galleryPrevious": "Previous image",
     "galleryNext": "Next image"
@@ -26,7 +26,7 @@
       "shortText": "Begin the Heritage Walk with a short orientation before moving through the Mylotopi route.",
       "imageAlt": "Image slot for the Welcome stop",
       "audio": {
-        "path": "./assets/audio/en/01-welcome.wav",
+        "path": "./assets/audio/en/01-welcome.mp3",
         "ready": true
       },
       "body": []
@@ -37,7 +37,7 @@
       "shortText": "A garden stop focused on the herbs and aromas connected with Mylotopi's village character.",
       "imageAlt": "Image slot for the Herb Garden",
       "audio": {
-        "path": "./assets/audio/en/02-herb-garden.wav",
+        "path": "./assets/audio/en/02-herb-garden.mp3",
         "ready": true
       },
       "body": []
@@ -48,7 +48,7 @@
       "shortText": "One of the oldest windmills in the Dodecanese, a heritage monument and a living witness to grain milling.",
       "imageAlt": "Image slot for the Windmill",
       "audio": {
-        "path": "./assets/audio/en/03-windmill-first-floor.wav",
+        "path": "./assets/audio/en/03-windmill-first-floor.mp3",
         "ready": true,
         "caption": "Listen to a short narration about the windmill's history, its ancient timber, and its restoration."
       },
@@ -63,7 +63,7 @@
       "shortText": "Continue the windmill visit on the second floor.",
       "imageAlt": "Image slot for the Windmill second floor",
       "audio": {
-        "path": "./assets/audio/en/04-windmill-second-floor.wav",
+        "path": "./assets/audio/en/04-windmill-second-floor.mp3",
         "ready": true
       },
       "body": []
@@ -74,7 +74,7 @@
       "shortText": "Continue the windmill visit on the third floor.",
       "imageAlt": "Image slot for the Windmill third floor",
       "audio": {
-        "path": "./assets/audio/en/05-windmill-third-floor.wav",
+        "path": "./assets/audio/en/05-windmill-third-floor.mp3",
         "ready": true
       },
       "body": []
@@ -85,7 +85,7 @@
       "shortText": "The stone threshing floor where grain was separated from the husk and the physical rhythm of rural life unfolded.",
       "imageAlt": "Image slot for the Threshing Floor",
       "audio": {
-        "path": "./assets/audio/en/06-threshing-floor-donkeys.wav",
+        "path": "./assets/audio/en/06-threshing-floor-donkeys.mp3",
         "ready": true,
         "caption": "Listen to a short narration about the threshing process and the role of both people and animals in the harvest cycle."
       },
@@ -100,7 +100,7 @@
       "shortText": "The underground passage that links the courtyards of Mylotopi and preserves the memory of the Italian presence on the island.",
       "imageAlt": "Image slot for the Tunnel",
       "audio": {
-        "path": "./assets/audio/en/07-cellar-italian-tunnel.wav",
+        "path": "./assets/audio/en/07-cellar-italian-tunnel.mp3",
         "ready": true,
         "caption": "Listen to a short narration about the tunnel's military use and the experience of moving through it today."
       },
@@ -115,7 +115,7 @@
       "shortText": "A reconstruction of the life of a 19th-century rural family through domestic objects, habits, and everyday routines.",
       "imageAlt": "Image slot for the House",
       "audio": {
-        "path": "./assets/audio/en/08-traditional-house.wav",
+        "path": "./assets/audio/en/08-traditional-house.mp3",
         "ready": true,
         "caption": "Listen to a short narration about the household space, daily utensils, and the ingenuity of its inhabitants."
       },
@@ -130,7 +130,7 @@
       "shortText": "The traditional stone oven, more than a century old, that remains fully functional today.",
       "imageAlt": "Image slot for the Bakery",
       "audio": {
-        "path": "./assets/audio/en/09-bakery.wav",
+        "path": "./assets/audio/en/09-bakery.mp3",
         "ready": true,
         "caption": "Listen to a short narration about the oven's construction, its local materials, and the baking of bread."
       },

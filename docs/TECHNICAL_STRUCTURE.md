@@ -21,7 +21,7 @@ The Mylotopi QR Guide is a static single-page app. It has no framework build ste
 ## Locale Content
 
 - `assets/locales/*.js`: per-language UI strings, spot text, image alt text, and audio paths.
-- Supported locale files are `en.js`, `el.js`, `de.js`, `nl.js`, and `pl.js`.
+- Supported locale files are `en.js`, `el.js`, `de.js`, `nl.js`, `pl.js`, `it.js`, `fr.js`, `es.js`, `ru.js`, and `tr.js`.
 
 ## Assets
 
