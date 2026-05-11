@@ -15,6 +15,8 @@ Technical skeleton complete.
 - Image placeholder structure.
 - Print asset folder added.
 - Staff operation flow documented.
+- Content replacement guide documented.
+- Technical structure documented.
 
 ## Pending
 

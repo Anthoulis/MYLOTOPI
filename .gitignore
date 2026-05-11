@@ -1,0 +1,10 @@
+# Local print/source bundles not part of the public static guide structure.
+assets/print/Dutch/
+assets/print/English/
+assets/print/French/
+assets/print/German/
+assets/print/Italian/
+assets/print/Polish/
+assets/print/Russian/
+assets/print/Spanish/
+assets/print/Turkish/

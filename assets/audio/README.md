@@ -1,8 +1,17 @@
 # Audio Replacement Contract
 
-Each language folder contains one placeholder audio file per tour stop.
+Audio files are organized by language:
 
-Final audio files must keep the same filenames so replacing placeholder narration does not require code changes. If the file format changes later, update the matching locale file path and MIME support together.
+- `en`
+- `el`
+- `de`
+- `nl`
+- `pl`
 
-Current placeholder format: silent WAV.
+Each language folder must contain 9 audio files, one per canonical tour stop.
 
+Current placeholder format: silent `.wav`.
+
+Final audio should replace placeholders using the same filenames whenever possible. Do not leave zero-byte, corrupt, or invalid audio files.
+
+Do not change audio paths unless the matching locale references in `assets/locales/*.js` are intentionally updated at the same time.
