@@ -137,10 +137,11 @@
       return;
     }
 
-    // Keep initial page load light: rendered audio starts as preload="none";
-    // only the active QR stop is promoted to metadata preload.
     player.preload = "metadata";
-    player.load();
+
+    if (player.readyState === HTMLMediaElement.HAVE_NOTHING) {
+      player.load();
+    }
   }
 
   function stopAllAudioPlayers() {
@@ -330,7 +331,7 @@
     const audioMimeType = resolveAudioMimeType(audio.path);
 
     return (
-      '<audio class="guide-audio-player" controls preload="none" aria-label="' +
+      '<audio class="guide-audio-player" controls preload="metadata" aria-label="' +
       escapeHtml(ui.audioHeading + ": " + content.title) +
       '"><source src="' +
       escapeHtml(audio.path) +
@@ -414,6 +415,9 @@
         ? '<p class="guide-mini-map-description">' + escapeHtml(ui.miniMapDescription) + "</p>"
         : "") +
       "</div>" +
+      '<figure class="guide-mini-map-figure">' +
+      '<img class="guide-mini-map-image" src="./assets/print/mini-map-draft.jpg" alt="Mylotopi mini-map showing the 9 tour stops">' +
+      "</figure>" +
       '<ol class="guide-mini-map-list">' +
       visibleStops.map(function (spotId, index) {
         const isActive = spotId === state.activeSpot;
