@@ -20,7 +20,7 @@ Current production formats:
 - Real audio: `.mp3` for `en`, `de`, `nl`, `pl`, `fr`, and `es`.
 - Pending placeholders: silent `.wav` for `el`, `it`, `ru`, and `tr`.
 
-Greek final audio is pending and currently remains on silent WAV placeholders.
+Greek, Italian, Russian, and Turkish final audio is pending and currently remains on silent WAV placeholders.
 
 Final audio should replace placeholders using the same filenames whenever possible. Do not leave zero-byte, corrupt, or invalid audio files.
 
