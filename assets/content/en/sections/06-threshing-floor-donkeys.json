@@ -1,0 +1,78 @@
+{
+  "id": "threshing-floor-donkeys",
+  "title": "Threshing floor and donkeys",
+  "navigationTitle": "Threshing floor and donkeys",
+  "preview": "Welcome back outside! Take a deep breath of fresh air. You are now standing near the traditional threshing floor, which looks a lot like a big, round stone dance floor.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "A Mission for our Young Explorers and Adults!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Next Destination"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "Fresh Air & Stone Floors",
+          "text": "Welcome back outside! Take a deep breath of fresh air. You are now standing near the traditional threshing floor, which looks a lot like a big, round stone dance floor."
+        },
+        {
+          "label": "The Dizzy Donkey",
+          "text": "Look right in the middle of the circle at the wooden post. In the old days, the miller would loosely tie a rope from that post around a donkey's neck. The donkey's job was to walk round and round in a big circle, using its heavy feet to stomp and smash the harvested crops to break the seeds free!"
+        },
+        {
+          "label": "Separating the Wheat",
+          "text": "After the hardworking donkey did all of this dizzy stomping, the miller would step in to carefully separate the white wheat from the brown wheat. (Today, we don't use this method we buy our wheat directly from local producers on the island!)"
+        },
+        {
+          "label": "Meet the Real Stars",
+          "text": "You don't just have to imagine the animals! Look nearby and you will meet the real stars of the farm: our two lovely donkeys. The proud mama is named Melina, who is 6 years old, and her sweet little daughter is named Katie, who is just 2 years old."
+        },
+        {
+          "label": "The Missing Dad",
+          "text": "As for Katie's dad... well, nobody actually knows where he went! He loved to sing really loud, so we think he walked to the next town to start a donkey rock band!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "The Donkey Dance",
+          "text": "Step right up to the edge of the threshing floor! Can you pretend you are attached to the center wooden post and walk in a perfect circle just like a donkey did?"
+        },
+        {
+          "label": "Say Hello",
+          "text": "After your dizzy dance, make sure to go wave hello to Melina and Katie! Please admire our lovely donkeys from a distance! They look sweet, but they might mistake your fingers for baby carrots. We’d rather not find out!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "Upcoming",
+          "text": "Then move forward to the Cellar/Italian Tunnel!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Threshing floor and donkeys at Mylotopi"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "garden-herbs",
+  "title": "¡Nuestro jardín con nuestras hierbas aromáticas!",
+  "navigationTitle": "¡Nuestro jardín con nuestras hierbas aromáticas!",
+  "preview": "Antes de la medicina moderna y los supermercados, estos jardines eran el kit de supervivencia de la isla. Estas parcelas están llenas de las mismas hierbas exactas que han crecido aquí durante siglos.",
+  "details": [
+    {
+      "type": "heading",
+      "text": "¿Cocina o farmacia? ¡Respira profundo! ¿Huele a una cocina gigante al aire libre o a la farmacia del pueblo? En realidad, ¡es ambas cosas!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "¡Una misión para nuestros jóvenes detectives de plantas y adultos!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Próximo destino"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "El kit de supervivencia definitivo",
+          "text": "Antes de la medicina moderna y los supermercados, estos jardines eran el kit de supervivencia de la isla. Estas parcelas están llenas de las mismas hierbas exactas que han crecido aquí durante siglos."
+        },
+        {
+          "label": "El médico de la naturaleza",
+          "text": "Las hierbas como el tomillo, el orégano y la mejorana no solo se usaban para hacer que la cena supiera increíble, ¡eran el médico local! Si a alguien le dolía el estómago, la familia del molinero no corría a la farmacia a por un jarabe rosa de mal sabor; venían aquí mismo a recoger hojas para hacer un remedio natural."
+        },
+        {
+          "label": "Una paleta de pintor",
+          "text": "¡Mira la hermosa lavanda morada y la brillante menta verde! Parece como si alguien las hubiera pintado directamente en el jardín. ¡Presta mucha atención a esos colores brillantes!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "Diversión a la antigua",
+          "text": "¡Guarden los teléfonos por un segundo, vamos a volver totalmente a la vieja escuela! ¿Ven las piezas físicas del rompecabezas esparcidas por ahí?"
+        },
+        {
+          "label": "Usa tus sentidos",
+          "text": "Tu trabajo es descubrir qué palabra pertenece a qué planta. ¡Tendrás que usar tus ojos y tu nariz!"
+        },
+        {
+          "label": "Frota y huele",
+          "text": "Adelante, frota las hojas de forma muy suave y huélelas (pero, por favor, nada de pastar: ¡no se coman el jardín antes del almuerzo!)."
+        },
+        {
+          "label": "Resuelve el rompecabezas",
+          "text": "¿Puedes mover las piezas del rompecabezas para que coincidan con las hierbas correctas? A ver si puedes descubrir la diferencia entre la menta y el orégano. ¿Cuál huele a una deliciosa pizza y cuál huele a una siesta acogedora?"
+        },
+        {
+          "label": "Recordatorio para el cuaderno de bocetos",
+          "text": "¡Mantengan los ojos bien abiertos, detectives de plantas! Recuerden los diferentes colores verde, gris y morado para colorear su boceto de Mylotopi más tarde."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "A continuación",
+          "text": "¡Dirígete al molino de viento histórico!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "¡Nuestro jardín con nuestras hierbas aromáticas! at Mylotopi"
+}

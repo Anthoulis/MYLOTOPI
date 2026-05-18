@@ -1,0 +1,111 @@
+{
+  "id": "traditional-house",
+  "title": "Geleneksel Ev",
+  "navigationTitle": "Geleneksel Ev",
+  "preview": "Geleneksel eve hoş geldiniz! Bu şaşırtıcı küçük ev 130 yaşından daha büyük. 20 metrekareden daha küçük, ama inanın ya da inanmayın, eskiden burada 8 ila 10 kişi yaşardı! Büyükanne ve büyükbabalar, ebeveynler ve tüm çocukları bu tek bir odayı paylaşırdı.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "paragraph",
+      "text": "Herkes Nerede Uyuyordu? Büyükanne ve büyükbaba hemen sıcak şöminenin yanında uyurdu. Ebeveynler karşı taraftaki yüksek asma yatakta uyurken, büyük çocuklar onun yanındaki yataklarda ve kanepede uyurdu."
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Görev!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    },
+    {
+      "type": "heading",
+      "text": "Sıradaki Durak"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-04"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "Küçük, Kalabalık Bir Yuva",
+          "text": "Geleneksel eve hoş geldiniz! Bu şaşırtıcı küçük ev 130 yaşından daha büyük. 20 metrekareden daha küçük, ama inanın ya da inanmayın, eskiden burada 8 ila 10 kişi yaşardı! Büyükanne ve büyükbabalar, ebeveynler ve tüm çocukları bu tek bir odayı paylaşırdı."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "Pış Pış Bebek",
+          "text": "Peki ya bebek? Küçük ahşap beşiği arayın! Bebeğin uykuya dalmasına yardımcı olmak için, birisi onu sallamak üzere sarkan o küçük ipi nazikçe çekebilirdi."
+        },
+        {
+          "label": "Akıllıca Depolama",
+          "text": "Aile yataklarının altındaki boşluğa dikkat edin; orası onların ana depolama alanıydı."
+        },
+        {
+          "label": "Günlük Ev İşleri ve Dekorasyon",
+          "text": "Sol tarafta, eski kıyafetleri onarmak ve yenilerini yapmak için kullandıkları büyük bir ahşap dokuma tezgahını ve yanında kişisel eşyalarını sakladıkları bir sandığı görebilirsiniz. Ayrıca un için kullanılan bir elek ve duvarlarda güzel eski fotoğraflar ile dini resimler de göreceksiniz."
+        },
+        {
+          "label": "Vazolar ve Üniformalar",
+          "text": "Sandığın yanında iki vazo arayın: büyük olan şarap içindi, küçük olan ise su için. Hemen üzerlerinde evdeki hanımların düğünlerde ve özel etkinliklerde giydiği iki güzel geleneksel üniforma asılıdır."
+        },
+        {
+          "label": "Evin Kalbi",
+          "text": "Ev modern evler gibi restore edilmediği için, şömine tüm yemeklerini pişirmek ve tüm aileyi sıcak tutmak için kullanılıyordu. Hemen yanında un öğütmek için küçük bir el değirmeni ile birlikte günlük mutfak eşyaları ve güzel boyanmış çiçeklerle süslenmiş geleneksel tabaklar bulunur."
+        },
+        {
+          "label": "Asılı Salıncak",
+          "text": "Tavana bakın! Salıncağa benzeyen asılı bir şey görüyor musunuz? Oynamak için değil! Aç farelerden güvenle uzak tutmak için taze ekmeklerini üst kısmında saklarlardı. Alt kısmında ise keçiboynuzu depolarlardı. O zamanlar çikolata barları yoktu, bu yüzden tatlı keçiboynuzları çocuklara lezzetli bir çikolata ikramı olarak verilirdi!"
+        },
+        {
+          "label": "Geleneksel Bir Buzdolabı",
+          "text": "Son olarak ahşap dolabı arayın. İnanın ya da inanmayın, bu geleneksel bir buzdolabı! İki parçası var. Üstüne büyük buz küpleri koyarlardı ve buz eridikçe buz gibi suyu içmek için küçük bir musluğu açabilirlerdi. Üst kısımdan gelen soğuk, yiyeceklerini taze tutmak için alt bölümü de mükemmel bir şekilde soğuturdu!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "Değirmeni Çevirin",
+          "text": "Bu hareketli küçük evde yapacak çok işiniz var! İlk olarak, el değirmenini bulabilir misiniz? Ahşap sapı boşluğa yerleştirmeyi deneyin ve onu döndürüp döndüremeyeceğinize bir bakın!"
+        },
+        {
+          "label": "Yukarı ve Aşağı Bakın",
+          "text": "Sıkı çalışmanızdan sonra, ekmeği farelerden uzak tutan asılı salıncağı bulabilir misiniz?"
+        },
+        {
+          "label": "Bebeği Sallayın",
+          "text": "Peki ya bebeği uyutmak için çektikleri o küçük ip? İpi sallayarak bebeğin uykuya dalmasını sağlayabilir misiniz? Sizin için zor mu?"
+        },
+        {
+          "label": "Bunu Hayal Edin",
+          "text": "Hepsini bulduğunuzda, bu küçük odayı aile üyelerinizden 8 ila 10'uyla paylaşmanın nasıl bir şey olacağını hayal edin!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-04",
+      "items": [
+        {
+          "label": "Sırada",
+          "text": "Ardından Fırına doğru ilerleyin!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Geleneksel Ev at Mylotopi"
+}

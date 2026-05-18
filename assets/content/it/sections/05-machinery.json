@@ -1,0 +1,98 @@
+{
+  "id": "machinery",
+  "title": "I macchinari del mulino a vento",
+  "navigationTitle": "I macchinari del mulino a vento",
+  "preview": "Benvenuti al terzo piano! Per favore, fate attenzione a dove mettete i piedi sulla scala e state attenti alla testa mentre esplorate.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Una Missione per i Nostri Giovani Esploratori e per gli Adulti!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Prossima Destinazione"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "Attenzione alla Testa",
+          "text": "Benvenuti al terzo piano! Per favore, fate attenzione a dove mettete i piedi sulla scala e state attenti alla testa mentre esplorate."
+        },
+        {
+          "label": "I Muscoli del Mulino",
+          "text": "Ora state guardando la vera potenza del mulino a vento. Guardate quell'enorme trave di legno sopra le pietre. È il connettore principale che collega le pesanti pietre all'interno, gli ingranaggi e le gigantesche vele rotanti all'esterno!"
+        },
+        {
+          "label": "Pietre da Due Tonnellate",
+          "text": "Queste enormi macine pesano più di due tonnellate insieme! Sono state importate fin dall'isola di Nisyros, famosa per la produzione di una pietra unica e super resistente, perfetta per la molitura."
+        },
+        {
+          "label": "L'Alimentatore e la Campanella",
+          "text": "Guardate proprio sopra le pietre e cercate una scatola di legno chiamata L'Alimentatore, dove il mugnaio versava il grano crudo. Ma come faceva a sapere quando era vuota con tutto quel rumore forte? Guardate attentamente per trovare una minuscola campanella! Suonava automaticamente quando il grano scarseggiava per dire al mugnaio di riempirlo di nuovo."
+        },
+        {
+          "label": "Il Primo Freno",
+          "text": "Vedete quella leva di legno collegata a una piccola corda? Quella si collega fino al primo piano ed è il primo sistema frenante di cui abbiamo parlato al piano di sotto."
+        },
+        {
+          "label": "La Caduta della Farina",
+          "text": "Guardate giù vicino alla leva per trovare una botola collegata a un tubo. Non appena la farina era perfettamente frantumata, cadeva direttamente giù per quel tubo fino al piano terra!"
+        },
+        {
+          "label": "La \"Mancia\" del Mugnaio",
+          "text": "Proprio accanto al tubo principale c'è una seconda botola più piccola. Ai vecchi tempi, la gente non pagava sempre con i soldi. Invece, il mugnaio usava questa porta per riscuotere la sua \"mancia\", trattenendo una piccola percentuale della farina per la sua famiglia come pagamento per il suo duro lavoro!"
+        },
+        {
+          "label": "Rotazione Fluida",
+          "text": "Individuate la piccola lattina vicino alle botole. Al piano di sotto usava il grasso di mucca, ma quassù usava una speciale miscela di olio d'oliva e sapone per far funzionare senza intoppi gli ingranaggi superiori."
+        },
+        {
+          "label": "Il Freno di Emergenza",
+          "text": "Cercate una corda molto spessa accanto alla scala. Se il mugnaio aveva bisogno di smettere completamente di fare farina in fretta, tirava questa corda: il secondo sistema frenante!"
+        },
+        {
+          "label": "Il Soffitto di una Nave",
+          "text": "Infine, guardate il soffitto. Cosa vi ricorda? In realtà è progettato a forma di nave per aumentare la potenza del meccanismo e produrre farina più rapidamente!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "Ascoltate la Campanella e Suonatela",
+          "text": "Riuscite a trovare la minuscola campanella che avvertiva il mugnaio quando il grano stava finendo? Riuscite a suonarla?"
+        },
+        {
+          "label": "Trovate la Farina Nascosta",
+          "text": "Esaminate il pavimento e vedete se riuscite a individuare la speciale botola della \"mancia\" dove il mugnaio teneva il suo sudato compenso!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "In Arrivo",
+          "text": "Quindi proseguite verso l'Aia e l'Area degli Asini!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "I macchinari del mulino a vento at Mylotopi"
+}

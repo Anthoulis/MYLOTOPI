@@ -1,0 +1,74 @@
+{
+  "id": "sleeping-area",
+  "title": "Der Schlafbereich der Windmühle",
+  "navigationTitle": "Der Schlafbereich der Windmühle",
+  "preview": "Willkommen im zweiten Stock! Passen Sie auf den Holztreppen auf Ihre Schritte und auf das Holz über Ihnen auf Ihren Kopf auf. Machen Sie sich auf eine große Überraschung darüber gefasst, wie die Familie lebte.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Eine Frage für unsere jungen Entdecker und Erwachsene!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Nächstes Ziel"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "Passen Sie auf Ihre Schritte auf",
+          "text": "Willkommen im zweiten Stock! Passen Sie auf den Holztreppen auf Ihre Schritte und auf das Holz über Ihnen auf Ihren Kopf auf. Machen Sie sich auf eine große Überraschung darüber gefasst, wie die Familie lebte."
+        },
+        {
+          "label": "Zu Ihrer Rechten",
+          "text": "An den Wänden sehen Sie einige wunderschöne Bilder, die verschiedene historische Windmühlen aus ganz Griechenland zeigen. Aber dieser Raum war nicht nur eine Galerie!"
+        },
+        {
+          "label": "Ein sehr lautes Schlafzimmer",
+          "text": "Genau hier auf der rechten Seite haben der Windmüller und seine gesamte Familie tatsächlich geschlafen! Können Sie sich vorstellen, ein friedliches Nickerchen zu machen, während das ganze Gebäude bebte, der Wind heulte und die schweren Maschinen nur wenige Meter entfernt lautstark Weizen zerkleinerten? Sie müssen einen sehr tiefen Schlaf gehabt haben!"
+        },
+        {
+          "label": "Zu Ihrer Linken",
+          "text": "Schauen Sie nun auf die linke Seite. Dies war ein sehr wichtiger und viel genutzter Lagerraum."
+        },
+        {
+          "label": "Das Mehl beschützen",
+          "text": "Der Müller nutzte diese Seite des Raumes, um all die schweren Säcke mit rohem Weizen, die darauf warteten, gemahlen zu werden, sicher zu stapeln, direkt neben den frisch abgefüllten Säcken mit luftigem, weißem Mehl, die bereit waren, um das Dorf zu ernähren. Er bewahrte sie genau hier in der Nähe seines Bettes auf, damit er sie beschützen konnte!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "Stellt euch das vor",
+          "text": "Könnt ihr euch vorstellen, im zweiten Stock genau so zu schlafen, wie sie es früher getan haben?"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "Als Nächstes",
+          "text": "Gehen Sie dann weiter zu den Maschinen der Windmühle."
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Der Schlafbereich der Windmühle at Mylotopi"
+}

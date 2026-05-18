@@ -1,0 +1,65 @@
+{
+  "id": "bakery",
+  "title": "Bakery",
+  "navigationTitle": "Bakery",
+  "preview": "Welcome to the traditional oven! This beautiful stone oven is over 150 years old. Back in the day, the majority of the ladies in the village would come right here to bake their daily bread for their families.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "A Question for our Young Explorers and Adults!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "A Community Hub",
+          "text": "Welcome to the traditional oven! This beautiful stone oven is over 150 years old. Back in the day, the majority of the ladies in the village would come right here to bake their daily bread for their families."
+        },
+        {
+          "label": "A Two-Day Process",
+          "text": "Baking bread back then wasn't as fast as just running to the supermarket! It was actually a two-day process. The night before, the ladies would carefully mix and shape the dough, leaving it to rest and rise up overnight."
+        },
+        {
+          "label": "Freshly Baked",
+          "text": "The next morning, when the dough was ready, they would build a hot fire to warm up the oven. Once the temperature was just right, they placed the dough inside. After baking for one to two hours, the entire village would be filled with the delicious smell of fresh, warm bread ready to be eaten!"
+        },
+        {
+          "label": "Historical Photos",
+          "text": "If you look around, you can see some wonderful pictures on display that show exactly how they did this whole procedure."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "The Early Bird",
+          "text": "The whole village needed fresh bread. Can you guess what time the baker had to wake up every morning to start making the dough? (Hint: It was long before the sun came up!)"
+        },
+        {
+          "label": "Look Closely",
+          "text": "Take a close look at the pictures to see how the village ladies used to work in the bakery."
+        },
+        {
+          "label": "Time to Relax",
+          "text": "Now, it is time to head to the restaurant-café! Grab your colored pencils, enjoy a well-deserved snack, and finish making your Mylotopi Sketch a colorful masterpiece!"
+        },
+        {
+          "label": "Thank You",
+          "text": "Thank you for exploring with us today!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Bakery at Mylotopi"
+}

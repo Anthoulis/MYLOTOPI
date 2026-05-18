@@ -1,17 +1,17 @@
 # Content Replacement Guide
 
-This guide explains how to replace placeholder content without changing the QR Guide structure or app behavior.
+This guide explains how to replace structured content without changing the QR Guide structure or app behavior.
 
 ## Language Codes
 
 - `en`: English, default
 - `el`: Greek
 - `de`: German
+- `fr`: French
+- `it`: Italian
+- `es`: Spanish
 - `nl`: Dutch
 - `pl`: Polish
-- `it`: Italian
-- `fr`: French
-- `es`: Spanish
 - `ru`: Russian
 - `tr`: Turkish
 
@@ -20,43 +20,40 @@ Keep this order in the UI unless there is an explicit product decision to change
 ## Canonical Spot Keys
 
 1. `welcome`
-2. `herb-garden`
-3. `windmill-first-floor`
-4. `windmill-second-floor`
-5. `windmill-third-floor`
+2. `garden-herbs`
+3. `windmill-base`
+4. `sleeping-area`
+5. `machinery`
 6. `threshing-floor-donkeys`
 7. `cellar-italian-tunnel`
 8. `traditional-house`
 9. `bakery`
 
-Do not rename these keys unless all metadata, locale, URL, and asset references are updated together.
+These are the final public route keys for future QR generation. Do not add compatibility aliases for route names that are not being printed or published.
 
 ## Replacing Audio
 
-Current project audio formats:
+Current project audio format:
 
-- `.mp3` for languages with complete real incoming narration: `en`, `de`, `nl`, `pl`, `fr`, `es`.
-- `.wav` for languages still using silent placeholders: `el`, `it`, `ru`, `tr`.
-
-Greek audio is pending and currently uses valid silent `.wav` placeholders.
+- `.mp3` for every supported language.
 
 Each language folder under `assets/audio/` contains 9 audio files:
 
-- `01-welcome.<ext>`
-- `02-herb-garden.<ext>`
-- `03-windmill-first-floor.<ext>`
-- `04-windmill-second-floor.<ext>`
-- `05-windmill-third-floor.<ext>`
-- `06-threshing-floor-donkeys.<ext>`
-- `07-cellar-italian-tunnel.<ext>`
-- `08-traditional-house.<ext>`
-- `09-bakery.<ext>`
+- `section-01.mp3`: Welcome / Introduction
+- `section-02.mp3`: Garden / Herbs
+- `section-03.mp3`: Windmill base
+- `section-04.mp3`: Sleeping area
+- `section-05.mp3`: Machinery
+- `section-06.mp3`: Threshing floor and donkeys
+- `section-07.mp3`: Cellar / Italian tunnel
+- `section-08.mp3`: Traditional house
+- `section-09.mp3`: Bakery
 
-Replace placeholder files with final narration using the same filenames whenever possible.
+Replace narration using the same filenames whenever possible.
 
 Do not leave zero-byte, corrupt, or invalid audio files. Browser audio controls must be able to load the files.
 
-If the final format changes later, update the `audio.path` values in every affected `assets/locales/<language>.js` file and confirm MIME handling in `assets/js/app.js` still supports the extension.
+If the final format changes later, update the `audio.path` values in every affected `assets/content/<language>/index.json` file and confirm MIME handling in `assets/js/app.js` still supports the extension.
 
 ## Replacing Images
 
@@ -72,39 +69,54 @@ After adding images, update the matching spot's `images` array in `assets/js/con
 
 Existing tunnel images currently remain in `assets/images/tunnel/` and are referenced from `assets/js/content-meta.js`. If those images are moved later, update every referenced path in the metadata file at the same time.
 
-## Updating Locale Text
+## Updating Localized Text
 
-Localized content belongs in `assets/locales/`.
+Localized runtime content belongs in `assets/content/`.
 
-Each locale file should keep the same 9 spot keys and the same general data shape:
+Each language folder should keep:
 
+- `index.json`
+- `sections/01-welcome.json`
+- `sections/02-garden-herbs.json`
+- `sections/03-windmill-base.json`
+- `sections/04-sleeping-area.json`
+- `sections/05-machinery.json`
+- `sections/06-threshing-floor-donkeys.json`
+- `sections/07-cellar-italian-tunnel.json`
+- `sections/08-traditional-house.json`
+- `sections/09-bakery.json`
+
+Each section JSON contains:
+
+- `id`
 - `title`
-- `shortTitle`
-- `shortText`
-- `imageAlt`
-- `audio.path`
-- `audio.caption`
-- `body`
+- `preview`
+- `details`
+- `bullets`
 
-Do not hardcode translated visitor copy in `index.html` or `assets/js/app.js`.
+`details` preserves the ordered reading structure. Bullet groups are stored once in `bullets` and referenced from `details` with `{ "type": "bulletGroup", "id": "..." }`.
+
+Do not hardcode translated visitor copy in `index.html`, `assets/js/app.js`, or any other JavaScript file.
+
+When extracting from source DOCX files, split on the source marker `Read more>>` if it exists. Text before the marker becomes `preview`; text after the marker becomes `details`. The literal marker must not be stored for rendering.
 
 ## Filename And Path Rules
 
-- Keep audio paths in the form `./assets/audio/<language>/<number>-<slug>.<ext>`.
-- Match `<ext>` to the actual file extension used in that language folder.
+- Keep audio paths in the form `./assets/audio/<language>/section-<number>.mp3`.
+- Keep section paths in language manifests in the form `sections/<number>-<slug>.json`.
 - Keep stop image folders in the form `assets/images/stops/<number>-<slug>/`.
 - Use lowercase kebab-case for new asset filenames where practical.
-- Keep existing public paths stable unless every reference is updated safely.
+- Keep public paths stable after QR targets are finalized; before then, prefer clean semantic ids and update every reference safely.
 - Do not link internal staff files from the public UI.
 
 ## Deployment Checklist
 
-- All 10 locale files load without JavaScript errors.
-- All locales contain the same 9 spot keys.
+- All 10 language manifests load without JavaScript errors.
+- All languages contain the same 9 section ids.
 - Every `audio.path` points to an existing valid file.
 - No audio file is zero-byte.
 - Final images referenced in `content-meta.js` exist.
-- `index.html` still loads `main.css`, `content-meta.js`, all locale files, `i18n.js`, and `app.js`.
+- `index.html` still loads `main.css`, `content-meta.js`, `i18n.js`, and `app.js`.
 - Mini-map navigation still scrolls to the correct stops.
 - Stop dropdown navigation still scrolls to the correct stops.
 - Language switching preserves the current spot where appropriate.

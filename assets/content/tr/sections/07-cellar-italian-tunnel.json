@@ -1,0 +1,74 @@
+{
+  "id": "cellar-italian-tunnel",
+  "title": "Gizli Tünel ve Mahzen",
+  "navigationTitle": "Gizli Tünel ve Mahzen",
+  "preview": "Yeraltına doğru ilerlerken manzarada tam bir değişime kendinizi hazırlayın! Serin havaya doğru adım atarken solunuza ve sağınıza bir göz atın.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Görev!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Sıradaki Durak"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "Manzara Değişimi",
+          "text": "Yeraltına doğru ilerlerken manzarada tam bir değişime kendinizi hazırlayın! Serin havaya doğru adım atarken solunuza ve sağınıza bir göz atın."
+        },
+        {
+          "label": "Dekoratif Şişeler",
+          "text": "İstanköy'deki (Kos) Skevofilax şaraphanesinden gelen yerel şarap dizilerini göreceksiniz. Bu şişeleri burada dekorasyon amacıyla tutuyoruz! İçtiğimiz asıl şaraplar, sıcaklığın onlar için mükemmel bir şekilde uygun olduğu ana mahzende güvenle saklanıyor."
+        },
+        {
+          "label": "İkinci Dünya Savaşı Tarihi",
+          "text": "1940'lara, İkinci Dünya Savaşı yıllarına dönersek, bu alan şarap için değil hayatta kalmak içindi. Bu 20 metrelik tünel savaş sırasında İtalyan askerleri tarafından inşa edilmişti."
+        },
+        {
+          "label": "Kaçış Tüneli",
+          "text": "Askerler bu geçidi bir kaçış tüneli, rakiplerinden kaçıp saklanmak için gizli bir kısayol olarak kullanıyorlardı. Mahzenin kendisi de uyuyabilecekleri, dinlenebilecekleri ve dışarıdaki savaşlardan korunabilecekleri güvenli bir sığınak olarak kullanılıyordu."
+        },
+        {
+          "label": "Gizli Bir Kale",
+          "text": "Tünelin sonunda, şu anda huzurlu restoranımız olan arka bahçemize çıkacaksınız. Ancak çıkmadan önce arkanıza dönüp taş çatıya bir bakın! 1940'larda bu alanın tamamı bir atış alanıydı. Askerleri korumak için üst kısmı ağır taşlarla kaplıydı ve yamacı savunmak için tam uçta makineli tüfekleri vardı. Yemek yediğiniz bu sessiz ve güzel noktanın adadaki en sıkı korunan yer olduğuna inanmak gerçekten zor!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "Çok Gizli",
+          "text": "Artık gizli bir görevdesiniz! Askerlerin tünelinden geçerken, duvarlarda tam olarak kaç şişe şarap dizili olduğunu hesaplayabilir misiniz?"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "Sırada",
+          "text": "Tüneli keşfetmeyi bitirdiğinizde, lütfen geri dönün ve bir sonraki harika duraklarınız olan Geleneksel Ev ve Fırın'a giden yolu gösterebilmeleri için tur rehberimizi bulun!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Gizli Tünel ve Mahzen at Mylotopi"
+}

@@ -704,16 +704,87 @@ button {
 }
 
 /* Body copy */
+.guide-copy-wrap {
+  position: relative;
+  display: grid;
+  gap: 10px;
+}
+
 .guide-copy {
   display: grid;
   gap: 8px;
 }
 
-.guide-copy p {
+.guide-copy-wrap.is-collapsible .guide-copy {
+  position: relative;
+  transition: max-height 180ms ease;
+}
+
+.guide-copy-wrap.is-collapsed .guide-copy {
+  max-height: 15rem;
+  overflow: hidden;
+}
+
+.guide-copy-wrap.is-collapsed::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+  height: 58px;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0), rgba(255, 250, 242, 0.98));
+}
+
+.guide-copy-wrap.is-expanded .guide-copy {
+  max-height: none;
+}
+
+.guide-copy p,
+.guide-copy-list {
   margin: 0;
   color: var(--text-primary);
   font-size: 0.93rem;
   line-height: 1.62;
+}
+
+.guide-copy-heading {
+  margin: 10px 0 0;
+  color: color-mix(in srgb, var(--section-accent, #8b6d3d) 72%, black);
+  font-size: 0.83rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.guide-copy-list {
+  display: grid;
+  gap: 7px;
+  padding-left: 1.15rem;
+}
+
+.guide-copy-list li::marker {
+  color: var(--section-accent, #8b6d3d);
+}
+
+.guide-copy-list strong {
+  margin-right: 0.24rem;
+  color: color-mix(in srgb, var(--section-accent, #8b6d3d) 70%, black);
+  font-weight: 800;
+}
+
+.guide-copy-toggle {
+  justify-self: start;
+  min-height: 42px;
+  padding: 9px 14px;
+  border: 1px solid color-mix(in srgb, var(--section-accent, #8b6d3d) 16%, white);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  color: color-mix(in srgb, var(--section-accent, #8b6d3d) 72%, black);
+  font-size: 0.84rem;
+  font-weight: 800;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.62);
 }
 
 .guide-noscript {
@@ -725,6 +796,21 @@ button {
   background: rgba(255, 251, 245, 0.92);
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+.guide-load-error {
+  display: grid;
+  gap: 6px;
+  padding: 16px 18px;
+  border: 1px solid rgba(145, 60, 45, 0.2);
+  border-radius: 18px;
+  background: rgba(255, 247, 241, 0.95);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.guide-load-error strong {
+  color: var(--text-primary);
 }
 
 /* Utilities */
@@ -832,6 +918,7 @@ button {
   .guide-spot-option,
   .guide-lang-button,
   .guide-mini-map-link,
+  .guide-copy,
   .guide-section {
     transition: none;
   }

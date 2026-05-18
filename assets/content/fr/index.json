@@ -1,0 +1,121 @@
+{
+  "code": "fr",
+  "nativeName": "Français",
+  "flag": "🇫🇷",
+  "aliases": [
+    "fr",
+    "french",
+    "français",
+    "francais",
+    "fr-fr",
+    "fr_fr"
+  ],
+  "ui": {
+    "kicker": "Mylotopi QR Guide",
+    "pageTitle": "Bienvenue à l'Expérience du Moulin à Vent !",
+    "intro": "Préparez-vous à faire un saut dans le passé ! Vous n'aurez pas besoin de machine à remonter le temps pour ce voyage, juste de chaussures confortables.",
+    "miniMapTitle": "Mini-map",
+    "miniMapDescription": "Choose a stop to jump directly to that point in the walk.",
+    "miniMapImageAlt": "Mylotopi mini-map showing the nine tour stops",
+    "languageLabel": "Language",
+    "spotsLabel": "Guide stops",
+    "audioHeading": "Audio guide",
+    "selectedBadge": "Selected stop",
+    "imagePlaceholderLabel": "Image slot",
+    "imagePlaceholderHint": "Add a location image when it becomes available.",
+    "audioFallback": "The audio file is not available in this language yet.",
+    "announcerPrefix": "Active stop",
+    "galleryPrevious": "Previous image",
+    "galleryNext": "Next image",
+    "readMore": "Lire plus",
+    "readLess": "Lire moins"
+  },
+  "miniMap": {
+    "path": "./assets/maps/fr/minimap.jpg"
+  },
+  "sectionOrder": [
+    "welcome",
+    "garden-herbs",
+    "windmill-base",
+    "sleeping-area",
+    "machinery",
+    "threshing-floor-donkeys",
+    "cellar-italian-tunnel",
+    "traditional-house",
+    "bakery"
+  ],
+  "sections": [
+    {
+      "id": "welcome",
+      "path": "sections/01-welcome.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-01.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "garden-herbs",
+      "path": "sections/02-garden-herbs.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-02.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "windmill-base",
+      "path": "sections/03-windmill-base.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-03.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "sleeping-area",
+      "path": "sections/04-sleeping-area.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-04.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "machinery",
+      "path": "sections/05-machinery.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-05.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "path": "sections/06-threshing-floor-donkeys.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-06.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "path": "sections/07-cellar-italian-tunnel.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-07.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "traditional-house",
+      "path": "sections/08-traditional-house.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-08.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "bakery",
+      "path": "sections/09-bakery.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-09.mp3",
+        "ready": true
+      }
+    }
+  ]
+}

@@ -2,30 +2,33 @@
 
 The Mylotopi QR Guide is a static single-page app. It has no framework build step.
 
+Because runtime content is loaded from JSON files, local manual testing should serve the repository as static files and open `/index.html`.
+
 ## Root Files
 
-- `index.html`: static entry point and application shell. It loads the stylesheet, metadata, locales, i18n helper, and app runtime.
-- `qr-guide.html`: compatibility redirect to `index.html` that preserves query parameters and hash fragments.
+- `index.html`: static entry point and application shell. It loads the stylesheet, metadata, i18n/content helper, and app runtime.
 - `README.md`: project overview and replacement pointers.
 
 ## JavaScript
 
-- `assets/js/content-meta.js`: global metadata, language configuration, language aliases, canonical spot order, legacy spot aliases, accent colors, and image metadata.
-- `assets/js/i18n.js`: language normalization, locale fallback, UI text lookup, spot text lookup, image alt fallback, and audio fallback helpers.
+- `assets/js/content-meta.js`: global metadata, content base path, canonical spot order, accent colors, and image metadata.
+- `assets/js/i18n.js`: JSON content loading, language normalization, content fallback, UI text lookup, spot text lookup, image alt fallback, and audio fallback helpers.
 - `assets/js/app.js`: runtime state, rendering, URL/deep-link behavior, Mini-map navigation, stop dropdown navigation, language switching, audio lifecycle, gallery behavior, focus handling, and announcements.
 
 ## Styles
 
 - `assets/css/main.css`: visual system, responsive layout, sticky navigation, hero, Mini-map, tour sections, gallery, audio controls, utility styles, and reduced-motion handling.
 
-## Locale Content
+## Runtime Content
 
-- `assets/locales/*.js`: per-language UI strings, spot text, image alt text, and audio paths.
-- Supported locale files are `en.js`, `el.js`, `de.js`, `nl.js`, `pl.js`, `it.js`, `fr.js`, `es.js`, `ru.js`, and `tr.js`.
+- `assets/content/<language>/index.json`: per-language manifest with language code, UI labels, Mini-map path, section order, section file paths, and audio paths.
+- `assets/content/<language>/sections/*.json`: one localized JSON file per tour section.
+- Supported content folders are `en`, `el`, `de`, `fr`, `it`, `es`, `nl`, `pl`, `ru`, and `tr`.
 
 ## Assets
 
-- `assets/audio/`: placeholder or final audio files, organized by language.
+- `assets/audio/`: real MP3 audio files, organized by language.
+- `assets/maps/`: per-language mini-map JPGs resolved through language manifest JSON files.
 - `assets/images/`: image assets for stop galleries and placeholders.
 - `assets/images/tunnel/`: current tunnel gallery images referenced by `assets/js/content-meta.js`.
 - `assets/images/stops/`: one numbered folder per canonical stop for future final images.

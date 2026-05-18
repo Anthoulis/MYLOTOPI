@@ -8,8 +8,9 @@
 
   const SPOT_ORDER = Array.isArray(meta.spotOrder) ? meta.spotOrder.slice() : Object.keys(meta.spots || {});
   const SPOTS_BY_ID = meta.spots || {};
-  const SPOT_ALIASES = meta.spotAliases || {};
   const REDUCED_MOTION_QUERY = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const COPY_COLLAPSE_BLOCK_THRESHOLD = 5;
+  const COPY_COLLAPSE_TEXT_THRESHOLD = 720;
   const DOM_IDS = {
     kicker: "guide-kicker",
     title: "guide-title",
@@ -60,8 +61,7 @@
     }
 
     const key = normalizeQueryParam(value);
-    const canonicalKey = SPOT_ALIASES[key] || key;
-    return SPOT_ORDER.includes(canonicalKey) ? canonicalKey : null;
+    return SPOT_ORDER.includes(key) ? key : null;
   }
 
   function getSpotAnchorId(spotId) {
@@ -165,12 +165,154 @@
     loadAudioMetadata(player);
   }
 
-  function renderParagraphs(paragraphs) {
-    return (paragraphs || [])
-      .map(function (paragraph) {
-        return "<p>" + escapeHtml(paragraph) + "</p>";
+  function getBulletGroupsById(bullets) {
+    return (bullets || []).reduce(function (result, group) {
+      if (group && group.id) {
+        result[group.id] = group;
+      }
+
+      return result;
+    }, {});
+  }
+
+  function renderCopyItem(item) {
+    if (typeof item === "string") {
+      return "<li>" + escapeHtml(item) + "</li>";
+    }
+
+    if (!item || typeof item !== "object") {
+      return "";
+    }
+
+    const label = item.label ? "<strong>" + escapeHtml(item.label) + "</strong>" : "";
+    const text = item.text ? "<span>" + escapeHtml(item.text) + "</span>" : "";
+
+    return "<li>" + label + text + "</li>";
+  }
+
+  function renderBulletGroup(group) {
+    if (!group || !Array.isArray(group.items)) {
+      return "";
+    }
+
+    return (
+      '<ul class="guide-copy-list">' +
+      group.items.map(renderCopyItem).join("") +
+      "</ul>"
+    );
+  }
+
+  function renderCopyBlock(block, bulletGroupsById) {
+    if (typeof block === "string") {
+      return "<p>" + escapeHtml(block) + "</p>";
+    }
+
+    if (!block || typeof block !== "object") {
+      return "";
+    }
+
+    if (block.type === "heading" && block.text) {
+      return '<h3 class="guide-copy-heading">' + escapeHtml(block.text) + "</h3>";
+    }
+
+    if (block.type === "bulletGroup" && block.id) {
+      return renderBulletGroup(bulletGroupsById[block.id]);
+    }
+
+    if (block.type === "list" && Array.isArray(block.items)) {
+      return renderBulletGroup(block);
+    }
+
+    if (block.text) {
+      return "<p>" + escapeHtml(block.text) + "</p>";
+    }
+
+    return "";
+  }
+
+  function renderCopyBlocks(blocks, bulletGroupsById) {
+    return (blocks || [])
+      .map(function (block) {
+        return renderCopyBlock(block, bulletGroupsById);
       })
       .join("");
+  }
+
+  function getCopyBlockText(block, bulletGroupsById) {
+    if (typeof block === "string") {
+      return block;
+    }
+
+    if (!block || typeof block !== "object") {
+      return "";
+    }
+
+    if (block.type === "bulletGroup" && block.id && bulletGroupsById[block.id]) {
+      return getCopyBlockText(bulletGroupsById[block.id]);
+    }
+
+    if (Array.isArray(block.items)) {
+      return block.items
+        .map(function (item) {
+          if (typeof item === "string") {
+            return item;
+          }
+
+          return item ? [item.label, item.text].filter(Boolean).join(" ") : "";
+        })
+        .join(" ");
+    }
+
+    return block.text || "";
+  }
+
+  function shouldCollapseCopy(blocks, bullets) {
+    const copyBlocks = blocks || [];
+    const bulletGroupsById = getBulletGroupsById(bullets);
+    const textLength = copyBlocks
+      .map(function (block) {
+        return getCopyBlockText(block, bulletGroupsById);
+      })
+      .join(" ").length;
+
+    return copyBlocks.length > COPY_COLLAPSE_BLOCK_THRESHOLD || textLength > COPY_COLLAPSE_TEXT_THRESHOLD;
+  }
+
+  function renderCopySection(spotId, content, ui) {
+    const detailBlocks = content.details || [];
+    const bulletGroupsById = getBulletGroupsById(content.bullets);
+    const bodyMarkup = renderCopyBlocks(detailBlocks, bulletGroupsById);
+    if (!bodyMarkup) {
+      return "";
+    }
+
+    const isCollapsible = shouldCollapseCopy(detailBlocks, content.bullets);
+    const copyId = "guide-copy-" + spotId;
+
+    return (
+      '<div class="guide-copy-wrap' +
+      (isCollapsible ? " is-collapsible is-collapsed" : "") +
+      '">' +
+      '<div class="guide-copy" id="' +
+      escapeHtml(copyId) +
+      '"' +
+      (isCollapsible ? ' data-copy-panel data-expanded="false"' : "") +
+      ">" +
+      bodyMarkup +
+      "</div>" +
+      (isCollapsible
+        ? '<button class="guide-copy-toggle" type="button" data-copy-toggle aria-expanded="false" aria-controls="' +
+          escapeHtml(copyId) +
+          '" data-read-more="' +
+          escapeHtml(ui.readMore || "Read more") +
+          '" data-read-less="' +
+          escapeHtml(ui.readLess || "Read less") +
+          '">' +
+          escapeHtml(ui.readMore || "Read more") +
+          "</button>"
+        : "") +
+      "</div>"
+    );
   }
 
   function getSpotImages(spotId) {
@@ -400,6 +542,7 @@
     const visibleStops = SPOT_ORDER.filter(function (spotId) {
       return Boolean(SPOTS_BY_ID[spotId]);
     });
+    const miniMap = i18n.getMiniMap(state.lang);
 
     if (!visibleStops.length) {
       return "";
@@ -416,7 +559,11 @@
         : "") +
       "</div>" +
       '<figure class="guide-mini-map-figure">' +
-      '<img class="guide-mini-map-image" src="./assets/print/mini-map-draft.jpg" alt="Mylotopi mini-map showing the 9 tour stops">' +
+      '<img class="guide-mini-map-image" src="' +
+      escapeHtml(miniMap.path || "./assets/maps/en/minimap.jpg") +
+      '" alt="' +
+      escapeHtml(ui.miniMapImageAlt || "Mylotopi mini-map showing the nine tour stops") +
+      '">' +
       "</figure>" +
       '<ol class="guide-mini-map-list">' +
       visibleStops.map(function (spotId, index) {
@@ -458,7 +605,7 @@
       const audio = i18n.getAudio(spotId, state.lang);
       const isActive = state.activeSpot === spotId;
       const sectionIndex = String(index + 1).padStart(2, "0");
-      const bodyMarkup = renderParagraphs(content.body);
+      const copyMarkup = renderCopySection(spotId, content, ui);
       const galleryMarkup = renderGallery(spotId, content, ui);
       const audioMarkup = renderAudioMarkup(audio, content, ui);
 
@@ -485,7 +632,7 @@
         escapeHtml(content.title) +
         "</h2>" +
         '<p class="guide-section-description">' +
-        escapeHtml(content.shortText) +
+        escapeHtml(content.preview || content.shortText) +
         "</p>" +
         "</div>" +
         galleryMarkup +
@@ -497,9 +644,8 @@
         "</p>" +
         (audio.caption ? '<p class="guide-audio-caption">' + escapeHtml(audio.caption) + "</p>" : "") +
         audioMarkup +
-        (spot.audioPlaceholder ? '<p class="guide-audio-placeholder">' + escapeHtml(ui.audioPlaceholderNotice) + "</p>" : "") +
         "</section>" +
-        (bodyMarkup ? '<div class="guide-copy">' + bodyMarkup + "</div>" : "") +
+        copyMarkup +
         "</article>"
       );
     }).join("");
@@ -760,6 +906,30 @@
     updateGalleryView(spotId);
   }
 
+  function handleCopyToggle(event) {
+    const button = event.target.closest("button[data-copy-toggle]");
+    if (!button) {
+      return;
+    }
+
+    const copyWrap = button.closest(".guide-copy-wrap");
+    const copyPanel = copyWrap ? copyWrap.querySelector("[data-copy-panel]") : null;
+    if (!copyWrap || !copyPanel) {
+      return;
+    }
+
+    const isExpanded = button.getAttribute("aria-expanded") === "true";
+    const nextExpanded = !isExpanded;
+    const readMoreLabel = button.dataset.readMore || "Read more";
+    const readLessLabel = button.dataset.readLess || "Read less";
+
+    copyWrap.classList.toggle("is-collapsed", !nextExpanded);
+    copyWrap.classList.toggle("is-expanded", nextExpanded);
+    copyPanel.dataset.expanded = String(nextExpanded);
+    button.setAttribute("aria-expanded", String(nextExpanded));
+    button.textContent = nextExpanded ? readLessLabel : readMoreLabel;
+  }
+
   function handleDocumentClick(event) {
     if (!elements.spotMenu.contains(event.target)) {
       elements.spotMenu.open = false;
@@ -790,8 +960,19 @@
     }
   }
 
-  function init() {
-    // State flow starts from URL params, then the render pipeline builds the page from metadata/locales.
+  function showFatalError(error) {
+    console.error(error);
+    elements.main.innerHTML =
+      '<div class="guide-load-error" role="alert">' +
+      "<strong>Unable to load guide content.</strong>" +
+      "<span>Please serve this folder as a static website and reload the page.</span>" +
+      "</div>";
+  }
+
+  async function init() {
+    await i18n.loadContent();
+
+    // State flow starts from URL params, then the render pipeline builds the page from metadata/content JSON.
     applyLocation();
     renderGuide();
     syncActiveState();
@@ -805,6 +986,7 @@
     elements.spotSwitcher.addEventListener("click", handleSpotClick);
     elements.main.addEventListener("click", handleMiniMapClick);
     elements.main.addEventListener("click", handleGalleryClick);
+    elements.main.addEventListener("click", handleCopyToggle);
     document.addEventListener("click", handleDocumentClick);
     document.addEventListener("keydown", handleDocumentKeydown);
     elements.spotMenu.addEventListener("toggle", handleMenuToggle);
@@ -821,5 +1003,5 @@
     }
   }
 
-  init();
+  init().catch(showFatalError);
 })();

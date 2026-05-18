@@ -1,0 +1,124 @@
+{
+  "id": "welcome",
+  "title": "Welcome / Introduction",
+  "navigationTitle": "Welcome / Introduction",
+  "preview": "Get ready to step into the past! You won't need a time machine for this journey just some comfy shoes.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "What You Will Explore"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "How to Listen to the Tour"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    },
+    {
+      "type": "heading",
+      "text": "A Secret Mission for Young Explorers!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-04"
+    },
+    {
+      "type": "heading",
+      "text": "Next Destination"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-05"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "Travel Back in Time",
+          "text": "Get ready to step into the past! You won't need a time machine for this journey just some comfy shoes."
+        },
+        {
+          "label": "A Restored Village",
+          "text": "Thanks to the beautiful restoration by the Voudouris family, you will see exactly how islanders lived over a century ago, long before Wi-Fi was even invented. You'll also get to snoop around and uncover some secret history from the 1940s!"
+        },
+        {
+          "label": "The Miller's Life",
+          "text": "Today, you get to walk in the shoes of a real wind miller. Spoiler alert: his daily workout routine consisted of lifting heavy sacks of flour all day just to feed the majority of the village."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "The Giant Windmill",
+          "text": "Explore a real, working windmill from the bottom all the way to the top."
+        },
+        {
+          "label": "Village Life",
+          "text": "Peek inside the traditional house and the bakery."
+        },
+        {
+          "label": "Nature & Animals",
+          "text": "Sniff the wonderful herbs in our gardens, visit the threshing floor, and say hello to our lovely donkeys."
+        },
+        {
+          "label": "Underground Secrets",
+          "text": "Walk straight through a real military tunnel!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "It's Super Easy",
+          "text": "Grown-ups, simply scan the QR codes you find using your phone's camera. You do not need to download any apps!"
+        },
+        {
+          "label": "Listen Together",
+          "text": "Just turn up your phone's volume or share some headphones, and follow the numbers around the village."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-04",
+      "items": [
+        {
+          "label": "Grab Your Artistic Equipment",
+          "text": "We will give you a special Mylotopi Sketch and a few colored pencils to take with you."
+        },
+        {
+          "label": "Observe Everything",
+          "text": "As you walk around today, keep your eyes wide open! Look very closely at the giant windmill, the heavy stones, and the old tools. Try to memorize all the beautiful colors you see."
+        },
+        {
+          "label": "Create a Masterpiece",
+          "text": "When you finish your adventure and sit down to relax at our restaurant-café, you can color in your drawing and turn it into a true masterpiece!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-05",
+      "items": [
+        {
+          "label": "Upcoming",
+          "text": "Move forward to our gardens with herbs!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Welcome / Introduction at Mylotopi"
+}

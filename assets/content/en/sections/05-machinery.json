@@ -1,0 +1,98 @@
+{
+  "id": "machinery",
+  "title": "Machinery",
+  "navigationTitle": "Machinery",
+  "preview": "Welcome to the third floor! Please watch your step on the ladder and mind your head as you explore.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "A Mission for our Young Explorers and Adults!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Next Destination"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "Mind Your Head",
+          "text": "Welcome to the third floor! Please watch your step on the ladder and mind your head as you explore."
+        },
+        {
+          "label": "The Muscle of the Mill",
+          "text": "You are now looking at the real power of the windmill. Look at that massive wooden beam above the stones. It is the main connector linking the heavy stones inside, the gears, and the giant spinning sails outside!"
+        },
+        {
+          "label": "Two-Ton Stones",
+          "text": "These massive grinding stones weigh over two tons together! They were imported all the way from Nisyros Island, which is famous for producing a unique, super-strong stone perfect for milling."
+        },
+        {
+          "label": "The Feeder & The Bell",
+          "text": "Look just above the stones for a wooden box called The Feeder, where the miller poured the raw wheat. But how did he know when it was empty over all the loud noise? Look closely for a tiny bell! It would ring automatically when the wheat ran low to tell the miller to refill it."
+        },
+        {
+          "label": "The First Brake",
+          "text": "See that wooden lever connected to a tiny rope? That connects all the way down to the first floor and is the first braking system we talked about downstairs."
+        },
+        {
+          "label": "Dropping the Flour",
+          "text": "Look down near the lever to find a trap door connecting to a pipe. As soon as the flour was perfectly crushed, it dropped straight down that pipe to the bottom floor!"
+        },
+        {
+          "label": "The Miller's \"Tip\"",
+          "text": "Right next to the main pipe is a second, smaller trap door. In the old days, people didn't always pay with money. Instead, the miller used this door to collect his \"tip\" keeping a small percentage of the flour for his own family as payment for his hard work!"
+        },
+        {
+          "label": "Smooth Spinning",
+          "text": "Spot the little can near the trap doors. Downstairs he used cow fat, but up here, he used a special mixture of olive oil and soap to keep the upper gears running smoothly."
+        },
+        {
+          "label": "The Emergency Brake",
+          "text": "Look next to the ladder for a really thick rope. If the miller needed to completely stop making flour in a hurry, he pulled this rope the second braking system!"
+        },
+        {
+          "label": "A Ship's Ceiling",
+          "text": "Lastly, look up at the ceiling. What does it remind you of? It is actually designed in the shape of a ship to enhance the power of the mechanism and produce flour more quickly!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "Listen for the Bell and Ring it",
+          "text": "Can you find the tiny bell that warned the miller when the wheat was running out? Can you ring it?"
+        },
+        {
+          "label": "Find the Hidden Flour",
+          "text": "Scan the floor and see if you can spot the special \"tip\" door where the miller kept his hard-earned payment!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "Upcoming",
+          "text": "Then move forward to the Threshing Floor and to the Donkeys Area!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Machinery at Mylotopi"
+}

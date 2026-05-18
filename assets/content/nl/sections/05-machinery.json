@@ -1,0 +1,98 @@
+{
+  "id": "machinery",
+  "title": "De machinerie van de molen",
+  "navigationTitle": "De machinerie van de molen",
+  "preview": "Welkom op de derde verdieping! Let alsjeblieft goed op waar je loopt op de ladder en pas op je hoofd terwijl je op ontdekking gaat.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Een missie voor onze jonge ontdekkingsreizigers en volwassenen!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Volgende bestemming"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "Pas op je hoofd",
+          "text": "Welkom op de derde verdieping! Let alsjeblieft goed op waar je loopt op de ladder en pas op je hoofd terwijl je op ontdekking gaat."
+        },
+        {
+          "label": "De spierballen van de molen",
+          "text": "Je kijkt nu naar de echte kracht van de windmolen. Kijk eens naar die enorme houten balk boven de stenen. Dit is de belangrijkste verbinding tussen de zware stenen binnenin, de tandwielen en de gigantische draaiende zeilen buiten!"
+        },
+        {
+          "label": "Stenen van twee ton",
+          "text": "Deze enorme maalstenen wegen samen meer dan twee ton! Ze werden helemaal geïmporteerd vanaf het eiland Nisyros, dat beroemd is om de productie van een unieke, supersterke steen die perfect is voor het malen."
+        },
+        {
+          "label": "De Voeder & De Bel",
+          "text": "Zoek net boven de stenen naar een houten kist die \"De Voeder\" wordt genoemd; hier stortte de molenaar de rauwe tarwe in. Maar hoe wist hij boven al het lawaai uit dat de kist leeg was? Zoek goed naar een klein belletje! Dit rinkelde automatisch wanneer de tarwe bijna op was om de molenaar te vertellen dat hij hem moest bijvullen."
+        },
+        {
+          "label": "De eerste rem",
+          "text": "Zie je die houten hendel die verbonden is met een klein touwtje? Dat staat in verbinding met de eerste verdieping en is het eerste remsysteem waar we beneden over hebben gepraat."
+        },
+        {
+          "label": "Het meel laten vallen",
+          "text": "Kijk naar beneden bij de hendel om een valluik te vinden dat is aangesloten op een buis. Zodra het meel perfect vermalen was, viel het rechtstreeks door die buis naar de onderste verdieping!"
+        },
+        {
+          "label": "De \"fooi\" van de molenaar",
+          "text": "Direct naast de hoofdbuis zit een tweede, kleiner valluik. Vroeger betaalden mensen niet altijd met geld. In plaats daarvan gebruikte de molenaar dit luik om zijn \"fooi\" te innen: hij hield een klein percentage van het meel voor zijn eigen gezin als betaling voor zijn harde werk!"
+        },
+        {
+          "label": "Soepel draaien",
+          "text": "Zoek het kleine blikje bij de valluiken. Beneden gebruikte hij koeienvet, maar hierboven gebruikte hij een speciaal mengsel van olijfolie en zeep om de bovenste tandwielen soepel te laten draaien."
+        },
+        {
+          "label": "De noodrem",
+          "text": "Zoek naast de ladder naar een heel dik touw. Als de molenaar in allerijl moest stoppen met het malen van meel, trok hij aan dit touw: het tweede remsysteem!"
+        },
+        {
+          "label": "Een scheepsplafond",
+          "text": "Kijk tot slot omhoog naar het plafond. Waar doet het je aan denken? Het is eigenlijk ontworpen in de vorm van een schip om de kracht van het mechanisme te vergroten en sneller meel te produceren!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "Luister naar de bel en laat hem luiden",
+          "text": "Kun jij het kleine belletje vinden dat de molenaar waarschuwde wanneer de tarwe opraakte? Kun je hem luiden?"
+        },
+        {
+          "label": "Zoek het verborgen meel",
+          "text": "Scan de vloer en kijk of je het speciale \"fooi\"-luikje kunt vinden waar de molenaar zijn welverdiende loon bewaarde!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "Binnenkort",
+          "text": "Ga daarna verder naar de dorsvloer en het ezelgedeelte!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "De machinerie van de molen at Mylotopi"
+}

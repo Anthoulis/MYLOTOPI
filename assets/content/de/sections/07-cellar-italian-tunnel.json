@@ -1,0 +1,74 @@
+{
+  "id": "cellar-italian-tunnel",
+  "title": "Der geheime Tunnel & Keller",
+  "navigationTitle": "Der geheime Tunnel & Keller",
+  "preview": "Bereiten Sie sich auf einen kompletten Tapetenwechsel vor, wenn wir unter die Erde gehen! Wenn Sie in die kühle Luft hinabsteigen, schauen Sie nach links und rechts.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Eine Mission für unsere jungen Entdecker und Erwachsene!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Nächstes Ziel"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "Ein Tapetenwechsel",
+          "text": "Bereiten Sie sich auf einen kompletten Tapetenwechsel vor, wenn wir unter die Erde gehen! Wenn Sie in die kühle Luft hinabsteigen, schauen Sie nach links und rechts."
+        },
+        {
+          "label": "Dekorative Flaschen",
+          "text": "Sie werden Reihen von lokalem Wein vom Weingut Skevofilax drüben in Kos sehen. Wir bewahren diese Flaschen hier als Dekoration auf! Unsere eigentlichen Trinkweine werden sicher im Hauptkeller gelagert, wo die Temperatur perfekt für sie geeignet ist."
+        },
+        {
+          "label": "Geschichte des Zweiten Weltkriegs",
+          "text": "Damals in den 1940er Jahren, während des Zweiten Weltkriegs, war dieser Raum nicht für Wein gedacht – er diente dem Überleben. Dieser 20 Meter lange Tunnel wurde während des Krieges von italienischen Soldaten gebaut."
+        },
+        {
+          "label": "Der Eiltunnel",
+          "text": "Die Soldaten nutzten diesen Durchgang als Eiltunnel, eine geheime Abkürzung, um wegzulaufen und sich vor ihren Gegnern zu verstecken. Der Keller selbst wurde als sicherer Unterschlupf genutzt, wo sie schlafen, sich entspannen und vor den Kämpfen draußen geschützt bleiben konnten."
+        },
+        {
+          "label": "Eine versteckte Festung",
+          "text": "Am Ende des Tunnels kommen Sie in unseren Hinterhof, der heute unser friedliches Restaurant ist. Aber schauen Sie noch einmal auf das Steindach zurück, bevor Sie hinausgehen! In den 1940er Jahren war dieses gesamte Gebiet ein Schießstand. Die Oberseite war mit schwerem Stein bedeckt, um die Soldaten zu schützen, und direkt am Rand hatten sie Maschinengewehre, um den Hang zu verteidigen. Es ist kaum zu glauben, dass dieser ruhige, wunderschöne Ort für eine Mahlzeit ein so stark bewachter Ort auf der Insel war!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "Streng geheim",
+          "text": "Ihr seid jetzt auf einer geheimen Mission! Könnt ihr beim Durchschreiten des Soldatentunnels genau ausrechnen, wie viele Weinflaschen an den Wänden aufgereiht sind?"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "Als Nächstes",
+          "text": "Wenn Sie die Erkundung des Tunnels beendet haben, kommen Sie bitte zurück und suchen Sie unseren Reiseleiter auf, damit er Ihnen den Weg zu Ihren nächsten fantastischen Stationen zeigen kann dem traditionellen Haus und der Bäckerei!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Der geheime Tunnel & Keller at Mylotopi"
+}

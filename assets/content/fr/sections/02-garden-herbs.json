@@ -1,0 +1,86 @@
+{
+  "id": "garden-herbs",
+  "title": "Notre jardin et ses herbes aromatiques !",
+  "navigationTitle": "Notre jardin et ses herbes aromatiques !",
+  "preview": "Avant l'arrivée de la médecine moderne et des supermarchés, ces jardins constituaient le kit de survie de l'île. Ces parcelles sont remplies des mêmes herbes qui poussent ici depuis des siècles.",
+  "details": [
+    {
+      "type": "heading",
+      "text": "Cuisine ou pharmacie ? Prenez une grande inspiration ! Est-ce que cela sent la cuisine géante en plein air ou la pharmacie de village ? En réalité, c’est un peu les deux !"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Une mission pour nos jeunes détectives des plantes et les adultes !"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Prochaine destination "
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "Le kit de survie ultime",
+          "text": "Avant l'arrivée de la médecine moderne et des supermarchés, ces jardins constituaient le kit de survie de l'île. Ces parcelles sont remplies des mêmes herbes qui poussent ici depuis des siècles."
+        },
+        {
+          "label": "Le docteur de la nature",
+          "text": "Des herbes comme le thym, l'origan et la marjolaine n'étaient pas seulement utilisées pour donner un goût incroyable aux repas : elles faisaient office de médecin local ! Si quelqu'un avait mal au ventre, la famille du meunier ne courait pas à la pharmacie pour un sirop rose au goût désagréable ; elle venait ici même cueillir des feuilles pour un remède naturel."
+        },
+        {
+          "label": "Une palette de peintre",
+          "text": "Admirez la magnifique lavande violette et la menthe d'un vert éclatant ! On dirait que quelqu'un les a peintes directement dans le jardin. Prêtez une attention particulière à ces couleurs vives !"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "Amusement à l'ancienne",
+          "text": "Rangez vos téléphones un instant, nous revenons aux méthodes classiques ! Voyez-vous les pièces de puzzle physiques éparpillées tout autour ?"
+        },
+        {
+          "label": "Utilisez vos sens",
+          "text": "Votre mission est de deviner quel mot correspond à quelle plante. Vous devrez utiliser vos yeux et votre nez !"
+        },
+        {
+          "label": "Frottez et sentez",
+          "text": "Allez-y, frottez délicatement les feuilles et sentez-les (mais s'il vous plaît, ne broutez pas : ne mangez pas le jardin avant le déjeuner !)."
+        },
+        {
+          "label": "Résolvez le puzzle",
+          "text": "Pouvez-vous déplacer les pièces du puzzle pour les associer aux bonnes herbes ? Essayez de faire la différence entre la menthe et l'origan. Laquelle sent la délicieuse pizza, et laquelle sent la sieste douillette ?"
+        },
+        {
+          "label": "Rappel pour le carnet de croquis",
+          "text": "Gardez l'œil ouvert, détectives des plantes ! Mémorisez les différentes nuances de vert, de gris et de violet pour colorier votre croquis Mylotopi plus tard."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "À venir",
+          "text": "Dirigez-vous ensuite vers le moulin à vent historique !"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Notre jardin et ses herbes aromatiques ! at Mylotopi"
+}

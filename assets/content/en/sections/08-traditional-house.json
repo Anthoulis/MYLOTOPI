@@ -1,0 +1,111 @@
+{
+  "id": "traditional-house",
+  "title": "Traditional house",
+  "navigationTitle": "Traditional house",
+  "preview": "Welcome to the traditional house! This amazing little home is over 130 years old. It measures less than 20 square meters, but believe it or not, 8 to 10 people used to live here! The grandparents, the parents, and all of their children shared this one single room.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "paragraph",
+      "text": "Where Did Everyone Sleep? The grandparents slept right over by the warm fireplace. The parents slept up high in the loft bed on the opposite side, while the older children slept in the beds next to it and on the couch."
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "A Mission for our Young Explorers and Adults!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    },
+    {
+      "type": "heading",
+      "text": "Next Destination"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-04"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "A Tiny, Crowded Home",
+          "text": "Welcome to the traditional house! This amazing little home is over 130 years old. It measures less than 20 square meters, but believe it or not, 8 to 10 people used to live here! The grandparents, the parents, and all of their children shared this one single room."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "Rock-a-Bye Baby",
+          "text": "What about the baby? Look for the little wooden cradle! To help the baby fall asleep, someone could just gently pull that tiny hanging rope to rock it."
+        },
+        {
+          "label": "Clever Storage",
+          "text": "Notice the space underneath the family beds that was their main storage room."
+        },
+        {
+          "label": "Daily Chores & Decor",
+          "text": "Over on the left side, you can see a large wooden loom they used to make new clothes and repair old ones, alongside a chest where they kept their personal items. You’ll also spot a sifter used for flour, and beautiful old photographs and religious pictures on the walls."
+        },
+        {
+          "label": "Vases & Uniforms",
+          "text": "Next to the chest, look for two vases: the large one was for wine, and the small one was for water. Just above them hang two beautiful traditional uniforms that the ladies of the house wore for weddings and special events."
+        },
+        {
+          "label": "The Heart of the Home",
+          "text": "Since the house wasn't restored like modern homes, the fireplace was used to cook all their meals and keep the whole family warm. Right next to it is a small hand-grinder mill for grinding flour, along with their daily kitchenware and traditional plates decorated with pretty painted flowers."
+        },
+        {
+          "label": "The Hanging Swing",
+          "text": "Look up at the ceiling! Do you see something hanging that looks a bit like a swing? It’s not for playing! They kept their fresh bread in the top part to keep it safely away from hungry mice. In the bottom part, they stored carobs. Back then, they didn't have candy bars, so sweet carobs were given to the children as a delicious chocolate treat!"
+        },
+        {
+          "label": "A Traditional Refrigerator",
+          "text": "Lastly, look for the wooden cabinet. Believe it or not, this is a traditional refrigerator! It has two parts. They put big ice cubes in the top, and as the ice melted, they could open a little tap to drink the ice-cold water. The cold from the top part also chilled the bottom section perfectly to keep their food fresh!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "Spin the Mill",
+          "text": "You have a lot to do in this busy little house! First, can you find the hand-grinder mill? Try putting the wooden handle into the gap and see if you can spin it around!"
+        },
+        {
+          "label": "Look Up & Down",
+          "text": "After your hard work, can you spot the hanging swing that kept the bread away from the mice?"
+        },
+        {
+          "label": "Rock the Baby",
+          "text": "What about the tiny rope they pulled to rock the baby to sleep? Can you make the baby fall asleep by rocking the rope? Is it hard for you?"
+        },
+        {
+          "label": "Imagine This",
+          "text": "Once you have found them all, imagine what it would be like sharing this small room with 8 to 10 of your family members!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-04",
+      "items": [
+        {
+          "label": "Upcoming",
+          "text": "Then move forward to Bakery!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Traditional house at Mylotopi"
+}

@@ -1,0 +1,124 @@
+{
+  "id": "welcome",
+  "title": "Willkommen beim Windmühlen-Erlebnis!",
+  "navigationTitle": "Willkommen beim Windmühlen-Erlebnis!",
+  "preview": "Machen Sie sich bereit, in die Vergangenheit einzutreten! Sie brauchen für diese Reise keine Zeitmaschine – nur bequeme Schuhe.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Was Sie erkunden werden"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "So hören Sie sich die Tour an"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    },
+    {
+      "type": "heading",
+      "text": "Eine geheime Mission für junge Entdecker!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-04"
+    },
+    {
+      "type": "heading",
+      "text": "Nächstes Ziel"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-05"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "Reise in die Vergangenheit",
+          "text": "Machen Sie sich bereit, in die Vergangenheit einzutreten! Sie brauchen für diese Reise keine Zeitmaschine – nur bequeme Schuhe."
+        },
+        {
+          "label": "Ein restauriertes Dorf",
+          "text": "Dank der wunderschönen Restaurierung durch die Familie Voudouris werden Sie genau sehen, wie die Inselbewohner vor über einem Jahrhundert lebten, lange bevor WLAN überhaupt erfunden wurde. Sie können auch ein wenig herumschnüffeln und einige geheime Geschichten aus den 1940er Jahren aufdecken!"
+        },
+        {
+          "label": "Das Leben des Müllers",
+          "text": "Heute dürfen Sie in die Fußstapfen eines echten Windmüllers treten. Achtung, Spoiler: Sein tägliches Workout bestand darin, den ganzen Tag schwere Mehlsäcke zu heben, nur um den Großteil des Dorfes zu ernähren."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "Die riesige Windmühle",
+          "text": "Erkunden Sie eine echte, funktionierende Windmühle von ganz unten bis ganz nach oben."
+        },
+        {
+          "label": "Dorfleben",
+          "text": "Werfen Sie einen Blick in das traditionelle Haus und die Bäckerei."
+        },
+        {
+          "label": "Natur & Tiere",
+          "text": "Schnuppern Sie an den wunderbaren Kräutern in unseren Gärten, besuchen Sie den Dreschplatz und sagen Sie unseren lieben Eseln Hallo."
+        },
+        {
+          "label": "Unterirdische Geheimnisse",
+          "text": "Gehen Sie direkt durch einen echten Militärtunnel!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "Es ist super einfach",
+          "text": "Erwachsene, scannen Sie einfach die QR-Codes, die Sie finden, mit der Kamera Ihres Telefons. Sie müssen keine Apps herunterladen!"
+        },
+        {
+          "label": "Gemeinsam zuhören",
+          "text": "Drehen Sie einfach die Lautstärke Ihres Telefons auf oder teilen Sie sich ein paar Kopfhörer und folgen Sie den Zahlen durch das Dorf."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-04",
+      "items": [
+        {
+          "label": "Schnappt euch eure Stifte",
+          "text": "Wir geben euch eine spezielle Mylotopi-Zeichnung und ein paar Buntstifte zum Mitnehmen."
+        },
+        {
+          "label": "Beobachtet alles",
+          "text": "Wenn ihr heute herumlauft, haltet die Augen weit offen! Schaut euch die riesige Windmühle, die schweren Steine und die alten Werkzeuge ganz genau an. Versucht, euch all die schönen Farben zu merken, die ihr seht."
+        },
+        {
+          "label": "Erschafft ein Meisterwerk",
+          "text": "Wenn ihr euer Abenteuer beendet habt und euch in unserem Restaurant-Café entspannt, könnt ihr eure Zeichnung ausmalen und sie in ein wahres Meisterwerk verwandeln!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-05",
+      "items": [
+        {
+          "label": "Als Nächstes",
+          "text": "Gehen Sie weiter zu unseren Gärten mit Kräutern!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Willkommen beim Windmühlen-Erlebnis! at Mylotopi"
+}

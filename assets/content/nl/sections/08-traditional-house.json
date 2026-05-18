@@ -1,0 +1,111 @@
+{
+  "id": "traditional-house",
+  "title": "Het Traditionele Huis",
+  "navigationTitle": "Het Traditionele Huis",
+  "preview": "Welkom in het traditionele huis! Dit geweldige huisje is meer dan 130 jaar oud. Het is minder dan 20 vierkante meter groot, maar geloof het of niet: vroeger woonden hier 8 tot 10 mensen! De grootouders, de ouders en al hun kinderen deelden deze ene kamer.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "paragraph",
+      "text": "Waar Sliep Iedereen? De grootouders sliepen vlak bij de warme open haard. De ouders sliepen hoog in het hoogslaperbed aan de overkant, terwijl de oudere kinderen in de bedden daarnaast en op de bank sliepen."
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Een Missie voor onze Jonge Ontdekkingsreizigers en Volwassenen!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    },
+    {
+      "type": "heading",
+      "text": "Volgende Bestemming"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-04"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "Een Piepklein, Overvol Huis",
+          "text": "Welkom in het traditionele huis! Dit geweldige huisje is meer dan 130 jaar oud. Het is minder dan 20 vierkante meter groot, maar geloof het of niet: vroeger woonden hier 8 tot 10 mensen! De grootouders, de ouders en al hun kinderen deelden deze ene kamer."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "Slaap, Kindje, Slaap",
+          "text": "En de baby? Zoek de kleine houten wieg! Om de baby te helpen in slaap te vallen, kon iemand voorzichtig aan dat kleine hangende touwtje trekken om de wieg te laten schommelen."
+        },
+        {
+          "label": "Slimme Opbergruimte",
+          "text": "Let op de ruimte onder de familiebedden; dat was hun belangrijkste opslagruimte."
+        },
+        {
+          "label": "Dagelijkse Klusjes & Decoratie",
+          "text": "Aan de linkerkant zie je een groot houten weefgetouw dat ze gebruikten om nieuwe kleren te maken en oude te repareren, naast een kist waarin ze hun persoonlijke spullen bewaarden. Je ziet ook een zeef voor het meel, en prachtige oude foto's en religieuze afbeeldingen aan de muren."
+        },
+        {
+          "label": "Vazen & Uniformen",
+          "text": "Zoek naast de kist naar twee vazen: de grote was voor wijn en de kleine voor water. Vlak daarboven hangen twee prachtige traditionele uniformen die de dames van het huis droegen voor bruiloften en speciale gelegenheden."
+        },
+        {
+          "label": "Het Hart van het Huis",
+          "text": "Omdat het huis niet is gerestaureerd zoals moderne woningen, werd de open haard gebruikt om alle maaltijden te bereiden en het hele gezin warm te houden. Direct daarnaast staat een kleine handmolen voor het malen van meel, samen met hun dagelijkse keukengerei en traditionele borden versierd met mooie geschilderde bloemen."
+        },
+        {
+          "label": "De Hangende Schommel",
+          "text": "Kijk eens omhoog naar het plafond! Zie je iets hangen dat een beetje op een schommel lijkt? Het is niet om mee te spelen! In het bovenste gedeelte bewaarden ze vers brood om het veilig weg te houden van hongerige muizen. Onderin bewaarden ze johannesbrood (carobs). Omdat ze vroeger geen snoeprepen hadden, kregen de kinderen zoet johannesbrood als een heerlijke chocoladetraktatie!"
+        },
+        {
+          "label": "Een Traditionele Koelkast",
+          "text": "Zoek ten slotte naar de houten kast. Geloof het of niet, dit is een traditionele koelkast! Deze bestaat uit twee delen: bovenin legden ze grote ijsblokken en terwijl het ijs smolt, konden ze een kraantje opendraaien om ijskoud water te drinken. De kou van het bovenste gedeelte koelde ook het onderste gedeelte perfect om hun eten vers te houden!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "Draai aan de Molen",
+          "text": "Je hebt veel te doen in dit drukke huisje! Kun je eerst de handmolen vinden? Probeer de houten hendel in de opening te steken en kijk of je hem rond kunt draaien!"
+        },
+        {
+          "label": "Kijk Omhoog & Omlaag",
+          "text": "Kun je na je harde werk de hangende schommel vinden die het brood uit de buurt van de muizen hield?"
+        },
+        {
+          "label": "Wieg de Baby",
+          "text": "En hoe zit het met het kleine touwtje waaraan ze trokken om de baby in slaap te wiegen? Kun jij de baby in slaap laten vallen door aan het touwtje te trekken? Is het lastig voor je?"
+        },
+        {
+          "label": "Stel je Voor",
+          "text": "Als je ze allemaal gevonden hebt, stel je dan eens voor hoe het zou zijn om deze kleine kamer te delen met 8 tot 10 gezinsleden!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-04",
+      "items": [
+        {
+          "label": "Binnenkort",
+          "text": "Ga daarna verder naar de Bakkerij!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Het Traditionele Huis at Mylotopi"
+}

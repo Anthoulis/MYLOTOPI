@@ -1,0 +1,111 @@
+{
+  "id": "traditional-house",
+  "title": "Das traditionelle Haus",
+  "navigationTitle": "Das traditionelle Haus",
+  "preview": "Willkommen im traditionellen Haus! Dieses erstaunliche kleine Haus ist über 130 Jahre alt. Es ist weniger als 20 Quadratmeter groß, aber ob Sie es glauben oder nicht, hier lebten früher 8 bis 10 Personen! Die Großeltern, die Eltern und alle ihre Kinder teilten sich diesen einzigen Raum.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wo haben alle geschlafen? Die Großeltern schliefen direkt am warmen Kamin. Die Eltern schliefen hoch oben im Hochbett auf der gegenüberliegenden Seite, während die älteren Kinder in den Betten daneben und auf der Couch schliefen."
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Eine Mission für unsere jungen Entdecker und Erwachsene!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    },
+    {
+      "type": "heading",
+      "text": "Nächstes Ziel"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-04"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "Ein winziges, überfülltes Zuhause",
+          "text": "Willkommen im traditionellen Haus! Dieses erstaunliche kleine Haus ist über 130 Jahre alt. Es ist weniger als 20 Quadratmeter groß, aber ob Sie es glauben oder nicht, hier lebten früher 8 bis 10 Personen! Die Großeltern, die Eltern und alle ihre Kinder teilten sich diesen einzigen Raum."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "Schlaf, Kindlein, schlaf",
+          "text": "Und was ist mit dem Baby? Suchen Sie nach der kleinen Holzwiege! Um dem Baby beim Einschlafen zu helfen, konnte man einfach vorsichtig an dem kleinen herabhängenden Seil ziehen, um es zu schaukeln."
+        },
+        {
+          "label": "Clevere Aufbewahrung",
+          "text": "Beachten Sie den Platz unter den Familienbetten – das war ihr wichtigster Lagerraum."
+        },
+        {
+          "label": "Tägliche Aufgaben & Dekoration",
+          "text": "Auf der linken Seite sehen Sie einen großen Webstuhl aus Holz, mit dem sie neue Kleidung herstellten und alte reparierten, daneben eine Truhe, in der sie ihre persönlichen Gegenstände aufbewahrten. Sie finden dort auch ein Sieb für Mehl sowie wunderschöne alte Fotografien und religiöse Bilder an den Wänden."
+        },
+        {
+          "label": "Vasen & Uniformen",
+          "text": "Suchen Sie neben der Truhe nach zwei Vasen: Die große war für Wein und die kleine für Wasser. Direkt darüber hängen zwei wunderschöne traditionelle Uniformen (Trachten), welche die Damen des Hauses zu Hochzeiten und besonderen Anlässen trugen."
+        },
+        {
+          "label": "Das Herzstück des Hauses",
+          "text": "Da das Haus nicht wie moderne Wohnungen renoviert wurde, diente der Kamin dazu, alle Mahlzeiten zu kochen und die ganze Familie warm zu halten. Direkt daneben befindet sich eine kleine Handmühle zum Mahlen von Mehl, zusammen mit ihrem täglichen Küchengeschirr und traditionellen Tellern, die mit hübschen gemalten Blumen verziert sind."
+        },
+        {
+          "label": "Die hängende Schaukel",
+          "text": "Schauen Sie an die Decke! Sehen Sie etwas, das ein bisschen wie eine Schaukel aussieht? Sie ist nicht zum Spielen da! Im oberen Teil bewahrten sie ihr frisches Brot auf, um es sicher vor hungrigen Mäusen zu schützen. Im unteren Teil lagerten sie Johannisbrot. Damals gab es keine Schokoriegel, daher wurde den Kindern süßes Johannisbrot als köstliche „Schokoladen-Leckerei“ gegeben!"
+        },
+        {
+          "label": "Ein traditioneller Kühlschrank",
+          "text": "Suchen Sie schließlich nach dem Holzschrank. Ob Sie es glauben oder nicht, das ist ein traditioneller Kühlschrank! Er besteht aus zwei Teilen. Oben legten sie große Eiswürfel hinein, und wenn das Eis schmolz, konnten sie einen kleinen Hahn öffnen, um eiskaltes Wasser zu trinken. Die Kälte des oberen Teils kühlte auch den unteren Bereich perfekt, um ihre Lebensmittel frisch zu halten!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "Dreht die Mühle",
+          "text": "In diesem geschäftigen kleinen Haus gibt es viel zu tun! Könnt ihr zuerst die Handmühle finden? Versucht, den Holzgriff in die Lücke zu stecken und seht nach, ob ihr sie im Kreis drehen könnt!"
+        },
+        {
+          "label": "Schaut nach oben und unten",
+          "text": "Könnt ihr nach eurer harten Arbeit die hängende Schaukel entdecken, die das Brot vor den Mäusen geschützt hat?"
+        },
+        {
+          "label": "Wiegt das Baby",
+          "text": "Und was ist mit dem winzigen Seil, an dem sie zogen, um das Baby in den Schlaf zu wiegen? Könnt ihr das Baby zum Einschlafen bringen, indem ihr das Seil schaukelt? Ist das schwer für euch?"
+        },
+        {
+          "label": "Stellt euch das vor",
+          "text": "Wenn ihr alles gefunden habt, stellt euch vor, wie es wäre, diesen kleinen Raum mit 8 bis 10 eurer Familienmitglieder zu teilen!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-04",
+      "items": [
+        {
+          "label": "Als Nächstes",
+          "text": "Gehen Sie dann weiter zur Bäckerei!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Das traditionelle Haus at Mylotopi"
+}

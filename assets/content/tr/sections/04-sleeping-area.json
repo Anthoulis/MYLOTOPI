@@ -1,0 +1,74 @@
+{
+  "id": "sleeping-area",
+  "title": "Yel değirmeni uyku alanı",
+  "navigationTitle": "Yel değirmeni uyku alanı",
+  "preview": "İkinci kata hoş geldiniz! Ahşap merdivenlerde adımlarınıza dikkat edin ve başınızı yukarıdaki ahşaplara çarpmamaya özen gösterin. Ailenin nasıl yaşadığına dair büyük bir sürprize hazır olun.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Soru!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Sıradaki Durak"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "label": "Adımlarınıza Dikkat Edin",
+          "text": "İkinci kata hoş geldiniz! Ahşap merdivenlerde adımlarınıza dikkat edin ve başınızı yukarıdaki ahşaplara çarpmamaya özen gösterin. Ailenin nasıl yaşadığına dair büyük bir sürprize hazır olun."
+        },
+        {
+          "label": "Sağınızda",
+          "text": "Duvarlarda, Yunanistan'ın dört bir yanından farklı tarihi yel değirmenlerini gösteren bazı güzel resimler göreceksiniz. Ancak bu alan sadece bir galeri değildi!"
+        },
+        {
+          "label": "Çok Gürültülü Bir Yatak Odası",
+          "text": "Tam burada, sağ tarafta aslında yel değirmencisi ve tüm ailesi uyurdu! Bütün bina titrerken, rüzgar uğuldarken ve sadece birkaç adım ötede ağır makineler gürültüyle buğday ezerken huzurlu bir şekerleme yapmaya çalıştığınızı hayal edebiliyor musunuz? Uykuları çok ağır olmalı!"
+        },
+        {
+          "label": "Solunuzda",
+          "text": "Şimdi sol tarafa doğru bakın. Burası çok önemli ve yoğun bir depolama alanıydı."
+        },
+        {
+          "label": "Unu Korumak",
+          "text": "Değirmenci, odanın bu tarafını, öğütülmeyi bekleyen tüm ağır işlenmemiş buğday çuvallarını ve köyü doyurmak üzere dışarı çıkmaya hazır, taze doldurulmuş yumuşacık beyaz un çuvallarını güvenli bir şekilde istiflemek için kullanırdı. Onları koruyabilmek için tam burada, yatağının yakınında tutardı!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "label": "Bunu Hayal Edin",
+          "text": "İkinci katta tıpkı eskiden onların yaptığı gibi uyuduğunuzu hayal edebiliyor musunuz?"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "label": "Sırada",
+          "text": "Ardından yel değirmeni makine aksamına doğru ilerleyin."
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Yel değirmeni uyku alanı at Mylotopi"
+}
