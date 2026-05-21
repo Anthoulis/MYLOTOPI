@@ -2,7 +2,7 @@
   "id": "threshing-floor-donkeys",
   "title": "Dreschplatz & die Esel!",
   "navigationTitle": "Dreschplatz & die Esel!",
-  "preview": "Willkommen zurück draußen! Atmen Sie tief die frische Luft ein. Sie stehen jetzt in der Nähe des traditionellen Dreschplatzes, der stark an eine große, runde Tanzfläche aus Stein erinnert.",
+  "preview": "Frische Luft & Steinböden: Willkommen zurück draußen! Atmen Sie tief die frische Luft ein. Sie stehen jetzt in der Nähe des traditionellen Dreschplatzes, der stark an eine große, runde Tanzfläche aus Stein erinnert.",
   "details": [
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Nächstes Ziel"
+      "text": "Nächstes Ziel:"
     },
     {
       "type": "bulletGroup",
@@ -30,24 +30,19 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Frische Luft & Steinböden",
-          "text": "Willkommen zurück draußen! Atmen Sie tief die frische Luft ein. Sie stehen jetzt in der Nähe des traditionellen Dreschplatzes, der stark an eine große, runde Tanzfläche aus Stein erinnert."
+          "text": "Frische Luft & Steinböden: Willkommen zurück draußen! Atmen Sie tief die frische Luft ein. Sie stehen jetzt in der Nähe des traditionellen Dreschplatzes, der stark an eine große, runde Tanzfläche aus Stein erinnert."
         },
         {
-          "label": "Der schwindelige Esel",
-          "text": "Schauen Sie genau in die Mitte des Kreises auf den Holzpfahl. In alten Zeiten band der Müller ein Seil von diesem Pfahl locker um den Hals eines Esels. Die Aufgabe des Esels war es, in einem großen Kreis immer wieder herumzulaufen und mit seinen schweren Füßen die geernteten Feldfrüchte zu stampfen und zu zerquetschen, um die Samen freizulegen!"
+          "text": "Der schwindelige Esel: Schauen Sie genau in die Mitte des Kreises auf den Holzpfahl. In alten Zeiten band der Müller ein Seil von diesem Pfahl locker um den Hals eines Esels. Die Aufgabe des Esels war es, in einem großen Kreis immer wieder herumzulaufen und mit seinen schweren Füßen die geernteten Feldfrüchte zu stampfen und zu zerquetschen, um die Samen freizulegen!"
         },
         {
-          "label": "Den Weizen trennen",
-          "text": "Nachdem der fleißige Esel all dieses schwindelerregende Stampfen erledigt hatte, griff der Müller ein, um den weißen Weizen sorgfältig vom braunen Weizen zu trennen. (Heute verwenden wir diese Methode nicht mehr – wir kaufen unseren Weizen direkt von lokalen Produzenten auf der Insel!)"
+          "text": "Den Weizen trennen: Nachdem der fleißige Esel all dieses schwindelerregende Stampfen erledigt hatte, griff der Müller ein, um den weißen Weizen sorgfältig vom braunen Weizen zu trennen. (Heute verwenden wir diese Methode nicht mehr – wir kaufen unseren Weizen direkt von lokalen Produzenten auf der Insel!)"
         },
         {
-          "label": "Treffen Sie die wahren Stars",
-          "text": "Sie müssen sich die Tiere nicht nur vorstellen! Schauen Sie in die Nähe und Sie werden die wahren Stars der Farm treffen: unsere beiden lieben Esel. Die stolze Mama heißt Melina, sie ist 6 Jahre alt, und ihre süße kleine Tochter heißt Katie, die gerade mal 2 Jahre alt ist."
+          "text": "Treffen Sie die wahren Stars: Sie müssen sich die Tiere nicht nur vorstellen! Schauen Sie in die Nähe und Sie werden die wahren Stars der Farm treffen: unsere beiden lieben Esel. Die stolze Mama heißt Melina, sie ist 6 Jahre alt, und ihre süße kleine Tochter heißt Katie, die gerade mal 2 Jahre alt ist."
         },
         {
-          "label": "Der vermisste Papa",
-          "text": "Was Katies Papa angeht... nun, eigentlich weiß niemand, wo er hin ist! Er hat es geliebt, sehr laut zu singen, also denken wir, dass er in die nächste Stadt gelaufen ist, um eine Esel-Rockband zu gründen!"
+          "text": "Der vermisste Papa: Was Katies Papa angeht... nun, eigentlich weiß niemand, wo er hin ist! Er hat es geliebt, sehr laut zu singen, also denken wir, dass er in die nächste Stadt gelaufen ist, um eine Esel-Rockband zu gründen!"
         }
       ]
     },
@@ -55,12 +50,10 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Der Eseltanz",
-          "text": "Tretet direkt an den Rand des Dreschplatzes heran! Könnt ihr so tun, als wärt ihr am mittleren Holzpfahl angebunden, und in einem perfekten Kreis laufen, genau wie es ein Esel tat?"
+          "text": "Der Eseltanz: Tretet direkt an den Rand des Dreschplatzes heran! Könnt ihr so tun, als wärt ihr am mittleren Holzpfahl angebunden, und in einem perfekten Kreis laufen, genau wie es ein Esel tat?"
         },
         {
-          "label": "Sagt Hallo",
-          "text": "Nach eurem schwindelerregenden Tanz müsst ihr unbedingt rübergehen und Melina und Katie Hallo winken! Bitte bewundert unsere lieben Esel aus der Ferne! Sie sehen süß aus, aber sie könnten eure Finger mit Babykarotten verwechseln. Wir wollen das lieber nicht herausfinden!"
+          "text": "Sagt Hallo: Nach eurem schwindelerregenden Tanz müsst ihr unbedingt rübergehen und Melina und Katie Hallo winken! Bitte bewundert unsere lieben Esel aus der Ferne! Sie sehen süß aus, aber sie könnten eure Finger mit Babykarotten verwechseln. Wir wollen das lieber nicht herausfinden!"
         }
       ]
     },
@@ -68,11 +61,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "Als Nächstes",
-          "text": "Gehen Sie dann weiter zum Keller/Italienischen Tunnel!"
+          "text": "Als Nächstes: Gehen Sie dann weiter zum Keller/Italienischen Tunnel!"
         }
       ]
     }
   ],
-  "imageAlt": "Dreschplatz & die Esel! at Mylotopi"
+  "imageAlt": "Dreschplatz & die Esel!"
 }

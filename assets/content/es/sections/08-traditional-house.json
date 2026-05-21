@@ -2,19 +2,11 @@
   "id": "traditional-house",
   "title": "La casa tradicional",
   "navigationTitle": "La casa tradicional",
-  "preview": "¡Bienvenido a la casa tradicional! Este increíble y pequeño hogar tiene más de 130 años. Mide menos de 20 metros cuadrados, pero lo creas o no, ¡de 8 a 10 personas solían vivir aquí! Los abuelos, los padres y todos sus hijos compartían esta única habitación.",
+  "preview": "Un hogar diminuto y abarrotado: ¡Bienvenido a la casa tradicional! Este increíble y pequeño hogar tiene más de 130 años. Mide menos de 20 metros cuadrados, pero lo creas o no, ¡de 8 a 10 personas solían vivir aquí! Los abuelos, los padres y todos sus hijos compartían esta única habitación.",
   "details": [
     {
       "type": "bulletGroup",
       "id": "bullet-group-01"
-    },
-    {
-      "type": "paragraph",
-      "text": "¿Dónde dormían todos? Los abuelos dormían justo al lado de la cálida chimenea. Los padres dormían en lo alto, en la cama altillo del lado opuesto, mientras que los niños mayores dormían en las camas contiguas y en el sofá."
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
     },
     {
       "type": "heading",
@@ -22,15 +14,15 @@
     },
     {
       "type": "bulletGroup",
-      "id": "bullet-group-03"
+      "id": "bullet-group-02"
     },
     {
       "type": "heading",
-      "text": "Próximo destino"
+      "text": "Próximo destino:"
     },
     {
       "type": "bulletGroup",
-      "id": "bullet-group-04"
+      "id": "bullet-group-03"
     }
   ],
   "bullets": [
@@ -38,8 +30,31 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Un hogar diminuto y abarrotado",
-          "text": "¡Bienvenido a la casa tradicional! Este increíble y pequeño hogar tiene más de 130 años. Mide menos de 20 metros cuadrados, pero lo creas o no, ¡de 8 a 10 personas solían vivir aquí! Los abuelos, los padres y todos sus hijos compartían esta única habitación."
+          "text": "Un hogar diminuto y abarrotado: ¡Bienvenido a la casa tradicional! Este increíble y pequeño hogar tiene más de 130 años. Mide menos de 20 metros cuadrados, pero lo creas o no, ¡de 8 a 10 personas solían vivir aquí! Los abuelos, los padres y todos sus hijos compartían esta única habitación."
+        },
+        {
+          "text": "¿Dónde dormían todos? Los abuelos dormían justo al lado de la cálida chimenea. Los padres dormían en lo alto, en la cama altillo del lado opuesto, mientras que los niños mayores dormían en las camas contiguas y en el sofá."
+        },
+        {
+          "text": "A mecer al bebé: ¿Y el bebé? ¡Busca la pequeña cuna de madera! Para ayudar al bebé a dormirse, alguien solo tenía que tirar suavemente de esa pequeña cuerda colgante para mecerlo."
+        },
+        {
+          "text": "Almacenamiento inteligente: Observa el espacio debajo de las camas familiares: esa era su sala de almacenamiento principal."
+        },
+        {
+          "text": "Tareas diarias y decoración: En el lado izquierdo, puedes ver un gran telar de madera que usaban para hacer ropa nueva y reparar la vieja, junto a un baúl donde guardaban sus objetos personales. También verás un tamiz usado para la harina, y hermosas fotografías antiguas e imágenes religiosas en las paredes."
+        },
+        {
+          "text": "Jarrones y uniformes: Junto al baúl, busca dos jarrones: el grande era para el vino y el pequeño para el agua. Justo encima de ellos cuelgan dos hermosos uniformes tradicionales que las damas de la casa usaban para bodas y eventos especiales."
+        },
+        {
+          "text": "El corazón del hogar: Como la casa no estaba restaurada como los hogares modernos, la chimenea se usaba para cocinar todas sus comidas y mantener a toda la familia abrigada. Justo al lado hay un pequeño molino manual para moler harina, junto con sus utensilios de cocina diarios y platos tradicionales decorados con bonitas flores pintadas."
+        },
+        {
+          "text": "El columpio colgante: ¡Mira hacia el techo! ¿Ves algo colgando que se parece un poco a un columpio? ¡No es para jugar! Guardaban su pan fresco en la parte superior para mantenerlo a salvo de los ratones hambrientos. En la parte inferior, almacenaban algarrobas. En aquel entonces no tenían barras de chocolate, ¡así que les daban dulces algarrobas a los niños como una deliciosa golosina de chocolate!"
+        },
+        {
+          "text": "Un refrigerador tradicional: Por último, busca el armario de madera. Lo creas o no, ¡este es un refrigerador tradicional! Tiene dos partes. Ponían grandes cubos de hielo en la parte superior y, a medida que el hielo se derretía, podían abrir un pequeño grifo para beber agua helada. ¡El frío de la parte superior también enfriaba perfectamente la sección inferior para mantener su comida fresca!"
         }
       ]
     },
@@ -47,32 +62,16 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "A mecer al bebé",
-          "text": "¿Y el bebé? ¡Busca la pequeña cuna de madera! Para ayudar al bebé a dormirse, alguien solo tenía que tirar suavemente de esa pequeña cuerda colgante para mecerlo."
+          "text": "Gira el molino: ¡Tienes mucho que hacer en esta pequeña y ajetreada casa! Primero, ¿puedes encontrar el molino manual? ¡Intenta colocar el mango de madera en el hueco y mira si puedes hacerlo girar!"
         },
         {
-          "label": "Almacenamiento inteligente",
-          "text": "Observa el espacio debajo de las camas familiares: esa era su sala de almacenamiento principal."
+          "text": "Mira arriba y abajo: Después de tu arduo trabajo, ¿puedes encontrar el columpio colgante que mantenía el pan lejos de los ratones?"
         },
         {
-          "label": "Tareas diarias y decoración",
-          "text": "En el lado izquierdo, puedes ver un gran telar de madera que usaban para hacer ropa nueva y reparar la vieja, junto a un baúl donde guardaban sus objetos personales. También verás un tamiz usado para la harina, y hermosas fotografías antiguas e imágenes religiosas en las paredes."
+          "text": "Mece al bebé: ¿Y la pequeña cuerda de la que tiraban para mecer al bebé y que se durmiera? ¿Puedes hacer que el bebé se duerma meciendo la cuerda? ¿Te resulta difícil?"
         },
         {
-          "label": "Jarrones y uniformes",
-          "text": "Junto al baúl, busca dos jarrones: el grande era para el vino y el pequeño para el agua. Justo encima de ellos cuelgan dos hermosos uniformes tradicionales que las damas de la casa usaban para bodas y eventos especiales."
-        },
-        {
-          "label": "El corazón del hogar",
-          "text": "Como la casa no estaba restaurada como los hogares modernos, la chimenea se usaba para cocinar todas sus comidas y mantener a toda la familia abrigada. Justo al lado hay un pequeño molino manual para moler harina, junto con sus utensilios de cocina diarios y platos tradicionales decorados con bonitas flores pintadas."
-        },
-        {
-          "label": "El columpio colgante",
-          "text": "¡Mira hacia el techo! ¿Ves algo colgando que se parece un poco a un columpio? ¡No es para jugar! Guardaban su pan fresco en la parte superior para mantenerlo a salvo de los ratones hambrientos. En la parte inferior, almacenaban algarrobas. En aquel entonces no tenían barras de chocolate, ¡así que les daban dulces algarrobas a los niños como una deliciosa golosina de chocolate!"
-        },
-        {
-          "label": "Un refrigerador tradicional",
-          "text": "Por último, busca el armario de madera. Lo creas o no, ¡este es un refrigerador tradicional! Tiene dos partes. Ponían grandes cubos de hielo en la parte superior y, a medida que el hielo se derretía, podían abrir un pequeño grifo para beber agua helada. ¡El frío de la parte superior también enfriaba perfectamente la sección inferior para mantener su comida fresca!"
+          "text": "Imagina esto: Una vez que los hayas encontrado todos, ¡imagina cómo sería compartir esta pequeña habitación con 8 o 10 miembros de tu familia!"
         }
       ]
     },
@@ -80,32 +79,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "Gira el molino",
-          "text": "¡Tienes mucho que hacer en esta pequeña y ajetreada casa! Primero, ¿puedes encontrar el molino manual? ¡Intenta colocar el mango de madera en el hueco y mira si puedes hacerlo girar!"
-        },
-        {
-          "label": "Mira arriba y abajo",
-          "text": "Después de tu arduo trabajo, ¿puedes encontrar el columpio colgante que mantenía el pan lejos de los ratones?"
-        },
-        {
-          "label": "Mece al bebé",
-          "text": "¿Y la pequeña cuerda de la que tiraban para mecer al bebé y que se durmiera? ¿Puedes hacer que el bebé se duerma meciendo la cuerda? ¿Te resulta difícil?"
-        },
-        {
-          "label": "Imagina esto",
-          "text": "Una vez que los hayas encontrado todos, ¡imagina cómo sería compartir esta pequeña habitación con 8 o 10 miembros de tu familia!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-04",
-      "items": [
-        {
-          "label": "A continuación",
-          "text": "¡Dirígete a la panadería!"
+          "text": "A continuación: ¡Dirígete a la panadería!"
         }
       ]
     }
   ],
-  "imageAlt": "La casa tradicional at Mylotopi"
+  "imageAlt": "La casa tradicional"
 }

@@ -1,8 +1,8 @@
 {
   "id": "cellar-italian-tunnel",
-  "title": "Cellar / Italian tunnel",
-  "navigationTitle": "Cellar / Italian tunnel",
-  "preview": "Prepare yourselves for a total change of scenery as we head underground! As you step down into the cool air, take a look to your left and right.",
+  "title": "The Secret Tunnel & Cellar",
+  "navigationTitle": "The Secret Tunnel & Cellar",
+  "preview": "A Change of Scenery: Prepare yourselves for a total change of scenery as we head underground! As you step down into the cool air, take a look to your left and right.",
   "details": [
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Next Destination"
+      "text": "Next Destination:"
     },
     {
       "type": "bulletGroup",
@@ -30,24 +30,19 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "A Change of Scenery",
-          "text": "Prepare yourselves for a total change of scenery as we head underground! As you step down into the cool air, take a look to your left and right."
+          "text": "A Change of Scenery: Prepare yourselves for a total change of scenery as we head underground! As you step down into the cool air, take a look to your left and right."
         },
         {
-          "label": "Decorative Bottles",
-          "text": "You will see rows of local wine from the Skevofilax winery over in Kos. We keep these bottles here for design! Our actual drinking wines are kept safely in the main cellar, where the temperature is perfectly suited for them."
+          "text": "Decorative Bottles: You will see rows of local wine from the Skevofilax winery over in Kos. We keep these bottles here for design! Our actual drinking wines are kept safely in the main cellar, where the temperature is perfectly suited for them."
         },
         {
-          "label": "World War II History",
-          "text": "Back in the 1940s, during World War II, this space wasn't for wine it was for survival. This 20-meter tunnel was built by Italian soldiers during the war."
+          "text": "World War II History: Back in the 1940s, during World War II, this space wasn't for wine it was for survival. This 20-meter tunnel was built by Italian soldiers during the war."
         },
         {
-          "label": "The Hurry Tunnel",
-          "text": "The soldiers used this passage as a hurry tunnel, a secret shortcut to run away and hide from their opponents. The cellar itself was used as a safe shelter where they could sleep, relax, and stay protected from the battles outside."
+          "text": "The Hurry Tunnel: The soldiers used this passage as a hurry tunnel, a secret shortcut to run away and hide from their opponents. The cellar itself was used as a safe shelter where they could sleep, relax, and stay protected from the battles outside."
         },
         {
-          "label": "A Hidden Fortress",
-          "text": "At the end of the tunnel, you will come out into our backyard, which is now our peaceful restaurant. But look back at the stone roof before you exit! In the 1940s, this entire area was a shooting range. The top was covered in heavy stone to protect the soldiers, and right at the edge, they had machine gun to defend the hillside. It’s hard to believe this quiet, beautiful spot for a meal was guarded place on the island!"
+          "text": "A Hidden Fortress: At the end of the tunnel, you will come out into our backyard, which is now our peaceful restaurant. But look back at the stone roof before you exit! In the 1940s, this entire area was a shooting range. The top was covered in heavy stone to protect the soldiers, and right at the edge, they had machine gun to defend the hillside. It’s hard to believe this quiet, beautiful spot for a meal was guarded place on the island!"
         }
       ]
     },
@@ -55,8 +50,7 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Top Secret",
-          "text": "You are now on a secret mission! As you walk through the soldiers' tunnel, can you calculate exactly how many bottles of wine are lining the walls?"
+          "text": "Top Secret: You are now on a secret mission! As you walk through the soldiers' tunnel, can you calculate exactly how many bottles of wine are lining the walls?"
         }
       ]
     },
@@ -64,11 +58,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "Upcoming",
-          "text": "When you finish exploring the tunnel, please come back and find our tour guide so they can show you the way to your next amazing stops the Traditional House and the Bakery!"
+          "text": "Upcoming: When you finish exploring the tunnel, please come back and find our tour guide so they can show you the way to your next amazing stops the Traditional House and the Bakery!"
         }
       ]
     }
   ],
-  "imageAlt": "Cellar / Italian tunnel at Mylotopi"
+  "imageAlt": "The Secret Tunnel & Cellar"
 }

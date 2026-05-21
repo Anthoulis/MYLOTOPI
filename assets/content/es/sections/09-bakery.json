@@ -2,7 +2,7 @@
   "id": "bakery",
   "title": "La panadería",
   "navigationTitle": "La panadería",
-  "preview": "¡Bienvenido al horno tradicional! Este hermoso horno de piedra tiene más de 150 años. En aquel entonces, la mayoría de las mujeres del pueblo venían justo aquí para hornear el pan diario para sus familias.",
+  "preview": "Un centro comunitario: ¡Bienvenido al horno tradicional! Este hermoso horno de piedra tiene más de 150 años. En aquel entonces, la mayoría de las mujeres del pueblo venían justo aquí para hornear el pan diario para sus familias.",
   "details": [
     {
       "type": "bulletGroup",
@@ -22,20 +22,16 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Un centro comunitario",
-          "text": "¡Bienvenido al horno tradicional! Este hermoso horno de piedra tiene más de 150 años. En aquel entonces, la mayoría de las mujeres del pueblo venían justo aquí para hornear el pan diario para sus familias."
+          "text": "Un centro comunitario: ¡Bienvenido al horno tradicional! Este hermoso horno de piedra tiene más de 150 años. En aquel entonces, la mayoría de las mujeres del pueblo venían justo aquí para hornear el pan diario para sus familias."
         },
         {
-          "label": "Un proceso de dos días",
-          "text": "¡Hornear pan en aquella época no era tan rápido como simplemente ir corriendo al supermercado! En realidad, era un proceso de dos días. La noche anterior, las mujeres mezclaban y daban forma cuidadosamente a la masa, dejándola descansar y leudar durante toda la noche."
+          "text": "Un proceso de dos días: ¡Hornear pan en aquella época no era tan rápido como simplemente ir corriendo al supermercado! En realidad, era un proceso de dos días. La noche anterior, las mujeres mezclaban y daban forma cuidadosamente a la masa, dejándola descansar y leudar durante toda la noche."
         },
         {
-          "label": "Recién horneado",
-          "text": "A la mañana siguiente, cuando la masa estaba lista, encendían un buen fuego para calentar el horno. Una vez que la temperatura era la adecuada, colocaban la masa dentro. Después de hornear durante una o dos horas, ¡todo el pueblo se llenaba con el delicioso olor a pan fresco y calientito, listo para comer!"
+          "text": "Recién horneado: A la mañana siguiente, cuando la masa estaba lista, encendían un buen fuego para calentar el horno. Una vez que la temperatura era la adecuada, colocaban la masa dentro. Después de hornear durante una o dos horas, ¡todo el pueblo se llenaba con el delicioso olor a pan fresco y calientito, listo para comer!"
         },
         {
-          "label": "Fotos históricas",
-          "text": "Si miras a tu alrededor, puedes ver algunas fotografías maravillosas en exhibición que muestran exactamente cómo hacían todo este procedimiento."
+          "text": "Fotos históricas: Si miras a tu alrededor, puedes ver algunas fotografías maravillosas en exhibición que muestran exactamente cómo hacían todo este procedimiento."
         }
       ]
     },
@@ -43,23 +39,19 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Al que madruga",
-          "text": "Todo el pueblo necesitaba pan fresco. ¿Puedes adivinar a qué hora tenía que despertarse el panadero cada mañana para empezar a preparar la masa? (Pista: ¡era mucho antes de que saliera el sol!)"
+          "text": "Al que madruga: Todo el pueblo necesitaba pan fresco. ¿Puedes adivinar a qué hora tenía que despertarse el panadero cada mañana para empezar a preparar la masa? (Pista: ¡era mucho antes de que saliera el sol!)"
         },
         {
-          "label": "Observa con atención",
-          "text": "Mira de cerca las fotos para ver cómo las mujeres del pueblo trabajaban antiguamente en la panadería."
+          "text": "Observa con atención: Mira de cerca las fotos para ver cómo las mujeres del pueblo trabajaban antiguamente en la panadería."
         },
         {
-          "label": "Hora de relajarse",
-          "text": "¡Ahora es el momento de dirigirse al restaurante-café! Toma tus lápices de colores, disfruta de un merecido refrigerio y termina de convertir tu boceto de Mylotopi (Mylotopi Sketch) en una colorida obra maestra."
+          "text": "Hora de relajarse: ¡Ahora es el momento de dirigirse al restaurante-café! Toma tus lápices de colores, disfruta de un merecido refrigerio y termina de convertir tu boceto de Mylotopi (Mylotopi Sketch) en una colorida obra maestra."
         },
         {
-          "label": "Gracias",
-          "text": "¡Gracias por explorar con nosotros hoy!"
+          "text": "Gracias: ¡Gracias por explorar con nosotros hoy!"
         }
       ]
     }
   ],
-  "imageAlt": "La panadería at Mylotopi"
+  "imageAlt": "La panadería"
 }

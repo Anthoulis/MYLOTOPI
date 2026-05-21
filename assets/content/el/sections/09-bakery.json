@@ -2,7 +2,7 @@
   "id": "bakery",
   "title": "The Bakery",
   "navigationTitle": "The Bakery",
-  "preview": "Welcome to the traditional oven! This beautiful stone oven is over 150 years old. Back in the day, the majority of the ladies in the village would come right here to bake their daily bread for their families.",
+  "preview": "A Community Hub: Welcome to the traditional oven! This beautiful stone oven is over 150 years old. Back in the day, the majority of the ladies in the village would come right here to bake their daily bread for their families.",
   "details": [
     {
       "type": "bulletGroup",
@@ -22,20 +22,16 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "A Community Hub",
-          "text": "Welcome to the traditional oven! This beautiful stone oven is over 150 years old. Back in the day, the majority of the ladies in the village would come right here to bake their daily bread for their families."
+          "text": "A Community Hub: Welcome to the traditional oven! This beautiful stone oven is over 150 years old. Back in the day, the majority of the ladies in the village would come right here to bake their daily bread for their families."
         },
         {
-          "label": "A Two-Day Process",
-          "text": "Baking bread back then wasn't as fast as just running to the supermarket! It was actually a two-day process. The night before, the ladies would carefully mix and shape the dough, leaving it to rest and rise up overnight."
+          "text": "A Two-Day Process: Baking bread back then wasn't as fast as just running to the supermarket! It was actually a two-day process. The night before, the ladies would carefully mix and shape the dough, leaving it to rest and rise up overnight."
         },
         {
-          "label": "Freshly Baked",
-          "text": "The next morning, when the dough was ready, they would build a hot fire to warm up the oven. Once the temperature was just right, they placed the dough inside. After baking for one to two hours, the entire village would be filled with the delicious smell of fresh, warm bread ready to be eaten!"
+          "text": "Freshly Baked: The next morning, when the dough was ready, they would build a hot fire to warm up the oven. Once the temperature was just right, they placed the dough inside. After baking for one to two hours, the entire village would be filled with the delicious smell of fresh, warm bread ready to be eaten!"
         },
         {
-          "label": "Historical Photos",
-          "text": "If you look around, you can see some wonderful pictures on display that show exactly how they did this whole procedure."
+          "text": "Historical Photos: If you look around, you can see some wonderful pictures on display that show exactly how they did this whole procedure."
         }
       ]
     },
@@ -43,23 +39,19 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Πρωινό Ξύπνημα",
-          "text": "Όλο το χωριό χρειαζόταν φρέσκο ψωμί. Μπορείτε να μαντέψετε τι ώρα έπρεπε να ξυπνήσει ο φούρναρης κάθε πρωί για να αρχίσει να φτιάχνει τη ζύμη; (Στοιχείο: Ήταν πολύ πριν βγει ο ήλιος!)"
+          "text": "Πρωινό Ξύπνημα: Όλο το χωριό χρειαζόταν φρέσκο ψωμί. Μπορείτε να μαντέψετε τι ώρα έπρεπε να ξυπνήσει ο φούρναρης κάθε πρωί για να αρχίσει να φτιάχνει τη ζύμη; (Στοιχείο: Ήταν πολύ πριν βγει ο ήλιος!)"
         },
         {
-          "label": "Κοιτάξτε Προσεκτικά",
-          "text": "Κοιτάξτε προσεκτικά τις φωτογραφίες για να δείτε πώς δούλευαν οι γυναίκες του χωριού στον φούρνο."
+          "text": "Κοιτάξτε Προσεκτικά: Κοιτάξτε προσεκτικά τις φωτογραφίες για να δείτε πώς δούλευαν οι γυναίκες του χωριού στον φούρνο."
         },
         {
-          "label": "Ώρα για Χαλάρωση",
-          "text": "Τώρα, ήρθε η ώρα να κατευθυνθείτε στο εστιατόριο-καφέ ώστε να χαλαρώσετε!"
+          "text": "Ώρα για Χαλάρωση: Τώρα, ήρθε η ώρα να κατευθυνθείτε στο εστιατόριο-καφέ ώστε να χαλαρώσετε!"
         },
         {
-          "label": "Ευχαριστούμε",
-          "text": "Σας ευχαριστούμε που εξερευνήσατε μαζί μας σήμερα!"
+          "text": "Ευχαριστούμε: Σας ευχαριστούμε που εξερευνήσατε μαζί μας σήμερα!"
         }
       ]
     }
   ],
-  "imageAlt": "The Bakery at Mylotopi"
+  "imageAlt": "The Bakery"
 }

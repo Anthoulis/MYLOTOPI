@@ -2,7 +2,7 @@
   "id": "welcome",
   "title": "Benvenuti alla Windmill Experience!",
   "navigationTitle": "Benvenuti alla Windmill Experience!",
-  "preview": "Preparatevi a fare un salto nel passato! Non avrete bisogno di una macchina del tempo per questo viaggio, solo di scarpe comode.",
+  "preview": "Viaggio nel Tempo: Preparatevi a fare un salto nel passato! Non avrete bisogno di una macchina del tempo per questo viaggio, solo di scarpe comode.",
   "details": [
     {
       "type": "bulletGroup",
@@ -10,7 +10,7 @@
     },
     {
       "type": "heading",
-      "text": "Cosa Esplorerete"
+      "text": "Cosa Esplorerete:"
     },
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Come Ascoltare il Tour"
+      "text": "Come Ascoltare il Tour:"
     },
     {
       "type": "bulletGroup",
@@ -34,7 +34,7 @@
     },
     {
       "type": "heading",
-      "text": "Prossima Destinazione"
+      "text": "Prossima Destinazione:"
     },
     {
       "type": "bulletGroup",
@@ -46,16 +46,13 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Viaggio nel Tempo",
-          "text": "Preparatevi a fare un salto nel passato! Non avrete bisogno di una macchina del tempo per questo viaggio, solo di scarpe comode."
+          "text": "Viaggio nel Tempo: Preparatevi a fare un salto nel passato! Non avrete bisogno di una macchina del tempo per questo viaggio, solo di scarpe comode."
         },
         {
-          "label": "Un Villaggio Restaurato",
-          "text": "Grazie al bellissimo restauro effettuato dalla famiglia Voudouris, vedrete esattamente come vivevano gli isolani più di un secolo fa, molto prima che venisse inventato il Wi-Fi. Potrete anche curiosare in giro e scoprire un po' di storia segreta degli anni '40!"
+          "text": "Un Villaggio Restaurato: Grazie al bellissimo restauro effettuato dalla famiglia Voudouris, vedrete esattamente come vivevano gli isolani più di un secolo fa, molto prima che venisse inventato il Wi-Fi. Potrete anche curiosare in giro e scoprire un po' di storia segreta degli anni '40!"
         },
         {
-          "label": "La Vita del Mugnaio",
-          "text": "Oggi potrete mettervi nei panni di un vero mugnaio. Attenzione spoiler: la sua routine di allenamento quotidiana consisteva nel sollevare pesanti sacchi di farina tutto il giorno, solo per sfamare la maggior parte del villaggio."
+          "text": "La Vita del Mugnaio: Oggi potrete mettervi nei panni di un vero mugnaio. Attenzione spoiler: la sua routine di allenamento quotidiana consisteva nel sollevare pesanti sacchi di farina tutto il giorno, solo per sfamare la maggior parte del villaggio."
         }
       ]
     },
@@ -63,20 +60,16 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Il Gigantesco Mulino a Vento",
-          "text": "Esplorate un vero mulino a vento funzionante, dal basso fino in cima."
+          "text": "Il Gigantesco Mulino a Vento: Esplorate un vero mulino a vento funzionante, dal basso fino in cima."
         },
         {
-          "label": "La Vita del Villaggio",
-          "text": "Date un'occhiata all'interno della casa tradizionale e della panetteria."
+          "text": "La Vita del Villaggio: Date un'occhiata all'interno della casa tradizionale e della panetteria."
         },
         {
-          "label": "Natura e Animali",
-          "text": "Annusate le meravigliose erbe aromatiche nei nostri giardini, visitate l'aia e salutate i nostri adorabili asini."
+          "text": "Natura e Animali: Annusate le meravigliose erbe aromatiche nei nostri giardini, visitate l'aia e salutate i nostri adorabili asini."
         },
         {
-          "label": "Segreti Sotterranei",
-          "text": "Attraversate un vero e proprio tunnel militare!"
+          "text": "Segreti Sotterranei: Attraversate un vero e proprio tunnel militare!"
         }
       ]
     },
@@ -84,12 +77,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "È Semplicissimo",
-          "text": "Adulti, vi basterà scansionare i codici QR che troverete usando la fotocamera del vostro telefono. Non c'è bisogno di scaricare nessuna app!"
+          "text": "È Semplicissimo: Adulti, vi basterà scansionare i codici QR che troverete usando la fotocamera del vostro telefono. Non c'è bisogno di scaricare nessuna app!"
         },
         {
-          "label": "Ascoltate Insieme",
-          "text": "Alzate semplicemente il volume del vostro telefono o condividete un paio di cuffie, e seguite i numeri in giro per il villaggio."
+          "text": "Ascoltate Insieme: Alzate semplicemente il volume del vostro telefono o condividete un paio di cuffie, e seguite i numeri in giro per il villaggio."
         }
       ]
     },
@@ -97,16 +88,13 @@
       "id": "bullet-group-04",
       "items": [
         {
-          "label": "Prendete il Vostro Equipaggiamento Artistico",
-          "text": "Vi daremo uno speciale Schizzo di Mylotopi e alcune matite colorate da portare con voi."
+          "text": "Prendete il Vostro Equipaggiamento Artistico: Vi daremo uno speciale Schizzo di Mylotopi e alcune matite colorate da portare con voi."
         },
         {
-          "label": "Osservate Tutto",
-          "text": "Mentre passeggiate oggi, tenete gli occhi ben aperti! Guardate molto da vicino il gigantesco mulino a vento, le pesanti pietre e i vecchi attrezzi. Cercate di memorizzare tutti i bellissimi colori che vedete."
+          "text": "Osservate Tutto: Mentre passeggiate oggi, tenete gli occhi ben aperti! Guardate molto da vicino il gigantesco mulino a vento, le pesanti pietre e i vecchi attrezzi. Cercate di memorizzare tutti i bellissimi colori che vedete."
         },
         {
-          "label": "Create un Capolavoro",
-          "text": "Quando finirete la vostra avventura e vi siederete a rilassarvi al nostro ristorante-caffetteria, potrete colorare il vostro disegno e trasformarlo in un vero capolavoro!"
+          "text": "Create un Capolavoro: Quando finirete la vostra avventura e vi siederete a rilassarvi al nostro ristorante-caffetteria, potrete colorare il vostro disegno e trasformarlo in un vero capolavoro!"
         }
       ]
     },
@@ -114,11 +102,10 @@
       "id": "bullet-group-05",
       "items": [
         {
-          "label": "In Arrivo",
-          "text": "Proseguite verso i nostri giardini con le erbe aromatiche!"
+          "text": "In Arrivo: Proseguite verso i nostri giardini con le erbe aromatiche!"
         }
       ]
     }
   ],
-  "imageAlt": "Benvenuti alla Windmill Experience! at Mylotopi"
+  "imageAlt": "Benvenuti alla Windmill Experience!"
 }

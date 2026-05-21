@@ -2,7 +2,7 @@
   "id": "threshing-floor-donkeys",
   "title": "Harman Yeri ve Eşekler!",
   "navigationTitle": "Harman Yeri ve Eşekler!",
-  "preview": "Tekrar dışarıya hoş geldiniz! Derin bir nefes alıp tertemiz havayı içinize çekin. Şu anda, büyük, yuvarlak taştan bir dans pistine çok benzeyen geleneksel harman yerinin yakınında duruyorsunuz.",
+  "preview": "Temiz Hava ve Taş Zeminler: Tekrar dışarıya hoş geldiniz! Derin bir nefes alıp tertemiz havayı içinize çekin. Şu anda, büyük, yuvarlak taştan bir dans pistine çok benzeyen geleneksel harman yerinin yakınında duruyorsunuz.",
   "details": [
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Sıradaki Durak"
+      "text": "Sıradaki Durak:"
     },
     {
       "type": "bulletGroup",
@@ -30,24 +30,19 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Temiz Hava ve Taş Zeminler",
-          "text": "Tekrar dışarıya hoş geldiniz! Derin bir nefes alıp tertemiz havayı içinize çekin. Şu anda, büyük, yuvarlak taştan bir dans pistine çok benzeyen geleneksel harman yerinin yakınında duruyorsunuz."
+          "text": "Temiz Hava ve Taş Zeminler: Tekrar dışarıya hoş geldiniz! Derin bir nefes alıp tertemiz havayı içinize çekin. Şu anda, büyük, yuvarlak taştan bir dans pistine çok benzeyen geleneksel harman yerinin yakınında duruyorsunuz."
         },
         {
-          "label": "Başı Dönen Eşek",
-          "text": "Dairenin tam ortasındaki ahşap direğe bakın. Eski günlerde değirmenci, o direkten eşeğin boynuna gevşekçe bir ip bağlardı. Eşeğin görevi, tohumları serbest bırakmak için hasat edilmiş ekinleri ağır ayaklarıyla ezip parçalayarak büyük bir daire etrafında döne döne yürümekti!"
+          "text": "Başı Dönen Eşek: Dairenin tam ortasındaki ahşap direğe bakın. Eski günlerde değirmenci, o direkten eşeğin boynuna gevşekçe bir ip bağlardı. Eşeğin görevi, tohumları serbest bırakmak için hasat edilmiş ekinleri ağır ayaklarıyla ezip parçalayarak büyük bir daire etrafında döne döne yürümekti!"
         },
         {
-          "label": "Buğdayı Ayırmak",
-          "text": "Çalışkan eşek baş döndürücü bu ezme işleminin tamamını yaptıktan sonra, değirmenci araya girer ve beyaz buğdayı kahverengi buğdaydan dikkatlice ayırırdı. (Bugün bu yöntemi kullanmıyoruz; buğdayımızı doğrudan adadaki yerel üreticilerden satın alıyoruz!)"
+          "text": "Buğdayı Ayırmak: Çalışkan eşek baş döndürücü bu ezme işleminin tamamını yaptıktan sonra, değirmenci araya girer ve beyaz buğdayı kahverengi buğdaydan dikkatlice ayırırdı. (Bugün bu yöntemi kullanmıyoruz; buğdayımızı doğrudan adadaki yerel üreticilerden satın alıyoruz!)"
         },
         {
-          "label": "Gerçek Yıldızlarla Tanışın",
-          "text": "Hayvanları sadece hayal etmek zorunda değilsiniz! Yakınlara bakın ve çiftliğin gerçek yıldızlarıyla tanışın: iki sevimli eşeğimiz. Gururlu annenin adı 6 yaşındaki Melina ve onun tatlı küçük kızının adı ise henüz 2 yaşındaki Katie."
+          "text": "Gerçek Yıldızlarla Tanışın: Hayvanları sadece hayal etmek zorunda değilsiniz! Yakınlara bakın ve çiftliğin gerçek yıldızlarıyla tanışın: iki sevimli eşeğimiz. Gururlu annenin adı 6 yaşındaki Melina ve onun tatlı küçük kızının adı ise henüz 2 yaşındaki Katie."
         },
         {
-          "label": "Kayıp Baba",
-          "text": "Katie'nin babasına gelince... şey, aslında kimse onun nereye gittiğini tam olarak bilmiyor! Yüksek sesle şarkı söylemeyi çok severdi, bu yüzden bir eşek rock grubu kurmak için yandaki kasabaya yürüdüğünü düşünüyoruz!"
+          "text": "Kayıp Baba: Katie'nin babasına gelince... şey, aslında kimse onun nereye gittiğini tam olarak bilmiyor! Yüksek sesle şarkı söylemeyi çok severdi, bu yüzden bir eşek rock grubu kurmak için yandaki kasabaya yürüdüğünü düşünüyoruz!"
         }
       ]
     },
@@ -55,12 +50,10 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Eşek Dansı",
-          "text": "Harman yerinin hemen kenarına gelin! Ortadaki ahşap direğe bağlıymış gibi davranıp tıpkı bir eşeğin yaptığı gibi kusursuz bir daire çizerek yürüyebilir misiniz?"
+          "text": "Eşek Dansı: Harman yerinin hemen kenarına gelin! Ortadaki ahşap direğe bağlıymış gibi davranıp tıpkı bir eşeğin yaptığı gibi kusursuz bir daire çizerek yürüyebilir misiniz?"
         },
         {
-          "label": "Merhaba Deyin",
-          "text": "Baş döndürücü dansınızdan sonra gidip Melina ve Katie'ye el sallayarak merhaba demeyi unutmayın! Lütfen sevimli eşeklerimizi uzaktan sevin! Tatlı görünüyorlar ama parmaklarınızı bebek havuç sanabilirler. Bunu deneyimleyip öğrenmeyi hiç istemeyiz!"
+          "text": "Merhaba Deyin: Baş döndürücü dansınızdan sonra gidip Melina ve Katie'ye el sallayarak merhaba demeyi unutmayın! Lütfen sevimli eşeklerimizi uzaktan sevin! Tatlı görünüyorlar ama parmaklarınızı bebek havuç sanabilirler. Bunu deneyimleyip öğrenmeyi hiç istemeyiz!"
         }
       ]
     },
@@ -68,11 +61,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "Sırada",
-          "text": "Ardından Mahzene / İtalyan Tüneline doğru ilerleyin!"
+          "text": "Sırada: Ardından Mahzene / İtalyan Tüneline doğru ilerleyin!"
         }
       ]
     }
   ],
-  "imageAlt": "Harman Yeri ve Eşekler! at Mylotopi"
+  "imageAlt": "Harman Yeri ve Eşekler!"
 }

@@ -2,7 +2,7 @@
   "id": "threshing-floor-donkeys",
   "title": "¡La era y los burros!",
   "navigationTitle": "¡La era y los burros!",
-  "preview": "¡Bienvenido de nuevo al exterior! Respira profundo el aire fresco. Ahora te encuentras cerca de la era tradicional, que se parece mucho a una gran pista de baile redonda de piedra.",
+  "preview": "Aire fresco y suelos de piedra: ¡Bienvenido de nuevo al exterior! Respira profundo el aire fresco. Ahora te encuentras cerca de la era tradicional, que se parece mucho a una gran pista de baile redonda de piedra.",
   "details": [
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Próximo destino"
+      "text": "Próximo destino:"
     },
     {
       "type": "bulletGroup",
@@ -30,24 +30,19 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Aire fresco y suelos de piedra",
-          "text": "¡Bienvenido de nuevo al exterior! Respira profundo el aire fresco. Ahora te encuentras cerca de la era tradicional, que se parece mucho a una gran pista de baile redonda de piedra."
+          "text": "Aire fresco y suelos de piedra: ¡Bienvenido de nuevo al exterior! Respira profundo el aire fresco. Ahora te encuentras cerca de la era tradicional, que se parece mucho a una gran pista de baile redonda de piedra."
         },
         {
-          "label": "El burro mareado",
-          "text": "Mira justo en el medio del círculo hacia el poste de madera. En los viejos tiempos, el molinero ataba sin apretar una cuerda desde ese poste al cuello de un burro. ¡El trabajo del burro consistía en caminar dando vueltas en un gran círculo, usando sus pesadas patas para pisotear y aplastar los cultivos cosechados para liberar las semillas!"
+          "text": "El burro mareado: Mira justo en el medio del círculo hacia el poste de madera. En los viejos tiempos, el molinero ataba sin apretar una cuerda desde ese poste al cuello de un burro. ¡El trabajo del burro consistía en caminar dando vueltas en un gran círculo, usando sus pesadas patas para pisotear y aplastar los cultivos cosechados para liberar las semillas!"
         },
         {
-          "label": "Separando el trigo",
-          "text": "Después de que el trabajador burro terminaba todo este pisoteo mareador, el molinero intervenía para separar cuidadosamente el trigo blanco del trigo marrón. (¡Hoy en día, no usamos este método; compramos nuestro trigo directamente a los productores locales de la isla!)."
+          "text": "Separando el trigo: Después de que el trabajador burro terminaba todo este pisoteo mareador, el molinero intervenía para separar cuidadosamente el trigo blanco del trigo marrón. (¡Hoy en día, no usamos este método; compramos nuestro trigo directamente a los productores locales de la isla!)."
         },
         {
-          "label": "Conoce a las verdaderas estrellas",
-          "text": "¡No tienes que imaginarte a los animales! Mira cerca y conocerás a las verdaderas estrellas de la granja: nuestras dos adorables burras. La orgullosa mamá se llama Melina, que tiene 6 años, y su dulce hijita se llama Katie, que tiene solo 2 añitos."
+          "text": "Conoce a las verdaderas estrellas: ¡No tienes que imaginarte a los animales! Mira cerca y conocerás a las verdaderas estrellas de la granja: nuestras dos adorables burras. La orgullosa mamá se llama Melina, que tiene 6 años, y su dulce hijita se llama Katie, que tiene solo 2 añitos."
         },
         {
-          "label": "El papá desaparecido",
-          "text": "En cuanto al papá de Katie... bueno, ¡nadie sabe realmente a dónde se fue! Le encantaba cantar muy fuerte, ¡así que creemos que caminó hasta el pueblo de al lado para formar una banda de rock de burros!"
+          "text": "El papá desaparecido: En cuanto al papá de Katie... bueno, ¡nadie sabe realmente a dónde se fue! Le encantaba cantar muy fuerte, ¡así que creemos que caminó hasta el pueblo de al lado para formar una banda de rock de burros!"
         }
       ]
     },
@@ -55,12 +50,10 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "El baile del burro",
-          "text": "¡Acércate al borde de la era! ¿Puedes fingir que estás atado al poste de madera central y caminar en un círculo perfecto tal como lo hacía un burro?"
+          "text": "El baile del burro: ¡Acércate al borde de la era! ¿Puedes fingir que estás atado al poste de madera central y caminar en un círculo perfecto tal como lo hacía un burro?"
         },
         {
-          "label": "Di hola",
-          "text": "¡Después de tu baile mareador, asegúrate de ir a saludar a Melina y Katie! ¡Por favor, admira a nuestras encantadoras burras desde la distancia! Se ven dulces, pero podrían confundir tus dedos con mini zanahorias. ¡Preferimos no averiguarlo!"
+          "text": "Di hola: ¡Después de tu baile mareador, asegúrate de ir a saludar a Melina y Katie! ¡Por favor, admira a nuestras encantadoras burras desde la distancia! Se ven dulces, pero podrían confundir tus dedos con mini zanahorias. ¡Preferimos no averiguarlo!"
         }
       ]
     },
@@ -68,11 +61,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "A continuación",
-          "text": "¡Dirígete a la bodega / túnel italiano!"
+          "text": "A continuación: ¡Dirígete a la bodega / túnel italiano!"
         }
       ]
     }
   ],
-  "imageAlt": "¡La era y los burros! at Mylotopi"
+  "imageAlt": "¡La era y los burros!"
 }

@@ -1,8 +1,8 @@
 {
   "id": "windmill-base",
-  "title": "Die Basis der Windmühle",
-  "navigationTitle": "Die Basis der Windmühle",
-  "preview": "Willkommen in der „Mühle des Priesters“! Sie stehen in der ältesten funktionierenden Windmühle auf der gesamten Insel und im gesamten Dodekanes-Komplex. Sie ist über 400 Jahre alt, war bis 1987 täglich in Betrieb und ist immer noch eine lebendige Maschine, die heute noch Mehl mahlt!",
+  "title": "Die Basis der Windmühle (1. Stock)",
+  "navigationTitle": "Die Basis der Windmühle (1. Stock)",
+  "preview": "Eine lebende Legende: Willkommen in der „Mühle des Priesters“! Sie stehen in der ältesten funktionierenden Windmühle auf der gesamten Insel und im gesamten Dodekanes-Komplex. Sie ist über 400 Jahre alt, war bis 1987 täglich in Betrieb und ist immer noch eine lebendige Maschine, die heute noch Mehl mahlt!",
   "details": [
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Nächstes Ziel"
+      "text": "Nächstes Ziel:"
     },
     {
       "type": "bulletGroup",
@@ -30,40 +30,31 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Eine lebende Legende",
-          "text": "Willkommen in der „Mühle des Priesters“! Sie stehen in der ältesten funktionierenden Windmühle auf der gesamten Insel und im gesamten Dodekanes-Komplex. Sie ist über 400 Jahre alt, war bis 1987 täglich in Betrieb und ist immer noch eine lebendige Maschine, die heute noch Mehl mahlt!"
+          "text": "Eine lebende Legende: Willkommen in der „Mühle des Priesters“! Sie stehen in der ältesten funktionierenden Windmühle auf der gesamten Insel und im gesamten Dodekanes-Komplex. Sie ist über 400 Jahre alt, war bis 1987 täglich in Betrieb und ist immer noch eine lebendige Maschine, die heute noch Mehl mahlt!"
         },
         {
-          "label": "Am Eingang",
-          "text": "Wenn Sie durch die Tür treten, beachten Sie den traditionellen Granatapfel, der als Glücksbringer hängt, neben einer kleinen Flasche mit Weihwasser vom Berg Athos, die über 9 Jahre alt ist."
+          "text": "Am Eingang: Wenn Sie durch die Tür treten, beachten Sie den traditionellen Granatapfel, der als Glücksbringer hängt, neben einer kleinen Flasche mit Weihwasser vom Berg Athos, die über 9 Jahre alt ist."
         },
         {
-          "label": "Gebaut für Stürme",
-          "text": "Diese riesige Maschine ist 6,2 Meter hoch, und die Steinmauern um Sie herum sind 1,2 Meter dick, um das Gebäude vor wilden Seestürmen zu schützen."
+          "text": "Gebaut für Stürme: Diese riesige Maschine ist 6,2 Meter hoch, und die Steinmauern um Sie herum sind 1,2 Meter dick, um das Gebäude vor wilden Seestürmen zu schützen."
         },
         {
-          "label": "Massive Maschinen",
-          "text": "In den oberen Stockwerken befinden sich zwei massive Mühlsteine, die jeweils eine Tonne wiegen – das sind zusammen über zwei Tonnen!"
+          "text": "Massive Maschinen: In den oberen Stockwerken befinden sich zwei massive Mühlsteine, die jeweils eine Tonne wiegen – das sind zusammen über zwei Tonnen!"
         },
         {
-          "label": "Uraltes Holz",
-          "text": "80 % des Holzes in diesem Gebäude sind original, und der Rest wurde den ganzen Weg vom Berg Athos gebracht. Erstaunlicherweise sind einige der wiederverwendeten Holzteile, die sich oben drehen, zwischen 1.000 und 1.300 Jahre alt!"
+          "text": "Uraltes Holz: 80 % des Holzes in diesem Gebäude sind original, und der Rest wurde den ganzen Weg vom Berg Athos gebracht. Erstaunlicherweise sind einige der wiederverwendeten Holzteile, die sich oben drehen, zwischen 1.000 und 1.300 Jahre alt!"
         },
         {
-          "label": "Zu Ihrer Rechten",
-          "text": "Sehen Sie den Bereich, der mit einem Lappen abgedeckt ist? Das war der Lagerraum des Müllers. Daneben sehen Sie einen hölzernen Eselsattel und einen Dreschschlitten, den der Esel des Müllers zog, um den Weizen zu trennen. Sie können auch alltägliche Holzwerkzeuge und wunderschöne Fotos von anderen Windmühlen in ganz Griechenland entdecken."
+          "text": "Zu Ihrer Rechten: Sehen Sie den Bereich, der mit einem Lappen abgedeckt ist? Das war der Lagerraum des Müllers. Daneben sehen Sie einen hölzernen Eselsattel und einen Dreschschlitten, den der Esel des Müllers zog, um den Weizen zu trennen. Sie können auch alltägliche Holzwerkzeuge und wunderschöne Fotos von anderen Windmühlen in ganz Griechenland entdecken."
         },
         {
-          "label": "Der Kamin",
-          "text": "Der Müller benutzte diesen nicht nur zum Wärmen! Schauen Sie genau hinein – sehen Sie eine Dose? Darin befindet sich Kuhfett, das der Müller schmolz, um die beweglichen Teile der Windmühle zu schmieren, damit sie nicht quietschten. Genau über dem Kamin hängt ein Foto von Kostas Politis, dem geliebten Besitzer dieser Windmühle, dessen Vermächtnis genau hier weiterlebt."
+          "text": "Der Kamin: Der Müller benutzte diesen nicht nur zum Wärmen! Schauen Sie genau hinein – sehen Sie eine Dose? Darin befindet sich Kuhfett, das der Müller schmolz, um die beweglichen Teile der Windmühle zu schmieren, damit sie nicht quietschten. Genau über dem Kamin hängt ein Foto von Kostas Politis, dem geliebten Besitzer dieser Windmühle, dessen Vermächtnis genau hier weiterlebt."
         },
         {
-          "label": "Zu Ihrer Linken",
-          "text": "Sie sehen eine traditionelle Waage und Gewichte, die verwendet wurden, um das frische Mehl sorgfältig zu wiegen."
+          "text": "Zu Ihrer Linken: Sie sehen eine traditionelle Waage und Gewichte, die verwendet wurden, um das frische Mehl sorgfältig zu wiegen."
         },
         {
-          "label": "Die ersten Bremsen",
-          "text": "Suchen Sie nach dem kleinen herabhängenden Seil. Ob Sie es glauben oder nicht, dieses Seil war das erste Bremssystem der Windmühle! Der Müller zog daran, um die zwei Tonnen schweren Mühlsteine ein kleines bisschen anzuheben, was es für ihn sicher machte, nach draußen zu gehen und die Segel zu entfalten"
+          "text": "Die ersten Bremsen: Suchen Sie nach dem kleinen herabhängenden Seil. Ob Sie es glauben oder nicht, dieses Seil war das erste Bremssystem der Windmühle! Der Müller zog daran, um die zwei Tonnen schweren Mühlsteine ein kleines bisschen anzuheben, was es für ihn sicher machte, nach draußen zu gehen und die Segel zu entfalten"
         }
       ]
     },
@@ -71,20 +62,16 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Testet die Wände",
-          "text": "Lasst uns sehen, wie dick diese Wände wirklich sind! Stellt euch neben den Eingang und streckt eure Arme so weit wie möglich aus. Sind eure Arme länger als die Wand dick ist, oder gewinnt die Windmühle?"
+          "text": "Testet die Wände: Lasst uns sehen, wie dick diese Wände wirklich sind! Stellt euch neben den Eingang und streckt eure Arme so weit wie möglich aus. Sind eure Arme länger als die Wand dick ist, oder gewinnt die Windmühle?"
         },
         {
-          "label": "Spionieren",
-          "text": "Schaut euch im Raum um und seht, ob ihr den hölzernen Eselsattel entdecken könnt!"
+          "text": "Spionieren: Schaut euch im Raum um und seht, ob ihr den hölzernen Eselsattel entdecken könnt!"
         },
         {
-          "label": "Findet das Fett",
-          "text": "Späht in den Kamin – könnt ihr die versteckte Dose mit Kuhfett entdecken?"
+          "text": "Findet das Fett: Späht in den Kamin – könnt ihr die versteckte Dose mit Kuhfett entdecken?"
         },
         {
-          "label": "Entdeckt die Bremsen",
-          "text": "Findet das kleine hängende Seil, das als Bremssystem der Windmühle diente!"
+          "text": "Entdeckt die Bremsen: Findet das kleine hängende Seil, das als Bremssystem der Windmühle diente!"
         }
       ]
     },
@@ -92,11 +79,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "Als Nächstes",
-          "text": "Gehen Sie dann weiter zum Schlafbereich der Windmühle."
+          "text": "Als Nächstes: Gehen Sie dann weiter in den zweiten Stock der Windmühle!"
         }
       ]
     }
   ],
-  "imageAlt": "Die Basis der Windmühle at Mylotopi"
+  "imageAlt": "Die Basis der Windmühle (1. Stock)"
 }

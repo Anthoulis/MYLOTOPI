@@ -2,7 +2,7 @@
   "id": "welcome",
   "title": "¡Bienvenido a la Experiencia del Molino de Viento!",
   "navigationTitle": "¡Bienvenido a la Experiencia del Molino de Viento!",
-  "preview": "¡Prepárate para adentrarte en el pasado! No necesitarás una máquina del tiempo para este viaje, solo unos zapatos cómodos.",
+  "preview": "Viaja en el tiempo: ¡Prepárate para adentrarte en el pasado! No necesitarás una máquina del tiempo para este viaje, solo unos zapatos cómodos.",
   "details": [
     {
       "type": "bulletGroup",
@@ -10,7 +10,7 @@
     },
     {
       "type": "heading",
-      "text": "Lo que explorarás"
+      "text": "Lo que explorarás:"
     },
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Cómo escuchar el recorrido"
+      "text": "Cómo escuchar el recorrido:"
     },
     {
       "type": "bulletGroup",
@@ -34,7 +34,7 @@
     },
     {
       "type": "heading",
-      "text": "Próximo destino"
+      "text": "Próximo destino:"
     },
     {
       "type": "bulletGroup",
@@ -46,16 +46,13 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Viaja en el tiempo",
-          "text": "¡Prepárate para adentrarte en el pasado! No necesitarás una máquina del tiempo para este viaje, solo unos zapatos cómodos."
+          "text": "Viaja en el tiempo: ¡Prepárate para adentrarte en el pasado! No necesitarás una máquina del tiempo para este viaje, solo unos zapatos cómodos."
         },
         {
-          "label": "Un pueblo restaurado",
-          "text": "Gracias a la hermosa restauración realizada por la familia Voudouris, verás exactamente cómo vivían los isleños hace más de un siglo, mucho antes de que se inventara el Wi-Fi. ¡También podrás curiosear y descubrir un poco de historia secreta de la década de 1940!"
+          "text": "Un pueblo restaurado: Gracias a la hermosa restauración realizada por la familia Voudouris, verás exactamente cómo vivían los isleños hace más de un siglo, mucho antes de que se inventara el Wi-Fi. ¡También podrás curiosear y descubrir un poco de historia secreta de la década de 1940!"
         },
         {
-          "label": "La vida del molinero",
-          "text": "Hoy podrás ponerte en los zapatos de un verdadero molinero. Alerta de spoiler: su rutina diaria de ejercicios consistía en levantar pesados sacos de harina todo el día solo para alimentar a la mayor parte del pueblo."
+          "text": "La vida del molinero: Hoy podrás ponerte en los zapatos de un verdadero molinero. Alerta de spoiler: su rutina diaria de ejercicios consistía en levantar pesados sacos de harina todo el día solo para alimentar a la mayor parte del pueblo."
         }
       ]
     },
@@ -63,20 +60,16 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "El molino de viento gigante",
-          "text": "Explora un molino de viento real y en funcionamiento desde la base hasta la cima."
+          "text": "El molino de viento gigante: Explora un molino de viento real y en funcionamiento desde la base hasta la cima."
         },
         {
-          "label": "La vida del pueblo",
-          "text": "Echa un vistazo al interior de la casa tradicional y la panadería."
+          "text": "La vida del pueblo: Echa un vistazo al interior de la casa tradicional y la panadería."
         },
         {
-          "label": "Naturaleza y animales",
-          "text": "Huele las maravillosas hierbas de nuestros jardines, visita la era y saluda a nuestros adorables burros."
+          "text": "Naturaleza y animales: Huele las maravillosas hierbas de nuestros jardines, visita la era y saluda a nuestros adorables burros."
         },
         {
-          "label": "Secretos subterráneos",
-          "text": "¡Camina directamente a través de un túnel militar real!"
+          "text": "Secretos subterráneos: ¡Camina directamente a través de un túnel militar real!"
         }
       ]
     },
@@ -84,12 +77,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "Es súper fácil",
-          "text": "Adultos, simplemente escaneen los códigos QR que encuentren usando la cámara de su teléfono. ¡No necesitan descargar ninguna aplicación!"
+          "text": "Es súper fácil: Adultos, simplemente escaneen los códigos QR que encuentren usando la cámara de su teléfono. ¡No necesitan descargar ninguna aplicación!"
         },
         {
-          "label": "Escuchen juntos",
-          "text": "Solo suban el volumen de su teléfono o compartan unos auriculares, y sigan los números por todo el pueblo."
+          "text": "Escuchen juntos: Solo suban el volumen de su teléfono o compartan unos auriculares, y sigan los números por todo el pueblo."
         }
       ]
     },
@@ -97,16 +88,13 @@
       "id": "bullet-group-04",
       "items": [
         {
-          "label": "Toma tu equipo artístico",
-          "text": "Te daremos un boceto especial de Mylotopi y algunos lápices de colores para que te los lleves."
+          "text": "Toma tu equipo artístico: Te daremos un boceto especial de Mylotopi y algunos lápices de colores para que te los lleves."
         },
         {
-          "label": "Observa todo",
-          "text": "¡Mientras paseas hoy, mantén los ojos bien abiertos! Mira muy de cerca el molino de viento gigante, las piedras pesadas y las herramientas antiguas. Trata de memorizar todos los hermosos colores que veas."
+          "text": "Observa todo: ¡Mientras paseas hoy, mantén los ojos bien abiertos! Mira muy de cerca el molino de viento gigante, las piedras pesadas y las herramientas antiguas. Trata de memorizar todos los hermosos colores que veas."
         },
         {
-          "label": "Crea una obra maestra",
-          "text": "Cuando termines tu aventura y te sientes a relajarte en nuestro restaurante-café, ¡podrás colorear tu dibujo y convertirlo en una verdadera obra maestra!"
+          "text": "Crea una obra maestra: Cuando termines tu aventura y te sientes a relajarte en nuestro restaurante-café, ¡podrás colorear tu dibujo y convertirlo en una verdadera obra maestra!"
         }
       ]
     },
@@ -114,11 +102,10 @@
       "id": "bullet-group-05",
       "items": [
         {
-          "label": "A continuación",
-          "text": "¡Dirígete a nuestros jardines de hierbas aromáticas!"
+          "text": "A continuación: ¡Dirígete a nuestros jardines de hierbas aromáticas!"
         }
       ]
     }
   ],
-  "imageAlt": "¡Bienvenido a la Experiencia del Molino de Viento! at Mylotopi"
+  "imageAlt": "¡Bienvenido a la Experiencia del Molino de Viento!"
 }

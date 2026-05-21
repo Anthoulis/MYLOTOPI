@@ -2,7 +2,7 @@
   "id": "welcome",
   "title": "Welkom bij de Windmill Experience!",
   "navigationTitle": "Welkom bij de Windmill Experience!",
-  "preview": "Maak je klaar om het verleden in te stappen! Je hebt voor deze reis geen tijdmachine nodig, alleen een paar comfortabele schoenen.",
+  "preview": "Reis terug in de tijd: Maak je klaar om het verleden in te stappen! Je hebt voor deze reis geen tijdmachine nodig, alleen een paar comfortabele schoenen.",
   "details": [
     {
       "type": "bulletGroup",
@@ -10,7 +10,7 @@
     },
     {
       "type": "heading",
-      "text": "Wat je gaat ontdekken"
+      "text": "Wat je gaat ontdekken:"
     },
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Hoe je de tour kunt beluisteren"
+      "text": "Hoe je de tour kunt beluisteren:"
     },
     {
       "type": "bulletGroup",
@@ -34,7 +34,7 @@
     },
     {
       "type": "heading",
-      "text": "Volgende bestemming"
+      "text": "Volgende bestemming:"
     },
     {
       "type": "bulletGroup",
@@ -46,16 +46,13 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Reis terug in de tijd",
-          "text": "Maak je klaar om het verleden in te stappen! Je hebt voor deze reis geen tijdmachine nodig, alleen een paar comfortabele schoenen."
+          "text": "Reis terug in de tijd: Maak je klaar om het verleden in te stappen! Je hebt voor deze reis geen tijdmachine nodig, alleen een paar comfortabele schoenen."
         },
         {
-          "label": "Een gerestaureerd dorp",
-          "text": "Dankzij de prachtige restauratie door de familie Voudouris zie je precies hoe de eilandbewoners meer dan een eeuw geleden leefden, lang voordat wifi überhaupt was uitgevonden. Je krijgt ook de kans om rond te neuzen en geheime geschiedenis uit de jaren 40 te ontdekken!"
+          "text": "Een gerestaureerd dorp: Dankzij de prachtige restauratie door de familie Voudouris zie je precies hoe de eilandbewoners meer dan een eeuw geleden leefden, lang voordat wifi überhaupt was uitgevonden. Je krijgt ook de kans om rond te neuzen en geheime geschiedenis uit de jaren 40 te ontdekken!"
         },
         {
-          "label": "Het leven van de molenaar",
-          "text": "Vandaag kruip je in de huid van een echte molenaar. Spoiler alert: zijn dagelijkse trainingsroutine bestond uit het de hele dag tillen van zware zakken meel om het grootste deel van het dorp te voeden."
+          "text": "Het leven van de molenaar: Vandaag kruip je in de huid van een echte molenaar. Spoiler alert: zijn dagelijkse trainingsroutine bestond uit het de hele dag tillen van zware zakken meel om het grootste deel van het dorp te voeden."
         }
       ]
     },
@@ -63,20 +60,16 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "De gigantische windmolen",
-          "text": "Verken een echte, werkende windmolen van de onderkant tot helemaal aan de top."
+          "text": "De gigantische windmolen: Verken een echte, werkende windmolen van de onderkant tot helemaal aan de top."
         },
         {
-          "label": "Het dorpsleven",
-          "text": "Neem een kijkje in het traditionele huis en de bakkerij."
+          "text": "Het dorpsleven: Neem een kijkje in het traditionele huis en de bakkerij."
         },
         {
-          "label": "Natuur & dieren",
-          "text": "Snuif de heerlijke kruiden op in onze tuinen, bezoek de dorsvloer en zeg hallo tegen onze lieve ezels."
+          "text": "Natuur & dieren: Snuif de heerlijke kruiden op in onze tuinen, bezoek de dorsvloer en zeg hallo tegen onze lieve ezels."
         },
         {
-          "label": "Ondergrondse geheimen",
-          "text": "Loop dwars door een echte militaire tunnel!"
+          "text": "Ondergrondse geheimen: Loop dwars door een echte militaire tunnel!"
         }
       ]
     },
@@ -84,12 +77,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "Het is supermakkelijk",
-          "text": "Volwassenen kunnen simpelweg de QR-codes scannen met de camera van hun telefoon. Je hoeft geen apps te downloaden!"
+          "text": "Het is supermakkelijk: Volwassenen kunnen simpelweg de QR-codes scannen met de camera van hun telefoon. Je hoeft geen apps te downloaden!"
         },
         {
-          "label": "Luister samen",
-          "text": "Zet het volume van je telefoon harder of deel een koptelefoon, en volg de nummers door het dorp."
+          "text": "Luister samen: Zet het volume van je telefoon harder of deel een koptelefoon, en volg de nummers door het dorp."
         }
       ]
     },
@@ -97,16 +88,13 @@
       "id": "bullet-group-04",
       "items": [
         {
-          "label": "Pak je kunstuitrusting",
-          "text": "We geven je een speciale Mylotopi-schets en een paar kleurpotloden mee om mee te nemen."
+          "text": "Pak je kunstuitrusting: We geven je een speciale Mylotopi-schets en een paar kleurpotloden mee om mee te nemen."
         },
         {
-          "label": "Observeer alles",
-          "text": "Houd vandaag je ogen wijd open terwijl je rondloopt! Kijk heel goed naar de gigantische windmolen, de zware stenen en het oude gereedschap. Probeer alle prachtige kleuren die je ziet te onthouden."
+          "text": "Observeer alles: Houd vandaag je ogen wijd open terwijl je rondloopt! Kijk heel goed naar de gigantische windmolen, de zware stenen en het oude gereedschap. Probeer alle prachtige kleuren die je ziet te onthouden."
         },
         {
-          "label": "Maak een meesterwerk",
-          "text": "Wanneer je je avontuur hebt voltooid en gaat ontspannen in ons restaurant-café, kun je je tekening inkleuren en er een echt meesterwerk van maken!"
+          "text": "Maak een meesterwerk: Wanneer je je avontuur hebt voltooid en gaat ontspannen in ons restaurant-café, kun je je tekening inkleuren en er een echt meesterwerk van maken!"
         }
       ]
     },
@@ -114,11 +102,10 @@
       "id": "bullet-group-05",
       "items": [
         {
-          "label": "Binnenkort",
-          "text": "Ga verder naar onze kruidentuinen!"
+          "text": "Binnenkort: Ga verder naar onze kruidentuinen!"
         }
       ]
     }
   ],
-  "imageAlt": "Welkom bij de Windmill Experience! at Mylotopi"
+  "imageAlt": "Welkom bij de Windmill Experience!"
 }

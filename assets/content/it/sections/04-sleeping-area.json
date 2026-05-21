@@ -1,8 +1,8 @@
 {
   "id": "sleeping-area",
-  "title": "La zona notte del mulino a vento",
-  "navigationTitle": "La zona notte del mulino a vento",
-  "preview": "Benvenuti al secondo piano! Fate attenzione a dove mettete i piedi sulle scale di legno e state attenti alla testa con le travi di legno qui sopra. Preparatevi a una grande sorpresa su come viveva la famiglia.",
+  "title": "La Zona Notte del Mulino a Vento (2° Piano)",
+  "navigationTitle": "La Zona Notte del Mulino a Vento (2° Piano)",
+  "preview": "Attenzione al Gradino: Benvenuti al secondo piano! Fate attenzione a dove mettete i piedi sulle scale di legno e state attenti alla testa con le travi di legno qui sopra. Preparatevi a una grande sorpresa su come viveva la famiglia.",
   "details": [
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Prossima Destinazione"
+      "text": "Prossima Destinazione:"
     },
     {
       "type": "bulletGroup",
@@ -30,24 +30,19 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Attenzione al Gradino",
-          "text": "Benvenuti al secondo piano! Fate attenzione a dove mettete i piedi sulle scale di legno e state attenti alla testa con le travi di legno qui sopra. Preparatevi a una grande sorpresa su come viveva la famiglia."
+          "text": "Attenzione al Gradino: Benvenuti al secondo piano! Fate attenzione a dove mettete i piedi sulle scale di legno e state attenti alla testa con le travi di legno qui sopra. Preparatevi a una grande sorpresa su come viveva la famiglia."
         },
         {
-          "label": "Alla Vostra Destra",
-          "text": "Sulle pareti, vedrete alcune bellissime immagini che mostrano diversi mulini a vento storici di tutta la Grecia. Ma questo spazio non era solo una galleria!"
+          "text": "Alla Vostra Destra: Sulle pareti, vedrete alcune bellissime immagini che mostrano diversi mulini a vento storici di tutta la Grecia. Ma questo spazio non era solo una galleria!"
         },
         {
-          "label": "Una Camera da Letto Molto Rumorosa",
-          "text": "Proprio qui, sul lato destro, è in realtà dove il mugnaio e l'intera famiglia erano soliti dormire! Riuscite a immaginare di cercare di fare un pisolino tranquillo mentre l'intero edificio tremava, il vento ululava e i pesanti macchinari schiacciavano rumorosamente il grano a pochi passi di distanza? Dovevano avere un sonno molto profondo!"
+          "text": "Una Camera da Letto Molto Rumorosa: Proprio qui, sul lato destro, è in realtà dove il mugnaio e l'intera famiglia erano soliti dormire! Riuscite a immaginare di cercare di fare un pisolino tranquillo mentre l'intero edificio tremava, il vento ululava e i pesanti macchinari schiacciavano rumorosamente il grano a pochi passi di distanza? Dovevano avere un sonno molto profondo!"
         },
         {
-          "label": "Alla Vostra Sinistra",
-          "text": "Ora, guardate verso il lato sinistro. Questo era uno spazio di stoccaggio molto importante e movimentato."
+          "text": "Alla Vostra Sinistra: Ora, guardate verso il lato sinistro. Questo era uno spazio di stoccaggio molto importante e movimentato."
         },
         {
-          "label": "Proteggere la Farina",
-          "text": "Il mugnaio usava questo lato della stanza per impilare in modo sicuro tutti i pesanti sacchi di grano crudo in attesa di essere macinati, insieme ai sacchi appena riempiti di soffice farina bianca che erano pronti per uscire e sfamare il villaggio. Li teneva proprio qui vicino al suo letto per poterli proteggere!"
+          "text": "Proteggere la Farina: Il mugnaio usava questo lato della stanza per impilare in modo sicuro tutti i pesanti sacchi di grano crudo in attesa di essere macinati, insieme ai sacchi appena riempiti di soffice farina bianca che erano pronti per uscire e sfamare il villaggio. Li teneva proprio qui vicino al suo letto per poterli proteggere!"
         }
       ]
     },
@@ -55,8 +50,7 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Immaginate Questo",
-          "text": "Riuscireste a immaginare voi stessi a dormire al secondo piano esattamente come facevano loro?"
+          "text": "Immaginate Questo: Riuscireste a immaginare voi stessi a dormire al secondo piano esattamente come facevano loro?"
         }
       ]
     },
@@ -64,11 +58,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "In Arrivo",
-          "text": "Proseguite quindi verso i macchinari del mulino a vento."
+          "text": "In Arrivo: Quindi proseguite verso il terzo piano del Mulino a Vento!"
         }
       ]
     }
   ],
-  "imageAlt": "La zona notte del mulino a vento at Mylotopi"
+  "imageAlt": "La Zona Notte del Mulino a Vento (2° Piano)"
 }

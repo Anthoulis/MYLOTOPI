@@ -1,8 +1,8 @@
 {
   "id": "machinery",
-  "title": "Yel değirmeni makine aksamı",
-  "navigationTitle": "Yel değirmeni makine aksamı",
-  "preview": "Üçüncü kata hoş geldiniz! Lütfen merdivende adımlarınıza dikkat edin ve keşfederken başınızı çarpmamaya özen gösterin.",
+  "title": "Yel Değirmeni Makine Aksamı (3. Kat)",
+  "navigationTitle": "Yel Değirmeni Makine Aksamı (3. Kat)",
+  "preview": "Başınıza Dikkat Edin: Üçüncü kata hoş geldiniz! Lütfen merdivende adımlarınıza dikkat edin ve keşfederken başınızı çarpmamaya özen gösterin.",
   "details": [
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Sıradaki Durak"
+      "text": "Sıradaki Durak:"
     },
     {
       "type": "bulletGroup",
@@ -30,44 +30,34 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Başınıza Dikkat Edin",
-          "text": "Üçüncü kata hoş geldiniz! Lütfen merdivende adımlarınıza dikkat edin ve keşfederken başınızı çarpmamaya özen gösterin."
+          "text": "Başınıza Dikkat Edin: Üçüncü kata hoş geldiniz! Lütfen merdivende adımlarınıza dikkat edin ve keşfederken başınızı çarpmamaya özen gösterin."
         },
         {
-          "label": "Değirmenin Kas Gücü",
-          "text": "Şu anda yel değirmeninin gerçek gücüne bakıyorsunuz. Taşların üzerindeki o devasa ahşap kirişe bakın. O; içerideki ağır taşları, dişlileri ve dışarıdaki devasa dönen yelkenleri birbirine bağlayan ana bağlantı parçasıdır!"
+          "text": "Değirmenin Kas Gücü: Şu anda yel değirmeninin gerçek gücüne bakıyorsunuz. Taşların üzerindeki o devasa ahşap kirişe bakın. O; içerideki ağır taşları, dişlileri ve dışarıdaki devasa dönen yelkenleri birbirine bağlayan ana bağlantı parçasıdır!"
         },
         {
-          "label": "İki Tonluk Taşlar",
-          "text": "Bu devasa öğütme taşlarının ağırlığı birlikte iki tondan fazladır! Değirmencilik için mükemmel olan benzersiz, süper güçlü bir taş üretmesiyle ünlü İncirli (Nisyros) Adası'ndan getirilmişlerdir."
+          "text": "İki Tonluk Taşlar: Bu devasa öğütme taşlarının ağırlığı birlikte iki tondan fazladır! Değirmencilik için mükemmel olan benzersiz, süper güçlü bir taş üretmesiyle ünlü İncirli (Nisyros) Adası'ndan getirilmişlerdir."
         },
         {
-          "label": "Besleyici ve Zil",
-          "text": "Taşların hemen üstünde, değirmencinin işlenmemiş buğdayı döktüğü, Besleyici adı verilen ahşap kutuyu arayın. Peki onca gürültünün arasında kutunun boşaldığını nasıl anlıyordu? Yakından bakarsanız küçük bir zil göreceksiniz! Buğday azaldığında otomatik olarak çalarak değirmenciye yeniden doldurması gerektiğini haber verirdi."
+          "text": "Besleyici ve Zil: Taşların hemen üstünde, değirmencinin işlenmemiş buğdayı döktüğü, Besleyici adı verilen ahşap kutuyu arayın. Peki onca gürültünün arasında kutunun boşaldığını nasıl anlıyordu? Yakından bakarsanız küçük bir zil göreceksiniz! Buğday azaldığında otomatik olarak çalarak değirmenciye yeniden doldurması gerektiğini haber verirdi."
         },
         {
-          "label": "İlk Fren",
-          "text": "Küçük bir ipe bağlı olan o ahşap kolu görüyor musunuz? O, ta birinci kata kadar uzanır ve aşağıda bahsettiğimiz ilk fren sistemidir."
+          "text": "İlk Fren: Küçük bir ipe bağlı olan o ahşap kolu görüyor musunuz? O, ta birinci kata kadar uzanır ve aşağıda bahsettiğimiz ilk fren sistemidir."
         },
         {
-          "label": "Unun Dökülmesi",
-          "text": "Bir boruya bağlanan zemin kapağını bulmak için kolun yakınına, aşağıya bakın. Un mükemmel bir şekilde ezilir ezilmez, o borudan doğrudan alt kata dökülürdü!"
+          "text": "Unun Dökülmesi: Bir boruya bağlanan zemin kapağını bulmak için kolun yakınına, aşağıya bakın. Un mükemmel bir şekilde ezilir ezilmez, o borudan doğrudan alt kata dökülürdü!"
         },
         {
-          "label": "Değirmencinin \"Bahşişi\"",
-          "text": "Ana borunun hemen yanında ikinci ve daha küçük bir kapak vardır. Eski günlerde insanlar her zaman parayla ödeme yapmazlardı. Bunun yerine, değirmenci sıkı çalışmasının karşılığı olarak kendi ailesi için unun küçük bir yüzdesini kendine ayırıp \"bahşişini\" toplamak için bu kapıyı kullanırdı!"
+          "text": "Değirmencinin \"Bahşişi\": Ana borunun hemen yanında ikinci ve daha küçük bir kapak vardır. Eski günlerde insanlar her zaman parayla ödeme yapmazlardı. Bunun yerine, değirmenci sıkı çalışmasının karşılığı olarak kendi ailesi için unun küçük bir yüzdesini kendine ayırıp \"bahşişini\" toplamak için bu kapıyı kullanırdı!"
         },
         {
-          "label": "Pürüzsüz Dönüş",
-          "text": "Kapakların yanındaki küçük tenekeyi bulun. Alt katta inek yağı kullanırdı, ancak burada üst dişlilerin sorunsuz çalışmasını sağlamak için özel bir zeytinyağı ve sabun karışımı kullanıyordu."
+          "text": "Pürüzsüz Dönüş: Kapakların yanındaki küçük tenekeyi bulun. Alt katta inek yağı kullanırdı, ancak burada üst dişlilerin sorunsuz çalışmasını sağlamak için özel bir zeytinyağı ve sabun karışımı kullanıyordu."
         },
         {
-          "label": "Acil Durum Freni",
-          "text": "Merdivenin yanında gerçekten kalın bir ip arayın. Değirmencinin acilen un yapmayı tamamen durdurması gerekirse, bu ipi çekerdi; ikinci fren sistemi!"
+          "text": "Acil Durum Freni: Merdivenin yanında gerçekten kalın bir ip arayın. Değirmencinin acilen un yapmayı tamamen durdurması gerekirse, bu ipi çekerdi; ikinci fren sistemi!"
         },
         {
-          "label": "Bir Gemi Tavanı",
-          "text": "Son olarak, tavana bakın. Size neyi hatırlatıyor? Mekanizmanın gücünü artırmak ve daha hızlı un üretmek için aslında bir gemi şeklinde tasarlanmıştır!"
+          "text": "Bir Gemi Tavanı: Son olarak, tavana bakın. Size neyi hatırlatıyor? Mekanizmanın gücünü artırmak ve daha hızlı un üretmek için aslında bir gemi şeklinde tasarlanmıştır!"
         }
       ]
     },
@@ -75,12 +65,10 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Zili Dinleyin ve Çalın",
-          "text": "Buğday bittiğinde değirmenciyi uyaran o küçük zili bulabilir misiniz? Onu çalabilir misiniz?"
+          "text": "Zili Dinleyin ve Çalın: Buğday bittiğinde değirmenciyi uyaran o küçük zili bulabilir misiniz? Onu çalabilir misiniz?"
         },
         {
-          "label": "Gizli Unu Bulun",
-          "text": "Yeri inceleyin ve değirmencinin zorlukla kazandığı ödemesini sakladığı özel \"bahşiş\" kapağını bulup bulamayacağınıza bir bakın!"
+          "text": "Gizli Unu Bulun: Yeri inceleyin ve değirmencinin zorlukla kazandığı ödemesini sakladığı özel \"bahşiş\" kapağını bulup bulamayacağınıza bir bakın!"
         }
       ]
     },
@@ -88,11 +76,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "Sırada",
-          "text": "Ardından Harman Yerine ve Eşeklerin Alanına doğru ilerleyin!"
+          "text": "Sırada: Ardından Harman Yerine ve Eşeklerin Alanına doğru ilerleyin!"
         }
       ]
     }
   ],
-  "imageAlt": "Yel değirmeni makine aksamı at Mylotopi"
+  "imageAlt": "Yel Değirmeni Makine Aksamı (3. Kat)"
 }

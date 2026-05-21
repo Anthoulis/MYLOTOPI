@@ -1,8 +1,8 @@
 {
   "id": "sleeping-area",
-  "title": "L’espace sommeil du moulin à vent",
-  "navigationTitle": "L’espace sommeil du moulin à vent",
-  "preview": "Bienvenue au deuxième étage ! Faites attention où vous posez les pieds dans les escaliers en bois et prenez garde à votre tête avec les poutres au-dessus. Préparez-vous à une grande surprise sur la façon dont vivait la famille.",
+  "title": "L'Espace Sommeil du Moulin à Vent (2e Étage)",
+  "navigationTitle": "L'Espace Sommeil du Moulin à Vent (2e Étage)",
+  "preview": "Faites attention où vous marchez : Bienvenue au deuxième étage ! Faites attention où vous posez les pieds dans les escaliers en bois et prenez garde à votre tête avec les poutres au-dessus. Préparez-vous à une grande surprise sur la façon dont vivait la famille.",
   "details": [
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Prochaine Destination "
+      "text": "Prochaine Destination :"
     },
     {
       "type": "bulletGroup",
@@ -30,24 +30,19 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Faites attention où vous marchez",
-          "text": "Bienvenue au deuxième étage ! Faites attention où vous posez les pieds dans les escaliers en bois et prenez garde à votre tête avec les poutres au-dessus. Préparez-vous à une grande surprise sur la façon dont vivait la famille."
+          "text": "Faites attention où vous marchez : Bienvenue au deuxième étage ! Faites attention où vous posez les pieds dans les escaliers en bois et prenez garde à votre tête avec les poutres au-dessus. Préparez-vous à une grande surprise sur la façon dont vivait la famille."
         },
         {
-          "label": "Sur votre droite",
-          "text": "Sur les murs, vous verrez de magnifiques photos montrant différents moulins à vent historiques de toute la Grèce. Mais cet espace n'était pas qu'une simple galerie !"
+          "text": "Sur votre droite : Sur les murs, vous verrez de magnifiques photos montrant différents moulins à vent historiques de toute la Grèce. Mais cet espace n'était pas qu'une simple galerie !"
         },
         {
-          "label": "Une chambre très bruyante",
-          "text": "C'est exactement ici, sur le côté droit, que le meunier et toute sa famille dormaient ! Pouvez-vous imaginer essayer de faire une sieste paisible alors que tout le bâtiment tremblait, que le vent hurlait et que la machinerie lourde broyait bruyamment le blé à quelques mètres de là ? Ils devaient avoir le sommeil très lourd !"
+          "text": "Une chambre très bruyante : C'est exactement ici, sur le côté droit, que le meunier et toute sa famille dormaient ! Pouvez-vous imaginer essayer de faire une sieste paisible alors que tout le bâtiment tremblait, que le vent hurlait et que la machinerie lourde broyait bruyamment le blé à quelques mètres de là ? Ils devaient avoir le sommeil très lourd !"
         },
         {
-          "label": "Sur votre gauche",
-          "text": "Maintenant, regardez sur le côté gauche. Il s'agissait d'un espace de stockage très important et toujours en mouvement."
+          "text": "Sur votre gauche : Maintenant, regardez sur le côté gauche. Il s'agissait d'un espace de stockage très important et toujours en mouvement."
         },
         {
-          "label": "Protéger la farine",
-          "text": "Le meunier utilisait ce côté de la pièce pour empiler en toute sécurité tous les lourds sacs de blé brut en attente d'être moulus, à côté des sacs fraîchement remplis de farine blanche et légère, prêts à partir pour nourrir le village. Il les gardait juste ici, près de son lit, pour pouvoir les protéger !"
+          "text": "Protéger la farine : Le meunier utilisait ce côté de la pièce pour empiler en toute sécurité tous les lourds sacs de blé brut en attente d'être moulus, à côté des sacs fraîchement remplis de farine blanche et légère, prêts à partir pour nourrir le village. Il les gardait juste ici, près de son lit, pour pouvoir les protéger !"
         }
       ]
     },
@@ -55,8 +50,7 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Imaginez ceci",
-          "text": "Pourriez-vous vous imaginer dormir au deuxième étage exactement comme ils le faisaient autrefois ?"
+          "text": "Imaginez ceci : Pourriez-vous vous imaginer dormir au deuxième étage exactement comme ils le faisaient autrefois ?"
         }
       ]
     },
@@ -64,11 +58,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "À venir",
-          "text": "Dirigez-vous ensuite vers la machinerie du moulin à vent."
+          "text": "À venir : Dirigez-vous ensuite vers le troisième étage du moulin à vent !"
         }
       ]
     }
   ],
-  "imageAlt": "L’espace sommeil du moulin à vent at Mylotopi"
+  "imageAlt": "L'Espace Sommeil du Moulin à Vent (2e Étage)"
 }

@@ -1,8 +1,8 @@
 {
   "id": "windmill-base",
-  "title": "Podstawa wiatraka",
-  "navigationTitle": "Podstawa wiatraka",
-  "preview": "Witamy w „Młynie Księdza”! Stoisz wewnątrz najstarszego działającego wiatraka na całej wyspie i w całym archipelagu Dodekanezu. Ma ponad 400 lat, działał codziennie aż do 1987 roku i wciąż jest żywą maszyną, która do dziś miele mąkę!",
+  "title": "Podstawa Wiatraka (1. piętro)",
+  "navigationTitle": "Podstawa Wiatraka (1. piętro)",
+  "preview": "Żywa legenda: Witamy w „Młynie Księdza”! Stoisz wewnątrz najstarszego działającego wiatraka na całej wyspie i w całym archipelagu Dodekanezu. Ma ponad 400 lat, działał codziennie aż do 1987 roku i wciąż jest żywą maszyną, która do dziś miele mąkę!",
   "details": [
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Następny cel"
+      "text": "Następny cel:"
     },
     {
       "type": "bulletGroup",
@@ -30,40 +30,31 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Żywa legenda",
-          "text": "Witamy w „Młynie Księdza”! Stoisz wewnątrz najstarszego działającego wiatraka na całej wyspie i w całym archipelagu Dodekanezu. Ma ponad 400 lat, działał codziennie aż do 1987 roku i wciąż jest żywą maszyną, która do dziś miele mąkę!"
+          "text": "Żywa legenda: Witamy w „Młynie Księdza”! Stoisz wewnątrz najstarszego działającego wiatraka na całej wyspie i w całym archipelagu Dodekanezu. Ma ponad 400 lat, działał codziennie aż do 1987 roku i wciąż jest żywą maszyną, która do dziś miele mąkę!"
         },
         {
-          "label": "Przy wejściu",
-          "text": "Kiedy przechodzisz przez drzwi, zwróć uwagę na tradycyjny owoc granatu zawieszony na szczęście, obok małej butelki Wody Święconej z góry Athos, która ma ponad 9 lat."
+          "text": "Przy wejściu: Kiedy przechodzisz przez drzwi, zwróć uwagę na tradycyjny owoc granatu zawieszony na szczęście, obok małej butelki Wody Święconej z góry Athos, która ma ponad 9 lat."
         },
         {
-          "label": "Zbudowany na sztormy",
-          "text": "Ta gigantyczna maszyna ma 6,2 metra wysokości, a kamienne ściany wokół Ciebie mają 1,2 metra grubości, aby chronić budynek przed dzikimi morskimi sztormami."
+          "text": "Zbudowany na sztormy: Ta gigantyczna maszyna ma 6,2 metra wysokości, a kamienne ściany wokół Ciebie mają 1,2 metra grubości, aby chronić budynek przed dzikimi morskimi sztormami."
         },
         {
-          "label": "Masywne maszyny",
-          "text": "Na wyższych piętrach znajdują się dwa masywne kamienie młyńskie, z których każdy waży jedną tonę – to ponad dwie tony łącznie!"
+          "text": "Masywne maszyny: Na wyższych piętrach znajdują się dwa masywne kamienie młyńskie, z których każdy waży jedną tonę – to ponad dwie tony łącznie!"
         },
         {
-          "label": "Starożytne drewno",
-          "text": "W 80% drewno w tym budynku jest oryginalne, a reszta została sprowadzona aż z góry Athos. O dziwo, niektóre z ponownie wykorzystanych drewnianych części obracających się w górze mają od 1000 do 1300 lat!"
+          "text": "Starożytne drewno: W 80% drewno w tym budynku jest oryginalne, a reszta została sprowadzona aż z góry Athos. O dziwo, niektóre z ponownie wykorzystanych drewnianych części obracających się w górze mają od 1000 do 1300 lat!"
         },
         {
-          "label": "Po Twojej prawej",
-          "text": "Widzisz obszar przykryty szmatą? To był magazyn młynarza. Obok niego zobaczysz drewniane siodło dla osła i sanie młockarskie, które ciągnął osioł młynarza, aby oddzielać ziarna pszenicy. Możesz również dostrzec codzienne drewniane narzędzia i piękne zdjęcia innych wiatraków z całej Grecji."
+          "text": "Po Twojej prawej: Widzisz obszar przykryty szmatą? To był magazyn młynarza. Obok niego zobaczysz drewniane siodło dla osła i sanie młockarskie, które ciągnął osioł młynarza, aby oddzielać ziarna pszenicy. Możesz również dostrzec codzienne drewniane narzędzia i piękne zdjęcia innych wiatraków z całej Grecji."
         },
         {
-          "label": "Kominek",
-          "text": "Młynarz nie używał go tylko do ogrzewania! Przyjrzyj się uważnie wnętrzu – czy widzisz puszkę? Zawiera ona krowi tłuszcz, który młynarz topił, aby smarować ruchome części wiatraka, żeby nie skrzypiały. Tuż nad kominkiem znajduje się fotografia Kostasa Politisa, ukochanego właściciela tego wiatraka, którego dziedzictwo wciąż tu żyje."
+          "text": "Kominek: Młynarz nie używał go tylko do ogrzewania! Przyjrzyj się uważnie wnętrzu – czy widzisz puszkę? Zawiera ona krowi tłuszcz, który młynarz topił, aby smarować ruchome części wiatraka, żeby nie skrzypiały. Tuż nad kominkiem znajduje się fotografia Kostasa Politisa, ukochanego właściciela tego wiatraka, którego dziedzictwo wciąż tu żyje."
         },
         {
-          "label": "Po Twojej lewej",
-          "text": "Zobaczysz tradycyjną wagę i odważniki, których używano do ostrożnego ważenia świeżej mąki."
+          "text": "Po Twojej lewej: Zobaczysz tradycyjną wagę i odważniki, których używano do ostrożnego ważenia świeżej mąki."
         },
         {
-          "label": "Pierwsze hamulce",
-          "text": "Poszukaj małej, zwisającej liny. Wierz lub nie, ale ta lina była pierwszym systemem hamulcowym wiatraka! Młynarz pociągał za nią, aby podnieść te dwutonowe kamienie młyńskie zaledwie o odrobinę, co pozwalało mu bezpiecznie wyjść na zewnątrz i rozwinąć żagle."
+          "text": "Pierwsze hamulce: Poszukaj małej, zwisającej liny. Wierz lub nie, ale ta lina była pierwszym systemem hamulcowym wiatraka! Młynarz pociągał za nią, aby podnieść te dwutonowe kamienie młyńskie zaledwie o odrobinę, co pozwalało mu bezpiecznie wyjść na zewnątrz i rozwinąć żagle."
         }
       ]
     },
@@ -71,20 +62,16 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Przetestuj ściany",
-          "text": "Sprawdźmy, jak grube są te ściany w rzeczywistości! Stań obok drzwi i wyciągnij ramiona najszerzej jak potrafisz. Czy Twoje ramiona są dłuższe niż grubość ściany, czy wiatrak wygrywa?"
+          "text": "Przetestuj ściany: Sprawdźmy, jak grube są te ściany w rzeczywistości! Stań obok drzwi i wyciągnij ramiona najszerzej jak potrafisz. Czy Twoje ramiona są dłuższe niż grubość ściany, czy wiatrak wygrywa?"
         },
         {
-          "label": "Szpieg",
-          "text": "Rozejrzyj się po pokoju i sprawdź, czy potrafisz dostrzec drewniane siodło dla osła!"
+          "text": "Szpieg: Rozejrzyj się po pokoju i sprawdź, czy potrafisz dostrzec drewniane siodło dla osła!"
         },
         {
-          "label": "Znajdź tłuszcz",
-          "text": "Zajrzyj do kominka – czy potrafisz dostrzec ukrytą puszkę z krowim tłuszczem?"
+          "text": "Znajdź tłuszcz: Zajrzyj do kominka – czy potrafisz dostrzec ukrytą puszkę z krowim tłuszczem?"
         },
         {
-          "label": "Zauważ hamulce",
-          "text": "Znajdź małą wiszącą linę, która służyła jako system hamulcowy wiatraka!"
+          "text": "Zauważ hamulce: Znajdź małą wiszącą linę, która służyła jako system hamulcowy wiatraka!"
         }
       ]
     },
@@ -92,11 +79,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "Kolejny punkt",
-          "text": "Następnie przejdźcie do sypialni w wiatraku."
+          "text": "Kolejny punkt: Następnie przejdźcie dalej na drugie piętro Wiatraka!"
         }
       ]
     }
   ],
-  "imageAlt": "Podstawa wiatraka at Mylotopi"
+  "imageAlt": "Podstawa Wiatraka (1. piętro)"
 }

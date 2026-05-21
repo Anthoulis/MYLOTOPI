@@ -1,13 +1,9 @@
 {
   "id": "garden-herbs",
-  "title": "Garden / Herbs",
-  "navigationTitle": "Garden / Herbs",
-  "preview": "Before modern medicine and supermarkets, these gardens were an island survival kit. These plots are filled with the exact same herbs that have grown here for centuries.",
+  "title": "Our Garden with Our Herbs!",
+  "navigationTitle": "Our Garden with Our Herbs!",
+  "preview": "Kitchen or Pharmacy? Take a deep breath! Does it smell like a giant outdoor kitchen or a village pharmacy? Actually, it’s both!",
   "details": [
-    {
-      "type": "heading",
-      "text": "Kitchen or Pharmacy? Take a deep breath! Does it smell like a giant outdoor kitchen or a village pharmacy? Actually, it’s both!"
-    },
     {
       "type": "bulletGroup",
       "id": "bullet-group-01"
@@ -22,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Next Destination"
+      "text": "Next Destination:"
     },
     {
       "type": "bulletGroup",
@@ -34,16 +30,16 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "The Ultimate Survival Kit",
-          "text": "Before modern medicine and supermarkets, these gardens were an island survival kit. These plots are filled with the exact same herbs that have grown here for centuries."
+          "text": "Kitchen or Pharmacy? Take a deep breath! Does it smell like a giant outdoor kitchen or a village pharmacy? Actually, it’s both!"
         },
         {
-          "label": "Nature's Doctor",
-          "text": "Herbs like Thyme, Oregano, and Marjoram weren’t just used to make dinner taste amazing they were the local doctor! If someone had a stomach ache, the wind miller’s family wouldn't run to the pharmacy for bad-tasting pink syrup they would come right here to pick leaves for a natural remedy."
+          "text": "The Ultimate Survival Kit: Before modern medicine and supermarkets, these gardens were an island survival kit. These plots are filled with the exact same herbs that have grown here for centuries."
         },
         {
-          "label": "A Painter's Palette",
-          "text": "Check out the beautiful purple Lavender and bright green Mint! They look like someone painted them right into the garden. Pay close attention to those bright colors!"
+          "text": "Nature's Doctor: Herbs like Thyme, Oregano, and Marjoram weren’t just used to make dinner taste amazing they were the local doctor! If someone had a stomach ache, the wind miller’s family wouldn't run to the pharmacy for bad-tasting pink syrup they would come right here to pick leaves for a natural remedy."
+        },
+        {
+          "text": "A Painter's Palette: Check out the beautiful purple Lavender and bright green Mint! They look like someone painted them right into the garden. Pay close attention to those bright colors!"
         }
       ]
     },
@@ -51,24 +47,19 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Old-School Fun",
-          "text": "Put the phones away for a second we are going completely old-school! Do you see the physical puzzle pieces scattered around?"
+          "text": "Old-School Fun: Put the phones away for a second we are going completely old-school! Do you see the physical puzzle pieces scattered around?"
         },
         {
-          "label": "Use Your Senses",
-          "text": "Your job is to figure out which word belongs to which plant. You will have to use your eyes and your nose!"
+          "text": "Use Your Senses: Your job is to figure out which word belongs to which plant. You will have to use your eyes and your nose!"
         },
         {
-          "label": "Rub and Sniff",
-          "text": "Go ahead, give the leaves a tiny, gentle rub and a sniff (but please, no grazing don't eat the garden before lunch!)."
+          "text": "Rub and Sniff: Go ahead, give the leaves a tiny, gentle rub and a sniff (but please, no grazing don't eat the garden before lunch!)."
         },
         {
-          "label": "Solve the Puzzle",
-          "text": "Can you move the puzzle pieces to match the correct herbs? See if you can figure out the difference between the Mint and the Oregano. Which one smells like a delicious pizza, and which one smells like a cozy nap?"
+          "text": "Solve the Puzzle: Can you move the puzzle pieces to match the correct herbs? See if you can figure out the difference between the Mint and the Oregano. Which one smells like a delicious pizza, and which one smells like a cozy nap?"
         },
         {
-          "label": "Sketchbook Reminder",
-          "text": "Keep your eyes open, Plant Detectives! Remember the different colors of green, grey, and purple to color your Mylotopi Sketch later."
+          "text": "Sketchbook Reminder: Keep your eyes open, Plant Detectives! Remember the different colors of green, grey, and purple to color your Mylotopi Sketch later."
         }
       ]
     },
@@ -76,11 +67,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "Upcoming",
-          "text": "Then move forward to the Historic Windmill!"
+          "text": "Upcoming: Then move forward to the Historic Windmill!"
         }
       ]
     }
   ],
-  "imageAlt": "Garden / Herbs at Mylotopi"
+  "imageAlt": "Our Garden with Our Herbs!"
 }

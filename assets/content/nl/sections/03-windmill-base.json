@@ -1,8 +1,8 @@
 {
   "id": "windmill-base",
-  "title": "De molenvoet",
-  "navigationTitle": "De molenvoet",
-  "preview": "Welkom in de \"Molen van de Priester\"! Je staat in de oudste nog werkende windmolen van het hele eiland en de gehele Dodekanesos-archipel. De molen is meer dan 400 jaar oud, was tot 1987 dagelijks in gebruik en is nog steeds een levende machine die vandaag de dag meel maalt!",
+  "title": "De Molenvoet (1e verdieping)",
+  "navigationTitle": "De Molenvoet (1e verdieping)",
+  "preview": "Een Levende Legende: Welkom in de \"Molen van de Priester\"! Je staat in de oudste nog werkende windmolen van het hele eiland en de gehele Dodekanesos-archipel. De molen is meer dan 400 jaar oud, was tot 1987 dagelijks in gebruik en is nog steeds een levende machine die vandaag de dag meel maalt!",
   "details": [
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Volgende bestemming"
+      "text": "Volgende bestemming:"
     },
     {
       "type": "bulletGroup",
@@ -30,40 +30,31 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Een Levende Legende",
-          "text": "Welkom in de \"Molen van de Priester\"! Je staat in de oudste nog werkende windmolen van het hele eiland en de gehele Dodekanesos-archipel. De molen is meer dan 400 jaar oud, was tot 1987 dagelijks in gebruik en is nog steeds een levende machine die vandaag de dag meel maalt!"
+          "text": "Een Levende Legende: Welkom in de \"Molen van de Priester\"! Je staat in de oudste nog werkende windmolen van het hele eiland en de gehele Dodekanesos-archipel. De molen is meer dan 400 jaar oud, was tot 1987 dagelijks in gebruik en is nog steeds een levende machine die vandaag de dag meel maalt!"
         },
         {
-          "label": "Bij de Entree",
-          "text": "Let bij het binnenstappen op de traditionele granaatappel die er hangt voor geluk, samen met een klein flesje heilig water van de berg Athos dat al meer dan 9 jaar oud is."
+          "text": "Bij de Entree: Let bij het binnenstappen op de traditionele granaatappel die er hangt voor geluk, samen met een klein flesje heilig water van de berg Athos dat al meer dan 9 jaar oud is."
         },
         {
-          "label": "Gebouwd voor Stormen",
-          "text": "Deze gigantische machine is 6,2 meter hoog en de stenen muren om je heen zijn 1,2 meter dik om het gebouw te beschermen tegen woeste zeestormen."
+          "text": "Gebouwd voor Stormen: Deze gigantische machine is 6,2 meter hoog en de stenen muren om je heen zijn 1,2 meter dik om het gebouw te beschermen tegen woeste zeestormen."
         },
         {
-          "label": "Enorme Machines",
-          "text": "Op de bovenverdiepingen liggen twee enorme maalstenen die elk een ton wegen – dat is samen meer dan twee ton!"
+          "text": "Enorme Machines: Op de bovenverdiepingen liggen twee enorme maalstenen die elk een ton wegen – dat is samen meer dan twee ton!"
         },
         {
-          "label": "Eeuwenoud Hout",
-          "text": "80% van het hout in dit gebouw is origineel; de rest is helemaal van de berg Athos gekomen. Wonderbaarlijk genoeg zijn sommige hergebruikte houten onderdelen die boven je draaien tussen de 1.000 en 1.300 jaar oud!"
+          "text": "Eeuwenoud Hout: 80% van het hout in dit gebouw is origineel; de rest is helemaal van de berg Athos gekomen. Wonderbaarlijk genoeg zijn sommige hergebruikte houten onderdelen die boven je draaien tussen de 1.000 en 1.300 jaar oud!"
         },
         {
-          "label": "Aan je Rechterkant",
-          "text": "Zie je het gedeelte dat met een doek is afgedekt? Dat was de opslagruimte van de molenaar. Daarnaast zie je een houten ezelzadel en een dorsslee die de ezel van de molenaar trok om de tarwe te scheiden. Je kunt hier ook alledaags houten gereedschap en prachtige foto's van andere windmolens in Griekenland ontdekken."
+          "text": "Aan je Rechterkant: Zie je het gedeelte dat met een doek is afgedekt? Dat was de opslagruimte van de molenaar. Daarnaast zie je een houten ezelzadel en een dorsslee die de ezel van de molenaar trok om de tarwe te scheiden. Je kunt hier ook alledaags houten gereedschap en prachtige foto's van andere windmolens in Griekenland ontdekken."
         },
         {
-          "label": "De Open Haard",
-          "text": "De molenaar gebruikte deze niet alleen voor de warmte! Kijk goed naar binnen: zie je een blik? Daarin zit koeienvet, dat de molenaar smolt om de bewegende delen van de windmolen te smeren, zodat ze niet zouden piepen. Net boven de open haard hangt een foto van Kostas Politis, de geliefde eigenaar van deze windmolen wiens nalatenschap hier voortleeft."
+          "text": "De Open Haard: De molenaar gebruikte deze niet alleen voor de warmte! Kijk goed naar binnen: zie je een blik? Daarin zit koeienvet, dat de molenaar smolt om de bewegende delen van de windmolen te smeren, zodat ze niet zouden piepen. Net boven de open haard hangt een foto van Kostas Politis, de geliefde eigenaar van deze windmolen wiens nalatenschap hier voortleeft."
         },
         {
-          "label": "Aan je Linkerkant",
-          "text": "Hier zie je een traditionele weegschaal met gewichten, die werd gebruikt om het verse meel zorgvuldig te wegen."
+          "text": "Aan je Linkerkant: Hier zie je een traditionele weegschaal met gewichten, die werd gebruikt om het verse meel zorgvuldig te wegen."
         },
         {
-          "label": "De Eerste Rem",
-          "text": "Zoek naar het kleine touwtje dat naar beneden hangt. Geloof het of niet, dat touw was het eerste remsysteem van de windmolen! De molenaar trok eraan om die twee ton wegende molenstenen een klein stukje op te tillen, zodat hij veilig naar buiten kon gaan om de zeilen uit te rollen."
+          "text": "De Eerste Rem: Zoek naar het kleine touwtje dat naar beneden hangt. Geloof het of niet, dat touw was het eerste remsysteem van de windmolen! De molenaar trok eraan om die twee ton wegende molenstenen een klein stukje op te tillen, zodat hij veilig naar buiten kon gaan om de zeilen uit te rollen."
         }
       ]
     },
@@ -71,20 +62,16 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Test de Muren",
-          "text": "Laten we eens kijken hoe dik die muren echt zijn! Ga naast de deuropening staan en strek je armen zo wijd mogelijk uit. Zijn je armen langer dan de muur dik is, of wint de windmolen?"
+          "text": "Test de Muren: Laten we eens kijken hoe dik die muren echt zijn! Ga naast de deuropening staan en strek je armen zo wijd mogelijk uit. Zijn je armen langer dan de muur dik is, of wint de windmolen?"
         },
         {
-          "label": "Spion",
-          "text": "Kijk rond in de kamer en probeer het houten ezelzadel te vinden!"
+          "text": "Spion: Kijk rond in de kamer en probeer het houten ezelzadel te vinden!"
         },
         {
-          "label": "Zoek het Vet",
-          "text": "Tuur in de open haard – kun je het verborgen blik met koeienvet vinden?"
+          "text": "Zoek het Vet: Tuur in de open haard – kun je het verborgen blik met koeienvet vinden?"
         },
         {
-          "label": "Spot de Rem",
-          "text": "Vind het kleine hangende touwtje dat diende als het remsysteem van de windmolen!"
+          "text": "Spot de Rem: Vind het kleine hangende touwtje dat diende als het remsysteem van de windmolen!"
         }
       ]
     },
@@ -92,11 +79,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "Binnenkort",
-          "text": "Ga daarna verder naar het slaapgedeelte van de molen."
+          "text": "Binnenkort: Ga daarna verder naar de tweede verdieping van de windmolen!"
         }
       ]
     }
   ],
-  "imageAlt": "De molenvoet at Mylotopi"
+  "imageAlt": "De Molenvoet (1e verdieping)"
 }

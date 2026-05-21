@@ -2,7 +2,7 @@
   "id": "bakery",
   "title": "Die Bäckerei",
   "navigationTitle": "Die Bäckerei",
-  "preview": "Willkommen beim traditionellen Backofen! Dieser wunderschöne Steinofen ist über 150 Jahre alt. Früher kamen die meisten Frauen des Dorfes genau hierher, um das tägliche Brot für ihre Familien zu backen.",
+  "preview": "Ein Zentrum der Gemeinschaft: Willkommen beim traditionellen Backofen! Dieser wunderschöne Steinofen ist über 150 Jahre alt. Früher kamen die meisten Frauen des Dorfes genau hierher, um das tägliche Brot für ihre Familien zu backen.",
   "details": [
     {
       "type": "bulletGroup",
@@ -22,20 +22,16 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Ein Zentrum der Gemeinschaft",
-          "text": "Willkommen beim traditionellen Backofen! Dieser wunderschöne Steinofen ist über 150 Jahre alt. Früher kamen die meisten Frauen des Dorfes genau hierher, um das tägliche Brot für ihre Familien zu backen."
+          "text": "Ein Zentrum der Gemeinschaft: Willkommen beim traditionellen Backofen! Dieser wunderschöne Steinofen ist über 150 Jahre alt. Früher kamen die meisten Frauen des Dorfes genau hierher, um das tägliche Brot für ihre Familien zu backen."
         },
         {
-          "label": "Ein zweitägiger Prozess",
-          "text": "Das Brotbacken war damals nicht so einfach wie ein schneller Gang zum Supermarkt! Es war tatsächlich ein Prozess, der zwei Tage dauerte. Am Vorabend mischten und formten die Frauen den Teig sorgfältig und ließen ihn über Nacht ruhen und aufgehen."
+          "text": "Ein zweitägiger Prozess: Das Brotbacken war damals nicht so einfach wie ein schneller Gang zum Supermarkt! Es war tatsächlich ein Prozess, der zwei Tage dauerte. Am Vorabend mischten und formten die Frauen den Teig sorgfältig und ließen ihn über Nacht ruhen und aufgehen."
         },
         {
-          "label": "Frisch gebacken",
-          "text": "Am nächsten Morgen, sobald der Teig bereit war, entfachten sie ein heißes Feuer, um den Ofen aufzuheizen. Wenn die Temperatur genau richtig war, schoben sie den Teig hinein. Nach ein bis zwei Stunden Backzeit war das gesamte Dorf vom herrlichen Duft nach frischem, warmem Brot erfüllt, das bereit zum Verzehr war!"
+          "text": "Frisch gebacken: Am nächsten Morgen, sobald der Teig bereit war, entfachten sie ein heißes Feuer, um den Ofen aufzuheizen. Wenn die Temperatur genau richtig war, schoben sie den Teig hinein. Nach ein bis zwei Stunden Backzeit war das gesamte Dorf vom herrlichen Duft nach frischem, warmem Brot erfüllt, das bereit zum Verzehr war!"
         },
         {
-          "label": "Historische Fotos",
-          "text": "Wenn Sie sich umsehen, können Sie einige wunderbare ausgestellte Bilder sehen, die genau zeigen, wie dieser gesamte Ablauf funktionierte."
+          "text": "Historische Fotos: Wenn Sie sich umsehen, können Sie einige wunderbare ausgestellte Bilder sehen, die genau zeigen, wie dieser gesamte Ablauf funktionierte."
         }
       ]
     },
@@ -43,23 +39,19 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Der frühe Vogel",
-          "text": "Das ganze Dorf brauchte frisches Brot. Könnt ihr erraten, um welche Uhrzeit der Bäcker jeden Morgen aufstehen musste, um den Teig zuzubereiten? (Tipp: Es war lange bevor die Sonne aufging!)"
+          "text": "Der frühe Vogel: Das ganze Dorf brauchte frisches Brot. Könnt ihr erraten, um welche Uhrzeit der Bäcker jeden Morgen aufstehen musste, um den Teig zuzubereiten? (Tipp: Es war lange bevor die Sonne aufging!)"
         },
         {
-          "label": "Schaut genau hin",
-          "text": "Schaut euch die Bilder genau an, um zu sehen, wie die Frauen des Dorfes früher in der Bäckerei gearbeitet haben."
+          "text": "Schaut genau hin: Schaut euch die Bilder genau an, um zu sehen, wie die Frauen des Dorfes früher in der Bäckerei gearbeitet haben."
         },
         {
-          "label": "Zeit zum Entspannen",
-          "text": "Jetzt ist es an der Zeit, ins Restaurant-Café zu gehen! Schnappt euch eure Buntstifte, genießt einen wohlverdienten Snack und macht eure Mylotopi-Skizze zu einem bunten Meisterwerk!"
+          "text": "Zeit zum Entspannen: Jetzt ist es an der Zeit, ins Restaurant-Café zu gehen! Schnappt euch eure Buntstifte, genießt einen wohlverdienten Snack und macht eure Mylotopi-Skizze zu einem bunten Meisterwerk!"
         },
         {
-          "label": "Vielen Dank",
-          "text": "Vielen Dank, dass ihr heute mit uns auf Entdeckungstour gegangen seid!"
+          "text": "Vielen Dank: Vielen Dank, dass ihr heute mit uns auf Entdeckungstour gegangen seid!"
         }
       ]
     }
   ],
-  "imageAlt": "Die Bäckerei at Mylotopi"
+  "imageAlt": "Die Bäckerei"
 }

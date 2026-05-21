@@ -2,12 +2,8 @@
   "id": "garden-herbs",
   "title": "Unser Garten mit unseren Kräutern!",
   "navigationTitle": "Unser Garten mit unseren Kräutern!",
-  "preview": "Vor der modernen Medizin und den Supermärkten waren diese Gärten ein Überlebenspaket der Insel. Diese Beete sind mit genau denselben Kräutern gefüllt, die hier seit Jahrhunderten wachsen.",
+  "preview": "Küche oder Apotheke? Atmen Sie tief ein! Riecht es wie eine riesige Freiluftküche oder eine Dorfapotheke? Eigentlich ist es beides!",
   "details": [
-    {
-      "type": "heading",
-      "text": "Küche oder Apotheke? Atmen Sie tief ein! Riecht es wie eine riesige Freiluftküche oder eine Dorfapotheke? Eigentlich ist es beides!"
-    },
     {
       "type": "bulletGroup",
       "id": "bullet-group-01"
@@ -22,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Nächstes Ziel"
+      "text": "Nächstes Ziel:"
     },
     {
       "type": "bulletGroup",
@@ -34,16 +30,16 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Das ultimative Überlebenspaket",
-          "text": "Vor der modernen Medizin und den Supermärkten waren diese Gärten ein Überlebenspaket der Insel. Diese Beete sind mit genau denselben Kräutern gefüllt, die hier seit Jahrhunderten wachsen."
+          "text": "Küche oder Apotheke? Atmen Sie tief ein! Riecht es wie eine riesige Freiluftküche oder eine Dorfapotheke? Eigentlich ist es beides!"
         },
         {
-          "label": "Der Arzt der Natur",
-          "text": "Kräuter wie Thymian, Oregano und Majoran wurden nicht nur verwendet, um das Abendessen fantastisch schmecken zu lassen – sie waren der örtliche Arzt! Wenn jemand Bauchschmerzen hatte, rannte die Familie des Windmüllers nicht für eklig schmeckenden rosa Sirup in die Apotheke – sie kam genau hierher, um Blätter für ein natürliches Heilmittel zu pflücken."
+          "text": "Das ultimative Überlebenspaket: Vor der modernen Medizin und den Supermärkten waren diese Gärten ein Überlebenspaket der Insel. Diese Beete sind mit genau denselben Kräutern gefüllt, die hier seit Jahrhunderten wachsen."
         },
         {
-          "label": "Eine Malerpalette",
-          "text": "Schauen Sie sich den wunderschönen lila Lavendel und die leuchtend grüne Minze an! Sie sehen aus, als hätte sie jemand direkt in den Garten gemalt. Achten Sie genau auf diese leuchtenden Farben!"
+          "text": "Der Arzt der Natur: Kräuter wie Thymian, Oregano und Majoran wurden nicht nur verwendet, um das Abendessen fantastisch schmecken zu lassen – sie waren der örtliche Arzt! Wenn jemand Bauchschmerzen hatte, rannte die Familie des Windmüllers nicht für eklig schmeckenden rosa Sirup in die Apotheke – sie kam genau hierher, um Blätter für ein natürliches Heilmittel zu pflücken."
+        },
+        {
+          "text": "Eine Malerpalette: Schauen Sie sich den wunderschönen lila Lavendel und die leuchtend grüne Minze an! Sie sehen aus, als hätte sie jemand direkt in den Garten gemalt. Achten Sie genau auf diese leuchtenden Farben!"
         }
       ]
     },
@@ -51,24 +47,19 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Klassischer Spaß",
-          "text": "Legt die Handys für eine Sekunde weg – wir machen es ganz klassisch (old-school)! Seht ihr die echten Puzzleteile, die hier verstreut sind?"
+          "text": "Klassischer Spaß: Legt die Handys für eine Sekunde weg – wir machen es ganz klassisch (old-school)! Seht ihr die echten Puzzleteile, die hier verstreut sind?"
         },
         {
-          "label": "Benutzt eure Sinne",
-          "text": "Eure Aufgabe ist es herauszufinden, welches Wort zu welcher Pflanze gehört. Ihr müsst eure Augen und eure Nase benutzen!"
+          "text": "Benutzt eure Sinne: Eure Aufgabe ist es herauszufinden, welches Wort zu welcher Pflanze gehört. Ihr müsst eure Augen und eure Nase benutzen!"
         },
         {
-          "label": "Reiben und schnuppern",
-          "text": "Nur zu, reibt sanft an den Blättern und schnuppert daran (aber bitte nicht grasen – esst den Garten nicht vor dem Mittagessen auf!)."
+          "text": "Reiben und schnuppern: Nur zu, reibt sanft an den Blättern und schnuppert daran (aber bitte nicht grasen – esst den Garten nicht vor dem Mittagessen auf!)."
         },
         {
-          "label": "Löst das Puzzle",
-          "text": "Könnt ihr die Puzzleteile so verschieben, dass sie zu den richtigen Kräutern passen? Schaut, ob ihr den Unterschied zwischen der Minze und dem Oregano herausfinden könnt. Welches riecht nach einer leckeren Pizza und welches riecht nach einem gemütlichen Nickerchen?"
+          "text": "Löst das Puzzle: Könnt ihr die Puzzleteile so verschieben, dass sie zu den richtigen Kräutern passen? Schaut, ob ihr den Unterschied zwischen der Minze und dem Oregano herausfinden könnt. Welches riecht nach einer leckeren Pizza und welches riecht nach einem gemütlichen Nickerchen?"
         },
         {
-          "label": "Erinnerung an das Skizzenbuch",
-          "text": "Haltet die Augen offen, Pflanzendetektive! Merkt euch die verschiedenen Grün-, Grau- und Lilatöne, um eure Mylotopi-Zeichnung später auszumalen."
+          "text": "Erinnerung an das Skizzenbuch: Haltet die Augen offen, Pflanzendetektive! Merkt euch die verschiedenen Grün-, Grau- und Lilatöne, um eure Mylotopi-Zeichnung später auszumalen."
         }
       ]
     },
@@ -76,11 +67,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "Als Nächstes",
-          "text": "Gehen Sie dann weiter zur historischen Windmühle!"
+          "text": "Als Nächstes: Gehen Sie dann weiter zur historischen Windmühle!"
         }
       ]
     }
   ],
-  "imageAlt": "Unser Garten mit unseren Kräutern! at Mylotopi"
+  "imageAlt": "Unser Garten mit unseren Kräutern!"
 }

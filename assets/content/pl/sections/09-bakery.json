@@ -2,7 +2,7 @@
   "id": "bakery",
   "title": "Piekarnia",
   "navigationTitle": "Piekarnia",
-  "preview": "Witamy przy tradycyjnym piecu! Ten piękny kamienny piec ma ponad 150 lat. W dawnych czasach większość kobiet w wiosce przychodziła właśnie tutaj, aby piec codzienny chleb dla swoich rodzin.",
+  "preview": "Centrum społeczności: Witamy przy tradycyjnym piecu! Ten piękny kamienny piec ma ponad 150 lat. W dawnych czasach większość kobiet w wiosce przychodziła właśnie tutaj, aby piec codzienny chleb dla swoich rodzin.",
   "details": [
     {
       "type": "bulletGroup",
@@ -22,20 +22,16 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Centrum społeczności",
-          "text": "Witamy przy tradycyjnym piecu! Ten piękny kamienny piec ma ponad 150 lat. W dawnych czasach większość kobiet w wiosce przychodziła właśnie tutaj, aby piec codzienny chleb dla swoich rodzin."
+          "text": "Centrum społeczności: Witamy przy tradycyjnym piecu! Ten piękny kamienny piec ma ponad 150 lat. W dawnych czasach większość kobiet w wiosce przychodziła właśnie tutaj, aby piec codzienny chleb dla swoich rodzin."
         },
         {
-          "label": "Dwudniowy proces",
-          "text": "Pieczenie chleba w tamtych czasach nie było tak szybkie, jak zwykłe wyjście do supermarketu! W rzeczywistości był to proces dwudniowy. Poprzedniego wieczoru kobiety starannie mieszały i formowały ciasto, zostawiając je na noc, by odpoczęło i wyrosło."
+          "text": "Dwudniowy proces: Pieczenie chleba w tamtych czasach nie było tak szybkie, jak zwykłe wyjście do supermarketu! W rzeczywistości był to proces dwudniowy. Poprzedniego wieczoru kobiety starannie mieszały i formowały ciasto, zostawiając je na noc, by odpoczęło i wyrosło."
         },
         {
-          "label": "Świeżo upieczone",
-          "text": "Następnego ranka, gdy ciasto było gotowe, rozpalały gorący ogień, by nagrzać piec. Kiedy temperatura była idealna, wkładały ciasto do środka. Po pieczeniu przez jedną do dwóch godzin, cała wioska wypełniała się pysznym zapachem świeżego, ciepłego chleba, gotowego do zjedzenia!"
+          "text": "Świeżo upieczone: Następnego ranka, gdy ciasto było gotowe, rozpalały gorący ogień, by nagrzać piec. Kiedy temperatura była idealna, wkładały ciasto do środka. Po pieczeniu przez jedną do dwóch godzin, cała wioska wypełniała się pysznym zapachem świeżego, ciepłego chleba, gotowego do zjedzenia!"
         },
         {
-          "label": "Historyczne zdjęcia",
-          "text": "Jeśli rozejrzycie się dookoła, możecie zobaczyć kilka wspaniałych wyeksponowanych zdjęć, które dokładnie pokazują, jak przeprowadzały całą tę procedurę."
+          "text": "Historyczne zdjęcia: Jeśli rozejrzycie się dookoła, możecie zobaczyć kilka wspaniałych wyeksponowanych zdjęć, które dokładnie pokazują, jak przeprowadzały całą tę procedurę."
         }
       ]
     },
@@ -43,23 +39,19 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Ranny Ptaszek",
-          "text": "Cała wioska potrzebowała świeżego chleba. Czy potraficie zgadnąć, o której godzinie piekarz musiał budzić się każdego ranka, aby zacząć wyrabiać ciasto? (Wskazówka: To było na długo przed wschodem słońca!)"
+          "text": "Ranny Ptaszek: Cała wioska potrzebowała świeżego chleba. Czy potraficie zgadnąć, o której godzinie piekarz musiał budzić się każdego ranka, aby zacząć wyrabiać ciasto? (Wskazówka: To było na długo przed wschodem słońca!)"
         },
         {
-          "label": "Przyjrzyjcie się Uważnie",
-          "text": "Przyjrzyjcie się uważnie zdjęciom, aby zobaczyć, jak dawniej pracowały w piekarni kobiety z wioski."
+          "text": "Przyjrzyjcie się Uważnie: Przyjrzyjcie się uważnie zdjęciom, aby zobaczyć, jak dawniej pracowały w piekarni kobiety z wioski."
         },
         {
-          "label": "Czas na Relaks",
-          "text": "Teraz nadszedł czas, aby udać się do restauracji-kawiarni! Weźcie swoje kredki, cieszcie się zasłużoną przekąską i dokończcie swój Szkic Mylotopi (Mylotopi Sketch), zamieniając go w kolorowe arcydzieło!"
+          "text": "Czas na Relaks: Teraz nadszedł czas, aby udać się do restauracji-kawiarni! Weźcie swoje kredki, cieszcie się zasłużoną przekąską i dokończcie swój Szkic Mylotopi (Mylotopi Sketch), zamieniając go w kolorowe arcydzieło!"
         },
         {
-          "label": "Dziękujemy",
-          "text": "Dziękujemy za dzisiejsze wspólne odkrywanie!"
+          "text": "Dziękujemy: Dziękujemy za dzisiejsze wspólne odkrywanie!"
         }
       ]
     }
   ],
-  "imageAlt": "Piekarnia at Mylotopi"
+  "imageAlt": "Piekarnia"
 }

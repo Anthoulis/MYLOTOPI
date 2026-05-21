@@ -2,7 +2,7 @@
   "id": "cellar-italian-tunnel",
   "title": "Il Tunnel Segreto e la Cantina",
   "navigationTitle": "Il Tunnel Segreto e la Cantina",
-  "preview": "Preparatevi a un cambio di scenario totale mentre ci dirigiamo sottoterra! Mentre scendete nell'aria fresca, date un'occhiata alla vostra sinistra e alla vostra destra.",
+  "preview": "Un Cambio di Scenario: Preparatevi a un cambio di scenario totale mentre ci dirigiamo sottoterra! Mentre scendete nell'aria fresca, date un'occhiata alla vostra sinistra e alla vostra destra.",
   "details": [
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Prossima Destinazione"
+      "text": "Prossima Destinazione:"
     },
     {
       "type": "bulletGroup",
@@ -30,24 +30,19 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Un Cambio di Scenario",
-          "text": "Preparatevi a un cambio di scenario totale mentre ci dirigiamo sottoterra! Mentre scendete nell'aria fresca, date un'occhiata alla vostra sinistra e alla vostra destra."
+          "text": "Un Cambio di Scenario: Preparatevi a un cambio di scenario totale mentre ci dirigiamo sottoterra! Mentre scendete nell'aria fresca, date un'occhiata alla vostra sinistra e alla vostra destra."
         },
         {
-          "label": "Bottiglie Decorative",
-          "text": "Vedrete file di vino locale della cantina Skevofilax di Kos. Teniamo queste bottiglie qui per decorazione! I nostri veri vini da bere sono tenuti al sicuro nella cantina principale, dove la temperatura è perfettamente adatta a loro."
+          "text": "Bottiglie Decorative: Vedrete file di vino locale della cantina Skevofilax di Kos. Teniamo queste bottiglie qui per decorazione! I nostri veri vini da bere sono tenuti al sicuro nella cantina principale, dove la temperatura è perfettamente adatta a loro."
         },
         {
-          "label": "Storia della Seconda Guerra Mondiale",
-          "text": "Negli anni '40, durante la Seconda Guerra Mondiale, questo spazio non era per il vino... era per la sopravvivenza. Questo tunnel di 20 metri fu costruito dai soldati italiani durante la guerra."
+          "text": "Storia della Seconda Guerra Mondiale: Negli anni '40, durante la Seconda Guerra Mondiale, questo spazio non era per il vino... era per la sopravvivenza. Questo tunnel di 20 metri fu costruito dai soldati italiani durante la guerra."
         },
         {
-          "label": "Il Tunnel di Fuga",
-          "text": "I soldati usavano questo passaggio come un tunnel di fuga, una scorciatoia segreta per scappare e nascondersi dai loro avversari. La cantina stessa veniva usata come un rifugio sicuro dove potevano dormire, rilassarsi e rimanere protetti dalle battaglie all'esterno."
+          "text": "Il Tunnel di Fuga: I soldati usavano questo passaggio come un tunnel di fuga, una scorciatoia segreta per scappare e nascondersi dai loro avversari. La cantina stessa veniva usata come un rifugio sicuro dove potevano dormire, rilassarsi e rimanere protetti dalle battaglie all'esterno."
         },
         {
-          "label": "Una Fortezza Nascosta",
-          "text": "Alla fine del tunnel, uscirete nel nostro cortile sul retro, che ora è il nostro tranquillo ristorante. Ma guardate indietro verso il tetto di pietra prima di uscire! Negli anni '40, quest'intera area era un poligono di tiro. La parte superiore era coperta con pietre pesanti per proteggere i soldati e, proprio sul bordo, avevano delle mitragliatrici per difendere la collina. È difficile credere che questo posto tranquillo e bellissimo per un pasto fosse un luogo così sorvegliato sull'isola!"
+          "text": "Una Fortezza Nascosta: Alla fine del tunnel, uscirete nel nostro cortile sul retro, che ora è il nostro tranquillo ristorante. Ma guardate indietro verso il tetto di pietra prima di uscire! Negli anni '40, quest'intera area era un poligono di tiro. La parte superiore era coperta con pietre pesanti per proteggere i soldati e, proprio sul bordo, avevano delle mitragliatrici per difendere la collina. È difficile credere che questo posto tranquillo e bellissimo per un pasto fosse un luogo così sorvegliato sull'isola!"
         }
       ]
     },
@@ -55,8 +50,7 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Top Secret",
-          "text": "Ora siete in missione segreta! Mentre camminate attraverso il tunnel dei soldati, riuscite a calcolare esattamente quante bottiglie di vino sono allineate lungo le pareti?"
+          "text": "Top Secret: Ora siete in missione segreta! Mentre camminate attraverso il tunnel dei soldati, riuscite a calcolare esattamente quante bottiglie di vino sono allineate lungo le pareti?"
         }
       ]
     },
@@ -64,11 +58,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "In Arrivo",
-          "text": "Quando avrete finito di esplorare il tunnel, vi preghiamo di tornare indietro e cercare la nostra guida turistica in modo che possa mostrarvi la strada per le vostre prossime fantastiche tappe: la Casa Tradizionale e la Panetteria!"
+          "text": "In Arrivo: Quando avrete finito di esplorare il tunnel, vi preghiamo di tornare indietro e cercare la nostra guida turistica in modo che possa mostrarvi la strada per le vostre prossime fantastiche tappe: la Casa Tradizionale e la Panetteria!"
         }
       ]
     }
   ],
-  "imageAlt": "Il Tunnel Segreto e la Cantina at Mylotopi"
+  "imageAlt": "Il Tunnel Segreto e la Cantina"
 }

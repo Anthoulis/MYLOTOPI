@@ -1,8 +1,8 @@
 {
   "id": "sleeping-area",
-  "title": "Sleeping area",
-  "navigationTitle": "Sleeping area",
-  "preview": "Welcome to the second floor! Watch your step on the wooden stairs and mind your head on the wood above. Get ready for a big surprise about how the family lived.",
+  "title": "The Windmill Sleeping Area (2nd Floor)",
+  "navigationTitle": "The Windmill Sleeping Area (2nd Floor)",
+  "preview": "Watch Your Step: Welcome to the second floor! Watch your step on the wooden stairs and mind your head on the wood above. Get ready for a big surprise about how the family lived.",
   "details": [
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Next Destination"
+      "text": "Next Destination:"
     },
     {
       "type": "bulletGroup",
@@ -30,24 +30,19 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Watch Your Step",
-          "text": "Welcome to the second floor! Watch your step on the wooden stairs and mind your head on the wood above. Get ready for a big surprise about how the family lived."
+          "text": "Watch Your Step: Welcome to the second floor! Watch your step on the wooden stairs and mind your head on the wood above. Get ready for a big surprise about how the family lived."
         },
         {
-          "label": "To Your Right",
-          "text": "On the walls, you will see some beautiful pictures showing different historic windmills from all across Greece. But this space wasn't just a gallery!"
+          "text": "To Your Right: On the walls, you will see some beautiful pictures showing different historic windmills from all across Greece. But this space wasn't just a gallery!"
         },
         {
-          "label": "A Very Noisy Bedroom",
-          "text": "Right here on the right side is actually where the wind miller and his entire family used to sleep! Can you imagine trying to take a peaceful nap while the whole building was shaking, the wind was howling, and the heavy machinery was loudly crushing wheat just a few feet away? They must have been very heavy sleepers!"
+          "text": "A Very Noisy Bedroom: Right here on the right side is actually where the wind miller and his entire family used to sleep! Can you imagine trying to take a peaceful nap while the whole building was shaking, the wind was howling, and the heavy machinery was loudly crushing wheat just a few feet away? They must have been very heavy sleepers!"
         },
         {
-          "label": "To Your Left",
-          "text": "Now, look over to the left side. This was a very important and busy storage space."
+          "text": "To Your Left: Now, look over to the left side. This was a very important and busy storage space."
         },
         {
-          "label": "Protecting the Flour",
-          "text": "The miller used this side of the room to safely stack all the heavy bags of raw wheat waiting to be ground, alongside the freshly filled bags of fluffy white flour that were ready to go out and feed the village. He kept them right here near his bed so he could protect them!"
+          "text": "Protecting the Flour: The miller used this side of the room to safely stack all the heavy bags of raw wheat waiting to be ground, alongside the freshly filled bags of fluffy white flour that were ready to go out and feed the village. He kept them right here near his bed so he could protect them!"
         }
       ]
     },
@@ -55,8 +50,7 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Imagine This",
-          "text": "Could you imagine yourself sleeping on the second floor exactly how they used to do?"
+          "text": "Imagine This: Could you imagine yourself sleeping on the second floor exactly how they used to do?"
         }
       ]
     },
@@ -64,11 +58,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "Upcoming",
-          "text": "Then continue to Machinery."
+          "text": "Upcoming: Then move forward to the third floor of the Windmill!"
         }
       ]
     }
   ],
-  "imageAlt": "Sleeping area at Mylotopi"
+  "imageAlt": "The Windmill Sleeping Area (2nd Floor)"
 }

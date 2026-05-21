@@ -2,7 +2,7 @@
   "id": "bakery",
   "title": "La Panetteria",
   "navigationTitle": "La Panetteria",
-  "preview": "Benvenuti al forno tradizionale! Questo bellissimo forno in pietra ha più di 150 anni. Ai vecchi tempi, la maggior parte delle signore del villaggio veniva proprio qui per cuocere il pane quotidiano per le proprie famiglie.",
+  "preview": "Un Centro per la Comunità: Benvenuti al forno tradizionale! Questo bellissimo forno in pietra ha più di 150 anni. Ai vecchi tempi, la maggior parte delle signore del villaggio veniva proprio qui per cuocere il pane quotidiano per le proprie famiglie.",
   "details": [
     {
       "type": "bulletGroup",
@@ -22,20 +22,16 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Un Centro per la Comunità",
-          "text": "Benvenuti al forno tradizionale! Questo bellissimo forno in pietra ha più di 150 anni. Ai vecchi tempi, la maggior parte delle signore del villaggio veniva proprio qui per cuocere il pane quotidiano per le proprie famiglie."
+          "text": "Un Centro per la Comunità: Benvenuti al forno tradizionale! Questo bellissimo forno in pietra ha più di 150 anni. Ai vecchi tempi, la maggior parte delle signore del villaggio veniva proprio qui per cuocere il pane quotidiano per le proprie famiglie."
         },
         {
-          "label": "Un Processo di Due Giorni",
-          "text": "A quei tempi, cuocere il pane non era così veloce come fare una corsa al supermercato! Era in realtà un processo di due giorni. La sera prima, le signore mescolavano e modellavano con cura l'impasto, lasciandolo riposare e lievitare per tutta la notte."
+          "text": "Un Processo di Due Giorni: A quei tempi, cuocere il pane non era così veloce come fare una corsa al supermercato! Era in realtà un processo di due giorni. La sera prima, le signore mescolavano e modellavano con cura l'impasto, lasciandolo riposare e lievitare per tutta la notte."
         },
         {
-          "label": "Appena Sfornato",
-          "text": "La mattina seguente, quando l'impasto era pronto, accendevano un bel fuoco per scaldare il forno. Una volta che la temperatura era quella giusta, mettevano l'impasto all'interno. Dopo aver infornato per una o due ore, l'intero villaggio si riempiva del delizioso profumo di pane fresco e caldo, pronto per essere mangiato!"
+          "text": "Appena Sfornato: La mattina seguente, quando l'impasto era pronto, accendevano un bel fuoco per scaldare il forno. Una volta che la temperatura era quella giusta, mettevano l'impasto all'interno. Dopo aver infornato per una o due ore, l'intero villaggio si riempiva del delizioso profumo di pane fresco e caldo, pronto per essere mangiato!"
         },
         {
-          "label": "Foto Storiche",
-          "text": "Se vi guardate intorno, potete vedere alcune meravigliose foto in mostra che illustrano esattamente come eseguivano l'intera procedura."
+          "text": "Foto Storiche: Se vi guardate intorno, potete vedere alcune meravigliose foto in mostra che illustrano esattamente come eseguivano l'intera procedura."
         }
       ]
     },
@@ -43,23 +39,19 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Sveglia Presto",
-          "text": "Tutto il villaggio aveva bisogno di pane fresco. Riuscite a indovinare a che ora doveva svegliarsi il fornaio ogni mattina per iniziare a preparare l'impasto? (Indizio: era molto prima che sorgesse il sole!)"
+          "text": "Sveglia Presto: Tutto il villaggio aveva bisogno di pane fresco. Riuscite a indovinare a che ora doveva svegliarsi il fornaio ogni mattina per iniziare a preparare l'impasto? (Indizio: era molto prima che sorgesse il sole!)"
         },
         {
-          "label": "Guardate Attentamente",
-          "text": "Guardate attentamente le foto per vedere come le donne del villaggio lavoravano un tempo nel forno."
+          "text": "Guardate Attentamente: Guardate attentamente le foto per vedere come le donne del villaggio lavoravano un tempo nel forno."
         },
         {
-          "label": "Tempo di Rilassarsi",
-          "text": "Ora è il momento di dirigersi verso il ristorante-caffetteria! Prendete le vostre matite colorate, godetevi un meritato spuntino e completate il vostro Schizzo di Mylotopi (Mylotopi Sketch) trasformandolo in un capolavoro colorato!"
+          "text": "Tempo di Rilassarsi: Ora è il momento di dirigersi verso il ristorante-caffetteria! Prendete le vostre matite colorate, godetevi un meritato spuntino e completate il vostro Schizzo di Mylotopi (Mylotopi Sketch) trasformandolo in un capolavoro colorato!"
         },
         {
-          "label": "Grazie",
-          "text": "Grazie per aver esplorato con noi oggi!"
+          "text": "Grazie: Grazie per aver esplorato con noi oggi!"
         }
       ]
     }
   ],
-  "imageAlt": "La Panetteria at Mylotopi"
+  "imageAlt": "La Panetteria"
 }

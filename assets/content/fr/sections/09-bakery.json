@@ -2,7 +2,7 @@
   "id": "bakery",
   "title": "La Boulangerie",
   "navigationTitle": "La Boulangerie",
-  "preview": "Bienvenue au four traditionnel ! Ce magnifique four en pierre a plus de 150 ans. Autrefois, la plupart des femmes du village venaient ici même pour cuire le pain quotidien de leur famille.",
+  "preview": "Un lieu de rassemblement : Bienvenue au four traditionnel ! Ce magnifique four en pierre a plus de 150 ans. Autrefois, la plupart des femmes du village venaient ici même pour cuire le pain quotidien de leur famille.",
   "details": [
     {
       "type": "bulletGroup",
@@ -22,20 +22,16 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "Un lieu de rassemblement",
-          "text": "Bienvenue au four traditionnel ! Ce magnifique four en pierre a plus de 150 ans. Autrefois, la plupart des femmes du village venaient ici même pour cuire le pain quotidien de leur famille."
+          "text": "Un lieu de rassemblement : Bienvenue au four traditionnel ! Ce magnifique four en pierre a plus de 150 ans. Autrefois, la plupart des femmes du village venaient ici même pour cuire le pain quotidien de leur famille."
         },
         {
-          "label": "Un processus de deux jours",
-          "text": "Cuire le pain à l'époque n'était pas aussi rapide que de courir au supermarché ! C'était en fait un processus de deux jours. La veille, les dames mélangeaient et façonnaient soigneusement la pâte, puis la laissaient reposer et lever toute la nuit."
+          "text": "Un processus de deux jours : Cuire le pain à l'époque n'était pas aussi rapide que de courir au supermarché ! C'était en fait un processus de deux jours. La veille, les dames mélangeaient et façonnaient soigneusement la pâte, puis la laissaient reposer et lever toute la nuit."
         },
         {
-          "label": "Fraîchement cuit",
-          "text": "Le lendemain matin, une fois la pâte prête, elles allumaient un feu vif pour faire chauffer le four. Dès que la température était idéale, elles y déposaient la pâte. Après une ou deux heures de cuisson, tout le village était envahi par la délicieuse odeur du pain frais et chaud, prêt à être dégusté !"
+          "text": "Fraîchement cuit : Le lendemain matin, une fois la pâte prête, elles allumaient un feu vif pour faire chauffer le four. Dès que la température était idéale, elles y déposaient la pâte. Après une ou deux heures de cuisson, tout le village était envahi par la délicieuse odeur du pain frais et chaud, prêt à être dégusté !"
         },
         {
-          "label": "Photos historiques",
-          "text": "Si vous regardez autour de vous, vous verrez de magnifiques photos exposées qui montrent exactement comment elles procédaient pour toute cette préparation."
+          "text": "Photos historiques : Si vous regardez autour de vous, vous verrez de magnifiques photos exposées qui montrent exactement comment elles procédaient pour toute cette préparation."
         }
       ]
     },
@@ -43,23 +39,19 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Lève-tôt",
-          "text": "Tout le village avait besoin de pain frais. Pouvez-vous deviner à quelle heure le boulanger devait se réveiller chaque matin pour commencer à préparer la pâte ? (Indice : c'était bien avant le lever du soleil !)"
+          "text": "Lève-tôt : Tout le village avait besoin de pain frais. Pouvez-vous deviner à quelle heure le boulanger devait se réveiller chaque matin pour commencer à préparer la pâte ? (Indice : c'était bien avant le lever du soleil !)"
         },
         {
-          "label": "Regardez Attentivement",
-          "text": "Regardez attentivement les photos pour voir comment les femmes du village travaillaient autrefois dans la boulangerie."
+          "text": "Regardez Attentivement : Regardez attentivement les photos pour voir comment les femmes du village travaillaient autrefois dans la boulangerie."
         },
         {
-          "label": "Place à la Détente",
-          "text": "Maintenant, il est temps de vous diriger vers le restaurant-café ! Prenez vos crayons de couleur, savourez une collation bien méritée et faites de votre croquis de Mylotopi (Mylotopi Sketch) un chef-d'œuvre coloré !"
+          "text": "Place à la Détente : Maintenant, il est temps de vous diriger vers le restaurant-café ! Prenez vos crayons de couleur, savourez une collation bien méritée et faites de votre croquis de Mylotopi (Mylotopi Sketch) un chef-d'œuvre coloré !"
         },
         {
-          "label": "Merci",
-          "text": "Merci d'avoir exploré avec nous aujourd'hui !"
+          "text": "Merci : Merci d'avoir exploré avec nous aujourd'hui !"
         }
       ]
     }
   ],
-  "imageAlt": "La Boulangerie at Mylotopi"
+  "imageAlt": "La Boulangerie"
 }

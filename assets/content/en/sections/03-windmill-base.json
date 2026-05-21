@@ -1,8 +1,8 @@
 {
   "id": "windmill-base",
-  "title": "Windmill base",
-  "navigationTitle": "Windmill base",
-  "preview": "Welcome to the \"Mill of the Priest\"! You are standing inside the oldest working windmill on the entire island and in the whole Dodecanese complex. It is over 400-years-old, operated daily all the way up until 1987, and is still a living machine that grinds flour today!",
+  "title": "The Windmill Base (1st Floor)",
+  "navigationTitle": "The Windmill Base (1st Floor)",
+  "preview": "A Living Legend: Welcome to the \"Mill of the Priest\"! You are standing inside the oldest working windmill on the entire island and in the whole Dodecanese complex. It is over 400-years-old, operated daily all the way up until 1987, and is still a living machine that grinds flour today!",
   "details": [
     {
       "type": "bulletGroup",
@@ -18,7 +18,7 @@
     },
     {
       "type": "heading",
-      "text": "Next Destination"
+      "text": "Next Destination:"
     },
     {
       "type": "bulletGroup",
@@ -30,40 +30,31 @@
       "id": "bullet-group-01",
       "items": [
         {
-          "label": "A Living Legend",
-          "text": "Welcome to the \"Mill of the Priest\"! You are standing inside the oldest working windmill on the entire island and in the whole Dodecanese complex. It is over 400-years-old, operated daily all the way up until 1987, and is still a living machine that grinds flour today!"
+          "text": "A Living Legend: Welcome to the \"Mill of the Priest\"! You are standing inside the oldest working windmill on the entire island and in the whole Dodecanese complex. It is over 400-years-old, operated daily all the way up until 1987, and is still a living machine that grinds flour today!"
         },
         {
-          "label": "At the Entrance",
-          "text": "As you step through the doorway, notice the traditional pomegranate hanging for good luck, alongside a small bottle of Holy Water from Mount Athos that is over 9-years-old."
+          "text": "At the Entrance: As you step through the doorway, notice the traditional pomegranate hanging for good luck, alongside a small bottle of Holy Water from Mount Athos that is over 9-years-old."
         },
         {
-          "label": "Built for Storms",
-          "text": "This giant machine is 6.2 meters tall, and the stone walls around you are 1.2 meters thick to keep the building safe from wild sea storms."
+          "text": "Built for Storms: This giant machine is 6.2 meters tall, and the stone walls around you are 1.2 meters thick to keep the building safe from wild sea storms."
         },
         {
-          "label": "Massive Machinery",
-          "text": "Up on the higher floors, there are two massive grinding stones that weigh one ton each that's over two tons together!"
+          "text": "Massive Machinery: Up on the higher floors, there are two massive grinding stones that weigh one ton each that's over two tons together!"
         },
         {
-          "label": "Ancient Wood",
-          "text": "80% of the wood in this building is original, and the rest was brought all the way from Mount Athos. Amazingly, some of the reused wooden parts spinning above are between 1,000 and 1,300-years-old!"
+          "text": "Ancient Wood: 80% of the wood in this building is original, and the rest was brought all the way from Mount Athos. Amazingly, some of the reused wooden parts spinning above are between 1,000 and 1,300-years-old!"
         },
         {
-          "label": "To Your Right",
-          "text": "See the area covered with a rag? That was the miller's storage room. Next to it, you will see a wooden donkey saddle and a threshing sledge that the miller's donkey would pull to separate the wheat. You can also spot everyday wooden tools and beautiful photos of other windmills across Greece."
+          "text": "To Your Right: See the area covered with a rag? That was the miller's storage room. Next to it, you will see a wooden donkey saddle and a threshing sledge that the miller's donkey would pull to separate the wheat. You can also spot everyday wooden tools and beautiful photos of other windmills across Greece."
         },
         {
-          "label": "The Fireplace",
-          "text": "The miller didn't just use this for warmth! Look closely inside—do you see a can? That holds cow fat, which the miller melted to lubricate the moving parts of the windmill so they wouldn't squeak. Just above the fireplace is a photograph of Kostas Politis, the beloved owner of this windmill whose legacy lives on right here."
+          "text": "The Fireplace: The miller didn't just use this for warmth! Look closely inside—do you see a can? That holds cow fat, which the miller melted to lubricate the moving parts of the windmill so they wouldn't squeak. Just above the fireplace is a photograph of Kostas Politis, the beloved owner of this windmill whose legacy lives on right here."
         },
         {
-          "label": "To Your Left",
-          "text": "You will see a traditional scale and weights, which were used to carefully weigh the fresh flour."
+          "text": "To Your Left: You will see a traditional scale and weights, which were used to carefully weigh the fresh flour."
         },
         {
-          "label": "The First Brakes",
-          "text": "Look for the tiny rope hanging down. Believe it or not, that rope was the windmill's first braking system! The miller would pull it to lift those two-ton millstones just a tiny bit, making it safe for him to go outside and unwrap the sails."
+          "text": "The First Brakes: Look for the tiny rope hanging down. Believe it or not, that rope was the windmill's first braking system! The miller would pull it to lift those two-ton millstones just a tiny bit, making it safe for him to go outside and unwrap the sails."
         }
       ]
     },
@@ -71,20 +62,16 @@
       "id": "bullet-group-02",
       "items": [
         {
-          "label": "Test the Walls",
-          "text": "Let's see just how thick those walls really are! Go stand next to the doorway and stretch your arms out as wide as you can. Are your arms longer than the wall is thick, or does the windmill win?"
+          "text": "Test the Walls: Let's see just how thick those walls really are! Go stand next to the doorway and stretch your arms out as wide as you can. Are your arms longer than the wall is thick, or does the windmill win?"
         },
         {
-          "label": "Spy",
-          "text": "Look around the room and see if you can spot the wooden donkey’s saddle!"
+          "text": "Spy: Look around the room and see if you can spot the wooden donkey’s saddle!"
         },
         {
-          "label": "Find the Fat",
-          "text": "Peer into the fireplace can you spot the hidden can of cow fat?"
+          "text": "Find the Fat: Peer into the fireplace can you spot the hidden can of cow fat?"
         },
         {
-          "label": "Spot the Brakes",
-          "text": "Find the tiny hanging rope that acted as the windmill's braking system!"
+          "text": "Spot the Brakes: Find the tiny hanging rope that acted as the windmill's braking system!"
         }
       ]
     },
@@ -92,11 +79,10 @@
       "id": "bullet-group-03",
       "items": [
         {
-          "label": "Upcoming",
-          "text": "Then continue to the Sleeping area."
+          "text": "Upcoming: Then move forward to the second floor of the Windmill!"
         }
       ]
     }
   ],
-  "imageAlt": "Windmill base at Mylotopi"
+  "imageAlt": "The Windmill Base (1st Floor)"
 }
