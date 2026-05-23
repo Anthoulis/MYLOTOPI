@@ -1,7 +1,7 @@
 {
   "id": "bakery",
-  "title": "The Stone Oven Bakery",
-  "navigationTitle": "Bakery",
+  "title": "The Stone Oven",
+  "navigationTitle": "Stone Oven",
   "preview": "The bakery completes the story of wheat and flour. Here, the village gathered around bread, fire, patience and the shared work of daily nourishment.",
   "details": [
     "The stone oven is more than 150 years old. In the past, many women of the village brought bread here for their families, making the bakery a practical and social center.",
@@ -27,5 +27,5 @@
       }
     ]
   },
-  "imageAlt": "The Stone Oven Bakery"
+  "imageAlt": "The Stone Oven"
 }

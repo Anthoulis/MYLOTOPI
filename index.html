@@ -4,58 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f7f4e8">
-  <title>Mylotopi Audio Guide</title>
+  <title>Mylotopi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-  <div class="guide-page">
-    <div class="guide-atmosphere" aria-hidden="true"></div>
+  <div class="qr-page">
+    <div class="qr-atmosphere" aria-hidden="true"></div>
 
-    <header class="guide-site-header" id="guide-topbar">
-      <nav class="guide-shell guide-nav-bar" aria-label="Guide navigation">
-        <div class="guide-brand" aria-label="Mylotopi Windmiller's Life">
-          <span class="guide-brand-primary">Mylotopi</span>
-          <span class="guide-brand-secondary">Windmiller's Life</span>
+    <header class="qr-header" id="qr-topbar">
+      <nav class="qr-shell qr-header__inner" id="qr-nav">
+        <div class="qr-brand" aria-label="Mylotopi Windmiller's Life">
+          <span class="qr-brand__name">Mylotopi</span>
+          <span class="qr-brand__tagline">Windmiller's Life</span>
         </div>
 
-        <details class="guide-menu guide-spot-menu" id="spot-menu">
-          <summary class="guide-menu-trigger guide-spot-trigger" id="spot-menu-trigger">
-            <span class="guide-control-label" id="spot-control-label"></span>
-            <span class="guide-menu-trigger-text" id="active-spot-label"></span>
-            <span class="guide-menu-trigger-icon" aria-hidden="true"></span>
+        <details class="qr-menu qr-menu--language" id="language-menu">
+          <summary class="qr-menu__trigger qr-menu__trigger--language" id="language-menu-trigger">
+            <span class="qr-menu__label" id="language-control-label"></span>
+            <span class="qr-menu__value" id="active-language-label"></span>
+            <span class="qr-menu__icon" aria-hidden="true"></span>
           </summary>
-          <div class="guide-menu-popover guide-spot-popover" id="spot-switcher" role="group"></div>
+          <div class="qr-menu__popover qr-menu__popover--language" id="language-switcher" role="group"></div>
         </details>
 
-        <details class="guide-menu guide-language-menu" id="language-menu">
-          <summary class="guide-menu-trigger guide-language-trigger" id="language-menu-trigger">
-            <span class="guide-control-label" id="language-control-label"></span>
-            <span class="guide-menu-trigger-text" id="active-language-label"></span>
-            <span class="guide-menu-trigger-icon" aria-hidden="true"></span>
+        <details class="qr-menu qr-menu--stop" id="spot-menu">
+          <summary class="qr-menu__trigger qr-menu__trigger--stop" id="spot-menu-trigger">
+            <span class="qr-menu__label" id="spot-control-label"></span>
+            <span class="qr-menu__value" id="active-spot-label"></span>
+            <span class="qr-menu__icon" aria-hidden="true"></span>
           </summary>
-          <div class="guide-menu-popover guide-language-popover" id="language-switcher" role="group"></div>
+          <div class="qr-menu__popover qr-menu__popover--stop" id="spot-switcher" role="group"></div>
         </details>
       </nav>
     </header>
 
-    <header class="guide-shell guide-hero" aria-labelledby="guide-title">
-      <p class="guide-kicker" id="guide-kicker"></p>
-      <h1 class="guide-title" id="guide-title"></h1>
-      <p class="guide-intro" id="guide-intro"></p>
-      <div class="guide-ornament" aria-hidden="true">
+    <header class="qr-shell qr-hero" aria-labelledby="qr-title">
+      <p class="qr-hero__eyebrow" id="qr-kicker"></p>
+      <h1 class="qr-hero__title" id="qr-title"></h1>
+      <p class="qr-hero__current" id="current-stop-label"></p>
+      <p class="qr-hero__intro" id="qr-intro"></p>
+      <div class="qr-hero__rule" aria-hidden="true">
         <span></span>
         <i></i>
         <span></span>
       </div>
     </header>
 
-    <main class="guide-shell guide-main" id="guide-main"></main>
+    <main class="qr-shell qr-main" id="qr-main"></main>
   </div>
 
-  <p class="sr-only" id="guide-announcer" aria-live="polite"></p>
+  <p class="sr-only" id="qr-announcer" aria-live="polite"></p>
 
   <script src="./assets/js/content-meta.js" defer></script>
   <script src="./assets/js/i18n.js" defer></script>

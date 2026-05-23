@@ -1,10 +1,10 @@
 {
   "id": "bakery",
-  "title": "Die Steinofenbäckerei",
-  "navigationTitle": "Bäckerei",
-  "preview": "Die Bäckerei vollendet die Geschichte von Weizen und Mehl. Hier versammelte sich das Dorf um Brot, Feuer, Geduld und die gemeinsame Arbeit der täglichen Versorgung.",
+  "title": "Der Steinofen",
+  "navigationTitle": "Steinofen",
+  "preview": "Der Steinofen vollendet die Geschichte von Weizen und Mehl. Hier versammelte sich das Dorf um Brot, Feuer, Geduld und die gemeinsame Arbeit der täglichen Versorgung.",
   "details": [
-    "Der Steinofen ist mehr als 150 Jahre alt. Früher brachten viele Frauen des Dorfes hier das Brot für ihre Familien, sodass die Bäckerei ein praktisches und soziales Zentrum wurde.",
+    "Der Steinofen ist mehr als 150 Jahre alt. Früher brachten viele Frauen des Dorfes hier das Brot für ihre Familien, sodass der Ofen ein praktisches und soziales Zentrum wurde.",
     "Brot wurde nicht hastig gemacht. Der Teig wurde am Vortag gemischt und geformt, dann ruhte er. Früh am nächsten Morgen wurde der Ofen sorgfältig erhitzt, bevor die Laibe hineinkamen.",
     "Nach ein bis zwei Stunden Backzeit zog der Duft von frischem Brot durch das Dorf. Der Prozess verband Haus, Feld, Mühle und Ofen zu einem Kreislauf des Insellebens.",
     "Betrachten Sie die Fotografien im Raum, um zu sehen, wie die Arbeit getan wurde und wie viel Wissen in alltäglichen Händen lag.",
@@ -27,5 +27,5 @@
       }
     ]
   },
-  "imageAlt": "Die Steinofenbäckerei"
+  "imageAlt": "Der Steinofen"
 }
