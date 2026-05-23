@@ -1,85 +1,32 @@
 {
   "id": "machinery",
-  "title": "Die Maschinen der Windmühle (3. Stock)",
-  "navigationTitle": "Die Maschinen der Windmühle (3. Stock)",
-  "preview": "Achten Sie auf Ihren Kopf: Willkommen im dritten Stock! Bitte passen Sie auf der Leiter auf Ihre Schritte auf und achten Sie beim Erkunden auf Ihren Kopf.",
+  "title": "Maschinerie",
+  "navigationTitle": "Maschinerie",
+  "preview": "Auf der oberen Ebene zeigt die Windmühle ihre Intelligenz. Holzbalken, Zahnräder, Seile und Mühlsteine verwandelten die Kraft des Windes in Mehl.",
   "details": [
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "Eine Mission für unsere jungen Entdecker und Erwachsene!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
-    },
+    "Bewegen Sie sich langsam und achten Sie auf Ihren Kopf. Der Mechanismus um Sie herum ist das Herz der Mühle und verbindet die Segel draußen mit den Mühlsteinen innen.",
+    "Die beiden Mühlsteine wiegen zusammen mehr als zwei Tonnen und stammen von Nisyros, einer Insel, die für besonders widerstandsfähigen Stein bekannt ist.",
+    "Eine kleine Glocke half dem Müller zu hören, wann im Trichter wenig Weizen übrig war. In einem Raum voller Holz, Wind und Stein hielt ein einfacher Ton die Arbeit im Rhythmus.",
+    "War das Mehl fertig, fiel es durch ein Rohr in das untere Geschoss. Eine kleinere Klappe erlaubte dem Müller, einen Anteil des Mehls als Bezahlung zu behalten.",
+    "Seile und Hebel zeigen, wie sorgfältig die Maschine kontrolliert wurde. Eine Bremse verlangsamte die Steine, eine andere konnte die Arbeit schnell stoppen.",
+    "Schauen Sie zur Decke und beachten Sie ihre bootsähnliche Form. Die Konstruktion spricht von Menschen, die Wind, Holz, Meer und Arbeit als eine Landschaft verstanden.",
     {
       "type": "heading",
-      "text": "Nächstes Ziel:"
+      "text": "Nächste Station"
     },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
+    "Gehen Sie wieder hinaus zum Dreschplatz, wo der Weizen vorbereitet wurde, bevor er die Mühle erreichte."
   ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
-      "items": [
-        {
-          "text": "Achten Sie auf Ihren Kopf: Willkommen im dritten Stock! Bitte passen Sie auf der Leiter auf Ihre Schritte auf und achten Sie beim Erkunden auf Ihren Kopf."
-        },
-        {
-          "text": "Die Muskeln der Mühle: Sie sehen nun die wahre Kraft der Windmühle. Schauen Sie sich diesen massiven Holzbalken über den Steinen an. Er ist das Hauptverbindungsstück, das die schweren Steine im Inneren, die Zahnräder und die riesigen, sich drehenden Segel draußen miteinander verbindet!"
-        },
-        {
-          "text": "Zwei-Tonnen-Steine: Diese massiven Mühlsteine wiegen zusammen über zwei Tonnen! Sie wurden extra von der Insel Nisyros importiert, die dafür berühmt ist, einen einzigartigen, superstarken Stein zu produzieren, der perfekt zum Mahlen ist."
-        },
-        {
-          "text": "Der Trichter & die Glocke: Suchen Sie knapp über den Steinen nach einer Holzkiste namens „Der Zuführer“ (oder Trichter), in die der Müller den rohen Weizen schüttete. Aber wie wusste er bei all dem lauten Lärm, wann sie leer war? Schauen Sie genau nach einer kleinen Glocke! Sie klingelte automatisch, wenn der Weizen zur Neige ging, um dem Müller zu sagen, dass er nachfüllen muss."
-        },
-        {
-          "text": "Die erste Bremse: Sehen Sie diesen Holzhebel, der mit einem winzigen Seil verbunden ist? Das führt ganz nach unten in den ersten Stock und ist das erste Bremssystem, über das wir unten gesprochen haben."
-        },
-        {
-          "text": "Das Mehl hinablassen: Schauen Sie in der Nähe des Hebels nach unten, um eine Falltür zu finden, die mit einem Rohr verbunden ist. Sobald das Mehl perfekt zerkleinert war, fiel es direkt dieses Rohr hinunter in das unterste Stockwerk!"
-        },
-        {
-          "text": "Das „Trinkgeld“ des Müllers: Direkt neben dem Hauptrohr befindet sich eine zweite, kleinere Falltür. Früher bezahlten die Leute nicht immer mit Geld. Stattdessen nutzte der Müller diese Tür, um sein „Trinkgeld“ zu kassieren – er behielt einen kleinen Prozentsatz des Mehls für seine eigene Familie als Bezahlung für seine harte Arbeit!"
-        },
-        {
-          "text": "Reibungsloses Drehen: Entdecken Sie die kleine Dose in der Nähe der Falltüren. Unten benutzte er Kuhfett, aber hier oben verwendete er eine spezielle Mischung aus Olivenöl und Seife, damit die oberen Zahnräder reibungslos liefen."
-        },
-        {
-          "text": "Die Notbremse: Suchen Sie neben der Leiter nach einem wirklich dicken Seil. Wenn der Müller die Mehlproduktion in Eile komplett stoppen musste, zog er an diesem Seil – dem zweiten Bremssystem!"
-        },
-        {
-          "text": "Eine Schiffsdecke: Schauen Sie sich zu guter Letzt die Decke an. Woran erinnert sie Sie? Sie ist tatsächlich in der Form eines Schiffes gestaltet, um die Kraft des Mechanismus zu verstärken und schneller Mehl zu produzieren!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Achtet auf die Glocke und läutet sie: Könnt ihr die winzige Glocke finden, die den Müller warnte, wenn der Weizen ausging? Könnt ihr sie läuten?"
-        },
-        {
-          "text": "Findet das versteckte Mehl: Sucht den Boden ab und seht nach, ob ihr die spezielle „Trinkgeld“-Tür entdecken könnt, hinter der der Müller seine hart verdiente Bezahlung aufbewahrte!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "Als Nächstes: Gehen Sie dann weiter zum Dreschplatz und zum Eselbereich!"
-        }
-      ]
-    }
-  ],
-  "imageAlt": "Die Maschinen der Windmühle (3. Stock)"
+  "challenge": {
+    "label": "Für junge Besucher",
+    "title": "Spuren der Arbeit finden",
+    "items": [
+      {
+        "text": "Suchen Sie die Glocke, die den Müller warnte, wenn der Weizen knapp wurde."
+      },
+      {
+        "text": "Finden Sie das Rohr, durch das das fertige Mehl nach unten gelangte."
+      }
+    ]
+  },
+  "imageAlt": "Maschinerie"
 }

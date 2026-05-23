@@ -1,6 +1,6 @@
 {
   "id": "welcome",
-  "title": "Welcome to Mylotopi",
+  "title": "Welcome to the Windmill Experience",
   "navigationTitle": "Welcome",
   "preview": "Begin the walk in a restored village created to preserve the memory of old Kefalos: the windmill, the family home, the bakery, the herbs, the tunnel and the work of everyday island life.",
   "details": [
@@ -46,5 +46,5 @@
       }
     ]
   },
-  "imageAlt": "Welcome to Mylotopi"
+  "imageAlt": "Welcome to the Windmill Experience"
 }

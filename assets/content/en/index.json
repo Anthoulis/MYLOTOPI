@@ -9,15 +9,28 @@
     "en_gb",
     "en_us"
   ],
+  "languageLabels": {
+    "en": "English",
+    "el": "Greek",
+    "de": "German",
+    "fr": "French",
+    "it": "Italian",
+    "es": "Spanish",
+    "nl": "Dutch",
+    "pl": "Polish",
+    "ru": "Russian",
+    "tr": "Turkish"
+  },
   "ui": {
     "kicker": "Kefalos, Kos · Audio guide",
-    "pageTitle": "Mylotopi Windmiller's Life",
+    "pageTitle": "Welcome to the Windmill Experience",
     "intro": "A companion walk through the restored Mylotopi village: windmill, stone, bread, herbs, family memory and the everyday rhythm of old Kefalos.",
-    "miniMapTitle": "Tour stops",
+    "miniMapTitle": "Guide stops",
     "miniMapDescription": "Choose a stop to move through the audio guide at your own pace.",
+    "miniMapDownload": "Download map",
     "miniMapImageAlt": "Mylotopi mini-map showing the nine tour stops",
     "languageLabel": "Language",
-    "spotsLabel": "Tour stop",
+    "spotsLabel": "Guide stops",
     "audioHeading": "Audio guide",
     "selectedBadge": "Current stop",
     "imagePlaceholderLabel": "Image",
@@ -29,7 +42,10 @@
     "readMore": "Read the story",
     "readLess": "Show less",
     "challengeLabel": "For young visitors",
-    "challengeTitle": "Look closer"
+    "challengeTitle": "Look closer",
+    "stopLabelSeparator": " · ",
+    "loadErrorTitle": "Unable to load guide content.",
+    "loadErrorBody": "Please serve this folder as a static website and reload the page."
   },
   "miniMap": {
     "path": "./assets/maps/en/minimap.jpg"

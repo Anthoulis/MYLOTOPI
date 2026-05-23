@@ -1,70 +1,30 @@
 {
   "id": "threshing-floor-donkeys",
-  "title": "Dreschplatz & die Esel!",
-  "navigationTitle": "Dreschplatz & die Esel!",
-  "preview": "Frische Luft & Steinböden: Willkommen zurück draußen! Atmen Sie tief die frische Luft ein. Sie stehen jetzt in der Nähe des traditionellen Dreschplatzes, der stark an eine große, runde Tanzfläche aus Stein erinnert.",
+  "title": "Dreschplatz und Esel",
+  "navigationTitle": "Dreschplatz",
+  "preview": "Zurück im Freien erzählt der Steinkreis die Geschichte des Weizens vor dem Mahlen. Hier bereiteten Ernte, Tierkraft und geduldige Hände das Korn vor.",
   "details": [
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "Eine Mission für unsere jungen Entdecker und Erwachsene!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
-    },
+    "Der Dreschplatz war ein wichtiger Arbeitsort im Freien. Weizen und andere Feldfrüchte wurden auf dem Steinkreis ausgebreitet, damit die Körner gelöst und getrennt werden konnten.",
+    "Früher lief ein Esel um den Mittelpfosten und half, die Ernte aufzubrechen. Danach setzten Menschen die Arbeit fort, reinigten und trennten den Weizen.",
+    "Diese Station macht die Geschichte der Windmühle vollständiger. Mehl begann nicht in der Mühle, sondern auf den Feldern, mit Wetter, Ernte, Tieren und wiederholter Arbeit vieler Hände.",
+    "Mylotopi hält auch die Erinnerung an die Tiere des Dorfes nahe bei den Besuchern. Bitte beobachten Sie sie ruhig und aus respektvollem Abstand.",
     {
       "type": "heading",
-      "text": "Nächstes Ziel:"
+      "text": "Nächste Station"
     },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
+    "Gehen Sie weiter zum italienischen Tunnel und Keller, wo sich die Atmosphäre von offener Landarbeit zu kühlem Stein und Kriegserinnerung verändert."
   ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
-      "items": [
-        {
-          "text": "Frische Luft & Steinböden: Willkommen zurück draußen! Atmen Sie tief die frische Luft ein. Sie stehen jetzt in der Nähe des traditionellen Dreschplatzes, der stark an eine große, runde Tanzfläche aus Stein erinnert."
-        },
-        {
-          "text": "Der schwindelige Esel: Schauen Sie genau in die Mitte des Kreises auf den Holzpfahl. In alten Zeiten band der Müller ein Seil von diesem Pfahl locker um den Hals eines Esels. Die Aufgabe des Esels war es, in einem großen Kreis immer wieder herumzulaufen und mit seinen schweren Füßen die geernteten Feldfrüchte zu stampfen und zu zerquetschen, um die Samen freizulegen!"
-        },
-        {
-          "text": "Den Weizen trennen: Nachdem der fleißige Esel all dieses schwindelerregende Stampfen erledigt hatte, griff der Müller ein, um den weißen Weizen sorgfältig vom braunen Weizen zu trennen. (Heute verwenden wir diese Methode nicht mehr – wir kaufen unseren Weizen direkt von lokalen Produzenten auf der Insel!)"
-        },
-        {
-          "text": "Treffen Sie die wahren Stars: Sie müssen sich die Tiere nicht nur vorstellen! Schauen Sie in die Nähe und Sie werden die wahren Stars der Farm treffen: unsere beiden lieben Esel. Die stolze Mama heißt Melina, sie ist 6 Jahre alt, und ihre süße kleine Tochter heißt Katie, die gerade mal 2 Jahre alt ist."
-        },
-        {
-          "text": "Der vermisste Papa: Was Katies Papa angeht... nun, eigentlich weiß niemand, wo er hin ist! Er hat es geliebt, sehr laut zu singen, also denken wir, dass er in die nächste Stadt gelaufen ist, um eine Esel-Rockband zu gründen!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Der Eseltanz: Tretet direkt an den Rand des Dreschplatzes heran! Könnt ihr so tun, als wärt ihr am mittleren Holzpfahl angebunden, und in einem perfekten Kreis laufen, genau wie es ein Esel tat?"
-        },
-        {
-          "text": "Sagt Hallo: Nach eurem schwindelerregenden Tanz müsst ihr unbedingt rübergehen und Melina und Katie Hallo winken! Bitte bewundert unsere lieben Esel aus der Ferne! Sie sehen süß aus, aber sie könnten eure Finger mit Babykarotten verwechseln. Wir wollen das lieber nicht herausfinden!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "Als Nächstes: Gehen Sie dann weiter zum Keller/Italienischen Tunnel!"
-        }
-      ]
-    }
-  ],
-  "imageAlt": "Dreschplatz & die Esel!"
+  "challenge": {
+    "label": "Für junge Besucher",
+    "title": "Dem Kreis folgen",
+    "items": [
+      {
+        "text": "Folgen Sie mit den Augen dem Rand des Dreschplatzes und finden Sie den Mittelpfosten."
+      },
+      {
+        "text": "Stellen Sie sich vor, wie viele langsame Kreise nötig waren, bevor der Weizen bereit für den nächsten Schritt war."
+      }
+    ]
+  },
+  "imageAlt": "Dreschplatz und Esel"
 }

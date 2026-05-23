@@ -1,67 +1,30 @@
 {
   "id": "cellar-italian-tunnel",
-  "title": "Der geheime Tunnel & Keller",
-  "navigationTitle": "Der geheime Tunnel & Keller",
-  "preview": "Ein Tapetenwechsel: Bereiten Sie sich auf einen kompletten Tapetenwechsel vor, wenn wir unter die Erde gehen! Wenn Sie in die kühle Luft hinabsteigen, schauen Sie nach links und rechts.",
+  "title": "Italienischer Tunnel und Keller",
+  "navigationTitle": "Tunnel und Keller",
+  "preview": "Betreten Sie einen kühleren und stilleren Teil von Mylotopi. Tunnel und Keller verbinden Stein, Wein und die verborgenere Geschichte der 1940er Jahre.",
   "details": [
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "Eine Mission für unsere jungen Entdecker und Erwachsene!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
-    },
+    "Achten Sie beim Hinabgehen auf die Temperatur, die Rundung der Wände und darauf, wie sich der Klang im Stein verändert.",
+    "Heute präsentiert der Keller Wein und Atmosphäre als Teil des Mylotopi-Erlebnisses. Der kühle Steinraum erinnert aber auch an einen anderen Moment der Geschichte.",
+    "In den 1940er Jahren war der Tunnel mit italienischen Soldaten verbunden. Er bot einen geschützten Weg und Zuflucht, geprägt von den Bedürfnissen und Ängsten der Kriegszeit.",
+    "Am Ende des Durchgangs führt der Weg zurück zum Restaurantbereich. Der Kontrast ist deutlich: Ein Ort, der einst mit Schutz und Verteidigung verbunden war, führt heute zu Gastfreundschaft, Essen und Aussicht.",
     {
       "type": "heading",
-      "text": "Nächstes Ziel:"
+      "text": "Nächste Station"
     },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
+    "Wenn Sie den Tunnel verlassen, gehen Sie weiter zum traditionellen Haus und zur Bäckerei, zurück in das häusliche Leben des alten Dorfes."
   ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
-      "items": [
-        {
-          "text": "Ein Tapetenwechsel: Bereiten Sie sich auf einen kompletten Tapetenwechsel vor, wenn wir unter die Erde gehen! Wenn Sie in die kühle Luft hinabsteigen, schauen Sie nach links und rechts."
-        },
-        {
-          "text": "Dekorative Flaschen: Sie werden Reihen von lokalem Wein vom Weingut Skevofilax drüben in Kos sehen. Wir bewahren diese Flaschen hier als Dekoration auf! Unsere eigentlichen Trinkweine werden sicher im Hauptkeller gelagert, wo die Temperatur perfekt für sie geeignet ist."
-        },
-        {
-          "text": "Geschichte des Zweiten Weltkriegs: Damals in den 1940er Jahren, während des Zweiten Weltkriegs, war dieser Raum nicht für Wein gedacht – er diente dem Überleben. Dieser 20 Meter lange Tunnel wurde während des Krieges von italienischen Soldaten gebaut."
-        },
-        {
-          "text": "Der Eiltunnel: Die Soldaten nutzten diesen Durchgang als Eiltunnel, eine geheime Abkürzung, um wegzulaufen und sich vor ihren Gegnern zu verstecken. Der Keller selbst wurde als sicherer Unterschlupf genutzt, wo sie schlafen, sich entspannen und vor den Kämpfen draußen geschützt bleiben konnten."
-        },
-        {
-          "text": "Eine versteckte Festung: Am Ende des Tunnels kommen Sie in unseren Hinterhof, der heute unser friedliches Restaurant ist. Aber schauen Sie noch einmal auf das Steindach zurück, bevor Sie hinausgehen! In den 1940er Jahren war dieses gesamte Gebiet ein Schießstand. Die Oberseite war mit schwerem Stein bedeckt, um die Soldaten zu schützen, und direkt am Rand hatten sie Maschinengewehre, um den Hang zu verteidigen. Es ist kaum zu glauben, dass dieser ruhige, wunderschöne Ort für eine Mahlzeit ein so stark bewachter Ort auf der Insel war!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Streng geheim: Ihr seid jetzt auf einer geheimen Mission! Könnt ihr beim Durchschreiten des Soldatentunnels genau ausrechnen, wie viele Weinflaschen an den Wänden aufgereiht sind?"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "Als Nächstes: Wenn Sie die Erkundung des Tunnels beendet haben, kommen Sie bitte zurück und suchen Sie unseren Reiseleiter auf, damit er Ihnen den Weg zu Ihren nächsten fantastischen Stationen zeigen kann dem traditionellen Haus und der Bäckerei!"
-        }
-      ]
-    }
-  ],
-  "imageAlt": "Der geheime Tunnel & Keller"
+  "challenge": {
+    "label": "Für junge Besucher",
+    "title": "Den Stein lesen",
+    "items": [
+      {
+        "text": "Achten Sie darauf, wo der Tunnel dunkler, kühler oder stiller wirkt als draußen."
+      },
+      {
+        "text": "Zählen Sie eine Reihe Flaschen und stellen Sie sich vor, wie sich der Keller verändert, wenn er gefüllt ist."
+      }
+    ]
+  },
+  "imageAlt": "Italienischer Tunnel und Keller"
 }

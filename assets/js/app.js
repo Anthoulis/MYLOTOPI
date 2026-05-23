@@ -64,6 +64,14 @@
     return SPOT_ORDER.includes(key) ? key : null;
   }
 
+  function getDefaultSpot() {
+    return (
+      SPOT_ORDER.find(function (spotId) {
+        return Boolean(SPOTS_BY_ID[spotId]);
+      }) || null
+    );
+  }
+
   function getSpotAnchorId(spotId) {
     const spot = SPOTS_BY_ID[spotId];
     return spot && spot.anchorId ? spot.anchorId : spotId;
@@ -269,11 +277,11 @@
         ? '<button class="guide-copy-toggle" type="button" data-copy-toggle aria-expanded="false" aria-controls="' +
           escapeHtml(copyId) +
           '" data-read-more="' +
-          escapeHtml(ui.readMore || "Read more") +
+          escapeHtml(ui.readMore) +
           '" data-read-less="' +
-          escapeHtml(ui.readLess || "Read less") +
+          escapeHtml(ui.readLess) +
           '">' +
-          escapeHtml(ui.readMore || "Read more") +
+          escapeHtml(ui.readMore) +
           "</button>"
         : "") +
       "</div>"
@@ -286,8 +294,8 @@
       return "";
     }
 
-    const label = challenge.label || ui.challengeLabel || "For young visitors";
-    const title = challenge.title || ui.challengeTitle || "Look closer";
+    const label = challenge.label || ui.challengeLabel;
+    const title = challenge.title || ui.challengeTitle;
     const intro = challenge.intro ? '<p class="guide-challenge-intro">' + escapeHtml(challenge.intro) + "</p>" : "";
 
     return (
@@ -390,6 +398,27 @@
       );
     }
 
+    const controlsMarkup =
+      images.length > 1
+        ? '<figcaption class="guide-gallery-controls">' +
+          '<button class="guide-gallery-button" type="button" data-gallery-direction="-1" aria-label="' +
+          escapeHtml(ui.galleryPrevious) +
+          '"' +
+          (index === 0 ? " disabled" : "") +
+          ">&lsaquo;</button>" +
+          '<span class="guide-gallery-count">' +
+          String(index + 1) +
+          " / " +
+          String(images.length) +
+          "</span>" +
+          '<button class="guide-gallery-button" type="button" data-gallery-direction="1" aria-label="' +
+          escapeHtml(ui.galleryNext) +
+          '"' +
+          (index === images.length - 1 ? " disabled" : "") +
+          ">&rsaquo;</button>" +
+          "</figcaption>"
+        : "";
+
     return (
       '<figure class="guide-gallery" data-gallery-spot="' +
       escapedSpotId +
@@ -405,23 +434,8 @@
       ";--gallery-position:" +
       escapeHtml(image.position) +
       '"></div>' +
-      '<figcaption class="guide-gallery-controls">' +
-      '<button class="guide-gallery-button" type="button" data-gallery-direction="-1" aria-label="' +
-      escapeHtml(ui.galleryPrevious || "Previous image") +
-      '"' +
-      (index === 0 ? " disabled" : "") +
-      ">&lsaquo;</button>" +
-      '<span class="guide-gallery-count">' +
-      String(index + 1) +
-      " / " +
-      String(images.length) +
-      "</span>" +
-      '<button class="guide-gallery-button" type="button" data-gallery-direction="1" aria-label="' +
-      escapeHtml(ui.galleryNext || "Next image") +
-      '"' +
-      (index === images.length - 1 ? " disabled" : "") +
-      ">&rsaquo;</button>" +
-      "</figcaption></figure>"
+      controlsMarkup +
+      "</figure>"
     );
   }
 
@@ -441,7 +455,7 @@
     const nextButton = gallery.querySelector('button[data-gallery-direction="1"]');
     const index = getGalleryIndex(spotId);
 
-    if (!frame || !imageElement || !count || !previousButton || !nextButton) {
+    if (!frame || !imageElement || (images.length > 1 && (!count || !previousButton || !nextButton))) {
       gallery.outerHTML = renderGallery(spotId, i18n.getSpotText(spotId, state.lang), i18n.getUi(state.lang));
       return;
     }
@@ -452,9 +466,11 @@
     imageElement.alt = image.alt || i18n.getImageAlt(spotId, state.lang);
     imageElement.style.setProperty("--gallery-fit", image.fit);
     imageElement.style.setProperty("--gallery-position", image.position);
-    count.textContent = String(index + 1) + " / " + String(images.length);
-    previousButton.disabled = index === 0;
-    nextButton.disabled = index === images.length - 1;
+    if (count && previousButton && nextButton) {
+      count.textContent = String(index + 1) + " / " + String(images.length);
+      previousButton.disabled = index === 0;
+      nextButton.disabled = index === images.length - 1;
+    }
   }
 
   function renderAudioMarkup(audio, content, ui) {
@@ -477,16 +493,16 @@
 
   function renderLanguageButtons() {
     const ui = i18n.getUi(state.lang);
-    const activeLanguageName = i18n.getLanguageName(state.lang);
+    const activeLanguageName = i18n.getLanguageLabel(state.lang, state.lang);
 
-    elements.activeLanguageLabel.textContent = i18n.getLanguageLabel(state.lang);
+    elements.activeLanguageLabel.textContent = activeLanguageName;
     elements.languageTrigger.setAttribute("aria-label", ui.languageLabel + ": " + activeLanguageName);
     elements.languageMenu.setAttribute("aria-label", ui.languageLabel);
     elements.languageSwitcher.setAttribute("aria-label", ui.languageLabel);
 
     elements.languageSwitcher.innerHTML = i18n.supportedLanguages.map(function (langKey) {
       const pressed = langKey === state.lang;
-      const languageName = i18n.getLanguageName(langKey);
+      const languageName = i18n.getLanguageLabel(langKey, state.lang);
 
       return (
         '<button class="guide-lang-button" type="button" data-lang="' +
@@ -498,7 +514,7 @@
         '" aria-current="' +
         (pressed ? "true" : "false") +
         '">' +
-        escapeHtml(i18n.getLanguageLabel(langKey)) +
+        escapeHtml(languageName) +
         "</button>"
       );
     }).join("");
@@ -544,17 +560,22 @@
       '<nav class="guide-mini-map" aria-labelledby="guide-mini-map-title">' +
       '<div class="guide-mini-map-header">' +
       '<h2 class="guide-mini-map-title" id="guide-mini-map-title">' +
-      escapeHtml(ui.miniMapTitle || "Mini-map") +
+      escapeHtml(ui.miniMapTitle) +
       "</h2>" +
       (ui.miniMapDescription
         ? '<p class="guide-mini-map-description">' + escapeHtml(ui.miniMapDescription) + "</p>"
         : "") +
+      '<a class="guide-mini-map-download" href="' +
+      escapeHtml(miniMap.path) +
+      '" download>' +
+      escapeHtml(ui.miniMapDownload) +
+      "</a>" +
       "</div>" +
       '<figure class="guide-mini-map-figure">' +
       '<img class="guide-mini-map-image" src="' +
-      escapeHtml(miniMap.path || "./assets/maps/en/minimap.jpg") +
+      escapeHtml(miniMap.path) +
       '" alt="' +
-      escapeHtml(ui.miniMapImageAlt || "Mylotopi mini-map showing the nine tour stops") +
+      escapeHtml(ui.miniMapImageAlt) +
       '">' +
       "</figure>" +
       '<ol class="guide-mini-map-list">' +
@@ -601,7 +622,7 @@
       const galleryMarkup = renderGallery(spotId, content, ui);
       const audioMarkup = renderAudioMarkup(audio, content, ui);
       const challengeMarkup = renderChallengeBox(content, ui);
-      const sectionLabel = sectionIndex + " · " + (content.shortTitle || content.title || i18n.getSpotLabel(spotId, state.lang));
+      const sectionLabel = sectionIndex + ui.stopLabelSeparator + (content.shortTitle || content.title || i18n.getSpotLabel(spotId, state.lang));
 
       return (
         '<article class="guide-section' +
@@ -768,8 +789,8 @@
 
     document.documentElement.lang = state.lang;
     document.title = ui.pageTitle + " | Mylotopi";
-    elements.spotControlLabel.textContent = ui.spotsLabel || "Tour stop";
-    elements.languageControlLabel.textContent = ui.languageLabel || "Language";
+    elements.spotControlLabel.textContent = ui.spotsLabel;
+    elements.languageControlLabel.textContent = ui.languageLabel;
     elements.kicker.textContent = ui.kicker;
     elements.title.textContent = ui.pageTitle;
     elements.intro.textContent = ui.intro;
@@ -805,7 +826,7 @@
     const canonicalRawLang = hasLangParam ? normalizeQueryParam(rawLang || "") : null;
     const canonicalRawSpot = hasSpotParam ? (rawSpot || "").toString().trim().toLowerCase() : null;
     const normalizedLang = i18n.normalizeLanguage(rawLang) || i18n.defaultLanguage;
-    const normalizedSpot = normalizeSpot(rawSpot);
+    const normalizedSpot = normalizeSpot(rawSpot) || getDefaultSpot();
 
     state.lang = normalizedLang;
     state.activeSpot = normalizedSpot;
@@ -917,8 +938,8 @@
 
     const isExpanded = button.getAttribute("aria-expanded") === "true";
     const nextExpanded = !isExpanded;
-    const readMoreLabel = button.dataset.readMore || "Read more";
-    const readLessLabel = button.dataset.readLess || "Read less";
+    const readMoreLabel = button.dataset.readMore;
+    const readLessLabel = button.dataset.readLess;
 
     copyWrap.classList.toggle("is-collapsed", !nextExpanded);
     copyWrap.classList.toggle("is-expanded", nextExpanded);
@@ -961,8 +982,12 @@
     console.error(error);
     elements.main.innerHTML =
       '<div class="guide-load-error" role="alert">' +
-      "<strong>Unable to load guide content.</strong>" +
-      "<span>Please serve this folder as a static website and reload the page.</span>" +
+      "<strong>" +
+      escapeHtml(i18n.getUi(state.lang).loadErrorTitle) +
+      "</strong>" +
+      "<span>" +
+      escapeHtml(i18n.getUi(state.lang).loadErrorBody) +
+      "</span>" +
       "</div>";
   }
 

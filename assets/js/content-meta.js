@@ -47,7 +47,7 @@
         accentSoft: "rgba(143, 107, 50, 0.18)",
         images: [
           {
-            src: "./assets/images/stops/03-windmill-first-floor/01-historic-windmill.jpg",
+            src: "./assets/images/stops/03-windmill-base/01-historic-windmill.jpg",
             alt: "Historic Mylotopi windmill before restoration",
             fit: "cover",
             position: "center",
@@ -60,7 +60,7 @@
         accentSoft: "rgba(143, 107, 50, 0.14)",
         images: [
           {
-            src: "./assets/images/stops/04-windmill-second-floor/01-windmill-exterior.jpg",
+            src: "./assets/images/stops/04-sleeping-area/01-windmill-exterior.jpg",
             alt: "Windmill sails, stone and garden textures at Mylotopi",
             fit: "cover",
             position: "center",
@@ -73,7 +73,7 @@
         accentSoft: "rgba(143, 107, 50, 0.12)",
         images: [
           {
-            src: "./assets/images/stops/05-windmill-third-floor/01-machinery-detail.jpg",
+            src: "./assets/images/stops/05-machinery/01-machinery-detail.jpg",
             alt: "Close view of the restored wooden windmill machinery",
             fit: "cover",
             position: "center",

@@ -413,6 +413,22 @@ body {
   line-height: 1.55;
 }
 
+.guide-mini-map-download {
+  justify-self: start;
+  min-height: 42px;
+  padding: 10px 14px;
+  border: 1px solid rgba(143, 107, 50, 0.28);
+  border-radius: 999px;
+  background: rgba(143, 107, 50, 0.1);
+  color: var(--color-text);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .guide-mini-map-figure {
   max-width: min(100%, 520px);
   margin: 0 auto 14px;
@@ -856,17 +872,6 @@ body {
   line-height: 1.58;
 }
 
-.guide-noscript {
-  width: var(--shell-width);
-  margin: 0 auto 32px;
-  padding: 16px 18px;
-  border: 1px solid var(--color-border);
-  border-radius: 18px;
-  background: var(--color-surface);
-  color: var(--color-muted);
-  line-height: 1.6;
-}
-
 .guide-load-error {
   display: grid;
   gap: 6px;
@@ -893,8 +898,7 @@ body {
   border: 0;
 }
 
-.guide-page :focus-visible,
-.guide-noscript:focus-visible {
+.guide-page :focus-visible {
   outline: 3px solid rgba(185, 173, 69, 0.72);
   outline-offset: 3px;
 }

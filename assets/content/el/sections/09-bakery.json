@@ -1,57 +1,31 @@
 {
   "id": "bakery",
-  "title": "The Bakery",
-  "navigationTitle": "The Bakery",
-  "preview": "A Community Hub: Welcome to the traditional oven! This beautiful stone oven is over 150 years old. Back in the day, the majority of the ladies in the village would come right here to bake their daily bread for their families.",
+  "title": "Ο Πετρόχτιστος Φούρνος",
+  "navigationTitle": "Φούρνος",
+  "preview": "Ο φούρνος ολοκληρώνει την ιστορία του σιταριού και του αλευριού. Εδώ το χωριό συναντιόταν γύρω από το ψωμί, τη φωτιά, την υπομονή και την καθημερινή φροντίδα.",
   "details": [
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
+    "Ο πέτρινος φούρνος είναι πάνω από 150 ετών. Στο παρελθόν, πολλές γυναίκες του χωριού έφερναν εδώ το ψωμί των οικογενειών τους, κάνοντας τον φούρνο πρακτικό και κοινωνικό κέντρο.",
+    "Το ψωμί δεν γινόταν βιαστικά. Η ζύμη ετοιμαζόταν και πλάθονταν από την προηγούμενη μέρα, έπειτα ξεκουραζόταν. Νωρίς το επόμενο πρωί, ο φούρνος ζεσταινόταν προσεκτικά πριν μπουν τα καρβέλια.",
+    "Μετά από μία ή δύο ώρες ψησίματος, η μυρωδιά του φρέσκου ψωμιού απλωνόταν στο χωριό. Η διαδικασία ένωνε το σπίτι, το χωράφι, τον μύλο και τον φούρνο σε έναν κύκλο νησιωτικής ζωής.",
+    "Κοιτάξτε τις φωτογραφίες γύρω σας για να δείτε πώς γινόταν η εργασία και πόση γνώση κρυβόταν στα καθημερινά χέρια.",
+    "Στο τέλος της διαδρομής, το εστιατόριο-καφέ είναι ένα φυσικό σημείο παύσης, για να κοιτάξετε πίσω το χωριό και να αφήσετε την ιστορία να κατασταλάξει.",
     {
       "type": "heading",
-      "text": "Μια Ερώτηση για τους Νεαρούς Εξερευνητές μας και τους Ενήλικες!"
+      "text": "Ευχαριστούμε"
     },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
-    }
+    "Σας ευχαριστούμε που περπατήσατε μαζί μας μέσα στο Μυλοτόπι και στη μνήμη της παλιάς Κεφάλου."
   ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
-      "items": [
-        {
-          "text": "A Community Hub: Welcome to the traditional oven! This beautiful stone oven is over 150 years old. Back in the day, the majority of the ladies in the village would come right here to bake their daily bread for their families."
-        },
-        {
-          "text": "A Two-Day Process: Baking bread back then wasn't as fast as just running to the supermarket! It was actually a two-day process. The night before, the ladies would carefully mix and shape the dough, leaving it to rest and rise up overnight."
-        },
-        {
-          "text": "Freshly Baked: The next morning, when the dough was ready, they would build a hot fire to warm up the oven. Once the temperature was just right, they placed the dough inside. After baking for one to two hours, the entire village would be filled with the delicious smell of fresh, warm bread ready to be eaten!"
-        },
-        {
-          "text": "Historical Photos: If you look around, you can see some wonderful pictures on display that show exactly how they did this whole procedure."
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Πρωινό Ξύπνημα: Όλο το χωριό χρειαζόταν φρέσκο ψωμί. Μπορείτε να μαντέψετε τι ώρα έπρεπε να ξυπνήσει ο φούρναρης κάθε πρωί για να αρχίσει να φτιάχνει τη ζύμη; (Στοιχείο: Ήταν πολύ πριν βγει ο ήλιος!)"
-        },
-        {
-          "text": "Κοιτάξτε Προσεκτικά: Κοιτάξτε προσεκτικά τις φωτογραφίες για να δείτε πώς δούλευαν οι γυναίκες του χωριού στον φούρνο."
-        },
-        {
-          "text": "Ώρα για Χαλάρωση: Τώρα, ήρθε η ώρα να κατευθυνθείτε στο εστιατόριο-καφέ ώστε να χαλαρώσετε!"
-        },
-        {
-          "text": "Ευχαριστούμε: Σας ευχαριστούμε που εξερευνήσατε μαζί μας σήμερα!"
-        }
-      ]
-    }
-  ],
-  "imageAlt": "The Bakery"
+  "challenge": {
+    "label": "Για μικρούς επισκέπτες",
+    "title": "Ακολουθήστε το ψωμί",
+    "items": [
+      {
+        "text": "Ονομάστε τα τρία μέρη από όπου πέρασε το ψωμί: χωράφι, μύλος και φούρνος."
+      },
+      {
+        "text": "Κοιτάξτε τις παλιές φωτογραφίες και βρείτε ένα εργαλείο ή μια κίνηση που δείχνει προσεκτική εργασία."
+      }
+    ]
+  },
+  "imageAlt": "Ο Πετρόχτιστος Φούρνος"
 }

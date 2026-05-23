@@ -1,6 +1,6 @@
 {
   "id": "sleeping-area",
-  "title": "The Sleeping Floor",
+  "title": "Sleeping Area",
   "navigationTitle": "Sleeping Area",
   "preview": "On the second floor, the windmill becomes intimate. This was not only a working building, but also a place where the miller's family rested beside the stored wheat and flour.",
   "details": [
@@ -26,5 +26,5 @@
       }
     ]
   },
-  "imageAlt": "The Sleeping Floor"
+  "imageAlt": "Sleeping Area"
 }

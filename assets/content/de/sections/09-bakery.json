@@ -1,57 +1,31 @@
 {
   "id": "bakery",
-  "title": "Die Bäckerei",
-  "navigationTitle": "Die Bäckerei",
-  "preview": "Ein Zentrum der Gemeinschaft: Willkommen beim traditionellen Backofen! Dieser wunderschöne Steinofen ist über 150 Jahre alt. Früher kamen die meisten Frauen des Dorfes genau hierher, um das tägliche Brot für ihre Familien zu backen.",
+  "title": "Die Steinofenbäckerei",
+  "navigationTitle": "Bäckerei",
+  "preview": "Die Bäckerei vollendet die Geschichte von Weizen und Mehl. Hier versammelte sich das Dorf um Brot, Feuer, Geduld und die gemeinsame Arbeit der täglichen Versorgung.",
   "details": [
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
+    "Der Steinofen ist mehr als 150 Jahre alt. Früher brachten viele Frauen des Dorfes hier das Brot für ihre Familien, sodass die Bäckerei ein praktisches und soziales Zentrum wurde.",
+    "Brot wurde nicht hastig gemacht. Der Teig wurde am Vortag gemischt und geformt, dann ruhte er. Früh am nächsten Morgen wurde der Ofen sorgfältig erhitzt, bevor die Laibe hineinkamen.",
+    "Nach ein bis zwei Stunden Backzeit zog der Duft von frischem Brot durch das Dorf. Der Prozess verband Haus, Feld, Mühle und Ofen zu einem Kreislauf des Insellebens.",
+    "Betrachten Sie die Fotografien im Raum, um zu sehen, wie die Arbeit getan wurde und wie viel Wissen in alltäglichen Händen lag.",
+    "Am Ende des Rundgangs ist das Restaurant-Cafe ein natürlicher Ort zum Innehalten, um über das Dorf zurückzublicken und die Geschichte nachklingen zu lassen.",
     {
       "type": "heading",
-      "text": "Eine Frage für unsere jungen Entdecker und die Erwachsenen!"
+      "text": "Danke"
     },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
-    }
+    "Vielen Dank, dass Sie mit uns durch Mylotopi und die Erinnerung an das alte Kefalos gegangen sind."
   ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
-      "items": [
-        {
-          "text": "Ein Zentrum der Gemeinschaft: Willkommen beim traditionellen Backofen! Dieser wunderschöne Steinofen ist über 150 Jahre alt. Früher kamen die meisten Frauen des Dorfes genau hierher, um das tägliche Brot für ihre Familien zu backen."
-        },
-        {
-          "text": "Ein zweitägiger Prozess: Das Brotbacken war damals nicht so einfach wie ein schneller Gang zum Supermarkt! Es war tatsächlich ein Prozess, der zwei Tage dauerte. Am Vorabend mischten und formten die Frauen den Teig sorgfältig und ließen ihn über Nacht ruhen und aufgehen."
-        },
-        {
-          "text": "Frisch gebacken: Am nächsten Morgen, sobald der Teig bereit war, entfachten sie ein heißes Feuer, um den Ofen aufzuheizen. Wenn die Temperatur genau richtig war, schoben sie den Teig hinein. Nach ein bis zwei Stunden Backzeit war das gesamte Dorf vom herrlichen Duft nach frischem, warmem Brot erfüllt, das bereit zum Verzehr war!"
-        },
-        {
-          "text": "Historische Fotos: Wenn Sie sich umsehen, können Sie einige wunderbare ausgestellte Bilder sehen, die genau zeigen, wie dieser gesamte Ablauf funktionierte."
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Der frühe Vogel: Das ganze Dorf brauchte frisches Brot. Könnt ihr erraten, um welche Uhrzeit der Bäcker jeden Morgen aufstehen musste, um den Teig zuzubereiten? (Tipp: Es war lange bevor die Sonne aufging!)"
-        },
-        {
-          "text": "Schaut genau hin: Schaut euch die Bilder genau an, um zu sehen, wie die Frauen des Dorfes früher in der Bäckerei gearbeitet haben."
-        },
-        {
-          "text": "Zeit zum Entspannen: Jetzt ist es an der Zeit, ins Restaurant-Café zu gehen! Schnappt euch eure Buntstifte, genießt einen wohlverdienten Snack und macht eure Mylotopi-Skizze zu einem bunten Meisterwerk!"
-        },
-        {
-          "text": "Vielen Dank: Vielen Dank, dass ihr heute mit uns auf Entdeckungstour gegangen seid!"
-        }
-      ]
-    }
-  ],
-  "imageAlt": "Die Bäckerei"
+  "challenge": {
+    "label": "Für junge Besucher",
+    "title": "Dem Brot folgen",
+    "items": [
+      {
+        "text": "Nennen Sie die drei Orte, durch die das Brot ging: Feld, Mühle und Ofen."
+      },
+      {
+        "text": "Schauen Sie auf die alten Fotografien und finden Sie ein Werkzeug oder eine Bewegung, die sorgfältige Arbeit zeigt."
+      }
+    ]
+  },
+  "imageAlt": "Die Steinofenbäckerei"
 }

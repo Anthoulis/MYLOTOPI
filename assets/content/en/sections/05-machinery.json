@@ -1,7 +1,7 @@
 {
   "id": "machinery",
-  "title": "Windmill Machinery",
-  "navigationTitle": "Mill Machinery",
+  "title": "Machinery",
+  "navigationTitle": "Machinery",
   "preview": "At the upper level, the windmill shows its intelligence. Wooden beams, gears, ropes and stone wheels translated the force of the wind into the flour that sustained village life.",
   "details": [
     "Please move slowly and mind your head. The mechanism above and around you is the heart of the mill, joining the sails outside with the grinding stones inside.",
@@ -28,5 +28,5 @@
       }
     ]
   },
-  "imageAlt": "Windmill Machinery"
+  "imageAlt": "Machinery"
 }

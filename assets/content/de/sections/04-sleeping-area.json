@@ -1,67 +1,30 @@
 {
   "id": "sleeping-area",
-  "title": "Der Schlafbereich der Windmühle (2. Stock)",
-  "navigationTitle": "Der Schlafbereich der Windmühle (2. Stock)",
-  "preview": "Passen Sie auf Ihre Schritte auf: Willkommen im zweiten Stock! Passen Sie auf den Holztreppen auf Ihre Schritte und auf das Holz über Ihnen auf Ihren Kopf auf. Machen Sie sich auf eine große Überraschung darüber gefasst, wie die Familie lebte.",
+  "title": "Schlafbereich",
+  "navigationTitle": "Schlafbereich",
+  "preview": "Im Schlafbereich wird die Windmühle persönlicher. Sie war nicht nur ein Arbeitsgebäude, sondern auch ein Ort, an dem die Familie des Müllers neben Weizen und Mehl ruhte.",
   "details": [
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "Eine Frage für unsere jungen Entdecker und Erwachsene!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
-    },
+    "Achten Sie auf die Holzstufen und das niedrige Holz über Ihrem Kopf. Die Windmühle wurde zuerst für die Arbeit gebaut, deshalb verlangt jede Bewegung Aufmerksamkeit.",
+    "Auf einer Seite zeigen historische Bilder Windmühlen aus Griechenland. Auf der anderen erinnert der Raum an eine sehr menschliche Wahrheit: Der Müller und seine Familie schliefen nah am Klang und an der Verantwortung der Mühle.",
+    "Säcke mit rohem Weizen und frischem Mehl wurden in der Nähe gelagert. Mehl bedeutete Nahrung, Einkommen und Sicherheit für den Haushalt.",
+    "Dieser Raum zeigt, wie eng Arbeit und Privatleben in einer Inselfamilie zusammenliegen konnten.",
     {
       "type": "heading",
-      "text": "Nächstes Ziel:"
+      "text": "Nächste Station"
     },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
+    "Gehen Sie weiter zur Maschinerie, wo Holz und Stein zeigen, wie Wind zu Mehl wurde."
   ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
-      "items": [
-        {
-          "text": "Passen Sie auf Ihre Schritte auf: Willkommen im zweiten Stock! Passen Sie auf den Holztreppen auf Ihre Schritte und auf das Holz über Ihnen auf Ihren Kopf auf. Machen Sie sich auf eine große Überraschung darüber gefasst, wie die Familie lebte."
-        },
-        {
-          "text": "Zu Ihrer Rechten: An den Wänden sehen Sie einige wunderschöne Bilder, die verschiedene historische Windmühlen aus ganz Griechenland zeigen. Aber dieser Raum war nicht nur eine Galerie!"
-        },
-        {
-          "text": "Ein sehr lautes Schlafzimmer: Genau hier auf der rechten Seite haben der Windmüller und seine gesamte Familie tatsächlich geschlafen! Können Sie sich vorstellen, ein friedliches Nickerchen zu machen, während das ganze Gebäude bebte, der Wind heulte und die schweren Maschinen nur wenige Meter entfernt lautstark Weizen zerkleinerten? Sie müssen einen sehr tiefen Schlaf gehabt haben!"
-        },
-        {
-          "text": "Zu Ihrer Linken: Schauen Sie nun auf die linke Seite. Dies war ein sehr wichtiger und viel genutzter Lagerraum."
-        },
-        {
-          "text": "Das Mehl beschützen: Der Müller nutzte diese Seite des Raumes, um all die schweren Säcke mit rohem Weizen, die darauf warteten, gemahlen zu werden, sicher zu stapeln, direkt neben den frisch abgefüllten Säcken mit luftigem, weißem Mehl, die bereit waren, um das Dorf zu ernähren. Er bewahrte sie genau hier in der Nähe seines Bettes auf, damit er sie beschützen konnte!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Stellt euch das vor: Könnt ihr euch vorstellen, im zweiten Stock genau so zu schlafen, wie sie es früher getan haben?"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "Als Nächstes: Gehen Sie dann weiter in den dritten Stock der Windmühle!"
-        }
-      ]
-    }
-  ],
-  "imageAlt": "Der Schlafbereich der Windmühle (2. Stock)"
+  "challenge": {
+    "label": "Für junge Besucher",
+    "title": "Den Raum bei Nacht vorstellen",
+    "items": [
+      {
+        "text": "Hören Sie auf die Geräusche um sich herum und stellen Sie sich vor, zu schlafen, während der Wind die Segel bewegt."
+      },
+      {
+        "text": "Finden Sie heraus, wo Weizen und Mehl nah bei der Familie aufbewahrt werden konnten."
+      }
+    ]
+  },
+  "imageAlt": "Schlafbereich"
 }

@@ -1,6 +1,6 @@
 {
   "id": "windmill-base",
-  "title": "The Windmill Base",
+  "title": "Windmill Base",
   "navigationTitle": "Windmill Base",
   "preview": "Step inside the base of the Mill of the Priest, one of the oldest working windmills in the Dodecanese. Thick stone, wood, weight and wind all meet here.",
   "details": [
@@ -27,5 +27,5 @@
       }
     ]
   },
-  "imageAlt": "The Windmill Base"
+  "imageAlt": "Windmill Base"
 }

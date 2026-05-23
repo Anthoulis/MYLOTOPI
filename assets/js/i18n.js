@@ -127,6 +127,11 @@
     return Object.assign({}, getLocale(defaultLanguage).index.ui || {}, getLocale(lang).index.ui || {});
   }
 
+  function getLocalizedLanguageName(lang, displayLang) {
+    const labels = getLocale(displayLang || lang).index.languageLabels || {};
+    return labels[lang] || getLanguageName(lang);
+  }
+
   function getSpotText(spotId, lang) {
     const defaultText = getLocale(defaultLanguage).sections[spotId] || {};
     const localeText = getLocale(lang).sections[spotId] || {};
@@ -144,6 +149,7 @@
         : Array.isArray(defaultText.bullets)
           ? defaultText.bullets
           : [],
+      challenge: lang === defaultLanguage ? defaultText.challenge : localeText.challenge || null,
       audio: Object.assign({}, defaultAudio, localeAudio),
     });
   }
@@ -189,9 +195,10 @@
     return language.nativeName || lang.toUpperCase();
   }
 
-  function getLanguageDisplayLabel(lang) {
+  function getLanguageDisplayLabel(lang, displayLang) {
     const language = getLocale(lang).index;
-    return language.flag ? language.flag + " " + getLanguageName(lang) : getLanguageName(lang);
+    const label = getLocalizedLanguageName(lang, displayLang);
+    return language.flag ? language.flag + " " + label : label;
   }
 
   window.MYLOTOPI_GUIDE_I18N = {
