@@ -1,7 +1,6 @@
 {
   "code": "en",
   "nativeName": "English",
-  "flag": "🇬🇧",
   "aliases": [
     "en",
     "english",
@@ -11,24 +10,26 @@
     "en_us"
   ],
   "ui": {
-    "kicker": "Mylotopi QR Guide",
-    "pageTitle": "Welcome to Windmill Experience!",
-    "intro": "Travel Back in Time: Get ready to step into the past! You won't need a time machine for this journey just some comfy shoes.",
-    "miniMapTitle": "Mini-map",
-    "miniMapDescription": "Choose a stop to jump directly to that point in the walk.",
+    "kicker": "Kefalos, Kos · Audio guide",
+    "pageTitle": "Mylotopi Windmiller's Life",
+    "intro": "A companion walk through the restored Mylotopi village: windmill, stone, bread, herbs, family memory and the everyday rhythm of old Kefalos.",
+    "miniMapTitle": "Tour stops",
+    "miniMapDescription": "Choose a stop to move through the audio guide at your own pace.",
     "miniMapImageAlt": "Mylotopi mini-map showing the nine tour stops",
     "languageLabel": "Language",
-    "spotsLabel": "Guide stops",
+    "spotsLabel": "Tour stop",
     "audioHeading": "Audio guide",
-    "selectedBadge": "Selected stop",
-    "imagePlaceholderLabel": "Image slot",
-    "imagePlaceholderHint": "Add a location image when it becomes available.",
+    "selectedBadge": "Current stop",
+    "imagePlaceholderLabel": "Image",
+    "imagePlaceholderHint": "A location image can be added here when available.",
     "audioFallback": "The audio file is not available in this language yet.",
     "announcerPrefix": "Active stop",
     "galleryPrevious": "Previous image",
     "galleryNext": "Next image",
-    "readMore": "Read more",
-    "readLess": "Read less"
+    "readMore": "Read the story",
+    "readLess": "Show less",
+    "challengeLabel": "For young visitors",
+    "challengeTitle": "Look closer"
   },
   "miniMap": {
     "path": "./assets/maps/en/minimap.jpg"

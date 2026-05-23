@@ -1,67 +1,30 @@
 {
   "id": "sleeping-area",
-  "title": "The Windmill Sleeping Area (2nd Floor)",
-  "navigationTitle": "The Windmill Sleeping Area (2nd Floor)",
-  "preview": "Watch Your Step: Welcome to the second floor! Watch your step on the wooden stairs and mind your head on the wood above. Get ready for a big surprise about how the family lived.",
+  "title": "The Sleeping Floor",
+  "navigationTitle": "Sleeping Area",
+  "preview": "On the second floor, the windmill becomes intimate. This was not only a working building, but also a place where the miller's family rested beside the stored wheat and flour.",
   "details": [
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "A Question for our Young Explorers and Adults!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
-    },
+    "Please watch your step on the wooden stairs and mind the low timber above you. The windmill was built for work first, so every movement inside it asks for attention.",
+    "On one side, historic images show windmills from across Greece. On the other, the room recalls a more personal truth: the miller and his family slept close to the sound, movement and responsibility of the mill.",
+    "Bags of raw wheat and fresh flour were stored nearby. Keeping them close was practical and protective, because flour was food, income and security for the household.",
+    "This floor shows how closely work and private life could meet in an island family. Rest, storage and responsibility shared the same small space.",
     {
       "type": "heading",
-      "text": "Next Destination:"
+      "text": "Next stop"
     },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
+    "Continue upward to the machinery, where the wooden structure and stone wheels reveal how wind became flour."
   ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
-      "items": [
-        {
-          "text": "Watch Your Step: Welcome to the second floor! Watch your step on the wooden stairs and mind your head on the wood above. Get ready for a big surprise about how the family lived."
-        },
-        {
-          "text": "To Your Right: On the walls, you will see some beautiful pictures showing different historic windmills from all across Greece. But this space wasn't just a gallery!"
-        },
-        {
-          "text": "A Very Noisy Bedroom: Right here on the right side is actually where the wind miller and his entire family used to sleep! Can you imagine trying to take a peaceful nap while the whole building was shaking, the wind was howling, and the heavy machinery was loudly crushing wheat just a few feet away? They must have been very heavy sleepers!"
-        },
-        {
-          "text": "To Your Left: Now, look over to the left side. This was a very important and busy storage space."
-        },
-        {
-          "text": "Protecting the Flour: The miller used this side of the room to safely stack all the heavy bags of raw wheat waiting to be ground, alongside the freshly filled bags of fluffy white flour that were ready to go out and feed the village. He kept them right here near his bed so he could protect them!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Imagine This: Could you imagine yourself sleeping on the second floor exactly how they used to do?"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "Upcoming: Then move forward to the third floor of the Windmill!"
-        }
-      ]
-    }
-  ],
-  "imageAlt": "The Windmill Sleeping Area (2nd Floor)"
+  "challenge": {
+    "label": "For young visitors",
+    "title": "Imagine the room at night",
+    "items": [
+      {
+        "text": "Listen for the sounds around you and imagine sleeping while the wind moved the sails."
+      },
+      {
+        "text": "Find where wheat and flour could be kept close to the family."
+      }
+    ]
+  },
+  "imageAlt": "The Sleeping Floor"
 }

@@ -1,67 +1,30 @@
 {
   "id": "cellar-italian-tunnel",
-  "title": "The Secret Tunnel & Cellar",
-  "navigationTitle": "The Secret Tunnel & Cellar",
-  "preview": "A Change of Scenery: Prepare yourselves for a total change of scenery as we head underground! As you step down into the cool air, take a look to your left and right.",
+  "title": "Italian Tunnel and Cellar",
+  "navigationTitle": "Tunnel and Cellar",
+  "preview": "Enter a cooler, quieter part of Mylotopi. The tunnel and cellar connect stone, wine and the more hidden history of the 1940s.",
   "details": [
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "A Mission for our Young Explorers and Adults!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
-    },
+    "As you step underground, notice the temperature, the curve of the walls and the way sound changes inside the stone passage.",
+    "Today, the cellar presents wine and atmosphere as part of the Mylotopi experience. The cool stone setting also reminds visitors that the same space once belonged to a different moment in history.",
+    "During the 1940s, the tunnel was connected with Italian soldiers. It offered a protected route and shelter, shaped by the needs and fears of wartime.",
+    "At the end of the passage, the route returns toward the restaurant area. The contrast is striking: a space once tied to protection and defense now leads visitors back to hospitality, food and the view over Kefalos.",
     {
       "type": "heading",
-      "text": "Next Destination:"
+      "text": "Next stop"
     },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
+    "When you leave the tunnel, continue toward the traditional house and bakery to return to the domestic life of the old village."
   ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
-      "items": [
-        {
-          "text": "A Change of Scenery: Prepare yourselves for a total change of scenery as we head underground! As you step down into the cool air, take a look to your left and right."
-        },
-        {
-          "text": "Decorative Bottles: You will see rows of local wine from the Skevofilax winery over in Kos. We keep these bottles here for design! Our actual drinking wines are kept safely in the main cellar, where the temperature is perfectly suited for them."
-        },
-        {
-          "text": "World War II History: Back in the 1940s, during World War II, this space wasn't for wine it was for survival. This 20-meter tunnel was built by Italian soldiers during the war."
-        },
-        {
-          "text": "The Hurry Tunnel: The soldiers used this passage as a hurry tunnel, a secret shortcut to run away and hide from their opponents. The cellar itself was used as a safe shelter where they could sleep, relax, and stay protected from the battles outside."
-        },
-        {
-          "text": "A Hidden Fortress: At the end of the tunnel, you will come out into our backyard, which is now our peaceful restaurant. But look back at the stone roof before you exit! In the 1940s, this entire area was a shooting range. The top was covered in heavy stone to protect the soldiers, and right at the edge, they had machine gun to defend the hillside. It’s hard to believe this quiet, beautiful spot for a meal was guarded place on the island!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Top Secret: You are now on a secret mission! As you walk through the soldiers' tunnel, can you calculate exactly how many bottles of wine are lining the walls?"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "Upcoming: When you finish exploring the tunnel, please come back and find our tour guide so they can show you the way to your next amazing stops the Traditional House and the Bakery!"
-        }
-      ]
-    }
-  ],
-  "imageAlt": "The Secret Tunnel & Cellar"
+  "challenge": {
+    "label": "For young visitors",
+    "title": "Read the stone",
+    "items": [
+      {
+        "text": "Notice where the tunnel feels darker, cooler or quieter than the spaces outside."
+      },
+      {
+        "text": "Count one row of bottles and imagine how the cellar changes when it is full."
+      }
+    ]
+  },
+  "imageAlt": "Italian Tunnel and Cellar"
 }

@@ -9,12 +9,12 @@
   const SPOT_ORDER = Array.isArray(meta.spotOrder) ? meta.spotOrder.slice() : Object.keys(meta.spots || {});
   const SPOTS_BY_ID = meta.spots || {};
   const REDUCED_MOTION_QUERY = window.matchMedia("(prefers-reduced-motion: reduce)");
-  const COPY_COLLAPSE_BLOCK_THRESHOLD = 5;
-  const COPY_COLLAPSE_TEXT_THRESHOLD = 720;
   const DOM_IDS = {
     kicker: "guide-kicker",
     title: "guide-title",
     intro: "guide-intro",
+    spotControlLabel: "spot-control-label",
+    languageControlLabel: "language-control-label",
     activeSpotLabel: "active-spot-label",
     activeLanguageLabel: "active-language-label",
     spotMenu: "spot-menu",
@@ -238,44 +238,9 @@
       .join("");
   }
 
-  function getCopyBlockText(block, bulletGroupsById) {
-    if (typeof block === "string") {
-      return block;
-    }
-
-    if (!block || typeof block !== "object") {
-      return "";
-    }
-
-    if (block.type === "bulletGroup" && block.id && bulletGroupsById[block.id]) {
-      return getCopyBlockText(bulletGroupsById[block.id]);
-    }
-
-    if (Array.isArray(block.items)) {
-      return block.items
-        .map(function (item) {
-          if (typeof item === "string") {
-            return item;
-          }
-
-          return item ? [item.label, item.text].filter(Boolean).join(" ") : "";
-        })
-        .join(" ");
-    }
-
-    return block.text || "";
-  }
-
-  function shouldCollapseCopy(blocks, bullets) {
+  function shouldCollapseCopy(blocks) {
     const copyBlocks = blocks || [];
-    const bulletGroupsById = getBulletGroupsById(bullets);
-    const textLength = copyBlocks
-      .map(function (block) {
-        return getCopyBlockText(block, bulletGroupsById);
-      })
-      .join(" ").length;
-
-    return copyBlocks.length > COPY_COLLAPSE_BLOCK_THRESHOLD || textLength > COPY_COLLAPSE_TEXT_THRESHOLD;
+    return copyBlocks.length > 0;
   }
 
   function renderCopySection(spotId, content, ui) {
@@ -286,7 +251,7 @@
       return "";
     }
 
-    const isCollapsible = shouldCollapseCopy(detailBlocks, content.bullets);
+    const isCollapsible = shouldCollapseCopy(detailBlocks);
     const copyId = "guide-copy-" + spotId;
 
     return (
@@ -312,6 +277,33 @@
           "</button>"
         : "") +
       "</div>"
+    );
+  }
+
+  function renderChallengeBox(content, ui) {
+    const challenge = content.challenge;
+    if (!challenge || !Array.isArray(challenge.items) || !challenge.items.length) {
+      return "";
+    }
+
+    const label = challenge.label || ui.challengeLabel || "For young visitors";
+    const title = challenge.title || ui.challengeTitle || "Look closer";
+    const intro = challenge.intro ? '<p class="guide-challenge-intro">' + escapeHtml(challenge.intro) + "</p>" : "";
+
+    return (
+      '<aside class="guide-challenge-card" aria-label="' +
+      escapeHtml(label) +
+      '">' +
+      '<p class="guide-challenge-label">' +
+      escapeHtml(label) +
+      "</p>" +
+      '<h3 class="guide-challenge-title">' +
+      escapeHtml(title) +
+      "</h3>" +
+      intro +
+      '<ul class="guide-challenge-list">' +
+      challenge.items.map(renderCopyItem).join("") +
+      "</ul></aside>"
     );
   }
 
@@ -608,6 +600,8 @@
       const copyMarkup = renderCopySection(spotId, content, ui);
       const galleryMarkup = renderGallery(spotId, content, ui);
       const audioMarkup = renderAudioMarkup(audio, content, ui);
+      const challengeMarkup = renderChallengeBox(content, ui);
+      const sectionLabel = sectionIndex + " · " + (content.shortTitle || content.title || i18n.getSpotLabel(spotId, state.lang));
 
       return (
         '<article class="guide-section' +
@@ -624,16 +618,13 @@
         '<div class="guide-section-top">' +
         '<div class="guide-section-meta">' +
         '<span class="guide-section-index">' +
-        sectionIndex +
+        escapeHtml(sectionLabel) +
         "</span>" +
         (isActive ? '<span class="guide-selected-pill">' + escapeHtml(ui.selectedBadge) + "</span>" : "") +
         "</div>" +
         '<h2 class="guide-section-title">' +
         escapeHtml(content.title) +
         "</h2>" +
-        '<p class="guide-section-description">' +
-        escapeHtml(content.preview || content.shortText) +
-        "</p>" +
         "</div>" +
         galleryMarkup +
         '<section class="guide-audio-card" aria-label="' +
@@ -645,7 +636,11 @@
         (audio.caption ? '<p class="guide-audio-caption">' + escapeHtml(audio.caption) + "</p>" : "") +
         audioMarkup +
         "</section>" +
+        '<p class="guide-section-description">' +
+        escapeHtml(content.preview || content.shortText) +
+        "</p>" +
         copyMarkup +
+        challengeMarkup +
         "</article>"
       );
     }).join("");
@@ -773,6 +768,8 @@
 
     document.documentElement.lang = state.lang;
     document.title = ui.pageTitle + " | Mylotopi";
+    elements.spotControlLabel.textContent = ui.spotsLabel || "Tour stop";
+    elements.languageControlLabel.textContent = ui.languageLabel || "Language";
     elements.kicker.textContent = ui.kicker;
     elements.title.textContent = ui.pageTitle;
     elements.intro.textContent = ui.intro;
@@ -995,7 +992,7 @@
     if (state.activeSpot) {
       window.setTimeout(function () {
         moveToSpot(state.activeSpot, {
-          behavior: REDUCED_MOTION_QUERY.matches ? "auto" : "smooth",
+          behavior: "auto",
           focus: true,
           updateUrl: false,
         });

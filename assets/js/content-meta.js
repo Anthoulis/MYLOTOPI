@@ -17,45 +17,99 @@
     spots: {
       welcome: {
         anchorId: "welcome",
-        accent: "#8b6d3d",
-        accentSoft: "rgba(139, 109, 61, 0.16)",
-        images: [],
+        accent: "#b9ad45",
+        accentSoft: "rgba(185, 173, 69, 0.18)",
+        images: [
+          {
+            src: "./assets/images/stops/01-welcome/01-windmill-sunset.jpg",
+            alt: "Mylotopi windmill and village terrace at sunset",
+            fit: "cover",
+            position: "center",
+          },
+        ],
       },
       "garden-herbs": {
         anchorId: "garden-herbs",
-        accent: "#6f7d3d",
-        accentSoft: "rgba(111, 125, 61, 0.16)",
-        images: [],
+        accent: "#667321",
+        accentSoft: "rgba(102, 115, 33, 0.16)",
+        images: [
+          {
+            src: "./assets/images/stops/02-herb-garden/01-garden-canopy.jpg",
+            alt: "Mylotopi garden and windmill sails seen through warm shade",
+            fit: "cover",
+            position: "center",
+          },
+        ],
       },
       "windmill-base": {
         anchorId: "windmill-base",
-        accent: "#58708a",
-        accentSoft: "rgba(88, 112, 138, 0.18)",
-        images: [],
+        accent: "#8f6b32",
+        accentSoft: "rgba(143, 107, 50, 0.18)",
+        images: [
+          {
+            src: "./assets/images/stops/03-windmill-first-floor/01-historic-windmill.jpg",
+            alt: "Historic Mylotopi windmill before restoration",
+            fit: "cover",
+            position: "center",
+          },
+        ],
       },
       "sleeping-area": {
         anchorId: "sleeping-area",
-        accent: "#58708a",
-        accentSoft: "rgba(88, 112, 138, 0.14)",
-        images: [],
+        accent: "#8f6b32",
+        accentSoft: "rgba(143, 107, 50, 0.14)",
+        images: [
+          {
+            src: "./assets/images/stops/04-windmill-second-floor/01-windmill-exterior.jpg",
+            alt: "Windmill sails, stone and garden textures at Mylotopi",
+            fit: "cover",
+            position: "center",
+          },
+        ],
       },
       machinery: {
         anchorId: "machinery",
-        accent: "#58708a",
-        accentSoft: "rgba(88, 112, 138, 0.12)",
-        images: [],
+        accent: "#8f6b32",
+        accentSoft: "rgba(143, 107, 50, 0.12)",
+        images: [
+          {
+            src: "./assets/images/stops/05-windmill-third-floor/01-machinery-detail.jpg",
+            alt: "Close view of the restored wooden windmill machinery",
+            fit: "cover",
+            position: "center",
+          },
+        ],
       },
       "threshing-floor-donkeys": {
         anchorId: "threshing-floor-donkeys",
         accent: "#a77733",
         accentSoft: "rgba(167, 119, 51, 0.18)",
-        images: [],
+        images: [
+          {
+            src: "./assets/images/stops/06-threshing-floor-donkeys/01-threshing-floor.jpg",
+            alt: "Traditional threshing floor at Mylotopi",
+            fit: "cover",
+            position: "center",
+          },
+        ],
       },
       "cellar-italian-tunnel": {
         anchorId: "cellar-italian-tunnel",
-        accent: "#5f7260",
-        accentSoft: "rgba(95, 114, 96, 0.18)",
+        accent: "#667321",
+        accentSoft: "rgba(102, 115, 33, 0.18)",
         images: [
+          {
+            src: "./assets/images/stops/07-cellar-italian-tunnel/04-official-tunnel.jpg",
+            alt: "Official Mylotopi view of the Italian tunnel",
+            fit: "cover",
+            position: "center",
+          },
+          {
+            src: "./assets/images/stops/07-cellar-italian-tunnel/05-wine-cellar.jpg",
+            alt: "Wine cellar inside the old Mylotopi tunnel",
+            fit: "cover",
+            position: "center",
+          },
           {
             src: "./assets/images/stops/07-cellar-italian-tunnel/01-tunnel-entrance.jpeg",
             alt: "Tunnel entrance and stone passage at Mylotopi",
@@ -78,15 +132,35 @@
       },
       "traditional-house": {
         anchorId: "traditional-house",
-        accent: "#7b5d7c",
-        accentSoft: "rgba(123, 93, 124, 0.18)",
-        images: [],
+        accent: "#8f6b32",
+        accentSoft: "rgba(143, 107, 50, 0.18)",
+        images: [
+          {
+            src: "./assets/images/stops/08-traditional-house/01-traditional-house.jpg",
+            alt: "Traditional clothing and family objects inside the Mylotopi house",
+            fit: "cover",
+            position: "center",
+          },
+        ],
       },
       bakery: {
         anchorId: "bakery",
-        accent: "#b56840",
-        accentSoft: "rgba(181, 104, 64, 0.18)",
-        images: [],
+        accent: "#9b6231",
+        accentSoft: "rgba(155, 98, 49, 0.18)",
+        images: [
+          {
+            src: "./assets/images/stops/09-bakery/01-stone-oven.jpg",
+            alt: "Stone oven inside the Mylotopi bakery",
+            fit: "cover",
+            position: "center",
+          },
+          {
+            src: "./assets/images/stops/09-bakery/02-bread-oven.jpg",
+            alt: "Traditional bread baking in the stone oven",
+            fit: "cover",
+            position: "center",
+          },
+        ],
       },
     },
   };

@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f3ecdf">
-  <title>Mylotopi QR Guide</title>
+  <meta name="theme-color" content="#f7f4e8">
+  <title>Mylotopi Audio Guide</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
@@ -16,8 +16,14 @@
 
     <header class="guide-site-header" id="guide-topbar">
       <nav class="guide-shell guide-nav-bar" aria-label="Guide navigation">
+        <div class="guide-brand" aria-label="Mylotopi Windmiller's Life">
+          <span class="guide-brand-primary">Mylotopi</span>
+          <span class="guide-brand-secondary">Windmiller's Life</span>
+        </div>
+
         <details class="guide-menu guide-spot-menu" id="spot-menu">
           <summary class="guide-menu-trigger guide-spot-trigger" id="spot-menu-trigger">
+            <span class="guide-control-label" id="spot-control-label">Tour stop</span>
             <span class="guide-menu-trigger-text" id="active-spot-label"></span>
             <span class="guide-menu-trigger-icon" aria-hidden="true"></span>
           </summary>
@@ -26,6 +32,7 @@
 
         <details class="guide-menu guide-language-menu" id="language-menu">
           <summary class="guide-menu-trigger guide-language-trigger" id="language-menu-trigger">
+            <span class="guide-control-label" id="language-control-label">Language</span>
             <span class="guide-menu-trigger-text" id="active-language-label"></span>
             <span class="guide-menu-trigger-icon" aria-hidden="true"></span>
           </summary>

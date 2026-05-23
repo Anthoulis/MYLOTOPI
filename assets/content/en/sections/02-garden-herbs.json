@@ -1,76 +1,29 @@
 {
   "id": "garden-herbs",
-  "title": "Our Garden with Our Herbs!",
-  "navigationTitle": "Our Garden with Our Herbs!",
-  "preview": "Kitchen or Pharmacy? Take a deep breath! Does it smell like a giant outdoor kitchen or a village pharmacy? Actually, it’s both!",
+  "title": "Garden with Herbs",
+  "navigationTitle": "Garden with Herbs",
+  "preview": "Pause among the herbs of the island. Thyme, oregano, mint, marjoram and lavender connect the kitchen, the home remedy and the memory of family life in Kefalos.",
   "details": [
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "A Mission for our Young Plant Detectives and Adults!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
-    },
+    "Before supermarkets and modern pharmacies were part of daily life, a small garden could be both kitchen and medicine cabinet. Herbs gave flavor to food, comfort to the body and scent to the home.",
+    "At Mylotopi, these plants help visitors understand the practical wisdom of island families. A few leaves could season bread, meat or vegetables; the same garden could offer a simple infusion for a difficult day.",
+    "Notice the muted greens, silver leaves and purple lavender. The beauty of this stop is quiet, but it belongs deeply to the rhythm of the old village.",
     {
       "type": "heading",
-      "text": "Next Destination:"
+      "text": "Next stop"
     },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
+    "Continue toward the historic windmill, where the story moves from garden and family care to wheat, flour and hard physical work."
   ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
-      "items": [
-        {
-          "text": "Kitchen or Pharmacy? Take a deep breath! Does it smell like a giant outdoor kitchen or a village pharmacy? Actually, it’s both!"
-        },
-        {
-          "text": "The Ultimate Survival Kit: Before modern medicine and supermarkets, these gardens were an island survival kit. These plots are filled with the exact same herbs that have grown here for centuries."
-        },
-        {
-          "text": "Nature's Doctor: Herbs like Thyme, Oregano, and Marjoram weren’t just used to make dinner taste amazing they were the local doctor! If someone had a stomach ache, the wind miller’s family wouldn't run to the pharmacy for bad-tasting pink syrup they would come right here to pick leaves for a natural remedy."
-        },
-        {
-          "text": "A Painter's Palette: Check out the beautiful purple Lavender and bright green Mint! They look like someone painted them right into the garden. Pay close attention to those bright colors!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Old-School Fun: Put the phones away for a second we are going completely old-school! Do you see the physical puzzle pieces scattered around?"
-        },
-        {
-          "text": "Use Your Senses: Your job is to figure out which word belongs to which plant. You will have to use your eyes and your nose!"
-        },
-        {
-          "text": "Rub and Sniff: Go ahead, give the leaves a tiny, gentle rub and a sniff (but please, no grazing don't eat the garden before lunch!)."
-        },
-        {
-          "text": "Solve the Puzzle: Can you move the puzzle pieces to match the correct herbs? See if you can figure out the difference between the Mint and the Oregano. Which one smells like a delicious pizza, and which one smells like a cozy nap?"
-        },
-        {
-          "text": "Sketchbook Reminder: Keep your eyes open, Plant Detectives! Remember the different colors of green, grey, and purple to color your Mylotopi Sketch later."
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "Upcoming: Then move forward to the Historic Windmill!"
-        }
-      ]
-    }
-  ],
-  "imageAlt": "Our Garden with Our Herbs!"
+  "challenge": {
+    "label": "For young visitors",
+    "title": "Use your senses",
+    "items": [
+      {
+        "text": "If your guide invites you to, gently rub a leaf and notice how different each herb smells."
+      },
+      {
+        "text": "Find one plant with grey-green leaves and one with a deeper green color."
+      }
+    ]
+  },
+  "imageAlt": "Garden with Herbs"
 }

@@ -1,57 +1,31 @@
 {
   "id": "bakery",
-  "title": "The Bakery",
-  "navigationTitle": "The Bakery",
-  "preview": "A Community Hub: Welcome to the traditional oven! This beautiful stone oven is over 150 years old. Back in the day, the majority of the ladies in the village would come right here to bake their daily bread for their families.",
+  "title": "The Stone Oven Bakery",
+  "navigationTitle": "Bakery",
+  "preview": "The bakery completes the story of wheat and flour. Here, the village gathered around bread, fire, patience and the shared work of daily nourishment.",
   "details": [
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
+    "The stone oven is more than 150 years old. In the past, many women of the village brought bread here for their families, making the bakery a practical and social center.",
+    "Bread was not rushed. Dough was mixed and shaped the day before, then left to rest. Early the next morning, the oven was heated carefully before the loaves were placed inside.",
+    "After one or two hours of baking, the smell of fresh bread would move through the village. The process joined home, field, mill and oven into one cycle of island life.",
+    "Look at the photographs around the room to see how the work was done and how much knowledge lived in ordinary hands.",
+    "At the end of the walk, the restaurant-cafe becomes a natural place to pause, look back across the village and let the story settle.",
     {
       "type": "heading",
-      "text": "A Question for our Young Explorers and Adults!"
+      "text": "Thank you"
     },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
-    }
+    "Thank you for walking through Mylotopi and the memory of old Kefalos with us."
   ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
-      "items": [
-        {
-          "text": "A Community Hub: Welcome to the traditional oven! This beautiful stone oven is over 150 years old. Back in the day, the majority of the ladies in the village would come right here to bake their daily bread for their families."
-        },
-        {
-          "text": "A Two-Day Process: Baking bread back then wasn't as fast as just running to the supermarket! It was actually a two-day process. The night before, the ladies would carefully mix and shape the dough, leaving it to rest and rise up overnight."
-        },
-        {
-          "text": "Freshly Baked: The next morning, when the dough was ready, they would build a hot fire to warm up the oven. Once the temperature was just right, they placed the dough inside. After baking for one to two hours, the entire village would be filled with the delicious smell of fresh, warm bread ready to be eaten!"
-        },
-        {
-          "text": "Historical Photos: If you look around, you can see some wonderful pictures on display that show exactly how they did this whole procedure."
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "The Early Bird: The whole village needed fresh bread. Can you guess what time the baker had to wake up every morning to start making the dough? (Hint: It was long before the sun came up!)"
-        },
-        {
-          "text": "Look Closely: Take a close look at the pictures to see how the village ladies used to work in the bakery."
-        },
-        {
-          "text": "Time to Relax: Now, it is time to head to the restaurant-café! Grab your colored pencils, enjoy a well-deserved snack, and finish making your Mylotopi Sketch a colorful masterpiece!"
-        },
-        {
-          "text": "Thank You: Thank you for exploring with us today!"
-        }
-      ]
-    }
-  ],
-  "imageAlt": "The Bakery"
+  "challenge": {
+    "label": "For young visitors",
+    "title": "Follow the bread",
+    "items": [
+      {
+        "text": "Name the three places that bread passed through: field, mill and oven."
+      },
+      {
+        "text": "Look at the old photographs and find one tool or gesture that shows careful work."
+      }
+    ]
+  },
+  "imageAlt": "The Stone Oven Bakery"
 }

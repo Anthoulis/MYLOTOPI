@@ -1,85 +1,32 @@
 {
   "id": "machinery",
-  "title": "The Windmill Machinery (3rd Floor)",
-  "navigationTitle": "The Windmill Machinery (3rd Floor)",
-  "preview": "Mind Your Head: Welcome to the third floor! Please watch your step on the ladder and mind your head as you explore.",
+  "title": "Windmill Machinery",
+  "navigationTitle": "Mill Machinery",
+  "preview": "At the upper level, the windmill shows its intelligence. Wooden beams, gears, ropes and stone wheels translated the force of the wind into the flour that sustained village life.",
   "details": [
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "A Mission for our Young Explorers and Adults!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
-    },
+    "Please move slowly and mind your head. The mechanism above and around you is the heart of the mill, joining the sails outside with the grinding stones inside.",
+    "The two millstones weigh more than two tons together and came from Nisyros, an island known for strong stone suited to milling. Raw wheat was poured into the feeder above the stones.",
+    "A small bell helped the miller hear when the feeder was running low. In a room full of wood, wind and grinding stone, a simple sound could keep the work moving.",
+    "When the flour was ready, it passed down through a pipe to the lower floor. A smaller door allowed the miller to keep a share of flour as payment, a common form of exchange when money was not always used.",
+    "The ropes and levers show how carefully the miller controlled the machine. One brake slowed the stones; another could stop the work quickly when needed.",
+    "Look up to the ceiling and notice its boat-like shape. The design reflects local intelligence: people who understood wind, wood, sea and work as part of one landscape.",
     {
       "type": "heading",
-      "text": "Next Destination:"
+      "text": "Next stop"
     },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
+    "Return outside toward the threshing floor, where wheat was prepared before it reached the mill."
   ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
-      "items": [
-        {
-          "text": "Mind Your Head: Welcome to the third floor! Please watch your step on the ladder and mind your head as you explore."
-        },
-        {
-          "text": "The Muscle of the Mill: You are now looking at the real power of the windmill. Look at that massive wooden beam above the stones. It is the main connector linking the heavy stones inside, the gears, and the giant spinning sails outside!"
-        },
-        {
-          "text": "Two-Ton Stones: These massive grinding stones weigh over two tons together! They were imported all the way from Nisyros Island, which is famous for producing a unique, super-strong stone perfect for milling."
-        },
-        {
-          "text": "The Feeder & The Bell: Look just above the stones for a wooden box called The Feeder, where the miller poured the raw wheat. But how did he know when it was empty over all the loud noise? Look closely for a tiny bell! It would ring automatically when the wheat ran low to tell the miller to refill it."
-        },
-        {
-          "text": "The First Brake: See that wooden lever connected to a tiny rope? That connects all the way down to the first floor and is the first braking system we talked about downstairs."
-        },
-        {
-          "text": "Dropping the Flour: Look down near the lever to find a trap door connecting to a pipe. As soon as the flour was perfectly crushed, it dropped straight down that pipe to the bottom floor!"
-        },
-        {
-          "text": "The Miller's \"Tip\": Right next to the main pipe is a second, smaller trap door. In the old days, people didn't always pay with money. Instead, the miller used this door to collect his \"tip\" keeping a small percentage of the flour for his own family as payment for his hard work!"
-        },
-        {
-          "text": "Smooth Spinning: Spot the little can near the trap doors. Downstairs he used cow fat, but up here, he used a special mixture of olive oil and soap to keep the upper gears running smoothly."
-        },
-        {
-          "text": "The Emergency Brake: Look next to the ladder for a really thick rope. If the miller needed to completely stop making flour in a hurry, he pulled this rope the second braking system!"
-        },
-        {
-          "text": "A Ship's Ceiling: Lastly, look up at the ceiling. What does it remind you of? It is actually designed in the shape of a ship to enhance the power of the mechanism and produce flour more quickly!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Listen for the Bell and Ring it: Can you find the tiny bell that warned the miller when the wheat was running out? Can you ring it?"
-        },
-        {
-          "text": "Find the Hidden Flour: Scan the floor and see if you can spot the special \"tip\" door where the miller kept his hard-earned payment!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "Upcoming: Then move forward to the Threshing Floor and to the Donkeys Area!"
-        }
-      ]
-    }
-  ],
-  "imageAlt": "The Windmill Machinery (3rd Floor)"
+  "challenge": {
+    "label": "For young visitors",
+    "title": "Find the working clues",
+    "items": [
+      {
+        "text": "Look for the bell that warned the miller when wheat was low."
+      },
+      {
+        "text": "Find the pipe where finished flour passed down to the floor below."
+      }
+    ]
+  },
+  "imageAlt": "Windmill Machinery"
 }

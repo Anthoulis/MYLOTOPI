@@ -1,111 +1,50 @@
 {
   "id": "welcome",
-  "title": "Welcome to Windmill Experience!",
-  "navigationTitle": "Welcome to Windmill Experience!",
-  "preview": "Travel Back in Time: Get ready to step into the past! You won't need a time machine for this journey just some comfy shoes.",
+  "title": "Welcome to Mylotopi",
+  "navigationTitle": "Welcome",
+  "preview": "Begin the walk in a restored village created to preserve the memory of old Kefalos: the windmill, the family home, the bakery, the herbs, the tunnel and the work of everyday island life.",
   "details": [
+    "Mylotopi brings together restored spaces that once shaped daily life in Kefalos. Stone walls, wooden mechanisms, family objects and handmade tools are presented as a living story rather than a static display.",
+    "The Voudouris family restored this place with respect for local memory, so younger visitors can understand how people worked, cooked, slept, stored food and shared village life before modern comforts.",
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
+      "type": "heading",
+      "text": "What the walk reveals"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "label": "The windmill",
+          "text": "A working landmark connected with wheat, flour, weather, craft and the rhythm of the village."
+        },
+        {
+          "label": "Village life",
+          "text": "A traditional house, bakery, garden and threshing floor that show how families lived with care and practicality."
+        },
+        {
+          "label": "Hidden history",
+          "text": "The Italian tunnel and cellar add a quieter story from the 1940s beneath the warm village surface."
+        }
+      ]
     },
     {
       "type": "heading",
-      "text": "What You Will Explore:"
+      "text": "How to use the audio guide"
     },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
-    },
-    {
-      "type": "heading",
-      "text": "How to Listen to the Tour:"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    },
-    {
-      "type": "heading",
-      "text": "A Secret Mission for Young Explorers!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-04"
-    },
-    {
-      "type": "heading",
-      "text": "Next Destination:"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-05"
-    }
+    "Select your language, choose the stop you are visiting, then play the audio when you are ready. The guide is designed for a slow outdoor walk, so you can pause, look around and continue at your own pace."
   ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
-      "items": [
-        {
-          "text": "Travel Back in Time: Get ready to step into the past! You won't need a time machine for this journey just some comfy shoes."
-        },
-        {
-          "text": "A Restored Village: Thanks to the beautiful restoration by the Voudouris family, you will see exactly how islanders lived over a century ago, long before Wi-Fi was even invented. You'll also get to snoop around and uncover some secret history from the 1940s!"
-        },
-        {
-          "text": "The Miller's Life: Today, you get to walk in the shoes of a real wind miller. Spoiler alert: his daily workout routine consisted of lifting heavy sacks of flour all day just to feed the majority of the village."
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "The Giant Windmill: Explore a real, working windmill from the bottom all the way to the top."
-        },
-        {
-          "text": "Village Life: Peek inside the traditional house and the bakery."
-        },
-        {
-          "text": "Nature & Animals: Sniff the wonderful herbs in our gardens, visit the threshing floor, and say hello to our lovely donkeys."
-        },
-        {
-          "text": "Underground Secrets: Walk straight through a real military tunnel!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "It's Super Easy: Grown-ups, simply scan the QR codes you find using your phone's camera. You do not need to download any apps!"
-        },
-        {
-          "text": "Listen Together: Just turn up your phone's volume or share some headphones, and follow the numbers around the village."
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-04",
-      "items": [
-        {
-          "text": "Grab Your Artistic Equipment: We will give you a special Mylotopi Sketch and a few colored pencils to take with you."
-        },
-        {
-          "text": "Observe Everything: As you walk around today, keep your eyes wide open! Look very closely at the giant windmill, the heavy stones, and the old tools. Try to memorize all the beautiful colors you see."
-        },
-        {
-          "text": "Create a Masterpiece: When you finish your adventure and sit down to relax at our restaurant-café, you can color in your drawing and turn it into a true masterpiece!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-05",
-      "items": [
-        {
-          "text": "Upcoming: Move forward to our gardens with herbs!"
-        }
-      ]
-    }
-  ],
-  "imageAlt": "Welcome to Windmill Experience!"
+  "challenge": {
+    "label": "For young visitors",
+    "title": "Carry the details with you",
+    "intro": "As you walk, notice colors, shapes and textures that you may want to remember later.",
+    "items": [
+      {
+        "text": "Look for stone, wood, sails, old tools and family objects that make Mylotopi feel alive."
+      },
+      {
+        "text": "Choose one detail from each stop that best tells the story of old Kefalos."
+      }
+    ]
+  },
+  "imageAlt": "Welcome to Mylotopi"
 }
