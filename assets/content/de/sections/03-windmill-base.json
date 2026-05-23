@@ -1,7 +1,7 @@
 {
   "id": "windmill-base",
-  "title": "Windmühlenbasis",
-  "navigationTitle": "Windmühlenbasis",
+  "title": "Basis der Windmühle",
+  "navigationTitle": "Basis der Windmühle",
   "preview": "Treten Sie in die Basis der Mühle des Priesters ein, eine der ältesten funktionierenden Windmühlen des Dodekanes. Hier treffen Stein, Holz, Gewicht und Wind aufeinander.",
   "details": [
     "Die Windmühle ist über 400 Jahre alt und arbeitete täglich bis 1987. Heute bewahrt sie das Handwerk, Weizen zu Mehl zu mahlen, eine Arbeit, die einst einen großen Teil des Dorfes ernährte.",
@@ -27,5 +27,5 @@
       }
     ]
   },
-  "imageAlt": "Windmühlenbasis"
+  "imageAlt": "Basis der Windmühle"
 }

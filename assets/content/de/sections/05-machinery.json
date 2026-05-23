@@ -1,7 +1,7 @@
 {
   "id": "machinery",
-  "title": "Maschinerie",
-  "navigationTitle": "Maschinerie",
+  "title": "Mechanik",
+  "navigationTitle": "Mechanik",
   "preview": "Auf der oberen Ebene zeigt die Windmühle ihre Intelligenz. Holzbalken, Zahnräder, Seile und Mühlsteine verwandelten die Kraft des Windes in Mehl.",
   "details": [
     "Bewegen Sie sich langsam und achten Sie auf Ihren Kopf. Der Mechanismus um Sie herum ist das Herz der Mühle und verbindet die Segel draußen mit den Mühlsteinen innen.",
@@ -28,5 +28,5 @@
       }
     ]
   },
-  "imageAlt": "Maschinerie"
+  "imageAlt": "Mechanik"
 }

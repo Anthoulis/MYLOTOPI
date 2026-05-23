@@ -14,34 +14,36 @@
   <div class="qr-page">
     <div class="qr-atmosphere" aria-hidden="true"></div>
 
-    <header class="qr-header" id="qr-topbar">
-      <nav class="qr-shell qr-header__inner" id="qr-nav">
-        <div class="qr-brand" aria-label="Mylotopi Windmiller's Life">
-          <span class="qr-brand__name">Mylotopi</span>
-          <span class="qr-brand__tagline">Windmiller's Life</span>
+    <header class="site-header" id="qr-topbar">
+      <nav class="container site-header__inner" id="qr-nav">
+        <div class="brand" aria-label="Mylotopi Windmiller's Life">
+          <span class="brand__name">Mylotopi</span>
+          <span class="brand__tagline">Windmiller's Life</span>
         </div>
 
-        <details class="qr-menu qr-menu--language" id="language-menu">
-          <summary class="qr-menu__trigger qr-menu__trigger--language" id="language-menu-trigger">
-            <span class="qr-menu__label" id="language-control-label"></span>
-            <span class="qr-menu__value" id="active-language-label"></span>
-            <span class="qr-menu__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="qr-menu__popover qr-menu__popover--language" id="language-switcher" role="group"></div>
-        </details>
+        <div class="header-controls">
+          <details class="selector selector--stop" id="spot-menu">
+            <summary class="selector__button selector__button--stop" id="spot-menu-trigger">
+              <span class="selector__label" id="spot-control-label"></span>
+              <span class="selector__value" id="active-spot-label"></span>
+              <span class="selector__chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="selector__menu selector__menu--stop" id="spot-switcher" role="group"></div>
+          </details>
 
-        <details class="qr-menu qr-menu--stop" id="spot-menu">
-          <summary class="qr-menu__trigger qr-menu__trigger--stop" id="spot-menu-trigger">
-            <span class="qr-menu__label" id="spot-control-label"></span>
-            <span class="qr-menu__value" id="active-spot-label"></span>
-            <span class="qr-menu__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="qr-menu__popover qr-menu__popover--stop" id="spot-switcher" role="group"></div>
-        </details>
+          <details class="selector selector--language" id="language-menu">
+            <summary class="selector__button selector__button--language" id="language-menu-trigger">
+              <span class="selector__label" id="language-control-label"></span>
+              <span class="selector__value language-option language-option--active" id="active-language-label"></span>
+              <span class="selector__chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="selector__menu selector__menu--language" id="language-switcher" role="group"></div>
+          </details>
+        </div>
       </nav>
     </header>
 
-    <header class="qr-shell qr-hero" aria-labelledby="qr-title">
+    <header class="container qr-hero" aria-labelledby="qr-title">
       <p class="qr-hero__eyebrow" id="qr-kicker"></p>
       <h1 class="qr-hero__title" id="qr-title"></h1>
       <p class="qr-hero__current" id="current-stop-label"></p>
@@ -53,7 +55,7 @@
       </div>
     </header>
 
-    <main class="qr-shell qr-main" id="qr-main"></main>
+    <main class="container qr-main" id="qr-main"></main>
   </div>
 
   <p class="sr-only" id="qr-announcer" aria-live="polite"></p>

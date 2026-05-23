@@ -558,21 +558,56 @@
     );
   }
 
+  function renderFlagIcon(lang) {
+    const commonAttrs = 'class="flag-icon" viewBox="0 0 24 16" aria-hidden="true" focusable="false"';
+
+    if (lang === "el") {
+      return (
+        "<svg " +
+        commonAttrs +
+        '><rect width="24" height="16" fill="#0d5eaf"></rect><path d="M0 3h24M0 6h24M0 9h24M0 12h24M0 15h24" stroke="#fff" stroke-width="1"></path><rect width="9.5" height="8.8" fill="#0d5eaf"></rect><path d="M4.75 0v8.8M0 4.4h9.5" stroke="#fff" stroke-width="1.6"></path></svg>'
+      );
+    }
+
+    if (lang === "de") {
+      return (
+        "<svg " +
+        commonAttrs +
+        '><rect width="24" height="5.34" fill="#000"></rect><rect y="5.33" width="24" height="5.34" fill="#dd0000"></rect><rect y="10.66" width="24" height="5.34" fill="#ffce00"></rect></svg>'
+      );
+    }
+
+    return (
+      "<svg " +
+      commonAttrs +
+      '><rect width="24" height="16" fill="#012169"></rect><path d="M0 0l24 16M24 0L0 16" stroke="#fff" stroke-width="3.2"></path><path d="M0 0l24 16M24 0L0 16" stroke="#c8102e" stroke-width="1.7"></path><path d="M12 0v16M0 8h24" stroke="#fff" stroke-width="5.2"></path><path d="M12 0v16M0 8h24" stroke="#c8102e" stroke-width="3"></path></svg>'
+    );
+  }
+
+  function renderLanguageOptionLabel(lang) {
+    return (
+      renderFlagIcon(lang) +
+      '<span class="language-option__name">' +
+      escapeHtml(i18n.getLanguageName(lang)) +
+      "</span>"
+    );
+  }
+
   function renderLanguageButtons() {
     const ui = i18n.getUi(state.lang);
-    const activeLanguageName = i18n.getLanguageLabel(state.lang, state.lang);
+    const activeLanguageName = i18n.getLanguageName(state.lang);
 
-    elements.activeLanguageLabel.textContent = activeLanguageName;
+    elements.activeLanguageLabel.innerHTML = renderLanguageOptionLabel(state.lang);
     elements.languageTrigger.setAttribute("aria-label", ui.languageLabel + ": " + activeLanguageName);
     elements.languageMenu.setAttribute("aria-label", ui.languageLabel);
     elements.languageSwitcher.setAttribute("aria-label", ui.languageLabel);
 
     elements.languageSwitcher.innerHTML = i18n.supportedLanguages.map(function (langKey) {
       const pressed = langKey === state.lang;
-      const languageName = i18n.getLanguageLabel(langKey, state.lang);
+      const languageName = i18n.getLanguageName(langKey);
 
       return (
-        '<button class="qr-menu__option" type="button" data-lang="' +
+        '<button class="selector__option language-option" type="button" data-lang="' +
         escapeHtml(langKey) +
         '" aria-label="' +
         escapeHtml(ui.languageLabel + ": " + languageName) +
@@ -581,7 +616,7 @@
         '" aria-current="' +
         (pressed ? "true" : "false") +
         '">' +
-        escapeHtml(languageName) +
+        renderLanguageOptionLabel(langKey) +
         "</button>"
       );
     }).join("");
@@ -603,12 +638,12 @@
       const stopNumber = String(index + 1).padStart(2, "0");
 
       return (
-        '<button class="qr-menu__option qr-menu__option--stop" type="button" data-spot="' +
+        '<button class="selector__option selector__option--stop" type="button" data-spot="' +
         escapeHtml(spotId) +
         '" aria-current="' +
         (isActive ? "true" : "false") +
         '">' +
-        '<span class="qr-menu__option-number">' +
+        '<span class="selector__option-number">' +
         stopNumber +
         "</span><span>" +
         escapeHtml(i18n.getSpotLabel(spotId, state.lang)) +
@@ -626,40 +661,40 @@
     }
 
     return (
-      '<section class="qr-minimap" aria-labelledby="qr-minimap-title">' +
-      '<div class="qr-minimap__header">' +
-      '<p class="qr-minimap__label" id="qr-minimap-title">' +
+      '<section class="minimap-card" aria-labelledby="qr-minimap-title">' +
+      '<div class="minimap-card__header">' +
+      '<p class="minimap-card__label" id="qr-minimap-title">' +
       escapeHtml(ui.miniMapTitle) +
       "</p>" +
-      (ui.miniMapDescription ? '<p class="qr-minimap__description">' + escapeHtml(ui.miniMapDescription) + "</p>" : "") +
+      (ui.miniMapDescription ? '<p class="minimap-card__description">' + escapeHtml(ui.miniMapDescription) + "</p>" : "") +
       "</div>" +
-      '<figure class="qr-minimap__figure"><img class="qr-minimap__image" src="' +
+      '<figure class="minimap-card__figure"><img class="minimap-card__image" src="' +
       escapeHtml(miniMap.path) +
       '" alt="' +
       escapeHtml(ui.miniMapImageAlt) +
       '" loading="lazy" decoding="async"></figure>' +
-      '<div class="qr-minimap__actions"><button class="qr-minimap__action" type="button" data-map-open>' +
+      '<div class="minimap-actions"><button class="minimap-actions__button" type="button" data-map-open>' +
       escapeHtml(ui.miniMapOpen) +
-      '</button><a class="qr-minimap__action" href="' +
+      '</button><a class="minimap-actions__button" href="' +
       escapeHtml(miniMap.path) +
       '" download>' +
       escapeHtml(ui.miniMapDownload) +
       "</a></div>" +
-      '<div class="qr-map-modal" data-map-modal role="dialog" aria-modal="true" aria-labelledby="' +
+      '<div class="minimap-modal" data-map-modal role="dialog" aria-modal="true" aria-labelledby="' +
       escapeHtml(modalTitleId) +
       '" hidden>' +
-      '<button class="qr-map-modal__backdrop" type="button" data-map-close aria-label="' +
+      '<button class="minimap-modal__backdrop" type="button" data-map-close aria-label="' +
       escapeHtml(ui.miniMapModalClose) +
       '"></button>' +
-      '<div class="qr-map-modal__dialog">' +
-      '<div class="qr-map-modal__head"><h2 class="qr-map-modal__title" id="' +
+      '<div class="minimap-modal__dialog">' +
+      '<div class="minimap-modal__head"><h2 class="minimap-modal__title" id="' +
       escapeHtml(modalTitleId) +
       '">' +
       escapeHtml(ui.miniMapTitle) +
-      '</h2><button class="qr-map-modal__close" type="button" data-map-close>' +
+      '</h2><button class="minimap-modal__close" type="button" data-map-close>' +
       escapeHtml(ui.miniMapModalClose) +
       "</button></div>" +
-      '<img class="qr-map-modal__image" src="' +
+      '<img class="minimap-modal__image" src="' +
       escapeHtml(miniMap.path) +
       '" alt="' +
       escapeHtml(ui.miniMapImageAlt) +
@@ -717,7 +752,7 @@
       );
     }).join("");
 
-    elements.main.innerHTML = sectionsMarkup + renderMiniMap(ui);
+    elements.main.innerHTML = renderMiniMap(ui) + sectionsMarkup;
   }
 
   function syncHeroCurrentStop() {
@@ -792,7 +827,7 @@
     modal.hidden = false;
     document.body.classList.add("is-map-modal-open");
 
-    const closeButton = modal.querySelector(".qr-map-modal__close");
+    const closeButton = modal.querySelector(".minimap-modal__close");
     if (closeButton) {
       closeButton.focus({ preventScroll: true });
     }
