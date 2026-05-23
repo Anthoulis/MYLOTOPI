@@ -57,19 +57,19 @@
         accentSoft: "rgba(95, 114, 96, 0.18)",
         images: [
           {
-            src: "./assets/images/tunnel/1692269653-IMG_8786.jpeg",
+            src: "./assets/images/stops/07-cellar-italian-tunnel/01-tunnel-entrance.jpeg",
             alt: "Tunnel entrance and stone passage at Mylotopi",
             fit: "contain",
             position: "center",
           },
           {
-            src: "./assets/images/tunnel/1692269915-IMG_9880.jpeg",
+            src: "./assets/images/stops/07-cellar-italian-tunnel/02-tunnel-interior.jpeg",
             alt: "Interior view of the Mylotopi tunnel",
             fit: "contain",
             position: "center",
           },
           {
-            src: "./assets/images/tunnel/1692270479-IMG_9871.jpeg",
+            src: "./assets/images/stops/07-cellar-italian-tunnel/03-tunnel-stone-detail.jpeg",
             alt: "Stone tunnel detail at Mylotopi",
             fit: "contain",
             position: "center",
