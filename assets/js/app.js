@@ -416,7 +416,7 @@
           escapeHtml(ui.galleryPrevious) +
           '"' +
           (index === 0 ? " disabled" : "") +
-          "><span aria-hidden=\"true\">‹</span></button>" +
+          '><span aria-hidden="true">&lsaquo;</span></button>' +
           '<span class="qr-carousel__counter">' +
           escapeHtml(renderImageCounter(index, images.length, ui)) +
           "</span>" +
@@ -424,7 +424,7 @@
           escapeHtml(ui.galleryNext) +
           '"' +
           (index === images.length - 1 ? " disabled" : "") +
-          "><span aria-hidden=\"true\">›</span></button>" +
+          '><span aria-hidden="true">&rsaquo;</span></button>' +
           "</figcaption>"
         : "";
 
@@ -590,9 +590,11 @@
   function renderSpotButtons() {
     const ui = i18n.getUi(state.lang);
     const activeLabel = state.activeSpot ? i18n.getSpotLabel(state.activeSpot, state.lang) : ui.stopSelectorPlaceholder;
+    const triggerLabel = ui.stopSelectorLabel || ui.spotsLabel;
 
     elements.activeSpotLabel.textContent = activeLabel;
-    elements.spotTrigger.setAttribute("aria-label", ui.spotsLabel + ": " + activeLabel);
+    elements.spotControlLabel.textContent = triggerLabel + ":";
+    elements.spotTrigger.setAttribute("aria-label", triggerLabel + ": " + activeLabel);
     elements.spotMenu.setAttribute("aria-label", ui.spotsLabel);
     elements.spotSwitcher.setAttribute("aria-label", ui.spotsLabel);
 
@@ -616,58 +618,53 @@
   }
 
   function renderMiniMap(ui) {
-    const visibleStops = SPOT_ORDER.filter(function (spotId) {
-      return Boolean(SPOTS_BY_ID[spotId]);
-    });
     const miniMap = i18n.getMiniMap(state.lang);
+    const modalTitleId = "qr-map-modal-title";
 
-    if (!visibleStops.length) {
+    if (!miniMap || !miniMap.path) {
       return "";
     }
 
     return (
-      '<details class="qr-minimap">' +
-      '<summary class="qr-minimap__summary"><span>' +
+      '<section class="qr-minimap" aria-labelledby="qr-minimap-title">' +
+      '<div class="qr-minimap__header">' +
+      '<p class="qr-minimap__label" id="qr-minimap-title">' +
       escapeHtml(ui.miniMapTitle) +
-      '</span><strong>' +
-      escapeHtml(ui.miniMapView) +
-      '</strong></summary>' +
-      '<div class="qr-minimap__body">' +
+      "</p>" +
       (ui.miniMapDescription ? '<p class="qr-minimap__description">' + escapeHtml(ui.miniMapDescription) + "</p>" : "") +
+      "</div>" +
       '<figure class="qr-minimap__figure"><img class="qr-minimap__image" src="' +
       escapeHtml(miniMap.path) +
       '" alt="' +
       escapeHtml(ui.miniMapImageAlt) +
       '" loading="lazy" decoding="async"></figure>' +
-      '<div class="qr-minimap__actions"><a class="qr-minimap__action" href="' +
-      escapeHtml(miniMap.path) +
-      '" target="_blank" rel="noopener">' +
+      '<div class="qr-minimap__actions"><button class="qr-minimap__action" type="button" data-map-open>' +
       escapeHtml(ui.miniMapOpen) +
-      '</a><a class="qr-minimap__action" href="' +
+      '</button><a class="qr-minimap__action" href="' +
       escapeHtml(miniMap.path) +
       '" download>' +
       escapeHtml(ui.miniMapDownload) +
       "</a></div>" +
-      '<ol class="qr-minimap__list">' +
-      visibleStops.map(function (spotId, index) {
-        const isActive = spotId === state.activeSpot;
-        const stopNumber = String(index + 1).padStart(2, "0");
-
-        return (
-          '<li><a class="qr-minimap__link" href="#' +
-          escapeHtml(getSpotAnchorId(spotId)) +
-          '" data-mini-map-spot="' +
-          escapeHtml(spotId) +
-          '" aria-current="' +
-          (isActive ? "location" : "false") +
-          '"><span>' +
-          stopNumber +
-          "</span><strong>" +
-          escapeHtml(i18n.getSpotLabel(spotId, state.lang)) +
-          "</strong></a></li>"
-        );
-      }).join("") +
-      "</ol></div></details>"
+      '<div class="qr-map-modal" data-map-modal role="dialog" aria-modal="true" aria-labelledby="' +
+      escapeHtml(modalTitleId) +
+      '" hidden>' +
+      '<button class="qr-map-modal__backdrop" type="button" data-map-close aria-label="' +
+      escapeHtml(ui.miniMapModalClose) +
+      '"></button>' +
+      '<div class="qr-map-modal__dialog">' +
+      '<div class="qr-map-modal__head"><h2 class="qr-map-modal__title" id="' +
+      escapeHtml(modalTitleId) +
+      '">' +
+      escapeHtml(ui.miniMapTitle) +
+      '</h2><button class="qr-map-modal__close" type="button" data-map-close>' +
+      escapeHtml(ui.miniMapModalClose) +
+      "</button></div>" +
+      '<img class="qr-map-modal__image" src="' +
+      escapeHtml(miniMap.path) +
+      '" alt="' +
+      escapeHtml(ui.miniMapImageAlt) +
+      '" decoding="async">' +
+      "</div></div></section>"
     );
   }
 
@@ -720,19 +717,13 @@
       );
     }).join("");
 
-    elements.main.innerHTML = renderMiniMap(ui) + sectionsMarkup;
+    elements.main.innerHTML = sectionsMarkup + renderMiniMap(ui);
   }
 
   function syncHeroCurrentStop() {
     const ui = i18n.getUi(state.lang);
     const label = state.activeSpot ? i18n.getSpotLabel(state.activeSpot, state.lang) : ui.stopSelectorPlaceholder;
     elements.currentStopLabel.textContent = ui.currentStopLabel + ": " + label;
-  }
-
-  function syncMiniMapState() {
-    elements.main.querySelectorAll(".qr-minimap__link[data-mini-map-spot]").forEach(function (link) {
-      link.setAttribute("aria-current", link.dataset.miniMapSpot === state.activeSpot ? "location" : "false");
-    });
   }
 
   function syncActiveState() {
@@ -756,7 +747,6 @@
     });
 
     syncHeroCurrentStop();
-    syncMiniMapState();
     renderSpotButtons();
   }
 
@@ -786,6 +776,45 @@
   function closeMenus() {
     elements.spotMenu.open = false;
     elements.languageMenu.open = false;
+  }
+
+  function getMapModal() {
+    return elements.main.querySelector("[data-map-modal]");
+  }
+
+  function openMapModal() {
+    const modal = getMapModal();
+    if (!modal) {
+      return;
+    }
+
+    closeMenus();
+    modal.hidden = false;
+    document.body.classList.add("is-map-modal-open");
+
+    const closeButton = modal.querySelector(".qr-map-modal__close");
+    if (closeButton) {
+      closeButton.focus({ preventScroll: true });
+    }
+  }
+
+  function closeMapModal(restoreFocus) {
+    const modal = getMapModal();
+    if (!modal || modal.hidden) {
+      return false;
+    }
+
+    modal.hidden = true;
+    document.body.classList.remove("is-map-modal-open");
+
+    if (restoreFocus) {
+      const openButton = elements.main.querySelector("[data-map-open]");
+      if (openButton) {
+        openButton.focus({ preventScroll: true });
+      }
+    }
+
+    return true;
   }
 
   function getNavigationOptions() {
@@ -845,14 +874,16 @@
 
   function renderGuide() {
     const ui = i18n.getUi(state.lang);
+    const heroTitle = ui.heroTitle || ui.pageTitle;
 
     document.documentElement.lang = state.lang;
-    document.title = ui.pageTitle + " | Mylotopi";
+    document.title = heroTitle + " | Mylotopi";
+    document.body.classList.remove("is-map-modal-open");
     elements.nav.setAttribute("aria-label", ui.navigationLabel);
-    elements.spotControlLabel.textContent = ui.spotsLabel;
+    elements.spotControlLabel.textContent = (ui.stopSelectorLabel || ui.spotsLabel) + ":";
     elements.languageControlLabel.textContent = ui.languageLabel;
     elements.kicker.textContent = ui.kicker;
-    elements.title.textContent = ui.pageTitle;
+    elements.title.textContent = heroTitle;
     elements.intro.textContent = ui.intro;
 
     renderLanguageButtons();
@@ -930,14 +961,18 @@
   }
 
   function handleMiniMapClick(event) {
-    const link = event.target.closest("a[data-mini-map-spot]");
-    if (!link) {
+    const openButton = event.target.closest("[data-map-open]");
+    if (openButton) {
+      event.preventDefault();
+      openMapModal();
       return;
     }
 
-    event.preventDefault();
-    closeMenus();
-    moveToSpot(link.dataset.miniMapSpot, getNavigationOptions());
+    const closeButton = event.target.closest("[data-map-close]");
+    if (closeButton) {
+      event.preventDefault();
+      closeMapModal(true);
+    }
   }
 
   function handleStopNavClick(event) {
@@ -1038,6 +1073,11 @@
 
   function handleDocumentKeydown(event) {
     if (event.key === "Escape") {
+      if (closeMapModal(true)) {
+        event.preventDefault();
+        return;
+      }
+
       closeMenus();
     }
   }
