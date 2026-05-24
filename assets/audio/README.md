@@ -1,10 +1,15 @@
 # Audio Asset Contract
 
-Audio files are organized by language code:
+Audio files are organized by language code.
+
+Active runtime language folders:
 
 - `en`
 - `el`
 - `de`
+
+Staged language folders:
+
 - `fr`
 - `it`
 - `es`
@@ -13,7 +18,7 @@ Audio files are organized by language code:
 - `ru`
 - `tr`
 
-Each language folder contains 9 real MP3 files, one per canonical tour stop:
+Each folder currently contains 9 MP3 files, one per canonical tour stop:
 
 - `section-01.mp3`: Welcome / Introduction
 - `section-02.mp3`: Garden / Herbs
@@ -26,4 +31,7 @@ Each language folder contains 9 real MP3 files, one per canonical tour stop:
 - `section-09.mp3`: Bakery
 
 Language manifests in `assets/content/<language>/index.json` are the source of truth for runtime audio paths.
+
+Before activating a staged language, play every referenced audio file in a browser and run `npm run validate`.
+
 Do not link to files inside `Mylotopi files` from the public site.

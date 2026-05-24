@@ -34,7 +34,7 @@
     "Wählen Sie Ihre Sprache, wählen Sie die Station, an der Sie stehen, und starten Sie den Ton, wenn Sie bereit sind. Der Guide ist für einen ruhigen Rundgang im Freien gedacht, mit Zeit zum Anhalten und Beobachten."
   ],
   "challenge": {
-    "label": "F?r junge Besucher",
+    "label": "Für junge Besucher",
     "title": "Schau und finde",
     "items": [
       {
@@ -44,7 +44,7 @@
         "text": "Findest du etwas aus Stein?"
       },
       {
-        "text": "W?hle ein Detail und zeig es deiner Familie."
+        "text": "Wähle ein Detail und zeig es deiner Familie."
       }
     ]
   },

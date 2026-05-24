@@ -707,6 +707,7 @@ body.is-map-modal-open {
 .qr-readmore__panel {
   overflow: hidden;
   transition: max-height 220ms ease;
+  will-change: max-height;
 }
 
 .qr-copy {
@@ -755,27 +756,66 @@ body.is-map-modal-open {
   justify-content: center;
   justify-self: start;
   min-height: var(--touch);
-  padding: 10px 14px;
-  border: 1px solid rgb(var(--accent-rgb) / 0.32);
+  padding: 10px 12px 10px 14px;
+  border: 1px solid rgb(var(--accent-rgb) / 0.42);
   border-radius: var(--radius-sm);
-  background: rgb(var(--surface-rgb) / 0.86);
+  background: linear-gradient(180deg, rgb(var(--surface-rgb) / 0.98), rgb(var(--accent-rgb) / 0.11));
   color: var(--text);
   font-size: 0.88rem;
   font-weight: 900;
   line-height: 1.2;
-  box-shadow: 0 8px 18px rgb(var(--text-rgb) / 0.08);
+  box-shadow: 0 10px 22px rgb(var(--text-rgb) / 0.1);
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease,
+    background 160ms ease;
+}
+
+.qr-readmore__button:hover {
+  border-color: rgb(var(--accent-rgb) / 0.62);
+  box-shadow: 0 12px 26px rgb(var(--text-rgb) / 0.14);
+  transform: translateY(-1px);
+}
+
+.qr-readmore__button:active {
+  transform: translateY(0);
+}
+
+.qr-readmore.is-expanded .qr-readmore__button {
+  background: rgb(var(--accent-rgb) / 0.13);
 }
 
 .qr-readmore__chevron {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgb(var(--accent-rgb) / 0.34);
+  border-radius: 999px;
+  background: rgb(var(--surface-rgb) / 0.72);
+  transition:
+    border-color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.qr-readmore__chevron::before {
+  content: "";
   width: 8px;
   height: 8px;
-  border-right: 1.6px solid currentColor;
-  border-bottom: 1.6px solid currentColor;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
   transform: translateY(-2px) rotate(45deg);
   transition: transform 180ms ease;
 }
 
 .qr-readmore__button[aria-expanded="true"] .qr-readmore__chevron {
+  border-color: rgb(var(--accent-rgb) / 0.5);
+  background: rgb(var(--surface-rgb) / 0.92);
+}
+
+.qr-readmore__button[aria-expanded="true"] .qr-readmore__chevron::before {
   transform: translateY(2px) rotate(-135deg);
 }
 
@@ -1009,6 +1049,8 @@ body.is-map-modal-open {
 
   .selector__chevron,
   .qr-readmore__chevron,
+  .qr-readmore__chevron::before,
+  .qr-readmore__button,
   .qr-readmore__panel {
     transition: none;
   }

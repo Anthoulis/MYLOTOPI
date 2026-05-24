@@ -2,6 +2,22 @@
 
 Mini-map images are organized by language code and exposed through `assets/content/<language>/index.json`.
 
+Active runtime map folders:
+
+- `en`
+- `el`
+- `de`
+
+Staged map folders:
+
+- `fr`
+- `it`
+- `es`
+- `nl`
+- `pl`
+- `ru`
+- `tr`
+
 Each language folder contains `minimap.jpg`.
 
-Turkish currently uses the root/default mini-map because the source folder does not include `Mini-Map (Turkish).jpg`. Replace `assets/maps/tr/minimap.jpg` and remove the TODO in metadata when a Turkish-specific minimap is provided.
+Turkish currently uses a default-map fallback because the source folder does not include a Turkish-specific Mini-map. Replace `assets/maps/tr/minimap.jpg` and remove the `fallback` metadata before activating Turkish.

@@ -8,6 +8,8 @@ Recommended final image filenames:
 - `02-detail.webp`
 - `03-extra.webp`
 
-Existing tunnel images may remain in `assets/images/tunnel/` for now because they are referenced by `assets/js/content-meta.js`.
+The runtime does not scan folders automatically. Every displayed image must be referenced from `assets/js/content-meta.js`.
 
-If tunnel images are moved later, update the `content-meta.js` image references safely at the same time.
+If a stop has no suitable image, leave its `images` array empty so the app renders the intentional placeholder. Do not use unrelated photos just to fill a gallery.
+
+When adding a tall or narrow image, consider `fit: "contain"` or a precise `position` value in `content-meta.js` so important details are not cropped on mobile.

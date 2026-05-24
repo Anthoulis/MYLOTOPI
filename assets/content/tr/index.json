@@ -33,7 +33,7 @@
   "miniMap": {
     "path": "./assets/maps/tr/minimap.jpg",
     "fallback": true,
-    "fallbackReason": "TODO: Replace this default mini-map when Mini-Map (Turkish).jpg is provided."
+    "fallbackReason": "Uses the default mini-map until a Turkish-specific source image is provided."
   },
   "sectionOrder": [
     "welcome",

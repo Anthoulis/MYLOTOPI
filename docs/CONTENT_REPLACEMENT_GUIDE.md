@@ -2,11 +2,16 @@
 
 This guide explains how to replace structured content without changing the QR Guide structure or app behavior.
 
-## Language Codes
+## Language Status
+
+Active runtime languages:
 
 - `en`: English, default
 - `el`: Greek
 - `de`: German
+
+Staged language folders:
+
 - `fr`: French
 - `it`: Italian
 - `es`: Spanish
@@ -15,7 +20,7 @@ This guide explains how to replace structured content without changing the QR Gu
 - `ru`: Russian
 - `tr`: Turkish
 
-Keep this order in the UI unless there is an explicit product decision to change it.
+Staged folders may contain usable source content and media, but they are not active until they are listed in `MYLOTOPI_GUIDE_META.languages` and pass the same UI/content review as the active languages. Keep staged codes in `MYLOTOPI_GUIDE_META.stagedLanguages` so inactive folders remain documented.
 
 ## Canonical Spot Keys
 
@@ -29,13 +34,13 @@ Keep this order in the UI unless there is an explicit product decision to change
 8. `traditional-house`
 9. `bakery`
 
-These are the final public route keys for future QR generation. Do not add compatibility aliases for route names that are not being printed or published.
+These are the public route keys for QR generation. Preserve them once printed QR codes are produced.
 
 ## Replacing Audio
 
 Current project audio format:
 
-- `.mp3` for every supported language.
+- `.mp3` for all language folders currently in `assets/audio/`.
 
 Each language folder under `assets/audio/` contains 9 audio files:
 
@@ -51,7 +56,7 @@ Each language folder under `assets/audio/` contains 9 audio files:
 
 Replace narration using the same filenames whenever possible.
 
-Do not leave zero-byte, corrupt, or invalid audio files. Browser audio controls must be able to load the files.
+Do not leave zero-byte, corrupt, or invalid audio files. Browser audio controls must be able to load the files. If final audio is not ready for a language, keep it staged or set `audio.ready: false` before activation.
 
 If the final format changes later, update the `audio.path` values in every affected `assets/content/<language>/index.json` file and confirm MIME handling in `assets/js/app.js` still supports the extension.
 
@@ -67,7 +72,14 @@ Recommended filenames:
 
 After adding images, update the matching spot's `images` array in `assets/js/content-meta.js`.
 
-Existing tunnel images currently remain in `assets/images/tunnel/` and are referenced from `assets/js/content-meta.js`. If those images are moved later, update every referenced path in the metadata file at the same time.
+Use the metadata fields intentionally:
+
+- `src`: required project-relative image path.
+- `alt`: optional localized alt text. Section `imageAlt` is the fallback.
+- `fit`: optional, either `cover` or `contain`.
+- `position`: optional CSS object-position value such as `center` or `50% 40%`.
+
+If a section has no suitable image, leave `images: []` and let the app show its placeholder. Do not attach a visually unrelated image to avoid an empty gallery.
 
 ## Updating Localized Text
 
@@ -86,13 +98,13 @@ Each language folder should keep:
 - `sections/08-traditional-house.json`
 - `sections/09-bakery.json`
 
-Each section JSON contains:
+Each section JSON must contain:
 
 - `id`
 - `title`
+- `navigationTitle`
 - `preview`
 - `details`
-- `bullets`
 
 `details` preserves the ordered reading structure. Bullet groups are stored once in `bullets` and referenced from `details` with `{ "type": "bulletGroup", "id": "..." }`.
 
@@ -100,25 +112,36 @@ Do not hardcode translated visitor copy in `index.html`, `assets/js/app.js`, or 
 
 When extracting from source DOCX files, split on the source marker `Read more>>` if it exists. Text before the marker becomes `preview`; text after the marker becomes `details`. The literal marker must not be stored for rendering.
 
+## Activating A Staged Language
+
+1. Confirm the staged folder has an `index.json` and all 9 section files.
+2. Confirm UI labels are fully localized, not mixed with English fallback strings unless deliberately approved.
+3. Confirm the young-visitors challenge content is present or intentionally omitted for that language.
+4. Confirm all `audio.ready: true` paths exist and play in the browser.
+5. Confirm the Mini-map path exists. Replace Turkish's fallback map before activating Turkish.
+6. Move the language code from `stagedLanguages` to `languages` in `assets/js/content-meta.js`.
+7. Run `npm run validate`.
+8. Manually test language switching, audio, gallery, Mini-map, and URL params.
+
 ## Filename And Path Rules
 
 - Keep audio paths in the form `./assets/audio/<language>/section-<number>.mp3`.
 - Keep section paths in language manifests in the form `sections/<number>-<slug>.json`.
 - Keep stop image folders in the form `assets/images/stops/<number>-<slug>/`.
 - Use lowercase kebab-case for new asset filenames where practical.
-- Keep public paths stable after QR targets are finalized; before then, prefer clean semantic ids and update every reference safely.
+- Keep public paths stable after QR targets are finalized.
+- Keep `qr-guide.html` as a compatibility redirect unless old QR targets are known to be unused.
 - Do not link internal staff files from the public UI.
 
-## Deployment Checklist
+## Pre-deploy Checklist
 
-- All 10 language manifests load without JavaScript errors.
-- All languages contain the same 9 section ids.
-- Every `audio.path` points to an existing valid file.
-- No audio file is zero-byte.
-- Final images referenced in `content-meta.js` exist.
-- `index.html` still loads `main.css`, `content-meta.js`, `i18n.js`, and `app.js`.
-- Mini-map navigation still scrolls to the correct stops.
-- Stop dropdown navigation still scrolls to the correct stops.
-- Language switching preserves the current spot where appropriate.
-- Gallery controls still work.
-- No public page links to `staff-instructions.docx`.
+1. Run a local static server.
+2. Run `npm run validate`.
+3. Test mobile widths `320`, `360`, `390`, and `430`.
+4. Test language switching.
+5. Test every active-language audio file.
+6. Test every gallery.
+7. Test the Mini-map modal.
+8. Test URL params `?lang=en&spot=welcome`.
+9. Test invalid params fallback.
+10. Check the browser console for errors.

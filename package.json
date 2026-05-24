@@ -1,0 +1,8 @@
+{
+  "name": "mylotopi-qr-guide",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-content.mjs"
+  }
+}

@@ -43,6 +43,7 @@
 
   assertRequiredElements();
 
+  // Shared formatting and normalization helpers.
   function assertRequiredElements() {
     const missingIds = Object.keys(DOM_IDS)
       .filter(function (key) {
@@ -111,6 +112,7 @@
     return nextIndex >= 0 && nextIndex < SPOT_ORDER.length ? SPOT_ORDER[nextIndex] : null;
   }
 
+  // Audio lifecycle helpers.
   function resolveAudioMimeType(path) {
     const normalizedPath = (path || "").toLowerCase();
 
@@ -192,6 +194,7 @@
     loadAudioMetadata(player);
   }
 
+  // Structured copy rendering.
   function getBulletGroupsById(bullets) {
     return (bullets || []).reduce(function (result, group) {
       if (group && group.id) {
@@ -320,6 +323,7 @@
     );
   }
 
+  // Gallery rendering and in-place image updates.
   function getSpotImages(spotId) {
     const spot = SPOTS_BY_ID[spotId];
     return spot && Array.isArray(spot.images) ? spot.images : [];
@@ -517,6 +521,7 @@
     );
   }
 
+  // Navigation, language, and Mini-map rendering.
   function renderStopNavButton(direction, targetSpot, ui) {
     const isPrevious = direction < 0;
     const label = isPrevious ? ui.previousStop : ui.nextStop;
@@ -762,6 +767,7 @@
     elements.currentStopLabel.textContent = ui.currentStopLabel + ": " + label;
   }
 
+  // Runtime state, URL sync, and focus management.
   function syncActiveState() {
     const ui = i18n.getUi(state.lang);
 
@@ -937,6 +943,7 @@
     });
   }
 
+  // Event handlers.
   function applyLocation() {
     const params = new URLSearchParams(window.location.search);
     const rawLang = params.get("lang");
