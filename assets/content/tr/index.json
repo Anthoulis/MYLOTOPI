@@ -1,0 +1,142 @@
+{
+  "code": "tr",
+  "nativeName": "Türkçe",
+  "aliases": [
+    "tr",
+    "turkish",
+    "türkçe",
+    "turkce",
+    "tr-tr",
+    "tr_tr"
+  ],
+  "ui": {
+    "kicker": "Mylotopi QR Rehberi",
+    "pageTitle": "Yel Değirmeni Deneyimine Hoş Geldiniz!",
+    "intro": "Zamanda Yolculuk: Geçmişe adım atmaya hazır olun! Bu yolculuk için bir zaman makinesine ihtiyacınız olmayacak, sadece rahat ayakkabılara ihtiyacınız var.",
+    "navigationLabel": "Sesli rehber gezintisi",
+    "currentStopLabel": "Geçerli durak",
+    "miniMapTitle": "MİNİ HARİTA",
+    "miniMapDescription": "Devam etmeden önce rotaya bakın.",
+    "miniMapTapHint": "Haritay\u0131 a\u00e7mak i\u00e7in dokunun",
+    "miniMapOpen": "Haritayı aç",
+    "miniMapDownload": "Haritayı indir",
+    "miniMapModalClose": "Haritayı kapat",
+    "miniMapImageAlt": "Dokuz tur durağını gösteren Mylotopi mini haritası",
+    "languageLabel": "Dil",
+    "spotsLabel": "Rehber durakları",
+    "stopSelectorLabel": "Durak",
+    "stopSelectorPlaceholder": "Bir durak seçin",
+    "audioHeading": "Sesli rehber",
+    "audioTitleLabel": "Şimdi dinleniyor",
+    "audioAriaLabel": "{label}: {title}",
+    "selectedBadge": "Geçerli durak",
+    "imagePlaceholderLabel": "Görsel",
+    "imagePlaceholderHint": "Bu konum için bir fotoğraf buraya eklenebilir.",
+    "audioFallback": "Ses dosyası bu dilde mevcut değil.",
+    "announcerPrefix": "Geçerli durak",
+    "galleryPrevious": "Önceki görsel",
+    "galleryNext": "Sonraki görsel",
+    "imageCounter": "{current} / {total}",
+    "readMore": "Daha fazla oku",
+    "readLess": "Daha az göster",
+    "challengeLabel": "Genç ziyaretçiler için",
+    "challengeTitle": "Daha yakından bak",
+    "previousStop": "Önceki durak",
+    "nextStop": "Sonraki durak",
+    "previousStopAria": "Önceki durağa git: {title}",
+    "nextStopAria": "Sonraki durağa git: {title}",
+    "stopLabelSeparator": " · ",
+    "loadErrorTitle": "Rehber içeriği yüklenemedi.",
+    "loadErrorBody": "Bu klasörü statik bir site olarak sunun ve sayfayı yenileyin."
+  },
+  "miniMap": {
+    "path": "./assets/maps/tr/minimap.jpg",
+    "fallback": true,
+    "fallbackReason": "Uses the default mini-map until a Turkish-specific source image is provided."
+  },
+  "sectionOrder": [
+    "welcome",
+    "garden-herbs",
+    "windmill-base",
+    "sleeping-area",
+    "machinery",
+    "threshing-floor-donkeys",
+    "cellar-italian-tunnel",
+    "traditional-house",
+    "bakery"
+  ],
+  "sections": [
+    {
+      "id": "welcome",
+      "path": "sections/01-welcome.json",
+      "audio": {
+        "path": "./assets/audio/tr/section-01.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "garden-herbs",
+      "path": "sections/02-garden-herbs.json",
+      "audio": {
+        "path": "./assets/audio/tr/section-02.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "windmill-base",
+      "path": "sections/03-windmill-base.json",
+      "audio": {
+        "path": "./assets/audio/tr/section-03.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "sleeping-area",
+      "path": "sections/04-sleeping-area.json",
+      "audio": {
+        "path": "./assets/audio/tr/section-04.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "machinery",
+      "path": "sections/05-machinery.json",
+      "audio": {
+        "path": "./assets/audio/tr/section-05.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "path": "sections/06-threshing-floor-donkeys.json",
+      "audio": {
+        "path": "./assets/audio/tr/section-06.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "path": "sections/07-cellar-italian-tunnel.json",
+      "audio": {
+        "path": "./assets/audio/tr/section-07.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "traditional-house",
+      "path": "sections/08-traditional-house.json",
+      "audio": {
+        "path": "./assets/audio/tr/section-08.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "bakery",
+      "path": "sections/09-bakery.json",
+      "audio": {
+        "path": "./assets/audio/tr/section-09.mp3",
+        "ready": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "cellar-italian-tunnel",
+  "title": "De Geheime Tunnel & Kelder",
+  "navigationTitle": "De Geheime Tunnel & Kelder",
+  "preview": "Een verandering van omgeving: Bereid je voor op een totale verandering van omgeving terwijl we ondergronds gaan! Terwijl je afdaalt in de koele lucht, kijk dan goed naar links en naar rechts.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Een missie voor onze jonge ontdekkingsreizigers en volwassenen!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Volgende bestemming:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Een verandering van omgeving: Bereid je voor op een totale verandering van omgeving terwijl we ondergronds gaan! Terwijl je afdaalt in de koele lucht, kijk dan goed naar links en naar rechts."
+        },
+        {
+          "text": "Decoratieve flessen: Je ziet rijen lokale wijn van de Skevofilax-wijnmakerij op Kos. We bewaren deze flessen hier als decoratie! Onze eigen drinkwijnen worden veilig bewaard in de hoofdkelder, waar de temperatuur perfect voor ze is."
+        },
+        {
+          "text": "Geschiedenis uit de Tweede Wereldoorlog: In de jaren 40, tijdens de Tweede Wereldoorlog, was deze ruimte niet bedoeld voor wijn, maar om te overleven. Deze 20 meter lange tunnel werd tijdens de oorlog gebouwd door Italiaanse soldaten."
+        },
+        {
+          "text": "De 'Haast-tunnel': De soldaten gebruikten deze gang als een 'haast-tunnel', een geheime kortere weg om te vluchten en zich te verbergen voor hun tegenstanders. De kelder zelf werd gebruikt als een veilige schuilplaats waar ze konden slapen, ontspannen en beschermd bleven tegen de gevechten buiten."
+        },
+        {
+          "text": "Een verborgen vesting: Aan het einde van de tunnel kom je uit in onze achtertuin, wat nu ons vredige restaurant is. Maar kijk nog eens terug naar het stenen dak voordat je naar buiten gaat! In de jaren 40 was dit hele gebied een schietbaan. De bovenkant was bedekt met zware stenen om de soldaten te beschermen, en precies aan de rand stonden machinegeweren om de heuvel te verdedigen. Het is nauwelijks te geloven dat deze rustige, mooie plek voor een maaltijd ooit de best bewaakte plek van het eiland was!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Strikt geheim: Je bent nu op een geheime missie! Kun jij, terwijl je door de soldatentunnel loopt, precies berekenen hoeveel flessen wijn er langs de muren staan?"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "Binnenkort: Als je klaar bent met het verkennen van de tunnel, kom dan terug naar onze gids. Deze kan je de weg wijzen naar je volgende geweldige stops: het Traditionele Huis en de Bakkerij!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "De Geheime Tunnel & Kelder"
+}

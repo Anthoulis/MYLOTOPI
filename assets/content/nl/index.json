@@ -1,0 +1,139 @@
+{
+  "code": "nl",
+  "nativeName": "Nederlands",
+  "aliases": [
+    "nl",
+    "dutch",
+    "nederlands",
+    "nl-nl",
+    "nl_nl"
+  ],
+  "ui": {
+    "kicker": "Mylotopi QR-gids",
+    "pageTitle": "Welkom bij de Windmill Experience!",
+    "intro": "Reis terug in de tijd: Maak je klaar om het verleden in te stappen! Je hebt voor deze reis geen tijdmachine nodig, alleen een paar comfortabele schoenen.",
+    "navigationLabel": "Navigatie van de audiogids",
+    "currentStopLabel": "Huidige stop",
+    "miniMapTitle": "MINIKAART",
+    "miniMapDescription": "Bekijk de route voordat je verdergaat.",
+    "miniMapTapHint": "Tik op de kaart om te openen",
+    "miniMapOpen": "Kaart openen",
+    "miniMapDownload": "Kaart downloaden",
+    "miniMapModalClose": "Kaart sluiten",
+    "miniMapImageAlt": "Minikaart van Mylotopi met de negen stops van de route",
+    "languageLabel": "Taal",
+    "spotsLabel": "Haltes van de gids",
+    "stopSelectorLabel": "Stop",
+    "stopSelectorPlaceholder": "Kies een stop",
+    "audioHeading": "Audiogids",
+    "audioTitleLabel": "Nu te beluisteren",
+    "audioAriaLabel": "{label}: {title}",
+    "selectedBadge": "Huidige stop",
+    "imagePlaceholderLabel": "Afbeelding",
+    "imagePlaceholderHint": "Hier kan een foto van deze plek worden toegevoegd.",
+    "audioFallback": "De audio is niet beschikbaar in deze taal.",
+    "announcerPrefix": "Huidige stop",
+    "galleryPrevious": "Vorige afbeelding",
+    "galleryNext": "Volgende afbeelding",
+    "imageCounter": "{current} / {total}",
+    "readMore": "Lees meer",
+    "readLess": "Minder tonen",
+    "challengeLabel": "Voor jonge bezoekers",
+    "challengeTitle": "Kijk goed",
+    "previousStop": "Vorige stop",
+    "nextStop": "Volgende stop",
+    "previousStopAria": "Ga naar vorige stop: {title}",
+    "nextStopAria": "Ga naar volgende stop: {title}",
+    "stopLabelSeparator": " · ",
+    "loadErrorTitle": "De gids kan niet worden geladen.",
+    "loadErrorBody": "Serveer deze map als statische website en laad de pagina opnieuw."
+  },
+  "miniMap": {
+    "path": "./assets/maps/nl/minimap.jpg"
+  },
+  "sectionOrder": [
+    "welcome",
+    "garden-herbs",
+    "windmill-base",
+    "sleeping-area",
+    "machinery",
+    "threshing-floor-donkeys",
+    "cellar-italian-tunnel",
+    "traditional-house",
+    "bakery"
+  ],
+  "sections": [
+    {
+      "id": "welcome",
+      "path": "sections/01-welcome.json",
+      "audio": {
+        "path": "./assets/audio/nl/section-01.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "garden-herbs",
+      "path": "sections/02-garden-herbs.json",
+      "audio": {
+        "path": "./assets/audio/nl/section-02.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "windmill-base",
+      "path": "sections/03-windmill-base.json",
+      "audio": {
+        "path": "./assets/audio/nl/section-03.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "sleeping-area",
+      "path": "sections/04-sleeping-area.json",
+      "audio": {
+        "path": "./assets/audio/nl/section-04.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "machinery",
+      "path": "sections/05-machinery.json",
+      "audio": {
+        "path": "./assets/audio/nl/section-05.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "path": "sections/06-threshing-floor-donkeys.json",
+      "audio": {
+        "path": "./assets/audio/nl/section-06.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "path": "sections/07-cellar-italian-tunnel.json",
+      "audio": {
+        "path": "./assets/audio/nl/section-07.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "traditional-house",
+      "path": "sections/08-traditional-house.json",
+      "audio": {
+        "path": "./assets/audio/nl/section-08.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "bakery",
+      "path": "sections/09-bakery.json",
+      "audio": {
+        "path": "./assets/audio/nl/section-09.mp3",
+        "ready": true
+      }
+    }
+  ]
+}

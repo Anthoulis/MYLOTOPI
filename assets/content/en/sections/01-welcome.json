@@ -1,0 +1,52 @@
+{
+  "id": "welcome",
+  "title": "Welcome to the Windmill Experience",
+  "navigationTitle": "Welcome",
+  "preview": "Begin the walk in a restored village created to preserve the memory of old Kefalos: the windmill, the family home, the bakery, the herbs, the tunnel and the work of everyday island life.",
+  "details": [
+    "Mylotopi brings together restored spaces that once shaped daily life in Kefalos. Stone walls, wooden mechanisms, family objects and handmade tools are presented as a living story rather than a static display.",
+    "The Voudouris family restored this place with respect for local memory, so younger visitors can understand how people worked, cooked, slept, stored food and shared village life before modern comforts.",
+    {
+      "type": "heading",
+      "text": "What the walk reveals"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "label": "The windmill",
+          "text": "A working landmark connected with wheat, flour, weather, craft and the rhythm of the village."
+        },
+        {
+          "label": "Village life",
+          "text": "A traditional house, bakery, garden and threshing floor that show how families lived with care and practicality."
+        },
+        {
+          "label": "Hidden history",
+          "text": "The Italian tunnel and cellar add a quieter story from the 1940s beneath the warm village surface."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "How to use the audio guide"
+    },
+    "Select your language, choose the stop you are visiting, then play the audio when you are ready. The guide is designed for a slow outdoor walk, so you can pause, look around and continue at your own pace."
+  ],
+  "challenge": {
+    "label": "For young visitors",
+    "title": "Look and find",
+    "items": [
+      {
+        "text": "Look around you."
+      },
+      {
+        "text": "Can you find something made of stone?"
+      },
+      {
+        "text": "Choose one detail and show it to your family."
+      }
+    ]
+  },
+  "imageAlt": "Welcome to the Windmill Experience"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "machinery",
+  "title": "Machinery",
+  "navigationTitle": "Machinery",
+  "preview": "At the upper level, the windmill shows its intelligence. Wooden beams, gears, ropes and stone wheels translated the force of the wind into the flour that sustained village life.",
+  "details": [
+    "Please move slowly and mind your head. The mechanism above and around you is the heart of the mill, joining the sails outside with the grinding stones inside.",
+    "The two millstones weigh more than two tons together and came from Nisyros, an island known for strong stone suited to milling. Raw wheat was poured into the feeder above the stones.",
+    "A small bell helped the miller hear when the feeder was running low. In a room full of wood, wind and grinding stone, a simple sound could keep the work moving.",
+    "When the flour was ready, it passed down through a pipe to the lower floor. A smaller door allowed the miller to keep a share of flour as payment, a common form of exchange when money was not always used.",
+    "The ropes and levers show how carefully the miller controlled the machine. One brake slowed the stones; another could stop the work quickly when needed.",
+    "Look up to the ceiling and notice its boat-like shape. The design reflects local intelligence: people who understood wind, wood, sea and work as part of one landscape.",
+    {
+      "type": "heading",
+      "text": "Next stop"
+    },
+    "Return outside toward the threshing floor, where wheat was prepared before it reached the mill."
+  ],
+  "challenge": {
+    "label": "For young visitors",
+    "title": "Find the bell",
+    "items": [
+      {
+        "text": "Look for a small bell."
+      },
+      {
+        "text": "What sound would it make?"
+      },
+      {
+        "text": "Show it to your family."
+      }
+    ]
+  },
+  "imageAlt": "Machinery"
+}

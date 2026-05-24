@@ -1,0 +1,76 @@
+{
+  "id": "garden-herbs",
+  "title": "Il Nostro Giardino con le Nostre Erbe Aromatiche!",
+  "navigationTitle": "Giardino delle Erbe",
+  "preview": "Cucina o Farmacia? Fate un bel respiro! Ha il profumo di una gigantesca cucina all'aperto o di una farmacia di paese? In realtà, è entrambe le cose!",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Una Missione per i Nostri Giovani Detective delle Piante e per gli Adulti!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Prossima Destinazione:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Cucina o Farmacia? Fate un bel respiro! Ha il profumo di una gigantesca cucina all'aperto o di una farmacia di paese? In realtà, è entrambe le cose!"
+        },
+        {
+          "text": "Il Kit di Sopravvivenza Definitivo: Prima della medicina moderna e dei supermercati, questi giardini erano il kit di sopravvivenza dell'isola. Questi appezzamenti sono pieni delle stesse identiche erbe che crescono qui da secoli."
+        },
+        {
+          "text": "Il Medico della Natura: Erbe come il timo, l'origano e la maggiorana non venivano usate solo per rendere la cena deliziosa... erano il medico locale! Se qualcuno aveva mal di stomaco, la famiglia del mugnaio non correva in farmacia a comprare uno sciroppo rosa dal sapore cattivo, ma veniva proprio qui a raccogliere le foglie per un rimedio naturale."
+        },
+        {
+          "text": "La Tavolozza di un Pittore: Date un'occhiata alla bellissima lavanda viola e alla menta verde brillante! Sembra che qualcuno le abbia dipinte direttamente nel giardino. Prestate molta attenzione a questi colori vivaci!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Divertimento Vecchia Scuola: Mettete via i telefoni per un secondo, stiamo tornando completamente alle vecchie maniere! Vedete i pezzi del puzzle fisici sparsi in giro?"
+        },
+        {
+          "text": "Usate i Vostri Sensi: Il vostro compito è capire quale parola appartiene a quale pianta. Dovrete usare gli occhi e il naso!"
+        },
+        {
+          "text": "Strofinate e Annusate: Avanti, date alle foglie una piccola e delicata strofinata e annusate (ma per favore, niente pascolo... non mangiatevi il giardino prima di pranzo!)"
+        },
+        {
+          "text": "Risolvete il Puzzle: Riuscite a spostare i pezzi del puzzle per abbinarli alle erbe corrette? Vedete se riuscite a capire la differenza tra la menta e l'origano. Quale profuma come una deliziosa pizza e quale sa di un pisolino accogliente?"
+        },
+        {
+          "text": "Promemoria per l'Album da Disegno: Tenete gli occhi aperti, Detective delle Piante! Ricordate i diversi colori verde, grigio e viola per colorare il vostro Schizzo di Mylotopi più tardi."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "In Arrivo: Quindi proseguite verso lo Storico Mulino a Vento!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Il Nostro Giardino con le Nostre Erbe Aromatiche!"
+}

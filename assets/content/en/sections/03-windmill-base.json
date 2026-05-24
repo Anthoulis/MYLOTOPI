@@ -1,0 +1,34 @@
+{
+  "id": "windmill-base",
+  "title": "Windmill Base",
+  "navigationTitle": "Windmill Base",
+  "preview": "Step inside the base of the Mill of the Priest, one of the oldest working windmills in the Dodecanese. Thick stone, wood, weight and wind all meet here.",
+  "details": [
+    "The windmill is more than 400 years old and worked daily until 1987. Today it still preserves the craft of grinding wheat into flour, a task that once helped feed much of the village.",
+    "At the entrance, traditional signs of blessing and protection welcome visitors. The stone walls are about 1.2 meters thick, built to stand against strong sea winds and to hold the power of the mechanism above.",
+    "Around the room, notice the storage area, wooden saddle, threshing sledge, scales, weights and photographs of windmills across Greece. These objects connect the miller to the wider world of rural work.",
+    "The fireplace also had a practical role. Fat was warmed and used to lubricate parts of the mechanism, keeping the moving wood and stone in working order.",
+    "Look for the small rope that formed the first braking system. By lifting the heavy millstones slightly, the miller could make the sails safe to handle outside.",
+    {
+      "type": "heading",
+      "text": "Next stop"
+    },
+    "Move carefully upward to the second floor of the windmill, where work and family life came surprisingly close together."
+  ],
+  "challenge": {
+    "label": "For young visitors",
+    "title": "Find stone and wood",
+    "items": [
+      {
+        "text": "Look around the room."
+      },
+      {
+        "text": "Point to one thing made of stone."
+      },
+      {
+        "text": "Point to one thing made of wood."
+      }
+    ]
+  },
+  "imageAlt": "Windmill Base"
+}

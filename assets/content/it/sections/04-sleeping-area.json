@@ -1,0 +1,67 @@
+{
+  "id": "sleeping-area",
+  "title": "La Zona Notte del Mulino a Vento (2° Piano)",
+  "navigationTitle": "La Zona Notte del Mulino a Vento (2° Piano)",
+  "preview": "Attenzione al Gradino: Benvenuti al secondo piano! Fate attenzione a dove mettete i piedi sulle scale di legno e state attenti alla testa con le travi di legno qui sopra. Preparatevi a una grande sorpresa su come viveva la famiglia.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Una Domanda per i nostri Giovani Esploratori e Adulti!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Prossima Destinazione:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Attenzione al Gradino: Benvenuti al secondo piano! Fate attenzione a dove mettete i piedi sulle scale di legno e state attenti alla testa con le travi di legno qui sopra. Preparatevi a una grande sorpresa su come viveva la famiglia."
+        },
+        {
+          "text": "Alla Vostra Destra: Sulle pareti, vedrete alcune bellissime immagini che mostrano diversi mulini a vento storici di tutta la Grecia. Ma questo spazio non era solo una galleria!"
+        },
+        {
+          "text": "Una Camera da Letto Molto Rumorosa: Proprio qui, sul lato destro, è in realtà dove il mugnaio e l'intera famiglia erano soliti dormire! Riuscite a immaginare di cercare di fare un pisolino tranquillo mentre l'intero edificio tremava, il vento ululava e i pesanti macchinari schiacciavano rumorosamente il grano a pochi passi di distanza? Dovevano avere un sonno molto profondo!"
+        },
+        {
+          "text": "Alla Vostra Sinistra: Ora, guardate verso il lato sinistro. Questo era uno spazio di stoccaggio molto importante e movimentato."
+        },
+        {
+          "text": "Proteggere la Farina: Il mugnaio usava questo lato della stanza per impilare in modo sicuro tutti i pesanti sacchi di grano crudo in attesa di essere macinati, insieme ai sacchi appena riempiti di soffice farina bianca che erano pronti per uscire e sfamare il villaggio. Li teneva proprio qui vicino al suo letto per poterli proteggere!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Immaginate Questo: Riuscireste a immaginare voi stessi a dormire al secondo piano esattamente come facevano loro?"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "In Arrivo: Quindi proseguite verso il terzo piano del Mulino a Vento!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "La Zona Notte del Mulino a Vento (2° Piano)"
+}

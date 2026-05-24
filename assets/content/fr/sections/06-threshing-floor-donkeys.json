@@ -1,0 +1,70 @@
+{
+  "id": "threshing-floor-donkeys",
+  "title": "L'Aire de Battage et les Ânes !",
+  "navigationTitle": "L'Aire de Battage et les Ânes !",
+  "preview": "Air frais et sol en pierre : Bon retour à l'extérieur ! Respirez un grand coup d'air frais. Vous vous trouvez maintenant près de l'aire de battage traditionnelle, qui ressemble beaucoup à une grande piste de danse ronde en pierre.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Une Mission pour nos Jeunes Explorateurs et les Adultes !"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Prochaine Destination :"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Air frais et sol en pierre : Bon retour à l'extérieur ! Respirez un grand coup d'air frais. Vous vous trouvez maintenant près de l'aire de battage traditionnelle, qui ressemble beaucoup à une grande piste de danse ronde en pierre."
+        },
+        {
+          "text": "L'âne étourdi : Regardez juste au milieu du cercle le poteau en bois. Autrefois, le meunier attachait sans trop serrer une corde entre ce poteau et le cou d'un âne. Le travail de l'âne consistait à tourner en rond dans un grand cercle, en utilisant ses lourds sabots pour piétiner et écraser les récoltes afin d'en libérer les graines !"
+        },
+        {
+          "text": "La séparation du blé : Après que le courageux âne avait fini tout ce piétinement étourdissant, le meunier intervenait pour séparer soigneusement le blé blanc du blé brun. (De nos jours, nous n'utilisons plus cette méthode ; nous achetons notre blé directement aux producteurs locaux de l'île !)"
+        },
+        {
+          "text": "Rencontrez les véritables stars : Vous n'avez pas besoin d'imaginer les animaux ! Regardez à proximité et vous rencontrerez les véritables stars de la ferme : nos deux adorables ânesses. La fière maman s'appelle Melina et elle a 6 ans, et sa douce petite fille s'appelle Katie et n'a que 2 ans."
+        },
+        {
+          "text": "Le papa disparu : Quant au papa de Katie... eh bien, personne ne sait vraiment où il est parti ! Il adorait chanter très fort, alors nous pensons qu'il est allé dans la ville voisine pour monter un groupe de rock pour ânes !"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "La danse de l'âne : Approchez-vous du bord de l'aire de battage ! Pouvez-vous faire semblant d'être attaché au poteau central en bois et marcher en un cercle parfait, tout comme le faisait l'âne ?"
+        },
+        {
+          "text": "Dites bonjour : Après votre danse étourdissante, n'oubliez pas d'aller faire un petit coucou à Melina et Katie ! S'il vous plaît, admirez nos charmantes ânesses à distance ! Elles ont l'air douces, mais elles pourraient confondre vos doigts avec des mini-carottes. On préfère ne pas vérifier !"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "À venir : Dirigez-vous ensuite vers la cave / le tunnel italien !"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "L'Aire de Battage et les Ânes !"
+}

@@ -1,0 +1,139 @@
+{
+  "code": "ru",
+  "nativeName": "Русский",
+  "aliases": [
+    "ru",
+    "russian",
+    "русский",
+    "ru-ru",
+    "ru_ru"
+  ],
+  "ui": {
+    "kicker": "QR-гид Mylotopi",
+    "pageTitle": "Добро пожаловать в Windmill Experience!",
+    "intro": "Путешествие во времени: Приготовьтесь сделать шаг в прошлое! Для этого путешествия вам не понадобится машина времени — только удобная обувь.",
+    "navigationLabel": "Навигация аудиогида",
+    "currentStopLabel": "Текущая остановка",
+    "miniMapTitle": "МИНИ-КАРТА",
+    "miniMapDescription": "Посмотрите маршрут перед продолжением.",
+    "miniMapTapHint": "\u041d\u0430\u0436\u043c\u0438\u0442\u0435, \u0447\u0442\u043e\u0431\u044b \u043e\u0442\u043a\u0440\u044b\u0442\u044c \u043a\u0430\u0440\u0442\u0443",
+    "miniMapOpen": "Открыть карту",
+    "miniMapDownload": "Скачать карту",
+    "miniMapModalClose": "Закрыть карту",
+    "miniMapImageAlt": "Мини-карта Mylotopi с девятью остановками маршрута",
+    "languageLabel": "Язык",
+    "spotsLabel": "Остановки гида",
+    "stopSelectorLabel": "Остановка",
+    "stopSelectorPlaceholder": "Выберите остановку",
+    "audioHeading": "Аудиогид",
+    "audioTitleLabel": "Сейчас звучит",
+    "audioAriaLabel": "{label}: {title}",
+    "selectedBadge": "Текущая остановка",
+    "imagePlaceholderLabel": "Изображение",
+    "imagePlaceholderHint": "Здесь можно добавить фото этого места.",
+    "audioFallback": "Аудио недоступно на этом языке.",
+    "announcerPrefix": "Текущая остановка",
+    "galleryPrevious": "Предыдущее изображение",
+    "galleryNext": "Следующее изображение",
+    "imageCounter": "{current} / {total}",
+    "readMore": "Читать далее",
+    "readLess": "Свернуть",
+    "challengeLabel": "Для юных посетителей",
+    "challengeTitle": "Рассмотри внимательнее",
+    "previousStop": "Предыдущая остановка",
+    "nextStop": "Следующая остановка",
+    "previousStopAria": "Перейти к предыдущей остановке: {title}",
+    "nextStopAria": "Перейти к следующей остановке: {title}",
+    "stopLabelSeparator": " · ",
+    "loadErrorTitle": "Не удалось загрузить гид.",
+    "loadErrorBody": "Запустите эту папку как статический сайт и обновите страницу."
+  },
+  "miniMap": {
+    "path": "./assets/maps/ru/minimap.jpg"
+  },
+  "sectionOrder": [
+    "welcome",
+    "garden-herbs",
+    "windmill-base",
+    "sleeping-area",
+    "machinery",
+    "threshing-floor-donkeys",
+    "cellar-italian-tunnel",
+    "traditional-house",
+    "bakery"
+  ],
+  "sections": [
+    {
+      "id": "welcome",
+      "path": "sections/01-welcome.json",
+      "audio": {
+        "path": "./assets/audio/ru/section-01.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "garden-herbs",
+      "path": "sections/02-garden-herbs.json",
+      "audio": {
+        "path": "./assets/audio/ru/section-02.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "windmill-base",
+      "path": "sections/03-windmill-base.json",
+      "audio": {
+        "path": "./assets/audio/ru/section-03.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "sleeping-area",
+      "path": "sections/04-sleeping-area.json",
+      "audio": {
+        "path": "./assets/audio/ru/section-04.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "machinery",
+      "path": "sections/05-machinery.json",
+      "audio": {
+        "path": "./assets/audio/ru/section-05.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "path": "sections/06-threshing-floor-donkeys.json",
+      "audio": {
+        "path": "./assets/audio/ru/section-06.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "path": "sections/07-cellar-italian-tunnel.json",
+      "audio": {
+        "path": "./assets/audio/ru/section-07.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "traditional-house",
+      "path": "sections/08-traditional-house.json",
+      "audio": {
+        "path": "./assets/audio/ru/section-08.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "bakery",
+      "path": "sections/09-bakery.json",
+      "audio": {
+        "path": "./assets/audio/ru/section-09.mp3",
+        "ready": true
+      }
+    }
+  ]
+}

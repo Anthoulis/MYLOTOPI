@@ -1,0 +1,140 @@
+{
+  "code": "fr",
+  "nativeName": "Français",
+  "aliases": [
+    "fr",
+    "french",
+    "français",
+    "francais",
+    "fr-fr",
+    "fr_fr"
+  ],
+  "ui": {
+    "kicker": "Guide QR Mylotopi",
+    "pageTitle": "Bienvenue à l'expérience du moulin à vent !",
+    "intro": "Voyage dans le temps : Préparez-vous à faire un saut dans le passé ! Vous n'aurez pas besoin de machine à remonter le temps pour ce voyage, juste de chaussures confortables.",
+    "navigationLabel": "Navigation du guide audio",
+    "currentStopLabel": "Arrêt actuel",
+    "miniMapTitle": "MINI-CARTE",
+    "miniMapDescription": "Consultez le parcours avant de continuer.",
+    "miniMapTapHint": "Touchez la carte pour l'ouvrir",
+    "miniMapOpen": "Ouvrir la carte",
+    "miniMapDownload": "Télécharger la carte",
+    "miniMapModalClose": "Fermer la carte",
+    "miniMapImageAlt": "Mini-carte de Mylotopi montrant les neuf arrêts de la visite",
+    "languageLabel": "Langue",
+    "spotsLabel": "Arrêts du guide",
+    "stopSelectorLabel": "Arrêt",
+    "stopSelectorPlaceholder": "Choisir un arrêt",
+    "audioHeading": "Guide audio",
+    "audioTitleLabel": "À écouter",
+    "audioAriaLabel": "{label} : {title}",
+    "selectedBadge": "Arrêt actuel",
+    "imagePlaceholderLabel": "Image",
+    "imagePlaceholderHint": "Une photo du lieu peut être ajoutée ici.",
+    "audioFallback": "L'audio n'est pas disponible dans cette langue.",
+    "announcerPrefix": "Arrêt actuel",
+    "galleryPrevious": "Image précédente",
+    "galleryNext": "Image suivante",
+    "imageCounter": "{current} / {total}",
+    "readMore": "Lire la suite",
+    "readLess": "Réduire",
+    "challengeLabel": "Pour les jeunes visiteurs",
+    "challengeTitle": "Observe bien",
+    "previousStop": "Arrêt précédent",
+    "nextStop": "Arrêt suivant",
+    "previousStopAria": "Aller à l'arrêt précédent : {title}",
+    "nextStopAria": "Aller à l'arrêt suivant : {title}",
+    "stopLabelSeparator": " · ",
+    "loadErrorTitle": "Impossible de charger le guide.",
+    "loadErrorBody": "Servez ce dossier comme site statique, puis rechargez la page."
+  },
+  "miniMap": {
+    "path": "./assets/maps/fr/minimap.jpg"
+  },
+  "sectionOrder": [
+    "welcome",
+    "garden-herbs",
+    "windmill-base",
+    "sleeping-area",
+    "machinery",
+    "threshing-floor-donkeys",
+    "cellar-italian-tunnel",
+    "traditional-house",
+    "bakery"
+  ],
+  "sections": [
+    {
+      "id": "welcome",
+      "path": "sections/01-welcome.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-01.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "garden-herbs",
+      "path": "sections/02-garden-herbs.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-02.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "windmill-base",
+      "path": "sections/03-windmill-base.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-03.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "sleeping-area",
+      "path": "sections/04-sleeping-area.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-04.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "machinery",
+      "path": "sections/05-machinery.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-05.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "path": "sections/06-threshing-floor-donkeys.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-06.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "path": "sections/07-cellar-italian-tunnel.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-07.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "traditional-house",
+      "path": "sections/08-traditional-house.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-08.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "bakery",
+      "path": "sections/09-bakery.json",
+      "audio": {
+        "path": "./assets/audio/fr/section-09.mp3",
+        "ready": true
+      }
+    }
+  ]
+}

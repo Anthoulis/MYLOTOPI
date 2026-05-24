@@ -1,0 +1,52 @@
+{
+  "id": "welcome",
+  "title": "Willkommen beim Windmühlen-Erlebnis",
+  "navigationTitle": "Willkommen",
+  "preview": "Beginnen Sie den Rundgang in einem restaurierten Dorf, das die Erinnerung an das alte Kefalos bewahrt: Windmühle, Familienhaus, Backofen, Kräuter, Tunnel und die tägliche Arbeit des Insellebens.",
+  "details": [
+    "Mylotopi verbindet Räume, die einst den Alltag in Kefalos geprägt haben. Steinmauern, hölzerne Mechanismen, Familienobjekte und Werkzeuge erscheinen hier als lebendige Geschichte.",
+    "Die Familie Voudouris hat diesen Ort mit Respekt vor der lokalen Erinnerung restauriert, damit Besucher verstehen können, wie Menschen arbeiteten, kochten, schliefen, Vorräte aufbewahrten und das Dorfleben teilten.",
+    {
+      "type": "heading",
+      "text": "Was der Rundgang zeigt"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "label": "Die Windmühle",
+          "text": "Ein lebendiges Wahrzeichen, verbunden mit Weizen, Mehl, Wetter, Handwerk und dem Rhythmus des Dorfes."
+        },
+        {
+          "label": "Das Dorfleben",
+          "text": "Haus, Backofen, Garten und Dreschplatz zeigen, wie Familien mit Sorgfalt und praktischer Klugheit lebten."
+        },
+        {
+          "label": "Verborgene Geschichte",
+          "text": "Der italienische Tunnel und der Keller erzählen eine ruhigere Geschichte aus den 1940er Jahren."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "So nutzen Sie den Audioguide"
+    },
+    "Wählen Sie Ihre Sprache, wählen Sie die Station, an der Sie stehen, und starten Sie den Ton, wenn Sie bereit sind. Der Guide ist für einen ruhigen Rundgang im Freien gedacht, mit Zeit zum Anhalten und Beobachten."
+  ],
+  "challenge": {
+    "label": "Für junge Besucher",
+    "title": "Schau und finde",
+    "items": [
+      {
+        "text": "Schau dich um."
+      },
+      {
+        "text": "Findest du etwas aus Stein?"
+      },
+      {
+        "text": "Wähle ein Detail und zeig es deiner Familie."
+      }
+    ]
+  },
+  "imageAlt": "Willkommen beim Windmühlen-Erlebnis"
+}

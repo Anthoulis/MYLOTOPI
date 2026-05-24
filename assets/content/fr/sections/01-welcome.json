@@ -1,0 +1,111 @@
+{
+  "id": "welcome",
+  "title": "Bienvenue à l'Expérience du Moulin à Vent !",
+  "navigationTitle": "Bienvenue à l'Expérience du Moulin à Vent !",
+  "preview": "Voyage dans le temps : Préparez-vous à faire un saut dans le passé ! Vous n'aurez pas besoin de machine à remonter le temps pour ce voyage, juste de chaussures confortables.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Ce que vous allez explorer :"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Comment écouter la visite :"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    },
+    {
+      "type": "heading",
+      "text": "Une mission secrète pour les jeunes explorateurs !"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-04"
+    },
+    {
+      "type": "heading",
+      "text": "Prochaine destination :"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-05"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Voyage dans le temps : Préparez-vous à faire un saut dans le passé ! Vous n'aurez pas besoin de machine à remonter le temps pour ce voyage, juste de chaussures confortables."
+        },
+        {
+          "text": "Un village restauré : Grâce à la magnifique restauration effectuée par la famille Voudouris, vous découvrirez exactement comment vivaient les insulaires il y a plus d'un siècle, bien avant l'invention du Wi-Fi. Vous aurez également l'occasion de fouiner et de découvrir une histoire secrète datant des années 1940 !"
+        },
+        {
+          "text": "La vie du meunier : Aujourd'hui, vous allez vous mettre dans la peau d'un véritable meunier. Alerte divulgâchis (spoiler) : son entraînement quotidien consistait à soulever de lourds sacs de farine toute la journée, tout simplement pour nourrir la majeure partie du village."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Le moulin géant : Explorez un véritable moulin en activité, de la base jusqu'au sommet."
+        },
+        {
+          "text": "La vie du village : Jetez un coup d'œil à l'intérieur de la maison traditionnelle et de la boulangerie."
+        },
+        {
+          "text": "Nature et animaux : Humez les merveilleuses herbes de nos jardins, visitez l'aire de battage et dites bonjour à nos adorables ânes."
+        },
+        {
+          "text": "Secrets souterrains : Traversez un véritable tunnel militaire !"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "C'est super facile : Les adultes, il vous suffit de scanner les codes QR que vous trouverez à l'aide de l'appareil photo de votre téléphone. Vous n'avez besoin de télécharger aucune application !"
+        },
+        {
+          "text": "Écoutez ensemble : Augmentez simplement le volume de votre téléphone ou partagez des écouteurs, et suivez les numéros à travers le village."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-04",
+      "items": [
+        {
+          "text": "Prenez votre matériel d'artiste : Nous vous remettrons un croquis spécial Mylotopi et quelques crayons de couleur à emporter avec vous."
+        },
+        {
+          "text": "Observez tout : Tout au long de votre promenade aujourd'hui, gardez les yeux grands ouverts ! Observez de très près le moulin géant, les pierres lourdes et les vieux outils. Essayez de mémoriser toutes les belles couleurs que vous voyez."
+        },
+        {
+          "text": "Créez un chef-d'œuvre : Lorsque vous aurez terminé votre aventure et que vous vous asseoirez pour vous détendre à notre restaurant-café, vous pourrez colorier votre dessin et le transformer en un véritable chef-d'œuvre !"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-05",
+      "items": [
+        {
+          "text": "À venir : Dirigez-vous vers nos jardins d'herbes aromatiques !"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Bienvenue à l'Expérience du Moulin à Vent !"
+}

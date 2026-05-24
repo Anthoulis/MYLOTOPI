@@ -1,0 +1,88 @@
+{
+  "id": "traditional-house",
+  "title": "La Maison Traditionnelle",
+  "navigationTitle": "La Maison Traditionnelle",
+  "preview": "Une toute petite maison surpeuplée : Bienvenue dans la maison traditionnelle ! Cette incroyable petite demeure a plus de 130 ans. Elle mesure moins de 20 mètres carrés, mais croyez-le ou non, 8 à 10 personnes y vivaient autrefois ! Les grands-parents, les parents et tous leurs enfants partageaient cette unique pièce.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Une Mission pour nos Jeunes Explorateurs et les Adultes !"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Prochaine Destination :"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Une toute petite maison surpeuplée : Bienvenue dans la maison traditionnelle ! Cette incroyable petite demeure a plus de 130 ans. Elle mesure moins de 20 mètres carrés, mais croyez-le ou non, 8 à 10 personnes y vivaient autrefois ! Les grands-parents, les parents et tous leurs enfants partageaient cette unique pièce."
+        },
+        {
+          "text": "Où dormait tout le monde ? Les grands-parents dormaient juste à côté de la cheminée chaleureuse. Les parents dormaient en hauteur dans le lit en mezzanine du côté opposé, tandis que les enfants plus âgés dormaient dans les lits adjacents et sur le canapé."
+        },
+        {
+          "text": "Fais dodo, mon petit bébé : Et le bébé ? Cherchez le petit berceau en bois ! Pour aider le bébé à s'endormir, il suffisait de tirer doucement sur cette petite corde suspendue pour le bercer."
+        },
+        {
+          "text": "Un rangement astucieux : Remarquez l'espace sous les lits familiaux : c'était leur principale pièce de rangement."
+        },
+        {
+          "text": "Tâches quotidiennes et décoration : Sur le côté gauche, vous pouvez voir un grand métier à tisser en bois qu'ils utilisaient pour confectionner de nouveaux vêtements et réparer les anciens, ainsi qu'un coffre où ils gardaient leurs objets personnels. Vous apercevrez également un tamis utilisé pour la farine, et de magnifiques photos anciennes ainsi que des images religieuses sur les murs."
+        },
+        {
+          "text": "Vases et costumes : À côté du coffre, cherchez deux vases : le grand servait pour le vin, et le petit pour l'eau. Juste au-dessus sont suspendus deux magnifiques costumes traditionnels que les dames de la maison portaient pour les mariages et les événements spéciaux."
+        },
+        {
+          "text": "Le cœur de la maison : Comme la maison n'était pas isolée comme nos habitations modernes, la cheminée servait à cuisiner tous les repas et à garder toute la famille au chaud. Juste à côté se trouve un petit moulin manuel pour broyer la farine, ainsi que leurs ustensiles de cuisine quotidiens et des assiettes traditionnelles décorées de jolies fleurs peintes."
+        },
+        {
+          "text": "La balançoire suspendue : Levez les yeux au plafond ! Voyez-vous quelque chose de suspendu qui ressemble un peu à une balançoire ? Ce n'est pas pour jouer ! Ils gardaient leur pain frais dans la partie supérieure pour le mettre à l'abri des souris affamées. Dans la partie inférieure, ils stockaient des caroubes. À l'époque, ils n'avaient pas de barres chocolatées, alors ces caroubes sucrées étaient données aux enfants comme une délicieuse friandise chocolatée !"
+        },
+        {
+          "text": "Un réfrigérateur traditionnel : Enfin, cherchez l'armoire en bois. Croyez-le ou non, c'est un réfrigérateur traditionnel ! Il se compose de deux parties. Ils mettaient de gros glaçons dans la partie supérieure et, à mesure que la glace fondait, ils pouvaient ouvrir un petit robinet pour boire de l'eau glacée. Le froid de la partie supérieure refroidissait également parfaitement la section inférieure pour garder leur nourriture fraîche !"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Faites tourner le moulin : Vous avez beaucoup à faire dans cette petite maison bien remplie ! Tout d'abord, pouvez-vous trouver le moulin manuel ? Essayez de placer la poignée en bois dans l'encoche et voyez si vous pouvez le faire tourner !"
+        },
+        {
+          "text": "Regardez en haut et en bas : Après vos efforts, parviendrez-vous à repérer la « balançoire » suspendue qui protégeait le pain des souris ?"
+        },
+        {
+          "text": "Bercez le bébé : Et la petite corde qu'ils tiraient pour bercer le bébé et l'endormir ? Arriverez-vous à faire s'endormir le bébé en actionnant la corde ? Est-ce difficile pour vous ?"
+        },
+        {
+          "text": "Imaginez ceci : Une fois que vous aurez tout trouvé, imaginez ce que ce serait de partager cette petite pièce avec 8 à 10 membres de votre famille !"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "À venir : Dirigez-vous ensuite vers la boulangerie !"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "La Maison Traditionnelle"
+}

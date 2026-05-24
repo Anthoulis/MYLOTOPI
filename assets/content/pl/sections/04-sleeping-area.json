@@ -1,0 +1,67 @@
+{
+  "id": "sleeping-area",
+  "title": "Sypialnia w Wiatraku (2. piętro)",
+  "navigationTitle": "Sypialnia w Wiatraku (2. piętro)",
+  "preview": "Uważajcie pod nogi: Witamy na drugim piętrze! Uważajcie pod nogi na drewnianych schodach i na głowy pod drewnianym stropem. Przygotujcie się na dużą niespodziankę dotyczącą tego, jak żyła tu rodzina.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Pytanie dla naszych Młodych Odkrywców i Dorosłych!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Następny cel:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Uważajcie pod nogi: Witamy na drugim piętrze! Uważajcie pod nogi na drewnianych schodach i na głowy pod drewnianym stropem. Przygotujcie się na dużą niespodziankę dotyczącą tego, jak żyła tu rodzina."
+        },
+        {
+          "text": "Po Twojej prawej: Na ścianach zobaczycie piękne zdjęcia przedstawiające różne historyczne wiatraki z całej Grecji. Ale ta przestrzeń nie była tylko galerią!"
+        },
+        {
+          "text": "Bardzo hałaśliwa sypialnia: To właśnie tutaj, po prawej stronie, młynarz i cała jego rodzina spali! Czy wyobrażacie sobie próbę ucięcia sobie spokojnej drzemki, podczas gdy cały budynek trząsł się, wiatr wył, a ciężkie maszyny głośno miażdżyły pszenicę zaledwie kilka kroków dalej? Musieli mieć naprawdę mocny sen!"
+        },
+        {
+          "text": "Po Twojej lewej: Teraz spójrzcie na lewą stronę. To była bardzo ważna i intensywnie wykorzystywana przestrzeń magazynowa."
+        },
+        {
+          "text": "Ochrona mąki: Młynarz używał tej części pomieszczenia, aby bezpiecznie układać w stosy wszystkie ciężkie worki z surową pszenicą czekającą na zmielenie, obok świeżo napełnionych worków z puszystą białą mąką, które były gotowe do wysłania, by wykarmić wioskę. Trzymał je dokładnie tutaj, blisko swojego łóżka, aby móc ich strzec!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Wyobraźcie to sobie: Czy potraficie wyobrazić sobie spanie na drugim piętrze dokładnie w taki sposób, w jaki oni to robili?"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "Kolejny punkt: Następnie przejdźcie dalej na trzecie piętro wiatraka!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Sypialnia w Wiatraku (2. piętro)"
+}

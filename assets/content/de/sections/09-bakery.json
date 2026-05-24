@@ -1,0 +1,34 @@
+{
+  "id": "bakery",
+  "title": "Der Steinofen",
+  "navigationTitle": "Steinofen",
+  "preview": "Der Steinofen vollendet die Geschichte von Weizen und Mehl. Hier versammelte sich das Dorf um Brot, Feuer, Geduld und die gemeinsame Arbeit der täglichen Versorgung.",
+  "details": [
+    "Der Steinofen ist mehr als 150 Jahre alt. Früher brachten viele Frauen des Dorfes hier das Brot für ihre Familien, sodass der Ofen ein praktisches und soziales Zentrum wurde.",
+    "Brot wurde nicht hastig gemacht. Der Teig wurde am Vortag gemischt und geformt, dann ruhte er. Früh am nächsten Morgen wurde der Ofen sorgfältig erhitzt, bevor die Laibe hineinkamen.",
+    "Nach ein bis zwei Stunden Backzeit zog der Duft von frischem Brot durch das Dorf. Der Prozess verband Haus, Feld, Mühle und Ofen zu einem Kreislauf des Insellebens.",
+    "Betrachten Sie die Fotografien im Raum, um zu sehen, wie die Arbeit getan wurde und wie viel Wissen in alltäglichen Händen lag.",
+    "Am Ende des Rundgangs ist das Restaurant-Cafe ein natürlicher Ort zum Innehalten, um über das Dorf zurückzublicken und die Geschichte nachklingen zu lassen.",
+    {
+      "type": "heading",
+      "text": "Danke"
+    },
+    "Vielen Dank, dass Sie mit uns durch Mylotopi und die Erinnerung an das alte Kefalos gegangen sind."
+  ],
+  "challenge": {
+    "label": "Für junge Besucher",
+    "title": "Folge dem Brot",
+    "items": [
+      {
+        "text": "Zeig auf den Ofen."
+      },
+      {
+        "text": "Stell dir warmes Brot darin vor."
+      },
+      {
+        "text": "Sag deiner Familie, wie es riechen könnte."
+      }
+    ]
+  },
+  "imageAlt": "Der Steinofen"
+}

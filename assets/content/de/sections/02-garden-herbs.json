@@ -1,0 +1,32 @@
+{
+  "id": "garden-herbs",
+  "title": "Kräutergarten",
+  "navigationTitle": "Kräutergarten",
+  "preview": "Verweilen Sie zwischen den Kräutern der Insel. Thymian, Oregano, Minze, Majoran und Lavendel verbinden Küche, Hausmittel und die Erinnerung an das Familienleben in Kefalos.",
+  "details": [
+    "Bevor moderne Geschäfte und Apotheken zum Alltag gehörten, konnte ein kleiner Garten zugleich Küche und Hausapotheke sein. Kräuter gaben Speisen Geschmack, dem Haus Duft und dem Körper einfache Hilfe.",
+    "In Mylotopi zeigen diese Pflanzen die praktische Weisheit von Inselfamilien. Einige Blätter konnten Brot, Fleisch oder Gemüse würzen und zugleich als einfacher Aufguss dienen.",
+    "Achten Sie auf die Grüntöne, silbrige Blätter und den violetten Lavendel. Die Schönheit dieser Station ist still, gehört aber tief zum Rhythmus des alten Dorfes.",
+    {
+      "type": "heading",
+      "text": "Nächste Station"
+    },
+    "Gehen Sie weiter zur historischen Windmühle, wo die Geschichte vom Garten und der Fürsorge der Familie zu Weizen, Mehl und körperlicher Arbeit führt."
+  ],
+  "challenge": {
+    "label": "Für junge Besucher",
+    "title": "Riech an einem Kraut",
+    "items": [
+      {
+        "text": "Frag zuerst, ob du ein Blatt berühren darfst."
+      },
+      {
+        "text": "Riech vorsichtig daran."
+      },
+      {
+        "text": "Sag deiner Familie, woran es dich erinnert."
+      }
+    ]
+  },
+  "imageAlt": "Kräutergarten"
+}

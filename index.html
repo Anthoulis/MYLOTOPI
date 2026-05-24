@@ -3,70 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f3ecdf">
-  <title>Mylotopi QR Guide</title>
+  <meta name="theme-color" content="#f7f4e8">
+  <title>Mylotopi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-  <div class="guide-page">
-    <div class="guide-atmosphere" aria-hidden="true"></div>
+  <div class="qr-page">
+    <div class="qr-atmosphere" aria-hidden="true"></div>
 
-    <header class="guide-site-header" id="guide-topbar">
-      <nav class="guide-shell guide-nav-bar" aria-label="Guide navigation">
-        <details class="guide-menu guide-spot-menu" id="spot-menu">
-          <summary class="guide-menu-trigger guide-spot-trigger" id="spot-menu-trigger">
-            <span class="guide-menu-trigger-text" id="active-spot-label"></span>
-            <span class="guide-menu-trigger-icon" aria-hidden="true"></span>
-          </summary>
-          <div class="guide-menu-popover guide-spot-popover" id="spot-switcher" role="group"></div>
-        </details>
+    <header class="site-header" id="qr-topbar">
+      <nav class="container site-header__inner" id="qr-nav">
+        <div class="brand" aria-label="Mylotopi">
+          <span class="brand__name">Mylotopi</span>
+        </div>
 
-        <details class="guide-menu guide-language-menu" id="language-menu">
-          <summary class="guide-menu-trigger guide-language-trigger" id="language-menu-trigger">
-            <span class="guide-menu-trigger-text" id="active-language-label"></span>
-            <span class="guide-menu-trigger-icon" aria-hidden="true"></span>
-          </summary>
-          <div class="guide-menu-popover guide-language-popover" id="language-switcher" role="group"></div>
-        </details>
+        <div class="header-controls">
+          <details class="selector selector--stop" id="spot-menu">
+            <summary class="selector__button selector__button--stop" id="spot-menu-trigger">
+              <span class="selector__content">
+                <span class="selector__label" id="spot-control-label"></span>
+                <span class="selector__value" id="active-spot-label"></span>
+              </span>
+              <span class="selector__chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="selector__menu selector__menu--stop" id="spot-switcher" role="group"></div>
+          </details>
+
+          <details class="selector selector--language" id="language-menu">
+            <summary class="selector__button selector__button--language" id="language-menu-trigger">
+              <span class="selector__content">
+                <span class="selector__label" id="language-control-label"></span>
+                <span class="selector__value language-option language-option--active" id="active-language-label"></span>
+              </span>
+              <span class="selector__chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="selector__menu selector__menu--language" id="language-switcher" role="group"></div>
+          </details>
+        </div>
       </nav>
     </header>
 
-    <header class="guide-shell guide-hero" aria-labelledby="guide-title">
-      <p class="guide-kicker" id="guide-kicker"></p>
-      <h1 class="guide-title" id="guide-title"></h1>
-      <p class="guide-intro" id="guide-intro"></p>
-      <div class="guide-ornament" aria-hidden="true">
-        <span></span>
-        <i></i>
-        <span></span>
-      </div>
+    <header class="container qr-hero" aria-labelledby="qr-title">
+      <p class="qr-hero__eyebrow" id="qr-kicker"></p>
+      <h1 class="qr-hero__title" id="qr-title"></h1>
+      <p class="qr-hero__current" id="current-stop-label"></p>
     </header>
 
-    <main class="guide-shell guide-main" id="guide-main"></main>
+    <main class="container qr-main" id="qr-main"></main>
   </div>
 
-  <p class="sr-only" id="guide-announcer" aria-live="polite"></p>
-
-  <noscript>
-    <div class="guide-noscript">
-      This guide needs JavaScript enabled to switch language, jump to a section, and display the correct QR destination.
-    </div>
-  </noscript>
+  <p class="sr-only" id="qr-announcer" aria-live="polite"></p>
 
   <script src="./assets/js/content-meta.js" defer></script>
-  <script src="./assets/locales/en.js" defer></script>
-  <script src="./assets/locales/el.js" defer></script>
-  <script src="./assets/locales/de.js" defer></script>
-  <script src="./assets/locales/nl.js" defer></script>
-  <script src="./assets/locales/pl.js" defer></script>
-  <script src="./assets/locales/it.js" defer></script>
-  <script src="./assets/locales/fr.js" defer></script>
-  <script src="./assets/locales/es.js" defer></script>
-  <script src="./assets/locales/ru.js" defer></script>
-  <script src="./assets/locales/tr.js" defer></script>
   <script src="./assets/js/i18n.js" defer></script>
   <script src="./assets/js/app.js" defer></script>
 </body>

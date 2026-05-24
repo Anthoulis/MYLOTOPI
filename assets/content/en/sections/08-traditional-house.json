@@ -1,0 +1,34 @@
+{
+  "id": "traditional-house",
+  "title": "The Traditional House",
+  "navigationTitle": "Traditional House",
+  "preview": "The traditional house shows the intelligence of a small island home. In less than 20 square meters, family life, cooking, storage, sleep and craft all had their place.",
+  "details": [
+    "This house is more than 130 years old. Families of many generations could share one compact room, arranging each object with care because space was precious.",
+    "The fireplace was the heart of the home, used for cooking, warmth and gathering. Nearby objects such as the hand mill, plates and kitchenware show the daily rhythm of preparing food.",
+    "Beds, storage spaces, a cradle and a hanging bread keeper reveal practical solutions for a crowded household. Nothing was accidental; each object solved a need.",
+    "The loom, chest, uniforms, photographs and religious images speak about work, ceremony, memory and identity. The house was small, but the life inside it was rich.",
+    "Look also for the old ice cabinet. Before electric refrigeration, ice and clever airflow helped keep food cool and water fresh.",
+    {
+      "type": "heading",
+      "text": "Next stop"
+    },
+    "Continue to the bakery, where the village story moves from the family hearth to the communal stone oven."
+  ],
+  "challenge": {
+    "label": "For young visitors",
+    "title": "Find three things",
+    "items": [
+      {
+        "text": "Find something for cooking."
+      },
+      {
+        "text": "Find something for sleeping."
+      },
+      {
+        "text": "Find something for storing food."
+      }
+    ]
+  },
+  "imageAlt": "The Traditional House"
+}

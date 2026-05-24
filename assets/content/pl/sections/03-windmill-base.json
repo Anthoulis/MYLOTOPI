@@ -1,0 +1,88 @@
+{
+  "id": "windmill-base",
+  "title": "Podstawa Wiatraka (1. piętro)",
+  "navigationTitle": "Podstawa Wiatraka (1. piętro)",
+  "preview": "Żywa legenda: Witamy w „Młynie Księdza”! Stoisz wewnątrz najstarszego działającego wiatraka na całej wyspie i w całym archipelagu Dodekanezu. Ma ponad 400 lat, działał codziennie aż do 1987 roku i wciąż jest żywą maszyną, która do dziś miele mąkę!",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Misja dla naszych Młodych Odkrywców i Dorosłych!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Następny cel:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Żywa legenda: Witamy w „Młynie Księdza”! Stoisz wewnątrz najstarszego działającego wiatraka na całej wyspie i w całym archipelagu Dodekanezu. Ma ponad 400 lat, działał codziennie aż do 1987 roku i wciąż jest żywą maszyną, która do dziś miele mąkę!"
+        },
+        {
+          "text": "Przy wejściu: Kiedy przechodzisz przez drzwi, zwróć uwagę na tradycyjny owoc granatu zawieszony na szczęście, obok małej butelki Wody Święconej z góry Athos, która ma ponad 9 lat."
+        },
+        {
+          "text": "Zbudowany na sztormy: Ta gigantyczna maszyna ma 6,2 metra wysokości, a kamienne ściany wokół Ciebie mają 1,2 metra grubości, aby chronić budynek przed dzikimi morskimi sztormami."
+        },
+        {
+          "text": "Masywne maszyny: Na wyższych piętrach znajdują się dwa masywne kamienie młyńskie, z których każdy waży jedną tonę – to ponad dwie tony łącznie!"
+        },
+        {
+          "text": "Starożytne drewno: W 80% drewno w tym budynku jest oryginalne, a reszta została sprowadzona aż z góry Athos. O dziwo, niektóre z ponownie wykorzystanych drewnianych części obracających się w górze mają od 1000 do 1300 lat!"
+        },
+        {
+          "text": "Po Twojej prawej: Widzisz obszar przykryty szmatą? To był magazyn młynarza. Obok niego zobaczysz drewniane siodło dla osła i sanie młockarskie, które ciągnął osioł młynarza, aby oddzielać ziarna pszenicy. Możesz również dostrzec codzienne drewniane narzędzia i piękne zdjęcia innych wiatraków z całej Grecji."
+        },
+        {
+          "text": "Kominek: Młynarz nie używał go tylko do ogrzewania! Przyjrzyj się uważnie wnętrzu – czy widzisz puszkę? Zawiera ona krowi tłuszcz, który młynarz topił, aby smarować ruchome części wiatraka, żeby nie skrzypiały. Tuż nad kominkiem znajduje się fotografia Kostasa Politisa, ukochanego właściciela tego wiatraka, którego dziedzictwo wciąż tu żyje."
+        },
+        {
+          "text": "Po Twojej lewej: Zobaczysz tradycyjną wagę i odważniki, których używano do ostrożnego ważenia świeżej mąki."
+        },
+        {
+          "text": "Pierwsze hamulce: Poszukaj małej, zwisającej liny. Wierz lub nie, ale ta lina była pierwszym systemem hamulcowym wiatraka! Młynarz pociągał za nią, aby podnieść te dwutonowe kamienie młyńskie zaledwie o odrobinę, co pozwalało mu bezpiecznie wyjść na zewnątrz i rozwinąć żagle."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Przetestuj ściany: Sprawdźmy, jak grube są te ściany w rzeczywistości! Stań obok drzwi i wyciągnij ramiona najszerzej jak potrafisz. Czy Twoje ramiona są dłuższe niż grubość ściany, czy wiatrak wygrywa?"
+        },
+        {
+          "text": "Szpieg: Rozejrzyj się po pokoju i sprawdź, czy potrafisz dostrzec drewniane siodło dla osła!"
+        },
+        {
+          "text": "Znajdź tłuszcz: Zajrzyj do kominka – czy potrafisz dostrzec ukrytą puszkę z krowim tłuszczem?"
+        },
+        {
+          "text": "Zauważ hamulce: Znajdź małą wiszącą linę, która służyła jako system hamulcowy wiatraka!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "Kolejny punkt: Następnie przejdźcie dalej na drugie piętro Wiatraka!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Podstawa Wiatraka (1. piętro)"
+}

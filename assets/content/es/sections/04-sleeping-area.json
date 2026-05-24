@@ -1,0 +1,67 @@
+{
+  "id": "sleeping-area",
+  "title": "La zona de descanso del molino de viento (2º piso)",
+  "navigationTitle": "Zona de descanso",
+  "preview": "Cuidado por dónde pisas: ¡Bienvenido al segundo piso! Ten cuidado al pisar las escaleras de madera y vigila tu cabeza con las vigas de arriba. Prepárate para una gran sorpresa sobre cómo vivía la familia.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "¡Una pregunta para nuestros jóvenes exploradores y adultos!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Próximo destino:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Cuidado por dónde pisas: ¡Bienvenido al segundo piso! Ten cuidado al pisar las escaleras de madera y vigila tu cabeza con las vigas de arriba. Prepárate para una gran sorpresa sobre cómo vivía la familia."
+        },
+        {
+          "text": "A tu derecha: En las paredes, verás unas hermosas fotos que muestran diferentes molinos de viento históricos de toda Grecia. ¡Pero este espacio no era solo una galería!"
+        },
+        {
+          "text": "Un dormitorio muy ruidoso: ¡Justo aquí, en el lado derecho, es en realidad donde el molinero y toda su familia solían dormir! ¿Te imaginas intentar tomar una siesta tranquila mientras todo el edificio temblaba, el viento aullaba y la pesada maquinaria trituraba ruidosamente el trigo a solo unos metros de distancia? ¡Debían tener un sueño muy profundo!"
+        },
+        {
+          "text": "A tu izquierda: Ahora, mira hacia el lado izquierdo. Este era un espacio de almacenamiento muy importante y concurrido."
+        },
+        {
+          "text": "Protegiendo la harina: El molinero usaba este lado de la habitación para apilar de forma segura todos los pesados sacos de trigo crudo que esperaban ser molidos, junto a los sacos recién llenados de harina blanca y esponjosa que estaban listos para salir a alimentar al pueblo. ¡Los guardaba justo aquí, cerca de su cama, para poder protegerlos!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Imagina esto: ¿Podrías imaginarte durmiendo en el segundo piso exactamente como solían hacerlo ellos?"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "A continuación: ¡Dirígete al tercer piso del molino de viento!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "La zona de descanso del molino de viento (2º piso)"
+}

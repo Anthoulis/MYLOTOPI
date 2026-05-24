@@ -1,0 +1,85 @@
+{
+  "id": "machinery",
+  "title": "La maquinaria del molino de viento (3er piso)",
+  "navigationTitle": "Maquinaria del molino",
+  "preview": "Cuidado con la cabeza: ¡Bienvenido al tercer piso! Por favor, ten cuidado al pisar la escalera y vigila tu cabeza mientras exploras.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "¡Una misión para nuestros jóvenes exploradores y adultos!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Próximo destino:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Cuidado con la cabeza: ¡Bienvenido al tercer piso! Por favor, ten cuidado al pisar la escalera y vigila tu cabeza mientras exploras."
+        },
+        {
+          "text": "El músculo del molino: Ahora estás viendo el verdadero poder del molino de viento. Mira esa enorme viga de madera sobre las piedras. ¡Es el conector principal que une las pesadas piedras del interior, los engranajes y las gigantescas velas giratorias del exterior!"
+        },
+        {
+          "text": "Piedras de dos toneladas: ¡Estas enormes piedras de moler pesan más de dos toneladas juntas! Fueron importadas desde la isla de Nísiros, que es famosa por producir una piedra única y súper resistente, perfecta para la molienda."
+        },
+        {
+          "text": "El alimentador y la campana: Mira justo encima de las piedras para buscar una caja de madera llamada El Alimentador, donde el molinero vertía el trigo crudo. Pero, ¿cómo sabía cuándo estaba vacía con todo ese ruido fuerte? ¡Busca con cuidado una pequeña campana! Sonaba automáticamente cuando el trigo se agotaba para avisar al molinero de que debía rellenarlo."
+        },
+        {
+          "text": "El primer freno: ¿Ves esa palanca de madera conectada a una pequeña cuerda? Se conecta hasta el primer piso y es el primer sistema de frenado del que hablamos abajo."
+        },
+        {
+          "text": "La caída de la harina: Mira hacia abajo cerca de la palanca para encontrar una trampilla que se conecta a un tubo. ¡Tan pronto como la harina estaba perfectamente triturada, caía directamente por ese tubo hasta la planta baja!"
+        },
+        {
+          "text": "La \"propina\" del molinero: Justo al lado del tubo principal hay una segunda trampilla, más pequeña. En los viejos tiempos, la gente no siempre pagaba con dinero. En su lugar, el molinero usaba esta puerta para recolectar su \"propina\": ¡se quedaba con un pequeño porcentaje de la harina para su propia familia como pago por su duro trabajo!"
+        },
+        {
+          "text": "Giro suave: Localiza la pequeña lata cerca de las trampillas. Abajo usaba grasa de vaca, pero aquí arriba, usaba una mezcla especial de aceite de oliva y jabón para que los engranajes superiores funcionaran sin problemas."
+        },
+        {
+          "text": "El freno de emergencia: Busca junto a la escalera una cuerda muy gruesa. Si el molinero necesitaba detener por completo la producción de harina a toda prisa, tiraba de esta cuerda: ¡el segundo sistema de frenado!"
+        },
+        {
+          "text": "El techo de un barco: Por último, mira hacia el techo. ¿A qué te recuerda? ¡En realidad está diseñado con la forma de un barco para aumentar la potencia del mecanismo y producir harina más rápidamente!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Encuentra la campana y hazla sonar: ¿Puedes encontrar la pequeña campana que advertía al molinero cuando se acababa el trigo? ¿Puedes hacerla sonar?"
+        },
+        {
+          "text": "Encuentra la harina oculta: ¡Examina el suelo y mira si puedes encontrar la trampilla especial de la \"propina\" donde el molinero guardaba su pago ganado con tanto esfuerzo!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "A continuación: ¡Dirígete a la era y a la zona de los burros!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "La maquinaria del molino de viento (3er piso)"
+}

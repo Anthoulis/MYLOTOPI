@@ -1,0 +1,88 @@
+{
+  "id": "windmill-base",
+  "title": "La Base du Moulin à Vent (1er Étage)",
+  "navigationTitle": "La Base du Moulin à Vent (1er Étage)",
+  "preview": "Une légende vivante : Bienvenue au « Moulin du Prêtre » ! Vous vous trouvez à l'intérieur du plus ancien moulin à vent en activité de toute l'île et de tout l'archipel du Dodécanèse. Il a plus de 400 ans, a fonctionné quotidiennement jusqu'en 1987 et est toujours une machine vivante qui moud de la farine aujourd'hui !",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Une mission pour nos jeunes explorateurs et les adultes !"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Prochaine destination :"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Une légende vivante : Bienvenue au « Moulin du Prêtre » ! Vous vous trouvez à l'intérieur du plus ancien moulin à vent en activité de toute l'île et de tout l'archipel du Dodécanèse. Il a plus de 400 ans, a fonctionné quotidiennement jusqu'en 1987 et est toujours une machine vivante qui moud de la farine aujourd'hui !"
+        },
+        {
+          "text": "À l'entrée : En franchissant la porte, remarquez la grenade traditionnelle suspendue pour porter chance, ainsi qu'une petite bouteille d'eau bénite du Mont Athos qui a plus de 9 ans."
+        },
+        {
+          "text": "Construit pour les tempêtes : Cette machine géante mesure 6,2 mètres de haut, et les murs de pierre qui vous entourent font 1,2 mètre d'épaisseur pour protéger le bâtiment des violentes tempêtes marines."
+        },
+        {
+          "text": "Une machinerie massive : Aux étages supérieurs, il y a deux meules massives qui pèsent une tonne chacune, soit plus de deux tonnes au total !"
+        },
+        {
+          "text": "Un bois ancien : 80 % du bois de ce bâtiment est d'origine, et le reste a été rapporté depuis le Mont Athos. Fait incroyable, certaines des pièces en bois réutilisées qui tournent au-dessus de vous ont entre 1 000 et 1 300 ans !"
+        },
+        {
+          "text": "Sur votre droite : Voyez-vous la zone recouverte d'un chiffon ? C'était la réserve du meunier. À côté, vous verrez un bât en bois pour âne et un traîneau à dépiquer que l'âne du meunier tirait pour séparer le blé. Vous pouvez également apercevoir des outils en bois du quotidien et de magnifiques photos d'autres moulins à vent à travers la Grèce."
+        },
+        {
+          "text": "La cheminée : Le meunier ne l'utilisait pas seulement pour se chauffer ! Regardez de près à l'intérieur : voyez-vous une boîte de conserve ? Elle contient de la graisse de vache, que le meunier faisait fondre pour lubrifier les pièces mobiles du moulin afin qu'elles ne grincent pas. Juste au-dessus de la cheminée se trouve une photographie de Kostas Politis, le propriétaire bien-aimé de ce moulin dont l'héritage perdure ici même."
+        },
+        {
+          "text": "Sur votre gauche : Vous verrez une balance traditionnelle et des poids, qui servaient à peser soigneusement la farine fraîche."
+        },
+        {
+          "text": "Les premiers freins : Cherchez la petite corde qui pend. Croyez-le ou non, cette corde était le premier système de freinage du moulin ! Le meunier tirait dessus pour soulever légèrement ces meules de deux tonnes, ce qui lui permettait de sortir en toute sécurité pour déployer les voiles."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Testez les murs : Voyons quelle est l'épaisseur réelle de ces murs ! Placez-vous près de l'entrée et écartez les bras le plus largement possible. Vos bras sont-ils plus longs que l'épaisseur du mur, ou est-ce le moulin qui gagne ?"
+        },
+        {
+          "text": "Espionnez : Regardez autour de la pièce et essayez de repérer le bât en bois de l'âne !"
+        },
+        {
+          "text": "Trouvez la graisse : Regardez dans la cheminée : parviendrez-vous à repérer la boîte de graisse de vache cachée ?"
+        },
+        {
+          "text": "Repérez les freins : Trouvez la petite corde suspendue qui servait de système de freinage au moulin !"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "À venir : Dirigez-vous ensuite vers le deuxième étage du moulin à vent !"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "La Base du Moulin à Vent (1er Étage)"
+}

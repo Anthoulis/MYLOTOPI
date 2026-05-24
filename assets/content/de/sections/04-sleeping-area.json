@@ -1,0 +1,33 @@
+{
+  "id": "sleeping-area",
+  "title": "Schlafbereich",
+  "navigationTitle": "Schlafbereich",
+  "preview": "Im Schlafbereich wird die Windmühle persönlicher. Sie war nicht nur ein Arbeitsgebäude, sondern auch ein Ort, an dem die Familie des Müllers neben Weizen und Mehl ruhte.",
+  "details": [
+    "Achten Sie auf die Holzstufen und das niedrige Holz über Ihrem Kopf. Die Windmühle wurde zuerst für die Arbeit gebaut, deshalb verlangt jede Bewegung Aufmerksamkeit.",
+    "Auf einer Seite zeigen historische Bilder Windmühlen aus Griechenland. Auf der anderen erinnert der Raum an eine sehr menschliche Wahrheit: Der Müller und seine Familie schliefen nah am Klang und an der Verantwortung der Mühle.",
+    "Säcke mit rohem Weizen und frischem Mehl wurden in der Nähe gelagert. Mehl bedeutete Nahrung, Einkommen und Sicherheit für den Haushalt.",
+    "Dieser Raum zeigt, wie eng Arbeit und Privatleben in einer Inselfamilie zusammenliegen konnten.",
+    {
+      "type": "heading",
+      "text": "Nächste Station"
+    },
+    "Gehen Sie weiter zur Mechanik, wo Holz und Stein zeigen, wie Wind zu Mehl wurde."
+  ],
+  "challenge": {
+    "label": "Für junge Besucher",
+    "title": "Stell dir vor, hier zu schlafen",
+    "items": [
+      {
+        "text": "Schau dir den kleinen Raum an."
+      },
+      {
+        "text": "Wo würdest du ein Kissen hinlegen?"
+      },
+      {
+        "text": "Zeig auf eine ruhige Ecke."
+      }
+    ]
+  },
+  "imageAlt": "Bild des Schlafbereichs ist noch nicht verfügbar"
+}

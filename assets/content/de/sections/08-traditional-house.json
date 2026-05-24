@@ -1,0 +1,34 @@
+{
+  "id": "traditional-house",
+  "title": "Das traditionelle Haus",
+  "navigationTitle": "Traditionelles Haus",
+  "preview": "Das traditionelle Haus zeigt die Intelligenz eines kleinen Inselhauses. Auf weniger als 20 Quadratmetern fanden Familie, Kochen, Vorräte, Schlaf und Handwerk ihren Platz.",
+  "details": [
+    "Das Haus ist mehr als 130 Jahre alt. Mehrere Generationen konnten einen engen Raum teilen, wobei jedes Objekt sorgfältig platziert wurde, weil Platz wertvoll war.",
+    "Der Kamin war das Herz des Hauses, zum Kochen, Wärmen und Zusammenkommen. Handmühle, Teller und Küchengeräte zeigen den täglichen Rhythmus der Speisezubereitung.",
+    "Betten, Stauraum, Wiege und aufgehängter Brotkorb zeigen praktische Lösungen für einen vollen Haushalt. Nichts war zufällig; jedes Objekt erfüllte einen Zweck.",
+    "Webstuhl, Truhe, Trachten, Fotografien und religiöse Bilder sprechen von Arbeit, Festen, Erinnerung und Identität. Das Haus war klein, doch das Leben darin reich.",
+    "Suchen Sie auch den alten Eisschrank. Vor elektrischer Kühlung halfen Eis und kluge Luftführung, Lebensmittel und Wasser kühl zu halten.",
+    {
+      "type": "heading",
+      "text": "Nächste Station"
+    },
+    "Gehen Sie weiter zur Bäckerei, wo die Geschichte vom Herd der Familie zum gemeinschaftlichen Steinofen führt."
+  ],
+  "challenge": {
+    "label": "Für junge Besucher",
+    "title": "Finde drei Dinge",
+    "items": [
+      {
+        "text": "Finde etwas zum Kochen."
+      },
+      {
+        "text": "Finde etwas zum Schlafen."
+      },
+      {
+        "text": "Finde etwas zum Aufbewahren von Essen."
+      }
+    ]
+  },
+  "imageAlt": "Das traditionelle Haus"
+}

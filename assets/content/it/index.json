@@ -1,0 +1,139 @@
+{
+  "code": "it",
+  "nativeName": "Italiano",
+  "aliases": [
+    "it",
+    "italian",
+    "italiano",
+    "it-it",
+    "it_it"
+  ],
+  "ui": {
+    "kicker": "Guida QR Mylotopi",
+    "pageTitle": "Benvenuti alla Windmill Experience!",
+    "intro": "Viaggio nel Tempo: Preparatevi a fare un salto nel passato! Non avrete bisogno di una macchina del tempo per questo viaggio, solo di scarpe comode.",
+    "navigationLabel": "Navigazione dell'audioguida",
+    "currentStopLabel": "Tappa attuale",
+    "miniMapTitle": "MINI MAPPA",
+    "miniMapDescription": "Consulta il percorso prima di continuare.",
+    "miniMapTapHint": "Tocca la mappa per aprirla",
+    "miniMapOpen": "Apri mappa",
+    "miniMapDownload": "Scarica mappa",
+    "miniMapModalClose": "Chiudi mappa",
+    "miniMapImageAlt": "Mini mappa di Mylotopi con le nove tappe del percorso",
+    "languageLabel": "Lingua",
+    "spotsLabel": "Tappe della guida",
+    "stopSelectorLabel": "Tappa",
+    "stopSelectorPlaceholder": "Scegli una tappa",
+    "audioHeading": "Audioguida",
+    "audioTitleLabel": "In ascolto",
+    "audioAriaLabel": "{label}: {title}",
+    "selectedBadge": "Tappa attuale",
+    "imagePlaceholderLabel": "Immagine",
+    "imagePlaceholderHint": "Qui si può aggiungere una foto del luogo.",
+    "audioFallback": "L'audio non è disponibile in questa lingua.",
+    "announcerPrefix": "Tappa attuale",
+    "galleryPrevious": "Immagine precedente",
+    "galleryNext": "Immagine successiva",
+    "imageCounter": "{current} / {total}",
+    "readMore": "Leggi di più",
+    "readLess": "Mostra meno",
+    "challengeLabel": "Per i giovani visitatori",
+    "challengeTitle": "Osserva meglio",
+    "previousStop": "Tappa precedente",
+    "nextStop": "Tappa successiva",
+    "previousStopAria": "Vai alla tappa precedente: {title}",
+    "nextStopAria": "Vai alla tappa successiva: {title}",
+    "stopLabelSeparator": " · ",
+    "loadErrorTitle": "Impossibile caricare la guida.",
+    "loadErrorBody": "Servi questa cartella come sito statico e ricarica la pagina."
+  },
+  "miniMap": {
+    "path": "./assets/maps/it/minimap.jpg"
+  },
+  "sectionOrder": [
+    "welcome",
+    "garden-herbs",
+    "windmill-base",
+    "sleeping-area",
+    "machinery",
+    "threshing-floor-donkeys",
+    "cellar-italian-tunnel",
+    "traditional-house",
+    "bakery"
+  ],
+  "sections": [
+    {
+      "id": "welcome",
+      "path": "sections/01-welcome.json",
+      "audio": {
+        "path": "./assets/audio/it/section-01.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "garden-herbs",
+      "path": "sections/02-garden-herbs.json",
+      "audio": {
+        "path": "./assets/audio/it/section-02.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "windmill-base",
+      "path": "sections/03-windmill-base.json",
+      "audio": {
+        "path": "./assets/audio/it/section-03.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "sleeping-area",
+      "path": "sections/04-sleeping-area.json",
+      "audio": {
+        "path": "./assets/audio/it/section-04.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "machinery",
+      "path": "sections/05-machinery.json",
+      "audio": {
+        "path": "./assets/audio/it/section-05.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "path": "sections/06-threshing-floor-donkeys.json",
+      "audio": {
+        "path": "./assets/audio/it/section-06.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "path": "sections/07-cellar-italian-tunnel.json",
+      "audio": {
+        "path": "./assets/audio/it/section-07.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "traditional-house",
+      "path": "sections/08-traditional-house.json",
+      "audio": {
+        "path": "./assets/audio/it/section-08.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "bakery",
+      "path": "sections/09-bakery.json",
+      "audio": {
+        "path": "./assets/audio/it/section-09.mp3",
+        "ready": true
+      }
+    }
+  ]
+}

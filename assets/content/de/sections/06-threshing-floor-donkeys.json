@@ -1,0 +1,33 @@
+{
+  "id": "threshing-floor-donkeys",
+  "title": "Dreschplatz und Esel",
+  "navigationTitle": "Dreschplatz",
+  "preview": "Zurück im Freien erzählt der Steinkreis die Geschichte des Weizens vor dem Mahlen. Hier bereiteten Ernte, Tierkraft und geduldige Hände das Korn vor.",
+  "details": [
+    "Der Dreschplatz war ein wichtiger Arbeitsort im Freien. Weizen und andere Feldfrüchte wurden auf dem Steinkreis ausgebreitet, damit die Körner gelöst und getrennt werden konnten.",
+    "Früher lief ein Esel um den Mittelpfosten und half, die Ernte aufzubrechen. Danach setzten Menschen die Arbeit fort, reinigten und trennten den Weizen.",
+    "Diese Station macht die Geschichte der Windmühle vollständiger. Mehl begann nicht in der Mühle, sondern auf den Feldern, mit Wetter, Ernte, Tieren und wiederholter Arbeit vieler Hände.",
+    "Mylotopi hält auch die Erinnerung an die Tiere des Dorfes nahe bei den Besuchern. Bitte beobachten Sie sie ruhig und aus respektvollem Abstand.",
+    {
+      "type": "heading",
+      "text": "Nächste Station"
+    },
+    "Gehen Sie weiter zum italienischen Tunnel und Keller, wo sich die Atmosphäre von offener Landarbeit zu kühlem Stein und Kriegserinnerung verändert."
+  ],
+  "challenge": {
+    "label": "Für junge Besucher",
+    "title": "Finde den Kreis",
+    "items": [
+      {
+        "text": "Schau auf den runden Boden."
+      },
+      {
+        "text": "Finde die Mitte."
+      },
+      {
+        "text": "Folge dem Kreis mit deinen Augen."
+      }
+    ]
+  },
+  "imageAlt": "Dreschplatz und Esel"
+}

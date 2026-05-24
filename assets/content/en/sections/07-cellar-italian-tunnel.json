@@ -1,0 +1,33 @@
+{
+  "id": "cellar-italian-tunnel",
+  "title": "Italian Tunnel and Cellar",
+  "navigationTitle": "Tunnel and Cellar",
+  "preview": "Enter a cooler, quieter part of Mylotopi. The tunnel and cellar connect stone, wine and the more hidden history of the 1940s.",
+  "details": [
+    "As you step underground, notice the temperature, the curve of the walls and the way sound changes inside the stone passage.",
+    "Today, the cellar presents wine and atmosphere as part of the Mylotopi experience. The cool stone setting also reminds visitors that the same space once belonged to a different moment in history.",
+    "During the 1940s, the tunnel was connected with Italian soldiers. It offered a protected route and shelter, shaped by the needs and fears of wartime.",
+    "At the end of the passage, the route returns toward the restaurant area. The contrast is striking: a space once tied to protection and defense now leads visitors back to hospitality, food and the view over Kefalos.",
+    {
+      "type": "heading",
+      "text": "Next stop"
+    },
+    "When you leave the tunnel, continue toward the traditional house and bakery to return to the domestic life of the old village."
+  ],
+  "challenge": {
+    "label": "For young visitors",
+    "title": "Feel the cool air",
+    "items": [
+      {
+        "text": "Stand quietly for a moment."
+      },
+      {
+        "text": "Does it feel cooler here?"
+      },
+      {
+        "text": "Count three bottles or stones."
+      }
+    ]
+  },
+  "imageAlt": "Italian Tunnel and Cellar"
+}

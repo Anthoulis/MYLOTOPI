@@ -1,0 +1,88 @@
+{
+  "id": "windmill-base",
+  "title": "La Base del Mulino a Vento (1° Piano)",
+  "navigationTitle": "La Base del Mulino a Vento (1° Piano)",
+  "preview": "Una Leggenda Vivente: Benvenuti al \"Mulino del Prete\"! Vi trovate all'interno del più antico mulino a vento funzionante dell'intera isola e di tutto il complesso del Dodecaneso. Ha più di 400 anni, ha funzionato quotidianamente fino al 1987 ed è ancora oggi una macchina viva che macina farina!",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Una Missione per i nostri Giovani Esploratori e Adulti!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Prossima Destinazione:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Una Leggenda Vivente: Benvenuti al \"Mulino del Prete\"! Vi trovate all'interno del più antico mulino a vento funzionante dell'intera isola e di tutto il complesso del Dodecaneso. Ha più di 400 anni, ha funzionato quotidianamente fino al 1987 ed è ancora oggi una macchina viva che macina farina!"
+        },
+        {
+          "text": "All'Ingresso: Mentre varcate la soglia, notate il tradizionale melograno appeso come portafortuna, accanto a una piccola bottiglia di Acqua Santa proveniente dal Monte Athos che ha più di 9 anni."
+        },
+        {
+          "text": "Costruito per le Tempeste: Questa gigantesca macchina è alta 6,2 metri e i muri di pietra intorno a voi sono spessi 1,2 metri per proteggere l'edificio dalle violente tempeste marine."
+        },
+        {
+          "text": "Macchinari Imponenti: Ai piani superiori ci sono due enormi macine di pietra che pesano una tonnellata ciascuna... ovvero più di due tonnellate insieme!"
+        },
+        {
+          "text": "Legno Antico: L'80% del legno in questo edificio è originale, e il resto è stato portato fin dal Monte Athos. Incredibilmente, alcune delle parti in legno riutilizzate che girano qui sopra hanno tra i 1.000 e i 1.300 anni!"
+        },
+        {
+          "text": "Alla Vostra Destra: Vedete l'area coperta da uno straccio? Quello era il magazzino del mugnaio. Accanto ad esso, vedrete una sella di legno per asini e una slitta da trebbiatura che l'asino del mugnaio tirava per separare il grano. Potete anche scorgere utensili di legno di uso quotidiano e bellissime foto di altri mulini a vento in tutta la Grecia."
+        },
+        {
+          "text": "Il Camino: Il mugnaio non lo usava solo per scaldarsi! Guardate attentamente all'interno: vedete una lattina? Contiene grasso di mucca, che il mugnaio scioglieva per lubrificare le parti mobili del mulino a vento in modo che non cigolassero. Proprio sopra il camino c'è una fotografia di Kostas Politis, l'amato proprietario di questo mulino a vento la cui eredità vive proprio qui."
+        },
+        {
+          "text": "Alla Vostra Sinistra: Vedrete una bilancia tradizionale e dei pesi, che venivano usati per pesare accuratamente la farina fresca."
+        },
+        {
+          "text": "I Primi Freni: Cercate la piccola corda che pende verso il basso. Che ci crediate o no, quella corda era il primo sistema frenante del mulino a vento! Il mugnaio la tirava per sollevare quelle macine da due tonnellate solo un pochino, rendendo sicuro per lui uscire e srotolare le vele."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Testate i Muri: Vediamo quanto sono davvero spessi quei muri! Andate a mettervi vicino alla porta e allargate le braccia il più possibile. Le vostre braccia sono più lunghe dello spessore del muro, o vince il mulino a vento?"
+        },
+        {
+          "text": "Spia: Guardatevi intorno nella stanza e vedete se riuscite a individuare la sella di legno dell'asino!"
+        },
+        {
+          "text": "Trovate il Grasso: Sbirciate nel camino: riuscite a individuare la lattina nascosta di grasso di mucca?"
+        },
+        {
+          "text": "Individuate i Freni: Trovate la piccola corda appesa che fungeva da sistema frenante del mulino a vento!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "In Arrivo: Quindi proseguite verso il secondo piano del Mulino a Vento!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "La Base del Mulino a Vento (1° Piano)"
+}

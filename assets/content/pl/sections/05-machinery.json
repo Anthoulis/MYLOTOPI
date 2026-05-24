@@ -1,0 +1,85 @@
+{
+  "id": "machinery",
+  "title": "Mechanizmy Wiatraka (3. piętro)",
+  "navigationTitle": "Mechanizmy Wiatraka (3. piętro)",
+  "preview": "Uważajcie na głowy: Witamy na trzecim piętrze! Prosimy uważać pod nogi na drabinie i uważać na głowy podczas zwiedzania.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Misja dla naszych Młodych Odkrywców i Dorosłych!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Następny cel:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Uważajcie na głowy: Witamy na trzecim piętrze! Prosimy uważać pod nogi na drabinie i uważać na głowy podczas zwiedzania."
+        },
+        {
+          "text": "Muskuły Młyna: Patrzycie teraz na prawdziwą moc wiatraka. Spójrzcie na tę masywną drewnianą belkę nad kamieniami. To główny łącznik między ciężkimi kamieniami wewnątrz, przekładniami zębatymi i gigantycznymi, obracającymi się żaglami na zewnątrz!"
+        },
+        {
+          "text": "Dwutonowe kamienie: Te masywne kamienie młyńskie ważą razem ponad dwie tony! Zostały sprowadzone aż z wyspy Nisyros, która słynie z wydobycia unikalnego, super mocnego kamienia, idealnego do mielenia."
+        },
+        {
+          "text": "Podajnik i Dzwonek: Poszukajcie tuż nad kamieniami drewnianego pudła zwanego Podajnikiem, do którego młynarz wsypywał surową pszenicę. Ale skąd wiedział, że jest puste, przy całym tym hałasie? Przyjrzyjcie się uważnie, a znajdziecie maleńki dzwonek! Dzwonił on automatycznie, gdy kończyła się pszenica, aby poinformować młynarza, że czas ją uzupełnić."
+        },
+        {
+          "text": "Pierwszy hamulec: Widzicie tę drewnianą dźwignię połączoną z małą liną? Łączy się ona z samym dołem, z pierwszym piętrem i jest pierwszym systemem hamulcowym, o którym rozmawialiśmy na dole."
+        },
+        {
+          "text": "Zrzucanie mąki: Spójrzcie w dół obok dźwigni, aby znaleźć klapę łączącą się z rurą. Gdy tylko mąka była idealnie zmielona, spadała prosto w dół tą rurą na najniższe piętro!"
+        },
+        {
+          "text": "„Napiwek” młynarza: Tuż obok głównej rury znajduje się druga, mniejsza klapa. W dawnych czasach ludzie nie zawsze płacili pieniędzmi. Zamiast tego młynarz używał tych drzwiczek, aby zebrać swój „napiwek” – zatrzymując niewielki procent mąki dla własnej rodziny jako zapłatę za swoją ciężką pracę!"
+        },
+        {
+          "text": "Płynne obroty: Zlokalizujcie małą puszkę w pobliżu klap. Na dole używał krowiego tłuszczu, ale tutaj na górze używał specjalnej mieszanki oliwy z oliwek i mydła, aby górne przekładnie działały płynnie."
+        },
+        {
+          "text": "Hamulec awaryjny: Poszukajcie naprawdę grubej liny obok drabiny. Jeśli młynarz musiał w pośpiechu całkowicie przestać produkować mąkę, pociągał za tę linę – to drugi system hamulcowy!"
+        },
+        {
+          "text": "Sufit jak statek: Na koniec spójrzcie w górę na sufit. Co Wam przypomina? W rzeczywistości został zaprojektowany w kształcie statku, aby zwiększyć moc mechanizmu i szybciej produkować mąkę!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Nasłuchujcie Dzwonka i Zadzwońcie nim: Czy potraficie znaleźć maleńki dzwonek, który ostrzegał młynarza, gdy kończyła się pszenica? Czy możecie nim zadzwonić?"
+        },
+        {
+          "text": "Znajdź ukrytą mąkę: Przeskanujcie podłogę i sprawdźcie, czy dacie radę dostrzec specjalne drzwiczki na „napiwek”, w których młynarz trzymał swoją ciężko zarobioną zapłatę!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "Kolejny punkt: Następnie przejdźcie dalej na Klepisko i do Strefy Osiołków!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Mechanizmy Wiatraka (3. piętro)"
+}

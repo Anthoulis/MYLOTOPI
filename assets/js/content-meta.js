@@ -1,223 +1,183 @@
 (function () {
   window.MYLOTOPI_GUIDE_META = {
-  "defaultLanguage": "en",
-  "languages": {
-    "en": {
-      "nativeName": "English",
-      "flag": "🇬🇧",
-      "aliases": [
-        "en",
-        "english",
-        "en-gb",
-        "en-us",
-        "en_gb",
-        "en_us"
-      ]
+    defaultLanguage: "en",
+    contentBasePath: "./assets/content",
+    languages: ["en", "el", "de", "fr", "it", "es", "nl", "pl", "ru", "tr"],
+    stagedLanguages: [],
+    spotOrder: [
+      "welcome",
+      "garden-herbs",
+      "windmill-base",
+      "sleeping-area",
+      "machinery",
+      "threshing-floor-donkeys",
+      "cellar-italian-tunnel",
+      "traditional-house",
+      "bakery",
+    ],
+    spots: {
+      welcome: {
+        anchorId: "welcome",
+        accent: "#b9ad45",
+        accentSoft: "rgba(185, 173, 69, 0.18)",
+        images: [
+          {
+            src: "./assets/images/stops/01-welcome/01-windmill-sunset.jpg",
+            alt: {
+              en: "Mylotopi windmill and village terrace at sunset",
+              el: "Ο ανεμόμυλος και η αυλή του Μυλοτόπι στο φως του ηλιοβασιλέματος",
+              de: "Die Windmühle und Dorfterrasse von Mylotopi im Abendlicht",
+            },
+            fit: "cover",
+            position: "center",
+          },
+        ],
+      },
+      "garden-herbs": {
+        anchorId: "garden-herbs",
+        accent: "#667321",
+        accentSoft: "rgba(102, 115, 33, 0.16)",
+        images: [
+          {
+            src: "./assets/images/stops/02-herb-garden/01-garden-canopy.jpg",
+            alt: {
+              en: "Mylotopi garden and windmill sails seen through warm shade",
+              el: "Ο κήπος του Μυλοτόπι και τα πανιά του ανεμόμυλου μέσα από ζεστή σκιά",
+              de: "Der Garten von Mylotopi und die Windmühlenflügel im warmen Schatten",
+            },
+            fit: "cover",
+            position: "center",
+          },
+        ],
+      },
+      "windmill-base": {
+        anchorId: "windmill-base",
+        accent: "#8f6b32",
+        accentSoft: "rgba(143, 107, 50, 0.18)",
+        images: [
+          {
+            src: "./assets/images/stops/03-windmill-base/01-historic-windmill.jpg",
+            alt: {
+              en: "Historic Mylotopi windmill before restoration",
+              el: "Ο ιστορικός ανεμόμυλος του Μυλοτόπι πριν από την αποκατάσταση",
+              de: "Die historische Windmühle von Mylotopi vor der Restaurierung",
+            },
+            fit: "contain",
+            position: "center",
+          },
+        ],
+      },
+      "sleeping-area": {
+        anchorId: "sleeping-area",
+        accent: "#8f6b32",
+        accentSoft: "rgba(143, 107, 50, 0.14)",
+        images: [],
+      },
+      machinery: {
+        anchorId: "machinery",
+        accent: "#8f6b32",
+        accentSoft: "rgba(143, 107, 50, 0.12)",
+        images: [
+          {
+            src: "./assets/images/stops/05-machinery/01-machinery-detail.jpg",
+            alt: {
+              en: "Close view of the restored wooden windmill machinery",
+              el: "Κοντινή άποψη του αποκατεστημένου ξύλινου μηχανισμού του ανεμόμυλου",
+              de: "Nahansicht der restaurierten hölzernen Windmühlenmechanik",
+            },
+            fit: "cover",
+            position: "center",
+          },
+        ],
+      },
+      "threshing-floor-donkeys": {
+        anchorId: "threshing-floor-donkeys",
+        accent: "#a77733",
+        accentSoft: "rgba(167, 119, 51, 0.18)",
+        images: [
+          {
+            src: "./assets/images/stops/06-threshing-floor-donkeys/01-threshing-floor.jpg",
+            alt: {
+              en: "Traditional threshing floor at Mylotopi",
+              el: "Παραδοσιακό αλώνι στο Μυλοτόπι",
+              de: "Traditioneller Dreschplatz in Mylotopi",
+            },
+            fit: "cover",
+            position: "center",
+          },
+        ],
+      },
+      "cellar-italian-tunnel": {
+        anchorId: "cellar-italian-tunnel",
+        accent: "#667321",
+        accentSoft: "rgba(102, 115, 33, 0.18)",
+        images: [
+          {
+            src: "./assets/images/stops/07-cellar-italian-tunnel/04-official-tunnel.jpg",
+            alt: {
+              en: "Official Mylotopi view of the Italian tunnel",
+              el: "Άποψη του ιταλικού τούνελ στο Μυλοτόπι",
+              de: "Blick in den italienischen Tunnel von Mylotopi",
+            },
+            fit: "contain",
+            position: "center",
+          },
+          {
+            src: "./assets/images/stops/07-cellar-italian-tunnel/05-wine-cellar.jpg",
+            alt: {
+              en: "Wine cellar inside the old Mylotopi tunnel",
+              el: "Η κάβα κρασιού μέσα στο παλιό τούνελ του Μυλοτόπι",
+              de: "Der Weinkeller im alten Tunnel von Mylotopi",
+            },
+            fit: "contain",
+            position: "center",
+          },
+        ],
+      },
+      "traditional-house": {
+        anchorId: "traditional-house",
+        accent: "#8f6b32",
+        accentSoft: "rgba(143, 107, 50, 0.18)",
+        images: [
+          {
+            src: "./assets/images/stops/08-traditional-house/01-traditional-house.jpg",
+            alt: {
+              en: "Traditional clothing and family objects inside the Mylotopi house",
+              el: "Παραδοσιακά ρούχα και οικογενειακά αντικείμενα μέσα στο σπίτι του Μυλοτόπι",
+              de: "Traditionelle Kleidung und Familiengegenstände im Haus von Mylotopi",
+            },
+            fit: "cover",
+            position: "center",
+          },
+        ],
+      },
+      bakery: {
+        anchorId: "bakery",
+        accent: "#9b6231",
+        accentSoft: "rgba(155, 98, 49, 0.18)",
+        images: [
+          {
+            src: "./assets/images/stops/09-bakery/01-stone-oven.jpg",
+            alt: {
+              en: "Stone oven inside the Mylotopi bakery",
+              el: "Ο πετρόχτιστος φούρνος στο Μυλοτόπι",
+              de: "Der Steinofen in Mylotopi",
+            },
+            fit: "cover",
+            position: "center",
+          },
+          {
+            src: "./assets/images/stops/09-bakery/02-bread-oven.jpg",
+            alt: {
+              en: "Traditional bread baking in the stone oven",
+              el: "Παραδοσιακό ψωμί που ψήνεται στον πετρόχτιστο φούρνο",
+              de: "Traditionelles Brot beim Backen im Steinofen",
+            },
+            fit: "cover",
+            position: "center",
+          },
+        ],
+      },
     },
-    "el": {
-      "nativeName": "Ελληνικά",
-      "flag": "🇬🇷",
-      "aliases": [
-        "el",
-        "gr",
-        "greek",
-        "el-gr",
-        "el_gr"
-      ]
-    },
-    "de": {
-      "nativeName": "Deutsch",
-      "flag": "🇩🇪",
-      "aliases": [
-        "de",
-        "german",
-        "deutsch",
-        "de-de",
-        "de_de"
-      ]
-    },
-    "nl": {
-      "nativeName": "Nederlands",
-      "flag": "🇳🇱",
-      "aliases": [
-        "nl",
-        "dutch",
-        "nederlands",
-        "nl-nl",
-        "nl_nl"
-      ]
-    },
-    "pl": {
-      "nativeName": "Polski",
-      "flag": "🇵🇱",
-      "aliases": [
-        "pl",
-        "polish",
-        "polski",
-        "pl-pl",
-        "pl_pl"
-      ]
-    },
-    "it": {
-      "nativeName": "Italiano",
-      "flag": "🇮🇹",
-      "aliases": [
-        "it",
-        "italian",
-        "italiano",
-        "it-it",
-        "it_it"
-      ]
-    },
-    "fr": {
-      "nativeName": "Français",
-      "flag": "🇫🇷",
-      "aliases": [
-        "fr",
-        "french",
-        "français",
-        "francais",
-        "fr-fr",
-        "fr_fr"
-      ]
-    },
-    "es": {
-      "nativeName": "Español",
-      "flag": "🇪🇸",
-      "aliases": [
-        "es",
-        "spanish",
-        "español",
-        "espanol",
-        "es-es",
-        "es_es"
-      ]
-    },
-    "ru": {
-      "nativeName": "Русский",
-      "flag": "🇷🇺",
-      "aliases": [
-        "ru",
-        "russian",
-        "русский",
-        "ru-ru",
-        "ru_ru"
-      ]
-    },
-    "tr": {
-      "nativeName": "Türkçe",
-      "flag": "🇹🇷",
-      "aliases": [
-        "tr",
-        "turkish",
-        "türkçe",
-        "turkce",
-        "tr-tr",
-        "tr_tr"
-      ]
-    }
-  },
-  "spotOrder": [
-    "welcome",
-    "herb-garden",
-    "windmill-first-floor",
-    "windmill-second-floor",
-    "windmill-third-floor",
-    "threshing-floor-donkeys",
-    "cellar-italian-tunnel",
-    "traditional-house",
-    "bakery"
-  ],
-  "spotAliases": {
-    "aloni": "threshing-floor-donkeys",
-    "tunnel": "cellar-italian-tunnel",
-    "fournos": "bakery",
-    "spiti": "traditional-house",
-    "anemomylos": "windmill-first-floor"
-  },
-  "spots": {
-    "welcome": {
-      "anchorId": "welcome",
-      "accent": "#8b6d3d",
-      "accentSoft": "rgba(139, 109, 61, 0.16)",
-      "images": [],
-      "audioPlaceholder": true
-    },
-    "herb-garden": {
-      "anchorId": "herb-garden",
-      "accent": "#6f7d3d",
-      "accentSoft": "rgba(111, 125, 61, 0.16)",
-      "images": [],
-      "audioPlaceholder": true
-    },
-    "windmill-first-floor": {
-      "anchorId": "windmill-first-floor",
-      "accent": "#58708a",
-      "accentSoft": "rgba(88, 112, 138, 0.18)",
-      "images": [],
-      "audioPlaceholder": true
-    },
-    "windmill-second-floor": {
-      "anchorId": "windmill-second-floor",
-      "accent": "#58708a",
-      "accentSoft": "rgba(88, 112, 138, 0.14)",
-      "images": [],
-      "audioPlaceholder": true
-    },
-    "windmill-third-floor": {
-      "anchorId": "windmill-third-floor",
-      "accent": "#58708a",
-      "accentSoft": "rgba(88, 112, 138, 0.12)",
-      "images": [],
-      "audioPlaceholder": true
-    },
-    "threshing-floor-donkeys": {
-      "anchorId": "threshing-floor-donkeys",
-      "accent": "#a77733",
-      "accentSoft": "rgba(167, 119, 51, 0.18)",
-      "images": [],
-      "audioPlaceholder": true
-    },
-    "cellar-italian-tunnel": {
-      "anchorId": "cellar-italian-tunnel",
-      "accent": "#5f7260",
-      "accentSoft": "rgba(95, 114, 96, 0.18)",
-      "images": [
-        {
-          "src": "./assets/images/tunnel/1692269653-IMG_8786.jpeg",
-          "alt": "Tunnel entrance and stone passage at Mylotopi",
-          "fit": "contain",
-          "position": "center"
-        },
-        {
-          "src": "./assets/images/tunnel/1692269915-IMG_9880.jpeg",
-          "alt": "Interior view of the Mylotopi tunnel",
-          "fit": "contain",
-          "position": "center"
-        },
-        {
-          "src": "./assets/images/tunnel/1692270479-IMG_9871.jpeg",
-          "alt": "Stone tunnel detail at Mylotopi",
-          "fit": "contain",
-          "position": "center"
-        }
-      ],
-      "audioPlaceholder": true
-    },
-    "traditional-house": {
-      "anchorId": "traditional-house",
-      "accent": "#7b5d7c",
-      "accentSoft": "rgba(123, 93, 124, 0.18)",
-      "images": [],
-      "audioPlaceholder": true
-    },
-    "bakery": {
-      "anchorId": "bakery",
-      "accent": "#b56840",
-      "accentSoft": "rgba(181, 104, 64, 0.18)",
-      "images": [],
-      "audioPlaceholder": true
-    }
-  }
-};
+  };
 })();

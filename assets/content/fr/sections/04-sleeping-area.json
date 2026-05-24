@@ -1,0 +1,67 @@
+{
+  "id": "sleeping-area",
+  "title": "L'Espace Sommeil du Moulin à Vent (2e Étage)",
+  "navigationTitle": "L'Espace Sommeil du Moulin à Vent (2e Étage)",
+  "preview": "Faites attention où vous marchez : Bienvenue au deuxième étage ! Faites attention où vous posez les pieds dans les escaliers en bois et prenez garde à votre tête avec les poutres au-dessus. Préparez-vous à une grande surprise sur la façon dont vivait la famille.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Une Question pour nos Jeunes Explorateurs et les Adultes !"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Prochaine Destination :"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Faites attention où vous marchez : Bienvenue au deuxième étage ! Faites attention où vous posez les pieds dans les escaliers en bois et prenez garde à votre tête avec les poutres au-dessus. Préparez-vous à une grande surprise sur la façon dont vivait la famille."
+        },
+        {
+          "text": "Sur votre droite : Sur les murs, vous verrez de magnifiques photos montrant différents moulins à vent historiques de toute la Grèce. Mais cet espace n'était pas qu'une simple galerie !"
+        },
+        {
+          "text": "Une chambre très bruyante : C'est exactement ici, sur le côté droit, que le meunier et toute sa famille dormaient ! Pouvez-vous imaginer essayer de faire une sieste paisible alors que tout le bâtiment tremblait, que le vent hurlait et que la machinerie lourde broyait bruyamment le blé à quelques mètres de là ? Ils devaient avoir le sommeil très lourd !"
+        },
+        {
+          "text": "Sur votre gauche : Maintenant, regardez sur le côté gauche. Il s'agissait d'un espace de stockage très important et toujours en mouvement."
+        },
+        {
+          "text": "Protéger la farine : Le meunier utilisait ce côté de la pièce pour empiler en toute sécurité tous les lourds sacs de blé brut en attente d'être moulus, à côté des sacs fraîchement remplis de farine blanche et légère, prêts à partir pour nourrir le village. Il les gardait juste ici, près de son lit, pour pouvoir les protéger !"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Imaginez ceci : Pourriez-vous vous imaginer dormir au deuxième étage exactement comme ils le faisaient autrefois ?"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "À venir : Dirigez-vous ensuite vers le troisième étage du moulin à vent !"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "L'Espace Sommeil du Moulin à Vent (2e Étage)"
+}

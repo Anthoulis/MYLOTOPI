@@ -1,0 +1,34 @@
+{
+  "id": "bakery",
+  "title": "The Stone Oven",
+  "navigationTitle": "Stone Oven",
+  "preview": "The bakery completes the story of wheat and flour. Here, the village gathered around bread, fire, patience and the shared work of daily nourishment.",
+  "details": [
+    "The stone oven is more than 150 years old. In the past, many women of the village brought bread here for their families, making the bakery a practical and social center.",
+    "Bread was not rushed. Dough was mixed and shaped the day before, then left to rest. Early the next morning, the oven was heated carefully before the loaves were placed inside.",
+    "After one or two hours of baking, the smell of fresh bread would move through the village. The process joined home, field, mill and oven into one cycle of island life.",
+    "Look at the photographs around the room to see how the work was done and how much knowledge lived in ordinary hands.",
+    "At the end of the walk, the restaurant-cafe becomes a natural place to pause, look back across the village and let the story settle.",
+    {
+      "type": "heading",
+      "text": "Thank you"
+    },
+    "Thank you for walking through Mylotopi and the memory of old Kefalos with us."
+  ],
+  "challenge": {
+    "label": "For young visitors",
+    "title": "Follow the bread",
+    "items": [
+      {
+        "text": "Point to the oven."
+      },
+      {
+        "text": "Imagine warm bread inside."
+      },
+      {
+        "text": "Tell your family what it might smell like."
+      }
+    ]
+  },
+  "imageAlt": "The Stone Oven"
+}

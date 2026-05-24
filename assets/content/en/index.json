@@ -1,0 +1,154 @@
+{
+  "code": "en",
+  "nativeName": "English",
+  "aliases": [
+    "en",
+    "english",
+    "en-gb",
+    "en-us",
+    "en_gb",
+    "en_us"
+  ],
+  "languageLabels": {
+    "en": "English",
+    "el": "Greek",
+    "de": "German",
+    "fr": "French",
+    "it": "Italian",
+    "es": "Spanish",
+    "nl": "Dutch",
+    "pl": "Polish",
+    "ru": "Russian",
+    "tr": "Turkish"
+  },
+  "ui": {
+    "kicker": "Kefalos, Kos · Audio guide",
+    "pageTitle": "Windmill Experience",
+    "heroTitle": "Windmill Experience",
+    "intro": "A companion walk through the restored Mylotopi village: windmill, stone, bread, herbs, family memory and the everyday rhythm of old Kefalos.",
+    "navigationLabel": "Audio-guide navigation",
+    "currentStopLabel": "Current stop",
+    "miniMapTitle": "MINI MAP",
+    "miniMapDescription": "See the route before continuing.",
+    "miniMapTapHint": "Tap to open the full route map",
+    "miniMapView": "View map",
+    "miniMapOpen": "Open map",
+    "miniMapDownload": "Download map",
+    "miniMapModalClose": "Close map",
+    "miniMapImageAlt": "Mylotopi mini-map showing the nine tour stops",
+    "languageLabel": "Language",
+    "spotsLabel": "Guide stops",
+    "stopSelectorLabel": "Tour stop",
+    "stopSelectorPlaceholder": "Choose a stop",
+    "audioHeading": "Audio guide",
+    "audioTitleLabel": "Now listening",
+    "audioAriaLabel": "{label}: {title}",
+    "selectedBadge": "Current stop",
+    "imagePlaceholderLabel": "Image",
+    "imagePlaceholderHint": "A location image can be added here when available.",
+    "audioFallback": "The audio file is not available in this language yet.",
+    "announcerPrefix": "Active stop",
+    "galleryPrevious": "Previous image",
+    "galleryNext": "Next image",
+    "imageCounter": "{current} / {total}",
+    "readMore": "Read the full story",
+    "readLess": "Show less",
+    "challengeLabel": "For young visitors",
+    "challengeTitle": "Look closer",
+    "previousStop": "Previous stop",
+    "nextStop": "Next stop",
+    "previousStopAria": "Go to previous stop: {title}",
+    "nextStopAria": "Go to next stop: {title}",
+    "stopLabelSeparator": " · ",
+    "loadErrorTitle": "Unable to load guide content.",
+    "loadErrorBody": "Please serve this folder as a static website and reload the page."
+  },
+  "miniMap": {
+    "path": "./assets/maps/en/minimap.jpg"
+  },
+  "sectionOrder": [
+    "welcome",
+    "garden-herbs",
+    "windmill-base",
+    "sleeping-area",
+    "machinery",
+    "threshing-floor-donkeys",
+    "cellar-italian-tunnel",
+    "traditional-house",
+    "bakery"
+  ],
+  "sections": [
+    {
+      "id": "welcome",
+      "path": "sections/01-welcome.json",
+      "audio": {
+        "path": "./assets/audio/en/section-01.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "garden-herbs",
+      "path": "sections/02-garden-herbs.json",
+      "audio": {
+        "path": "./assets/audio/en/section-02.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "windmill-base",
+      "path": "sections/03-windmill-base.json",
+      "audio": {
+        "path": "./assets/audio/en/section-03.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "sleeping-area",
+      "path": "sections/04-sleeping-area.json",
+      "audio": {
+        "path": "./assets/audio/en/section-04.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "machinery",
+      "path": "sections/05-machinery.json",
+      "audio": {
+        "path": "./assets/audio/en/section-05.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "path": "sections/06-threshing-floor-donkeys.json",
+      "audio": {
+        "path": "./assets/audio/en/section-06.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "path": "sections/07-cellar-italian-tunnel.json",
+      "audio": {
+        "path": "./assets/audio/en/section-07.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "traditional-house",
+      "path": "sections/08-traditional-house.json",
+      "audio": {
+        "path": "./assets/audio/en/section-08.mp3",
+        "ready": true
+      }
+    },
+    {
+      "id": "bakery",
+      "path": "sections/09-bakery.json",
+      "audio": {
+        "path": "./assets/audio/en/section-09.mp3",
+        "ready": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "bakery",
+  "title": "De Bakkerij",
+  "navigationTitle": "De Bakkerij",
+  "preview": "Een ontmoetingsplek: Welkom bij de traditionele oven! Deze prachtige stenen oven is meer dan 150 jaar oud. Vroeger kwamen de meeste vrouwen uit het dorp hierheen om hun dagelijks brood voor hun gezin te bakken.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Een Vraag voor onze Jonge Ontdekkingsreizigers en Volwassenen!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Een ontmoetingsplek: Welkom bij de traditionele oven! Deze prachtige stenen oven is meer dan 150 jaar oud. Vroeger kwamen de meeste vrouwen uit het dorp hierheen om hun dagelijks brood voor hun gezin te bakken."
+        },
+        {
+          "text": "Een proces van twee dagen: Brood bakken was toen niet zo snel als even naar de supermarkt rennen! Het was eigenlijk een proces van twee dagen. De avond van tevoren mengden en vormden de dames het deeg zorgvuldig, waarna het een nacht bleef rusten en rijzen."
+        },
+        {
+          "text": "Vers gebakken: De volgende ochtend, als het deeg klaar was, maakten ze een heet vuur om de oven op te warmen. Zodra de temperatuur precies goed was, plaatsten ze het deeg erin. Na één tot twee uur bakken rook het hele dorp naar de heerlijke geur van vers, warm brood dat klaar was om opgegeten te worden!"
+        },
+        {
+          "text": "Historische foto's: Als je rondkijkt, zie je een aantal prachtige foto's die precies laten zien hoe zij deze procedure uitvoerden."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "De Vroege Vogel: Het hele dorp had vers brood nodig. Kun jij raden hoe laat de bakker elke ochtend wakker moest worden om te beginnen met het maken van het deeg? (Hint: Het was lang voordat de zon opkwam!)"
+        },
+        {
+          "text": "Kijk Goed: Kijk goed naar de foto's om te zien hoe de vrouwen uit het dorp vroeger in de bakkerij werkten."
+        },
+        {
+          "text": "Kijk Goed: Kijk goed naar de foto's om te zien hoe de vrouwen uit het dorp vroeger in de bakkerij werkten."
+        },
+        {
+          "text": "Bedankt: Bedankt dat jullie vandaag samen met ons op ontdekking zijn gegaan!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "De Bakkerij"
+}

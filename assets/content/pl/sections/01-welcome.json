@@ -1,0 +1,111 @@
+{
+  "id": "welcome",
+  "title": "Witamy w Wiatrakowej Przygodzie!",
+  "navigationTitle": "Witamy w Wiatrakowej Przygodzie!",
+  "preview": "Podróż w czasie: Przygotujcie się na krok w przeszłość! Do tej podróży nie będziecie potrzebować wehikułu czasu, wystarczą tylko wygodne buty.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Co będziecie odkrywać:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Jak słuchać przewodnika:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    },
+    {
+      "type": "heading",
+      "text": "Tajna Misja dla Młodych Odkrywców!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-04"
+    },
+    {
+      "type": "heading",
+      "text": "Następny cel:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-05"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Podróż w czasie: Przygotujcie się na krok w przeszłość! Do tej podróży nie będziecie potrzebować wehikułu czasu, wystarczą tylko wygodne buty."
+        },
+        {
+          "text": "Odrestaurowana wioska: Dzięki pięknej renowacji przeprowadzonej przez rodzinę Voudouris, zobaczycie dokładnie, jak żyli wyspiarze ponad wiek temu, na długo przed wynalezieniem Wi-Fi. Będziecie mieli również okazję pomyszkować i odkryć tajną historię z lat 40. XX wieku!"
+        },
+        {
+          "text": "Życie młynarza: Dziś możecie wejść w buty prawdziwego młynarza. Uwaga, spoiler: jego codzienny trening polegał na podnoszeniu ciężkich worków z mąką przez cały dzień, tylko po to, aby wykarmić większość wioski."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Gigantyczny Wiatrak: Zwiedźcie prawdziwy, działający wiatrak od samego dołu aż na sam szczyt."
+        },
+        {
+          "text": "Życie w wiosce: Zajrzyjcie do tradycyjnego domu i piekarni."
+        },
+        {
+          "text": "Przyroda i zwierzęta: Poczujcie zapach wspaniałych ziół w naszych ogrodach, odwiedźcie klepisko i przywitajcie się z naszymi uroczymi osiołkami."
+        },
+        {
+          "text": "Podziemne sekrety: Przejdźcie prosto przez prawdziwy tunel wojskowy!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "To super proste: Dorośli, po prostu zeskanujcie kody QR, które znajdziecie, używając aparatu w telefonie. Nie musicie pobierać żadnych aplikacji!"
+        },
+        {
+          "text": "Słuchajcie razem: Wystarczy podgłośnić telefon lub podzielić się słuchawkami i podążać za numerami rozmieszczonymi po wiosce."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-04",
+      "items": [
+        {
+          "text": "Chwyćcie swój sprzęt artystyczny: Damy Wam specjalny Szkic Mylotopi i kilka kredek do zabrania ze sobą."
+        },
+        {
+          "text": "Obserwujcie wszystko: Spacerując dzisiaj, miejcie oczy szeroko otwarte! Przyjrzyjcie się bardzo uważnie gigantycznemu wiatrakowi, ciężkim kamieniom i starym narzędziom. Spróbujcie zapamiętać wszystkie piękne kolory, które widzicie."
+        },
+        {
+          "text": "Stwórzcie arcydzieło: Kiedy zakończycie swoją przygodę i usiądziecie, aby odpocząć w naszej restauracji-kawiarni, będziecie mogli pokolorować swój rysunek i zamienić go w prawdziwe arcydzieło!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-05",
+      "items": [
+        {
+          "text": "Kolejny punkt: Przejdźcie dalej do naszych ogrodów z ziołami!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Witamy w Wiatrakowej Przygodzie!"
+}

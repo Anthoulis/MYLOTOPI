@@ -1,0 +1,33 @@
+{
+  "id": "threshing-floor-donkeys",
+  "title": "Threshing Floor and Donkeys",
+  "navigationTitle": "Threshing Floor",
+  "preview": "Back outside, the stone circle tells the story of wheat before milling. Here, harvest, animal strength and patient hands prepared grain for the windmill.",
+  "details": [
+    "The threshing floor was an essential outdoor workspace. Wheat and other crops were spread across the stone circle, then pressed and broken so the useful grain could be separated.",
+    "In the past, a donkey walked around the center post, helping loosen the harvested crop. Afterward, people continued the work by separating and cleaning the wheat.",
+    "This stop makes the windmill story fuller. Flour did not begin inside the mill; it began with fields, weather, harvesters, animals and the repeated work of many hands.",
+    "Mylotopi also keeps the memory of village animals close to the visitor experience. Please admire them calmly and from a respectful distance.",
+    {
+      "type": "heading",
+      "text": "Next stop"
+    },
+    "Continue toward the Italian tunnel and cellar, where the atmosphere changes from open rural work to cool stone and wartime memory."
+  ],
+  "challenge": {
+    "label": "For young visitors",
+    "title": "Find the circle",
+    "items": [
+      {
+        "text": "Look at the round floor."
+      },
+      {
+        "text": "Find the middle."
+      },
+      {
+        "text": "Follow the circle with your eyes."
+      }
+    ]
+  },
+  "imageAlt": "Threshing Floor and Donkeys"
+}

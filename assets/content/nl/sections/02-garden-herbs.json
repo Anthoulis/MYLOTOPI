@@ -1,0 +1,76 @@
+{
+  "id": "garden-herbs",
+  "title": "Onze Tuin met Onze Kruiden!",
+  "navigationTitle": "Onze Tuin met Onze Kruiden!",
+  "preview": "Keuken of Apotheek? Haal diep adem! Ruikt het naar een gigantische buitenkeuken of een dorpsapotheek? Eigenlijk is het allebei!",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Een Missie voor onze Jonge Plantendetectives en Volwassenen!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Volgende Bestemming:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Keuken of Apotheek? Haal diep adem! Ruikt het naar een gigantische buitenkeuken of een dorpsapotheek? Eigenlijk is het allebei!"
+        },
+        {
+          "text": "De Ultieme Overlevingskit: Vóór de moderne geneeskunde en supermarkten waren deze tuinen een overlevingskit voor het eiland. Deze percelen staan vol met precies dezelfde kruiden die hier al eeuwenlang groeien."
+        },
+        {
+          "text": "De Dokter van de Natuur: Kruiden zoals Tijm, Oregano en Marjolein werden niet alleen gebruikt om het avondeten heerlijk te laten smaken; ze waren de lokale dokter! Als iemand buikpijn had, rende de familie van de molenaar niet naar de apotheek voor vies smakende roze siroop – ze kwamen direct hierheen om blaadjes te plukken voor een natuurlijk medicijn."
+        },
+        {
+          "text": "Het Palet van een Schilder: Bekijk de prachtige paarse Lavendel en heldergroene Munt! Het lijkt wel of iemand ze zo in de tuin heeft geschilderd. Let goed op die heldere kleuren!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Ouderwets Plezier: Leg de telefoons even weg – we gaan helemaal 'old-school'! Zie je de fysieke puzzelstukjes die hier rondslingeren?"
+        },
+        {
+          "text": "Gebruik je Zintuigen: Het is jouw taak om uit te zoeken welk woord bij welke plant hoort. Je zult je ogen en je neus moeten gebruiken!"
+        },
+        {
+          "text": "Wrijf en Snuif: Ga je gang, wrijf heel zachtjes over de blaadjes en ruik eraan (maar alsjeblieft, niet grazen – eet de tuin niet op voor de lunch!)."
+        },
+        {
+          "text": "Los de Puzzel op: Kun jij de puzzelstukjes verplaatsen om ze bij de juiste kruiden te laten passen? Kijk of je het verschil tussen de Munt en de Oregano kunt ontdekken. Welke ruikt naar een heerlijke pizza en welke ruikt naar een knus dutje?"
+        },
+        {
+          "text": "Herinnering voor het Schetsboek: Houd je ogen open, Plantendetectives! Onthoud de verschillende kleuren groen, grijs en paars om later je Mylotopi-schets in te kleuren."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "Binnenkort: Ga daarna verder naar de Historische Windmolen!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Onze Tuin met Onze Kruiden!"
+}

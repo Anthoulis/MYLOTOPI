@@ -1,0 +1,33 @@
+{
+  "id": "sleeping-area",
+  "title": "Sleeping Area",
+  "navigationTitle": "Sleeping Area",
+  "preview": "On the second floor, the windmill becomes intimate. This was not only a working building, but also a place where the miller's family rested beside the stored wheat and flour.",
+  "details": [
+    "Please watch your step on the wooden stairs and mind the low timber above you. The windmill was built for work first, so every movement inside it asks for attention.",
+    "On one side, historic images show windmills from across Greece. On the other, the room recalls a more personal truth: the miller and his family slept close to the sound, movement and responsibility of the mill.",
+    "Bags of raw wheat and fresh flour were stored nearby. Keeping them close was practical and protective, because flour was food, income and security for the household.",
+    "This floor shows how closely work and private life could meet in an island family. Rest, storage and responsibility shared the same small space.",
+    {
+      "type": "heading",
+      "text": "Next stop"
+    },
+    "Continue upward to the machinery, where the wooden structure and stone wheels reveal how wind became flour."
+  ],
+  "challenge": {
+    "label": "For young visitors",
+    "title": "Imagine sleeping here",
+    "items": [
+      {
+        "text": "Look around this small space."
+      },
+      {
+        "text": "Where would you put a pillow?"
+      },
+      {
+        "text": "Point to a quiet corner."
+      }
+    ]
+  },
+  "imageAlt": "Sleeping area image not available yet"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "threshing-floor-donkeys",
+  "title": "Klepisko i Osiołki!",
+  "navigationTitle": "Klepisko i Osiołki!",
+  "preview": "Świeże powietrze i kamienne posadzki: Witamy z powrotem na zewnątrz! Weźcie głęboki oddech świeżego powietrza. Stoicie teraz w pobliżu tradycyjnego klepiska, które wygląda trochę jak duży, okrągły, kamienny parkiet do tańca.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Misja dla naszych Młodych Odkrywców i Dorosłych!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Następny cel:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Świeże powietrze i kamienne posadzki: Witamy z powrotem na zewnątrz! Weźcie głęboki oddech świeżego powietrza. Stoicie teraz w pobliżu tradycyjnego klepiska, które wygląda trochę jak duży, okrągły, kamienny parkiet do tańca."
+        },
+        {
+          "text": "Osioł z zawrotami głowy: Spójrzcie dokładnie w środek koła na drewniany słup. W dawnych czasach młynarz luźno przywiązywał linę od tego słupa do szyi osła. Zadaniem osła było chodzenie w kółko po dużym okręgu, używając swoich ciężkich kopyt do deptania i miażdżenia zebranych plonów, aby uwolnić nasiona!"
+        },
+        {
+          "text": "Oddzielanie pszenicy: Po tym, jak pracowity osioł wykonał całe to przyprawiające o zawrót głowy deptanie, wkraczał młynarz, aby ostrożnie oddzielić białą pszenicę od brązowej. (Obecnie nie używamy tej metody – kupujemy naszą pszenicę bezpośrednio od lokalnych producentów z wyspy!)"
+        },
+        {
+          "text": "Poznajcie Prawdziwe Gwiazdy: Nie musicie sobie tylko wyobrażać tych zwierząt! Rozejrzyjcie się w pobliżu, a spotkacie prawdziwe gwiazdy farmy: nasze dwa urocze osiołki. Dumną mamą jest Melina, która ma 6 lat, a jej słodka mała córeczka ma na imię Katie i ma zaledwie 2 latka."
+        },
+        {
+          "text": "Zaginiony Tata: Jeśli chodzi o tatę Katie... cóż, tak naprawdę nikt nie wie, dokąd poszedł! Bardzo lubił głośno śpiewać, więc myślimy, że powędrował do sąsiedniego miasta, aby założyć oślą kapelę rockową!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Ośli Taniec: Podejdźcie na sam brzeg klepiska! Czy potraficie udawać, że jesteście przywiązani do środkowego drewnianego słupa i iść w idealnym okręgu, dokładnie tak, jak robił to osioł?"
+        },
+        {
+          "text": "Przywitajcie się: Po Waszym przyprawiającym o zawrót głowy tańcu, koniecznie idźcie pomachać na powitanie Melinie i Katie! Prosimy o podziwianie naszych uroczych osiołków z dystansu! Wyglądają słodko, ale mogą pomylić Wasze palce z małymi marchewkami. Wolelibyśmy się o tym nie przekonać!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "Kolejny punkt: Następnie przejdźcie dalej do Piwnicy / Włoskiego Tunelu!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Klepisko i Osiołki!"
+}

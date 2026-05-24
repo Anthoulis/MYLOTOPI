@@ -1,0 +1,85 @@
+{
+  "id": "machinery",
+  "title": "La Machinerie du Moulin à Vent (3e Étage)",
+  "navigationTitle": "La Machinerie du Moulin à Vent (3e Étage)",
+  "preview": "Attention à votre tête : Bienvenue au troisième étage ! Faites attention où vous posez les pieds sur l'échelle et prenez garde à votre tête pendant votre exploration.",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Une Mission pour nos Jeunes Explorateurs et les Adultes !"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Prochaine Destination :"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Attention à votre tête : Bienvenue au troisième étage ! Faites attention où vous posez les pieds sur l'échelle et prenez garde à votre tête pendant votre exploration."
+        },
+        {
+          "text": "Le Muscle du Moulin : Vous contemplez maintenant la véritable puissance du moulin à vent. Regardez cette poutre massive en bois au-dessus des meules. C'est le connecteur principal qui relie les lourdes pierres à l'intérieur, les engrenages et les ailes géantes qui tournent à l'extérieur !"
+        },
+        {
+          "text": "Des Meules de Deux Tonnes : Ces meules massives pèsent plus de deux tonnes ensemble ! Elles ont été importées depuis l'île de Nisyros, célèbre pour la production d'une pierre unique et ultra-résistante, parfaite pour la mouture."
+        },
+        {
+          "text": "Le Distributeur et la Clochette : Regardez juste au-dessus des meules : vous y verrez une boîte en bois appelée Le Distributeur, où le meunier versait le blé brut. Mais comment savait-il qu'il était vide avec tout ce bruit assourdissant ? Cherchez bien, il y a une petite clochette ! Elle sonnait automatiquement lorsque le blé venait à manquer pour dire au meunier de le remplir."
+        },
+        {
+          "text": "Le Premier Frein : Voyez-vous ce levier en bois relié à une petite corde ? Il descend jusqu'au premier étage et constitue le premier système de freinage dont nous avons parlé en bas."
+        },
+        {
+          "text": "La Chute de la Farine : Regardez en bas près du levier pour trouver une trappe reliée à un conduit. Dès que la farine était parfaitement broyée, elle tombait directement par ce tuyau jusqu'au rez-de-chaussée !"
+        },
+        {
+          "text": "Le « Pourboire » du Meunier : Juste à côté du conduit principal se trouve une deuxième trappe, plus petite. Autrefois, les gens ne payaient pas toujours avec de l'argent. À la place, le meunier utilisait cette trappe pour collecter son « pourboire » : il gardait un petit pourcentage de la farine pour sa propre famille en guise de paiement pour son dur labeur !"
+        },
+        {
+          "text": "Une Rotation Fluide : Repérez le petit bidon près des trappes. En bas, il utilisait de la graisse de vache, mais ici, il utilisait un mélange spécial d'huile d'olive et de savon pour que les engrenages supérieurs tournent sans accroc."
+        },
+        {
+          "text": "Le Frein d'Urgence : Regardez à côté de l'échelle : il y a une corde très épaisse. Si le meunier devait arrêter d'urgence la production de farine, il tirait sur cette corde : c'est le deuxième système de freinage !"
+        },
+        {
+          "text": "Un Plafond de Navire : Enfin, levez les yeux vers le plafond. À quoi vous fait-il penser ? Il est en fait conçu en forme de navire pour augmenter la puissance du mécanisme et produire la farine plus rapidement !"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Écoutez la Clochette et Faites-la Sonner : Pouvez-vous trouver la petite clochette qui avertissait le meunier lorsque le blé venait à manquer ? Pouvez-vous la faire sonner ?"
+        },
+        {
+          "text": "Trouvez la Farine Cachée : Inspectez le sol et essayez de repérer la trappe spéciale du « pourboire » où le meunier gardait son paiement durement gagné !"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "À venir : Dirigez-vous ensuite vers l'aire de battage et l'espace des ânes !"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "La Machinerie du Moulin à Vent (3e Étage)"
+}

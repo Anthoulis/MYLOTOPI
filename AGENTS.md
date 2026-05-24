@@ -20,7 +20,7 @@ Codex should treat this project as a mobile-first cultural guide for tourists vi
 
 ## Architecture expectations
 - The QR guide should remain a single-page experience unless there is a strong product reason to change that.
-- Deep linking through query params such as `?spot=aloni&lang=en` is the preferred navigation model.
+- Deep linking through query params such as `?spot=welcome&lang=en` is the preferred navigation model.
 - Query param handling must be robust:
   - invalid `spot` values should fail safely
   - invalid `lang` values should normalize to the default language
@@ -41,12 +41,12 @@ Codex should treat this project as a mobile-first cultural guide for tourists vi
   Lightweight i18n helper and fallback logic.
 - [assets/js/app.js](/C:/dev/MYLOTOPI/assets/js/app.js)
   Runtime state, rendering, URL/deep-link behavior, events, gallery logic, and audio coordination.
-- [assets/locales](/C:/dev/MYLOTOPI/assets/locales)
-  One locale file per supported language.
+- [assets/content](/C:/dev/MYLOTOPI/assets/content)
+  Structured JSON content organized by language and section.
 - [assets/images](/C:/dev/MYLOTOPI/assets/images)
   Spot image folders.
 - [assets/audio](/C:/dev/MYLOTOPI/assets/audio)
-  Audio assets organized by spot and language.
+  Audio assets organized by language.
 
 ## How to run the project
 There is no framework build step in the current repository.
@@ -59,24 +59,27 @@ Do not add a build system unless the project scope has clearly changed and the a
 
 ## Where guide content should live
 - Non-localized metadata belongs in [assets/js/content-meta.js](/C:/dev/MYLOTOPI/assets/js/content-meta.js).
-- Localized UI and spot copy belongs in [assets/locales](/C:/dev/MYLOTOPI/assets/locales).
+- Localized UI and spot copy belongs in [assets/content](/C:/dev/MYLOTOPI/assets/content).
 - Do not hardcode translated content directly inside [assets/js/app.js](/C:/dev/MYLOTOPI/assets/js/app.js) or [index.html](/C:/dev/MYLOTOPI/index.html).
 - Presentation concerns belong in [assets/css/main.css](/C:/dev/MYLOTOPI/assets/css/main.css).
 - Runtime behavior belongs in [assets/js/app.js](/C:/dev/MYLOTOPI/assets/js/app.js).
 
 ## How to add a new language
-1. Add the language code to `languages` in [assets/js/content-meta.js](/C:/dev/MYLOTOPI/assets/js/content-meta.js).
+1. Keep the language in `stagedLanguages` in [assets/js/content-meta.js](/C:/dev/MYLOTOPI/assets/js/content-meta.js) until it is production-ready.
 2. Add its fixed native label and URL aliases.
-3. Add a matching locale file under [assets/locales](/C:/dev/MYLOTOPI/assets/locales).
+3. Add a matching content folder under [assets/content](/C:/dev/MYLOTOPI/assets/content).
 4. For each spot, add localized content with at least:
    - `title`
-   - `shortText`
+   - `navigationTitle`
+   - `preview`
+   - `details`
    - `audio.path`
-5. Add `shortTitle` when the navigation chip needs a shorter label than the full title.
-6. Add `audio.caption` and `body` when localized long-form content exists.
-7. Add localized `imageAlt` text for the spot if needed.
-8. Place the audio file in the matching folder under `assets/audio/<spot>/<lang>.<ext>`.
-9. If the audio file is not ready yet, keep `audio.ready: false` so the UI falls back safely.
+5. Add localized UI labels in the language `index.json`.
+6. Add localized `imageAlt` text for the spot if needed.
+7. Place the audio file in the matching folder under `assets/audio/<lang>/`.
+8. If the audio file is not ready yet, keep `audio.ready: false` so the UI falls back safely.
+9. Move the language code to `languages` only after validation and manual review.
+10. Run `npm run validate` before activating the language.
 
 ## How to add a new QR spot
 1. Add the new spot id to `spotOrder` in [assets/js/content-meta.js](/C:/dev/MYLOTOPI/assets/js/content-meta.js).
@@ -86,7 +89,7 @@ Do not add a build system unless the project scope has clearly changed and the a
    - `accentSoft`
    - `images`
 4. Add translations for all supported locales.
-5. Add the corresponding audio files in `assets/audio/<spot-id>/`.
+5. Add the corresponding audio files in `assets/audio/<lang>/`.
 6. Verify the new spot appears correctly in:
    - the section list
    - the sticky spot navigation
@@ -132,6 +135,7 @@ Before finishing a task, manually verify at minimum:
 - the active section highlight still works
 - `lang` switching still works and preserves the current spot when appropriate
 - audio controls still render and remain usable
+- the Mini-map modal still opens and closes correctly
 - invalid params fail safely
 - the page remains mobile-friendly on a narrow viewport
 - no obvious regressions were introduced in accessibility or performance

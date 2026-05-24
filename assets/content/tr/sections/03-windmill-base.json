@@ -1,0 +1,88 @@
+{
+  "id": "windmill-base",
+  "title": "Yel Değirmeni Tabanı (1. Kat)",
+  "navigationTitle": "Yel Değirmeni Tabanı (1. Kat)",
+  "preview": "Yaşayan Bir Efsane: \"Rahibin Değirmeni\"ne hoş geldiniz! Şu anda tüm adadaki ve tüm On İki Ada kompleksindeki çalışan en eski yel değirmeninin içinde duruyorsunuz. 400 yaşından büyük, 1987 yılına kadar her gün aralıksız çalıştı ve bugün hala un öğüten yaşayan bir makine!",
+  "details": [
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-01"
+    },
+    {
+      "type": "heading",
+      "text": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Görev!"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-02"
+    },
+    {
+      "type": "heading",
+      "text": "Sıradaki Durak:"
+    },
+    {
+      "type": "bulletGroup",
+      "id": "bullet-group-03"
+    }
+  ],
+  "bullets": [
+    {
+      "id": "bullet-group-01",
+      "items": [
+        {
+          "text": "Yaşayan Bir Efsane: \"Rahibin Değirmeni\"ne hoş geldiniz! Şu anda tüm adadaki ve tüm On İki Ada kompleksindeki çalışan en eski yel değirmeninin içinde duruyorsunuz. 400 yaşından büyük, 1987 yılına kadar her gün aralıksız çalıştı ve bugün hala un öğüten yaşayan bir makine!"
+        },
+        {
+          "text": "Girişte: Kapıdan içeri adımınızı atarken, iyi şans getirmesi için asılmış geleneksel narı ve onun hemen yanındaki, Aynaroz'dan (Athos Dağı) getirilmiş 9 yıldan daha eski küçük Kutsal Su şişesini fark edin."
+        },
+        {
+          "text": "Fırtınalar İçin İnşa Edilmiş: Bu devasa makine 6,2 metre yüksekliğindedir ve etrafınızdaki taş duvarlar, binayı vahşi deniz fırtınalarından korumak için 1,2 metre kalınlığındadır."
+        },
+        {
+          "text": "Devasa Makine Aksamı: Üst katlarda, her biri bir ton ağırlığında olan iki devasa öğütme taşı var; ikisi birlikte iki tondan fazla ediyor!"
+        },
+        {
+          "text": "Antika Ahşap: Bu binadaki ahşabın %80'i orijinaldir ve geri kalanı ta Aynaroz'dan getirilmiştir. Şaşırtıcı bir şekilde, yukarıda dönen yeniden kullanılmış ahşap parçalardan bazıları 1.000 ila 1.300 yıllıktır!"
+        },
+        {
+          "text": "Sağınızda: Bir bezle örtülü olan alanı görüyor musunuz? Orası değirmencinin deposuydu. Yanında, değirmencinin eşeğinin buğdayı ayırmak için çekeceği ahşap bir eşek semeri ve bir döven (harman kızağı) göreceksiniz. Ayrıca günlük ahşap aletleri ve Yunanistan'ın dört bir yanındaki diğer yel değirmenlerinin güzel fotoğraflarını da görebilirsiniz."
+        },
+        {
+          "text": "Şömine: Değirmenci burayı sadece ısınmak için kullanmıyordu! İçine yakından bakın; bir teneke kutu görüyor musunuz? İçinde, değirmencinin yel değirmeninin hareketli parçalarını gıcırdamamaları için yağlamak üzere erittiği inek yağı var. Şöminenin hemen üzerinde, mirası tam burada yaşamaya devam eden bu yel değirmeninin sevgili sahibi Kostas Politis'in bir fotoğrafı bulunuyor."
+        },
+        {
+          "text": "Solunuzda: Taze unu dikkatlice tartmak için kullanılan geleneksel bir terazi ve ağırlıklar göreceksiniz."
+        },
+        {
+          "text": "İlk Frenler: Aşağı sarkan küçük ipi arayın. İster inanın ister inanmayın, o ip yel değirmeninin ilk fren sistemiydi! Değirmenci, o iki tonluk değirmen taşlarını çok azıcık kaldırmak için onu çekerdi, böylece dışarı çıkıp yelkenleri açması onun için güvenli hale gelirdi."
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-02",
+      "items": [
+        {
+          "text": "Duvarları Test Edin: Bakalım o duvarlar gerçekten ne kadar kalınmış! Gidip kapının yanına geçin ve kollarınızı açabildiğiniz kadar geniş açın. Kollarınız duvarın kalınlığından daha mı uzun, yoksa yel değirmeni mi kazanıyor?"
+        },
+        {
+          "text": "Casusluk Yapın: Odaya şöyle bir bakın ve ahşap eşek semerini bulabilecek misiniz bir görün!"
+        },
+        {
+          "text": "Yağı Bulun: Şöminenin içine göz atın; gizli inek yağı tenekesini bulabilecek misiniz?"
+        },
+        {
+          "text": "Frenleri Fark Edin: Yel değirmeninin fren sistemi olarak işlev gören, sarkan o küçük ipi bulun!"
+        }
+      ]
+    },
+    {
+      "id": "bullet-group-03",
+      "items": [
+        {
+          "text": "Sırada: Ardından Yel Değirmeninin ikinci katına doğru ilerleyin!"
+        }
+      ]
+    }
+  ],
+  "imageAlt": "Yel Değirmeni Tabanı (1. Kat)"
+}

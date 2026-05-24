@@ -1,0 +1,33 @@
+{
+  "id": "cellar-italian-tunnel",
+  "title": "Italienischer Tunnel und Keller",
+  "navigationTitle": "Tunnel und Keller",
+  "preview": "Betreten Sie einen kühleren und stilleren Teil von Mylotopi. Tunnel und Keller verbinden Stein, Wein und die verborgenere Geschichte der 1940er Jahre.",
+  "details": [
+    "Achten Sie beim Hinabgehen auf die Temperatur, die Rundung der Wände und darauf, wie sich der Klang im Stein verändert.",
+    "Heute präsentiert der Keller Wein und Atmosphäre als Teil des Mylotopi-Erlebnisses. Der kühle Steinraum erinnert aber auch an einen anderen Moment der Geschichte.",
+    "In den 1940er Jahren war der Tunnel mit italienischen Soldaten verbunden. Er bot einen geschützten Weg und Zuflucht, geprägt von den Bedürfnissen und Ängsten der Kriegszeit.",
+    "Am Ende des Durchgangs führt der Weg zurück zum Restaurantbereich. Der Kontrast ist deutlich: Ein Ort, der einst mit Schutz und Verteidigung verbunden war, führt heute zu Gastfreundschaft, Essen und Aussicht.",
+    {
+      "type": "heading",
+      "text": "Nächste Station"
+    },
+    "Wenn Sie den Tunnel verlassen, gehen Sie weiter zum traditionellen Haus und zur Bäckerei, zurück in das häusliche Leben des alten Dorfes."
+  ],
+  "challenge": {
+    "label": "Für junge Besucher",
+    "title": "Spür die kühle Luft",
+    "items": [
+      {
+        "text": "Bleib kurz ganz ruhig stehen."
+      },
+      {
+        "text": "Ist es hier kühler?"
+      },
+      {
+        "text": "Zähle drei Flaschen oder drei Steine."
+      }
+    ]
+  },
+  "imageAlt": "Italienischer Tunnel und Keller"
+}
