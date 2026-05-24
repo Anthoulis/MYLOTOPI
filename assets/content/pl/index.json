@@ -15,6 +15,7 @@
     "intro": "Podróż w czasie: Przygotujcie się na krok w przeszłość! Do tej podróży nie będziecie potrzebować wehikułu czasu, wystarczą tylko wygodne buty.",
     "miniMapTitle": "Mini-map",
     "miniMapDescription": "Choose a stop to jump directly to that point in the walk.",
+    "miniMapTapHint": "Dotknij mapy, aby j\u0105 otworzy\u0107",
     "miniMapImageAlt": "Mylotopi mini-map showing the nine tour stops",
     "languageLabel": "Language",
     "spotsLabel": "Guide stops",

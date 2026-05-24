@@ -30,6 +30,7 @@
     "currentStopLabel": "Current stop",
     "miniMapTitle": "MINI MAP",
     "miniMapDescription": "See the route before continuing.",
+    "miniMapTapHint": "Tap to open the full route map",
     "miniMapView": "View map",
     "miniMapOpen": "Open map",
     "miniMapDownload": "Download map",

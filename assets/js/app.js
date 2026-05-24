@@ -666,31 +666,33 @@
   function renderMiniMap(ui) {
     const miniMap = i18n.getMiniMap(state.lang);
     const modalTitleId = "qr-map-modal-title";
+    const openLabel = ui.miniMapOpen || ui.miniMapView || ui.miniMapTitle;
+    const tapHint = ui.miniMapTapHint || openLabel;
+    const openAriaLabel = openLabel + ": " + (ui.miniMapImageAlt || ui.miniMapTitle);
 
     if (!miniMap || !miniMap.path) {
       return "";
     }
 
     return (
-      '<section class="minimap-card" aria-labelledby="qr-minimap-title">' +
-      '<div class="minimap-card__header">' +
-      '<p class="minimap-card__label" id="qr-minimap-title">' +
+      '<section class="minimap-section" aria-labelledby="qr-minimap-title">' +
+      '<button class="minimap-card" type="button" data-map-open aria-label="' +
+      escapeHtml(openAriaLabel) +
+      '">' +
+      '<span class="minimap-card__header">' +
+      '<span class="minimap-card__label" id="qr-minimap-title">' +
       escapeHtml(ui.miniMapTitle) +
-      "</p>" +
-      (ui.miniMapDescription ? '<p class="minimap-card__description">' + escapeHtml(ui.miniMapDescription) + "</p>" : "") +
-      "</div>" +
-      '<figure class="minimap-card__figure"><img class="minimap-card__image" src="' +
+      "</span>" +
+      (ui.miniMapDescription ? '<span class="minimap-card__description">' + escapeHtml(ui.miniMapDescription) + "</span>" : "") +
+      "</span>" +
+      '<span class="minimap-card__figure"><img class="minimap-card__image" src="' +
       escapeHtml(miniMap.path) +
       '" alt="' +
       escapeHtml(ui.miniMapImageAlt) +
-      '" loading="lazy" decoding="async"></figure>' +
-      '<div class="minimap-actions"><button class="minimap-actions__button" type="button" data-map-open>' +
-      escapeHtml(ui.miniMapOpen) +
-      '</button><a class="minimap-actions__button" href="' +
-      escapeHtml(miniMap.path) +
-      '" download>' +
-      escapeHtml(ui.miniMapDownload) +
-      "</a></div>" +
+      '" loading="lazy" decoding="async"><span class="minimap-card__hint">' +
+      escapeHtml(tapHint) +
+      "</span></span>" +
+      "</button>" +
       '<div class="minimap-modal" data-map-modal role="dialog" aria-modal="true" aria-labelledby="' +
       escapeHtml(modalTitleId) +
       '" hidden>' +
@@ -702,9 +704,13 @@
       escapeHtml(modalTitleId) +
       '">' +
       escapeHtml(ui.miniMapTitle) +
-      '</h2><button class="minimap-modal__close" type="button" data-map-close>' +
+      '</h2><div class="minimap-modal__actions"><a class="minimap-modal__download" href="' +
+      escapeHtml(miniMap.path) +
+      '" download>' +
+      escapeHtml(ui.miniMapDownload) +
+      '</a><button class="minimap-modal__close" type="button" data-map-close>' +
       escapeHtml(ui.miniMapModalClose) +
-      "</button></div>" +
+      "</button></div></div>" +
       '<img class="minimap-modal__image" src="' +
       escapeHtml(miniMap.path) +
       '" alt="' +
@@ -1022,6 +1028,18 @@
     }
   }
 
+  function handleMiniMapKeydown(event) {
+    const openButton = event.target.closest("[data-map-open]");
+    const isActivationKey = event.key === "Enter" || event.key === " " || event.key === "Spacebar";
+
+    if (!openButton || !isActivationKey) {
+      return;
+    }
+
+    event.preventDefault();
+    openMapModal();
+  }
+
   function handleStopNavClick(event) {
     const button = event.target.closest("button[data-tour-nav]");
     if (!button || button.disabled) {
@@ -1178,6 +1196,7 @@
     elements.languageSwitcher.addEventListener("click", handleLanguageClick);
     elements.spotSwitcher.addEventListener("click", handleSpotClick);
     elements.main.addEventListener("click", handleMiniMapClick);
+    elements.main.addEventListener("keydown", handleMiniMapKeydown);
     elements.main.addEventListener("click", handleStopNavClick);
     elements.main.addEventListener("click", handleGalleryClick);
     elements.main.addEventListener("click", handleCopyToggle);

@@ -372,16 +372,42 @@ body.is-map-modal-open {
   box-shadow: var(--shadow);
 }
 
-.minimap-card {
+.minimap-section {
   display: grid;
-  gap: 12px;
-  padding: 14px;
+  justify-items: center;
+}
+
+.minimap-card {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  width: min(100%, 560px);
+  padding: 10px;
   overflow: hidden;
+  appearance: none;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.minimap-card:hover {
+  border-color: rgb(var(--accent-rgb) / 0.38);
+  box-shadow: 0 20px 54px rgb(var(--text-rgb) / 0.15);
+  transform: translateY(-1px);
+}
+
+.minimap-card:focus-visible .minimap-card__figure {
+  border-color: rgb(var(--accent-rgb) / 0.48);
 }
 
 .minimap-card__header {
   display: grid;
-  gap: 4px;
+  gap: 3px;
+  padding: 2px 2px 0;
 }
 
 .minimap-card__label {
@@ -397,16 +423,14 @@ body.is-map-modal-open {
 .minimap-card__description {
   margin: 0;
   color: var(--muted);
-  font-size: 1rem;
-  line-height: 1.58;
+  font-size: 0.9rem;
+  line-height: 1.45;
 }
 
 .minimap-card__figure {
-  display: grid;
-  place-items: center;
-  aspect-ratio: 4 / 3;
-  max-height: 280px;
-  margin: 0;
+  position: relative;
+  display: block;
+  width: 100%;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -415,17 +439,31 @@ body.is-map-modal-open {
 
 .minimap-card__image {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
 }
 
-.minimap-actions {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
+.minimap-card__hint {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  display: inline-flex;
+  justify-content: center;
+  justify-self: center;
+  width: max-content;
+  max-width: calc(100% - 24px);
+  padding: 8px 11px;
+  border: 1px solid rgb(var(--surface-rgb) / 0.42);
+  border-radius: 999px;
+  background: rgb(var(--text-rgb) / 0.72);
+  color: var(--surface);
+  font-size: 0.78rem;
+  font-weight: 850;
+  line-height: 1.2;
+  text-align: center;
+  box-shadow: 0 8px 18px rgb(var(--text-rgb) / 0.18);
+  transform: translateX(-50%);
 }
 
-.minimap-actions__button,
 .qr-stop-nav__button {
   min-height: var(--touch);
   border: 1px solid rgb(var(--accent-rgb) / 0.28);
@@ -437,12 +475,6 @@ body.is-map-modal-open {
   line-height: 1.2;
   text-align: center;
   text-decoration: none;
-}
-
-.minimap-actions__button {
-  display: grid;
-  place-items: center;
-  padding: 10px 12px;
 }
 
 .minimap-modal[hidden] {
@@ -481,6 +513,7 @@ body.is-map-modal-open {
 
 .minimap-modal__head {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   align-items: center;
   justify-content: space-between;
@@ -492,6 +525,37 @@ body.is-map-modal-open {
   font-family: "Playfair Display", Georgia, serif;
   font-size: clamp(1.25rem, 5vw, 1.8rem);
   line-height: 1.05;
+}
+
+.minimap-modal__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.minimap-modal__download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 11px;
+  border: 1px solid rgb(var(--accent-rgb) / 0.22);
+  border-radius: 999px;
+  background: rgb(var(--surface-soft-rgb) / 0.7);
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 850;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.minimap-modal__download:hover {
+  border-color: rgb(var(--accent-rgb) / 0.42);
+  background: rgb(var(--accent-rgb) / 0.12);
 }
 
 .minimap-modal__close {
@@ -1000,20 +1064,11 @@ body.is-map-modal-open {
   }
 
   .minimap-card {
-    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-    align-items: start;
-    padding: 16px;
+    padding: 12px;
   }
 
-  .minimap-actions {
-    grid-template-columns: 1fr;
-  }
-
-  .minimap-card__figure {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    width: 100%;
-    max-height: 420px;
+  .minimap-card__header {
+    padding-inline: 4px;
   }
 
   .qr-stop {
@@ -1058,6 +1113,7 @@ body.is-map-modal-open {
   }
 
   .selector__chevron,
+  .minimap-card,
   .qr-readmore__chevron,
   .qr-readmore__chevron::before,
   .qr-readmore__button,

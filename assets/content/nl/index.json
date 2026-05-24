@@ -15,6 +15,7 @@
     "intro": "Reis terug in de tijd: Maak je klaar om het verleden in te stappen! Je hebt voor deze reis geen tijdmachine nodig, alleen een paar comfortabele schoenen.",
     "miniMapTitle": "Mini-map",
     "miniMapDescription": "Choose a stop to jump directly to that point in the walk.",
+    "miniMapTapHint": "Tik op de kaart om te openen",
     "miniMapImageAlt": "Mylotopi mini-map showing the nine tour stops",
     "languageLabel": "Language",
     "spotsLabel": "Guide stops",

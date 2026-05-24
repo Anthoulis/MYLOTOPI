@@ -16,6 +16,7 @@
     "intro": "Viaja en el tiempo: ¡Prepárate para adentrarte en el pasado! No necesitarás una máquina del tiempo para este viaje, solo unos zapatos cómodos.",
     "miniMapTitle": "Mini-map",
     "miniMapDescription": "Choose a stop to jump directly to that point in the walk.",
+    "miniMapTapHint": "Toca el mapa para abrirlo",
     "miniMapImageAlt": "Mylotopi mini-map showing the nine tour stops",
     "languageLabel": "Language",
     "spotsLabel": "Guide stops",

@@ -29,6 +29,7 @@
     "currentStopLabel": "Aktuelle Station",
     "miniMapTitle": "MINI-KARTE",
     "miniMapDescription": "Sehen Sie sich die Route an, bevor Sie weitergehen.",
+    "miniMapTapHint": "Karte antippen, um die Route zu \u00f6ffnen",
     "miniMapView": "Karte ansehen",
     "miniMapOpen": "Karte öffnen",
     "miniMapDownload": "Karte herunterladen",

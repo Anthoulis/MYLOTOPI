@@ -16,6 +16,7 @@
     "intro": "Zamanda Yolculuk: Geçmişe adım atmaya hazır olun! Bu yolculuk için bir zaman makinesine ihtiyacınız olmayacak, sadece rahat ayakkabılara ihtiyacınız var.",
     "miniMapTitle": "Mini-map",
     "miniMapDescription": "Choose a stop to jump directly to that point in the walk.",
+    "miniMapTapHint": "Haritay\u0131 a\u00e7mak i\u00e7in dokunun",
     "miniMapImageAlt": "Mylotopi mini-map showing the nine tour stops",
     "languageLabel": "Language",
     "spotsLabel": "Guide stops",
