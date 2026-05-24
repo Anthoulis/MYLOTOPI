@@ -24,4 +24,6 @@ Each language folder has:
 
 Section JSON files must contain `id`, `title`, `navigationTitle`, `preview`, and `details`. They may also contain `bullets`, `challenge`, and `imageAlt`.
 
+Language flags are not stored in these manifests. The runtime renders them from centralized inline SVGs in `assets/js/app.js`.
+
 The source DOCX marker `Read more>>`, when present, belongs only to extraction logic and must not appear in rendered content.

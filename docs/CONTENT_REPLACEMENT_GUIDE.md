@@ -21,6 +21,8 @@ There are no staged language folders currently. All ten language folders are lis
 
 Turkish is active and uses a documented fallback Mini-map until a Turkish-specific source image is provided.
 
+Language flags are rendered from the centralized inline SVG map in `assets/js/app.js`. Do not add emoji flag fields to language manifests.
+
 ## Canonical Spot Keys
 
 1. `welcome`
@@ -121,6 +123,7 @@ When extracting from source DOCX files, split on the source marker `Read more>>`
 6. Move the language code from `stagedLanguages` to `languages` in `assets/js/content-meta.js`.
 7. Run `npm run validate`.
 8. Manually test language switching, audio, gallery, Mini-map, and URL params.
+9. Add an inline SVG flag mapping for the new language in `assets/js/app.js`, or confirm the neutral fallback is intentional.
 
 ## Filename And Path Rules
 
@@ -136,7 +139,7 @@ When extracting from source DOCX files, split on the source marker `Read more>>`
 
 1. Run a local static server.
 2. Run `npm run validate`.
-3. Test mobile widths `320`, `360`, `390`, and `430`.
+3. Test widths `320`, `360`, `390`, `430`, `720`, `980`, and `1180`.
 4. Test language switching.
 5. Test every audio file.
 6. Test every gallery.

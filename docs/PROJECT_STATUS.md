@@ -7,6 +7,8 @@ The guide is a production-candidate static QR/audio microsite with ten runtime-a
 ## Active Runtime Scope
 
 - Active languages: `en`, `el`, `de`, `fr`, `it`, `es`, `nl`, `pl`, `ru`, `tr`.
+- Default language: `en`.
+- Active language flags: inline SVG flags for English/UK, Greek, German, French, Italian, Spanish, Dutch, Polish, Russian, and Turkish.
 - Active route model: one page, using query params such as `?lang=en&spot=welcome`.
 - Active tour stops: the nine canonical stops in `assets/js/content-meta.js`.
 - Active audio: MP3 files referenced from the active language manifests.
@@ -24,6 +26,7 @@ The guide is a production-candidate static QR/audio microsite with ten runtime-a
 - Sticky stop and language controls.
 - Deep-link normalization for `lang` and `spot`.
 - JSON-based content for all active languages.
+- Inline SVG flag renderer for all active language codes.
 - Per-stop audio controls with metadata preload.
 - Mini-map card and modal.
 - Gallery support with centralized image metadata.
@@ -40,7 +43,7 @@ The guide is a production-candidate static QR/audio microsite with ten runtime-a
 
 1. Run a local static server.
 2. Run `npm run validate`.
-3. Test mobile widths `320`, `360`, `390`, and `430`.
+3. Test widths `320`, `360`, `390`, `430`, `720`, `980`, and `1180`.
 4. Test language switching.
 5. Test every audio file.
 6. Test every gallery.

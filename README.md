@@ -6,6 +6,8 @@ Mylotopi QR Guide is a lightweight static microsite for the visitor audio/text t
 
 Production-active runtime languages are English (`en`), Greek (`el`), German (`de`), French (`fr`), Italian (`it`), Spanish (`es`), Dutch (`nl`), Polish (`pl`), Russian (`ru`), and Turkish (`tr`).
 
+English is the default language. The language selector renders fixed inline SVG flags for all active languages; English uses a UK flag, and unknown future language codes use a neutral fallback icon.
+
 Final section-specific image sets are still incomplete. When a stop does not have a suitable image, the guide intentionally shows a clean placeholder instead of an unrelated photo.
 
 Turkish is active and currently uses a documented fallback mini-map copied from the default map. Replace it with a Turkish-specific source map when one is available.
@@ -90,7 +92,7 @@ See `docs/CONTENT_REPLACEMENT_GUIDE.md` for the full replacement checklist.
 
 1. Run a local static server.
 2. Run `npm run validate`.
-3. Test mobile widths `320`, `360`, `390`, and `430`.
+3. Test widths `320`, `360`, `390`, `430`, `720`, `980`, and `1180`.
 4. Test language switching.
 5. Test every audio file.
 6. Test every gallery.

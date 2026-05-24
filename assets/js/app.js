@@ -9,6 +9,29 @@
   const SPOT_ORDER = Array.isArray(meta.spotOrder) ? meta.spotOrder.slice() : Object.keys(meta.spots || {});
   const SPOTS_BY_ID = meta.spots || {};
   const REDUCED_MOTION_QUERY = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const FLAG_SVG_MARKUP = {
+    en:
+      '<rect width="24" height="16" fill="#012169"></rect><path d="M0 0l24 16M24 0L0 16" stroke="#fff" stroke-width="3.2"></path><path d="M0 0l24 16M24 0L0 16" stroke="#c8102e" stroke-width="1.7"></path><path d="M12 0v16M0 8h24" stroke="#fff" stroke-width="5.2"></path><path d="M12 0v16M0 8h24" stroke="#c8102e" stroke-width="3"></path>',
+    el:
+      '<rect width="24" height="16" fill="#0d5eaf"></rect><path d="M0 3h24M0 6h24M0 9h24M0 12h24M0 15h24" stroke="#fff" stroke-width="1"></path><rect width="9.5" height="8.8" fill="#0d5eaf"></rect><path d="M4.75 0v8.8M0 4.4h9.5" stroke="#fff" stroke-width="1.6"></path>',
+    de:
+      '<rect width="24" height="5.34" fill="#000"></rect><rect y="5.33" width="24" height="5.34" fill="#dd0000"></rect><rect y="10.66" width="24" height="5.34" fill="#ffce00"></rect>',
+    fr:
+      '<rect width="8" height="16" fill="#0055a4"></rect><rect x="8" width="8" height="16" fill="#fff"></rect><rect x="16" width="8" height="16" fill="#ef4135"></rect>',
+    it:
+      '<rect width="8" height="16" fill="#009246"></rect><rect x="8" width="8" height="16" fill="#fff"></rect><rect x="16" width="8" height="16" fill="#ce2b37"></rect>',
+    es:
+      '<rect width="24" height="16" fill="#aa151b"></rect><rect y="4" width="24" height="8" fill="#f1bf00"></rect>',
+    nl:
+      '<rect width="24" height="5.34" fill="#ae1c28"></rect><rect y="5.33" width="24" height="5.34" fill="#fff"></rect><rect y="10.66" width="24" height="5.34" fill="#21468b"></rect>',
+    pl: '<rect width="24" height="8" fill="#fff"></rect><rect y="8" width="24" height="8" fill="#dc143c"></rect>',
+    ru:
+      '<rect width="24" height="5.34" fill="#fff"></rect><rect y="5.33" width="24" height="5.34" fill="#0039a6"></rect><rect y="10.66" width="24" height="5.34" fill="#d52b1e"></rect>',
+    tr:
+      '<rect width="24" height="16" fill="#e30a17"></rect><circle cx="10" cy="8" r="4.2" fill="#fff"></circle><circle cx="11.2" cy="8" r="3.35" fill="#e30a17"></circle><path d="M15.1 5.9l.45 1.32h1.42l-1.15.82.44 1.33-1.16-.83-1.14.83.43-1.33-1.15-.82h1.42z" fill="#fff"></path>',
+  };
+  const FLAG_FALLBACK_SVG_MARKUP =
+    '<rect width="24" height="16" fill="#ebe2c9"></rect><circle cx="12" cy="8" r="4.2" fill="none" stroke="#56631f" stroke-width="1.4"></circle><path d="M8 8h8M12 3.8c1.5 1.9 1.5 6.5 0 8.4M12 3.8c-1.5 1.9-1.5 6.5 0 8.4" stroke="#56631f" stroke-width="1.1" fill="none"></path>';
   const DOM_IDS = {
     nav: "qr-nav",
     kicker: "qr-kicker",
@@ -565,33 +588,11 @@
   }
 
   function renderFlagIcon(lang) {
-    const commonAttrs = 'class="flag-icon" viewBox="0 0 24 16" aria-hidden="true" focusable="false"';
-    const manifestFlag = i18n.getLanguageFlag(lang);
-
-    if (manifestFlag) {
-      return '<span class="flag-icon flag-icon--emoji" aria-hidden="true">' + escapeHtml(manifestFlag) + "</span>";
-    }
-
-    if (lang === "el") {
-      return (
-        "<svg " +
-        commonAttrs +
-        '><rect width="24" height="16" fill="#0d5eaf"></rect><path d="M0 3h24M0 6h24M0 9h24M0 12h24M0 15h24" stroke="#fff" stroke-width="1"></path><rect width="9.5" height="8.8" fill="#0d5eaf"></rect><path d="M4.75 0v8.8M0 4.4h9.5" stroke="#fff" stroke-width="1.6"></path></svg>'
-      );
-    }
-
-    if (lang === "de") {
-      return (
-        "<svg " +
-        commonAttrs +
-        '><rect width="24" height="5.34" fill="#000"></rect><rect y="5.33" width="24" height="5.34" fill="#dd0000"></rect><rect y="10.66" width="24" height="5.34" fill="#ffce00"></rect></svg>'
-      );
-    }
-
+    const flagMarkup = FLAG_SVG_MARKUP[lang] || FLAG_FALLBACK_SVG_MARKUP;
     return (
-      "<svg " +
-      commonAttrs +
-      '><rect width="24" height="16" fill="#012169"></rect><path d="M0 0l24 16M24 0L0 16" stroke="#fff" stroke-width="3.2"></path><path d="M0 0l24 16M24 0L0 16" stroke="#c8102e" stroke-width="1.7"></path><path d="M12 0v16M0 8h24" stroke="#fff" stroke-width="5.2"></path><path d="M12 0v16M0 8h24" stroke="#c8102e" stroke-width="3"></path></svg>'
+      '<svg class="flag-icon" viewBox="0 0 24 16" aria-hidden="true" focusable="false">' +
+      flagMarkup +
+      "</svg>"
     );
   }
 
