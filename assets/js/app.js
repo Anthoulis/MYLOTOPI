@@ -804,10 +804,16 @@
     renderSpotButtons();
   }
 
-  function updateUrl() {
+  function updateUrl(options) {
+    const settings = Object.assign(
+      {
+        includeSpot: true,
+      },
+      options || {}
+    );
     const url = new URL(window.location.href);
 
-    if (state.activeSpot) {
+    if (settings.includeSpot && state.activeSpot) {
       url.searchParams.set("spot", state.activeSpot);
     } else {
       url.searchParams.delete("spot");
@@ -965,15 +971,15 @@
     const canonicalRawLang = hasLangParam ? normalizeQueryParam(rawLang || "") : null;
     const canonicalRawSpot = hasSpotParam ? normalizeQueryParam(rawSpot || "") : null;
     const normalizedLang = i18n.normalizeLanguage(rawLang) || i18n.defaultLanguage;
-    const normalizedSpot = normalizeSpot(rawSpot) || getDefaultSpot();
+    const requestedSpot = hasSpotParam ? normalizeSpot(rawSpot) : null;
+    const normalizedSpot = requestedSpot || getDefaultSpot();
 
     state.lang = normalizedLang;
     state.activeSpot = normalizedSpot;
-    state.shouldScrollToSpot = hasSpotParam;
+    state.shouldScrollToSpot = Boolean(requestedSpot);
     state.shouldNormalizeUrl =
       (hasLangParam && canonicalRawLang !== normalizedLang) ||
-      (hasSpotParam && canonicalRawSpot !== normalizedSpot) ||
-      (!hasSpotParam && Boolean(normalizedSpot));
+      (hasSpotParam && (!requestedSpot || canonicalRawSpot !== requestedSpot));
   }
 
   function handleLanguageClick(event) {
@@ -1190,7 +1196,9 @@
     syncActiveState();
 
     if (state.shouldNormalizeUrl) {
-      updateUrl();
+      updateUrl({
+        includeSpot: state.shouldScrollToSpot,
+      });
       state.shouldNormalizeUrl = false;
     }
 
