@@ -16,14 +16,17 @@
     "Gehen Sie weiter zur Bäckerei, wo die Geschichte vom Herd der Familie zum gemeinschaftlichen Steinofen führt."
   ],
   "challenge": {
-    "label": "Für junge Besucher",
-    "title": "Kluge Lösungen finden",
+    "label": "F?r junge Besucher",
+    "title": "Finde drei Dinge",
     "items": [
       {
-        "text": "Finden Sie einen Gegenstand zum Kochen, einen zum Schlafen und einen zur Aufbewahrung."
+        "text": "Finde etwas zum Kochen."
       },
       {
-        "text": "Schauen Sie nach oben und unten: Manche der besten Ideen liegen nicht auf Augenhöhe."
+        "text": "Finde etwas zum Schlafen."
+      },
+      {
+        "text": "Finde etwas zum Aufbewahren von Essen."
       }
     ]
   },

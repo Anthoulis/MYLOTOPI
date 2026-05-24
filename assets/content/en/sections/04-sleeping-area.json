@@ -16,15 +16,18 @@
   ],
   "challenge": {
     "label": "For young visitors",
-    "title": "Imagine the room at night",
+    "title": "Imagine sleeping here",
     "items": [
       {
-        "text": "Listen for the sounds around you and imagine sleeping while the wind moved the sails."
+        "text": "Look around this small space."
       },
       {
-        "text": "Find where wheat and flour could be kept close to the family."
+        "text": "Where would you put a pillow?"
+      },
+      {
+        "text": "Point to a quiet corner."
       }
     ]
   },
-  "imageAlt": "Sleeping Area"
+  "imageAlt": "Sleeping area image not available yet"
 }

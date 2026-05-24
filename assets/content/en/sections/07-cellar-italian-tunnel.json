@@ -16,13 +16,16 @@
   ],
   "challenge": {
     "label": "For young visitors",
-    "title": "Read the stone",
+    "title": "Feel the cool air",
     "items": [
       {
-        "text": "Notice where the tunnel feels darker, cooler or quieter than the spaces outside."
+        "text": "Stand quietly for a moment."
       },
       {
-        "text": "Count one row of bottles and imagine how the cellar changes when it is full."
+        "text": "Does it feel cooler here?"
+      },
+      {
+        "text": "Count three bottles or stones."
       }
     ]
   },

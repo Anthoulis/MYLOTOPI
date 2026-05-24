@@ -18,13 +18,16 @@
   ],
   "challenge": {
     "label": "For young visitors",
-    "title": "Find the working clues",
+    "title": "Find the bell",
     "items": [
       {
-        "text": "Look for the bell that warned the miller when wheat was low."
+        "text": "Look for a small bell."
       },
       {
-        "text": "Find the pipe where finished flour passed down to the floor below."
+        "text": "What sound would it make?"
+      },
+      {
+        "text": "Show it to your family."
       }
     ]
   },

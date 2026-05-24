@@ -14,14 +14,17 @@
     "Gehen Sie weiter zur historischen Windmühle, wo die Geschichte vom Garten und der Fürsorge der Familie zu Weizen, Mehl und körperlicher Arbeit führt."
   ],
   "challenge": {
-    "label": "Für junge Besucher",
-    "title": "Die Sinne nutzen",
+    "label": "F?r junge Besucher",
+    "title": "Riech an einem Kraut",
     "items": [
       {
-        "text": "Wenn Ihre Begleitung es erlaubt, reiben Sie sanft ein Blatt und achten Sie auf den Duft."
+        "text": "Frag zuerst, ob du ein Blatt ber?hren darfst."
       },
       {
-        "text": "Finden Sie eine Pflanze mit graugrünen Blättern und eine mit kräftigerem Grün."
+        "text": "Riech vorsichtig daran."
+      },
+      {
+        "text": "Sag deiner Familie, woran es dich erinnert."
       }
     ]
   },

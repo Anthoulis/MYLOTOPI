@@ -17,13 +17,16 @@
   ],
   "challenge": {
     "label": "For young visitors",
-    "title": "Find the clever solutions",
+    "title": "Find three things",
     "items": [
       {
-        "text": "Find one object used for cooking, one for sleeping and one for storage."
+        "text": "Find something for cooking."
       },
       {
-        "text": "Look up and down: some of the smartest storage ideas are not at eye level."
+        "text": "Find something for sleeping."
+      },
+      {
+        "text": "Find something for storing food."
       }
     ]
   },

@@ -15,16 +15,19 @@
     "Gehen Sie weiter zur Mechanik, wo Holz und Stein zeigen, wie Wind zu Mehl wurde."
   ],
   "challenge": {
-    "label": "Für junge Besucher",
-    "title": "Den Raum bei Nacht vorstellen",
+    "label": "F?r junge Besucher",
+    "title": "Stell dir vor, hier zu schlafen",
     "items": [
       {
-        "text": "Hören Sie auf die Geräusche um sich herum und stellen Sie sich vor, zu schlafen, während der Wind die Segel bewegt."
+        "text": "Schau dir den kleinen Raum an."
       },
       {
-        "text": "Finden Sie heraus, wo Weizen und Mehl nah bei der Familie aufbewahrt werden konnten."
+        "text": "Wo w?rdest du ein Kissen hinlegen?"
+      },
+      {
+        "text": "Zeig auf eine ruhige Ecke."
       }
     ]
   },
-  "imageAlt": "Schlafbereich"
+  "imageAlt": "Bild des Schlafbereichs ist noch nicht verfügbar"
 }

@@ -17,13 +17,16 @@
   ],
   "challenge": {
     "label": "For young visitors",
-    "title": "Measure with your eyes",
+    "title": "Find stone and wood",
     "items": [
       {
-        "text": "Stand near the doorway and compare your arm span with the thickness of the wall."
+        "text": "Look around the room."
       },
       {
-        "text": "Find the wooden saddle, the scale and the rope connected with the first brake."
+        "text": "Point to one thing made of stone."
+      },
+      {
+        "text": "Point to one thing made of wood."
       }
     ]
   },

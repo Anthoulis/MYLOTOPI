@@ -70,18 +70,7 @@
         anchorId: "sleeping-area",
         accent: "#8f6b32",
         accentSoft: "rgba(143, 107, 50, 0.14)",
-        images: [
-          {
-            src: "./assets/images/stops/04-sleeping-area/01-windmill-exterior.jpg",
-            alt: {
-              en: "Windmill sails, stone and garden textures at Mylotopi",
-              el: "Πανιά ανεμόμυλου, πέτρα και υφές κήπου στο Μυλοτόπι",
-              de: "Windmühlenflügel, Stein und Gartentexturen in Mylotopi",
-            },
-            fit: "cover",
-            position: "center",
-          },
-        ],
+        images: [],
       },
       machinery: {
         anchorId: "machinery",
@@ -140,36 +129,6 @@
               de: "Der Weinkeller im alten Tunnel von Mylotopi",
             },
             fit: "cover",
-            position: "center",
-          },
-          {
-            src: "./assets/images/stops/07-cellar-italian-tunnel/01-tunnel-entrance.jpeg",
-            alt: {
-              en: "Tunnel entrance and stone passage at Mylotopi",
-              el: "Είσοδος τούνελ και πέτρινο πέρασμα στο Μυλοτόπι",
-              de: "Tunneleingang und Steinpassage in Mylotopi",
-            },
-            fit: "contain",
-            position: "center",
-          },
-          {
-            src: "./assets/images/stops/07-cellar-italian-tunnel/02-tunnel-interior.jpeg",
-            alt: {
-              en: "Interior view of the Mylotopi tunnel",
-              el: "Εσωτερική άποψη του τούνελ στο Μυλοτόπι",
-              de: "Innenansicht des Tunnels von Mylotopi",
-            },
-            fit: "contain",
-            position: "center",
-          },
-          {
-            src: "./assets/images/stops/07-cellar-italian-tunnel/03-tunnel-stone-detail.jpeg",
-            alt: {
-              en: "Stone tunnel detail at Mylotopi",
-              el: "Λεπτομέρεια της πέτρας στο τούνελ του Μυλοτόπι",
-              de: "Steindetail im Tunnel von Mylotopi",
-            },
-            fit: "contain",
             position: "center",
           },
         ],

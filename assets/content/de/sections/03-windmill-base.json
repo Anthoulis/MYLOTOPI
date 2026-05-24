@@ -16,14 +16,17 @@
     "Gehen Sie vorsichtig hinauf zum Schlafbereich, wo Arbeit und Familienleben überraschend nahe beieinander lagen."
   ],
   "challenge": {
-    "label": "Für junge Besucher",
-    "title": "Mit den Augen messen",
+    "label": "F?r junge Besucher",
+    "title": "Finde Stein und Holz",
     "items": [
       {
-        "text": "Stellen Sie sich nahe an die Tür und vergleichen Sie Ihre Armspanne mit der Dicke der Wand."
+        "text": "Schau dich im Raum um."
       },
       {
-        "text": "Finden Sie den hölzernen Sattel, die Waage und das Seil des ersten Bremssystems."
+        "text": "Zeig auf etwas aus Stein."
+      },
+      {
+        "text": "Zeig auf etwas aus Holz."
       }
     ]
   },

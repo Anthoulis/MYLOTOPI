@@ -16,16 +16,17 @@
 
     <header class="site-header" id="qr-topbar">
       <nav class="container site-header__inner" id="qr-nav">
-        <div class="brand" aria-label="Mylotopi Windmiller's Life">
+        <div class="brand" aria-label="Mylotopi">
           <span class="brand__name">Mylotopi</span>
-          <span class="brand__tagline">Windmiller's Life</span>
         </div>
 
         <div class="header-controls">
           <details class="selector selector--stop" id="spot-menu">
             <summary class="selector__button selector__button--stop" id="spot-menu-trigger">
-              <span class="selector__label" id="spot-control-label"></span>
-              <span class="selector__value" id="active-spot-label"></span>
+              <span class="selector__content">
+                <span class="selector__label" id="spot-control-label"></span>
+                <span class="selector__value" id="active-spot-label"></span>
+              </span>
               <span class="selector__chevron" aria-hidden="true"></span>
             </summary>
             <div class="selector__menu selector__menu--stop" id="spot-switcher" role="group"></div>
@@ -33,8 +34,10 @@
 
           <details class="selector selector--language" id="language-menu">
             <summary class="selector__button selector__button--language" id="language-menu-trigger">
-              <span class="selector__label" id="language-control-label"></span>
-              <span class="selector__value language-option language-option--active" id="active-language-label"></span>
+              <span class="selector__content">
+                <span class="selector__label" id="language-control-label"></span>
+                <span class="selector__value language-option language-option--active" id="active-language-label"></span>
+              </span>
               <span class="selector__chevron" aria-hidden="true"></span>
             </summary>
             <div class="selector__menu selector__menu--language" id="language-switcher" role="group"></div>
@@ -47,12 +50,6 @@
       <p class="qr-hero__eyebrow" id="qr-kicker"></p>
       <h1 class="qr-hero__title" id="qr-title"></h1>
       <p class="qr-hero__current" id="current-stop-label"></p>
-      <p class="qr-hero__intro" id="qr-intro"></p>
-      <div class="qr-hero__rule" aria-hidden="true">
-        <span></span>
-        <i></i>
-        <span></span>
-      </div>
     </header>
 
     <main class="container qr-main" id="qr-main"></main>

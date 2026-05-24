@@ -17,14 +17,17 @@
     "Gehen Sie wieder hinaus zum Dreschplatz, wo der Weizen vorbereitet wurde, bevor er die Mühle erreichte."
   ],
   "challenge": {
-    "label": "Für junge Besucher",
-    "title": "Spuren der Arbeit finden",
+    "label": "F?r junge Besucher",
+    "title": "Finde die Glocke",
     "items": [
       {
-        "text": "Suchen Sie die Glocke, die den Müller warnte, wenn der Weizen knapp wurde."
+        "text": "Such nach einer kleinen Glocke."
       },
       {
-        "text": "Finden Sie das Rohr, durch das das fertige Mehl nach unten gelangte."
+        "text": "Welchen Klang h?tte sie?"
+      },
+      {
+        "text": "Zeig sie deiner Familie."
       }
     ]
   },

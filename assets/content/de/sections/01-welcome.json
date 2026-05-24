@@ -34,15 +34,17 @@
     "Wählen Sie Ihre Sprache, wählen Sie die Station, an der Sie stehen, und starten Sie den Ton, wenn Sie bereit sind. Der Guide ist für einen ruhigen Rundgang im Freien gedacht, mit Zeit zum Anhalten und Beobachten."
   ],
   "challenge": {
-    "label": "Für junge Besucher",
-    "title": "Details mitnehmen",
-    "intro": "Achten Sie unterwegs auf Farben, Formen und Oberflächen, die Sie später wiedererkennen möchten.",
+    "label": "F?r junge Besucher",
+    "title": "Schau und finde",
     "items": [
       {
-        "text": "Suchen Sie nach Stein, Holz, Segeln, alten Werkzeugen und Familienobjekten."
+        "text": "Schau dich um."
       },
       {
-        "text": "Wählen Sie an jeder Station ein Detail, das die Geschichte des alten Kefalos besonders gut erzählt."
+        "text": "Findest du etwas aus Stein?"
+      },
+      {
+        "text": "W?hle ein Detail und zeig es deiner Familie."
       }
     ]
   },

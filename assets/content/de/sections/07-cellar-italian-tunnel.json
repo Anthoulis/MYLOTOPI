@@ -15,14 +15,17 @@
     "Wenn Sie den Tunnel verlassen, gehen Sie weiter zum traditionellen Haus und zur Bäckerei, zurück in das häusliche Leben des alten Dorfes."
   ],
   "challenge": {
-    "label": "Für junge Besucher",
-    "title": "Den Stein lesen",
+    "label": "F?r junge Besucher",
+    "title": "Sp?r die k?hle Luft",
     "items": [
       {
-        "text": "Achten Sie darauf, wo der Tunnel dunkler, kühler oder stiller wirkt als draußen."
+        "text": "Bleib kurz ganz ruhig stehen."
       },
       {
-        "text": "Zählen Sie eine Reihe Flaschen und stellen Sie sich vor, wie sich der Keller verändert, wenn er gefüllt ist."
+        "text": "Ist es hier k?hler?"
+      },
+      {
+        "text": "Z?hle drei Flaschen oder drei Steine."
       }
     ]
   },

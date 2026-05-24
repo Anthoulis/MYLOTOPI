@@ -16,14 +16,17 @@
     "Vielen Dank, dass Sie mit uns durch Mylotopi und die Erinnerung an das alte Kefalos gegangen sind."
   ],
   "challenge": {
-    "label": "Für junge Besucher",
-    "title": "Dem Brot folgen",
+    "label": "F?r junge Besucher",
+    "title": "Folge dem Brot",
     "items": [
       {
-        "text": "Nennen Sie die drei Orte, durch die das Brot ging: Feld, Mühle und Ofen."
+        "text": "Zeig auf den Ofen."
       },
       {
-        "text": "Schauen Sie auf die alten Fotografien und finden Sie ein Werkzeug oder eine Bewegung, die sorgfältige Arbeit zeigt."
+        "text": "Stell dir warmes Brot darin vor."
+      },
+      {
+        "text": "Sag deiner Familie, wie es riechen k?nnte."
       }
     ]
   },

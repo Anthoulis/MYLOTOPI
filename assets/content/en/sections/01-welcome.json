@@ -35,14 +35,16 @@
   ],
   "challenge": {
     "label": "For young visitors",
-    "title": "Carry the details with you",
-    "intro": "As you walk, notice colors, shapes and textures that you may want to remember later.",
+    "title": "Look and find",
     "items": [
       {
-        "text": "Look for stone, wood, sails, old tools and family objects that make Mylotopi feel alive."
+        "text": "Look around you."
       },
       {
-        "text": "Choose one detail from each stop that best tells the story of old Kefalos."
+        "text": "Can you find something made of stone?"
+      },
+      {
+        "text": "Choose one detail and show it to your family."
       }
     ]
   },

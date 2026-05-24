@@ -15,14 +15,17 @@
     "Gehen Sie weiter zum italienischen Tunnel und Keller, wo sich die Atmosphäre von offener Landarbeit zu kühlem Stein und Kriegserinnerung verändert."
   ],
   "challenge": {
-    "label": "Für junge Besucher",
-    "title": "Dem Kreis folgen",
+    "label": "F?r junge Besucher",
+    "title": "Finde den Kreis",
     "items": [
       {
-        "text": "Folgen Sie mit den Augen dem Rand des Dreschplatzes und finden Sie den Mittelpfosten."
+        "text": "Schau auf den runden Boden."
       },
       {
-        "text": "Stellen Sie sich vor, wie viele langsame Kreise nötig waren, bevor der Weizen bereit für den nächsten Schritt war."
+        "text": "Finde die Mitte."
+      },
+      {
+        "text": "Folge dem Kreis mit deinen Augen."
       }
     ]
   },

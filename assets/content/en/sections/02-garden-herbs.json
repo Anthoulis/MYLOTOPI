@@ -15,13 +15,16 @@
   ],
   "challenge": {
     "label": "For young visitors",
-    "title": "Use your senses",
+    "title": "Smell a herb",
     "items": [
       {
-        "text": "If your guide invites you to, gently rub a leaf and notice how different each herb smells."
+        "text": "Ask before touching a leaf."
       },
       {
-        "text": "Find one plant with grey-green leaves and one with a deeper green color."
+        "text": "Smell it gently."
+      },
+      {
+        "text": "Tell your family what it reminds you of."
       }
     ]
   },

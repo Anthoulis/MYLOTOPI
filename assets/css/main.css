@@ -111,25 +111,14 @@ body.is-map-modal-open {
 }
 
 .brand {
-  display: grid;
-  gap: 1px;
   color: var(--surface);
 }
 
 .brand__name {
   font-family: "Playfair Display", Georgia, serif;
-  font-size: 1.12rem;
+  font-size: 1.28rem;
   font-weight: 700;
   line-height: 1;
-}
-
-.brand__tagline {
-  color: var(--accent-soft);
-  font-size: 0.58rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  line-height: 1.25;
-  text-transform: uppercase;
 }
 
 .header-controls {
@@ -152,13 +141,13 @@ body.is-map-modal-open {
 }
 
 .selector__button {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  display: flex;
   align-items: center;
-  column-gap: 8px;
+  justify-content: space-between;
+  gap: 10px;
   width: 100%;
-  min-height: var(--touch);
-  padding: 7px 10px;
+  min-height: 48px;
+  padding: 8px 16px;
   border: 1px solid rgb(var(--accent-rgb) / 0.26);
   border-radius: 999px;
   background: rgb(var(--surface-rgb) / 0.96);
@@ -175,27 +164,35 @@ body.is-map-modal-open {
   width: 132px;
 }
 
+.selector__content {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
 .selector__label {
   color: var(--olive);
-  font-size: 0.56rem;
+  font-size: 0.58rem;
   font-weight: 900;
   letter-spacing: 0.055em;
-  line-height: 1.05;
+  line-height: 1.1;
   text-transform: uppercase;
 }
 
 .selector__value {
   overflow: hidden;
-  font-size: 0.84rem;
+  font-size: 0.88rem;
   font-weight: 850;
-  line-height: 1.18;
+  line-height: 1.15;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .selector__chevron {
-  grid-column: 2;
-  grid-row: 1 / 3;
+  flex: 0 0 auto;
   width: 8px;
   height: 8px;
   border-right: 1.5px solid currentColor;
@@ -289,8 +286,8 @@ body.is-map-modal-open {
 }
 
 .language-option--active {
-  grid-column: 1;
-  grid-row: 2;
+  display: flex;
+  gap: 8px;
 }
 
 .flag-icon {
@@ -349,38 +346,6 @@ body.is-map-modal-open {
   font-size: 0.82rem;
   font-weight: 850;
   line-height: 1.25;
-}
-
-.qr-hero__intro {
-  max-width: 42rem;
-  margin: 12px 0 0;
-  color: var(--muted);
-  font-size: 1rem;
-  line-height: 1.62;
-  text-wrap: pretty;
-}
-
-.qr-hero__rule {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  width: fit-content;
-  margin-top: 14px;
-  color: var(--accent);
-}
-
-.qr-hero__rule span {
-  width: 34px;
-  height: 1px;
-  background: currentColor;
-  opacity: 0.58;
-}
-
-.qr-hero__rule i {
-  width: 8px;
-  height: 8px;
-  border: 1.5px solid currentColor;
-  border-radius: 50%;
 }
 
 .qr-main {
@@ -451,8 +416,7 @@ body.is-map-modal-open {
 }
 
 .minimap-actions__button,
-.qr-stop-nav__button,
-.qr-readmore__button {
+.qr-stop-nav__button {
   min-height: var(--touch);
   border: 1px solid rgb(var(--accent-rgb) / 0.28);
   border-radius: 999px;
@@ -785,8 +749,34 @@ body.is-map-modal-open {
 }
 
 .qr-readmore__button {
+  display: inline-flex;
+  gap: 9px;
+  align-items: center;
+  justify-content: center;
   justify-self: start;
-  padding: 10px 15px;
+  min-height: var(--touch);
+  padding: 10px 14px;
+  border: 1px solid rgb(var(--accent-rgb) / 0.32);
+  border-radius: var(--radius-sm);
+  background: rgb(var(--surface-rgb) / 0.86);
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 900;
+  line-height: 1.2;
+  box-shadow: 0 8px 18px rgb(var(--text-rgb) / 0.08);
+}
+
+.qr-readmore__chevron {
+  width: 8px;
+  height: 8px;
+  border-right: 1.6px solid currentColor;
+  border-bottom: 1.6px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 180ms ease;
+}
+
+.qr-readmore__button[aria-expanded="true"] .qr-readmore__chevron {
+  transform: translateY(2px) rotate(-135deg);
 }
 
 .qr-activity {
@@ -884,12 +874,7 @@ body.is-map-modal-open {
 
 @media (max-width: 370px) {
   .brand__name {
-    font-size: 1.02rem;
-  }
-
-  .brand__tagline {
-    font-size: 0.53rem;
-    letter-spacing: 0.08em;
+    font-size: 1.18rem;
   }
 
   .selector__button--language {
@@ -1023,6 +1008,7 @@ body.is-map-modal-open {
   }
 
   .selector__chevron,
+  .qr-readmore__chevron,
   .qr-readmore__panel {
     transition: none;
   }

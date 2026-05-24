@@ -16,13 +16,16 @@
   ],
   "challenge": {
     "label": "For young visitors",
-    "title": "Trace the circle",
+    "title": "Find the circle",
     "items": [
       {
-        "text": "Walk your eyes around the threshing floor and find the center post."
+        "text": "Look at the round floor."
       },
       {
-        "text": "Imagine how many slow circles were needed before wheat was ready for the next step."
+        "text": "Find the middle."
+      },
+      {
+        "text": "Follow the circle with your eyes."
       }
     ]
   },

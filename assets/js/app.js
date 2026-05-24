@@ -14,7 +14,6 @@
     kicker: "qr-kicker",
     title: "qr-title",
     currentStopLabel: "current-stop-label",
-    intro: "qr-intro",
     spotControlLabel: "spot-control-label",
     languageControlLabel: "language-control-label",
     activeSpotLabel: "active-spot-label",
@@ -287,7 +286,9 @@
       '" data-read-less="' +
       escapeHtml(ui.readLess) +
       '">' +
+      '<span data-copy-toggle-label>' +
       escapeHtml(ui.readMore) +
+      '</span><span class="qr-readmore__chevron" aria-hidden="true"></span>' +
       "</button></div>"
     );
   }
@@ -628,7 +629,7 @@
     const triggerLabel = ui.stopSelectorLabel || ui.spotsLabel;
 
     elements.activeSpotLabel.textContent = activeLabel;
-    elements.spotControlLabel.textContent = triggerLabel + ":";
+    elements.spotControlLabel.textContent = triggerLabel;
     elements.spotTrigger.setAttribute("aria-label", triggerLabel + ": " + activeLabel);
     elements.spotMenu.setAttribute("aria-label", ui.spotsLabel);
     elements.spotSwitcher.setAttribute("aria-label", ui.spotsLabel);
@@ -915,11 +916,10 @@
     document.title = heroTitle + " | Mylotopi";
     document.body.classList.remove("is-map-modal-open");
     elements.nav.setAttribute("aria-label", ui.navigationLabel);
-    elements.spotControlLabel.textContent = (ui.stopSelectorLabel || ui.spotsLabel) + ":";
+    elements.spotControlLabel.textContent = ui.stopSelectorLabel || ui.spotsLabel;
     elements.languageControlLabel.textContent = ui.languageLabel;
     elements.kicker.textContent = ui.kicker;
     elements.title.textContent = heroTitle;
-    elements.intro.textContent = ui.intro;
 
     renderLanguageButtons();
     renderSections();
@@ -1064,6 +1064,7 @@
     const previousButtonTop = button.getBoundingClientRect().top;
     const readMoreLabel = button.dataset.readMore;
     const readLessLabel = button.dataset.readLess;
+    const buttonLabel = button.querySelector("[data-copy-toggle-label]");
 
     if (nextExpanded) {
       copyPanel.hidden = false;
@@ -1082,7 +1083,11 @@
 
     copyPanel.dataset.expanded = String(nextExpanded);
     button.setAttribute("aria-expanded", String(nextExpanded));
-    button.textContent = nextExpanded ? readLessLabel : readMoreLabel;
+    if (buttonLabel) {
+      buttonLabel.textContent = nextExpanded ? readLessLabel : readMoreLabel;
+    } else {
+      button.textContent = nextExpanded ? readLessLabel : readMoreLabel;
+    }
 
     if (!nextExpanded) {
       window.setTimeout(function () {
