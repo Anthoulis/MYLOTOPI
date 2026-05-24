@@ -7,9 +7,6 @@ Active runtime language folders:
 - `en`
 - `el`
 - `de`
-
-Staged language folders:
-
 - `fr`
 - `it`
 - `es`
@@ -32,6 +29,6 @@ Each folder currently contains 9 MP3 files, one per canonical tour stop:
 
 Language manifests in `assets/content/<language>/index.json` are the source of truth for runtime audio paths.
 
-Before activating a staged language, play every referenced audio file in a browser and run `npm run validate`.
+Before deployment, play every referenced audio file in a browser and run `npm run validate`.
 
 Do not link to files inside `Mylotopi files` from the public site.

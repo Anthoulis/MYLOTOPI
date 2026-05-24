@@ -9,9 +9,6 @@ Active runtime languages:
 - `en`: English, default
 - `el`: Greek
 - `de`: German
-
-Staged language folders:
-
 - `fr`: French
 - `it`: Italian
 - `es`: Spanish
@@ -20,7 +17,9 @@ Staged language folders:
 - `ru`: Russian
 - `tr`: Turkish
 
-Staged folders may contain usable source content and media, but they are not active until they are listed in `MYLOTOPI_GUIDE_META.languages` and pass the same UI/content review as the active languages. Keep staged codes in `MYLOTOPI_GUIDE_META.stagedLanguages` so inactive folders remain documented.
+There are no staged language folders currently. All ten language folders are listed in `MYLOTOPI_GUIDE_META.languages` and exposed in the runtime language switcher.
+
+Turkish is active and uses a documented fallback Mini-map until a Turkish-specific source image is provided.
 
 ## Canonical Spot Keys
 
@@ -56,7 +55,7 @@ Each language folder under `assets/audio/` contains 9 audio files:
 
 Replace narration using the same filenames whenever possible.
 
-Do not leave zero-byte, corrupt, or invalid audio files. Browser audio controls must be able to load the files. If final audio is not ready for a language, keep it staged or set `audio.ready: false` before activation.
+Do not leave zero-byte, corrupt, or invalid audio files. Browser audio controls must be able to load the files. If final audio is not ready for a future language, keep that language staged or set `audio.ready: false` before activation.
 
 If the final format changes later, update the `audio.path` values in every affected `assets/content/<language>/index.json` file and confirm MIME handling in `assets/js/app.js` still supports the extension.
 
@@ -112,13 +111,13 @@ Do not hardcode translated visitor copy in `index.html`, `assets/js/app.js`, or 
 
 When extracting from source DOCX files, split on the source marker `Read more>>` if it exists. Text before the marker becomes `preview`; text after the marker becomes `details`. The literal marker must not be stored for rendering.
 
-## Activating A Staged Language
+## Activating A Future Language
 
-1. Confirm the staged folder has an `index.json` and all 9 section files.
+1. Confirm the folder has an `index.json` and all 9 section files.
 2. Confirm UI labels are fully localized, not mixed with English fallback strings unless deliberately approved.
 3. Confirm the young-visitors challenge content is present or intentionally omitted for that language.
 4. Confirm all `audio.ready: true` paths exist and play in the browser.
-5. Confirm the Mini-map path exists. Replace Turkish's fallback map before activating Turkish.
+5. Confirm the Mini-map path exists.
 6. Move the language code from `stagedLanguages` to `languages` in `assets/js/content-meta.js`.
 7. Run `npm run validate`.
 8. Manually test language switching, audio, gallery, Mini-map, and URL params.
@@ -139,7 +138,7 @@ When extracting from source DOCX files, split on the source marker `Read more>>`
 2. Run `npm run validate`.
 3. Test mobile widths `320`, `360`, `390`, and `430`.
 4. Test language switching.
-5. Test every active-language audio file.
+5. Test every audio file.
 6. Test every gallery.
 7. Test the Mini-map modal.
 8. Test URL params `?lang=en&spot=welcome`.

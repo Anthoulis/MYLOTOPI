@@ -4,20 +4,18 @@ Mylotopi QR Guide is a lightweight static microsite for the visitor audio/text t
 
 ## Current Status
 
-Production-active runtime languages are English (`en`), Greek (`el`), and German (`de`).
-
-The repository also contains staged content, audio, and map folders for French (`fr`), Italian (`it`), Spanish (`es`), Dutch (`nl`), Polish (`pl`), Russian (`ru`), and Turkish (`tr`). Those folders are kept for review and future activation, but they are not exposed in the runtime language switcher because their UI/challenge layer has not been brought to the same production standard as the active languages.
+Production-active runtime languages are English (`en`), Greek (`el`), German (`de`), French (`fr`), Italian (`it`), Spanish (`es`), Dutch (`nl`), Polish (`pl`), Russian (`ru`), and Turkish (`tr`).
 
 Final section-specific image sets are still incomplete. When a stop does not have a suitable image, the guide intentionally shows a clean placeholder instead of an unrelated photo.
 
-Turkish currently has a staged fallback mini-map copied from the default map. Replace it with a Turkish-specific source map before activating Turkish.
+Turkish is active and currently uses a documented fallback mini-map copied from the default map. Replace it with a Turkish-specific source map when one is available.
 
 ## App Structure
 
 - `index.html`: static entry point.
 - `qr-guide.html`: compatibility redirect to `index.html` that preserves query params in JavaScript.
 - `assets/css/main.css`: visual system and responsive layout.
-- `assets/js/content-meta.js`: global metadata, active/staged language lists, canonical spot order, and image metadata.
+- `assets/js/content-meta.js`: global metadata, runtime language list, canonical spot order, and image metadata.
 - `assets/js/i18n.js`: JSON content loading, language normalization, fallback logic, and content helpers.
 - `assets/js/app.js`: rendering, navigation, URL state, Mini-map, audio lifecycle, and gallery behavior.
 - `assets/content/<language>/index.json`: language manifest, UI labels, Mini-map path, section order, section file paths, and audio paths.
@@ -57,16 +55,13 @@ Active:
 1. English (`en`)
 2. Greek (`el`)
 3. German (`de`)
-
-Staged, not active:
-
-1. French (`fr`)
-2. Italian (`it`)
-3. Spanish (`es`)
-4. Dutch (`nl`)
-5. Polish (`pl`)
-6. Russian (`ru`)
-7. Turkish (`tr`)
+4. French (`fr`)
+5. Italian (`it`)
+6. Spanish (`es`)
+7. Dutch (`nl`)
+8. Polish (`pl`)
+9. Russian (`ru`)
+10. Turkish (`tr`)
 
 ## Tour Stops
 
@@ -97,7 +92,7 @@ See `docs/CONTENT_REPLACEMENT_GUIDE.md` for the full replacement checklist.
 2. Run `npm run validate`.
 3. Test mobile widths `320`, `360`, `390`, and `430`.
 4. Test language switching.
-5. Test every active-language audio file.
+5. Test every audio file.
 6. Test every gallery.
 7. Test the Mini-map modal.
 8. Test URL params `?lang=en&spot=welcome`.

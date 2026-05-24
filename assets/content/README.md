@@ -7,9 +7,6 @@ Active runtime language folders:
 - `en`
 - `el`
 - `de`
-
-Staged language folders:
-
 - `fr`
 - `it`
 - `es`
@@ -18,7 +15,7 @@ Staged language folders:
 - `ru`
 - `tr`
 
-Only languages listed in `MYLOTOPI_GUIDE_META.languages` are exposed in the app. Staged folders are intentionally kept out of the language switcher until they are reviewed and moved out of `MYLOTOPI_GUIDE_META.stagedLanguages`.
+Only languages listed in `MYLOTOPI_GUIDE_META.languages` are exposed in the app. All language folders in this directory are currently active.
 
 Each language folder has:
 

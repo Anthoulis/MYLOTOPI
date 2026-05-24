@@ -7,9 +7,6 @@ Active runtime map folders:
 - `en`
 - `el`
 - `de`
-
-Staged map folders:
-
 - `fr`
 - `it`
 - `es`
@@ -20,4 +17,4 @@ Staged map folders:
 
 Each language folder contains `minimap.jpg`.
 
-Turkish currently uses a default-map fallback because the source folder does not include a Turkish-specific Mini-map. Replace `assets/maps/tr/minimap.jpg` and remove the `fallback` metadata before activating Turkish.
+Turkish is active and currently uses a default-map fallback because the source folder does not include a Turkish-specific Mini-map. Replace `assets/maps/tr/minimap.jpg` and remove the `fallback` metadata when a Turkish-specific source image is available.

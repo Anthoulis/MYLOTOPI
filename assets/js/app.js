@@ -566,6 +566,11 @@
 
   function renderFlagIcon(lang) {
     const commonAttrs = 'class="flag-icon" viewBox="0 0 24 16" aria-hidden="true" focusable="false"';
+    const manifestFlag = i18n.getLanguageFlag(lang);
+
+    if (manifestFlag) {
+      return '<span class="flag-icon flag-icon--emoji" aria-hidden="true">' + escapeHtml(manifestFlag) + "</span>";
+    }
 
     if (lang === "el") {
       return (

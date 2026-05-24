@@ -195,6 +195,11 @@
     return language.nativeName || lang.toUpperCase();
   }
 
+  function getLanguageFlag(lang) {
+    const language = getLocale(lang).index;
+    return language.flag || "";
+  }
+
   function getLanguageDisplayLabel(lang, displayLang) {
     const language = getLocale(lang).index;
     const label = getLocalizedLanguageName(lang, displayLang);
@@ -207,6 +212,7 @@
     loadContent: loadContent,
     normalizeLanguage: normalizeLanguage,
     getLanguageName: getLanguageName,
+    getLanguageFlag: getLanguageFlag,
     getLanguageLabel: getLanguageDisplayLabel,
     getUi: getUi,
     getSpotText: getSpotText,

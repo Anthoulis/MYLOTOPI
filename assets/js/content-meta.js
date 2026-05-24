@@ -2,8 +2,8 @@
   window.MYLOTOPI_GUIDE_META = {
     defaultLanguage: "en",
     contentBasePath: "./assets/content",
-    languages: ["en", "el", "de"],
-    stagedLanguages: ["fr", "it", "es", "nl", "pl", "ru", "tr"],
+    languages: ["en", "el", "de", "fr", "it", "es", "nl", "pl", "ru", "tr"],
+    stagedLanguages: [],
     spotOrder: [
       "welcome",
       "garden-herbs",
