@@ -17,7 +17,6 @@ The guide is a production-candidate static QR/audio microsite with ten runtime-a
 ## Known Asset Caveats
 
 - Turkish is active and uses a documented default-map fallback until a Turkish-specific Mini-map source is provided.
-- The sleeping-area stop intentionally has no gallery image yet and shows the runtime placeholder.
 - Final section-specific photo sets are still pending where no suitable source assets exist.
 
 ## Completed
@@ -30,6 +29,7 @@ The guide is a production-candidate static QR/audio microsite with ten runtime-a
 - Per-stop audio controls with metadata preload.
 - Mini-map card and modal.
 - Gallery support with centralized image metadata.
+- Sleeping-area gallery photo.
 - Compatibility redirect at `qr-guide.html`.
 - Lightweight content validator via `npm run validate`.
 
