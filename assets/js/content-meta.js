@@ -71,7 +71,13 @@
         anchorId: "sleeping-area",
         accent: "#8f6b32",
         accentSoft: "rgba(143, 107, 50, 0.14)",
-        images: [],
+        images: [
+          {
+            src: "./assets/images/stops/04-sleeping-area/01-sleeping-area-interior.jpg",
+            fit: "contain",
+            position: "center",
+          },
+        ],
       },
       machinery: {
         anchorId: "machinery",
