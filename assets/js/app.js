@@ -278,7 +278,9 @@
         return "";
       }
 
-      const label = item.label ? "<strong>" + escapeHtml(item.label) + "</strong>" : "";
+      const labelText = typeof item.label === "string" ? item.label.trim() : "";
+      const renderedLabel = labelText && /[:?!]$/.test(labelText) ? labelText : labelText + ":";
+      const label = labelText ? '<strong class="qr-copy__item-label">' + escapeHtml(renderedLabel) + "</strong> " : "";
       const text = item.text ? "<span>" + escapeHtml(item.text) + "</span>" : "";
 
       return "<li>" + label + text + "</li>";

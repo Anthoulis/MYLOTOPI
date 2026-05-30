@@ -12,7 +12,7 @@
   "ui": {
     "pageTitle": "Windmill Experience in Mylotopi",
     "heroTitle": "Windmill Experience in Mylotopi",
-    "intro": "Travel Back in Time: Get ready to step into the past! You won't need a time machine for this journey just some comfy shoes.",
+    "intro": "Get ready to step into the past! You won't need a time machine for this journey just some comfy shoes.",
     "languageLabel": "Language",
     "sectionsLabel": "Guide stops",
     "audioHeading": "Audio guide",
@@ -59,7 +59,7 @@
       "id": "welcome",
       "title": "Welcome to Windmill Experience!",
       "navigationTitle": "Welcome",
-      "preview": "Travel Back in Time: Get ready to step into the past! You won't need a time machine for this journey just some comfy shoes.",
+      "preview": "Get ready to step into the past! You won't need a time machine for this journey just some comfy shoes.",
       "details": [
         {
           "type": "list",
@@ -112,11 +112,11 @@
           "items": [
             {
               "label": "It's Super Easy",
-              "text": "Grown-ups, simply scan the QR code using your phone's camera. You do not need to download any apps."
+              "text": "The QR code opens the tour from the beginning. You do not need to download any apps."
             },
             {
               "label": "Listen Together",
-              "text": "Just turn up your phone's volume or share some headphones, and follow the numbers around the village."
+              "text": "Choose your language, turn up your phone's volume or share headphones, and follow the numbers around the village."
             }
           ]
         },
@@ -162,7 +162,7 @@
       "id": "herb-garden",
       "title": "Our Garden with Our Herbs!",
       "navigationTitle": "Herb Garden",
-      "preview": "Kitchen or Pharmacy? Take a deep breath! Does it smell like a giant outdoor kitchen or a village pharmacy? Actually, it’s both!",
+      "preview": "Take a deep breath! Does it smell like a giant outdoor kitchen or a village pharmacy? Actually, it’s both!",
       "details": [
         {
           "type": "list",
@@ -235,7 +235,7 @@
       "id": "windmill-first-floor",
       "title": "The Windmill Base (1st Floor)",
       "navigationTitle": "Windmill 1st Floor",
-      "preview": "A Living Legend: Welcome to the \"Mill of the Priest\"! You are standing inside the oldest working windmill on the entire island and in the whole Dodecanese complex.",
+      "preview": "Welcome to the \"Mill of the Priest\"! You are standing inside the oldest working windmill on the entire island and in the whole Dodecanese complex.",
       "details": [
         {
           "type": "list",
@@ -324,7 +324,7 @@
       "id": "windmill-second-floor",
       "title": "The Windmill Sleeping Area (2nd Floor)",
       "navigationTitle": "Windmill 2nd Floor",
-      "preview": "Watch Your Step: Welcome to the second floor! Watch your step on the wooden stairs and mind your head on the wood above.",
+      "preview": "Welcome to the second floor! Watch your step on the wooden stairs and mind your head on the wood above.",
       "details": [
         {
           "type": "list",
@@ -385,7 +385,7 @@
       "id": "windmill-third-floor",
       "title": "The Windmill Machinery (3rd Floor)",
       "navigationTitle": "Windmill 3rd Floor",
-      "preview": "Mind Your Head: Welcome to the third floor! Please watch your step on the ladder and mind your head as you explore.",
+      "preview": "Welcome to the third floor! Please watch your step on the ladder and mind your head as you explore.",
       "details": [
         {
           "type": "list",
@@ -470,7 +470,7 @@
       "id": "threshing-floor-donkeys",
       "title": "Threshing Floor & the Donkeys!",
       "navigationTitle": "Threshing Floor",
-      "preview": "Fresh Air & Stone Floors: Welcome back outside! Take a deep breath of fresh air.",
+      "preview": "Welcome back outside! Take a deep breath of fresh air.",
       "details": [
         {
           "type": "list",
@@ -535,7 +535,7 @@
       "id": "cellar-italian-tunnel",
       "title": "The Secret Tunnel & Cellar",
       "navigationTitle": "Tunnel & Cellar",
-      "preview": "A Change of Scenery: Prepare yourselves for a total change of scenery as we head underground!",
+      "preview": "Prepare yourselves for a total change of scenery as we head underground!",
       "details": [
         {
           "type": "list",
@@ -596,7 +596,7 @@
       "id": "traditional-house",
       "title": "The Traditional House",
       "navigationTitle": "Traditional House",
-      "preview": "A Tiny, Crowded Home: Welcome to the traditional house! This amazing little home is over 130 years old.",
+      "preview": "Welcome to the traditional house! This amazing little home is over 130 years old.",
       "details": [
         {
           "type": "list",
@@ -685,7 +685,7 @@
       "id": "bakery",
       "title": "The Bakery",
       "navigationTitle": "Bakery",
-      "preview": "A Community Hub: Welcome to the traditional oven! This beautiful stone oven is over 150 years old.",
+      "preview": "Welcome to the traditional oven! This beautiful stone oven is over 150 years old.",
       "details": [
         {
           "type": "list",

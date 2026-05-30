@@ -838,7 +838,8 @@ body.is-map-modal-open {
   color: var(--stop-accent, var(--accent));
 }
 
-.qr-copy__list strong {
+.qr-copy__list .qr-copy__item-label,
+.qr-activity__list .qr-copy__item-label {
   margin-right: 0.24rem;
   color: var(--text);
   font-weight: 850;
@@ -945,7 +946,7 @@ body.is-map-modal-open {
 
 .qr-activity__list {
   display: grid;
-  gap: 7px;
+  gap: 8px;
   margin: 0;
   padding-left: 1.12rem;
   color: var(--text);
