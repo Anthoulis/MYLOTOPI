@@ -28,4 +28,4 @@ Each section contains its visitor text, challenge content, language-specific aud
 
 To edit English text, open `assets/content/en.json`. To edit Greek text, open `assets/content/el.json`.
 
-The source DOCX marker `Read more>>`, when present, belongs only to extraction logic and must not appear in rendered content.
+Source Word files do not belong in this runtime folder. Archived bullet-point source documents live in `source-texts/bullet-points/` and use language-code filenames such as `en.docx` and `el.docx`.

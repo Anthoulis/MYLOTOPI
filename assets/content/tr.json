@@ -11,7 +11,7 @@
   ],
   "ui": {
     "pageTitle": "Yel Değirmeni Deneyimine Hoş Geldiniz!",
-    "intro": "Zamanda Yolculuk: Geçmişe adım atmaya hazır olun! Bu yolculuk için bir zaman makinesine ihtiyacınız olmayacak, sadece rahat ayakkabılara ihtiyacınız var.",
+    "intro": "Geçmişe adım atmaya hazır olun! Bu yolculuk için bir zaman makinesine ihtiyacınız olmayacak, sadece rahat ayakkabılara ihtiyacınız var.",
     "languageLabel": "Dil",
     "sectionsLabel": "Rehber durakları",
     "audioHeading": "Sesli rehber",
@@ -60,11 +60,15 @@
       "id": "welcome",
       "title": "Yel Değirmeni Deneyimine Hoş Geldiniz!",
       "navigationTitle": "Yel Değirmeni Deneyimine Hoş Geldiniz!",
-      "preview": "Zamanda Yolculuk: Geçmişe adım atmaya hazır olun! Bu yolculuk için bir zaman makinesine ihtiyacınız olmayacak, sadece rahat ayakkabılara ihtiyacınız var.",
+      "preview": "Geçmişe adım atmaya hazır olun! Bu yolculuk için bir zaman makinesine ihtiyacınız olmayacak, sadece rahat ayakkabılara ihtiyacınız var.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Zamanda Yolculuk",
+              "text": "Geçmişe adım atmaya hazır olun! Bu yolculuk için bir zaman makinesine ihtiyacınız olmayacak, sadece rahat ayakkabılara ihtiyacınız var."
+            },
             {
               "label": "Restore Edilmiş Bir Köy",
               "text": "Voudouris ailesinin yaptığı güzel restorasyon sayesinde, Wi-Fi icat edilmeden çok önce, yüzyılı aşkın bir süre önce adalıların tam olarak nasıl yaşadığını göreceksiniz. Ayrıca etrafta gizlice dolaşıp 1940'lardan kalma bazı gizli tarihi sırları ortaya çıkarma fırsatınız da olacak!"
@@ -77,7 +81,7 @@
         },
         {
           "type": "heading",
-          "text": "Neleri Keşfedeceksiniz:"
+          "text": "Neleri Keşfedeceksiniz"
         },
         {
           "type": "list",
@@ -102,24 +106,24 @@
         },
         {
           "type": "heading",
-          "text": "Turu Nasıl Dinleyebilirsiniz:"
+          "text": "Turu Nasıl Dinleyebilirsiniz"
         },
         {
           "type": "list",
           "items": [
             {
               "label": "Çok Kolay",
-              "text": "Yetişkinler, telefonunuzun kamerasını kullanarak bulduğunuz QR kodlarını okutmanız yeterli. Herhangi bir uygulama indirmenize gerek yok!"
+              "text": "QR kodu turu en baştan açar. Herhangi bir uygulama indirmenize gerek yok."
             },
             {
               "label": "Birlikte Dinleyin",
-              "text": "Sadece telefonunuzun sesini açın veya kulaklığınızı paylaşın ve köydeki numaraları takip edin."
+              "text": "Dilinizi seçin, telefonunuzun sesini açın veya kulaklıkları paylaşın ve köydeki numaraları takip edin."
             }
           ]
         },
         {
           "type": "heading",
-          "text": "Sıradaki Durak:"
+          "text": "Sıradaki Durak"
         },
         {
           "type": "list",
@@ -132,6 +136,7 @@
         }
       ],
       "challenge": {
+        "label": "Genç ziyaretçiler için",
         "title": "Genç Kaşifler İçin Gizli Bir Görev!",
         "items": [
           {
@@ -158,11 +163,15 @@
       "id": "herb-garden",
       "title": "Bahçemiz ve Aromatik Bitkilerimiz!",
       "navigationTitle": "Bahçemiz ve Aromatik Bitkilerimiz!",
-      "preview": "Mutfak mı Yoksa Eczane mi? Derin bir nefes alın! Burası devasa bir açık hava mutfağı gibi mi yoksa köy eczanesi gibi mi kokuyor? Aslında ikisi birden!",
+      "preview": "Derin bir nefes alın! Burası devasa bir açık hava mutfağı gibi mi yoksa köy eczanesi gibi mi kokuyor? Aslında ikisi birden!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Mutfak mı Yoksa Eczane mi?",
+              "text": "Derin bir nefes alın! Burası devasa bir açık hava mutfağı gibi mi yoksa köy eczanesi gibi mi kokuyor? Aslında ikisi birden!"
+            },
             {
               "label": "Nihai Hayatta Kalma Kiti",
               "text": "Modern tıp ve süpermarketlerden önce, bu bahçeler adanın hayatta kalma kitiydi. Bu parseller, yüzyıllardır burada yetişen aromatik bitkilerin aynısıyla dolu."
@@ -179,7 +188,7 @@
         },
         {
           "type": "heading",
-          "text": "Sıradaki Durak:"
+          "text": "Sıradaki Durak"
         },
         {
           "type": "list",
@@ -192,6 +201,7 @@
         }
       ],
       "challenge": {
+        "label": "Genç ziyaretçiler için",
         "title": "Genç Bitki Dedektiflerimiz ve Yetişkinler İçin Bir Görev!",
         "items": [
           {
@@ -226,11 +236,15 @@
       "id": "windmill-first-floor",
       "title": "Yel Değirmeni Tabanı (1. Kat)",
       "navigationTitle": "Yel Değirmeni Tabanı (1. Kat)",
-      "preview": "Yaşayan Bir Efsane: \"Rahibin Değirmeni\"ne hoş geldiniz! Şu anda tüm adadaki ve tüm On İki Ada kompleksindeki çalışan en eski yel değirmeninin içinde duruyorsunuz. 400 yaşından büyük, 1987 yılına kadar her gün aralıksız çalıştı ve bugün hala un öğüten yaşayan bir makine!",
+      "preview": "\"Rahibin Değirmeni\"ne hoş geldiniz!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Yaşayan Bir Efsane",
+              "text": "\"Rahibin Değirmeni\"ne hoş geldiniz! Şu anda tüm adadaki ve tüm On İki Ada kompleksindeki çalışan en eski yel değirmeninin içinde duruyorsunuz. 400 yaşından büyük, 1987 yılına kadar her gün aralıksız çalıştı ve bugün hala un öğüten yaşayan bir makine!"
+            },
             {
               "label": "Girişte",
               "text": "Kapıdan içeri adımınızı atarken, iyi şans getirmesi için asılmış geleneksel narı ve onun hemen yanındaki, Aynaroz'dan (Athos Dağı) getirilmiş 9 yıldan daha eski küçük Kutsal Su şişesini fark edin."
@@ -267,7 +281,7 @@
         },
         {
           "type": "heading",
-          "text": "Sıradaki Durak:"
+          "text": "Sıradaki Durak"
         },
         {
           "type": "list",
@@ -280,6 +294,7 @@
         }
       ],
       "challenge": {
+        "label": "Genç ziyaretçiler için",
         "title": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Görev!",
         "items": [
           {
@@ -310,11 +325,15 @@
       "id": "windmill-second-floor",
       "title": "Yel Değirmeni Uyku Alanı (2. Kat)",
       "navigationTitle": "Yel Değirmeni Uyku Alanı (2. Kat)",
-      "preview": "Adımlarınıza Dikkat Edin: İkinci kata hoş geldiniz! Ahşap merdivenlerde adımlarınıza dikkat edin ve başınızı yukarıdaki ahşaplara çarpmamaya özen gösterin. Ailenin nasıl yaşadığına dair büyük bir sürprize hazır olun.",
+      "preview": "İkinci kata hoş geldiniz!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Adımlarınıza Dikkat Edin",
+              "text": "İkinci kata hoş geldiniz! Ahşap merdivenlerde adımlarınıza dikkat edin ve başınızı yukarıdaki ahşaplara çarpmamaya özen gösterin. Ailenin nasıl yaşadığına dair büyük bir sürprize hazır olun."
+            },
             {
               "label": "Sağınızda",
               "text": "Duvarlarda, Yunanistan'ın dört bir yanından farklı tarihi yel değirmenlerini gösteren bazı güzel resimler göreceksiniz. Ancak bu alan sadece bir galeri değildi!"
@@ -335,7 +354,7 @@
         },
         {
           "type": "heading",
-          "text": "Sıradaki Durak:"
+          "text": "Sıradaki Durak"
         },
         {
           "type": "list",
@@ -348,6 +367,7 @@
         }
       ],
       "challenge": {
+        "label": "Genç ziyaretçiler için",
         "title": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Soru!",
         "items": [
           {
@@ -366,11 +386,15 @@
       "id": "windmill-third-floor",
       "title": "Yel Değirmeni Makine Aksamı (3. Kat)",
       "navigationTitle": "Yel Değirmeni Makine Aksamı (3. Kat)",
-      "preview": "Başınıza Dikkat Edin: Üçüncü kata hoş geldiniz! Lütfen merdivende adımlarınıza dikkat edin ve keşfederken başınızı çarpmamaya özen gösterin.",
+      "preview": "Üçüncü kata hoş geldiniz! Lütfen merdivende adımlarınıza dikkat edin ve keşfederken başınızı çarpmamaya özen gösterin.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Başınıza Dikkat Edin",
+              "text": "Üçüncü kata hoş geldiniz! Lütfen merdivende adımlarınıza dikkat edin ve keşfederken başınızı çarpmamaya özen gösterin."
+            },
             {
               "label": "Değirmenin Kas Gücü",
               "text": "Şu anda yel değirmeninin gerçek gücüne bakıyorsunuz. Taşların üzerindeki o devasa ahşap kirişe bakın. O; içerideki ağır taşları, dişlileri ve dışarıdaki devasa dönen yelkenleri birbirine bağlayan ana bağlantı parçasıdır!"
@@ -411,7 +435,7 @@
         },
         {
           "type": "heading",
-          "text": "Sıradaki Durak:"
+          "text": "Sıradaki Durak"
         },
         {
           "type": "list",
@@ -424,6 +448,7 @@
         }
       ],
       "challenge": {
+        "label": "Genç ziyaretçiler için",
         "title": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Görev!",
         "items": [
           {
@@ -446,11 +471,15 @@
       "id": "threshing-floor-donkeys",
       "title": "Harman Yeri ve Eşekler!",
       "navigationTitle": "Harman Yeri ve Eşekler!",
-      "preview": "Temiz Hava ve Taş Zeminler: Tekrar dışarıya hoş geldiniz! Derin bir nefes alıp tertemiz havayı içinize çekin. Şu anda, büyük, yuvarlak taştan bir dans pistine çok benzeyen geleneksel harman yerinin yakınında duruyorsunuz.",
+      "preview": "Tekrar dışarıya hoş geldiniz!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Temiz Hava ve Taş Zeminler",
+              "text": "Tekrar dışarıya hoş geldiniz! Derin bir nefes alıp tertemiz havayı içinize çekin. Şu anda, büyük, yuvarlak taştan bir dans pistine çok benzeyen geleneksel harman yerinin yakınında duruyorsunuz."
+            },
             {
               "label": "Başı Dönen Eşek",
               "text": "Dairenin tam ortasındaki ahşap direğe bakın. Eski günlerde değirmenci, o direkten eşeğin boynuna gevşekçe bir ip bağlardı. Eşeğin görevi, tohumları serbest bırakmak için hasat edilmiş ekinleri ağır ayaklarıyla ezip parçalayarak büyük bir daire etrafında döne döne yürümekti!"
@@ -471,7 +500,7 @@
         },
         {
           "type": "heading",
-          "text": "Sıradaki Durak:"
+          "text": "Sıradaki Durak"
         },
         {
           "type": "list",
@@ -484,6 +513,7 @@
         }
       ],
       "challenge": {
+        "label": "Genç ziyaretçiler için",
         "title": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Görev!",
         "items": [
           {
@@ -506,11 +536,15 @@
       "id": "cellar-italian-tunnel",
       "title": "Gizli Tünel ve Mahzen",
       "navigationTitle": "Gizli Tünel ve Mahzen",
-      "preview": "Manzara Değişimi: Yeraltına doğru ilerlerken manzarada tam bir değişime kendinizi hazırlayın! Serin havaya doğru adım atarken solunuza ve sağınıza bir göz atın.",
+      "preview": "Yeraltına doğru ilerlerken manzarada tam bir değişime kendinizi hazırlayın! Serin havaya doğru adım atarken solunuza ve sağınıza bir göz atın.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Manzara Değişimi",
+              "text": "Yeraltına doğru ilerlerken manzarada tam bir değişime kendinizi hazırlayın! Serin havaya doğru adım atarken solunuza ve sağınıza bir göz atın."
+            },
             {
               "label": "Dekoratif Şişeler",
               "text": "İstanköy'deki (Kos) Skevofilax şaraphanesinden gelen yerel şarap dizilerini göreceksiniz. Bu şişeleri burada dekorasyon amacıyla tutuyoruz! İçtiğimiz asıl şaraplar, sıcaklığın onlar için mükemmel bir şekilde uygun olduğu ana mahzende güvenle saklanıyor."
@@ -531,7 +565,7 @@
         },
         {
           "type": "heading",
-          "text": "Sıradaki Durak:"
+          "text": "Sıradaki Durak"
         },
         {
           "type": "list",
@@ -544,6 +578,7 @@
         }
       ],
       "challenge": {
+        "label": "Genç ziyaretçiler için",
         "title": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Görev!",
         "items": [
           {
@@ -562,13 +597,18 @@
       "id": "traditional-house",
       "title": "Geleneksel Ev",
       "navigationTitle": "Geleneksel Ev",
-      "preview": "Küçük, Kalabalık Bir Yuva: Geleneksel eve hoş geldiniz! Bu şaşırtıcı küçük ev 130 yaşından daha büyük. 20 metrekareden daha küçük, ama inanın ya da inanmayın, eskiden burada 8 ila 10 kişi yaşardı! Büyükanne ve büyükbabalar, ebeveynler ve tüm çocukları bu tek bir odayı paylaşırdı.",
+      "preview": "Geleneksel eve hoş geldiniz!",
       "details": [
         {
           "type": "list",
           "items": [
             {
-              "text": "Herkes Nerede Uyuyordu? Büyükanne ve büyükbaba hemen sıcak şöminenin yanında uyurdu. Ebeveynler karşı taraftaki yüksek asma yatakta uyurken, büyük çocuklar onun yanındaki yataklarda ve kanepede uyurdu."
+              "label": "Küçük, Kalabalık Bir Yuva",
+              "text": "Geleneksel eve hoş geldiniz! Bu şaşırtıcı küçük ev 130 yaşından daha büyük. 20 metrekareden daha küçük, ama inanın ya da inanmayın, eskiden burada 8 ila 10 kişi yaşardı! Büyükanne ve büyükbabalar, ebeveynler ve tüm çocukları bu tek bir odayı paylaşırdı."
+            },
+            {
+              "label": "Herkes Nerede Uyuyordu?",
+              "text": "Büyükanne ve büyükbaba hemen sıcak şöminenin yanında uyurdu. Ebeveynler karşı taraftaki yüksek asma yatakta uyurken, büyük çocuklar onun yanındaki yataklarda ve kanepede uyurdu."
             },
             {
               "label": "Pış Pış Bebek",
@@ -602,7 +642,7 @@
         },
         {
           "type": "heading",
-          "text": "Sıradaki Durak:"
+          "text": "Sıradaki Durak"
         },
         {
           "type": "list",
@@ -615,6 +655,7 @@
         }
       ],
       "challenge": {
+        "label": "Genç ziyaretçiler için",
         "title": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Görev!",
         "items": [
           {
@@ -645,11 +686,15 @@
       "id": "bakery",
       "title": "Fırın",
       "navigationTitle": "Fırın",
-      "preview": "Bir Topluluk Merkezi: Geleneksel fırına hoş geldiniz! Bu güzel taş fırın 150 yaşından daha büyük. Eski günlerde, köydeki hanımların çoğu aileleri için günlük ekmeklerini pişirmek üzere tam buraya gelirdi.",
+      "preview": "Geleneksel fırına hoş geldiniz!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Bir Topluluk Merkezi",
+              "text": "Geleneksel fırına hoş geldiniz! Bu güzel taş fırın 150 yaşından daha büyük. Eski günlerde, köydeki hanımların çoğu aileleri için günlük ekmeklerini pişirmek üzere tam buraya gelirdi."
+            },
             {
               "label": "İki Günlük Bir Süreç",
               "text": "O zamanlar ekmek pişirmek sadece süpermarkete koşmak kadar hızlı değildi! Aslında iki günlük bir süreçti. Önceki gece hanımlar hamuru dikkatlice karıştırıp şekillendirir, gece boyunca dinlenmeye ve kabararak mayalanmaya bırakırlardı."
@@ -663,38 +708,35 @@
               "text": "Etrafınıza bakarsanız, tüm bu işlemi tam olarak nasıl yaptıklarını gösteren bazı harika fotoğrafların sergilendiğini görebilirsiniz."
             }
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Soru!"
-        },
-        {
-          "type": "list",
-          "items": [
-            {
-              "label": "Erkenci Kuş",
-              "text": "Bütün köyün taze ekmeğe ihtiyacı vardı. Fırıncının hamur yapmaya başlamak için her sabah saat kaçta uyanmak zorunda olduğunu tahmin edebilir misiniz? (İpucu: Güneş doğmadan çok önceydi!)"
-            },
-            {
-              "label": "Yakından Bakın",
-              "text": "Köylü kadınların eskiden fırında nasıl çalıştıklarını görmek için fotoğraflara yakından bakın."
-            },
-            {
-              "label": "Dinlenme Vakti",
-              "text": "Şimdi restoran-kafeye gitme vakti geldi! Renkli kalemlerinizi alın, hak ettiğiniz atıştırmalığın tadını çıkarın ve Mylotopi Eskizinizi (Mylotopi Sketch) renkli bir şahesere dönüştürmeyi tamamlayın!"
-            },
-            {
-              "label": "Teşekkürler",
-              "text": "Bugün bizimle birlikte keşfettiğiniz için teşekkür ederiz!"
-            }
-          ]
         }
       ],
       "audio": {
         "path": "./assets/audio/tr/section-09.mp3",
         "ready": true
       },
-      "imageAlt": "Fırın"
+      "imageAlt": "Fırın",
+      "challenge": {
+        "label": "Genç ziyaretçiler için",
+        "title": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Soru!",
+        "items": [
+          {
+            "label": "Erkenci Kuş",
+            "text": "Bütün köyün taze ekmeğe ihtiyacı vardı. Fırıncının hamur yapmaya başlamak için her sabah saat kaçta uyanmak zorunda olduğunu tahmin edebilir misiniz? (İpucu: Güneş doğmadan çok önceydi!)"
+          },
+          {
+            "label": "Yakından Bakın",
+            "text": "Köylü kadınların eskiden fırında nasıl çalıştıklarını görmek için fotoğraflara yakından bakın."
+          },
+          {
+            "label": "Dinlenme Vakti",
+            "text": "Şimdi restoran-kafeye gitme vakti geldi! Renkli kalemlerinizi alın, hak ettiğiniz atıştırmalığın tadını çıkarın ve Mylotopi Eskizinizi (Mylotopi Sketch) renkli bir şahesere dönüştürmeyi tamamlayın!"
+          },
+          {
+            "label": "Teşekkürler",
+            "text": "Bugün bizimle birlikte keşfettiğiniz için teşekkür ederiz!"
+          }
+        ]
+      }
     }
   ]
 }

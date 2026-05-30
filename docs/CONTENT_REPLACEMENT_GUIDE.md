@@ -76,7 +76,15 @@ Each section must contain:
 
 Do not hardcode translated visitor copy in `index.html`, `assets/js/app.js`, or any other JavaScript file.
 
-When extracting from source DOCX files, split on the source marker `Read more>>` if it exists. Text before the marker becomes `preview`; text after the marker becomes `details`. The literal marker must not be stored for rendering.
+Archived bullet-point source DOCX files live in `source-texts/bullet-points/` using runtime language-code filenames such as `en.docx`, `el.docx`, and `de.docx`. Treat them as import sources only; runtime text is edited in JSON.
+
+When extracting from the bullet-point source DOCX files:
+
+- use the first source bullet as a short, clean `preview` without the bullet label;
+- put normal source bullet groups in `details`;
+- put mission or question bullet groups in `challenge`;
+- keep bullet labels and wording as direct as possible;
+- replace any source wording that implies more than one QR entry point with one-QR wording.
 
 ## Replacing Audio
 

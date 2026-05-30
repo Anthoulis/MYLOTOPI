@@ -11,7 +11,7 @@
   ],
   "ui": {
     "pageTitle": "¡Bienvenido a la Experiencia del Molino de Viento!",
-    "intro": "Viaja en el tiempo: ¡Prepárate para adentrarte en el pasado! No necesitarás una máquina del tiempo para este viaje, solo unos zapatos cómodos.",
+    "intro": "¡Prepárate para adentrarte en el pasado! No necesitarás una máquina del tiempo para este viaje, solo unos zapatos cómodos.",
     "languageLabel": "Idioma",
     "sectionsLabel": "Paradas de la guía",
     "audioHeading": "Audioguía",
@@ -58,11 +58,15 @@
       "id": "welcome",
       "title": "¡Bienvenido a la Experiencia del Molino de Viento!",
       "navigationTitle": "Bienvenida",
-      "preview": "Viaja en el tiempo: ¡Prepárate para adentrarte en el pasado! No necesitarás una máquina del tiempo para este viaje, solo unos zapatos cómodos.",
+      "preview": "¡Prepárate para adentrarte en el pasado! No necesitarás una máquina del tiempo para este viaje, solo unos zapatos cómodos.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Viaja en el tiempo",
+              "text": "¡Prepárate para adentrarte en el pasado! No necesitarás una máquina del tiempo para este viaje, solo unos zapatos cómodos."
+            },
             {
               "label": "Un pueblo restaurado",
               "text": "Gracias a la hermosa restauración realizada por la familia Voudouris, verás exactamente cómo vivían los isleños hace más de un siglo, mucho antes de que se inventara el Wi-Fi. ¡También podrás curiosear y descubrir un poco de historia secreta de la década de 1940!"
@@ -75,7 +79,7 @@
         },
         {
           "type": "heading",
-          "text": "Lo que explorarás:"
+          "text": "Lo que explorarás"
         },
         {
           "type": "list",
@@ -100,24 +104,24 @@
         },
         {
           "type": "heading",
-          "text": "Cómo escuchar el recorrido:"
+          "text": "Cómo escuchar el recorrido"
         },
         {
           "type": "list",
           "items": [
             {
               "label": "Es súper fácil",
-              "text": "Adultos, simplemente escaneen los códigos QR que encuentren usando la cámara de su teléfono. ¡No necesitan descargar ninguna aplicación!"
+              "text": "El código QR abre el recorrido desde el principio. No necesitan descargar ninguna aplicación."
             },
             {
               "label": "Escuchen juntos",
-              "text": "Solo suban el volumen de su teléfono o compartan unos auriculares, y sigan los números por todo el pueblo."
+              "text": "Elijan su idioma, suban el volumen del teléfono o compartan auriculares, y sigan los números por el pueblo."
             }
           ]
         },
         {
           "type": "heading",
-          "text": "Próximo destino:"
+          "text": "Próximo destino"
         },
         {
           "type": "list",
@@ -130,6 +134,7 @@
         }
       ],
       "challenge": {
+        "label": "Para visitantes jóvenes",
         "title": "¡Una misión secreta para los jóvenes exploradores!",
         "items": [
           {
@@ -156,11 +161,15 @@
       "id": "herb-garden",
       "title": "¡Nuestro jardín con nuestras hierbas aromáticas!",
       "navigationTitle": "Jardín de hierbas",
-      "preview": "¿Cocina o farmacia? ¡Respira profundo! ¿Huele a una cocina gigante al aire libre o a la farmacia del pueblo? En realidad, ¡es ambas cosas!",
+      "preview": "¡Respira profundo! ¿Huele a una cocina gigante al aire libre o a la farmacia del pueblo? En realidad, ¡es ambas cosas!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "¿Cocina o farmacia?",
+              "text": "¡Respira profundo! ¿Huele a una cocina gigante al aire libre o a la farmacia del pueblo? En realidad, ¡es ambas cosas!"
+            },
             {
               "label": "El kit de supervivencia definitivo",
               "text": "Antes de la medicina moderna y los supermercados, estos jardines eran el kit de supervivencia de la isla. Estas parcelas están llenas de las mismas hierbas exactas que han crecido aquí durante siglos."
@@ -177,7 +186,7 @@
         },
         {
           "type": "heading",
-          "text": "Próximo destino:"
+          "text": "Próximo destino"
         },
         {
           "type": "list",
@@ -190,6 +199,7 @@
         }
       ],
       "challenge": {
+        "label": "Para visitantes jóvenes",
         "title": "¡Una misión para nuestros jóvenes detectives de plantas y adultos!",
         "items": [
           {
@@ -224,11 +234,15 @@
       "id": "windmill-first-floor",
       "title": "La base del molino de viento (1er piso)",
       "navigationTitle": "La base del molino de viento (1er piso)",
-      "preview": "Una leyenda viva: ¡Bienvenido al \"Molino del Sacerdote\"! Te encuentras dentro del molino de viento en funcionamiento más antiguo de toda la isla y de todo el complejo del Dodecaneso. ¡Tiene más de 400 años, funcionó a diario hasta 1987 y sigue siendo una máquina viva que muele harina hoy en día!",
+      "preview": "¡Bienvenido al \"Molino del Sacerdote\"!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Una leyenda viva",
+              "text": "¡Bienvenido al \"Molino del Sacerdote\"! Te encuentras dentro del molino de viento en funcionamiento más antiguo de toda la isla y de todo el complejo del Dodecaneso. ¡Tiene más de 400 años, funcionó a diario hasta 1987 y sigue siendo una máquina viva que muele harina hoy en día!"
+            },
             {
               "label": "En la entrada",
               "text": "Al cruzar la puerta, observa la tradicional granada colgada para la buena suerte, junto a una pequeña botella de agua bendita del Monte Athos que tiene más de 9 años."
@@ -265,7 +279,7 @@
         },
         {
           "type": "heading",
-          "text": "Próximo destino:"
+          "text": "Próximo destino"
         },
         {
           "type": "list",
@@ -278,6 +292,7 @@
         }
       ],
       "challenge": {
+        "label": "Para visitantes jóvenes",
         "title": "¡Una misión para nuestros jóvenes exploradores y adultos!",
         "items": [
           {
@@ -308,11 +323,15 @@
       "id": "windmill-second-floor",
       "title": "La zona de descanso del molino de viento (2º piso)",
       "navigationTitle": "Zona de descanso",
-      "preview": "Cuidado por dónde pisas: ¡Bienvenido al segundo piso! Ten cuidado al pisar las escaleras de madera y vigila tu cabeza con las vigas de arriba. Prepárate para una gran sorpresa sobre cómo vivía la familia.",
+      "preview": "¡Bienvenido al segundo piso! Ten cuidado al pisar las escaleras de madera y vigila tu cabeza con las vigas de arriba. Prepárate para una gran sorpresa sobre cómo vivía la familia.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Cuidado por dónde pisas",
+              "text": "¡Bienvenido al segundo piso! Ten cuidado al pisar las escaleras de madera y vigila tu cabeza con las vigas de arriba. Prepárate para una gran sorpresa sobre cómo vivía la familia."
+            },
             {
               "label": "A tu derecha",
               "text": "En las paredes, verás unas hermosas fotos que muestran diferentes molinos de viento históricos de toda Grecia. ¡Pero este espacio no era solo una galería!"
@@ -333,7 +352,7 @@
         },
         {
           "type": "heading",
-          "text": "Próximo destino:"
+          "text": "Próximo destino"
         },
         {
           "type": "list",
@@ -346,6 +365,7 @@
         }
       ],
       "challenge": {
+        "label": "Para visitantes jóvenes",
         "title": "¡Una pregunta para nuestros jóvenes exploradores y adultos!",
         "items": [
           {
@@ -364,11 +384,15 @@
       "id": "windmill-third-floor",
       "title": "La maquinaria del molino de viento (3er piso)",
       "navigationTitle": "Maquinaria del molino",
-      "preview": "Cuidado con la cabeza: ¡Bienvenido al tercer piso! Por favor, ten cuidado al pisar la escalera y vigila tu cabeza mientras exploras.",
+      "preview": "¡Bienvenido al tercer piso! Por favor, ten cuidado al pisar la escalera y vigila tu cabeza mientras exploras.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Cuidado con la cabeza",
+              "text": "¡Bienvenido al tercer piso! Por favor, ten cuidado al pisar la escalera y vigila tu cabeza mientras exploras."
+            },
             {
               "label": "El músculo del molino",
               "text": "Ahora estás viendo el verdadero poder del molino de viento. Mira esa enorme viga de madera sobre las piedras. ¡Es el conector principal que une las pesadas piedras del interior, los engranajes y las gigantescas velas giratorias del exterior!"
@@ -409,7 +433,7 @@
         },
         {
           "type": "heading",
-          "text": "Próximo destino:"
+          "text": "Próximo destino"
         },
         {
           "type": "list",
@@ -422,6 +446,7 @@
         }
       ],
       "challenge": {
+        "label": "Para visitantes jóvenes",
         "title": "¡Una misión para nuestros jóvenes exploradores y adultos!",
         "items": [
           {
@@ -444,11 +469,15 @@
       "id": "threshing-floor-donkeys",
       "title": "¡La era y los burros!",
       "navigationTitle": "¡La era y los burros!",
-      "preview": "Aire fresco y suelos de piedra: ¡Bienvenido de nuevo al exterior! Respira profundo el aire fresco. Ahora te encuentras cerca de la era tradicional, que se parece mucho a una gran pista de baile redonda de piedra.",
+      "preview": "¡Bienvenido de nuevo al exterior! Respira profundo el aire fresco. Ahora te encuentras cerca de la era tradicional, que se parece mucho a una gran pista de baile redonda de piedra.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Aire fresco y suelos de piedra",
+              "text": "¡Bienvenido de nuevo al exterior! Respira profundo el aire fresco. Ahora te encuentras cerca de la era tradicional, que se parece mucho a una gran pista de baile redonda de piedra."
+            },
             {
               "label": "El burro mareado",
               "text": "Mira justo en el medio del círculo hacia el poste de madera. En los viejos tiempos, el molinero ataba sin apretar una cuerda desde ese poste al cuello de un burro. ¡El trabajo del burro consistía en caminar dando vueltas en un gran círculo, usando sus pesadas patas para pisotear y aplastar los cultivos cosechados para liberar las semillas!"
@@ -469,7 +498,7 @@
         },
         {
           "type": "heading",
-          "text": "Próximo destino:"
+          "text": "Próximo destino"
         },
         {
           "type": "list",
@@ -482,6 +511,7 @@
         }
       ],
       "challenge": {
+        "label": "Para visitantes jóvenes",
         "title": "¡Una misión para nuestros jóvenes exploradores y adultos!",
         "items": [
           {
@@ -504,11 +534,15 @@
       "id": "cellar-italian-tunnel",
       "title": "El túnel secreto y la bodega",
       "navigationTitle": "El túnel secreto y la bodega",
-      "preview": "Un cambio de escenario: ¡Prepárense para un cambio total de escenario mientras nos dirigimos bajo tierra! Al descender hacia el aire fresco, echen un vistazo a su izquierda y derecha.",
+      "preview": "¡Prepárense para un cambio total de escenario mientras nos dirigimos bajo tierra! Al descender hacia el aire fresco, echen un vistazo a su izquierda y derecha.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Un cambio de escenario",
+              "text": "¡Prepárense para un cambio total de escenario mientras nos dirigimos bajo tierra! Al descender hacia el aire fresco, echen un vistazo a su izquierda y derecha."
+            },
             {
               "label": "Botellas decorativas",
               "text": "Verán filas de vino local de la bodega Skevofilax en Kos. ¡Mantenemos estas botellas aquí como decoración! Nuestros vinos reales para beber se guardan de forma segura en la bodega principal, donde la temperatura es perfectamente adecuada para ellos."
@@ -529,7 +563,7 @@
         },
         {
           "type": "heading",
-          "text": "Próximo destino:"
+          "text": "Próximo destino"
         },
         {
           "type": "list",
@@ -542,6 +576,7 @@
         }
       ],
       "challenge": {
+        "label": "Para visitantes jóvenes",
         "title": "¡Una misión para nuestros jóvenes exploradores y adultos!",
         "items": [
           {
@@ -560,13 +595,18 @@
       "id": "traditional-house",
       "title": "La casa tradicional",
       "navigationTitle": "La casa tradicional",
-      "preview": "Un hogar diminuto y abarrotado: ¡Bienvenido a la casa tradicional! Este increíble y pequeño hogar tiene más de 130 años. Mide menos de 20 metros cuadrados, pero lo creas o no, ¡de 8 a 10 personas solían vivir aquí! Los abuelos, los padres y todos sus hijos compartían esta única habitación.",
+      "preview": "¡Bienvenido a la casa tradicional!",
       "details": [
         {
           "type": "list",
           "items": [
             {
-              "text": "¿Dónde dormían todos? Los abuelos dormían justo al lado de la cálida chimenea. Los padres dormían en lo alto, en la cama altillo del lado opuesto, mientras que los niños mayores dormían en las camas contiguas y en el sofá."
+              "label": "Un hogar diminuto y abarrotado",
+              "text": "¡Bienvenido a la casa tradicional! Este increíble y pequeño hogar tiene más de 130 años. Mide menos de 20 metros cuadrados, pero lo creas o no, ¡de 8 a 10 personas solían vivir aquí! Los abuelos, los padres y todos sus hijos compartían esta única habitación."
+            },
+            {
+              "label": "¿Dónde dormían todos?",
+              "text": "Los abuelos dormían justo al lado de la cálida chimenea. Los padres dormían en lo alto, en la cama altillo del lado opuesto, mientras que los niños mayores dormían en las camas contiguas y en el sofá."
             },
             {
               "label": "A mecer al bebé",
@@ -600,7 +640,7 @@
         },
         {
           "type": "heading",
-          "text": "Próximo destino:"
+          "text": "Próximo destino"
         },
         {
           "type": "list",
@@ -613,6 +653,7 @@
         }
       ],
       "challenge": {
+        "label": "Para visitantes jóvenes",
         "title": "¡Una misión para nuestros jóvenes exploradores y adultos!",
         "items": [
           {
@@ -643,11 +684,15 @@
       "id": "bakery",
       "title": "La panadería",
       "navigationTitle": "La panadería",
-      "preview": "Un centro comunitario: ¡Bienvenido al horno tradicional! Este hermoso horno de piedra tiene más de 150 años. En aquel entonces, la mayoría de las mujeres del pueblo venían justo aquí para hornear el pan diario para sus familias.",
+      "preview": "¡Bienvenido al horno tradicional!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Un centro comunitario",
+              "text": "¡Bienvenido al horno tradicional! Este hermoso horno de piedra tiene más de 150 años. En aquel entonces, la mayoría de las mujeres del pueblo venían justo aquí para hornear el pan diario para sus familias."
+            },
             {
               "label": "Un proceso de dos días",
               "text": "¡Hornear pan en aquella época no era tan rápido como simplemente ir corriendo al supermercado! En realidad, era un proceso de dos días. La noche anterior, las mujeres mezclaban y daban forma cuidadosamente a la masa, dejándola descansar y leudar durante toda la noche."
@@ -661,38 +706,35 @@
               "text": "Si miras a tu alrededor, puedes ver algunas fotografías maravillosas en exhibición que muestran exactamente cómo hacían todo este procedimiento."
             }
           ]
-        },
-        {
-          "type": "heading",
-          "text": "¡Una pregunta para nuestros jóvenes exploradores y los adultos!"
-        },
-        {
-          "type": "list",
-          "items": [
-            {
-              "label": "Al que madruga",
-              "text": "Todo el pueblo necesitaba pan fresco. ¿Puedes adivinar a qué hora tenía que despertarse el panadero cada mañana para empezar a preparar la masa? (Pista: ¡era mucho antes de que saliera el sol!)"
-            },
-            {
-              "label": "Observa con atención",
-              "text": "Mira de cerca las fotos para ver cómo las mujeres del pueblo trabajaban antiguamente en la panadería."
-            },
-            {
-              "label": "Hora de relajarse",
-              "text": "¡Ahora es el momento de dirigirse al restaurante-café! Toma tus lápices de colores, disfruta de un merecido refrigerio y termina de convertir tu boceto de Mylotopi (Mylotopi Sketch) en una colorida obra maestra."
-            },
-            {
-              "label": "Gracias",
-              "text": "¡Gracias por explorar con nosotros hoy!"
-            }
-          ]
         }
       ],
       "audio": {
         "path": "./assets/audio/es/section-09.mp3",
         "ready": true
       },
-      "imageAlt": "La panadería"
+      "imageAlt": "La panadería",
+      "challenge": {
+        "label": "Para visitantes jóvenes",
+        "title": "¡Una pregunta para nuestros jóvenes exploradores y los adultos!",
+        "items": [
+          {
+            "label": "Al que madruga",
+            "text": "Todo el pueblo necesitaba pan fresco. ¿Puedes adivinar a qué hora tenía que despertarse el panadero cada mañana para empezar a preparar la masa? (Pista: ¡era mucho antes de que saliera el sol!)"
+          },
+          {
+            "label": "Observa con atención",
+            "text": "Mira de cerca las fotos para ver cómo las mujeres del pueblo trabajaban antiguamente en la panadería."
+          },
+          {
+            "label": "Hora de relajarse",
+            "text": "¡Ahora es el momento de dirigirse al restaurante-café! Toma tus lápices de colores, disfruta de un merecido refrigerio y termina de convertir tu boceto de Mylotopi (Mylotopi Sketch) en una colorida obra maestra."
+          },
+          {
+            "label": "Gracias",
+            "text": "¡Gracias por explorar con nosotros hoy!"
+          }
+        ]
+      }
     }
   ]
 }

@@ -27,6 +27,7 @@ The public QR code should open the tour from the beginning. Sections are interna
 - `assets/maps/`: flat per-language Mini-map JPGs named `minimap-<language>.jpg`.
 - `assets/images/`: section image assets and current active gallery images.
 - `assets/print/`: print and operations source/reference assets.
+- `source-texts/`: source DOCX files used to produce runtime JSON content; not linked from the public UI.
 - `docs/`: internal project documentation.
 
 ## Running Locally
@@ -81,6 +82,7 @@ Active:
 ## Replacing Content
 
 - Text: update the matching language file, for example `assets/content/en.json`.
+- Source text archive: keep imported Word documents in `source-texts/bullet-points/<language>.docx`, not in `assets/content/`.
 - Audio: replace files in `assets/audio/<language>/` using `section-01.mp3` through `section-09.mp3`.
 - Audio paths: update the matching section object inside `assets/content/<language>.json`.
 - Mini-maps: replace `assets/maps/minimap-<language>.jpg`.

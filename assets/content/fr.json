@@ -11,7 +11,7 @@
   ],
   "ui": {
     "pageTitle": "Bienvenue à l'expérience du moulin à vent !",
-    "intro": "Voyage dans le temps : Préparez-vous à faire un saut dans le passé ! Vous n'aurez pas besoin de machine à remonter le temps pour ce voyage, juste de chaussures confortables.",
+    "intro": "Préparez-vous à faire un saut dans le passé ! Vous n'aurez pas besoin de machine à remonter le temps pour ce voyage, juste de chaussures confortables.",
     "languageLabel": "Langue",
     "sectionsLabel": "Arrêts du guide",
     "audioHeading": "Guide audio",
@@ -58,11 +58,15 @@
       "id": "welcome",
       "title": "Bienvenue à l'Expérience du Moulin à Vent !",
       "navigationTitle": "Bienvenue à l'Expérience du Moulin à Vent !",
-      "preview": "Voyage dans le temps : Préparez-vous à faire un saut dans le passé ! Vous n'aurez pas besoin de machine à remonter le temps pour ce voyage, juste de chaussures confortables.",
+      "preview": "Préparez-vous à faire un saut dans le passé ! Vous n'aurez pas besoin de machine à remonter le temps pour ce voyage, juste de chaussures confortables.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Voyage dans le temps",
+              "text": "Préparez-vous à faire un saut dans le passé ! Vous n'aurez pas besoin de machine à remonter le temps pour ce voyage, juste de chaussures confortables."
+            },
             {
               "label": "Un village restauré",
               "text": "Grâce à la magnifique restauration effectuée par la famille Voudouris, vous découvrirez exactement comment vivaient les insulaires il y a plus d'un siècle, bien avant l'invention du Wi-Fi. Vous aurez également l'occasion de fouiner et de découvrir une histoire secrète datant des années 1940 !"
@@ -75,7 +79,7 @@
         },
         {
           "type": "heading",
-          "text": "Ce que vous allez explorer :"
+          "text": "Ce que vous allez explorer"
         },
         {
           "type": "list",
@@ -100,24 +104,24 @@
         },
         {
           "type": "heading",
-          "text": "Comment écouter la visite :"
+          "text": "Comment écouter la visite"
         },
         {
           "type": "list",
           "items": [
             {
               "label": "C'est super facile",
-              "text": "Les adultes, il vous suffit de scanner les codes QR que vous trouverez à l'aide de l'appareil photo de votre téléphone. Vous n'avez besoin de télécharger aucune application !"
+              "text": "Le QR code ouvre la visite depuis le début. Vous n'avez pas besoin de télécharger d'application."
             },
             {
               "label": "Écoutez ensemble",
-              "text": "Augmentez simplement le volume de votre téléphone ou partagez des écouteurs, et suivez les numéros à travers le village."
+              "text": "Choisissez votre langue, augmentez le volume de votre téléphone ou partagez des écouteurs, puis suivez les numéros dans le village."
             }
           ]
         },
         {
           "type": "heading",
-          "text": "Prochaine destination :"
+          "text": "Prochaine destination"
         },
         {
           "type": "list",
@@ -130,6 +134,7 @@
         }
       ],
       "challenge": {
+        "label": "Pour les jeunes visiteurs",
         "title": "Une mission secrète pour les jeunes explorateurs !",
         "items": [
           {
@@ -156,11 +161,15 @@
       "id": "herb-garden",
       "title": "Notre jardin et ses herbes aromatiques !",
       "navigationTitle": "Notre jardin et ses herbes aromatiques !",
-      "preview": "Cuisine ou pharmacie ? Prenez une grande inspiration ! Est-ce que cela sent la cuisine géante en plein air ou la pharmacie de village ? En réalité, c’est un peu les deux !",
+      "preview": "Prenez une grande inspiration ! Est-ce que cela sent la cuisine géante en plein air ou la pharmacie de village ? En réalité, c’est un peu les deux !",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Cuisine ou pharmacie ?",
+              "text": "Prenez une grande inspiration ! Est-ce que cela sent la cuisine géante en plein air ou la pharmacie de village ? En réalité, c’est un peu les deux !"
+            },
             {
               "label": "Le kit de survie ultime",
               "text": "Avant l'arrivée de la médecine moderne et des supermarchés, ces jardins constituaient le kit de survie de l'île. Ces parcelles sont remplies des mêmes herbes qui poussent ici depuis des siècles."
@@ -177,7 +186,7 @@
         },
         {
           "type": "heading",
-          "text": "Prochaine destination :"
+          "text": "Prochaine destination"
         },
         {
           "type": "list",
@@ -190,6 +199,7 @@
         }
       ],
       "challenge": {
+        "label": "Pour les jeunes visiteurs",
         "title": "Une mission pour nos jeunes détectives des plantes et les adultes !",
         "items": [
           {
@@ -224,11 +234,15 @@
       "id": "windmill-first-floor",
       "title": "La Base du Moulin à Vent (1er Étage)",
       "navigationTitle": "La Base du Moulin à Vent (1er Étage)",
-      "preview": "Une légende vivante : Bienvenue au « Moulin du Prêtre » ! Vous vous trouvez à l'intérieur du plus ancien moulin à vent en activité de toute l'île et de tout l'archipel du Dodécanèse. Il a plus de 400 ans, a fonctionné quotidiennement jusqu'en 1987 et est toujours une machine vivante qui moud de la farine aujourd'hui !",
+      "preview": "Bienvenue au « Moulin du Prêtre » !",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Une légende vivante",
+              "text": "Bienvenue au « Moulin du Prêtre » ! Vous vous trouvez à l'intérieur du plus ancien moulin à vent en activité de toute l'île et de tout l'archipel du Dodécanèse. Il a plus de 400 ans, a fonctionné quotidiennement jusqu'en 1987 et est toujours une machine vivante qui moud de la farine aujourd'hui !"
+            },
             {
               "label": "À l'entrée",
               "text": "En franchissant la porte, remarquez la grenade traditionnelle suspendue pour porter chance, ainsi qu'une petite bouteille d'eau bénite du Mont Athos qui a plus de 9 ans."
@@ -265,7 +279,7 @@
         },
         {
           "type": "heading",
-          "text": "Prochaine destination :"
+          "text": "Prochaine destination"
         },
         {
           "type": "list",
@@ -278,6 +292,7 @@
         }
       ],
       "challenge": {
+        "label": "Pour les jeunes visiteurs",
         "title": "Une mission pour nos jeunes explorateurs et les adultes !",
         "items": [
           {
@@ -308,11 +323,15 @@
       "id": "windmill-second-floor",
       "title": "L'Espace Sommeil du Moulin à Vent (2e Étage)",
       "navigationTitle": "L'Espace Sommeil du Moulin à Vent (2e Étage)",
-      "preview": "Faites attention où vous marchez : Bienvenue au deuxième étage ! Faites attention où vous posez les pieds dans les escaliers en bois et prenez garde à votre tête avec les poutres au-dessus. Préparez-vous à une grande surprise sur la façon dont vivait la famille.",
+      "preview": "Bienvenue au deuxième étage !",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Faites attention où vous marchez",
+              "text": "Bienvenue au deuxième étage ! Faites attention où vous posez les pieds dans les escaliers en bois et prenez garde à votre tête avec les poutres au-dessus. Préparez-vous à une grande surprise sur la façon dont vivait la famille."
+            },
             {
               "label": "Sur votre droite",
               "text": "Sur les murs, vous verrez de magnifiques photos montrant différents moulins à vent historiques de toute la Grèce. Mais cet espace n'était pas qu'une simple galerie !"
@@ -333,7 +352,7 @@
         },
         {
           "type": "heading",
-          "text": "Prochaine Destination :"
+          "text": "Prochaine Destination"
         },
         {
           "type": "list",
@@ -346,6 +365,7 @@
         }
       ],
       "challenge": {
+        "label": "Pour les jeunes visiteurs",
         "title": "Une Question pour nos Jeunes Explorateurs et les Adultes !",
         "items": [
           {
@@ -364,11 +384,15 @@
       "id": "windmill-third-floor",
       "title": "La Machinerie du Moulin à Vent (3e Étage)",
       "navigationTitle": "La Machinerie du Moulin à Vent (3e Étage)",
-      "preview": "Attention à votre tête : Bienvenue au troisième étage ! Faites attention où vous posez les pieds sur l'échelle et prenez garde à votre tête pendant votre exploration.",
+      "preview": "Bienvenue au troisième étage ! Faites attention où vous posez les pieds sur l'échelle et prenez garde à votre tête pendant votre exploration.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Attention à votre tête",
+              "text": "Bienvenue au troisième étage ! Faites attention où vous posez les pieds sur l'échelle et prenez garde à votre tête pendant votre exploration."
+            },
             {
               "label": "Le Muscle du Moulin",
               "text": "Vous contemplez maintenant la véritable puissance du moulin à vent. Regardez cette poutre massive en bois au-dessus des meules. C'est le connecteur principal qui relie les lourdes pierres à l'intérieur, les engrenages et les ailes géantes qui tournent à l'extérieur !"
@@ -409,7 +433,7 @@
         },
         {
           "type": "heading",
-          "text": "Prochaine Destination :"
+          "text": "Prochaine Destination"
         },
         {
           "type": "list",
@@ -422,6 +446,7 @@
         }
       ],
       "challenge": {
+        "label": "Pour les jeunes visiteurs",
         "title": "Une Mission pour nos Jeunes Explorateurs et les Adultes !",
         "items": [
           {
@@ -444,11 +469,15 @@
       "id": "threshing-floor-donkeys",
       "title": "L'Aire de Battage et les Ânes !",
       "navigationTitle": "L'Aire de Battage et les Ânes !",
-      "preview": "Air frais et sol en pierre : Bon retour à l'extérieur ! Respirez un grand coup d'air frais. Vous vous trouvez maintenant près de l'aire de battage traditionnelle, qui ressemble beaucoup à une grande piste de danse ronde en pierre.",
+      "preview": "Bon retour à l'extérieur !",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Air frais et sol en pierre",
+              "text": "Bon retour à l'extérieur ! Respirez un grand coup d'air frais. Vous vous trouvez maintenant près de l'aire de battage traditionnelle, qui ressemble beaucoup à une grande piste de danse ronde en pierre."
+            },
             {
               "label": "L'âne étourdi",
               "text": "Regardez juste au milieu du cercle le poteau en bois. Autrefois, le meunier attachait sans trop serrer une corde entre ce poteau et le cou d'un âne. Le travail de l'âne consistait à tourner en rond dans un grand cercle, en utilisant ses lourds sabots pour piétiner et écraser les récoltes afin d'en libérer les graines !"
@@ -469,7 +498,7 @@
         },
         {
           "type": "heading",
-          "text": "Prochaine Destination :"
+          "text": "Prochaine Destination"
         },
         {
           "type": "list",
@@ -482,6 +511,7 @@
         }
       ],
       "challenge": {
+        "label": "Pour les jeunes visiteurs",
         "title": "Une Mission pour nos Jeunes Explorateurs et les Adultes !",
         "items": [
           {
@@ -504,11 +534,15 @@
       "id": "cellar-italian-tunnel",
       "title": "Le Tunnel Secret et la Cave",
       "navigationTitle": "Le Tunnel Secret et la Cave",
-      "preview": "Un changement de décor : Préparez-vous à un changement total de décor alors que nous descendons sous terre ! En descendant dans l'air frais, jetez un coup d'œil à votre gauche et à votre droite.",
+      "preview": "Préparez-vous à un changement total de décor alors que nous descendons sous terre ! En descendant dans l'air frais, jetez un coup d'œil à votre gauche et à votre droite.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Un changement de décor",
+              "text": "Préparez-vous à un changement total de décor alors que nous descendons sous terre ! En descendant dans l'air frais, jetez un coup d'œil à votre gauche et à votre droite."
+            },
             {
               "label": "Bouteilles décoratives",
               "text": "Vous verrez des rangées de vins locaux de la cave Skevofilax située à Kos. Nous gardons ces bouteilles ici pour la décoration ! Nos vins destinés à la dégustation sont conservés en toute sécurité dans la cave principale, où la température est parfaitement adaptée pour eux."
@@ -529,7 +563,7 @@
         },
         {
           "type": "heading",
-          "text": "Prochaine Destination :"
+          "text": "Prochaine Destination"
         },
         {
           "type": "list",
@@ -542,6 +576,7 @@
         }
       ],
       "challenge": {
+        "label": "Pour les jeunes visiteurs",
         "title": "Une Mission pour nos Jeunes Explorateurs et les Adultes !",
         "items": [
           {
@@ -560,13 +595,18 @@
       "id": "traditional-house",
       "title": "La Maison Traditionnelle",
       "navigationTitle": "La Maison Traditionnelle",
-      "preview": "Une toute petite maison surpeuplée : Bienvenue dans la maison traditionnelle ! Cette incroyable petite demeure a plus de 130 ans. Elle mesure moins de 20 mètres carrés, mais croyez-le ou non, 8 à 10 personnes y vivaient autrefois ! Les grands-parents, les parents et tous leurs enfants partageaient cette unique pièce.",
+      "preview": "Bienvenue dans la maison traditionnelle !",
       "details": [
         {
           "type": "list",
           "items": [
             {
-              "text": "Où dormait tout le monde ? Les grands-parents dormaient juste à côté de la cheminée chaleureuse. Les parents dormaient en hauteur dans le lit en mezzanine du côté opposé, tandis que les enfants plus âgés dormaient dans les lits adjacents et sur le canapé."
+              "label": "Une toute petite maison surpeuplée",
+              "text": "Bienvenue dans la maison traditionnelle ! Cette incroyable petite demeure a plus de 130 ans. Elle mesure moins de 20 mètres carrés, mais croyez-le ou non, 8 à 10 personnes y vivaient autrefois ! Les grands-parents, les parents et tous leurs enfants partageaient cette unique pièce."
+            },
+            {
+              "label": "Où dormait tout le monde ?",
+              "text": "Les grands-parents dormaient juste à côté de la cheminée chaleureuse. Les parents dormaient en hauteur dans le lit en mezzanine du côté opposé, tandis que les enfants plus âgés dormaient dans les lits adjacents et sur le canapé."
             },
             {
               "label": "Fais dodo, mon petit bébé",
@@ -600,7 +640,7 @@
         },
         {
           "type": "heading",
-          "text": "Prochaine Destination :"
+          "text": "Prochaine Destination"
         },
         {
           "type": "list",
@@ -613,6 +653,7 @@
         }
       ],
       "challenge": {
+        "label": "Pour les jeunes visiteurs",
         "title": "Une Mission pour nos Jeunes Explorateurs et les Adultes !",
         "items": [
           {
@@ -643,11 +684,15 @@
       "id": "bakery",
       "title": "La Boulangerie",
       "navigationTitle": "La Boulangerie",
-      "preview": "Un lieu de rassemblement : Bienvenue au four traditionnel ! Ce magnifique four en pierre a plus de 150 ans. Autrefois, la plupart des femmes du village venaient ici même pour cuire le pain quotidien de leur famille.",
+      "preview": "Bienvenue au four traditionnel !",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Un lieu de rassemblement",
+              "text": "Bienvenue au four traditionnel ! Ce magnifique four en pierre a plus de 150 ans. Autrefois, la plupart des femmes du village venaient ici même pour cuire le pain quotidien de leur famille."
+            },
             {
               "label": "Un processus de deux jours",
               "text": "Cuire le pain à l'époque n'était pas aussi rapide que de courir au supermarché ! C'était en fait un processus de deux jours. La veille, les dames mélangeaient et façonnaient soigneusement la pâte, puis la laissaient reposer et lever toute la nuit."
@@ -661,38 +706,35 @@
               "text": "Si vous regardez autour de vous, vous verrez de magnifiques photos exposées qui montrent exactement comment elles procédaient pour toute cette préparation."
             }
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Une Question pour nos Jeunes Explorateurs et les Adultes !"
-        },
-        {
-          "type": "list",
-          "items": [
-            {
-              "label": "Lève-tôt",
-              "text": "Tout le village avait besoin de pain frais. Pouvez-vous deviner à quelle heure le boulanger devait se réveiller chaque matin pour commencer à préparer la pâte ? (Indice : c'était bien avant le lever du soleil !)"
-            },
-            {
-              "label": "Regardez Attentivement",
-              "text": "Regardez attentivement les photos pour voir comment les femmes du village travaillaient autrefois dans la boulangerie."
-            },
-            {
-              "label": "Place à la Détente",
-              "text": "Maintenant, il est temps de vous diriger vers le restaurant-café ! Prenez vos crayons de couleur, savourez une collation bien méritée et faites de votre croquis de Mylotopi (Mylotopi Sketch) un chef-d'œuvre coloré !"
-            },
-            {
-              "label": "Merci",
-              "text": "Merci d'avoir exploré avec nous aujourd'hui !"
-            }
-          ]
         }
       ],
       "audio": {
         "path": "./assets/audio/fr/section-09.mp3",
         "ready": true
       },
-      "imageAlt": "La Boulangerie"
+      "imageAlt": "La Boulangerie",
+      "challenge": {
+        "label": "Pour les jeunes visiteurs",
+        "title": "Une Question pour nos Jeunes Explorateurs et les Adultes !",
+        "items": [
+          {
+            "label": "Lève-tôt",
+            "text": "Tout le village avait besoin de pain frais. Pouvez-vous deviner à quelle heure le boulanger devait se réveiller chaque matin pour commencer à préparer la pâte ? (Indice : c'était bien avant le lever du soleil !)"
+          },
+          {
+            "label": "Regardez Attentivement",
+            "text": "Regardez attentivement les photos pour voir comment les femmes du village travaillaient autrefois dans la boulangerie."
+          },
+          {
+            "label": "Place à la Détente",
+            "text": "Maintenant, il est temps de vous diriger vers le restaurant-café ! Prenez vos crayons de couleur, savourez une collation bien méritée et faites de votre croquis de Mylotopi (Mylotopi Sketch) un chef-d'œuvre coloré !"
+          },
+          {
+            "label": "Merci",
+            "text": "Merci d'avoir exploré avec nous aujourd'hui !"
+          }
+        ]
+      }
     }
   ]
 }

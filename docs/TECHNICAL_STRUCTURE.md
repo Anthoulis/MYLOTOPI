@@ -41,6 +41,7 @@ Language flags are centralized in `assets/js/app.js` as inline SVGs using the sa
 - `assets/maps/`: flat per-language Mini-map JPGs named `minimap-<language>.jpg` and resolved through language JSON files.
 - `assets/images/stops/`: stop image folders used by `assets/js/content-meta.js`.
 - `assets/print/`: print and operations source/reference assets. These files are not automatically exposed in the public UI.
+- `source-texts/`: source DOCX files used to produce runtime JSON content. These files are archival inputs and are not loaded by the app.
 
 ## Validation
 

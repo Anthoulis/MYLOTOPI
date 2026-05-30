@@ -10,7 +10,7 @@
   ],
   "ui": {
     "pageTitle": "Welkom bij de Windmill Experience!",
-    "intro": "Reis terug in de tijd: Maak je klaar om het verleden in te stappen! Je hebt voor deze reis geen tijdmachine nodig, alleen een paar comfortabele schoenen.",
+    "intro": "Maak je klaar om het verleden in te stappen! Je hebt voor deze reis geen tijdmachine nodig, alleen een paar comfortabele schoenen.",
     "languageLabel": "Taal",
     "sectionsLabel": "Haltes van de gids",
     "audioHeading": "Audiogids",
@@ -57,11 +57,15 @@
       "id": "welcome",
       "title": "Welkom bij de Windmill Experience!",
       "navigationTitle": "Welkom bij de Windmill Experience!",
-      "preview": "Reis terug in de tijd: Maak je klaar om het verleden in te stappen! Je hebt voor deze reis geen tijdmachine nodig, alleen een paar comfortabele schoenen.",
+      "preview": "Maak je klaar om het verleden in te stappen! Je hebt voor deze reis geen tijdmachine nodig, alleen een paar comfortabele schoenen.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Reis terug in de tijd",
+              "text": "Maak je klaar om het verleden in te stappen! Je hebt voor deze reis geen tijdmachine nodig, alleen een paar comfortabele schoenen."
+            },
             {
               "label": "Een gerestaureerd dorp",
               "text": "Dankzij de prachtige restauratie door de familie Voudouris zie je precies hoe de eilandbewoners meer dan een eeuw geleden leefden, lang voordat wifi überhaupt was uitgevonden. Je krijgt ook de kans om rond te neuzen en geheime geschiedenis uit de jaren 40 te ontdekken!"
@@ -74,7 +78,7 @@
         },
         {
           "type": "heading",
-          "text": "Wat je gaat ontdekken:"
+          "text": "Wat je gaat ontdekken"
         },
         {
           "type": "list",
@@ -99,24 +103,24 @@
         },
         {
           "type": "heading",
-          "text": "Hoe je de tour kunt beluisteren:"
+          "text": "Hoe je de tour kunt beluisteren"
         },
         {
           "type": "list",
           "items": [
             {
               "label": "Het is supermakkelijk",
-              "text": "Volwassenen kunnen simpelweg de QR-codes scannen met de camera van hun telefoon. Je hoeft geen apps te downloaden!"
+              "text": "De QR-code opent de tour vanaf het begin. Je hoeft geen apps te downloaden."
             },
             {
               "label": "Luister samen",
-              "text": "Zet het volume van je telefoon harder of deel een koptelefoon, en volg de nummers door het dorp."
+              "text": "Kies je taal, zet het volume van je telefoon hoger of deel een koptelefoon, en volg de nummers door het dorp."
             }
           ]
         },
         {
           "type": "heading",
-          "text": "Volgende bestemming:"
+          "text": "Volgende bestemming"
         },
         {
           "type": "list",
@@ -129,6 +133,7 @@
         }
       ],
       "challenge": {
+        "label": "Voor jonge bezoekers",
         "title": "Een geheime missie voor jonge ontdekkingsreizigers!",
         "items": [
           {
@@ -155,11 +160,15 @@
       "id": "herb-garden",
       "title": "Onze Tuin met Onze Kruiden!",
       "navigationTitle": "Onze Tuin met Onze Kruiden!",
-      "preview": "Keuken of Apotheek? Haal diep adem! Ruikt het naar een gigantische buitenkeuken of een dorpsapotheek? Eigenlijk is het allebei!",
+      "preview": "Haal diep adem! Ruikt het naar een gigantische buitenkeuken of een dorpsapotheek? Eigenlijk is het allebei!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Keuken of Apotheek?",
+              "text": "Haal diep adem! Ruikt het naar een gigantische buitenkeuken of een dorpsapotheek? Eigenlijk is het allebei!"
+            },
             {
               "label": "De Ultieme Overlevingskit",
               "text": "Vóór de moderne geneeskunde en supermarkten waren deze tuinen een overlevingskit voor het eiland. Deze percelen staan vol met precies dezelfde kruiden die hier al eeuwenlang groeien."
@@ -176,7 +185,7 @@
         },
         {
           "type": "heading",
-          "text": "Volgende Bestemming:"
+          "text": "Volgende Bestemming"
         },
         {
           "type": "list",
@@ -189,6 +198,7 @@
         }
       ],
       "challenge": {
+        "label": "Voor jonge bezoekers",
         "title": "Een Missie voor onze Jonge Plantendetectives en Volwassenen!",
         "items": [
           {
@@ -223,11 +233,15 @@
       "id": "windmill-first-floor",
       "title": "De Molenvoet (1e verdieping)",
       "navigationTitle": "De Molenvoet (1e verdieping)",
-      "preview": "Een Levende Legende: Welkom in de \"Molen van de Priester\"! Je staat in de oudste nog werkende windmolen van het hele eiland en de gehele Dodekanesos-archipel. De molen is meer dan 400 jaar oud, was tot 1987 dagelijks in gebruik en is nog steeds een levende machine die vandaag de dag meel maalt!",
+      "preview": "Welkom in de \"Molen van de Priester\"!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Een Levende Legende",
+              "text": "Welkom in de \"Molen van de Priester\"! Je staat in de oudste nog werkende windmolen van het hele eiland en de gehele Dodekanesos-archipel. De molen is meer dan 400 jaar oud, was tot 1987 dagelijks in gebruik en is nog steeds een levende machine die vandaag de dag meel maalt!"
+            },
             {
               "label": "Bij de Entree",
               "text": "Let bij het binnenstappen op de traditionele granaatappel die er hangt voor geluk, samen met een klein flesje heilig water van de berg Athos dat al meer dan 9 jaar oud is."
@@ -264,7 +278,7 @@
         },
         {
           "type": "heading",
-          "text": "Volgende bestemming:"
+          "text": "Volgende bestemming"
         },
         {
           "type": "list",
@@ -277,6 +291,7 @@
         }
       ],
       "challenge": {
+        "label": "Voor jonge bezoekers",
         "title": "Een missie voor onze jonge ontdekkingsreizigers en volwassenen!",
         "items": [
           {
@@ -307,11 +322,15 @@
       "id": "windmill-second-floor",
       "title": "Het Slaapgedeelte van de Molen (2e verdieping)",
       "navigationTitle": "Slaapgedeelte",
-      "preview": "Pas op waar je loopt: Welkom op de tweede verdieping! Pas goed op waar je loopt op de houten trap en let op je hoofd voor de houten balken boven je. Maak je klaar voor een grote verrassing over hoe het gezin hier vroeger leefde.",
+      "preview": "Welkom op de tweede verdieping!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Pas op waar je loopt",
+              "text": "Welkom op de tweede verdieping! Pas goed op waar je loopt op de houten trap en let op je hoofd voor de houten balken boven je. Maak je klaar voor een grote verrassing over hoe het gezin hier vroeger leefde."
+            },
             {
               "label": "Aan je rechterkant",
               "text": "Aan de muren zie je enkele prachtige foto's van verschillende historische windmolens uit heel Griekenland. Maar deze ruimte was niet alleen een galerie!"
@@ -332,7 +351,7 @@
         },
         {
           "type": "heading",
-          "text": "Volgende bestemming:"
+          "text": "Volgende bestemming"
         },
         {
           "type": "list",
@@ -345,6 +364,7 @@
         }
       ],
       "challenge": {
+        "label": "Voor jonge bezoekers",
         "title": "Een vraag voor onze jonge ontdekkingsreizigers en volwassenen!",
         "items": [
           {
@@ -363,11 +383,15 @@
       "id": "windmill-third-floor",
       "title": "De Molenmachines (3e verdieping)",
       "navigationTitle": "De Molenmachines (3e verdieping)",
-      "preview": "Pas op je hoofd: Welkom op de derde verdieping! Let alsjeblieft goed op waar je loopt op de ladder en pas op je hoofd terwijl je op ontdekking gaat.",
+      "preview": "Welkom op de derde verdieping! Let alsjeblieft goed op waar je loopt op de ladder en pas op je hoofd terwijl je op ontdekking gaat.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Pas op je hoofd",
+              "text": "Welkom op de derde verdieping! Let alsjeblieft goed op waar je loopt op de ladder en pas op je hoofd terwijl je op ontdekking gaat."
+            },
             {
               "label": "De spierballen van de molen",
               "text": "Je kijkt nu naar de echte kracht van de windmolen. Kijk eens naar die enorme houten balk boven de stenen. Dit is de belangrijkste verbinding tussen de zware stenen binnenin, de tandwielen en de gigantische draaiende zeilen buiten!"
@@ -408,7 +432,7 @@
         },
         {
           "type": "heading",
-          "text": "Volgende bestemming:"
+          "text": "Volgende bestemming"
         },
         {
           "type": "list",
@@ -421,6 +445,7 @@
         }
       ],
       "challenge": {
+        "label": "Voor jonge bezoekers",
         "title": "Een missie voor onze jonge ontdekkingsreizigers en volwassenen!",
         "items": [
           {
@@ -443,11 +468,15 @@
       "id": "threshing-floor-donkeys",
       "title": "De dorsvloer en de ezels!",
       "navigationTitle": "De dorsvloer en de ezels!",
-      "preview": "Frisse lucht en stenen vloeren: Welkom terug buiten! Haal diep adem in de frisse lucht. Je staat nu bij de traditionele dorsvloer, die veel weg heeft van een grote, ronde, stenen dansvloer.",
+      "preview": "Welkom terug buiten! Haal diep adem in de frisse lucht. Je staat nu bij de traditionele dorsvloer, die veel weg heeft van een grote, ronde, stenen dansvloer.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Frisse lucht en stenen vloeren",
+              "text": "Welkom terug buiten! Haal diep adem in de frisse lucht. Je staat nu bij de traditionele dorsvloer, die veel weg heeft van een grote, ronde, stenen dansvloer."
+            },
             {
               "label": "De duizelige ezel",
               "text": "Kijk naar de houten paal precies in het midden van de cirkel. Vroeger bond de molenaar een touw vanaf die paal losjes om de nek van een ezel. Het was de taak van de ezel om rondjes te lopen in een grote cirkel, waarbij zijn zware hoeven de geoogste gewassen stampten en verpletterden om de zaden vrij te maken!"
@@ -468,7 +497,7 @@
         },
         {
           "type": "heading",
-          "text": "Volgende bestemming:"
+          "text": "Volgende bestemming"
         },
         {
           "type": "list",
@@ -481,6 +510,7 @@
         }
       ],
       "challenge": {
+        "label": "Voor jonge bezoekers",
         "title": "Een missie voor onze jonge ontdekkingsreizigers en volwassenen!",
         "items": [
           {
@@ -503,11 +533,15 @@
       "id": "cellar-italian-tunnel",
       "title": "De Geheime Tunnel & Kelder",
       "navigationTitle": "De Geheime Tunnel & Kelder",
-      "preview": "Een verandering van omgeving: Bereid je voor op een totale verandering van omgeving terwijl we ondergronds gaan! Terwijl je afdaalt in de koele lucht, kijk dan goed naar links en naar rechts.",
+      "preview": "Bereid je voor op een totale verandering van omgeving terwijl we ondergronds gaan! Terwijl je afdaalt in de koele lucht, kijk dan goed naar links en naar rechts.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Een verandering van omgeving",
+              "text": "Bereid je voor op een totale verandering van omgeving terwijl we ondergronds gaan! Terwijl je afdaalt in de koele lucht, kijk dan goed naar links en naar rechts."
+            },
             {
               "label": "Decoratieve flessen",
               "text": "Je ziet rijen lokale wijn van de Skevofilax-wijnmakerij op Kos. We bewaren deze flessen hier als decoratie! Onze eigen drinkwijnen worden veilig bewaard in de hoofdkelder, waar de temperatuur perfect voor ze is."
@@ -528,7 +562,7 @@
         },
         {
           "type": "heading",
-          "text": "Volgende bestemming:"
+          "text": "Volgende bestemming"
         },
         {
           "type": "list",
@@ -541,6 +575,7 @@
         }
       ],
       "challenge": {
+        "label": "Voor jonge bezoekers",
         "title": "Een missie voor onze jonge ontdekkingsreizigers en volwassenen!",
         "items": [
           {
@@ -559,13 +594,18 @@
       "id": "traditional-house",
       "title": "Het Traditionele Huis",
       "navigationTitle": "Het Traditionele Huis",
-      "preview": "Een Piepklein, Overvol Huis: Welkom in het traditionele huis! Dit geweldige huisje is meer dan 130 jaar oud. Het is minder dan 20 vierkante meter groot, maar geloof het of niet: vroeger woonden hier 8 tot 10 mensen! De grootouders, de ouders en al hun kinderen deelden deze ene kamer.",
+      "preview": "Welkom in het traditionele huis!",
       "details": [
         {
           "type": "list",
           "items": [
             {
-              "text": "Waar Sliep Iedereen? De grootouders sliepen vlak bij de warme open haard. De ouders sliepen hoog in het hoogslaperbed aan de overkant, terwijl de oudere kinderen in de bedden daarnaast en op de bank sliepen."
+              "label": "Een Piepklein, Overvol Huis",
+              "text": "Welkom in het traditionele huis! Dit geweldige huisje is meer dan 130 jaar oud. Het is minder dan 20 vierkante meter groot, maar geloof het of niet: vroeger woonden hier 8 tot 10 mensen! De grootouders, de ouders en al hun kinderen deelden deze ene kamer."
+            },
+            {
+              "label": "Waar Sliep Iedereen?",
+              "text": "De grootouders sliepen vlak bij de warme open haard. De ouders sliepen hoog in het hoogslaperbed aan de overkant, terwijl de oudere kinderen in de bedden daarnaast en op de bank sliepen."
             },
             {
               "label": "Slaap, Kindje, Slaap",
@@ -599,7 +639,7 @@
         },
         {
           "type": "heading",
-          "text": "Volgende Bestemming:"
+          "text": "Volgende Bestemming"
         },
         {
           "type": "list",
@@ -612,6 +652,7 @@
         }
       ],
       "challenge": {
+        "label": "Voor jonge bezoekers",
         "title": "Een Missie voor onze Jonge Ontdekkingsreizigers en Volwassenen!",
         "items": [
           {
@@ -642,11 +683,15 @@
       "id": "bakery",
       "title": "De Bakkerij",
       "navigationTitle": "De Bakkerij",
-      "preview": "Een ontmoetingsplek: Welkom bij de traditionele oven! Deze prachtige stenen oven is meer dan 150 jaar oud. Vroeger kwamen de meeste vrouwen uit het dorp hierheen om hun dagelijks brood voor hun gezin te bakken.",
+      "preview": "Welkom bij de traditionele oven!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Een ontmoetingsplek",
+              "text": "Welkom bij de traditionele oven! Deze prachtige stenen oven is meer dan 150 jaar oud. Vroeger kwamen de meeste vrouwen uit het dorp hierheen om hun dagelijks brood voor hun gezin te bakken."
+            },
             {
               "label": "Een proces van twee dagen",
               "text": "Brood bakken was toen niet zo snel als even naar de supermarkt rennen! Het was eigenlijk een proces van twee dagen. De avond van tevoren mengden en vormden de dames het deeg zorgvuldig, waarna het een nacht bleef rusten en rijzen."
@@ -660,38 +705,35 @@
               "text": "Als je rondkijkt, zie je een aantal prachtige foto's die precies laten zien hoe zij deze procedure uitvoerden."
             }
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Een Vraag voor onze Jonge Ontdekkingsreizigers en Volwassenen!"
-        },
-        {
-          "type": "list",
-          "items": [
-            {
-              "label": "De Vroege Vogel",
-              "text": "Het hele dorp had vers brood nodig. Kun jij raden hoe laat de bakker elke ochtend wakker moest worden om te beginnen met het maken van het deeg? (Hint: Het was lang voordat de zon opkwam!)"
-            },
-            {
-              "label": "Kijk Goed",
-              "text": "Kijk goed naar de foto's om te zien hoe de vrouwen uit het dorp vroeger in de bakkerij werkten."
-            },
-            {
-              "label": "Kijk Goed",
-              "text": "Kijk goed naar de foto's om te zien hoe de vrouwen uit het dorp vroeger in de bakkerij werkten."
-            },
-            {
-              "label": "Bedankt",
-              "text": "Bedankt dat jullie vandaag samen met ons op ontdekking zijn gegaan!"
-            }
-          ]
         }
       ],
       "audio": {
         "path": "./assets/audio/nl/section-09.mp3",
         "ready": true
       },
-      "imageAlt": "De Bakkerij"
+      "imageAlt": "De Bakkerij",
+      "challenge": {
+        "label": "Voor jonge bezoekers",
+        "title": "Een Vraag voor onze Jonge Ontdekkingsreizigers en Volwassenen!",
+        "items": [
+          {
+            "label": "De Vroege Vogel",
+            "text": "Het hele dorp had vers brood nodig. Kun jij raden hoe laat de bakker elke ochtend wakker moest worden om te beginnen met het maken van het deeg? (Hint: Het was lang voordat de zon opkwam!)"
+          },
+          {
+            "label": "Kijk Goed",
+            "text": "Kijk goed naar de foto's om te zien hoe de vrouwen uit het dorp vroeger in de bakkerij werkten."
+          },
+          {
+            "label": "Kijk Goed",
+            "text": "Kijk goed naar de foto's om te zien hoe de vrouwen uit het dorp vroeger in de bakkerij werkten."
+          },
+          {
+            "label": "Bedankt",
+            "text": "Bedankt dat jullie vandaag samen met ons op ontdekking zijn gegaan!"
+          }
+        ]
+      }
     }
   ]
 }

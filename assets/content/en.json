@@ -235,7 +235,7 @@
       "id": "windmill-first-floor",
       "title": "The Windmill Base (1st Floor)",
       "navigationTitle": "Windmill 1st Floor",
-      "preview": "Welcome to the \"Mill of the Priest\"! You are standing inside the oldest working windmill on the entire island and in the whole Dodecanese complex.",
+      "preview": "Welcome to the \"Mill of the Priest\"!",
       "details": [
         {
           "type": "list",
@@ -324,7 +324,7 @@
       "id": "windmill-second-floor",
       "title": "The Windmill Sleeping Area (2nd Floor)",
       "navigationTitle": "Windmill 2nd Floor",
-      "preview": "Welcome to the second floor! Watch your step on the wooden stairs and mind your head on the wood above.",
+      "preview": "Welcome to the second floor! Watch your step on the wooden stairs and mind your head on the wood above. Get ready for a big surprise about how the family lived.",
       "details": [
         {
           "type": "list",
@@ -470,7 +470,7 @@
       "id": "threshing-floor-donkeys",
       "title": "Threshing Floor & the Donkeys!",
       "navigationTitle": "Threshing Floor",
-      "preview": "Welcome back outside! Take a deep breath of fresh air.",
+      "preview": "Welcome back outside! Take a deep breath of fresh air. You are now standing near the traditional threshing floor, which looks a lot like a big, round stone dance floor.",
       "details": [
         {
           "type": "list",
@@ -535,7 +535,7 @@
       "id": "cellar-italian-tunnel",
       "title": "The Secret Tunnel & Cellar",
       "navigationTitle": "Tunnel & Cellar",
-      "preview": "Prepare yourselves for a total change of scenery as we head underground!",
+      "preview": "Prepare yourselves for a total change of scenery as we head underground! As you step down into the cool air, take a look to your left and right.",
       "details": [
         {
           "type": "list",
@@ -596,7 +596,7 @@
       "id": "traditional-house",
       "title": "The Traditional House",
       "navigationTitle": "Traditional House",
-      "preview": "Welcome to the traditional house! This amazing little home is over 130 years old.",
+      "preview": "Welcome to the traditional house!",
       "details": [
         {
           "type": "list",
@@ -685,7 +685,7 @@
       "id": "bakery",
       "title": "The Bakery",
       "navigationTitle": "Bakery",
-      "preview": "Welcome to the traditional oven! This beautiful stone oven is over 150 years old.",
+      "preview": "Welcome to the traditional oven!",
       "details": [
         {
           "type": "list",

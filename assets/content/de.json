@@ -11,7 +11,7 @@
   "ui": {
     "pageTitle": "Windmühlen-Erlebnis",
     "heroTitle": "Windmühlen-Erlebnis",
-    "intro": "Ein begleitender Rundgang durch das restaurierte Dorf Mylotopi: Windmühle, Stein, Brot, Kräuter, Familienerinnerung und der Rhythmus des alten Kefalos.",
+    "intro": "Machen Sie sich bereit, in die Vergangenheit einzutreten! Sie brauchen für diese Reise keine Zeitmaschine – nur bequeme Schuhe.",
     "languageLabel": "Sprache",
     "sectionsLabel": "Stationen der Führung",
     "audioHeading": "Audioguide",
@@ -56,51 +56,98 @@
   "sections": [
     {
       "id": "welcome",
-      "title": "Willkommen beim Windmühlen-Erlebnis",
+      "title": "Willkommen beim Windmühlen-Erlebnis!",
       "navigationTitle": "Willkommen",
-      "preview": "Beginnen Sie den Rundgang in einem restaurierten Dorf, das die Erinnerung an das alte Kefalos bewahrt: Windmühle, Familienhaus, Backofen, Kräuter, Tunnel und die tägliche Arbeit des Insellebens.",
+      "preview": "Machen Sie sich bereit, in die Vergangenheit einzutreten! Sie brauchen für diese Reise keine Zeitmaschine – nur bequeme Schuhe.",
       "details": [
-        "Mylotopi verbindet Räume, die einst den Alltag in Kefalos geprägt haben. Steinmauern, hölzerne Mechanismen, Familienobjekte und Werkzeuge erscheinen hier als lebendige Geschichte.",
-        "Die Familie Voudouris hat diesen Ort mit Respekt vor der lokalen Erinnerung restauriert, damit Besucher verstehen können, wie Menschen arbeiteten, kochten, schliefen, Vorräte aufbewahrten und das Dorfleben teilten.",
-        {
-          "type": "heading",
-          "text": "Was der Rundgang zeigt"
-        },
         {
           "type": "list",
           "items": [
             {
-              "label": "Die Windmühle",
-              "text": "Ein lebendiges Wahrzeichen, verbunden mit Weizen, Mehl, Wetter, Handwerk und dem Rhythmus des Dorfes."
+              "label": "Reise in die Vergangenheit",
+              "text": "Machen Sie sich bereit, in die Vergangenheit einzutreten! Sie brauchen für diese Reise keine Zeitmaschine – nur bequeme Schuhe."
             },
             {
-              "label": "Das Dorfleben",
-              "text": "Haus, Backofen, Garten und Dreschplatz zeigen, wie Familien mit Sorgfalt und praktischer Klugheit lebten."
+              "label": "Ein restauriertes Dorf",
+              "text": "Dank der wunderschönen Restaurierung durch die Familie Voudouris werden Sie genau sehen, wie die Inselbewohner vor über einem Jahrhundert lebten, lange bevor WLAN überhaupt erfunden wurde. Sie können auch ein wenig herumschnüffeln und einige geheime Geschichten aus den 1940er Jahren aufdecken!"
             },
             {
-              "label": "Verborgene Geschichte",
-              "text": "Der italienische Tunnel und der Keller erzählen eine ruhigere Geschichte aus den 1940er Jahren."
+              "label": "Das Leben des Müllers",
+              "text": "Heute dürfen Sie in die Fußstapfen eines echten Windmüllers treten. Achtung, Spoiler: Sein tägliches Workout bestand darin, den ganzen Tag schwere Mehlsäcke zu heben, nur um den Großteil des Dorfes zu ernähren."
             }
           ]
         },
         {
           "type": "heading",
-          "text": "So nutzen Sie den Audioguide"
+          "text": "Was Sie erkunden werden"
         },
-        "Wählen Sie Ihre Sprache, wählen Sie die Station, an der Sie stehen, und starten Sie den Ton, wenn Sie bereit sind. Der Guide ist für einen ruhigen Rundgang im Freien gedacht, mit Zeit zum Anhalten und Beobachten."
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Die riesige Windmühle",
+              "text": "Erkunden Sie eine echte, funktionierende Windmühle von ganz unten bis ganz nach oben."
+            },
+            {
+              "label": "Dorfleben",
+              "text": "Werfen Sie einen Blick in das traditionelle Haus und die Bäckerei."
+            },
+            {
+              "label": "Natur & Tiere",
+              "text": "Schnuppern Sie an den wunderbaren Kräutern in unseren Gärten, besuchen Sie den Dreschplatz und sagen Sie unseren lieben Eseln Hallo."
+            },
+            {
+              "label": "Unterirdische Geheimnisse",
+              "text": "Gehen Sie direkt durch einen echten Militärtunnel!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "So hören Sie sich die Tour an"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Es ist super einfach",
+              "text": "Der QR-Code öffnet die Tour von Anfang an. Sie müssen keine App herunterladen."
+            },
+            {
+              "label": "Gemeinsam zuhören",
+              "text": "Wählen Sie Ihre Sprache, stellen Sie die Lautstärke Ihres Telefons höher oder teilen Sie Kopfhörer, und folgen Sie den Nummern durch das Dorf."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nächstes Ziel"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Als Nächstes",
+              "text": "Gehen Sie weiter zu unseren Gärten mit Kräutern!"
+            }
+          ]
+        }
       ],
       "challenge": {
         "label": "Für junge Besucher",
-        "title": "Schau und finde",
+        "title": "Eine geheime Mission für junge Entdecker!",
         "items": [
           {
-            "text": "Schau dich um."
+            "label": "Schnappt euch eure Stifte",
+            "text": "Wir geben euch eine spezielle Mylotopi-Zeichnung und ein paar Buntstifte zum Mitnehmen."
           },
           {
-            "text": "Findest du etwas aus Stein?"
+            "label": "Beobachtet alles",
+            "text": "Wenn ihr heute herumlauft, haltet die Augen weit offen! Schaut euch die riesige Windmühle, die schweren Steine und die alten Werkzeuge ganz genau an. Versucht, euch all die schönen Farben zu merken, die ihr seht."
           },
           {
-            "text": "Wähle ein Detail und zeig es deiner Familie."
+            "label": "Erschafft ein Meisterwerk",
+            "text": "Wenn ihr euer Abenteuer beendet habt und euch in unserem Restaurant-Café entspannt, könnt ihr eure Zeichnung ausmalen und sie in ein wahres Meisterwerk verwandeln!"
           }
         ]
       },
@@ -112,51 +159,68 @@
     },
     {
       "id": "herb-garden",
-      "title": "Kräutergarten",
+      "title": "Unser Garten mit unseren Kräutern!",
       "navigationTitle": "Kräutergarten",
-      "preview": "Verweilen Sie zwischen den Kräutern der Insel. Thymian, Oregano, Minze, Majoran und Lavendel verbinden Küche, Hausmittel und die Erinnerung an das Familienleben in Kefalos.",
+      "preview": "Atmen Sie tief ein! Riecht es wie eine riesige Freiluftküche oder eine Dorfapotheke? Eigentlich ist es beides!",
       "details": [
-        "Bevor moderne Geschäfte und Apotheken zum Alltag gehörten, konnte ein kleiner Garten zugleich Küche und Hausapotheke sein. Kräuter gaben Speisen Geschmack, dem Haus Duft und dem Körper einfache Hilfe.",
-        "In Mylotopi zeigen diese Pflanzen die praktische Weisheit von Inselfamilien. Einige Blätter konnten Brot, Fleisch oder Gemüse würzen und zugleich als einfacher Aufguss dienen.",
-        {
-          "type": "heading",
-          "text": "Was diese Station zeigt"
-        },
         {
           "type": "list",
           "items": [
             {
-              "label": "Küchenwissen",
-              "text": "Thymian, Oregano, Minze, Majoran und Lavendel verbanden das tägliche Kochen mit der Landschaft der Insel."
+              "label": "Küche oder Apotheke?",
+              "text": "Atmen Sie tief ein! Riecht es wie eine riesige Freiluftküche oder eine Dorfapotheke? Eigentlich ist es beides!"
             },
             {
-              "label": "Hausmittel",
-              "text": "Vertraute Pflanzen gaben einfache Hilfe, bevor moderne Medizin leicht erreichbar war."
+              "label": "Das ultimative Überlebenspaket",
+              "text": "Vor der modernen Medizin und den Supermärkten waren diese Gärten ein Überlebenspaket der Insel. Diese Beete sind mit genau denselben Kräutern gefüllt, die hier seit Jahrhunderten wachsen."
             },
             {
-              "label": "Stille Schönheit",
-              "text": "Grüntöne, silbrige Blätter und violetter Lavendel zeigen eine ruhigere Seite des Dorflebens."
+              "label": "Der Arzt der Natur",
+              "text": "Kräuter wie Thymian, Oregano und Majoran wurden nicht nur verwendet, um das Abendessen fantastisch schmecken zu lassen – sie waren der örtliche Arzt! Wenn jemand Bauchschmerzen hatte, rannte die Familie des Windmüllers nicht für eklig schmeckenden rosa Sirup in die Apotheke – sie kam genau hierher, um Blätter für ein natürliches Heilmittel zu pflücken."
+            },
+            {
+              "label": "Eine Malerpalette",
+              "text": "Schauen Sie sich den wunderschönen lila Lavendel und die leuchtend grüne Minze an! Sie sehen aus, als hätte sie jemand direkt in den Garten gemalt. Achten Sie genau auf diese leuchtenden Farben!"
             }
           ]
         },
         {
           "type": "heading",
-          "text": "Nächste Station"
+          "text": "Nächstes Ziel"
         },
-        "Gehen Sie weiter zur historischen Windmühle, wo die Geschichte vom Garten und der Fürsorge der Familie zu Weizen, Mehl und körperlicher Arbeit führt."
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Als Nächstes",
+              "text": "Gehen Sie dann weiter zur historischen Windmühle!"
+            }
+          ]
+        }
       ],
       "challenge": {
         "label": "Für junge Besucher",
-        "title": "Riech an einem Kraut",
+        "title": "Eine Mission für unsere jungen Pflanzendetektive und Erwachsene!",
         "items": [
           {
-            "text": "Frag zuerst, ob du ein Blatt berühren darfst."
+            "label": "Klassischer Spaß",
+            "text": "Legt die Handys für eine Sekunde weg – wir machen es ganz klassisch (old-school)! Seht ihr die echten Puzzleteile, die hier verstreut sind?"
           },
           {
-            "text": "Riech vorsichtig daran."
+            "label": "Benutzt eure Sinne",
+            "text": "Eure Aufgabe ist es herauszufinden, welches Wort zu welcher Pflanze gehört. Ihr müsst eure Augen und eure Nase benutzen!"
           },
           {
-            "text": "Sag deiner Familie, woran es dich erinnert."
+            "label": "Reiben und schnuppern",
+            "text": "Nur zu, reibt sanft an den Blättern und schnuppert daran (aber bitte nicht grasen – esst den Garten nicht vor dem Mittagessen auf!)."
+          },
+          {
+            "label": "Löst das Puzzle",
+            "text": "Könnt ihr die Puzzleteile so verschieben, dass sie zu den richtigen Kräutern passen? Schaut, ob ihr den Unterschied zwischen der Minze und dem Oregano herausfinden könnt. Welches riecht nach einer leckeren Pizza und welches riecht nach einem gemütlichen Nickerchen?"
+          },
+          {
+            "label": "Erinnerung an das Skizzenbuch",
+            "text": "Haltet die Augen offen, Pflanzendetektive! Merkt euch die verschiedenen Grün-, Grau- und Lilatöne, um eure Mylotopi-Zeichnung später auszumalen."
           }
         ]
       },
@@ -168,55 +232,84 @@
     },
     {
       "id": "windmill-first-floor",
-      "title": "Basis der Windmühle",
+      "title": "Die Basis der Windmühle (1. Stock)",
       "navigationTitle": "Basis der Windmühle",
-      "preview": "Treten Sie in die Basis der Mühle des Priesters ein, eine der ältesten funktionierenden Windmühlen des Dodekanes. Hier treffen Stein, Holz, Gewicht und Wind aufeinander.",
+      "preview": "Willkommen in der „Mühle des Priesters“!",
       "details": [
-        "Die Windmühle ist über 400 Jahre alt und arbeitete täglich bis 1987. Heute bewahrt sie das Handwerk, Weizen zu Mehl zu mahlen, eine Arbeit, die einst einen großen Teil des Dorfes ernährte.",
-        "Am Eingang begrüßen traditionelle Zeichen von Segen und Schutz die Besucher. Die Steinmauern sind etwa 1,2 Meter dick, gebaut gegen starke Meereswinde und für die Kraft des Mechanismus darüber.",
-        {
-          "type": "heading",
-          "text": "Achten Sie darauf"
-        },
         {
           "type": "list",
           "items": [
             {
-              "label": "Arbeitsobjekte",
-              "text": "Lagerflächen, hölzerner Sattel, Dreschschlitten, Waagen und Gewichte verbinden den Müller mit ländlicher Arbeit."
+              "label": "Eine lebende Legende",
+              "text": "Willkommen in der „Mühle des Priesters“! Sie stehen in der ältesten funktionierenden Windmühle auf der gesamten Insel und im gesamten Dodekanes-Komplex. Sie ist über 400 Jahre alt, war bis 1987 täglich in Betrieb und ist immer noch eine lebendige Maschine, die heute noch Mehl mahlt!"
             },
             {
-              "label": "Praktischer Kamin",
-              "text": "Erwärmtes Fett diente dazu, Teile des Mechanismus zu schmieren."
+              "label": "Am Eingang",
+              "text": "Wenn Sie durch die Tür treten, beachten Sie den traditionellen Granatapfel, der als Glücksbringer hängt, neben einer kleinen Flasche mit Weihwasser vom Berg Athos, die über 9 Jahre alt ist."
             },
             {
-              "label": "Erste Bremse",
-              "text": "Ein kleines Seil hob die schweren Mühlsteine leicht an, damit die Segel draußen sicherer bedient werden konnten."
+              "label": "Gebaut für Stürme",
+              "text": "Diese riesige Maschine ist 6,2 Meter hoch, und die Steinmauern um Sie herum sind 1,2 Meter dick, um das Gebäude vor wilden Seestürmen zu schützen."
             },
             {
-              "label": "Größere Erinnerung",
-              "text": "Fotografien von Windmühlen in Griechenland zeigen diese Mühle als Teil einer größeren Inseltradition."
+              "label": "Massive Maschinen",
+              "text": "In den oberen Stockwerken befinden sich zwei massive Mühlsteine, die jeweils eine Tonne wiegen – das sind zusammen über zwei Tonnen!"
+            },
+            {
+              "label": "Uraltes Holz",
+              "text": "80 % des Holzes in diesem Gebäude sind original, und der Rest wurde den ganzen Weg vom Berg Athos gebracht. Erstaunlicherweise sind einige der wiederverwendeten Holzteile, die sich oben drehen, zwischen 1.000 und 1.300 Jahre alt!"
+            },
+            {
+              "label": "Zu Ihrer Rechten",
+              "text": "Sehen Sie den Bereich, der mit einem Lappen abgedeckt ist? Das war der Lagerraum des Müllers. Daneben sehen Sie einen hölzernen Eselsattel und einen Dreschschlitten, den der Esel des Müllers zog, um den Weizen zu trennen. Sie können auch alltägliche Holzwerkzeuge und wunderschöne Fotos von anderen Windmühlen in ganz Griechenland entdecken."
+            },
+            {
+              "label": "Der Kamin",
+              "text": "Der Müller benutzte diesen nicht nur zum Wärmen! Schauen Sie genau hinein – sehen Sie eine Dose? Darin befindet sich Kuhfett, das der Müller schmolz, um die beweglichen Teile der Windmühle zu schmieren, damit sie nicht quietschten. Genau über dem Kamin hängt ein Foto von Kostas Politis, dem geliebten Besitzer dieser Windmühle, dessen Vermächtnis genau hier weiterlebt."
+            },
+            {
+              "label": "Zu Ihrer Linken",
+              "text": "Sie sehen eine traditionelle Waage und Gewichte, die verwendet wurden, um das frische Mehl sorgfältig zu wiegen."
+            },
+            {
+              "label": "Die ersten Bremsen",
+              "text": "Suchen Sie nach dem kleinen herabhängenden Seil. Ob Sie es glauben oder nicht, dieses Seil war das erste Bremssystem der Windmühle! Der Müller zog daran, um die zwei Tonnen schweren Mühlsteine ein kleines bisschen anzuheben, was es für ihn sicher machte, nach draußen zu gehen und die Segel zu entfalten"
             }
           ]
         },
         {
           "type": "heading",
-          "text": "Nächste Station"
+          "text": "Nächstes Ziel"
         },
-        "Gehen Sie vorsichtig hinauf zum Schlafbereich, wo Arbeit und Familienleben überraschend nahe beieinander lagen."
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Als Nächstes",
+              "text": "Gehen Sie dann weiter in den zweiten Stock der Windmühle!"
+            }
+          ]
+        }
       ],
       "challenge": {
         "label": "Für junge Besucher",
-        "title": "Finde Stein und Holz",
+        "title": "Eine Mission für unsere jungen Entdecker und Erwachsene!",
         "items": [
           {
-            "text": "Schau dich im Raum um."
+            "label": "Testet die Wände",
+            "text": "Lasst uns sehen, wie dick diese Wände wirklich sind! Stellt euch neben den Eingang und streckt eure Arme so weit wie möglich aus. Sind eure Arme länger als die Wand dick ist, oder gewinnt die Windmühle?"
           },
           {
-            "text": "Zeig auf etwas aus Stein."
+            "label": "Spionieren",
+            "text": "Schaut euch im Raum um und seht, ob ihr den hölzernen Eselsattel entdecken könnt!"
           },
           {
-            "text": "Zeig auf etwas aus Holz."
+            "label": "Findet das Fett",
+            "text": "Späht in den Kamin – könnt ihr die versteckte Dose mit Kuhfett entdecken?"
+          },
+          {
+            "label": "Entdeckt die Bremsen",
+            "text": "Findet das kleine hängende Seil, das als Bremssystem der Windmühle diente!"
           }
         ]
       },
@@ -228,51 +321,56 @@
     },
     {
       "id": "windmill-second-floor",
-      "title": "Schlafbereich",
+      "title": "Der Schlafbereich der Windmühle (2. Stock)",
       "navigationTitle": "Schlafbereich",
-      "preview": "Im Schlafbereich wird die Windmühle persönlicher. Sie war nicht nur ein Arbeitsgebäude, sondern auch ein Ort, an dem die Familie des Müllers neben Weizen und Mehl ruhte.",
+      "preview": "Willkommen im zweiten Stock!",
       "details": [
-        "Achten Sie auf die Holzstufen und das niedrige Holz über Ihrem Kopf. Die Windmühle wurde zuerst für die Arbeit gebaut, deshalb verlangt jede Bewegung Aufmerksamkeit.",
-        "Auf einer Seite zeigen historische Bilder Windmühlen aus Griechenland. Auf der anderen erinnert der Raum an eine sehr menschliche Wahrheit: Der Müller und seine Familie schliefen nah am Klang und an der Verantwortung der Mühle.",
-        {
-          "type": "heading",
-          "text": "Warum es wichtig war"
-        },
         {
           "type": "list",
           "items": [
             {
-              "label": "Gelagerter Weizen",
-              "text": "Säcke mit rohem Weizen und frischem Mehl blieben in der Nähe, weil Mehl Nahrung, Einkommen und Sicherheit bedeutete."
+              "label": "Passen Sie auf Ihre Schritte auf",
+              "text": "Willkommen im zweiten Stock! Passen Sie auf den Holztreppen auf Ihre Schritte und auf das Holz über Ihnen auf Ihren Kopf auf. Machen Sie sich auf eine große Überraschung darüber gefasst, wie die Familie lebte."
             },
             {
-              "label": "Geteilter Raum",
-              "text": "Ruhe, Vorräte und Verantwortung mussten in dasselbe kleine Arbeitsgebäude passen."
+              "label": "Zu Ihrer Rechten",
+              "text": "An den Wänden sehen Sie einige wunderschöne Bilder, die verschiedene historische Windmühlen aus ganz Griechenland zeigen. Aber dieser Raum war nicht nur eine Galerie!"
             },
             {
-              "label": "Familienleben",
-              "text": "Der Raum zeigt, wie eng private Zeit und Arbeit in einem Inselhaushalt verbunden sein konnten."
+              "label": "Ein sehr lautes Schlafzimmer",
+              "text": "Genau hier auf der rechten Seite haben der Windmüller und seine gesamte Familie tatsächlich geschlafen! Können Sie sich vorstellen, ein friedliches Nickerchen zu machen, während das ganze Gebäude bebte, der Wind heulte und die schweren Maschinen nur wenige Meter entfernt lautstark Weizen zerkleinerten? Sie müssen einen sehr tiefen Schlaf gehabt haben!"
+            },
+            {
+              "label": "Zu Ihrer Linken",
+              "text": "Schauen Sie nun auf die linke Seite. Dies war ein sehr wichtiger und viel genutzter Lagerraum."
+            },
+            {
+              "label": "Das Mehl beschützen",
+              "text": "Der Müller nutzte diese Seite des Raumes, um all die schweren Säcke mit rohem Weizen, die darauf warteten, gemahlen zu werden, sicher zu stapeln, direkt neben den frisch abgefüllten Säcken mit luftigem, weißem Mehl, die bereit waren, um das Dorf zu ernähren. Er bewahrte sie genau hier in der Nähe seines Bettes auf, damit er sie beschützen konnte!"
             }
           ]
         },
         {
           "type": "heading",
-          "text": "Nächste Station"
+          "text": "Nächstes Ziel"
         },
-        "Gehen Sie weiter zur Mechanik, wo Holz und Stein zeigen, wie Wind zu Mehl wurde."
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Als Nächstes",
+              "text": "Gehen Sie dann weiter in den dritten Stock der Windmühle!"
+            }
+          ]
+        }
       ],
       "challenge": {
         "label": "Für junge Besucher",
-        "title": "Stell dir vor, hier zu schlafen",
+        "title": "Eine Frage für unsere jungen Entdecker und Erwachsene!",
         "items": [
           {
-            "text": "Schau dir den kleinen Raum an."
-          },
-          {
-            "text": "Wo würdest du ein Kissen hinlegen?"
-          },
-          {
-            "text": "Zeig auf eine ruhige Ecke."
+            "label": "Stellt euch das vor",
+            "text": "Könnt ihr euch vorstellen, im zweiten Stock genau so zu schlafen, wie sie es früher getan haben?"
           }
         ]
       },
@@ -284,55 +382,80 @@
     },
     {
       "id": "windmill-third-floor",
-      "title": "Mechanik",
+      "title": "Die Maschinen der Windmühle (3. Stock)",
       "navigationTitle": "Mechanik",
-      "preview": "Auf der oberen Ebene zeigt die Windmühle ihre Intelligenz. Holzbalken, Zahnräder, Seile und Mühlsteine verwandelten die Kraft des Windes in Mehl.",
+      "preview": "Willkommen im dritten Stock! Bitte passen Sie auf der Leiter auf Ihre Schritte auf und achten Sie beim Erkunden auf Ihren Kopf.",
       "details": [
-        "Bewegen Sie sich langsam und achten Sie auf Ihren Kopf. Der Mechanismus um Sie herum ist das Herz der Mühle und verbindet die Segel draußen mit den Mühlsteinen innen.",
-        "Die beiden Mühlsteine wiegen zusammen mehr als zwei Tonnen und stammen von Nisyros, einer Insel, die für besonders widerstandsfähigen Stein bekannt ist.",
-        {
-          "type": "heading",
-          "text": "Wie die Mechanik arbeitete"
-        },
         {
           "type": "list",
           "items": [
             {
-              "label": "Trichter und Glocke",
-              "text": "Eine kleine Glocke half dem Müller zu hören, wann im Trichter wenig Weizen übrig war."
+              "label": "Achten Sie auf Ihren Kopf",
+              "text": "Willkommen im dritten Stock! Bitte passen Sie auf der Leiter auf Ihre Schritte auf und achten Sie beim Erkunden auf Ihren Kopf."
             },
             {
-              "label": "Weg des Mehls",
-              "text": "Fertiges Mehl fiel durch ein Rohr nach unten, wo der Müller einen Anteil als Bezahlung behalten konnte."
+              "label": "Die Muskeln der Mühle",
+              "text": "Sie sehen nun die wahre Kraft der Windmühle. Schauen Sie sich diesen massiven Holzbalken über den Steinen an. Er ist das Hauptverbindungsstück, das die schweren Steine im Inneren, die Zahnräder und die riesigen, sich drehenden Segel draußen miteinander verbindet!"
             },
             {
-              "label": "Seile und Bremsen",
-              "text": "Hebel verlangsamten die Steine oder konnten die Arbeit schnell stoppen."
+              "label": "Zwei-Tonnen-Steine",
+              "text": "Diese massiven Mühlsteine wiegen zusammen über zwei Tonnen! Sie wurden extra von der Insel Nisyros importiert, die dafür berühmt ist, einen einzigartigen, superstarken Stein zu produzieren, der perfekt zum Mahlen ist."
             },
             {
-              "label": "Bootsähnliche Decke",
-              "text": "Die Form spricht von lokalem Wissen über Wind, Holz, Meer und Arbeit."
+              "label": "Der Trichter & die Glocke",
+              "text": "Suchen Sie knapp über den Steinen nach einer Holzkiste namens „Der Zuführer“ (oder Trichter), in die der Müller den rohen Weizen schüttete. Aber wie wusste er bei all dem lauten Lärm, wann sie leer war? Schauen Sie genau nach einer kleinen Glocke! Sie klingelte automatisch, wenn der Weizen zur Neige ging, um dem Müller zu sagen, dass er nachfüllen muss."
+            },
+            {
+              "label": "Die erste Bremse",
+              "text": "Sehen Sie diesen Holzhebel, der mit einem winzigen Seil verbunden ist? Das führt ganz nach unten in den ersten Stock und ist das erste Bremssystem, über das wir unten gesprochen haben."
+            },
+            {
+              "label": "Das Mehl hinablassen",
+              "text": "Schauen Sie in der Nähe des Hebels nach unten, um eine Falltür zu finden, die mit einem Rohr verbunden ist. Sobald das Mehl perfekt zerkleinert war, fiel es direkt dieses Rohr hinunter in das unterste Stockwerk!"
+            },
+            {
+              "label": "Das „Trinkgeld“ des Müllers",
+              "text": "Direkt neben dem Hauptrohr befindet sich eine zweite, kleinere Falltür. Früher bezahlten die Leute nicht immer mit Geld. Stattdessen nutzte der Müller diese Tür, um sein „Trinkgeld“ zu kassieren – er behielt einen kleinen Prozentsatz des Mehls für seine eigene Familie als Bezahlung für seine harte Arbeit!"
+            },
+            {
+              "label": "Reibungsloses Drehen",
+              "text": "Entdecken Sie die kleine Dose in der Nähe der Falltüren. Unten benutzte er Kuhfett, aber hier oben verwendete er eine spezielle Mischung aus Olivenöl und Seife, damit die oberen Zahnräder reibungslos liefen."
+            },
+            {
+              "label": "Die Notbremse",
+              "text": "Suchen Sie neben der Leiter nach einem wirklich dicken Seil. Wenn der Müller die Mehlproduktion in Eile komplett stoppen musste, zog er an diesem Seil – dem zweiten Bremssystem!"
+            },
+            {
+              "label": "Eine Schiffsdecke",
+              "text": "Schauen Sie sich zu guter Letzt die Decke an. Woran erinnert sie Sie? Sie ist tatsächlich in der Form eines Schiffes gestaltet, um die Kraft des Mechanismus zu verstärken und schneller Mehl zu produzieren!"
             }
           ]
         },
         {
           "type": "heading",
-          "text": "Nächste Station"
+          "text": "Nächstes Ziel"
         },
-        "Gehen Sie wieder hinaus zum Dreschplatz, wo der Weizen vorbereitet wurde, bevor er die Mühle erreichte."
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Als Nächstes",
+              "text": "Gehen Sie dann weiter zum Dreschplatz und zum Eselbereich!"
+            }
+          ]
+        }
       ],
       "challenge": {
         "label": "Für junge Besucher",
-        "title": "Finde die Glocke",
+        "title": "Eine Mission für unsere jungen Entdecker und Erwachsene!",
         "items": [
           {
-            "text": "Such nach einer kleinen Glocke."
+            "label": "Achtet auf die Glocke und läutet sie",
+            "text": "Könnt ihr die winzige Glocke finden, die den Müller warnte, wenn der Weizen ausging? Könnt ihr sie läuten?"
           },
           {
-            "text": "Welchen Klang hätte sie?"
-          },
-          {
-            "text": "Zeig sie deiner Familie."
+            "label": "Findet das versteckte Mehl",
+            "text": "Sucht den Boden ab und seht nach, ob ihr die spezielle „Trinkgeld“-Tür entdecken könnt, hinter der der Müller seine hart verdiente Bezahlung aufbewahrte!"
           }
         ]
       },
@@ -344,51 +467,60 @@
     },
     {
       "id": "threshing-floor-donkeys",
-      "title": "Dreschplatz und Esel",
+      "title": "Dreschplatz & die Esel!",
       "navigationTitle": "Dreschplatz",
-      "preview": "Zurück im Freien erzählt der Steinkreis die Geschichte des Weizens vor dem Mahlen. Hier bereiteten Ernte, Tierkraft und geduldige Hände das Korn vor.",
+      "preview": "Willkommen zurück draußen!",
       "details": [
-        "Der Dreschplatz war ein wichtiger Arbeitsort im Freien. Weizen und andere Feldfrüchte wurden auf dem Steinkreis ausgebreitet, damit die Körner gelöst und getrennt werden konnten.",
-        "Früher lief ein Esel um den Mittelpfosten und half, die Ernte aufzubrechen. Danach setzten Menschen die Arbeit fort, reinigten und trennten den Weizen.",
-        {
-          "type": "heading",
-          "text": "Warum es wichtig war"
-        },
         {
           "type": "list",
           "items": [
             {
-              "label": "Vor dem Mahlen",
-              "text": "Mehl begann mit Feldern, Wetter, Ernte und wiederholter Arbeit, bevor es je die Windmühle erreichte."
+              "label": "Frische Luft & Steinböden",
+              "text": "Willkommen zurück draußen! Atmen Sie tief die frische Luft ein. Sie stehen jetzt in der Nähe des traditionellen Dreschplatzes, der stark an eine große, runde Tanzfläche aus Stein erinnert."
             },
             {
-              "label": "Gemeinsame Arbeit",
-              "text": "Tiere und Menschen arbeiteten zusammen, um Korn für das tägliche Brot vorzubereiten."
+              "label": "Der schwindelige Esel",
+              "text": "Schauen Sie genau in die Mitte des Kreises auf den Holzpfahl. In alten Zeiten band der Müller ein Seil von diesem Pfahl locker um den Hals eines Esels. Die Aufgabe des Esels war es, in einem großen Kreis immer wieder herumzulaufen und mit seinen schweren Füßen die geernteten Feldfrüchte zu stampfen und zu zerquetschen, um die Samen freizulegen!"
             },
             {
-              "label": "Dorfgedächtnis",
-              "text": "Mylotopi hält die Erinnerung an ländliche Tiere nah an der Besuchererfahrung."
+              "label": "Den Weizen trennen",
+              "text": "Nachdem der fleißige Esel all dieses schwindelerregende Stampfen erledigt hatte, griff der Müller ein, um den weißen Weizen sorgfältig vom braunen Weizen zu trennen. (Heute verwenden wir diese Methode nicht mehr – wir kaufen unseren Weizen direkt von lokalen Produzenten auf der Insel!)"
+            },
+            {
+              "label": "Treffen Sie die wahren Stars",
+              "text": "Sie müssen sich die Tiere nicht nur vorstellen! Schauen Sie in die Nähe und Sie werden die wahren Stars der Farm treffen: unsere beiden lieben Esel. Die stolze Mama heißt Melina, sie ist 6 Jahre alt, und ihre süße kleine Tochter heißt Katie, die gerade mal 2 Jahre alt ist."
+            },
+            {
+              "label": "Der vermisste Papa",
+              "text": "Was Katies Papa angeht... nun, eigentlich weiß niemand, wo er hin ist! Er hat es geliebt, sehr laut zu singen, also denken wir, dass er in die nächste Stadt gelaufen ist, um eine Esel-Rockband zu gründen!"
             }
           ]
         },
         {
           "type": "heading",
-          "text": "Nächste Station"
+          "text": "Nächstes Ziel"
         },
-        "Gehen Sie weiter zum italienischen Tunnel und Keller, wo sich die Atmosphäre von offener Landarbeit zu kühlem Stein und Kriegserinnerung verändert."
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Als Nächstes",
+              "text": "Gehen Sie dann weiter zum Keller/Italienischen Tunnel!"
+            }
+          ]
+        }
       ],
       "challenge": {
         "label": "Für junge Besucher",
-        "title": "Finde den Kreis",
+        "title": "Eine Mission für unsere jungen Entdecker und Erwachsene!",
         "items": [
           {
-            "text": "Schau auf den runden Boden."
+            "label": "Der Eseltanz",
+            "text": "Tretet direkt an den Rand des Dreschplatzes heran! Könnt ihr so tun, als wärt ihr am mittleren Holzpfahl angebunden, und in einem perfekten Kreis laufen, genau wie es ein Esel tat?"
           },
           {
-            "text": "Finde die Mitte."
-          },
-          {
-            "text": "Folge dem Kreis mit deinen Augen."
+            "label": "Sagt Hallo",
+            "text": "Nach eurem schwindelerregenden Tanz müsst ihr unbedingt rübergehen und Melina und Katie Hallo winken! Bitte bewundert unsere lieben Esel aus der Ferne! Sie sehen süß aus, aber sie könnten eure Finger mit Babykarotten verwechseln. Wir wollen das lieber nicht herausfinden!"
           }
         ]
       },
@@ -400,55 +532,56 @@
     },
     {
       "id": "cellar-italian-tunnel",
-      "title": "Italienischer Tunnel und Keller",
+      "title": "Der geheime Tunnel & Keller",
       "navigationTitle": "Tunnel und Keller",
-      "preview": "Betreten Sie einen kühleren und stilleren Teil von Mylotopi. Tunnel und Keller verbinden Stein, Wein und die verborgenere Geschichte der 1940er Jahre.",
+      "preview": "Bereiten Sie sich auf einen kompletten Tapetenwechsel vor, wenn wir unter die Erde gehen! Wenn Sie in die kühle Luft hinabsteigen, schauen Sie nach links und rechts.",
       "details": [
-        "Achten Sie beim Hinabgehen auf die Temperatur, die Rundung der Wände und darauf, wie sich der Klang im Stein verändert.",
-        "Heute präsentiert der Keller Wein und Atmosphäre als Teil des Mylotopi-Erlebnisses. Der kühle Steinraum erinnert aber auch an einen anderen Moment der Geschichte.",
-        {
-          "type": "heading",
-          "text": "Was diese Station zeigt"
-        },
         {
           "type": "list",
           "items": [
             {
-              "label": "Kühler Stein",
-              "text": "Der Tunnel verändert den Rhythmus des Besuchs durch Temperatur, Klang und Enge."
+              "label": "Ein Tapetenwechsel",
+              "text": "Bereiten Sie sich auf einen kompletten Tapetenwechsel vor, wenn wir unter die Erde gehen! Wenn Sie in die kühle Luft hinabsteigen, schauen Sie nach links und rechts."
             },
             {
-              "label": "Schutz im Krieg",
-              "text": "In den 1940er Jahren war der Durchgang mit italienischen Soldaten und den Bedürfnissen der Verteidigung verbunden."
+              "label": "Dekorative Flaschen",
+              "text": "Sie werden Reihen von lokalem Wein vom Weingut Skevofilax drüben in Kos sehen. Wir bewahren diese Flaschen hier als Dekoration auf! Unsere eigentlichen Trinkweine werden sicher im Hauptkeller gelagert, wo die Temperatur perfekt für sie geeignet ist."
             },
             {
-              "label": "Weinkeller",
-              "text": "Derselbe Raum steht heute für Gastfreundschaft, Wein und Atmosphäre."
+              "label": "Geschichte des Zweiten Weltkriegs",
+              "text": "Damals in den 1940er Jahren, während des Zweiten Weltkriegs, war dieser Raum nicht für Wein gedacht – er diente dem Überleben. Dieser 20 Meter lange Tunnel wurde während des Krieges von italienischen Soldaten gebaut."
             },
             {
-              "label": "Starker Kontrast",
-              "text": "Der Weg führt von Schutz und Verteidigung zurück zu Essen, Willkommen und Aussicht über Kefalos."
+              "label": "Der Eiltunnel",
+              "text": "Die Soldaten nutzten diesen Durchgang als Eiltunnel, eine geheime Abkürzung, um wegzulaufen und sich vor ihren Gegnern zu verstecken. Der Keller selbst wurde als sicherer Unterschlupf genutzt, wo sie schlafen, sich entspannen und vor den Kämpfen draußen geschützt bleiben konnten."
+            },
+            {
+              "label": "Eine versteckte Festung",
+              "text": "Am Ende des Tunnels kommen Sie in unseren Hinterhof, der heute unser friedliches Restaurant ist. Aber schauen Sie noch einmal auf das Steindach zurück, bevor Sie hinausgehen! In den 1940er Jahren war dieses gesamte Gebiet ein Schießstand. Die Oberseite war mit schwerem Stein bedeckt, um die Soldaten zu schützen, und direkt am Rand hatten sie Maschinengewehre, um den Hang zu verteidigen. Es ist kaum zu glauben, dass dieser ruhige, wunderschöne Ort für eine Mahlzeit ein so stark bewachter Ort auf der Insel war!"
             }
           ]
         },
         {
           "type": "heading",
-          "text": "Nächste Station"
+          "text": "Nächstes Ziel"
         },
-        "Wenn Sie den Tunnel verlassen, gehen Sie weiter zum traditionellen Haus und zur Bäckerei, zurück in das häusliche Leben des alten Dorfes."
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Als Nächstes",
+              "text": "Wenn Sie die Erkundung des Tunnels beendet haben, kommen Sie bitte zurück und suchen Sie unseren Reiseleiter auf, damit er Ihnen den Weg zu Ihren nächsten fantastischen Stationen zeigen kann dem traditionellen Haus und der Bäckerei!"
+            }
+          ]
+        }
       ],
       "challenge": {
         "label": "Für junge Besucher",
-        "title": "Spür die kühle Luft",
+        "title": "Eine Mission für unsere jungen Entdecker und Erwachsene!",
         "items": [
           {
-            "text": "Bleib kurz ganz ruhig stehen."
-          },
-          {
-            "text": "Ist es hier kühler?"
-          },
-          {
-            "text": "Zähle drei Flaschen oder drei Steine."
+            "label": "Streng geheim",
+            "text": "Ihr seid jetzt auf einer geheimen Mission! Könnt ihr beim Durchschreiten des Soldatentunnels genau ausrechnen, wie viele Weinflaschen an den Wänden aufgereiht sind?"
           }
         ]
       },
@@ -462,53 +595,82 @@
       "id": "traditional-house",
       "title": "Das traditionelle Haus",
       "navigationTitle": "Traditionelles Haus",
-      "preview": "Das traditionelle Haus zeigt die Intelligenz eines kleinen Inselhauses. Auf weniger als 20 Quadratmetern fanden Familie, Kochen, Vorräte, Schlaf und Handwerk ihren Platz.",
+      "preview": "Willkommen im traditionellen Haus!",
       "details": [
-        "Das Haus ist mehr als 130 Jahre alt. Mehrere Generationen konnten einen engen Raum teilen, wobei jedes Objekt sorgfältig platziert wurde, weil Platz wertvoll war.",
-        "Der Kamin war das Herz des Hauses, zum Kochen, Wärmen und Zusammenkommen. Handmühle, Teller und Küchengeräte zeigen den täglichen Rhythmus der Speisezubereitung.",
-        {
-          "type": "heading",
-          "text": "Wie der Raum genutzt wurde"
-        },
         {
           "type": "list",
           "items": [
             {
-              "label": "Schlafen und Aufbewahren",
-              "text": "Betten, Stauraum, Wiege und aufgehängter Brotkorb lösten praktische Bedürfnisse in einem vollen Haushalt."
+              "label": "Ein winziges, überfülltes Zuhause",
+              "text": "Willkommen im traditionellen Haus! Dieses erstaunliche kleine Haus ist über 130 Jahre alt. Es ist weniger als 20 Quadratmeter groß, aber ob Sie es glauben oder nicht, hier lebten früher 8 bis 10 Personen! Die Großeltern, die Eltern und alle ihre Kinder teilten sich diesen einzigen Raum."
             },
             {
-              "label": "Lebensmittel kühl halten",
-              "text": "Vor elektrischer Kühlung halfen Eis und kluge Luftführung, Lebensmittel und Wasser frisch zu halten."
+              "label": "Wo haben alle geschlafen?",
+              "text": "Die Großeltern schliefen direkt am warmen Kamin. Die Eltern schliefen hoch oben im Hochbett auf der gegenüberliegenden Seite, während die älteren Kinder in den Betten daneben und auf der Couch schliefen."
             },
             {
-              "label": "Arbeit und Identität",
-              "text": "Webstuhl, Truhe, Trachten, Fotografien und religiöse Bilder sprechen von Arbeit, Festen, Erinnerung und Zugehörigkeit."
+              "label": "Schlaf, Kindlein, schlaf",
+              "text": "Und was ist mit dem Baby? Suchen Sie nach der kleinen Holzwiege! Um dem Baby beim Einschlafen zu helfen, konnte man einfach vorsichtig an dem kleinen herabhängenden Seil ziehen, um es zu schaukeln."
             },
             {
-              "label": "Sorgfältige Ordnung",
-              "text": "Nichts war zufällig; jedes Objekt hatte einen Platz und einen Zweck."
+              "label": "Clevere Aufbewahrung",
+              "text": "Beachten Sie den Platz unter den Familienbetten – das war ihr wichtigster Lagerraum."
+            },
+            {
+              "label": "Tägliche Aufgaben & Dekoration",
+              "text": "Auf der linken Seite sehen Sie einen großen Webstuhl aus Holz, mit dem sie neue Kleidung herstellten und alte reparierten, daneben eine Truhe, in der sie ihre persönlichen Gegenstände aufbewahrten. Sie finden dort auch ein Sieb für Mehl sowie wunderschöne alte Fotografien und religiöse Bilder an den Wänden."
+            },
+            {
+              "label": "Vasen & Uniformen",
+              "text": "Suchen Sie neben der Truhe nach zwei Vasen: Die große war für Wein und die kleine für Wasser. Direkt darüber hängen zwei wunderschöne traditionelle Uniformen (Trachten), welche die Damen des Hauses zu Hochzeiten und besonderen Anlässen trugen."
+            },
+            {
+              "label": "Das Herzstück des Hauses",
+              "text": "Da das Haus nicht wie moderne Wohnungen renoviert wurde, diente der Kamin dazu, alle Mahlzeiten zu kochen und die ganze Familie warm zu halten. Direkt daneben befindet sich eine kleine Handmühle zum Mahlen von Mehl, zusammen mit ihrem täglichen Küchengeschirr und traditionellen Tellern, die mit hübschen gemalten Blumen verziert sind."
+            },
+            {
+              "label": "Die hängende Schaukel",
+              "text": "Schauen Sie an die Decke! Sehen Sie etwas, das ein bisschen wie eine Schaukel aussieht? Sie ist nicht zum Spielen da! Im oberen Teil bewahrten sie ihr frisches Brot auf, um es sicher vor hungrigen Mäusen zu schützen. Im unteren Teil lagerten sie Johannisbrot. Damals gab es keine Schokoriegel, daher wurde den Kindern süßes Johannisbrot als köstliche „Schokoladen-Leckerei“ gegeben!"
+            },
+            {
+              "label": "Ein traditioneller Kühlschrank",
+              "text": "Suchen Sie schließlich nach dem Holzschrank. Ob Sie es glauben oder nicht, das ist ein traditioneller Kühlschrank! Er besteht aus zwei Teilen. Oben legten sie große Eiswürfel hinein, und wenn das Eis schmolz, konnten sie einen kleinen Hahn öffnen, um eiskaltes Wasser zu trinken. Die Kälte des oberen Teils kühlte auch den unteren Bereich perfekt, um ihre Lebensmittel frisch zu halten!"
             }
           ]
         },
         {
           "type": "heading",
-          "text": "Nächste Station"
+          "text": "Nächstes Ziel"
         },
-        "Gehen Sie weiter zur Bäckerei, wo die Geschichte vom Herd der Familie zum gemeinschaftlichen Steinofen führt."
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Als Nächstes",
+              "text": "Gehen Sie dann weiter zur Bäckerei!"
+            }
+          ]
+        }
       ],
       "challenge": {
         "label": "Für junge Besucher",
-        "title": "Finde drei Dinge",
+        "title": "Eine Mission für unsere jungen Entdecker und Erwachsene!",
         "items": [
           {
-            "text": "Finde etwas zum Kochen."
+            "label": "Dreht die Mühle",
+            "text": "In diesem geschäftigen kleinen Haus gibt es viel zu tun! Könnt ihr zuerst die Handmühle finden? Versucht, den Holzgriff in die Lücke zu stecken und seht nach, ob ihr sie im Kreis drehen könnt!"
           },
           {
-            "text": "Finde etwas zum Schlafen."
+            "label": "Schaut nach oben und unten",
+            "text": "Könnt ihr nach eurer harten Arbeit die hängende Schaukel entdecken, die das Brot vor den Mäusen geschützt hat?"
           },
           {
-            "text": "Finde etwas zum Aufbewahren von Essen."
+            "label": "Wiegt das Baby",
+            "text": "Und was ist mit dem winzigen Seil, an dem sie zogen, um das Baby in den Schlaf zu wiegen? Könnt ihr das Baby zum Einschlafen bringen, indem ihr das Seil schaukelt? Ist das schwer für euch?"
+          },
+          {
+            "label": "Stellt euch das vor",
+            "text": "Wenn ihr alles gefunden habt, stellt euch vor, wie es wäre, diesen kleinen Raum mit 8 bis 10 eurer Familienmitglieder zu teilen!"
           }
         ]
       },
@@ -520,55 +682,51 @@
     },
     {
       "id": "bakery",
-      "title": "Der Steinofen",
+      "title": "Die Bäckerei",
       "navigationTitle": "Steinofen",
-      "preview": "Der Steinofen vollendet die Geschichte von Weizen und Mehl. Hier versammelte sich das Dorf um Brot, Feuer, Geduld und die gemeinsame Arbeit der täglichen Versorgung.",
+      "preview": "Willkommen beim traditionellen Backofen!",
       "details": [
-        "Der Steinofen ist mehr als 150 Jahre alt. Früher brachten viele Frauen des Dorfes hier das Brot für ihre Familien, sodass der Ofen ein praktisches und soziales Zentrum wurde.",
-        "Brot wurde nicht hastig gemacht. Der Teig wurde am Vortag gemischt und geformt, dann ruhte er. Früh am nächsten Morgen wurde der Ofen sorgfältig erhitzt, bevor die Laibe hineinkamen.",
-        {
-          "type": "heading",
-          "text": "Warum es wichtig war"
-        },
         {
           "type": "list",
           "items": [
             {
-              "label": "Gemeinsamer Ofen",
-              "text": "Das Dorf versammelte sich um Brot, Feuer, Geduld und die tägliche Versorgung."
+              "label": "Ein Zentrum der Gemeinschaft",
+              "text": "Willkommen beim traditionellen Backofen! Dieser wunderschöne Steinofen ist über 150 Jahre alt. Früher kamen die meisten Frauen des Dorfes genau hierher, um das tägliche Brot für ihre Familien zu backen."
             },
             {
-              "label": "Langsamer Prozess",
-              "text": "Nach ein bis zwei Stunden Backzeit zog der Duft von frischem Brot durch das Dorf."
+              "label": "Ein zweitägiger Prozess",
+              "text": "Das Brotbacken war damals nicht so einfach wie ein schneller Gang zum Supermarkt! Es war tatsächlich ein Prozess, der zwei Tage dauerte. Am Vorabend mischten und formten die Frauen den Teig sorgfältig und ließen ihn über Nacht ruhen und aufgehen."
             },
             {
-              "label": "Vollständiger Kreislauf",
-              "text": "Brot verband Haus, Feld, Mühle und Ofen zu einem Kreislauf des Insellebens."
+              "label": "Frisch gebacken",
+              "text": "Am nächsten Morgen, sobald der Teig bereit war, entfachten sie ein heißes Feuer, um den Ofen aufzuheizen. Wenn die Temperatur genau richtig war, schoben sie den Teig hinein. Nach ein bis zwei Stunden Backzeit war das gesamte Dorf vom herrlichen Duft nach frischem, warmem Brot erfüllt, das bereit zum Verzehr war!"
             },
             {
-              "label": "Ort zum Innehalten",
-              "text": "Am Ende des Rundgangs bietet das Restaurant-Cafe einen natürlichen Moment, um über das Dorf zurückzublicken."
+              "label": "Historische Fotos",
+              "text": "Wenn Sie sich umsehen, können Sie einige wunderbare ausgestellte Bilder sehen, die genau zeigen, wie dieser gesamte Ablauf funktionierte."
             }
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Danke"
-        },
-        "Vielen Dank, dass Sie mit uns durch Mylotopi und die Erinnerung an das alte Kefalos gegangen sind."
+        }
       ],
       "challenge": {
         "label": "Für junge Besucher",
-        "title": "Folge dem Brot",
+        "title": "Eine Frage für unsere jungen Entdecker und die Erwachsenen!",
         "items": [
           {
-            "text": "Zeig auf den Ofen."
+            "label": "Der frühe Vogel",
+            "text": "Das ganze Dorf brauchte frisches Brot. Könnt ihr erraten, um welche Uhrzeit der Bäcker jeden Morgen aufstehen musste, um den Teig zuzubereiten? (Tipp: Es war lange bevor die Sonne aufging!)"
           },
           {
-            "text": "Stell dir warmes Brot darin vor."
+            "label": "Schaut genau hin",
+            "text": "Schaut euch die Bilder genau an, um zu sehen, wie die Frauen des Dorfes früher in der Bäckerei gearbeitet haben."
           },
           {
-            "text": "Sag deiner Familie, wie es riechen könnte."
+            "label": "Zeit zum Entspannen",
+            "text": "Jetzt ist es an der Zeit, ins Restaurant-Café zu gehen! Schnappt euch eure Buntstifte, genießt einen wohlverdienten Snack und macht eure Mylotopi-Skizze zu einem bunten Meisterwerk!"
+          },
+          {
+            "label": "Vielen Dank",
+            "text": "Vielen Dank, dass ihr heute mit uns auf Entdeckungstour gegangen seid!"
           }
         ]
       },

@@ -10,7 +10,7 @@
   ],
   "ui": {
     "pageTitle": "Witamy w Wiatrakowej Przygodzie!",
-    "intro": "Podróż w czasie: Przygotujcie się na krok w przeszłość! Do tej podróży nie będziecie potrzebować wehikułu czasu, wystarczą tylko wygodne buty.",
+    "intro": "Przygotujcie się na krok w przeszłość! Do tej podróży nie będziecie potrzebować wehikułu czasu, wystarczą tylko wygodne buty.",
     "languageLabel": "Język",
     "sectionsLabel": "Punkty przewodnika",
     "audioHeading": "Audioprzewodnik",
@@ -57,11 +57,15 @@
       "id": "welcome",
       "title": "Witamy w Wiatrakowej Przygodzie!",
       "navigationTitle": "Witamy w Wiatrakowej Przygodzie!",
-      "preview": "Podróż w czasie: Przygotujcie się na krok w przeszłość! Do tej podróży nie będziecie potrzebować wehikułu czasu, wystarczą tylko wygodne buty.",
+      "preview": "Przygotujcie się na krok w przeszłość! Do tej podróży nie będziecie potrzebować wehikułu czasu, wystarczą tylko wygodne buty.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Podróż w czasie",
+              "text": "Przygotujcie się na krok w przeszłość! Do tej podróży nie będziecie potrzebować wehikułu czasu, wystarczą tylko wygodne buty."
+            },
             {
               "label": "Odrestaurowana wioska",
               "text": "Dzięki pięknej renowacji przeprowadzonej przez rodzinę Voudouris, zobaczycie dokładnie, jak żyli wyspiarze ponad wiek temu, na długo przed wynalezieniem Wi-Fi. Będziecie mieli również okazję pomyszkować i odkryć tajną historię z lat 40. XX wieku!"
@@ -74,7 +78,7 @@
         },
         {
           "type": "heading",
-          "text": "Co będziecie odkrywać:"
+          "text": "Co będziecie odkrywać"
         },
         {
           "type": "list",
@@ -99,24 +103,24 @@
         },
         {
           "type": "heading",
-          "text": "Jak słuchać przewodnika:"
+          "text": "Jak słuchać przewodnika"
         },
         {
           "type": "list",
           "items": [
             {
               "label": "To super proste",
-              "text": "Dorośli, po prostu zeskanujcie kody QR, które znajdziecie, używając aparatu w telefonie. Nie musicie pobierać żadnych aplikacji!"
+              "text": "Kod QR otwiera zwiedzanie od początku. Nie musicie pobierać żadnej aplikacji."
             },
             {
               "label": "Słuchajcie razem",
-              "text": "Wystarczy podgłośnić telefon lub podzielić się słuchawkami i podążać za numerami rozmieszczonymi po wiosce."
+              "text": "Wybierzcie język, podgłośnijcie telefon albo podzielcie się słuchawkami i podążajcie za numerami po wiosce."
             }
           ]
         },
         {
           "type": "heading",
-          "text": "Następny cel:"
+          "text": "Następny cel"
         },
         {
           "type": "list",
@@ -129,6 +133,7 @@
         }
       ],
       "challenge": {
+        "label": "Dla młodych gości",
         "title": "Tajna Misja dla Młodych Odkrywców!",
         "items": [
           {
@@ -155,11 +160,15 @@
       "id": "herb-garden",
       "title": "Nasz ogród z naszymi ziołami!",
       "navigationTitle": "Nasz ogród z naszymi ziołami!",
-      "preview": "Kuchnia czy apteka? Weźcie głęboki oddech! Czy pachnie tu jak w gigantycznej kuchni na świeżym powietrzu, czy jak w wiejskiej aptece? Właściwie to i jedno, i drugie!",
+      "preview": "Weźcie głęboki oddech! Czy pachnie tu jak w gigantycznej kuchni na świeżym powietrzu, czy jak w wiejskiej aptece? Właściwie to i jedno, i drugie!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Kuchnia czy apteka?",
+              "text": "Weźcie głęboki oddech! Czy pachnie tu jak w gigantycznej kuchni na świeżym powietrzu, czy jak w wiejskiej aptece? Właściwie to i jedno, i drugie!"
+            },
             {
               "label": "Najlepszy zestaw przetrwania",
               "text": "Zanim pojawiła się współczesna medycyna i supermarkety, te ogrody były wyspiarskim zestawem przetrwania. Te grządki są pełne dokładnie tych samych ziół, które rosną tu od wieków."
@@ -176,7 +185,7 @@
         },
         {
           "type": "heading",
-          "text": "Następny cel:"
+          "text": "Następny cel"
         },
         {
           "type": "list",
@@ -189,6 +198,7 @@
         }
       ],
       "challenge": {
+        "label": "Dla młodych gości",
         "title": "Misja dla naszych Młodych Roślinnych Detektywów i Dorosłych!",
         "items": [
           {
@@ -223,11 +233,15 @@
       "id": "windmill-first-floor",
       "title": "Podstawa Wiatraka (1. piętro)",
       "navigationTitle": "Podstawa Wiatraka (1. piętro)",
-      "preview": "Żywa legenda: Witamy w „Młynie Księdza”! Stoisz wewnątrz najstarszego działającego wiatraka na całej wyspie i w całym archipelagu Dodekanezu. Ma ponad 400 lat, działał codziennie aż do 1987 roku i wciąż jest żywą maszyną, która do dziś miele mąkę!",
+      "preview": "Witamy w „Młynie Księdza”!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Żywa legenda",
+              "text": "Witamy w „Młynie Księdza”! Stoisz wewnątrz najstarszego działającego wiatraka na całej wyspie i w całym archipelagu Dodekanezu. Ma ponad 400 lat, działał codziennie aż do 1987 roku i wciąż jest żywą maszyną, która do dziś miele mąkę!"
+            },
             {
               "label": "Przy wejściu",
               "text": "Kiedy przechodzisz przez drzwi, zwróć uwagę na tradycyjny owoc granatu zawieszony na szczęście, obok małej butelki Wody Święconej z góry Athos, która ma ponad 9 lat."
@@ -264,7 +278,7 @@
         },
         {
           "type": "heading",
-          "text": "Następny cel:"
+          "text": "Następny cel"
         },
         {
           "type": "list",
@@ -277,6 +291,7 @@
         }
       ],
       "challenge": {
+        "label": "Dla młodych gości",
         "title": "Misja dla naszych Młodych Odkrywców i Dorosłych!",
         "items": [
           {
@@ -307,11 +322,15 @@
       "id": "windmill-second-floor",
       "title": "Sypialnia w Wiatraku (2. piętro)",
       "navigationTitle": "Sypialnia w Wiatraku (2. piętro)",
-      "preview": "Uważajcie pod nogi: Witamy na drugim piętrze! Uważajcie pod nogi na drewnianych schodach i na głowy pod drewnianym stropem. Przygotujcie się na dużą niespodziankę dotyczącą tego, jak żyła tu rodzina.",
+      "preview": "Witamy na drugim piętrze! Uważajcie pod nogi na drewnianych schodach i na głowy pod drewnianym stropem. Przygotujcie się na dużą niespodziankę dotyczącą tego, jak żyła tu rodzina.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Uważajcie pod nogi",
+              "text": "Witamy na drugim piętrze! Uważajcie pod nogi na drewnianych schodach i na głowy pod drewnianym stropem. Przygotujcie się na dużą niespodziankę dotyczącą tego, jak żyła tu rodzina."
+            },
             {
               "label": "Po Twojej prawej",
               "text": "Na ścianach zobaczycie piękne zdjęcia przedstawiające różne historyczne wiatraki z całej Grecji. Ale ta przestrzeń nie była tylko galerią!"
@@ -332,7 +351,7 @@
         },
         {
           "type": "heading",
-          "text": "Następny cel:"
+          "text": "Następny cel"
         },
         {
           "type": "list",
@@ -345,6 +364,7 @@
         }
       ],
       "challenge": {
+        "label": "Dla młodych gości",
         "title": "Pytanie dla naszych Młodych Odkrywców i Dorosłych!",
         "items": [
           {
@@ -363,11 +383,15 @@
       "id": "windmill-third-floor",
       "title": "Mechanizmy Wiatraka (3. piętro)",
       "navigationTitle": "Mechanizmy Wiatraka (3. piętro)",
-      "preview": "Uważajcie na głowy: Witamy na trzecim piętrze! Prosimy uważać pod nogi na drabinie i uważać na głowy podczas zwiedzania.",
+      "preview": "Witamy na trzecim piętrze! Prosimy uważać pod nogi na drabinie i uważać na głowy podczas zwiedzania.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Uważajcie na głowy",
+              "text": "Witamy na trzecim piętrze! Prosimy uważać pod nogi na drabinie i uważać na głowy podczas zwiedzania."
+            },
             {
               "label": "Muskuły Młyna",
               "text": "Patrzycie teraz na prawdziwą moc wiatraka. Spójrzcie na tę masywną drewnianą belkę nad kamieniami. To główny łącznik między ciężkimi kamieniami wewnątrz, przekładniami zębatymi i gigantycznymi, obracającymi się żaglami na zewnątrz!"
@@ -408,7 +432,7 @@
         },
         {
           "type": "heading",
-          "text": "Następny cel:"
+          "text": "Następny cel"
         },
         {
           "type": "list",
@@ -421,6 +445,7 @@
         }
       ],
       "challenge": {
+        "label": "Dla młodych gości",
         "title": "Misja dla naszych Młodych Odkrywców i Dorosłych!",
         "items": [
           {
@@ -443,11 +468,15 @@
       "id": "threshing-floor-donkeys",
       "title": "Klepisko i Osiołki!",
       "navigationTitle": "Klepisko i Osiołki!",
-      "preview": "Świeże powietrze i kamienne posadzki: Witamy z powrotem na zewnątrz! Weźcie głęboki oddech świeżego powietrza. Stoicie teraz w pobliżu tradycyjnego klepiska, które wygląda trochę jak duży, okrągły, kamienny parkiet do tańca.",
+      "preview": "Witamy z powrotem na zewnątrz!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Świeże powietrze i kamienne posadzki",
+              "text": "Witamy z powrotem na zewnątrz! Weźcie głęboki oddech świeżego powietrza. Stoicie teraz w pobliżu tradycyjnego klepiska, które wygląda trochę jak duży, okrągły, kamienny parkiet do tańca."
+            },
             {
               "label": "Osioł z zawrotami głowy",
               "text": "Spójrzcie dokładnie w środek koła na drewniany słup. W dawnych czasach młynarz luźno przywiązywał linę od tego słupa do szyi osła. Zadaniem osła było chodzenie w kółko po dużym okręgu, używając swoich ciężkich kopyt do deptania i miażdżenia zebranych plonów, aby uwolnić nasiona!"
@@ -468,7 +497,7 @@
         },
         {
           "type": "heading",
-          "text": "Następny cel:"
+          "text": "Następny cel"
         },
         {
           "type": "list",
@@ -481,6 +510,7 @@
         }
       ],
       "challenge": {
+        "label": "Dla młodych gości",
         "title": "Misja dla naszych Młodych Odkrywców i Dorosłych!",
         "items": [
           {
@@ -503,11 +533,15 @@
       "id": "cellar-italian-tunnel",
       "title": "Tajny Tunel i Piwnica",
       "navigationTitle": "Tajny Tunel i Piwnica",
-      "preview": "Zmiana otoczenia: Przygotujcie się na całkowitą zmianę otoczenia, gdy schodzimy pod ziemię! Schodząc w chłodne powietrze, spójrzcie w lewo i w prawo.",
+      "preview": "Przygotujcie się na całkowitą zmianę otoczenia, gdy schodzimy pod ziemię! Schodząc w chłodne powietrze, spójrzcie w lewo i w prawo.",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Zmiana otoczenia",
+              "text": "Przygotujcie się na całkowitą zmianę otoczenia, gdy schodzimy pod ziemię! Schodząc w chłodne powietrze, spójrzcie w lewo i w prawo."
+            },
             {
               "label": "Dekoracyjne butelki",
               "text": "Zobaczycie rzędy lokalnego wina z winnicy Skevofilax na Kos. Trzymamy tu te butelki w celach dekoracyjnych! Nasze wina przeznaczone do picia są bezpiecznie przechowywane w głównej piwnicy, gdzie temperatura jest dla nich idealnie dopasowana."
@@ -528,7 +562,7 @@
         },
         {
           "type": "heading",
-          "text": "Następny cel:"
+          "text": "Następny cel"
         },
         {
           "type": "list",
@@ -541,6 +575,7 @@
         }
       ],
       "challenge": {
+        "label": "Dla młodych gości",
         "title": "Misja dla naszych Młodych Odkrywców i Dorosłych!",
         "items": [
           {
@@ -559,13 +594,18 @@
       "id": "traditional-house",
       "title": "Tradycyjny Dom",
       "navigationTitle": "Tradycyjny Dom",
-      "preview": "Maleńki, zatłoczony dom: Witamy w tradycyjnym domu! Ten niesamowity mały dom ma ponad 130 lat. Ma mniej niż 20 metrów kwadratowych, ale wierzcie lub nie, mieszkało tu od 8 do 10 osób! Dziadkowie, rodzice i wszystkie ich dzieci dzielili ten jeden pojedynczy pokój.",
+      "preview": "Witamy w tradycyjnym domu!",
       "details": [
         {
           "type": "list",
           "items": [
             {
-              "text": "Gdzie wszyscy spali? Dziadkowie spali tuż obok ciepłego kominka. Rodzice spali wysoko w łóżku na antresoli po przeciwnej stronie, podczas gdy starsze dzieci spały w łóżkach obok i na kanapie."
+              "label": "Maleńki, zatłoczony dom",
+              "text": "Witamy w tradycyjnym domu! Ten niesamowity mały dom ma ponad 130 lat. Ma mniej niż 20 metrów kwadratowych, ale wierzcie lub nie, mieszkało tu od 8 do 10 osób! Dziadkowie, rodzice i wszystkie ich dzieci dzielili ten jeden pojedynczy pokój."
+            },
+            {
+              "label": "Gdzie wszyscy spali?",
+              "text": "Dziadkowie spali tuż obok ciepłego kominka. Rodzice spali wysoko w łóżku na antresoli po przeciwnej stronie, podczas gdy starsze dzieci spały w łóżkach obok i na kanapie."
             },
             {
               "label": "Kołysanie maluszka",
@@ -599,7 +639,7 @@
         },
         {
           "type": "heading",
-          "text": "Następny cel:"
+          "text": "Następny cel"
         },
         {
           "type": "list",
@@ -612,6 +652,7 @@
         }
       ],
       "challenge": {
+        "label": "Dla młodych gości",
         "title": "Misja dla naszych Młodych Odkrywców i Dorosłych!",
         "items": [
           {
@@ -642,11 +683,15 @@
       "id": "bakery",
       "title": "Piekarnia",
       "navigationTitle": "Piekarnia",
-      "preview": "Centrum społeczności: Witamy przy tradycyjnym piecu! Ten piękny kamienny piec ma ponad 150 lat. W dawnych czasach większość kobiet w wiosce przychodziła właśnie tutaj, aby piec codzienny chleb dla swoich rodzin.",
+      "preview": "Witamy przy tradycyjnym piecu!",
       "details": [
         {
           "type": "list",
           "items": [
+            {
+              "label": "Centrum społeczności",
+              "text": "Witamy przy tradycyjnym piecu! Ten piękny kamienny piec ma ponad 150 lat. W dawnych czasach większość kobiet w wiosce przychodziła właśnie tutaj, aby piec codzienny chleb dla swoich rodzin."
+            },
             {
               "label": "Dwudniowy proces",
               "text": "Pieczenie chleba w tamtych czasach nie było tak szybkie, jak zwykłe wyjście do supermarketu! W rzeczywistości był to proces dwudniowy. Poprzedniego wieczoru kobiety starannie mieszały i formowały ciasto, zostawiając je na noc, by odpoczęło i wyrosło."
@@ -660,38 +705,35 @@
               "text": "Jeśli rozejrzycie się dookoła, możecie zobaczyć kilka wspaniałych wyeksponowanych zdjęć, które dokładnie pokazują, jak przeprowadzały całą tę procedurę."
             }
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Pytanie dla naszych Młodych Odkrywców i Dorosłych!"
-        },
-        {
-          "type": "list",
-          "items": [
-            {
-              "label": "Ranny Ptaszek",
-              "text": "Cała wioska potrzebowała świeżego chleba. Czy potraficie zgadnąć, o której godzinie piekarz musiał budzić się każdego ranka, aby zacząć wyrabiać ciasto? (Wskazówka: To było na długo przed wschodem słońca!)"
-            },
-            {
-              "label": "Przyjrzyjcie się Uważnie",
-              "text": "Przyjrzyjcie się uważnie zdjęciom, aby zobaczyć, jak dawniej pracowały w piekarni kobiety z wioski."
-            },
-            {
-              "label": "Czas na Relaks",
-              "text": "Teraz nadszedł czas, aby udać się do restauracji-kawiarni! Weźcie swoje kredki, cieszcie się zasłużoną przekąską i dokończcie swój Szkic Mylotopi (Mylotopi Sketch), zamieniając go w kolorowe arcydzieło!"
-            },
-            {
-              "label": "Dziękujemy",
-              "text": "Dziękujemy za dzisiejsze wspólne odkrywanie!"
-            }
-          ]
         }
       ],
       "audio": {
         "path": "./assets/audio/pl/section-09.mp3",
         "ready": true
       },
-      "imageAlt": "Piekarnia"
+      "imageAlt": "Piekarnia",
+      "challenge": {
+        "label": "Dla młodych gości",
+        "title": "Pytanie dla naszych Młodych Odkrywców i Dorosłych!",
+        "items": [
+          {
+            "label": "Ranny Ptaszek",
+            "text": "Cała wioska potrzebowała świeżego chleba. Czy potraficie zgadnąć, o której godzinie piekarz musiał budzić się każdego ranka, aby zacząć wyrabiać ciasto? (Wskazówka: To było na długo przed wschodem słońca!)"
+          },
+          {
+            "label": "Przyjrzyjcie się Uważnie",
+            "text": "Przyjrzyjcie się uważnie zdjęciom, aby zobaczyć, jak dawniej pracowały w piekarni kobiety z wioski."
+          },
+          {
+            "label": "Czas na Relaks",
+            "text": "Teraz nadszedł czas, aby udać się do restauracji-kawiarni! Weźcie swoje kredki, cieszcie się zasłużoną przekąską i dokończcie swój Szkic Mylotopi (Mylotopi Sketch), zamieniając go w kolorowe arcydzieło!"
+          },
+          {
+            "label": "Dziękujemy",
+            "text": "Dziękujemy za dzisiejsze wspólne odkrywanie!"
+          }
+        ]
+      }
     }
   ]
 }
