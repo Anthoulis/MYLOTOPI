@@ -24,7 +24,7 @@ The public QR code should open the tour from the beginning. Sections are interna
 - `assets/js/app.js`: object-oriented runtime state, rendering, navigation, URL state, Mini-map, audio lifecycle, and gallery behavior.
 - `assets/content/<language>.json`: complete localized guide content for one language, including UI labels, section text, image alt text, and language-specific audio paths.
 - `assets/audio/`: MP3 audio files organized by language.
-- `assets/maps/`: per-language Mini-map JPGs.
+- `assets/maps/`: flat per-language Mini-map JPGs named `minimap-<language>.jpg`.
 - `assets/images/`: section image assets and current active gallery images.
 - `assets/print/`: print and operations source/reference assets.
 - `docs/`: internal project documentation.
@@ -83,7 +83,7 @@ Active:
 - Text: update the matching language file, for example `assets/content/en.json`.
 - Audio: replace files in `assets/audio/<language>/` using `section-01.mp3` through `section-09.mp3`.
 - Audio paths: update the matching section object inside `assets/content/<language>.json`.
-- Mini-maps: replace `assets/maps/<language>/minimap.jpg`.
+- Mini-maps: replace `assets/maps/minimap-<language>.jpg`.
 - Images: add final images under `assets/images/stops/` and wire display metadata through `assets/js/content-meta.js`.
 - Print materials: update files in `assets/print/`, keeping stable filenames where possible.
 

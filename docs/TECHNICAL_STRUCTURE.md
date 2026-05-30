@@ -38,7 +38,7 @@ Language flags are centralized in `assets/js/app.js` as inline SVGs using the sa
 ## Assets
 
 - `assets/audio/`: MP3 audio files organized by language.
-- `assets/maps/`: per-language Mini-map JPGs resolved through language manifest JSON files.
+- `assets/maps/`: flat per-language Mini-map JPGs named `minimap-<language>.jpg` and resolved through language JSON files.
 - `assets/images/stops/`: stop image folders used by `assets/js/content-meta.js`.
 - `assets/print/`: print and operations source/reference assets. These files are not automatically exposed in the public UI.
 

@@ -51,7 +51,7 @@
     "loadErrorBody": "Παρακαλώ ανοίξτε τον φάκελο ως στατικό ιστότοπο και φορτώστε ξανά τη σελίδα."
   },
   "miniMap": {
-    "path": "./assets/maps/el/minimap.jpg"
+    "path": "./assets/maps/minimap-el.jpg"
   },
   "sections": [
     {

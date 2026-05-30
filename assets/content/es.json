@@ -51,7 +51,7 @@
     "heroTitle": "¡Bienvenido a la Experiencia del Molino de Viento!"
   },
   "miniMap": {
-    "path": "./assets/maps/es/minimap.jpg"
+    "path": "./assets/maps/minimap-es.jpg"
   },
   "sections": [
     {

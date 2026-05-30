@@ -52,7 +52,7 @@
     "loadErrorBody": "Please serve this folder as a static website and reload the page."
   },
   "miniMap": {
-    "path": "./assets/maps/en/minimap.jpg"
+    "path": "./assets/maps/minimap-en.jpg"
   },
   "sections": [
     {

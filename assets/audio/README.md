@@ -27,7 +27,7 @@ Each folder currently contains 9 MP3 files, one per canonical tour stop:
 - `section-08.mp3`: Traditional house
 - `section-09.mp3`: Bakery
 
-Language manifests in `assets/content/<language>/index.json` are the source of truth for runtime audio paths.
+Language files in `assets/content/<language>.json` are the source of truth for runtime audio paths.
 
 Before deployment, play every referenced audio file in a browser and run `npm run validate`.
 

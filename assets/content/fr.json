@@ -51,7 +51,7 @@
     "heroTitle": "Bienvenue à l'expérience du moulin à vent !"
   },
   "miniMap": {
-    "path": "./assets/maps/fr/minimap.jpg"
+    "path": "./assets/maps/minimap-fr.jpg"
   },
   "sections": [
     {

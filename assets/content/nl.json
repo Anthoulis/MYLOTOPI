@@ -50,7 +50,7 @@
     "heroTitle": "Welkom bij de Windmill Experience!"
   },
   "miniMap": {
-    "path": "./assets/maps/nl/minimap.jpg"
+    "path": "./assets/maps/minimap-nl.jpg"
   },
   "sections": [
     {

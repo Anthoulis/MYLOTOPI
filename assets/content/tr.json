@@ -51,7 +51,7 @@
     "heroTitle": "Yel Değirmeni Deneyimine Hoş Geldiniz!"
   },
   "miniMap": {
-    "path": "./assets/maps/tr/minimap.jpg",
+    "path": "./assets/maps/minimap-tr.jpg",
     "fallback": true,
     "fallbackReason": "Uses the default mini-map until a Turkish-specific source image is provided."
   },

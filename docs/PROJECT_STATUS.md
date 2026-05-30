@@ -12,7 +12,7 @@ The guide is a production-candidate static QR/audio microsite with ten runtime-a
 - Active route model: one public QR entry into one page, with `?lang=en` supported and optional `?spot=welcome` direct links for testing/sharing.
 - Active tour sections: the nine canonical sections in `assets/js/content-meta.js`.
 - Active audio: MP3 files referenced from each `assets/content/<language>.json` section.
-- Active Mini-maps: `assets/maps/<language>/minimap.jpg` for every active language.
+- Active Mini-maps: `assets/maps/minimap-<language>.jpg` for every active language.
 
 ## Known Asset Caveats
 

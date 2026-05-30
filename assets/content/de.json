@@ -51,7 +51,7 @@
     "loadErrorBody": "Bitte stellen Sie diesen Ordner als statische Website bereit und laden Sie die Seite erneut."
   },
   "miniMap": {
-    "path": "./assets/maps/de/minimap.jpg"
+    "path": "./assets/maps/minimap-de.jpg"
   },
   "sections": [
     {

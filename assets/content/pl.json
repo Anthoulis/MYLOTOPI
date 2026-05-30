@@ -50,7 +50,7 @@
     "heroTitle": "Witamy w Wiatrakowej Przygodzie!"
   },
   "miniMap": {
-    "path": "./assets/maps/pl/minimap.jpg"
+    "path": "./assets/maps/minimap-pl.jpg"
   },
   "sections": [
     {
