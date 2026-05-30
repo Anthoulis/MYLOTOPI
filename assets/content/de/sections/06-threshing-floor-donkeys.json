@@ -6,8 +6,27 @@
   "details": [
     "Der Dreschplatz war ein wichtiger Arbeitsort im Freien. Weizen und andere Feldfrüchte wurden auf dem Steinkreis ausgebreitet, damit die Körner gelöst und getrennt werden konnten.",
     "Früher lief ein Esel um den Mittelpfosten und half, die Ernte aufzubrechen. Danach setzten Menschen die Arbeit fort, reinigten und trennten den Weizen.",
-    "Diese Station macht die Geschichte der Windmühle vollständiger. Mehl begann nicht in der Mühle, sondern auf den Feldern, mit Wetter, Ernte, Tieren und wiederholter Arbeit vieler Hände.",
-    "Mylotopi hält auch die Erinnerung an die Tiere des Dorfes nahe bei den Besuchern. Bitte beobachten Sie sie ruhig und aus respektvollem Abstand.",
+    {
+      "type": "heading",
+      "text": "Warum es wichtig war"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "label": "Vor dem Mahlen",
+          "text": "Mehl begann mit Feldern, Wetter, Ernte und wiederholter Arbeit, bevor es je die Windmühle erreichte."
+        },
+        {
+          "label": "Gemeinsame Arbeit",
+          "text": "Tiere und Menschen arbeiteten zusammen, um Korn für das tägliche Brot vorzubereiten."
+        },
+        {
+          "label": "Dorfgedächtnis",
+          "text": "Mylotopi hält die Erinnerung an ländliche Tiere nah an der Besuchererfahrung."
+        }
+      ]
+    },
     {
       "type": "heading",
       "text": "Nächste Station"

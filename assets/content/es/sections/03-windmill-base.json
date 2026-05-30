@@ -5,84 +5,76 @@
   "preview": "Una leyenda viva: ¡Bienvenido al \"Molino del Sacerdote\"! Te encuentras dentro del molino de viento en funcionamiento más antiguo de toda la isla y de todo el complejo del Dodecaneso. ¡Tiene más de 400 años, funcionó a diario hasta 1987 y sigue siendo una máquina viva que muele harina hoy en día!",
   "details": [
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "¡Una misión para nuestros jóvenes exploradores y adultos!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
+      "type": "list",
+      "items": [
+        {
+          "label": "En la entrada",
+          "text": "Al cruzar la puerta, observa la tradicional granada colgada para la buena suerte, junto a una pequeña botella de agua bendita del Monte Athos que tiene más de 9 años."
+        },
+        {
+          "label": "Construido para las tormentas",
+          "text": "Esta máquina gigante mide 6,2 metros de altura, y los muros de piedra que te rodean tienen 1,2 metros de grosor para mantener el edificio a salvo de las fuertes tormentas marinas."
+        },
+        {
+          "label": "Maquinaria enorme",
+          "text": "En los pisos superiores, hay dos enormes piedras de moler que pesan una tonelada cada una, ¡eso es más de dos toneladas en total!"
+        },
+        {
+          "label": "Madera antigua",
+          "text": "El 80% de la madera de este edificio es original, y el resto fue traído desde el Monte Athos. Sorprendentemente, ¡algunas de las piezas de madera reutilizadas que giran arriba tienen entre 1.000 y 1.300 años de antigüedad!"
+        },
+        {
+          "label": "A tu derecha",
+          "text": "¿Ves el área cubierta con un trapo? Ese era el almacén del molinero. Junto a él, verás una montura de madera para burro y un trineo de trilla que el burro del molinero tiraba para separar el trigo. También puedes ver herramientas de madera de uso diario y hermosas fotos de otros molinos de viento en toda Grecia."
+        },
+        {
+          "label": "La chimenea",
+          "text": "¡El molinero no solo la usaba para calentarse! Mira de cerca en su interior: ¿ves una lata? Contiene grasa de vaca, que el molinero derretía para lubricar las partes móviles del molino y evitar que rechinaran. Justo encima de la chimenea hay una fotografía de Kostas Politis, el querido propietario de este molino, cuyo legado sigue vivo aquí mismo."
+        },
+        {
+          "label": "A tu izquierda",
+          "text": "Verás una balanza tradicional y pesas, que se usaban para pesar cuidadosamente la harina fresca."
+        },
+        {
+          "label": "Los primeros frenos",
+          "text": "Busca la pequeña cuerda que cuelga. Lo creas o no, ¡esa cuerda fue el primer sistema de frenado del molino! El molinero tiraba de ella para levantar un poquito esas piedras de moler de dos toneladas, lo que le permitía salir con seguridad a desenrollar las velas."
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Próximo destino:"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
-  ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
+      "type": "list",
       "items": [
         {
-          "text": "Una leyenda viva: ¡Bienvenido al \"Molino del Sacerdote\"! Te encuentras dentro del molino de viento en funcionamiento más antiguo de toda la isla y de todo el complejo del Dodecaneso. ¡Tiene más de 400 años, funcionó a diario hasta 1987 y sigue siendo una máquina viva que muele harina hoy en día!"
-        },
-        {
-          "text": "En la entrada: Al cruzar la puerta, observa la tradicional granada colgada para la buena suerte, junto a una pequeña botella de agua bendita del Monte Athos que tiene más de 9 años."
-        },
-        {
-          "text": "Construido para las tormentas: Esta máquina gigante mide 6,2 metros de altura, y los muros de piedra que te rodean tienen 1,2 metros de grosor para mantener el edificio a salvo de las fuertes tormentas marinas."
-        },
-        {
-          "text": "Maquinaria enorme: En los pisos superiores, hay dos enormes piedras de moler que pesan una tonelada cada una, ¡eso es más de dos toneladas en total!"
-        },
-        {
-          "text": "Madera antigua: El 80% de la madera de este edificio es original, y el resto fue traído desde el Monte Athos. Sorprendentemente, ¡algunas de las piezas de madera reutilizadas que giran arriba tienen entre 1.000 y 1.300 años de antigüedad!"
-        },
-        {
-          "text": "A tu derecha: ¿Ves el área cubierta con un trapo? Ese era el almacén del molinero. Junto a él, verás una montura de madera para burro y un trineo de trilla que el burro del molinero tiraba para separar el trigo. También puedes ver herramientas de madera de uso diario y hermosas fotos de otros molinos de viento en toda Grecia."
-        },
-        {
-          "text": "La chimenea: ¡El molinero no solo la usaba para calentarse! Mira de cerca en su interior: ¿ves una lata? Contiene grasa de vaca, que el molinero derretía para lubricar las partes móviles del molino y evitar que rechinaran. Justo encima de la chimenea hay una fotografía de Kostas Politis, el querido propietario de este molino, cuyo legado sigue vivo aquí mismo."
-        },
-        {
-          "text": "A tu izquierda: Verás una balanza tradicional y pesas, que se usaban para pesar cuidadosamente la harina fresca."
-        },
-        {
-          "text": "Los primeros frenos: Busca la pequeña cuerda que cuelga. Lo creas o no, ¡esa cuerda fue el primer sistema de frenado del molino! El molinero tiraba de ella para levantar un poquito esas piedras de moler de dos toneladas, lo que le permitía salir con seguridad a desenrollar las velas."
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Pon a prueba los muros: ¡Veamos qué tan gruesos son realmente esos muros! Ve a pararte junto a la puerta y estira los brazos lo más que puedas. ¿Tus brazos son más largos que el grosor del muro, o gana el molino de viento?"
-        },
-        {
-          "text": "Espía: ¡Mira alrededor de la habitación y ve si puedes encontrar la montura de madera para burros!"
-        },
-        {
-          "text": "Encuentra la grasa: Asómate a la chimenea, ¿puedes ver la lata oculta de grasa de vaca?"
-        },
-        {
-          "text": "Encuentra los frenos: ¡Busca la pequeña cuerda colgante que actuaba como el sistema de frenado del molino!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "A continuación: ¡Dirígete al segundo piso del molino de viento!"
+          "label": "A continuación",
+          "text": "¡Dirígete al segundo piso del molino de viento!"
         }
       ]
     }
   ],
+  "challenge": {
+    "title": "¡Una misión para nuestros jóvenes exploradores y adultos!",
+    "items": [
+      {
+        "label": "Pon a prueba los muros",
+        "text": "¡Veamos qué tan gruesos son realmente esos muros! Ve a pararte junto a la puerta y estira los brazos lo más que puedas. ¿Tus brazos son más largos que el grosor del muro, o gana el molino de viento?"
+      },
+      {
+        "label": "Espía",
+        "text": "¡Mira alrededor de la habitación y ve si puedes encontrar la montura de madera para burros!"
+      },
+      {
+        "label": "Encuentra la grasa",
+        "text": "Asómate a la chimenea, ¿puedes ver la lata oculta de grasa de vaca?"
+      },
+      {
+        "label": "Encuentra los frenos",
+        "text": "¡Busca la pequeña cuerda colgante que actuaba como el sistema de frenado del molino!"
+      }
+    ]
+  },
   "imageAlt": "La base del molino de viento (1er piso)"
 }

@@ -6,9 +6,31 @@
   "details": [
     "This house is more than 130 years old. Families of many generations could share one compact room, arranging each object with care because space was precious.",
     "The fireplace was the heart of the home, used for cooking, warmth and gathering. Nearby objects such as the hand mill, plates and kitchenware show the daily rhythm of preparing food.",
-    "Beds, storage spaces, a cradle and a hanging bread keeper reveal practical solutions for a crowded household. Nothing was accidental; each object solved a need.",
-    "The loom, chest, uniforms, photographs and religious images speak about work, ceremony, memory and identity. The house was small, but the life inside it was rich.",
-    "Look also for the old ice cabinet. Before electric refrigeration, ice and clever airflow helped keep food cool and water fresh.",
+    {
+      "type": "heading",
+      "text": "How people used the space"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "label": "Rest and storage",
+          "text": "Beds, storage spaces, a cradle and a hanging bread keeper solved practical needs in a crowded household."
+        },
+        {
+          "label": "Food keeping",
+          "text": "Before electric refrigeration, ice and clever airflow helped keep food cool and water fresh."
+        },
+        {
+          "label": "Work and identity",
+          "text": "The loom, chest, uniforms, photographs and religious images speak about work, ceremony, memory and belonging."
+        },
+        {
+          "label": "Careful design",
+          "text": "Nothing was accidental; each object had a place and a purpose."
+        }
+      ]
+    },
     {
       "type": "heading",
       "text": "Next stop"

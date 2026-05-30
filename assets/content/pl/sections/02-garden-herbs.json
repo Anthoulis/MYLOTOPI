@@ -5,72 +5,60 @@
   "preview": "Kuchnia czy apteka? Weźcie głęboki oddech! Czy pachnie tu jak w gigantycznej kuchni na świeżym powietrzu, czy jak w wiejskiej aptece? Właściwie to i jedno, i drugie!",
   "details": [
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "Misja dla naszych Młodych Roślinnych Detektywów i Dorosłych!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
+      "type": "list",
+      "items": [
+        {
+          "label": "Najlepszy zestaw przetrwania",
+          "text": "Zanim pojawiła się współczesna medycyna i supermarkety, te ogrody były wyspiarskim zestawem przetrwania. Te grządki są pełne dokładnie tych samych ziół, które rosną tu od wieków."
+        },
+        {
+          "label": "Naturalny lekarz",
+          "text": "Zioła takie jak tymianek, oregano i majeranek nie służyły tylko do tego, by obiad smakował wyśmienicie – były lokalnym lekarzem! Jeśli kogoś bolał brzuch, rodzina młynarza nie biegła do apteki po niesmaczny różowy syrop – przychodzili właśnie tutaj, aby zebrać liście na naturalne lekarstwo."
+        },
+        {
+          "label": "Paleta malarza",
+          "text": "Spójrzcie na piękną fioletową lawendę i jaskrawozieloną miętę! Wyglądają tak, jakby ktoś je namalował prosto w ogrodzie. Zwróćcie szczególną uwagę na te żywe kolory!"
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Następny cel:"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
-  ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
+      "type": "list",
       "items": [
         {
-          "text": "Kuchnia czy apteka? Weźcie głęboki oddech! Czy pachnie tu jak w gigantycznej kuchni na świeżym powietrzu, czy jak w wiejskiej aptece? Właściwie to i jedno, i drugie!"
-        },
-        {
-          "text": "Najlepszy zestaw przetrwania: Zanim pojawiła się współczesna medycyna i supermarkety, te ogrody były wyspiarskim zestawem przetrwania. Te grządki są pełne dokładnie tych samych ziół, które rosną tu od wieków."
-        },
-        {
-          "text": "Naturalny lekarz: Zioła takie jak tymianek, oregano i majeranek nie służyły tylko do tego, by obiad smakował wyśmienicie – były lokalnym lekarzem! Jeśli kogoś bolał brzuch, rodzina młynarza nie biegła do apteki po niesmaczny różowy syrop – przychodzili właśnie tutaj, aby zebrać liście na naturalne lekarstwo."
-        },
-        {
-          "text": "Paleta malarza: Spójrzcie na piękną fioletową lawendę i jaskrawozieloną miętę! Wyglądają tak, jakby ktoś je namalował prosto w ogrodzie. Zwróćcie szczególną uwagę na te żywe kolory!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Zabawa w starym stylu: Odłóżcie na chwilę telefony – wracamy do całkowitej klasyki! Czy widzicie rozsypane dookoła elementy fizycznej układanki?"
-        },
-        {
-          "text": "Użyjcie zmysłów: Waszym zadaniem jest odgadnięcie, które słowo pasuje do której rośliny. Będziecie musieli użyć swoich oczu i nosów!"
-        },
-        {
-          "text": "Potrzyj i powąchaj: Śmiało, potrzyjcie delikatnie liście i powąchajcie je (ale prosimy, bez wypasania – nie zjedzcie ogrodu przed obiadem!)."
-        },
-        {
-          "text": "Ułóżcie układankę: Czy potraficie dopasować elementy układanki do właściwych ziół? Sprawdźcie, czy potraficie odkryć różnicę między miętą a oregano. Które z nich pachnie jak pyszna pizza, a które jak przyjemna drzemka?"
-        },
-        {
-          "text": "Przypomnienie o szkicowniku: Miejcie oczy szeroko otwarte, Roślinni Detektywi! Zapamiętajcie różne odcienie zieleni, szarości i fioletu, aby później pokolorować swój Szkic Mylotopi."
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "Kolejny punkt: Następnie przejdźcie dalej do Historycznego Wiatraka!"
+          "label": "Kolejny punkt",
+          "text": "Następnie przejdźcie dalej do Historycznego Wiatraka!"
         }
       ]
     }
   ],
+  "challenge": {
+    "title": "Misja dla naszych Młodych Roślinnych Detektywów i Dorosłych!",
+    "items": [
+      {
+        "label": "Zabawa w starym stylu",
+        "text": "Odłóżcie na chwilę telefony – wracamy do całkowitej klasyki! Czy widzicie rozsypane dookoła elementy fizycznej układanki?"
+      },
+      {
+        "label": "Użyjcie zmysłów",
+        "text": "Waszym zadaniem jest odgadnięcie, które słowo pasuje do której rośliny. Będziecie musieli użyć swoich oczu i nosów!"
+      },
+      {
+        "label": "Potrzyj i powąchaj",
+        "text": "Śmiało, potrzyjcie delikatnie liście i powąchajcie je (ale prosimy, bez wypasania – nie zjedzcie ogrodu przed obiadem!)."
+      },
+      {
+        "label": "Ułóżcie układankę",
+        "text": "Czy potraficie dopasować elementy układanki do właściwych ziół? Sprawdźcie, czy potraficie odkryć różnicę między miętą a oregano. Które z nich pachnie jak pyszna pizza, a które jak przyjemna drzemka?"
+      },
+      {
+        "label": "Przypomnienie o szkicowniku",
+        "text": "Miejcie oczy szeroko otwarte, Roślinni Detektywi! Zapamiętajcie różne odcienie zieleni, szarości i fioletu, aby później pokolorować swój Szkic Mylotopi."
+      }
+    ]
+  },
   "imageAlt": "Nasz ogród z naszymi ziołami!"
 }

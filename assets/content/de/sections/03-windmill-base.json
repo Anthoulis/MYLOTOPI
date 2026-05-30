@@ -6,9 +6,31 @@
   "details": [
     "Die Windmühle ist über 400 Jahre alt und arbeitete täglich bis 1987. Heute bewahrt sie das Handwerk, Weizen zu Mehl zu mahlen, eine Arbeit, die einst einen großen Teil des Dorfes ernährte.",
     "Am Eingang begrüßen traditionelle Zeichen von Segen und Schutz die Besucher. Die Steinmauern sind etwa 1,2 Meter dick, gebaut gegen starke Meereswinde und für die Kraft des Mechanismus darüber.",
-    "Im Raum sehen Sie Lagerflächen, einen hölzernen Sattel, einen Dreschschlitten, Waagen, Gewichte und Fotografien von Windmühlen aus Griechenland. Diese Objekte verbinden den Müller mit der Welt ländlicher Arbeit.",
-    "Auch der Kamin hatte eine praktische Aufgabe. Erwärmtes Fett diente dazu, Teile des Mechanismus zu schmieren und Holz und Stein in Bewegung zu halten.",
-    "Suchen Sie das kleine Seil, das zum ersten Bremssystem gehörte. Es hob die schweren Mühlsteine leicht an, damit der Müller draußen sicher mit den Segeln arbeiten konnte.",
+    {
+      "type": "heading",
+      "text": "Achten Sie darauf"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "label": "Arbeitsobjekte",
+          "text": "Lagerflächen, hölzerner Sattel, Dreschschlitten, Waagen und Gewichte verbinden den Müller mit ländlicher Arbeit."
+        },
+        {
+          "label": "Praktischer Kamin",
+          "text": "Erwärmtes Fett diente dazu, Teile des Mechanismus zu schmieren."
+        },
+        {
+          "label": "Erste Bremse",
+          "text": "Ein kleines Seil hob die schweren Mühlsteine leicht an, damit die Segel draußen sicherer bedient werden konnten."
+        },
+        {
+          "label": "Größere Erinnerung",
+          "text": "Fotografien von Windmühlen in Griechenland zeigen diese Mühle als Teil einer größeren Inseltradition."
+        }
+      ]
+    },
     {
       "type": "heading",
       "text": "Nächste Station"

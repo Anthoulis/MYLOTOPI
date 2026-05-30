@@ -6,9 +6,31 @@
   "details": [
     "The windmill is more than 400 years old and worked daily until 1987. Today it still preserves the craft of grinding wheat into flour, a task that once helped feed much of the village.",
     "At the entrance, traditional signs of blessing and protection welcome visitors. The stone walls are about 1.2 meters thick, built to stand against strong sea winds and to hold the power of the mechanism above.",
-    "Around the room, notice the storage area, wooden saddle, threshing sledge, scales, weights and photographs of windmills across Greece. These objects connect the miller to the wider world of rural work.",
-    "The fireplace also had a practical role. Fat was warmed and used to lubricate parts of the mechanism, keeping the moving wood and stone in working order.",
-    "Look for the small rope that formed the first braking system. By lifting the heavy millstones slightly, the miller could make the sails safe to handle outside.",
+    {
+      "type": "heading",
+      "text": "Notice this"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "label": "Working objects",
+          "text": "Storage areas, a wooden saddle, a threshing sledge, scales and weights connect the miller to rural labor."
+        },
+        {
+          "label": "Practical fireplace",
+          "text": "Fat was warmed here and used to lubricate parts of the mechanism."
+        },
+        {
+          "label": "First brake",
+          "text": "A small rope lifted the heavy millstones slightly so the sails could be handled more safely outside."
+        },
+        {
+          "label": "Wider memory",
+          "text": "Photographs of windmills across Greece place this mill inside a larger island tradition."
+        }
+      ]
+    },
     {
       "type": "heading",
       "text": "Next stop"

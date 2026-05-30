@@ -6,8 +6,31 @@
   "details": [
     "Achten Sie beim Hinabgehen auf die Temperatur, die Rundung der Wände und darauf, wie sich der Klang im Stein verändert.",
     "Heute präsentiert der Keller Wein und Atmosphäre als Teil des Mylotopi-Erlebnisses. Der kühle Steinraum erinnert aber auch an einen anderen Moment der Geschichte.",
-    "In den 1940er Jahren war der Tunnel mit italienischen Soldaten verbunden. Er bot einen geschützten Weg und Zuflucht, geprägt von den Bedürfnissen und Ängsten der Kriegszeit.",
-    "Am Ende des Durchgangs führt der Weg zurück zum Restaurantbereich. Der Kontrast ist deutlich: Ein Ort, der einst mit Schutz und Verteidigung verbunden war, führt heute zu Gastfreundschaft, Essen und Aussicht.",
+    {
+      "type": "heading",
+      "text": "Was diese Station zeigt"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "label": "Kühler Stein",
+          "text": "Der Tunnel verändert den Rhythmus des Besuchs durch Temperatur, Klang und Enge."
+        },
+        {
+          "label": "Schutz im Krieg",
+          "text": "In den 1940er Jahren war der Durchgang mit italienischen Soldaten und den Bedürfnissen der Verteidigung verbunden."
+        },
+        {
+          "label": "Weinkeller",
+          "text": "Derselbe Raum steht heute für Gastfreundschaft, Wein und Atmosphäre."
+        },
+        {
+          "label": "Starker Kontrast",
+          "text": "Der Weg führt von Schutz und Verteidigung zurück zu Essen, Willkommen und Aussicht über Kefalos."
+        }
+      ]
+    },
     {
       "type": "heading",
       "text": "Nächste Station"

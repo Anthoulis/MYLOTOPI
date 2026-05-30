@@ -6,9 +6,31 @@
   "details": [
     "Das Haus ist mehr als 130 Jahre alt. Mehrere Generationen konnten einen engen Raum teilen, wobei jedes Objekt sorgfältig platziert wurde, weil Platz wertvoll war.",
     "Der Kamin war das Herz des Hauses, zum Kochen, Wärmen und Zusammenkommen. Handmühle, Teller und Küchengeräte zeigen den täglichen Rhythmus der Speisezubereitung.",
-    "Betten, Stauraum, Wiege und aufgehängter Brotkorb zeigen praktische Lösungen für einen vollen Haushalt. Nichts war zufällig; jedes Objekt erfüllte einen Zweck.",
-    "Webstuhl, Truhe, Trachten, Fotografien und religiöse Bilder sprechen von Arbeit, Festen, Erinnerung und Identität. Das Haus war klein, doch das Leben darin reich.",
-    "Suchen Sie auch den alten Eisschrank. Vor elektrischer Kühlung halfen Eis und kluge Luftführung, Lebensmittel und Wasser kühl zu halten.",
+    {
+      "type": "heading",
+      "text": "Wie der Raum genutzt wurde"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "label": "Schlafen und Aufbewahren",
+          "text": "Betten, Stauraum, Wiege und aufgehängter Brotkorb lösten praktische Bedürfnisse in einem vollen Haushalt."
+        },
+        {
+          "label": "Lebensmittel kühl halten",
+          "text": "Vor elektrischer Kühlung halfen Eis und kluge Luftführung, Lebensmittel und Wasser frisch zu halten."
+        },
+        {
+          "label": "Arbeit und Identität",
+          "text": "Webstuhl, Truhe, Trachten, Fotografien und religiöse Bilder sprechen von Arbeit, Festen, Erinnerung und Zugehörigkeit."
+        },
+        {
+          "label": "Sorgfältige Ordnung",
+          "text": "Nichts war zufällig; jedes Objekt hatte einen Platz und einen Zweck."
+        }
+      ]
+    },
     {
       "type": "heading",
       "text": "Nächste Station"

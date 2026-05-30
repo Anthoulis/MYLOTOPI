@@ -6,8 +6,31 @@
   "details": [
     "As you step underground, notice the temperature, the curve of the walls and the way sound changes inside the stone passage.",
     "Today, the cellar presents wine and atmosphere as part of the Mylotopi experience. The cool stone setting also reminds visitors that the same space once belonged to a different moment in history.",
-    "During the 1940s, the tunnel was connected with Italian soldiers. It offered a protected route and shelter, shaped by the needs and fears of wartime.",
-    "At the end of the passage, the route returns toward the restaurant area. The contrast is striking: a space once tied to protection and defense now leads visitors back to hospitality, food and the view over Kefalos.",
+    {
+      "type": "heading",
+      "text": "What this stop reveals"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "label": "Cool stone",
+          "text": "The tunnel changes the pace of the visit through temperature, sound and enclosure."
+        },
+        {
+          "label": "Wartime shelter",
+          "text": "In the 1940s, the passage was connected with Italian soldiers and the needs of defense."
+        },
+        {
+          "label": "Wine cellar",
+          "text": "The same space now holds hospitality, wine and atmosphere."
+        },
+        {
+          "label": "Strong contrast",
+          "text": "The route leads from protection and defense back toward food, welcome and the view over Kefalos."
+        }
+      ]
+    },
     {
       "type": "heading",
       "text": "Next stop"

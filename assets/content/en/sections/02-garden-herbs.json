@@ -6,7 +6,27 @@
   "details": [
     "Before supermarkets and modern pharmacies were part of daily life, a small garden could be both kitchen and medicine cabinet. Herbs gave flavor to food, comfort to the body and scent to the home.",
     "At Mylotopi, these plants help visitors understand the practical wisdom of island families. A few leaves could season bread, meat or vegetables; the same garden could offer a simple infusion for a difficult day.",
-    "Notice the muted greens, silver leaves and purple lavender. The beauty of this stop is quiet, but it belongs deeply to the rhythm of the old village.",
+    {
+      "type": "heading",
+      "text": "What this stop reveals"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "label": "Kitchen knowledge",
+          "text": "Thyme, oregano, mint, marjoram and lavender connected everyday cooking with the island landscape."
+        },
+        {
+          "label": "Home remedies",
+          "text": "Families used familiar plants for simple comfort before modern medicines were easy to reach."
+        },
+        {
+          "label": "Quiet beauty",
+          "text": "Muted greens, silver leaves and purple lavender show a softer side of village life."
+        }
+      ]
+    },
     {
       "type": "heading",
       "text": "Next stop"

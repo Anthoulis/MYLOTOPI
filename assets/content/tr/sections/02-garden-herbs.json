@@ -5,72 +5,60 @@
   "preview": "Mutfak mı Yoksa Eczane mi? Derin bir nefes alın! Burası devasa bir açık hava mutfağı gibi mi yoksa köy eczanesi gibi mi kokuyor? Aslında ikisi birden!",
   "details": [
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "Genç Bitki Dedektiflerimiz ve Yetişkinler İçin Bir Görev!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
+      "type": "list",
+      "items": [
+        {
+          "label": "Nihai Hayatta Kalma Kiti",
+          "text": "Modern tıp ve süpermarketlerden önce, bu bahçeler adanın hayatta kalma kitiydi. Bu parseller, yüzyıllardır burada yetişen aromatik bitkilerin aynısıyla dolu."
+        },
+        {
+          "label": "Doğanın Doktoru",
+          "text": "Kekik, Dağ Kekiği ve Mercanköşk gibi bitkiler sadece akşam yemeğinin tadını muhteşem yapmak için kullanılmıyordu; onlar aynı zamanda yerel doktordu! Birinin karnı ağrıdığında, değirmencinin ailesi tadı kötü olan pembe bir şurup almak için eczaneye koşmazdı; doğal bir ilaç yapmak için yaprak toplamak üzere hemen buraya gelirlerdi."
+        },
+        {
+          "label": "Bir Ressamın Paleti",
+          "text": "Şu güzel mor Lavantaya ve parlak yeşil Naneye bir bakın! Sanki birisi onları doğrudan bahçeye resmetmiş gibi görünüyorlar. Bu parlak renklere çok dikkat edin!"
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Sıradaki Durak:"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
-  ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
+      "type": "list",
       "items": [
         {
-          "text": "Mutfak mı Yoksa Eczane mi? Derin bir nefes alın! Burası devasa bir açık hava mutfağı gibi mi yoksa köy eczanesi gibi mi kokuyor? Aslında ikisi birden!"
-        },
-        {
-          "text": "Nihai Hayatta Kalma Kiti: Modern tıp ve süpermarketlerden önce, bu bahçeler adanın hayatta kalma kitiydi. Bu parseller, yüzyıllardır burada yetişen aromatik bitkilerin aynısıyla dolu."
-        },
-        {
-          "text": "Doğanın Doktoru: Kekik, Dağ Kekiği ve Mercanköşk gibi bitkiler sadece akşam yemeğinin tadını muhteşem yapmak için kullanılmıyordu; onlar aynı zamanda yerel doktordu! Birinin karnı ağrıdığında, değirmencinin ailesi tadı kötü olan pembe bir şurup almak için eczaneye koşmazdı; doğal bir ilaç yapmak için yaprak toplamak üzere hemen buraya gelirlerdi."
-        },
-        {
-          "text": "Bir Ressamın Paleti: Şu güzel mor Lavantaya ve parlak yeşil Naneye bir bakın! Sanki birisi onları doğrudan bahçeye resmetmiş gibi görünüyorlar. Bu parlak renklere çok dikkat edin!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Eski Usul Eğlence: Telefonları bir saniyeliğine bir kenara bırakın, tamamen eski usule dönüyoruz! Etrafa saçılmış fiziksel yapboz parçalarını görüyor musunuz?"
-        },
-        {
-          "text": "Duyularınızı Kullanın: Göreviniz hangi kelimenin hangi bitkiye ait olduğunu bulmak. Gözlerinizi ve burnunuzu kullanmanız gerekecek!"
-        },
-        {
-          "text": "Ovalayın ve Koklayın: Hadi durmayın, yaprakları hafifçe ve nazikçe ovalayın ve koklayın (ama lütfen otlanmak yok; öğle yemeğinden önce bahçeyi yemeyin!)."
-        },
-        {
-          "text": "Yapbozu Çözün: Yapboz parçalarını hareket ettirerek doğru bitkilerle eşleştirebilir misiniz? Nane ve Kekik arasındaki farkı bulabilecek misiniz bir bakalım. Hangisi lezzetli bir pizza gibi, hangisi ise rahat bir şekerleme gibi kokuyor?"
-        },
-        {
-          "text": "Eskiz Defteri Hatırlatması: Gözlerinizi dört açın, Bitki Dedektifleri! Mylotopi Eskizinizi daha sonra boyamak için farklı yeşil, gri ve mor tonlarını aklınızda tutmayı unutmayın."
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "Sırada: Tarihi Yel Değirmenine doğru ilerleyin!"
+          "label": "Sırada",
+          "text": "Tarihi Yel Değirmenine doğru ilerleyin!"
         }
       ]
     }
   ],
+  "challenge": {
+    "title": "Genç Bitki Dedektiflerimiz ve Yetişkinler İçin Bir Görev!",
+    "items": [
+      {
+        "label": "Eski Usul Eğlence",
+        "text": "Telefonları bir saniyeliğine bir kenara bırakın, tamamen eski usule dönüyoruz! Etrafa saçılmış fiziksel yapboz parçalarını görüyor musunuz?"
+      },
+      {
+        "label": "Duyularınızı Kullanın",
+        "text": "Göreviniz hangi kelimenin hangi bitkiye ait olduğunu bulmak. Gözlerinizi ve burnunuzu kullanmanız gerekecek!"
+      },
+      {
+        "label": "Ovalayın ve Koklayın",
+        "text": "Hadi durmayın, yaprakları hafifçe ve nazikçe ovalayın ve koklayın (ama lütfen otlanmak yok; öğle yemeğinden önce bahçeyi yemeyin!)."
+      },
+      {
+        "label": "Yapbozu Çözün",
+        "text": "Yapboz parçalarını hareket ettirerek doğru bitkilerle eşleştirebilir misiniz? Nane ve Kekik arasındaki farkı bulabilecek misiniz bir bakalım. Hangisi lezzetli bir pizza gibi, hangisi ise rahat bir şekerleme gibi kokuyor?"
+      },
+      {
+        "label": "Eskiz Defteri Hatırlatması",
+        "text": "Gözlerinizi dört açın, Bitki Dedektifleri! Mylotopi Eskizinizi daha sonra boyamak için farklı yeşil, gri ve mor tonlarını aklınızda tutmayı unutmayın."
+      }
+    ]
+  },
   "imageAlt": "Bahçemiz ve Aromatik Bitkilerimiz!"
 }

@@ -5,63 +5,48 @@
   "preview": "Pas op waar je loopt: Welkom op de tweede verdieping! Pas goed op waar je loopt op de houten trap en let op je hoofd voor de houten balken boven je. Maak je klaar voor een grote verrassing over hoe het gezin hier vroeger leefde.",
   "details": [
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "Een vraag voor onze jonge ontdekkingsreizigers en volwassenen!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
+      "type": "list",
+      "items": [
+        {
+          "label": "Aan je rechterkant",
+          "text": "Aan de muren zie je enkele prachtige foto's van verschillende historische windmolens uit heel Griekenland. Maar deze ruimte was niet alleen een galerie!"
+        },
+        {
+          "label": "Een erg luidruchtige slaapkamer",
+          "text": "Precies hier aan de rechterkant is de plek waar de molenaar en zijn hele gezin vroeger sliepen! Kun je je voorstellen dat je een rustig dutje probeert te doen terwijl het hele gebouw trilde, de wind gierde en de zware machines slechts een paar meter verderop luidruchtig tarwe vermaalden? Ze moeten wel erg vaste slapers zijn geweest!"
+        },
+        {
+          "label": "Aan je linkerkant",
+          "text": "Kijk nu naar de linkerkant. Dit was een zeer belangrijke en drukke opslagruimte."
+        },
+        {
+          "label": "Het meel beschermen",
+          "text": "De molenaar gebruikte deze kant van de kamer om alle zware zakken ongemalen tarwe die wachtten om gemalen te worden veilig op te stapelen, samen met de vers gevulde zakken luchtig wit meel die klaar waren om het dorp te voeden. Hij bewaarde ze hier vlak bij zijn bed, zodat hij ze kon beschermen!"
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Volgende bestemming:"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
-  ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
+      "type": "list",
       "items": [
         {
-          "text": "Pas op waar je loopt: Welkom op de tweede verdieping! Pas goed op waar je loopt op de houten trap en let op je hoofd voor de houten balken boven je. Maak je klaar voor een grote verrassing over hoe het gezin hier vroeger leefde."
-        },
-        {
-          "text": "Aan je rechterkant: Aan de muren zie je enkele prachtige foto's van verschillende historische windmolens uit heel Griekenland. Maar deze ruimte was niet alleen een galerie!"
-        },
-        {
-          "text": "Een erg luidruchtige slaapkamer: Precies hier aan de rechterkant is de plek waar de molenaar en zijn hele gezin vroeger sliepen! Kun je je voorstellen dat je een rustig dutje probeert te doen terwijl het hele gebouw trilde, de wind gierde en de zware machines slechts een paar meter verderop luidruchtig tarwe vermaalden? Ze moeten wel erg vaste slapers zijn geweest!"
-        },
-        {
-          "text": "Aan je linkerkant: Kijk nu naar de linkerkant. Dit was een zeer belangrijke en drukke opslagruimte."
-        },
-        {
-          "text": "Het meel beschermen: De molenaar gebruikte deze kant van de kamer om alle zware zakken ongemalen tarwe die wachtten om gemalen te worden veilig op te stapelen, samen met de vers gevulde zakken luchtig wit meel die klaar waren om het dorp te voeden. Hij bewaarde ze hier vlak bij zijn bed, zodat hij ze kon beschermen!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Stel je voor: Zou jij je kunnen voorstellen dat je hier op de tweede verdieping slaapt, precies zoals zij dat vroeger deden?"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "Binnenkort: Ga daarna verder naar de derde verdieping van de windmolen!"
+          "label": "Binnenkort",
+          "text": "Ga daarna verder naar de derde verdieping van de windmolen!"
         }
       ]
     }
   ],
+  "challenge": {
+    "title": "Een vraag voor onze jonge ontdekkingsreizigers en volwassenen!",
+    "items": [
+      {
+        "label": "Stel je voor",
+        "text": "Zou jij je kunnen voorstellen dat je hier op de tweede verdieping slaapt, precies zoals zij dat vroeger deden?"
+      }
+    ]
+  },
   "imageAlt": "Het Slaapgedeelte van de Molen (2e verdieping)"
 }

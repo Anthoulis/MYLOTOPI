@@ -6,8 +6,27 @@
   "details": [
     "Please watch your step on the wooden stairs and mind the low timber above you. The windmill was built for work first, so every movement inside it asks for attention.",
     "On one side, historic images show windmills from across Greece. On the other, the room recalls a more personal truth: the miller and his family slept close to the sound, movement and responsibility of the mill.",
-    "Bags of raw wheat and fresh flour were stored nearby. Keeping them close was practical and protective, because flour was food, income and security for the household.",
-    "This floor shows how closely work and private life could meet in an island family. Rest, storage and responsibility shared the same small space.",
+    {
+      "type": "heading",
+      "text": "Why it mattered"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "label": "Stored wheat",
+          "text": "Bags of raw wheat and fresh flour stayed nearby because flour meant food, income and security."
+        },
+        {
+          "label": "Shared space",
+          "text": "Rest, storage and responsibility had to fit inside the same small working building."
+        },
+        {
+          "label": "Family life",
+          "text": "The room shows how private life and labor could meet closely in an island household."
+        }
+      ]
+    },
     {
       "type": "heading",
       "text": "Next stop"

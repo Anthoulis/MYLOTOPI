@@ -5,66 +5,52 @@
   "preview": "Aria Fresca e Pavimenti in Pietra: Benvenuti di nuovo all'aperto! Fate un bel respiro di aria fresca. Ora vi trovate vicino alla tradizionale aia, che assomiglia molto a una grande pista da ballo rotonda in pietra.",
   "details": [
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "Una Missione per i Nostri Giovani Esploratori e per gli Adulti!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
+      "type": "list",
+      "items": [
+        {
+          "label": "L'Asino con le Vertigini",
+          "text": "Guardate proprio al centro del cerchio verso il palo di legno. Ai vecchi tempi, il mugnaio legava senza stringere una corda da quel palo al collo di un asino. Il lavoro dell'asino era quello di camminare in tondo in un grande cerchio, usando i suoi piedi pesanti per calpestare e schiacciare i raccolti per liberare i semi!"
+        },
+        {
+          "label": "Separare il Grano",
+          "text": "Dopo che il laborioso asino aveva finito tutto questo stordente calpestio, il mugnaio interveniva per separare con cura il grano bianco da quello marrone. (Oggi non usiamo più questo metodo, compriamo il nostro grano direttamente dai produttori locali dell'isola!)"
+        },
+        {
+          "label": "Incontrate le Vere Stelle",
+          "text": "Non dovete solo immaginare gli animali! Guardate nelle vicinanze e incontrerete le vere stelle della fattoria: i nostri due adorabili asini. L'orgogliosa mamma si chiama Melina e ha 6 anni, e la sua dolcissima figlioletta si chiama Katie, che ha solo 2 anni."
+        },
+        {
+          "label": "Il Papà Scomparso",
+          "text": "Per quanto riguarda il papà di Katie... beh, nessuno sa veramente dove sia finito! Amava cantare a voce molto alta, quindi pensiamo che sia andato nella città vicina per fondare una rock band di asini!"
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Prossima Destinazione:"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
-  ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
+      "type": "list",
       "items": [
         {
-          "text": "Aria Fresca e Pavimenti in Pietra: Benvenuti di nuovo all'aperto! Fate un bel respiro di aria fresca. Ora vi trovate vicino alla tradizionale aia, che assomiglia molto a una grande pista da ballo rotonda in pietra."
-        },
-        {
-          "text": "L'Asino con le Vertigini: Guardate proprio al centro del cerchio verso il palo di legno. Ai vecchi tempi, il mugnaio legava senza stringere una corda da quel palo al collo di un asino. Il lavoro dell'asino era quello di camminare in tondo in un grande cerchio, usando i suoi piedi pesanti per calpestare e schiacciare i raccolti per liberare i semi!"
-        },
-        {
-          "text": "Separare il Grano: Dopo che il laborioso asino aveva finito tutto questo stordente calpestio, il mugnaio interveniva per separare con cura il grano bianco da quello marrone. (Oggi non usiamo più questo metodo, compriamo il nostro grano direttamente dai produttori locali dell'isola!)"
-        },
-        {
-          "text": "Incontrate le Vere Stelle: Non dovete solo immaginare gli animali! Guardate nelle vicinanze e incontrerete le vere stelle della fattoria: i nostri due adorabili asini. L'orgogliosa mamma si chiama Melina e ha 6 anni, e la sua dolcissima figlioletta si chiama Katie, che ha solo 2 anni."
-        },
-        {
-          "text": "Il Papà Scomparso: Per quanto riguarda il papà di Katie... beh, nessuno sa veramente dove sia finito! Amava cantare a voce molto alta, quindi pensiamo che sia andato nella città vicina per fondare una rock band di asini!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Il Ballo dell'Asino: Avvicinatevi fino al bordo dell'aia! Riuscite a fingere di essere attaccati al palo di legno centrale e a camminare in un cerchio perfetto proprio come faceva l'asino?"
-        },
-        {
-          "text": "Dite Ciao: Dopo il vostro ballo vertiginoso, assicuratevi di andare a salutare Melina e Katie! Per favore, ammirate i nostri adorabili asini da lontano! Sembrano dolci, ma potrebbero scambiare le vostre dita per baby carote. Preferiremmo non scoprirlo!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "In Arrivo: Quindi proseguite verso la Cantina / Tunnel Italiano!"
+          "label": "In Arrivo",
+          "text": "Quindi proseguite verso la Cantina / Tunnel Italiano!"
         }
       ]
     }
   ],
+  "challenge": {
+    "title": "Una Missione per i Nostri Giovani Esploratori e per gli Adulti!",
+    "items": [
+      {
+        "label": "Il Ballo dell'Asino",
+        "text": "Avvicinatevi fino al bordo dell'aia! Riuscite a fingere di essere attaccati al palo di legno centrale e a camminare in un cerchio perfetto proprio come faceva l'asino?"
+      },
+      {
+        "label": "Dite Ciao",
+        "text": "Dopo il vostro ballo vertiginoso, assicuratevi di andare a salutare Melina e Katie! Per favore, ammirate i nostri adorabili asini da lontano! Sembrano dolci, ma potrebbero scambiare le vostre dita per baby carote. Preferiremmo non scoprirlo!"
+      }
+    ]
+  },
   "imageAlt": "L'Aia e gli Asini!"
 }

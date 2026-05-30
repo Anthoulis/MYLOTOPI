@@ -6,9 +6,31 @@
   "details": [
     "Der Steinofen ist mehr als 150 Jahre alt. Früher brachten viele Frauen des Dorfes hier das Brot für ihre Familien, sodass der Ofen ein praktisches und soziales Zentrum wurde.",
     "Brot wurde nicht hastig gemacht. Der Teig wurde am Vortag gemischt und geformt, dann ruhte er. Früh am nächsten Morgen wurde der Ofen sorgfältig erhitzt, bevor die Laibe hineinkamen.",
-    "Nach ein bis zwei Stunden Backzeit zog der Duft von frischem Brot durch das Dorf. Der Prozess verband Haus, Feld, Mühle und Ofen zu einem Kreislauf des Insellebens.",
-    "Betrachten Sie die Fotografien im Raum, um zu sehen, wie die Arbeit getan wurde und wie viel Wissen in alltäglichen Händen lag.",
-    "Am Ende des Rundgangs ist das Restaurant-Cafe ein natürlicher Ort zum Innehalten, um über das Dorf zurückzublicken und die Geschichte nachklingen zu lassen.",
+    {
+      "type": "heading",
+      "text": "Warum es wichtig war"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "label": "Gemeinsamer Ofen",
+          "text": "Das Dorf versammelte sich um Brot, Feuer, Geduld und die tägliche Versorgung."
+        },
+        {
+          "label": "Langsamer Prozess",
+          "text": "Nach ein bis zwei Stunden Backzeit zog der Duft von frischem Brot durch das Dorf."
+        },
+        {
+          "label": "Vollständiger Kreislauf",
+          "text": "Brot verband Haus, Feld, Mühle und Ofen zu einem Kreislauf des Insellebens."
+        },
+        {
+          "label": "Ort zum Innehalten",
+          "text": "Am Ende des Rundgangs bietet das Restaurant-Cafe einen natürlichen Moment, um über das Dorf zurückzublicken."
+        }
+      ]
+    },
     {
       "type": "heading",
       "text": "Danke"

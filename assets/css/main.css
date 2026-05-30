@@ -778,14 +778,19 @@ body.is-map-modal-open {
 
 .qr-stop__preview {
   margin: 0;
-  color: var(--muted);
+  padding: 12px 13px;
+  border-left: 3px solid var(--stop-accent, var(--accent));
+  border-radius: var(--radius-sm);
+  background: rgb(var(--accent-rgb) / 0.08);
+  color: var(--text);
   font-size: 1rem;
+  font-weight: 650;
   line-height: 1.62;
 }
 
 .qr-readmore {
   display: grid;
-  gap: 10px;
+  gap: 11px;
 }
 
 .qr-readmore__panel {
@@ -796,7 +801,7 @@ body.is-map-modal-open {
 
 .qr-copy {
   display: grid;
-  gap: 9px;
+  gap: 11px;
   padding-top: 2px;
 }
 
@@ -809,7 +814,7 @@ body.is-map-modal-open {
 }
 
 .qr-copy__heading {
-  margin: 10px 0 0;
+  margin: 13px 0 0;
   color: var(--olive);
   font-size: 0.76rem;
   font-weight: 900;
@@ -820,8 +825,12 @@ body.is-map-modal-open {
 
 .qr-copy__list {
   display: grid;
-  gap: 7px;
+  gap: 9px;
   padding-left: 1.15rem;
+}
+
+.qr-copy__list li {
+  padding-left: 0.12rem;
 }
 
 .qr-copy__list li::marker,
@@ -831,6 +840,8 @@ body.is-map-modal-open {
 
 .qr-copy__list strong {
   margin-right: 0.24rem;
+  color: var(--text);
+  font-weight: 850;
 }
 
 .qr-readmore__button {
@@ -913,7 +924,7 @@ body.is-map-modal-open {
 
 .qr-activity {
   display: grid;
-  gap: 8px;
+  gap: 10px;
   padding: 13px;
   border: 1px solid rgb(var(--accent-rgb) / 0.28);
   border-radius: var(--radius-md);

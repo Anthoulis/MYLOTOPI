@@ -5,107 +5,90 @@
   "preview": "Zamanda Yolculuk: Geçmişe adım atmaya hazır olun! Bu yolculuk için bir zaman makinesine ihtiyacınız olmayacak, sadece rahat ayakkabılara ihtiyacınız var.",
   "details": [
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
+      "type": "list",
+      "items": [
+        {
+          "label": "Restore Edilmiş Bir Köy",
+          "text": "Voudouris ailesinin yaptığı güzel restorasyon sayesinde, Wi-Fi icat edilmeden çok önce, yüzyılı aşkın bir süre önce adalıların tam olarak nasıl yaşadığını göreceksiniz. Ayrıca etrafta gizlice dolaşıp 1940'lardan kalma bazı gizli tarihi sırları ortaya çıkarma fırsatınız da olacak!"
+        },
+        {
+          "label": "Değirmencinin Hayatı",
+          "text": "Bugün gerçek bir yel değirmencisinin yerine geçeceksiniz. Sürprizbozan (Spoiler) uyarısı: günlük egzersiz rutini, köyün çoğunu doyurmak için bütün gün ağır un çuvallarını kaldırmaktan ibaretti."
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Neleri Keşfedeceksiniz:"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
+      "type": "list",
+      "items": [
+        {
+          "label": "Dev Yel Değirmeni",
+          "text": "Gerçek ve çalışan bir yel değirmenini en altından en üstüne kadar keşfedin."
+        },
+        {
+          "label": "Köy Hayatı",
+          "text": "Geleneksel evin ve fırının içine göz atın."
+        },
+        {
+          "label": "Doğa ve Hayvanlar",
+          "text": "Bahçelerimizdeki harika aromatik bitkileri koklayın, harman yerini ziyaret edin ve sevimli eşeklerimize merhaba deyin."
+        },
+        {
+          "label": "Yeraltı Sırları",
+          "text": "Gerçek bir askeri tünelin içinden yürüyüp geçin!"
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Turu Nasıl Dinleyebilirsiniz:"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    },
-    {
-      "type": "heading",
-      "text": "Genç Kaşifler İçin Gizli Bir Görev!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-04"
+      "type": "list",
+      "items": [
+        {
+          "label": "Çok Kolay",
+          "text": "Yetişkinler, telefonunuzun kamerasını kullanarak bulduğunuz QR kodlarını okutmanız yeterli. Herhangi bir uygulama indirmenize gerek yok!"
+        },
+        {
+          "label": "Birlikte Dinleyin",
+          "text": "Sadece telefonunuzun sesini açın veya kulaklığınızı paylaşın ve köydeki numaraları takip edin."
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Sıradaki Durak:"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-05"
-    }
-  ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
+      "type": "list",
       "items": [
         {
-          "text": "Zamanda Yolculuk: Geçmişe adım atmaya hazır olun! Bu yolculuk için bir zaman makinesine ihtiyacınız olmayacak, sadece rahat ayakkabılara ihtiyacınız var."
-        },
-        {
-          "text": "Restore Edilmiş Bir Köy: Voudouris ailesinin yaptığı güzel restorasyon sayesinde, Wi-Fi icat edilmeden çok önce, yüzyılı aşkın bir süre önce adalıların tam olarak nasıl yaşadığını göreceksiniz. Ayrıca etrafta gizlice dolaşıp 1940'lardan kalma bazı gizli tarihi sırları ortaya çıkarma fırsatınız da olacak!"
-        },
-        {
-          "text": "Değirmencinin Hayatı: Bugün gerçek bir yel değirmencisinin yerine geçeceksiniz. Sürprizbozan (Spoiler) uyarısı: günlük egzersiz rutini, köyün çoğunu doyurmak için bütün gün ağır un çuvallarını kaldırmaktan ibaretti."
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Dev Yel Değirmeni: Gerçek ve çalışan bir yel değirmenini en altından en üstüne kadar keşfedin."
-        },
-        {
-          "text": "Köy Hayatı: Geleneksel evin ve fırının içine göz atın."
-        },
-        {
-          "text": "Doğa ve Hayvanlar: Bahçelerimizdeki harika aromatik bitkileri koklayın, harman yerini ziyaret edin ve sevimli eşeklerimize merhaba deyin."
-        },
-        {
-          "text": "Yeraltı Sırları: Gerçek bir askeri tünelin içinden yürüyüp geçin!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "Çok Kolay: Yetişkinler, telefonunuzun kamerasını kullanarak bulduğunuz QR kodlarını okutmanız yeterli. Herhangi bir uygulama indirmenize gerek yok!"
-        },
-        {
-          "text": "Birlikte Dinleyin: Sadece telefonunuzun sesini açın veya kulaklığınızı paylaşın ve köydeki numaraları takip edin."
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-04",
-      "items": [
-        {
-          "text": "Sanat Ekipmanlarınızı Alın: Yanınıza almanız için size özel bir Mylotopi Eskizi ve birkaç renkli kalem vereceğiz."
-        },
-        {
-          "text": "Her Şeyi Gözlemleyin: Bugün etrafta dolaşırken gözlerinizi dört açın! Dev yel değirmenine, ağır taşlara ve eski aletlere çok yakından bakın. Gördüğünüz tüm güzel renkleri hafızanıza kazımaya çalışın."
-        },
-        {
-          "text": "Bir Şaheser Yaratın: Maceranızı bitirip restoran-kafemizde dinlenmek için oturduğunuzda, çiziminizi boyayabilir ve onu gerçek bir şahesere dönüştürebilirsiniz!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-05",
-      "items": [
-        {
-          "text": "Sırada: Aromatik bitkilerimizin bulunduğu bahçelere doğru ilerleyin!"
+          "label": "Sırada",
+          "text": "Aromatik bitkilerimizin bulunduğu bahçelere doğru ilerleyin!"
         }
       ]
     }
   ],
+  "challenge": {
+    "title": "Genç Kaşifler İçin Gizli Bir Görev!",
+    "items": [
+      {
+        "label": "Sanat Ekipmanlarınızı Alın",
+        "text": "Yanınıza almanız için size özel bir Mylotopi Eskizi ve birkaç renkli kalem vereceğiz."
+      },
+      {
+        "label": "Her Şeyi Gözlemleyin",
+        "text": "Bugün etrafta dolaşırken gözlerinizi dört açın! Dev yel değirmenine, ağır taşlara ve eski aletlere çok yakından bakın. Gördüğünüz tüm güzel renkleri hafızanıza kazımaya çalışın."
+      },
+      {
+        "label": "Bir Şaheser Yaratın",
+        "text": "Maceranızı bitirip restoran-kafemizde dinlenmek için oturduğunuzda, çiziminizi boyayabilir ve onu gerçek bir şahesere dönüştürebilirsiniz!"
+      }
+    ]
+  },
   "imageAlt": "Yel Değirmeni Deneyimine Hoş Geldiniz!"
 }

@@ -5,107 +5,90 @@
   "preview": "Viaggio nel Tempo: Preparatevi a fare un salto nel passato! Non avrete bisogno di una macchina del tempo per questo viaggio, solo di scarpe comode.",
   "details": [
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
+      "type": "list",
+      "items": [
+        {
+          "label": "Un Villaggio Restaurato",
+          "text": "Grazie al bellissimo restauro effettuato dalla famiglia Voudouris, vedrete esattamente come vivevano gli isolani più di un secolo fa, molto prima che venisse inventato il Wi-Fi. Potrete anche curiosare in giro e scoprire un po' di storia segreta degli anni '40!"
+        },
+        {
+          "label": "La Vita del Mugnaio",
+          "text": "Oggi potrete mettervi nei panni di un vero mugnaio. Attenzione spoiler: la sua routine di allenamento quotidiana consisteva nel sollevare pesanti sacchi di farina tutto il giorno, solo per sfamare la maggior parte del villaggio."
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Cosa Esplorerete:"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
+      "type": "list",
+      "items": [
+        {
+          "label": "Il Gigantesco Mulino a Vento",
+          "text": "Esplorate un vero mulino a vento funzionante, dal basso fino in cima."
+        },
+        {
+          "label": "La Vita del Villaggio",
+          "text": "Date un'occhiata all'interno della casa tradizionale e della panetteria."
+        },
+        {
+          "label": "Natura e Animali",
+          "text": "Annusate le meravigliose erbe aromatiche nei nostri giardini, visitate l'aia e salutate i nostri adorabili asini."
+        },
+        {
+          "label": "Segreti Sotterranei",
+          "text": "Attraversate un vero e proprio tunnel militare!"
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Come Ascoltare il Tour:"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    },
-    {
-      "type": "heading",
-      "text": "Una Missione Segreta per i Giovani Esploratori!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-04"
+      "type": "list",
+      "items": [
+        {
+          "label": "È Semplicissimo",
+          "text": "Adulti, vi basterà scansionare i codici QR che troverete usando la fotocamera del vostro telefono. Non c'è bisogno di scaricare nessuna app!"
+        },
+        {
+          "label": "Ascoltate Insieme",
+          "text": "Alzate semplicemente il volume del vostro telefono o condividete un paio di cuffie, e seguite i numeri in giro per il villaggio."
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Prossima Destinazione:"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-05"
-    }
-  ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
+      "type": "list",
       "items": [
         {
-          "text": "Viaggio nel Tempo: Preparatevi a fare un salto nel passato! Non avrete bisogno di una macchina del tempo per questo viaggio, solo di scarpe comode."
-        },
-        {
-          "text": "Un Villaggio Restaurato: Grazie al bellissimo restauro effettuato dalla famiglia Voudouris, vedrete esattamente come vivevano gli isolani più di un secolo fa, molto prima che venisse inventato il Wi-Fi. Potrete anche curiosare in giro e scoprire un po' di storia segreta degli anni '40!"
-        },
-        {
-          "text": "La Vita del Mugnaio: Oggi potrete mettervi nei panni di un vero mugnaio. Attenzione spoiler: la sua routine di allenamento quotidiana consisteva nel sollevare pesanti sacchi di farina tutto il giorno, solo per sfamare la maggior parte del villaggio."
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Il Gigantesco Mulino a Vento: Esplorate un vero mulino a vento funzionante, dal basso fino in cima."
-        },
-        {
-          "text": "La Vita del Villaggio: Date un'occhiata all'interno della casa tradizionale e della panetteria."
-        },
-        {
-          "text": "Natura e Animali: Annusate le meravigliose erbe aromatiche nei nostri giardini, visitate l'aia e salutate i nostri adorabili asini."
-        },
-        {
-          "text": "Segreti Sotterranei: Attraversate un vero e proprio tunnel militare!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "È Semplicissimo: Adulti, vi basterà scansionare i codici QR che troverete usando la fotocamera del vostro telefono. Non c'è bisogno di scaricare nessuna app!"
-        },
-        {
-          "text": "Ascoltate Insieme: Alzate semplicemente il volume del vostro telefono o condividete un paio di cuffie, e seguite i numeri in giro per il villaggio."
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-04",
-      "items": [
-        {
-          "text": "Prendete il Vostro Equipaggiamento Artistico: Vi daremo uno speciale Schizzo di Mylotopi e alcune matite colorate da portare con voi."
-        },
-        {
-          "text": "Osservate Tutto: Mentre passeggiate oggi, tenete gli occhi ben aperti! Guardate molto da vicino il gigantesco mulino a vento, le pesanti pietre e i vecchi attrezzi. Cercate di memorizzare tutti i bellissimi colori che vedete."
-        },
-        {
-          "text": "Create un Capolavoro: Quando finirete la vostra avventura e vi siederete a rilassarvi al nostro ristorante-caffetteria, potrete colorare il vostro disegno e trasformarlo in un vero capolavoro!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-05",
-      "items": [
-        {
-          "text": "In Arrivo: Proseguite verso i nostri giardini con le erbe aromatiche!"
+          "label": "In Arrivo",
+          "text": "Proseguite verso i nostri giardini con le erbe aromatiche!"
         }
       ]
     }
   ],
+  "challenge": {
+    "title": "Una Missione Segreta per i Giovani Esploratori!",
+    "items": [
+      {
+        "label": "Prendete il Vostro Equipaggiamento Artistico",
+        "text": "Vi daremo uno speciale Schizzo di Mylotopi e alcune matite colorate da portare con voi."
+      },
+      {
+        "label": "Osservate Tutto",
+        "text": "Mentre passeggiate oggi, tenete gli occhi ben aperti! Guardate molto da vicino il gigantesco mulino a vento, le pesanti pietre e i vecchi attrezzi. Cercate di memorizzare tutti i bellissimi colori che vedete."
+      },
+      {
+        "label": "Create un Capolavoro",
+        "text": "Quando finirete la vostra avventura e vi siederete a rilassarvi al nostro ristorante-caffetteria, potrete colorare il vostro disegno e trasformarlo in un vero capolavoro!"
+      }
+    ]
+  },
   "imageAlt": "Benvenuti alla Windmill Experience!"
 }

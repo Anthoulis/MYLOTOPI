@@ -5,63 +5,48 @@
   "preview": "Un cambio de escenario: ¡Prepárense para un cambio total de escenario mientras nos dirigimos bajo tierra! Al descender hacia el aire fresco, echen un vistazo a su izquierda y derecha.",
   "details": [
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "¡Una misión para nuestros jóvenes exploradores y adultos!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
+      "type": "list",
+      "items": [
+        {
+          "label": "Botellas decorativas",
+          "text": "Verán filas de vino local de la bodega Skevofilax en Kos. ¡Mantenemos estas botellas aquí como decoración! Nuestros vinos reales para beber se guardan de forma segura en la bodega principal, donde la temperatura es perfectamente adecuada para ellos."
+        },
+        {
+          "label": "Historia de la Segunda Guerra Mundial",
+          "text": "En la década de 1940, durante la Segunda Guerra Mundial, este espacio no era para el vino, era para la supervivencia. Este túnel de 20 metros fue construido por soldados italianos durante la guerra."
+        },
+        {
+          "label": "El túnel de emergencia",
+          "text": "Los soldados usaban este pasaje como un túnel de emergencia, un atajo secreto para huir y esconderse de sus oponentes. La bodega en sí se usaba como un refugio seguro donde podían dormir, relajarse y mantenerse protegidos de las batallas en el exterior."
+        },
+        {
+          "label": "Una fortaleza oculta",
+          "text": "Al final del túnel, saldrán a nuestro patio trasero, que ahora es nuestro tranquilo restaurante. ¡Pero miren hacia atrás al techo de piedra antes de salir! En la década de 1940, toda esta zona era un campo de tiro. La parte superior estaba cubierta de piedra pesada para proteger a los soldados, y justo en el borde, tenían ametralladoras para defender la ladera. ¡Es difícil creer que este lugar tranquilo y hermoso para comer fuera el lugar más vigilado de la isla!"
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Próximo destino:"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
-  ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
+      "type": "list",
       "items": [
         {
-          "text": "Un cambio de escenario: ¡Prepárense para un cambio total de escenario mientras nos dirigimos bajo tierra! Al descender hacia el aire fresco, echen un vistazo a su izquierda y derecha."
-        },
-        {
-          "text": "Botellas decorativas: Verán filas de vino local de la bodega Skevofilax en Kos. ¡Mantenemos estas botellas aquí como decoración! Nuestros vinos reales para beber se guardan de forma segura en la bodega principal, donde la temperatura es perfectamente adecuada para ellos."
-        },
-        {
-          "text": "Historia de la Segunda Guerra Mundial: En la década de 1940, durante la Segunda Guerra Mundial, este espacio no era para el vino, era para la supervivencia. Este túnel de 20 metros fue construido por soldados italianos durante la guerra."
-        },
-        {
-          "text": "El túnel de emergencia: Los soldados usaban este pasaje como un túnel de emergencia, un atajo secreto para huir y esconderse de sus oponentes. La bodega en sí se usaba como un refugio seguro donde podían dormir, relajarse y mantenerse protegidos de las batallas en el exterior."
-        },
-        {
-          "text": "Una fortaleza oculta: Al final del túnel, saldrán a nuestro patio trasero, que ahora es nuestro tranquilo restaurante. ¡Pero miren hacia atrás al techo de piedra antes de salir! En la década de 1940, toda esta zona era un campo de tiro. La parte superior estaba cubierta de piedra pesada para proteger a los soldados, y justo en el borde, tenían ametralladoras para defender la ladera. ¡Es difícil creer que este lugar tranquilo y hermoso para comer fuera el lugar más vigilado de la isla!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Alto secreto: ¡Ahora están en una misión secreta! Mientras caminan por el túnel de los soldados, ¿pueden calcular exactamente cuántas botellas de vino bordean las paredes?"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "A continuación: ¡Cuando terminen de explorar el túnel, por favor regresen y busquen a nuestro guía turístico para que les muestre el camino a sus próximas paradas increíbles: la casa tradicional y la panadería!"
+          "label": "A continuación",
+          "text": "¡Cuando terminen de explorar el túnel, por favor regresen y busquen a nuestro guía turístico para que les muestre el camino a sus próximas paradas increíbles: la casa tradicional y la panadería!"
         }
       ]
     }
   ],
+  "challenge": {
+    "title": "¡Una misión para nuestros jóvenes exploradores y adultos!",
+    "items": [
+      {
+        "label": "Alto secreto",
+        "text": "¡Ahora están en una misión secreta! Mientras caminan por el túnel de los soldados, ¿pueden calcular exactamente cuántas botellas de vino bordean las paredes?"
+      }
+    ]
+  },
   "imageAlt": "El túnel secreto y la bodega"
 }

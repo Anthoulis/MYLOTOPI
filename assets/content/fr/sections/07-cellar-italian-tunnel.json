@@ -5,63 +5,48 @@
   "preview": "Un changement de décor : Préparez-vous à un changement total de décor alors que nous descendons sous terre ! En descendant dans l'air frais, jetez un coup d'œil à votre gauche et à votre droite.",
   "details": [
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "Une Mission pour nos Jeunes Explorateurs et les Adultes !"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
+      "type": "list",
+      "items": [
+        {
+          "label": "Bouteilles décoratives",
+          "text": "Vous verrez des rangées de vins locaux de la cave Skevofilax située à Kos. Nous gardons ces bouteilles ici pour la décoration ! Nos vins destinés à la dégustation sont conservés en toute sécurité dans la cave principale, où la température est parfaitement adaptée pour eux."
+        },
+        {
+          "label": "L'histoire de la Seconde Guerre mondiale",
+          "text": "Dans les années 1940, pendant la Seconde Guerre mondiale, cet espace n'était pas destiné au vin, mais à la survie. Ce tunnel de 20 mètres a été construit par des soldats italiens pendant la guerre."
+        },
+        {
+          "label": "Le tunnel d'urgence",
+          "text": "Les soldats utilisaient ce passage comme un « tunnel d'urgence », un raccourci secret pour s'enfuir et se cacher de leurs adversaires. La cave elle-même servait d'abri sûr où ils pouvaient dormir, se détendre et rester protégés des combats à l'extérieur."
+        },
+        {
+          "label": "Une forteresse cachée",
+          "text": "À la fin du tunnel, vous sortirez dans notre arrière-cour, qui est aujourd'hui notre paisible restaurant. Mais regardez en arrière vers le toit en pierre avant de sortir ! Dans les années 1940, toute cette zone était un champ de tir. Le sommet était recouvert de pierres lourdes pour protéger les soldats, et juste au bord, ils avaient des mitrailleuses pour défendre la colline. Il est difficile de croire que cet endroit calme et magnifique pour prendre un repas était un lieu gardé sur l'île !"
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Prochaine Destination :"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
-  ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
+      "type": "list",
       "items": [
         {
-          "text": "Un changement de décor : Préparez-vous à un changement total de décor alors que nous descendons sous terre ! En descendant dans l'air frais, jetez un coup d'œil à votre gauche et à votre droite."
-        },
-        {
-          "text": "Bouteilles décoratives : Vous verrez des rangées de vins locaux de la cave Skevofilax située à Kos. Nous gardons ces bouteilles ici pour la décoration ! Nos vins destinés à la dégustation sont conservés en toute sécurité dans la cave principale, où la température est parfaitement adaptée pour eux."
-        },
-        {
-          "text": "L'histoire de la Seconde Guerre mondiale : Dans les années 1940, pendant la Seconde Guerre mondiale, cet espace n'était pas destiné au vin, mais à la survie. Ce tunnel de 20 mètres a été construit par des soldats italiens pendant la guerre."
-        },
-        {
-          "text": "Le tunnel d'urgence : Les soldats utilisaient ce passage comme un « tunnel d'urgence », un raccourci secret pour s'enfuir et se cacher de leurs adversaires. La cave elle-même servait d'abri sûr où ils pouvaient dormir, se détendre et rester protégés des combats à l'extérieur."
-        },
-        {
-          "text": "Une forteresse cachée : À la fin du tunnel, vous sortirez dans notre arrière-cour, qui est aujourd'hui notre paisible restaurant. Mais regardez en arrière vers le toit en pierre avant de sortir ! Dans les années 1940, toute cette zone était un champ de tir. Le sommet était recouvert de pierres lourdes pour protéger les soldats, et juste au bord, ils avaient des mitrailleuses pour défendre la colline. Il est difficile de croire que cet endroit calme et magnifique pour prendre un repas était un lieu gardé sur l'île !"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Top Secret : Vous êtes maintenant en mission secrète ! En traversant le tunnel des soldats, pouvez-vous calculer exactement combien de bouteilles de vin bordent les murs ?"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "À venir : Lorsque vous aurez terminé d'explorer le tunnel, veuillez revenir trouver notre guide afin qu'il puisse vous montrer le chemin vers vos prochains arrêts incroyables : la Maison Traditionnelle et la Boulangerie !"
+          "label": "À venir",
+          "text": "Lorsque vous aurez terminé d'explorer le tunnel, veuillez revenir trouver notre guide afin qu'il puisse vous montrer le chemin vers vos prochains arrêts incroyables : la Maison Traditionnelle et la Boulangerie !"
         }
       ]
     }
   ],
+  "challenge": {
+    "title": "Une Mission pour nos Jeunes Explorateurs et les Adultes !",
+    "items": [
+      {
+        "label": "Top Secret",
+        "text": "Vous êtes maintenant en mission secrète ! En traversant le tunnel des soldats, pouvez-vous calculer exactement combien de bouteilles de vin bordent les murs ?"
+      }
+    ]
+  },
   "imageAlt": "Le Tunnel Secret et la Cave"
 }

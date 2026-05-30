@@ -6,10 +6,31 @@
   "details": [
     "Bewegen Sie sich langsam und achten Sie auf Ihren Kopf. Der Mechanismus um Sie herum ist das Herz der Mühle und verbindet die Segel draußen mit den Mühlsteinen innen.",
     "Die beiden Mühlsteine wiegen zusammen mehr als zwei Tonnen und stammen von Nisyros, einer Insel, die für besonders widerstandsfähigen Stein bekannt ist.",
-    "Eine kleine Glocke half dem Müller zu hören, wann im Trichter wenig Weizen übrig war. In einem Raum voller Holz, Wind und Stein hielt ein einfacher Ton die Arbeit im Rhythmus.",
-    "War das Mehl fertig, fiel es durch ein Rohr in das untere Geschoss. Eine kleinere Klappe erlaubte dem Müller, einen Anteil des Mehls als Bezahlung zu behalten.",
-    "Seile und Hebel zeigen, wie sorgfältig die Maschine kontrolliert wurde. Eine Bremse verlangsamte die Steine, eine andere konnte die Arbeit schnell stoppen.",
-    "Schauen Sie zur Decke und beachten Sie ihre bootsähnliche Form. Die Konstruktion spricht von Menschen, die Wind, Holz, Meer und Arbeit als eine Landschaft verstanden.",
+    {
+      "type": "heading",
+      "text": "Wie die Mechanik arbeitete"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "label": "Trichter und Glocke",
+          "text": "Eine kleine Glocke half dem Müller zu hören, wann im Trichter wenig Weizen übrig war."
+        },
+        {
+          "label": "Weg des Mehls",
+          "text": "Fertiges Mehl fiel durch ein Rohr nach unten, wo der Müller einen Anteil als Bezahlung behalten konnte."
+        },
+        {
+          "label": "Seile und Bremsen",
+          "text": "Hebel verlangsamten die Steine oder konnten die Arbeit schnell stoppen."
+        },
+        {
+          "label": "Bootsähnliche Decke",
+          "text": "Die Form spricht von lokalem Wissen über Wind, Holz, Meer und Arbeit."
+        }
+      ]
+    },
     {
       "type": "heading",
       "text": "Nächste Station"

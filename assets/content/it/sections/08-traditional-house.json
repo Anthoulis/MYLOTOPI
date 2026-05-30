@@ -5,84 +5,75 @@
   "preview": "Una Piccola Casa Affollata: Benvenuti nella casa tradizionale! Questa incredibile piccola casa ha più di 130 anni. Misura meno di 20 metri quadrati, ma che ci crediate o no, qui vivevano dalle 8 alle 10 persone! I nonni, i genitori e tutti i loro figli condividevano questa unica stanza.",
   "details": [
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "Una Missione per i Nostri Giovani Esploratori e per gli Adulti!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
+      "type": "list",
+      "items": [
+        {
+          "text": "Dove Dormivano Tutti? I nonni dormivano proprio accanto al caldo camino. I genitori dormivano in alto nel letto a soppalco sul lato opposto, mentre i bambini più grandi dormivano nei letti accanto e sul divano."
+        },
+        {
+          "label": "Fai la Nanna, Bambino",
+          "text": "E il bambino? Cercate la piccola culla di legno! Per aiutare il bambino ad addormentarsi, bastava tirare delicatamente quella piccola corda appesa per dondolarlo."
+        },
+        {
+          "label": "Un Intelligente Ripostiglio",
+          "text": "Notate lo spazio sotto i letti della famiglia: quello era il loro ripostiglio principale."
+        },
+        {
+          "label": "Faccende Quotidiane e Decorazioni",
+          "text": "Sul lato sinistro, potete vedere un grande telaio di legno che usavano per realizzare nuovi vestiti e riparare quelli vecchi, accanto a una cassapanca dove tenevano i loro oggetti personali. Noterete anche un setaccio usato per la farina e bellissime vecchie fotografie e immagini religiose sulle pareti."
+        },
+        {
+          "label": "Vasi e Uniformi",
+          "text": "Accanto alla cassapanca, cercate due vasi: quello grande era per il vino e quello piccolo per l'acqua. Proprio sopra di essi sono appese due bellissime uniformi tradizionali che le signore della casa indossavano per matrimoni ed eventi speciali."
+        },
+        {
+          "label": "Il Cuore della Casa",
+          "text": "Poiché la casa non era strutturata come le case moderne, il camino veniva usato per cucinare tutti i loro pasti e tenere al caldo l'intera famiglia. Proprio accanto ad esso c'è un piccolo mulino a mano per macinare la farina, insieme ai loro utensili da cucina quotidiani e ai piatti tradizionali decorati con graziosi fiori dipinti."
+        },
+        {
+          "label": "L'Altalena Appesa",
+          "text": "Guardate in alto verso il soffitto! Vedete qualcosa di appeso che assomiglia un po' a un'altalena? Non è per giocare! Tenevano il loro pane fresco nella parte superiore per tenerlo al sicuro dai topi affamati. Nella parte inferiore, conservavano le carrube. A quei tempi non c'erano le barrette di cioccolato, quindi le dolci carrube venivano date ai bambini come un delizioso dolcetto!"
+        },
+        {
+          "label": "Un Frigorifero Tradizionale",
+          "text": "Infine, cercate il mobiletto di legno. Che ci crediate o no, questo è un frigorifero tradizionale! Ha due parti. Mettevano grandi cubetti di ghiaccio nella parte superiore e, mentre il ghiaccio si scioglieva, potevano aprire un piccolo rubinetto per bere l'acqua ghiacciata. Il freddo della parte superiore raffreddava perfettamente anche la sezione inferiore per mantenere fresco il loro cibo!"
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Prossima Destinazione:"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
-  ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
+      "type": "list",
       "items": [
         {
-          "text": "Una Piccola Casa Affollata: Benvenuti nella casa tradizionale! Questa incredibile piccola casa ha più di 130 anni. Misura meno di 20 metri quadrati, ma che ci crediate o no, qui vivevano dalle 8 alle 10 persone! I nonni, i genitori e tutti i loro figli condividevano questa unica stanza."
-        },
-        {
-          "text": "Dove Dormivano Tutti? I nonni dormivano proprio accanto al caldo camino. I genitori dormivano in alto nel letto a soppalco sul lato opposto, mentre i bambini più grandi dormivano nei letti accanto e sul divano."
-        },
-        {
-          "text": "Fai la Nanna, Bambino: E il bambino? Cercate la piccola culla di legno! Per aiutare il bambino ad addormentarsi, bastava tirare delicatamente quella piccola corda appesa per dondolarlo."
-        },
-        {
-          "text": "Un Intelligente Ripostiglio: Notate lo spazio sotto i letti della famiglia: quello era il loro ripostiglio principale."
-        },
-        {
-          "text": "Faccende Quotidiane e Decorazioni: Sul lato sinistro, potete vedere un grande telaio di legno che usavano per realizzare nuovi vestiti e riparare quelli vecchi, accanto a una cassapanca dove tenevano i loro oggetti personali. Noterete anche un setaccio usato per la farina e bellissime vecchie fotografie e immagini religiose sulle pareti."
-        },
-        {
-          "text": "Vasi e Uniformi: Accanto alla cassapanca, cercate due vasi: quello grande era per il vino e quello piccolo per l'acqua. Proprio sopra di essi sono appese due bellissime uniformi tradizionali che le signore della casa indossavano per matrimoni ed eventi speciali."
-        },
-        {
-          "text": "Il Cuore della Casa: Poiché la casa non era strutturata come le case moderne, il camino veniva usato per cucinare tutti i loro pasti e tenere al caldo l'intera famiglia. Proprio accanto ad esso c'è un piccolo mulino a mano per macinare la farina, insieme ai loro utensili da cucina quotidiani e ai piatti tradizionali decorati con graziosi fiori dipinti."
-        },
-        {
-          "text": "L'Altalena Appesa: Guardate in alto verso il soffitto! Vedete qualcosa di appeso che assomiglia un po' a un'altalena? Non è per giocare! Tenevano il loro pane fresco nella parte superiore per tenerlo al sicuro dai topi affamati. Nella parte inferiore, conservavano le carrube. A quei tempi non c'erano le barrette di cioccolato, quindi le dolci carrube venivano date ai bambini come un delizioso dolcetto!"
-        },
-        {
-          "text": "Un Frigorifero Tradizionale: Infine, cercate il mobiletto di legno. Che ci crediate o no, questo è un frigorifero tradizionale! Ha due parti. Mettevano grandi cubetti di ghiaccio nella parte superiore e, mentre il ghiaccio si scioglieva, potevano aprire un piccolo rubinetto per bere l'acqua ghiacciata. Il freddo della parte superiore raffreddava perfettamente anche la sezione inferiore per mantenere fresco il loro cibo!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Gira il Mulino: Avete molto da fare in questa piccola casa indaffarata! Per prima cosa, riuscite a trovare il piccolo mulino a mano? Provate a inserire il manico di legno nella fessura e vedete se riuscite a farlo girare!"
-        },
-        {
-          "text": "Guardate Su e Giù: Dopo il vostro duro lavoro, riuscite a individuare l'altalena appesa che teneva il pane lontano dai topi?"
-        },
-        {
-          "text": "Cullate il Bambino: E che dire della piccola corda che tiravano per cullare il bambino e farlo addormentare? Riuscite a far addormentare il bambino dondolando la corda? È difficile per voi?"
-        },
-        {
-          "text": "Immaginate Questo: Una volta trovati tutti, immaginate come sarebbe condividere questa piccola stanza con 8 o 10 membri della vostra famiglia!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "In Arrivo: Quindi proseguite verso la Panetteria!"
+          "label": "In Arrivo",
+          "text": "Quindi proseguite verso la Panetteria!"
         }
       ]
     }
   ],
+  "challenge": {
+    "title": "Una Missione per i Nostri Giovani Esploratori e per gli Adulti!",
+    "items": [
+      {
+        "label": "Gira il Mulino",
+        "text": "Avete molto da fare in questa piccola casa indaffarata! Per prima cosa, riuscite a trovare il piccolo mulino a mano? Provate a inserire il manico di legno nella fessura e vedete se riuscite a farlo girare!"
+      },
+      {
+        "label": "Guardate Su e Giù",
+        "text": "Dopo il vostro duro lavoro, riuscite a individuare l'altalena appesa che teneva il pane lontano dai topi?"
+      },
+      {
+        "label": "Cullate il Bambino",
+        "text": "E che dire della piccola corda che tiravano per cullare il bambino e farlo addormentare? Riuscite a far addormentare il bambino dondolando la corda? È difficile per voi?"
+      },
+      {
+        "label": "Immaginate Questo",
+        "text": "Una volta trovati tutti, immaginate come sarebbe condividere questa piccola stanza con 8 o 10 membri della vostra famiglia!"
+      }
+    ]
+  },
   "imageAlt": "La Casa Tradizionale"
 }

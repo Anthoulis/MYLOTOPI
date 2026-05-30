@@ -5,84 +5,75 @@
   "preview": "Maleńki, zatłoczony dom: Witamy w tradycyjnym domu! Ten niesamowity mały dom ma ponad 130 lat. Ma mniej niż 20 metrów kwadratowych, ale wierzcie lub nie, mieszkało tu od 8 do 10 osób! Dziadkowie, rodzice i wszystkie ich dzieci dzielili ten jeden pojedynczy pokój.",
   "details": [
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-01"
-    },
-    {
-      "type": "heading",
-      "text": "Misja dla naszych Młodych Odkrywców i Dorosłych!"
-    },
-    {
-      "type": "bulletGroup",
-      "id": "bullet-group-02"
+      "type": "list",
+      "items": [
+        {
+          "text": "Gdzie wszyscy spali? Dziadkowie spali tuż obok ciepłego kominka. Rodzice spali wysoko w łóżku na antresoli po przeciwnej stronie, podczas gdy starsze dzieci spały w łóżkach obok i na kanapie."
+        },
+        {
+          "label": "Kołysanie maluszka",
+          "text": "A co z dzieckiem? Poszukajcie małej drewnianej kołyski! Aby pomóc dziecku zasnąć, ktoś mógł po prostu delikatnie pociągnąć za tę małą, wiszącą linę, aby ją rozbujać."
+        },
+        {
+          "label": "Sprytne przechowywanie",
+          "text": "Zwróćcie uwagę na przestrzeń pod rodzinnymi łóżkami – to było ich główne pomieszczenie do przechowywania."
+        },
+        {
+          "label": "Codzienne obowiązki i wystrój",
+          "text": "Po lewej stronie widać duże drewniane krosno, którego używali do robienia nowych ubrań i naprawiania starych, obok skrzyni, w której trzymali swoje rzeczy osobiste. Zauważycie też sito używane do mąki oraz piękne stare fotografie i religijne obrazki na ścianach."
+        },
+        {
+          "label": "Wazony i stroje",
+          "text": "Obok skrzyni poszukajcie dwóch wazonów: duży był na wino, a mały na wodę. Tuż nad nimi wiszą dwa piękne tradycyjne stroje, które panie domu nosiły na wesela i specjalne wydarzenia."
+        },
+        {
+          "label": "Serce domu",
+          "text": "Ponieważ dom nie był odrestaurowany tak jak współczesne domy, kominek służył do gotowania wszystkich ich posiłków i ogrzewania całej rodziny. Tuż obok znajduje się mały ręczny młynek do mielenia mąki, wraz z ich codziennymi naczyniami kuchennymi i tradycyjnymi talerzami ozdobionymi ładnymi, malowanymi kwiatami."
+        },
+        {
+          "label": "Wisząca huśtawka",
+          "text": "Spójrzcie w górę na sufit! Czy widzicie coś wiszącego, co wygląda trochę jak huśtawka? To nie służy do zabawy! W górnej części trzymali świeży chleb, aby bezpiecznie uchronić go przed głodnymi myszami. W dolnej części przechowywali karob (chleb świętojański). W tamtych czasach nie było batoników, więc słodki karob dawano dzieciom jako pyszną czekoladową przekąskę!"
+        },
+        {
+          "label": "Tradycyjna lodówka",
+          "text": "Na koniec poszukajcie drewnianej szafki. Wierzcie lub nie, ale to jest tradycyjna lodówka! Składa się z dwóch części. Na górze kładli duże kostki lodu, a gdy lód topniał, mogli otworzyć mały kranik, aby napić się lodowatej wody. Chłód z górnej części idealnie chłodził również dolną sekcję, aby zachować świeżość ich jedzenia!"
+        }
+      ]
     },
     {
       "type": "heading",
       "text": "Następny cel:"
     },
     {
-      "type": "bulletGroup",
-      "id": "bullet-group-03"
-    }
-  ],
-  "bullets": [
-    {
-      "id": "bullet-group-01",
+      "type": "list",
       "items": [
         {
-          "text": "Maleńki, zatłoczony dom: Witamy w tradycyjnym domu! Ten niesamowity mały dom ma ponad 130 lat. Ma mniej niż 20 metrów kwadratowych, ale wierzcie lub nie, mieszkało tu od 8 do 10 osób! Dziadkowie, rodzice i wszystkie ich dzieci dzielili ten jeden pojedynczy pokój."
-        },
-        {
-          "text": "Gdzie wszyscy spali? Dziadkowie spali tuż obok ciepłego kominka. Rodzice spali wysoko w łóżku na antresoli po przeciwnej stronie, podczas gdy starsze dzieci spały w łóżkach obok i na kanapie."
-        },
-        {
-          "text": "Kołysanie maluszka: A co z dzieckiem? Poszukajcie małej drewnianej kołyski! Aby pomóc dziecku zasnąć, ktoś mógł po prostu delikatnie pociągnąć za tę małą, wiszącą linę, aby ją rozbujać."
-        },
-        {
-          "text": "Sprytne przechowywanie: Zwróćcie uwagę na przestrzeń pod rodzinnymi łóżkami – to było ich główne pomieszczenie do przechowywania."
-        },
-        {
-          "text": "Codzienne obowiązki i wystrój: Po lewej stronie widać duże drewniane krosno, którego używali do robienia nowych ubrań i naprawiania starych, obok skrzyni, w której trzymali swoje rzeczy osobiste. Zauważycie też sito używane do mąki oraz piękne stare fotografie i religijne obrazki na ścianach."
-        },
-        {
-          "text": "Wazony i stroje: Obok skrzyni poszukajcie dwóch wazonów: duży był na wino, a mały na wodę. Tuż nad nimi wiszą dwa piękne tradycyjne stroje, które panie domu nosiły na wesela i specjalne wydarzenia."
-        },
-        {
-          "text": "Serce domu: Ponieważ dom nie był odrestaurowany tak jak współczesne domy, kominek służył do gotowania wszystkich ich posiłków i ogrzewania całej rodziny. Tuż obok znajduje się mały ręczny młynek do mielenia mąki, wraz z ich codziennymi naczyniami kuchennymi i tradycyjnymi talerzami ozdobionymi ładnymi, malowanymi kwiatami."
-        },
-        {
-          "text": "Wisząca huśtawka: Spójrzcie w górę na sufit! Czy widzicie coś wiszącego, co wygląda trochę jak huśtawka? To nie służy do zabawy! W górnej części trzymali świeży chleb, aby bezpiecznie uchronić go przed głodnymi myszami. W dolnej części przechowywali karob (chleb świętojański). W tamtych czasach nie było batoników, więc słodki karob dawano dzieciom jako pyszną czekoladową przekąskę!"
-        },
-        {
-          "text": "Tradycyjna lodówka: Na koniec poszukajcie drewnianej szafki. Wierzcie lub nie, ale to jest tradycyjna lodówka! Składa się z dwóch części. Na górze kładli duże kostki lodu, a gdy lód topniał, mogli otworzyć mały kranik, aby napić się lodowatej wody. Chłód z górnej części idealnie chłodził również dolną sekcję, aby zachować świeżość ich jedzenia!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-02",
-      "items": [
-        {
-          "text": "Zakręć młynkiem: Macie wiele do zrobienia w tym tętniącym życiem małym domku! Po pierwsze, czy potraficie znaleźć ręczny młynek? Spróbujcie włożyć drewnianą rączkę w szczelinę i sprawdźcie, czy dacie radę go zakręcić!"
-        },
-        {
-          "text": "Spójrzcie w górę i w dół: Po ciężkiej pracy, czy potraficie dostrzec wiszącą huśtawkę, która chroniła chleb przed myszami?"
-        },
-        {
-          "text": "Ukołyszcie dziecko: A co z maleńką liną, za którą pociągali, aby ukołysać dziecko do snu? Czy potraficie uśpić dziecko, bujając liną? Czy to dla Was trudne?"
-        },
-        {
-          "text": "Wyobraźcie to sobie: Kiedy już wszystko znajdziecie, wyobraźcie sobie, jak by to było dzielić ten mały pokój z 8 do 10 członkami Waszej rodziny!"
-        }
-      ]
-    },
-    {
-      "id": "bullet-group-03",
-      "items": [
-        {
-          "text": "Kolejny punkt: Następnie przejdźcie dalej do Piekarni!"
+          "label": "Kolejny punkt",
+          "text": "Następnie przejdźcie dalej do Piekarni!"
         }
       ]
     }
   ],
+  "challenge": {
+    "title": "Misja dla naszych Młodych Odkrywców i Dorosłych!",
+    "items": [
+      {
+        "label": "Zakręć młynkiem",
+        "text": "Macie wiele do zrobienia w tym tętniącym życiem małym domku! Po pierwsze, czy potraficie znaleźć ręczny młynek? Spróbujcie włożyć drewnianą rączkę w szczelinę i sprawdźcie, czy dacie radę go zakręcić!"
+      },
+      {
+        "label": "Spójrzcie w górę i w dół",
+        "text": "Po ciężkiej pracy, czy potraficie dostrzec wiszącą huśtawkę, która chroniła chleb przed myszami?"
+      },
+      {
+        "label": "Ukołyszcie dziecko",
+        "text": "A co z maleńką liną, za którą pociągali, aby ukołysać dziecko do snu? Czy potraficie uśpić dziecko, bujając liną? Czy to dla Was trudne?"
+      },
+      {
+        "label": "Wyobraźcie to sobie",
+        "text": "Kiedy już wszystko znajdziecie, wyobraźcie sobie, jak by to było dzielić ten mały pokój z 8 do 10 członkami Waszej rodziny!"
+      }
+    ]
+  },
   "imageAlt": "Tradycyjny Dom"
 }
