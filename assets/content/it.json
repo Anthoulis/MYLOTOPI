@@ -1,0 +1,697 @@
+{
+  "code": "it",
+  "nativeName": "Italiano",
+  "aliases": [
+    "it",
+    "italian",
+    "italiano",
+    "it-it",
+    "it_it"
+  ],
+  "ui": {
+    "pageTitle": "Benvenuti alla Windmill Experience!",
+    "intro": "Viaggio nel Tempo: Preparatevi a fare un salto nel passato! Non avrete bisogno di una macchina del tempo per questo viaggio, solo di scarpe comode.",
+    "languageLabel": "Lingua",
+    "sectionsLabel": "Tappe della guida",
+    "audioHeading": "Audioguida",
+    "readMore": "Leggi di più",
+    "readLess": "Mostra meno",
+    "challengeLabel": "Per i giovani visitatori",
+    "previousSection": "Tappa precedente",
+    "nextSection": "Tappa successiva",
+    "kicker": "Guida QR Mylotopi",
+    "navigationLabel": "Navigazione dell'audioguida",
+    "currentSectionLabel": "Tappa attuale",
+    "miniMapTitle": "MINI MAPPA",
+    "miniMapDescription": "Consulta il percorso prima di continuare.",
+    "miniMapTapHint": "Tocca la mappa per aprirla",
+    "miniMapOpen": "Apri mappa",
+    "miniMapDownload": "Scarica mappa",
+    "miniMapModalClose": "Chiudi mappa",
+    "miniMapImageAlt": "Mini mappa di Mylotopi con le nove tappe del percorso",
+    "sectionSelectorLabel": "Tappa",
+    "sectionSelectorPlaceholder": "Scegli una tappa",
+    "audioTitleLabel": "In ascolto",
+    "audioAriaLabel": "{label}: {title}",
+    "selectedBadge": "Tappa attuale",
+    "imagePlaceholderLabel": "Immagine",
+    "imagePlaceholderHint": "Qui si può aggiungere una foto del luogo.",
+    "audioFallback": "L'audio non è disponibile in questa lingua.",
+    "announcerPrefix": "Tappa attuale",
+    "galleryPrevious": "Immagine precedente",
+    "galleryNext": "Immagine successiva",
+    "imageCounter": "{current} / {total}",
+    "challengeTitle": "Osserva meglio",
+    "previousSectionAria": "Vai alla tappa precedente: {title}",
+    "nextSectionAria": "Vai alla tappa successiva: {title}",
+    "sectionLabelSeparator": " · ",
+    "loadErrorTitle": "Impossibile caricare la guida.",
+    "loadErrorBody": "Servi questa cartella come sito statico e ricarica la pagina.",
+    "heroTitle": "Benvenuti alla Windmill Experience!"
+  },
+  "miniMap": {
+    "path": "./assets/maps/it/minimap.jpg"
+  },
+  "sections": [
+    {
+      "id": "welcome",
+      "title": "Benvenuti alla Windmill Experience!",
+      "navigationTitle": "Benvenuti alla Windmill Experience!",
+      "preview": "Viaggio nel Tempo: Preparatevi a fare un salto nel passato! Non avrete bisogno di una macchina del tempo per questo viaggio, solo di scarpe comode.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Un Villaggio Restaurato",
+              "text": "Grazie al bellissimo restauro effettuato dalla famiglia Voudouris, vedrete esattamente come vivevano gli isolani più di un secolo fa, molto prima che venisse inventato il Wi-Fi. Potrete anche curiosare in giro e scoprire un po' di storia segreta degli anni '40!"
+            },
+            {
+              "label": "La Vita del Mugnaio",
+              "text": "Oggi potrete mettervi nei panni di un vero mugnaio. Attenzione spoiler: la sua routine di allenamento quotidiana consisteva nel sollevare pesanti sacchi di farina tutto il giorno, solo per sfamare la maggior parte del villaggio."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Cosa Esplorerete:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Il Gigantesco Mulino a Vento",
+              "text": "Esplorate un vero mulino a vento funzionante, dal basso fino in cima."
+            },
+            {
+              "label": "La Vita del Villaggio",
+              "text": "Date un'occhiata all'interno della casa tradizionale e della panetteria."
+            },
+            {
+              "label": "Natura e Animali",
+              "text": "Annusate le meravigliose erbe aromatiche nei nostri giardini, visitate l'aia e salutate i nostri adorabili asini."
+            },
+            {
+              "label": "Segreti Sotterranei",
+              "text": "Attraversate un vero e proprio tunnel militare!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Come Ascoltare il Tour:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "È Semplicissimo",
+              "text": "Adulti, vi basterà scansionare i codici QR che troverete usando la fotocamera del vostro telefono. Non c'è bisogno di scaricare nessuna app!"
+            },
+            {
+              "label": "Ascoltate Insieme",
+              "text": "Alzate semplicemente il volume del vostro telefono o condividete un paio di cuffie, e seguite i numeri in giro per il villaggio."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prossima Destinazione:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "In Arrivo",
+              "text": "Proseguite verso i nostri giardini con le erbe aromatiche!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Una Missione Segreta per i Giovani Esploratori!",
+        "items": [
+          {
+            "label": "Prendete il Vostro Equipaggiamento Artistico",
+            "text": "Vi daremo uno speciale Schizzo di Mylotopi e alcune matite colorate da portare con voi."
+          },
+          {
+            "label": "Osservate Tutto",
+            "text": "Mentre passeggiate oggi, tenete gli occhi ben aperti! Guardate molto da vicino il gigantesco mulino a vento, le pesanti pietre e i vecchi attrezzi. Cercate di memorizzare tutti i bellissimi colori che vedete."
+          },
+          {
+            "label": "Create un Capolavoro",
+            "text": "Quando finirete la vostra avventura e vi siederete a rilassarvi al nostro ristorante-caffetteria, potrete colorare il vostro disegno e trasformarlo in un vero capolavoro!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/it/section-01.mp3",
+        "ready": true
+      },
+      "imageAlt": "Benvenuti alla Windmill Experience!"
+    },
+    {
+      "id": "herb-garden",
+      "title": "Il Nostro Giardino con le Nostre Erbe Aromatiche!",
+      "navigationTitle": "Giardino delle Erbe",
+      "preview": "Cucina o Farmacia? Fate un bel respiro! Ha il profumo di una gigantesca cucina all'aperto o di una farmacia di paese? In realtà, è entrambe le cose!",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Il Kit di Sopravvivenza Definitivo",
+              "text": "Prima della medicina moderna e dei supermercati, questi giardini erano il kit di sopravvivenza dell'isola. Questi appezzamenti sono pieni delle stesse identiche erbe che crescono qui da secoli."
+            },
+            {
+              "label": "Il Medico della Natura",
+              "text": "Erbe come il timo, l'origano e la maggiorana non venivano usate solo per rendere la cena deliziosa... erano il medico locale! Se qualcuno aveva mal di stomaco, la famiglia del mugnaio non correva in farmacia a comprare uno sciroppo rosa dal sapore cattivo, ma veniva proprio qui a raccogliere le foglie per un rimedio naturale."
+            },
+            {
+              "label": "La Tavolozza di un Pittore",
+              "text": "Date un'occhiata alla bellissima lavanda viola e alla menta verde brillante! Sembra che qualcuno le abbia dipinte direttamente nel giardino. Prestate molta attenzione a questi colori vivaci!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prossima Destinazione:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "In Arrivo",
+              "text": "Quindi proseguite verso lo Storico Mulino a Vento!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Una Missione per i Nostri Giovani Detective delle Piante e per gli Adulti!",
+        "items": [
+          {
+            "label": "Divertimento Vecchia Scuola",
+            "text": "Mettete via i telefoni per un secondo, stiamo tornando completamente alle vecchie maniere! Vedete i pezzi del puzzle fisici sparsi in giro?"
+          },
+          {
+            "label": "Usate i Vostri Sensi",
+            "text": "Il vostro compito è capire quale parola appartiene a quale pianta. Dovrete usare gli occhi e il naso!"
+          },
+          {
+            "label": "Strofinate e Annusate",
+            "text": "Avanti, date alle foglie una piccola e delicata strofinata e annusate (ma per favore, niente pascolo... non mangiatevi il giardino prima di pranzo!)"
+          },
+          {
+            "label": "Risolvete il Puzzle",
+            "text": "Riuscite a spostare i pezzi del puzzle per abbinarli alle erbe corrette? Vedete se riuscite a capire la differenza tra la menta e l'origano. Quale profuma come una deliziosa pizza e quale sa di un pisolino accogliente?"
+          },
+          {
+            "label": "Promemoria per l'Album da Disegno",
+            "text": "Tenete gli occhi aperti, Detective delle Piante! Ricordate i diversi colori verde, grigio e viola per colorare il vostro Schizzo di Mylotopi più tardi."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/it/section-02.mp3",
+        "ready": true
+      },
+      "imageAlt": "Il Nostro Giardino con le Nostre Erbe Aromatiche!"
+    },
+    {
+      "id": "windmill-first-floor",
+      "title": "La Base del Mulino a Vento (1° Piano)",
+      "navigationTitle": "La Base del Mulino a Vento (1° Piano)",
+      "preview": "Una Leggenda Vivente: Benvenuti al \"Mulino del Prete\"! Vi trovate all'interno del più antico mulino a vento funzionante dell'intera isola e di tutto il complesso del Dodecaneso. Ha più di 400 anni, ha funzionato quotidianamente fino al 1987 ed è ancora oggi una macchina viva che macina farina!",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "All'Ingresso",
+              "text": "Mentre varcate la soglia, notate il tradizionale melograno appeso come portafortuna, accanto a una piccola bottiglia di Acqua Santa proveniente dal Monte Athos che ha più di 9 anni."
+            },
+            {
+              "label": "Costruito per le Tempeste",
+              "text": "Questa gigantesca macchina è alta 6,2 metri e i muri di pietra intorno a voi sono spessi 1,2 metri per proteggere l'edificio dalle violente tempeste marine."
+            },
+            {
+              "label": "Macchinari Imponenti",
+              "text": "Ai piani superiori ci sono due enormi macine di pietra che pesano una tonnellata ciascuna... ovvero più di due tonnellate insieme!"
+            },
+            {
+              "label": "Legno Antico",
+              "text": "L'80% del legno in questo edificio è originale, e il resto è stato portato fin dal Monte Athos. Incredibilmente, alcune delle parti in legno riutilizzate che girano qui sopra hanno tra i 1.000 e i 1.300 anni!"
+            },
+            {
+              "label": "Alla Vostra Destra",
+              "text": "Vedete l'area coperta da uno straccio? Quello era il magazzino del mugnaio. Accanto ad esso, vedrete una sella di legno per asini e una slitta da trebbiatura che l'asino del mugnaio tirava per separare il grano. Potete anche scorgere utensili di legno di uso quotidiano e bellissime foto di altri mulini a vento in tutta la Grecia."
+            },
+            {
+              "label": "Il Camino",
+              "text": "Il mugnaio non lo usava solo per scaldarsi! Guardate attentamente all'interno: vedete una lattina? Contiene grasso di mucca, che il mugnaio scioglieva per lubrificare le parti mobili del mulino a vento in modo che non cigolassero. Proprio sopra il camino c'è una fotografia di Kostas Politis, l'amato proprietario di questo mulino a vento la cui eredità vive proprio qui."
+            },
+            {
+              "label": "Alla Vostra Sinistra",
+              "text": "Vedrete una bilancia tradizionale e dei pesi, che venivano usati per pesare accuratamente la farina fresca."
+            },
+            {
+              "label": "I Primi Freni",
+              "text": "Cercate la piccola corda che pende verso il basso. Che ci crediate o no, quella corda era il primo sistema frenante del mulino a vento! Il mugnaio la tirava per sollevare quelle macine da due tonnellate solo un pochino, rendendo sicuro per lui uscire e srotolare le vele."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prossima Destinazione:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "In Arrivo",
+              "text": "Quindi proseguite verso il secondo piano del Mulino a Vento!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Una Missione per i nostri Giovani Esploratori e Adulti!",
+        "items": [
+          {
+            "label": "Testate i Muri",
+            "text": "Vediamo quanto sono davvero spessi quei muri! Andate a mettervi vicino alla porta e allargate le braccia il più possibile. Le vostre braccia sono più lunghe dello spessore del muro, o vince il mulino a vento?"
+          },
+          {
+            "label": "Spia",
+            "text": "Guardatevi intorno nella stanza e vedete se riuscite a individuare la sella di legno dell'asino!"
+          },
+          {
+            "label": "Trovate il Grasso",
+            "text": "Sbirciate nel camino: riuscite a individuare la lattina nascosta di grasso di mucca?"
+          },
+          {
+            "label": "Individuate i Freni",
+            "text": "Trovate la piccola corda appesa che fungeva da sistema frenante del mulino a vento!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/it/section-03.mp3",
+        "ready": true
+      },
+      "imageAlt": "La Base del Mulino a Vento (1° Piano)"
+    },
+    {
+      "id": "windmill-second-floor",
+      "title": "La Zona Notte del Mulino a Vento (2° Piano)",
+      "navigationTitle": "La Zona Notte del Mulino a Vento (2° Piano)",
+      "preview": "Attenzione al Gradino: Benvenuti al secondo piano! Fate attenzione a dove mettete i piedi sulle scale di legno e state attenti alla testa con le travi di legno qui sopra. Preparatevi a una grande sorpresa su come viveva la famiglia.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Alla Vostra Destra",
+              "text": "Sulle pareti, vedrete alcune bellissime immagini che mostrano diversi mulini a vento storici di tutta la Grecia. Ma questo spazio non era solo una galleria!"
+            },
+            {
+              "label": "Una Camera da Letto Molto Rumorosa",
+              "text": "Proprio qui, sul lato destro, è in realtà dove il mugnaio e l'intera famiglia erano soliti dormire! Riuscite a immaginare di cercare di fare un pisolino tranquillo mentre l'intero edificio tremava, il vento ululava e i pesanti macchinari schiacciavano rumorosamente il grano a pochi passi di distanza? Dovevano avere un sonno molto profondo!"
+            },
+            {
+              "label": "Alla Vostra Sinistra",
+              "text": "Ora, guardate verso il lato sinistro. Questo era uno spazio di stoccaggio molto importante e movimentato."
+            },
+            {
+              "label": "Proteggere la Farina",
+              "text": "Il mugnaio usava questo lato della stanza per impilare in modo sicuro tutti i pesanti sacchi di grano crudo in attesa di essere macinati, insieme ai sacchi appena riempiti di soffice farina bianca che erano pronti per uscire e sfamare il villaggio. Li teneva proprio qui vicino al suo letto per poterli proteggere!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prossima Destinazione:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "In Arrivo",
+              "text": "Quindi proseguite verso il terzo piano del Mulino a Vento!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Una Domanda per i nostri Giovani Esploratori e Adulti!",
+        "items": [
+          {
+            "label": "Immaginate Questo",
+            "text": "Riuscireste a immaginare voi stessi a dormire al secondo piano esattamente come facevano loro?"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/it/section-04.mp3",
+        "ready": true
+      },
+      "imageAlt": "La Zona Notte del Mulino a Vento (2° Piano)"
+    },
+    {
+      "id": "windmill-third-floor",
+      "title": "I Macchinari del Mulino a Vento (3° Piano)",
+      "navigationTitle": "I Macchinari del Mulino a Vento (3° Piano)",
+      "preview": "Attenzione alla Testa: Benvenuti al terzo piano! Per favore, fate attenzione a dove mettete i piedi sulla scala e state attenti alla testa mentre esplorate.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "I Muscoli del Mulino",
+              "text": "Ora state guardando la vera potenza del mulino a vento. Guardate quell'enorme trave di legno sopra le pietre. È il connettore principale che collega le pesanti pietre all'interno, gli ingranaggi e le gigantesche vele rotanti all'esterno!"
+            },
+            {
+              "label": "Pietre da Due Tonnellate",
+              "text": "Queste enormi macine pesano più di due tonnellate insieme! Sono state importate fin dall'isola di Nisyros, famosa per la produzione di una pietra unica e super resistente, perfetta per la molitura."
+            },
+            {
+              "label": "L'Alimentatore e la Campanella",
+              "text": "Guardate proprio sopra le pietre e cercate una scatola di legno chiamata L'Alimentatore, dove il mugnaio versava il grano crudo. Ma come faceva a sapere quando era vuota con tutto quel rumore forte? Guardate attentamente per trovare una minuscola campanella! Suonava automaticamente quando il grano scarseggiava per dire al mugnaio di riempirlo di nuovo."
+            },
+            {
+              "label": "Il Primo Freno",
+              "text": "Vedete quella leva di legno collegata a una piccola corda? Quella si collega fino al primo piano ed è il primo sistema frenante di cui abbiamo parlato al piano di sotto."
+            },
+            {
+              "label": "La Caduta della Farina",
+              "text": "Guardate giù vicino alla leva per trovare una botola collegata a un tubo. Non appena la farina era perfettamente frantumata, cadeva direttamente giù per quel tubo fino al piano terra!"
+            },
+            {
+              "label": "La \"Mancia\" del Mugnaio",
+              "text": "Proprio accanto al tubo principale c'è una seconda botola più piccola. Ai vecchi tempi, la gente non pagava sempre con i soldi. Invece, il mugnaio usava questa porta per riscuotere la sua \"mancia\", trattenendo una piccola percentuale della farina per la sua famiglia come pagamento per il suo duro lavoro!"
+            },
+            {
+              "label": "Rotazione Fluida",
+              "text": "Individuate la piccola lattina vicino alle botole. Al piano di sotto usava il grasso di mucca, ma quassù usava una speciale miscela di olio d'oliva e sapone per far funzionare senza intoppi gli ingranaggi superiori."
+            },
+            {
+              "label": "Il Freno di Emergenza",
+              "text": "Cercate una corda molto spessa accanto alla scala. Se il mugnaio aveva bisogno di smettere completamente di fare farina in fretta, tirava questa corda: il secondo sistema frenante!"
+            },
+            {
+              "label": "Il Soffitto di una Nave",
+              "text": "Infine, guardate il soffitto. Cosa vi ricorda? In realtà è progettato a forma di nave per aumentare la potenza del meccanismo e produrre farina più rapidamente!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prossima Destinazione:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "In Arrivo",
+              "text": "Quindi proseguite verso l'Aia e l'Area degli Asini!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Una Missione per i Nostri Giovani Esploratori e per gli Adulti!",
+        "items": [
+          {
+            "label": "Ascoltate la Campanella e Suonatela",
+            "text": "Riuscite a trovare la minuscola campanella che avvertiva il mugnaio quando il grano stava finendo? Riuscite a suonarla?"
+          },
+          {
+            "label": "Trovate la Farina Nascosta",
+            "text": "Esaminate il pavimento e vedete se riuscite a individuare la speciale botola della \"mancia\" dove il mugnaio teneva il suo sudato compenso!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/it/section-05.mp3",
+        "ready": true
+      },
+      "imageAlt": "I Macchinari del Mulino a Vento (3° Piano)"
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "title": "L'Aia e gli Asini!",
+      "navigationTitle": "L'Aia e gli Asini!",
+      "preview": "Aria Fresca e Pavimenti in Pietra: Benvenuti di nuovo all'aperto! Fate un bel respiro di aria fresca. Ora vi trovate vicino alla tradizionale aia, che assomiglia molto a una grande pista da ballo rotonda in pietra.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "L'Asino con le Vertigini",
+              "text": "Guardate proprio al centro del cerchio verso il palo di legno. Ai vecchi tempi, il mugnaio legava senza stringere una corda da quel palo al collo di un asino. Il lavoro dell'asino era quello di camminare in tondo in un grande cerchio, usando i suoi piedi pesanti per calpestare e schiacciare i raccolti per liberare i semi!"
+            },
+            {
+              "label": "Separare il Grano",
+              "text": "Dopo che il laborioso asino aveva finito tutto questo stordente calpestio, il mugnaio interveniva per separare con cura il grano bianco da quello marrone. (Oggi non usiamo più questo metodo, compriamo il nostro grano direttamente dai produttori locali dell'isola!)"
+            },
+            {
+              "label": "Incontrate le Vere Stelle",
+              "text": "Non dovete solo immaginare gli animali! Guardate nelle vicinanze e incontrerete le vere stelle della fattoria: i nostri due adorabili asini. L'orgogliosa mamma si chiama Melina e ha 6 anni, e la sua dolcissima figlioletta si chiama Katie, che ha solo 2 anni."
+            },
+            {
+              "label": "Il Papà Scomparso",
+              "text": "Per quanto riguarda il papà di Katie... beh, nessuno sa veramente dove sia finito! Amava cantare a voce molto alta, quindi pensiamo che sia andato nella città vicina per fondare una rock band di asini!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prossima Destinazione:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "In Arrivo",
+              "text": "Quindi proseguite verso la Cantina / Tunnel Italiano!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Una Missione per i Nostri Giovani Esploratori e per gli Adulti!",
+        "items": [
+          {
+            "label": "Il Ballo dell'Asino",
+            "text": "Avvicinatevi fino al bordo dell'aia! Riuscite a fingere di essere attaccati al palo di legno centrale e a camminare in un cerchio perfetto proprio come faceva l'asino?"
+          },
+          {
+            "label": "Dite Ciao",
+            "text": "Dopo il vostro ballo vertiginoso, assicuratevi di andare a salutare Melina e Katie! Per favore, ammirate i nostri adorabili asini da lontano! Sembrano dolci, ma potrebbero scambiare le vostre dita per baby carote. Preferiremmo non scoprirlo!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/it/section-06.mp3",
+        "ready": true
+      },
+      "imageAlt": "L'Aia e gli Asini!"
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "title": "Il Tunnel Segreto e la Cantina",
+      "navigationTitle": "Il Tunnel Segreto e la Cantina",
+      "preview": "Un Cambio di Scenario: Preparatevi a un cambio di scenario totale mentre ci dirigiamo sottoterra! Mentre scendete nell'aria fresca, date un'occhiata alla vostra sinistra e alla vostra destra.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Bottiglie Decorative",
+              "text": "Vedrete file di vino locale della cantina Skevofilax di Kos. Teniamo queste bottiglie qui per decorazione! I nostri veri vini da bere sono tenuti al sicuro nella cantina principale, dove la temperatura è perfettamente adatta a loro."
+            },
+            {
+              "label": "Storia della Seconda Guerra Mondiale",
+              "text": "Negli anni '40, durante la Seconda Guerra Mondiale, questo spazio non era per il vino... era per la sopravvivenza. Questo tunnel di 20 metri fu costruito dai soldati italiani durante la guerra."
+            },
+            {
+              "label": "Il Tunnel di Fuga",
+              "text": "I soldati usavano questo passaggio come un tunnel di fuga, una scorciatoia segreta per scappare e nascondersi dai loro avversari. La cantina stessa veniva usata come un rifugio sicuro dove potevano dormire, rilassarsi e rimanere protetti dalle battaglie all'esterno."
+            },
+            {
+              "label": "Una Fortezza Nascosta",
+              "text": "Alla fine del tunnel, uscirete nel nostro cortile sul retro, che ora è il nostro tranquillo ristorante. Ma guardate indietro verso il tetto di pietra prima di uscire! Negli anni '40, quest'intera area era un poligono di tiro. La parte superiore era coperta con pietre pesanti per proteggere i soldati e, proprio sul bordo, avevano delle mitragliatrici per difendere la collina. È difficile credere che questo posto tranquillo e bellissimo per un pasto fosse un luogo così sorvegliato sull'isola!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prossima Destinazione:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "In Arrivo",
+              "text": "Quando avrete finito di esplorare il tunnel, vi preghiamo di tornare indietro e cercare la nostra guida turistica in modo che possa mostrarvi la strada per le vostre prossime fantastiche tappe: la Casa Tradizionale e la Panetteria!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Una Missione per i Nostri Giovani Esploratori e per gli Adulti!",
+        "items": [
+          {
+            "label": "Top Secret",
+            "text": "Ora siete in missione segreta! Mentre camminate attraverso il tunnel dei soldati, riuscite a calcolare esattamente quante bottiglie di vino sono allineate lungo le pareti?"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/it/section-07.mp3",
+        "ready": true
+      },
+      "imageAlt": "Il Tunnel Segreto e la Cantina"
+    },
+    {
+      "id": "traditional-house",
+      "title": "La Casa Tradizionale",
+      "navigationTitle": "La Casa Tradizionale",
+      "preview": "Una Piccola Casa Affollata: Benvenuti nella casa tradizionale! Questa incredibile piccola casa ha più di 130 anni. Misura meno di 20 metri quadrati, ma che ci crediate o no, qui vivevano dalle 8 alle 10 persone! I nonni, i genitori e tutti i loro figli condividevano questa unica stanza.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Dove Dormivano Tutti? I nonni dormivano proprio accanto al caldo camino. I genitori dormivano in alto nel letto a soppalco sul lato opposto, mentre i bambini più grandi dormivano nei letti accanto e sul divano."
+            },
+            {
+              "label": "Fai la Nanna, Bambino",
+              "text": "E il bambino? Cercate la piccola culla di legno! Per aiutare il bambino ad addormentarsi, bastava tirare delicatamente quella piccola corda appesa per dondolarlo."
+            },
+            {
+              "label": "Un Intelligente Ripostiglio",
+              "text": "Notate lo spazio sotto i letti della famiglia: quello era il loro ripostiglio principale."
+            },
+            {
+              "label": "Faccende Quotidiane e Decorazioni",
+              "text": "Sul lato sinistro, potete vedere un grande telaio di legno che usavano per realizzare nuovi vestiti e riparare quelli vecchi, accanto a una cassapanca dove tenevano i loro oggetti personali. Noterete anche un setaccio usato per la farina e bellissime vecchie fotografie e immagini religiose sulle pareti."
+            },
+            {
+              "label": "Vasi e Uniformi",
+              "text": "Accanto alla cassapanca, cercate due vasi: quello grande era per il vino e quello piccolo per l'acqua. Proprio sopra di essi sono appese due bellissime uniformi tradizionali che le signore della casa indossavano per matrimoni ed eventi speciali."
+            },
+            {
+              "label": "Il Cuore della Casa",
+              "text": "Poiché la casa non era strutturata come le case moderne, il camino veniva usato per cucinare tutti i loro pasti e tenere al caldo l'intera famiglia. Proprio accanto ad esso c'è un piccolo mulino a mano per macinare la farina, insieme ai loro utensili da cucina quotidiani e ai piatti tradizionali decorati con graziosi fiori dipinti."
+            },
+            {
+              "label": "L'Altalena Appesa",
+              "text": "Guardate in alto verso il soffitto! Vedete qualcosa di appeso che assomiglia un po' a un'altalena? Non è per giocare! Tenevano il loro pane fresco nella parte superiore per tenerlo al sicuro dai topi affamati. Nella parte inferiore, conservavano le carrube. A quei tempi non c'erano le barrette di cioccolato, quindi le dolci carrube venivano date ai bambini come un delizioso dolcetto!"
+            },
+            {
+              "label": "Un Frigorifero Tradizionale",
+              "text": "Infine, cercate il mobiletto di legno. Che ci crediate o no, questo è un frigorifero tradizionale! Ha due parti. Mettevano grandi cubetti di ghiaccio nella parte superiore e, mentre il ghiaccio si scioglieva, potevano aprire un piccolo rubinetto per bere l'acqua ghiacciata. Il freddo della parte superiore raffreddava perfettamente anche la sezione inferiore per mantenere fresco il loro cibo!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prossima Destinazione:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "In Arrivo",
+              "text": "Quindi proseguite verso la Panetteria!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Una Missione per i Nostri Giovani Esploratori e per gli Adulti!",
+        "items": [
+          {
+            "label": "Gira il Mulino",
+            "text": "Avete molto da fare in questa piccola casa indaffarata! Per prima cosa, riuscite a trovare il piccolo mulino a mano? Provate a inserire il manico di legno nella fessura e vedete se riuscite a farlo girare!"
+          },
+          {
+            "label": "Guardate Su e Giù",
+            "text": "Dopo il vostro duro lavoro, riuscite a individuare l'altalena appesa che teneva il pane lontano dai topi?"
+          },
+          {
+            "label": "Cullate il Bambino",
+            "text": "E che dire della piccola corda che tiravano per cullare il bambino e farlo addormentare? Riuscite a far addormentare il bambino dondolando la corda? È difficile per voi?"
+          },
+          {
+            "label": "Immaginate Questo",
+            "text": "Una volta trovati tutti, immaginate come sarebbe condividere questa piccola stanza con 8 o 10 membri della vostra famiglia!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/it/section-08.mp3",
+        "ready": true
+      },
+      "imageAlt": "La Casa Tradizionale"
+    },
+    {
+      "id": "bakery",
+      "title": "La Panetteria",
+      "navigationTitle": "La Panetteria",
+      "preview": "Un Centro per la Comunità: Benvenuti al forno tradizionale! Questo bellissimo forno in pietra ha più di 150 anni. Ai vecchi tempi, la maggior parte delle signore del villaggio veniva proprio qui per cuocere il pane quotidiano per le proprie famiglie.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Un Processo di Due Giorni",
+              "text": "A quei tempi, cuocere il pane non era così veloce come fare una corsa al supermercato! Era in realtà un processo di due giorni. La sera prima, le signore mescolavano e modellavano con cura l'impasto, lasciandolo riposare e lievitare per tutta la notte."
+            },
+            {
+              "label": "Appena Sfornato",
+              "text": "La mattina seguente, quando l'impasto era pronto, accendevano un bel fuoco per scaldare il forno. Una volta che la temperatura era quella giusta, mettevano l'impasto all'interno. Dopo aver infornato per una o due ore, l'intero villaggio si riempiva del delizioso profumo di pane fresco e caldo, pronto per essere mangiato!"
+            },
+            {
+              "label": "Foto Storiche",
+              "text": "Se vi guardate intorno, potete vedere alcune meravigliose foto in mostra che illustrano esattamente come eseguivano l'intera procedura."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Una Domanda per i Nostri Giovani Esploratori e per gli Adulti!"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Sveglia Presto",
+              "text": "Tutto il villaggio aveva bisogno di pane fresco. Riuscite a indovinare a che ora doveva svegliarsi il fornaio ogni mattina per iniziare a preparare l'impasto? (Indizio: era molto prima che sorgesse il sole!)"
+            },
+            {
+              "label": "Guardate Attentamente",
+              "text": "Guardate attentamente le foto per vedere come le donne del villaggio lavoravano un tempo nel forno."
+            },
+            {
+              "label": "Tempo di Rilassarsi",
+              "text": "Ora è il momento di dirigersi verso il ristorante-caffetteria! Prendete le vostre matite colorate, godetevi un meritato spuntino e completate il vostro Schizzo di Mylotopi (Mylotopi Sketch) trasformandolo in un capolavoro colorato!"
+            },
+            {
+              "label": "Grazie",
+              "text": "Grazie per aver esplorato con noi oggi!"
+            }
+          ]
+        }
+      ],
+      "audio": {
+        "path": "./assets/audio/it/section-09.mp3",
+        "ready": true
+      },
+      "imageAlt": "La Panetteria"
+    }
+  ]
+}

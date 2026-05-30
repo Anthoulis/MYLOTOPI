@@ -1,29 +1,31 @@
 # Runtime Content
 
-Content is organized first by language and then by section.
+Content is organized as one complete JSON file per active language.
 
-Active runtime language folders:
+Active runtime language files:
 
-- `en`
-- `el`
-- `de`
-- `fr`
-- `it`
-- `es`
-- `nl`
-- `pl`
-- `ru`
-- `tr`
+- `en.json`
+- `el.json`
+- `de.json`
+- `fr.json`
+- `it.json`
+- `es.json`
+- `nl.json`
+- `pl.json`
+- `ru.json`
+- `tr.json`
 
-Only languages listed in `MYLOTOPI_GUIDE_META.languages` are exposed in the app. All language folders in this directory are currently active.
+Only language codes listed in `MYLOTOPI_GUIDE_META.languages` are exposed in the app.
 
-Each language folder has:
+Each language file contains:
 
-- `index.json`: language manifest, UI labels, Mini-map path, section order, section file paths, and audio paths.
-- `sections/*.json`: one section content file per tour stop.
+- `code`, `nativeName`, and `aliases`
+- `ui` labels used by the guide interface
+- optional `miniMap` path metadata
+- `sections`, in the canonical order from `assets/js/content-meta.js`
 
-Section JSON files must contain `id`, `title`, `navigationTitle`, `preview`, and `details`. They may also contain `bullets`, `challenge`, and `imageAlt`.
+Each section contains its visitor text, challenge content, language-specific audio path, and localized `imageAlt` text. Shared image paths and accent colors stay in `assets/js/content-meta.js`.
 
-Language flags are not stored in these manifests. The runtime renders them from centralized inline SVGs in `assets/js/app.js`.
+To edit English text, open `assets/content/en.json`. To edit Greek text, open `assets/content/el.json`.
 
 The source DOCX marker `Read more>>`, when present, belongs only to extraction logic and must not appear in rendered content.

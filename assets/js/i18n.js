@@ -5,29 +5,14 @@
     throw new Error("Mylotopi guide metadata is missing.");
   }
 
-  const defaultLanguage = meta.defaultLanguage;
-  const supportedLanguages = Array.isArray(meta.languages) ? meta.languages.slice() : [];
-  const contentBasePath = meta.contentBasePath || "./assets/content";
-  const content = {
-    languages: {},
-    aliasMap: {},
-    loaded: false,
-  };
+  const CONTENT_BASE_PATH = "./assets/content";
 
   function normalizeKey(value) {
     return value.toString().trim().toLowerCase().replace(/\s+/g, "").replace(/_/g, "-");
   }
 
-  function getLanguageIndexPath(lang) {
-    return contentBasePath.replace(/\/$/, "") + "/" + lang + "/index.json";
-  }
-
-  function getLanguageContentPath(lang, contentPath) {
-    if (/^(?:\.?\/|https?:\/\/)/.test(contentPath)) {
-      return contentPath;
-    }
-
-    return contentBasePath.replace(/\/$/, "") + "/" + lang + "/" + contentPath.replace(/^\//, "");
+  function normalizeBasePath(path) {
+    return path.replace(/\/$/, "");
   }
 
   async function fetchJson(path) {
@@ -40,177 +25,164 @@
     return response.json();
   }
 
-  function buildAliasMap() {
-    const aliases = {};
+  function getNativeLanguageName(lang) {
+    if (window.Intl && typeof window.Intl.DisplayNames === "function") {
+      try {
+        return new Intl.DisplayNames([lang], { type: "language" }).of(lang) || lang.toUpperCase();
+      } catch (error) {
+        return lang.toUpperCase();
+      }
+    }
 
-    supportedLanguages.forEach(function (lang) {
-      const language = content.languages[lang] && content.languages[lang].index;
-      aliases[normalizeKey(lang)] = lang;
+    return lang.toUpperCase();
+  }
 
-      if (!language) {
-        return;
+  class GuideContentLoader {
+    constructor(basePath) {
+      this.basePath = normalizeBasePath(basePath || CONTENT_BASE_PATH);
+      this.cache = new Map();
+    }
+
+    getLanguagePath(lang) {
+      return this.basePath + "/" + lang + ".json";
+    }
+
+    getCached(lang) {
+      return this.cache.get(lang) || null;
+    }
+
+    async load(lang) {
+      if (this.cache.has(lang)) {
+        return this.cache.get(lang);
       }
 
-      (language.aliases || []).forEach(function (alias) {
-        aliases[normalizeKey(alias)] = lang;
+      const path = this.getLanguagePath(lang);
+      const content = await fetchJson(path);
+
+      if (!content || content.code !== lang) {
+        throw new Error("Mylotopi content language mismatch for " + lang + ".");
+      }
+
+      this.cache.set(lang, content);
+      return content;
+    }
+  }
+
+  class GuideContentService {
+    constructor(config) {
+      this.defaultLanguage = config.defaultLanguage;
+      this.supportedLanguages = Array.isArray(config.languages) ? config.languages.slice() : [];
+      this.loader = new GuideContentLoader(CONTENT_BASE_PATH);
+      this.aliases = new Map();
+      this.currentLanguage = null;
+      this.currentContent = null;
+
+      this.supportedLanguages.forEach((lang) => {
+        this.aliases.set(normalizeKey(lang), lang);
       });
-    });
-
-    content.aliasMap = aliases;
-  }
-
-  function getSectionManifest(index, spotId) {
-    return (index.sections || []).find(function (section) {
-      return section.id === spotId;
-    });
-  }
-
-  function normalizeSection(section, manifest) {
-    return Object.assign({}, section, {
-      shortText: section.preview || "",
-      shortTitle: section.navigationTitle || section.title,
-      audio: Object.assign({}, manifest.audio || {}),
-      details: Array.isArray(section.details) ? section.details : [],
-      bullets: Array.isArray(section.bullets) ? section.bullets : [],
-    });
-  }
-
-  async function loadLanguage(lang) {
-    const index = await fetchJson(getLanguageIndexPath(lang));
-    if (index.code !== lang) {
-      throw new Error("Mylotopi content language mismatch for " + lang + ".");
     }
 
-    const sections = {};
-    await Promise.all(
-      (index.sections || []).map(async function (manifest) {
-        const sectionPath = getLanguageContentPath(lang, manifest.path);
-        const section = await fetchJson(sectionPath);
-        if (section.id !== manifest.id) {
-          throw new Error("Mylotopi section id mismatch for " + sectionPath + ".");
-        }
+    normalizeLanguage(value) {
+      if (!value) {
+        return null;
+      }
 
-        sections[section.id] = normalizeSection(section, manifest);
-      })
-    );
+      const key = normalizeKey(value);
+      if (this.aliases.has(key)) {
+        return this.aliases.get(key);
+      }
 
-    content.languages[lang] = {
-      index: index,
-      sections: sections,
-    };
-  }
+      if (this.supportedLanguages.includes(key)) {
+        return key;
+      }
 
-  async function loadContent() {
-    if (content.loaded) {
-      return;
+      const primaryCode = key.split("-")[0];
+      return this.supportedLanguages.includes(primaryCode) ? primaryCode : null;
     }
 
-    await Promise.all(supportedLanguages.map(loadLanguage));
-    buildAliasMap();
-    content.loaded = true;
-  }
+    registerAliases(content) {
+      const code = content.code;
+      this.aliases.set(normalizeKey(code), code);
 
-  function normalizeLanguage(value) {
-    if (!value) {
-      return null;
+      (content.aliases || []).forEach((alias) => {
+        this.aliases.set(normalizeKey(alias), code);
+      });
     }
 
-    const key = normalizeKey(value);
-    return content.aliasMap[key] || (supportedLanguages.includes(key) ? key : null);
-  }
+    async loadLanguage(value) {
+      const lang = this.normalizeLanguage(value) || this.defaultLanguage;
+      const content = await this.loader.load(lang);
 
-  function getLocale(lang) {
-    return content.languages[lang] || content.languages[defaultLanguage] || { index: {}, sections: {} };
-  }
+      this.registerAliases(content);
+      this.currentLanguage = lang;
+      this.currentContent = content;
 
-  function getUi(lang) {
-    return Object.assign({}, getLocale(defaultLanguage).index.ui || {}, getLocale(lang).index.ui || {});
-  }
-
-  function getLocalizedLanguageName(lang, displayLang) {
-    const labels = getLocale(displayLang || lang).index.languageLabels || {};
-    return labels[lang] || getLanguageName(lang);
-  }
-
-  function getSpotText(spotId, lang) {
-    const defaultText = getLocale(defaultLanguage).sections[spotId] || {};
-    const localeText = getLocale(lang).sections[spotId] || {};
-    const defaultAudio = defaultText.audio || {};
-    const localeAudio = localeText.audio || {};
-
-    return Object.assign({}, defaultText, localeText, {
-      details: Array.isArray(localeText.details)
-        ? localeText.details
-        : Array.isArray(defaultText.details)
-          ? defaultText.details
-          : [],
-      bullets: Array.isArray(localeText.bullets)
-        ? localeText.bullets
-        : Array.isArray(defaultText.bullets)
-          ? defaultText.bullets
-          : [],
-      challenge: lang === defaultLanguage ? defaultText.challenge : localeText.challenge || null,
-      audio: Object.assign({}, defaultAudio, localeAudio),
-    });
-  }
-
-  function getSpotLabel(spotId, lang) {
-    const spotText = getSpotText(spotId, lang || defaultLanguage);
-    return spotText.shortTitle || spotText.title || spotId;
-  }
-
-  function getImageAlt(spotId, lang) {
-    const spotText = getSpotText(spotId, lang);
-    return spotText.imageAlt || spotText.shortTitle || spotText.title || getSpotLabel(spotId);
-  }
-
-  function getAudio(spotId, lang) {
-    const requestedAudio = getSpotText(spotId, lang).audio || {};
-    if (requestedAudio.path && requestedAudio.ready !== false) {
-      return requestedAudio;
+      return content;
     }
 
-    const defaultAudio = getSpotText(spotId, defaultLanguage).audio || {};
-    if (defaultAudio.path && defaultAudio.ready !== false) {
-      return defaultAudio;
+    getContent(lang) {
+      const requestedLang = lang || this.currentLanguage;
+
+      if (requestedLang === this.currentLanguage) {
+        return this.currentContent;
+      }
+
+      return this.loader.getCached(requestedLang);
     }
 
-    const fallbackLang = supportedLanguages.find(function (candidateLang) {
-      const candidateAudio = getSpotText(spotId, candidateLang).audio || {};
-      return candidateAudio.path && candidateAudio.ready !== false;
-    });
+    getUi(lang) {
+      const content = this.getContent(lang);
+      return content && content.ui ? content.ui : {};
+    }
 
-    return fallbackLang ? getSpotText(spotId, fallbackLang).audio : { path: "" };
+    getSections(lang) {
+      const content = this.getContent(lang);
+      return content && Array.isArray(content.sections) ? content.sections : [];
+    }
+
+    getSection(sectionId, lang) {
+      return (
+        this.getSections(lang).find((section) => {
+          return section.id === sectionId;
+        }) || null
+      );
+    }
+
+    getSectionLabel(sectionId, lang) {
+      const section = this.getSection(sectionId, lang);
+      return section ? section.navigationTitle || section.title || sectionId : sectionId;
+    }
+
+    getImageAlt(sectionId, lang) {
+      const section = this.getSection(sectionId, lang);
+      return section ? section.imageAlt || section.navigationTitle || section.title || sectionId : sectionId;
+    }
+
+    getAudio(sectionId, lang) {
+      const section = this.getSection(sectionId, lang);
+      const audio = section && section.audio ? section.audio : {};
+
+      if (audio.path && audio.ready !== false) {
+        return audio;
+      }
+
+      return { path: "" };
+    }
+
+    getMiniMap(lang) {
+      const content = this.getContent(lang);
+      return content && content.miniMap ? content.miniMap : {};
+    }
+
+    getLanguageName(lang) {
+      const content = this.getContent(lang);
+      return content && content.nativeName ? content.nativeName : getNativeLanguageName(lang);
+    }
   }
 
-  function getMiniMap(lang) {
-    const defaultMiniMap = getLocale(defaultLanguage).index.miniMap || {};
-    const requestedMiniMap = getLocale(lang).index.miniMap || {};
-
-    return Object.assign({}, defaultMiniMap, requestedMiniMap);
-  }
-
-  function getLanguageName(lang) {
-    const language = getLocale(lang).index;
-    return language.nativeName || lang.toUpperCase();
-  }
-
-  function getLanguageDisplayLabel(lang, displayLang) {
-    return getLocalizedLanguageName(lang, displayLang);
-  }
-
-  window.MYLOTOPI_GUIDE_I18N = {
-    defaultLanguage: defaultLanguage,
-    supportedLanguages: supportedLanguages,
-    loadContent: loadContent,
-    normalizeLanguage: normalizeLanguage,
-    getLanguageName: getLanguageName,
-    getLanguageLabel: getLanguageDisplayLabel,
-    getUi: getUi,
-    getSpotText: getSpotText,
-    getSpotLabel: getSpotLabel,
-    getImageAlt: getImageAlt,
-    getAudio: getAudio,
-    getMiniMap: getMiniMap,
+  window.MYLOTOPI_GUIDE_CONTENT = {
+    GuideContentLoader: GuideContentLoader,
   };
+
+  window.MYLOTOPI_GUIDE_I18N = new GuideContentService(meta);
 })();

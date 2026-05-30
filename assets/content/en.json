@@ -1,0 +1,583 @@
+{
+  "code": "en",
+  "nativeName": "English",
+  "aliases": [
+    "en",
+    "english",
+    "en-gb",
+    "en-us",
+    "en_gb",
+    "en_us"
+  ],
+  "ui": {
+    "pageTitle": "Windmill Experience",
+    "heroTitle": "Windmill Experience",
+    "intro": "A companion walk through the restored Mylotopi village: windmill, stone, bread, herbs, family memory and the everyday rhythm of old Kefalos.",
+    "languageLabel": "Language",
+    "sectionsLabel": "Guide stops",
+    "audioHeading": "Audio guide",
+    "readMore": "Read the full story",
+    "readLess": "Show less",
+    "challengeLabel": "For young visitors",
+    "previousSection": "Previous stop",
+    "nextSection": "Next stop",
+    "kicker": "Kefalos, Kos · Audio guide",
+    "navigationLabel": "Audio-guide navigation",
+    "currentSectionLabel": "Current stop",
+    "miniMapTitle": "MINI MAP",
+    "miniMapDescription": "See the route before continuing.",
+    "miniMapTapHint": "Tap to open the full route map",
+    "miniMapView": "View map",
+    "miniMapOpen": "Open map",
+    "miniMapDownload": "Download map",
+    "miniMapModalClose": "Close map",
+    "miniMapImageAlt": "Mylotopi mini-map showing the nine tour stops",
+    "sectionSelectorLabel": "Tour stop",
+    "sectionSelectorPlaceholder": "Choose a stop",
+    "audioTitleLabel": "Now listening",
+    "audioAriaLabel": "{label}: {title}",
+    "selectedBadge": "Current stop",
+    "imagePlaceholderLabel": "Image",
+    "imagePlaceholderHint": "A location image can be added here when available.",
+    "audioFallback": "The audio file is not available in this language yet.",
+    "announcerPrefix": "Active stop",
+    "galleryPrevious": "Previous image",
+    "galleryNext": "Next image",
+    "imageCounter": "{current} / {total}",
+    "challengeTitle": "Look closer",
+    "previousSectionAria": "Go to previous stop: {title}",
+    "nextSectionAria": "Go to next stop: {title}",
+    "sectionLabelSeparator": " · ",
+    "loadErrorTitle": "Unable to load guide content.",
+    "loadErrorBody": "Please serve this folder as a static website and reload the page."
+  },
+  "miniMap": {
+    "path": "./assets/maps/en/minimap.jpg"
+  },
+  "sections": [
+    {
+      "id": "welcome",
+      "title": "Welcome to the Windmill Experience",
+      "navigationTitle": "Welcome",
+      "preview": "Begin the walk in a restored village created to preserve the memory of old Kefalos: the windmill, the family home, the bakery, the herbs, the tunnel and the work of everyday island life.",
+      "details": [
+        "Mylotopi brings together restored spaces that once shaped daily life in Kefalos. Stone walls, wooden mechanisms, family objects and handmade tools are presented as a living story rather than a static display.",
+        "The Voudouris family restored this place with respect for local memory, so younger visitors can understand how people worked, cooked, slept, stored food and shared village life before modern comforts.",
+        {
+          "type": "heading",
+          "text": "What the walk reveals"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "The windmill",
+              "text": "A working landmark connected with wheat, flour, weather, craft and the rhythm of the village."
+            },
+            {
+              "label": "Village life",
+              "text": "A traditional house, bakery, garden and threshing floor that show how families lived with care and practicality."
+            },
+            {
+              "label": "Hidden history",
+              "text": "The Italian tunnel and cellar add a quieter story from the 1940s beneath the warm village surface."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to use the audio guide"
+        },
+        "Select your language, choose the stop you are visiting, then play the audio when you are ready. The guide is designed for a slow outdoor walk, so you can pause, look around and continue at your own pace."
+      ],
+      "challenge": {
+        "label": "For young visitors",
+        "title": "Look and find",
+        "items": [
+          {
+            "text": "Look around you."
+          },
+          {
+            "text": "Can you find something made of stone?"
+          },
+          {
+            "text": "Choose one detail and show it to your family."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/en/section-01.mp3",
+        "ready": true
+      },
+      "imageAlt": "Welcome to the Windmill Experience"
+    },
+    {
+      "id": "herb-garden",
+      "title": "Garden with Herbs",
+      "navigationTitle": "Garden with Herbs",
+      "preview": "Pause among the herbs of the island. Thyme, oregano, mint, marjoram and lavender connect the kitchen, the home remedy and the memory of family life in Kefalos.",
+      "details": [
+        "Before supermarkets and modern pharmacies were part of daily life, a small garden could be both kitchen and medicine cabinet. Herbs gave flavor to food, comfort to the body and scent to the home.",
+        "At Mylotopi, these plants help visitors understand the practical wisdom of island families. A few leaves could season bread, meat or vegetables; the same garden could offer a simple infusion for a difficult day.",
+        {
+          "type": "heading",
+          "text": "What this stop reveals"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Kitchen knowledge",
+              "text": "Thyme, oregano, mint, marjoram and lavender connected everyday cooking with the island landscape."
+            },
+            {
+              "label": "Home remedies",
+              "text": "Families used familiar plants for simple comfort before modern medicines were easy to reach."
+            },
+            {
+              "label": "Quiet beauty",
+              "text": "Muted greens, silver leaves and purple lavender show a softer side of village life."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Next stop"
+        },
+        "Continue toward the historic windmill, where the story moves from garden and family care to wheat, flour and hard physical work."
+      ],
+      "challenge": {
+        "label": "For young visitors",
+        "title": "Smell a herb",
+        "items": [
+          {
+            "text": "Ask before touching a leaf."
+          },
+          {
+            "text": "Smell it gently."
+          },
+          {
+            "text": "Tell your family what it reminds you of."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/en/section-02.mp3",
+        "ready": true
+      },
+      "imageAlt": "Garden with Herbs"
+    },
+    {
+      "id": "windmill-first-floor",
+      "title": "Windmill Base",
+      "navigationTitle": "Windmill Base",
+      "preview": "Step inside the base of the Mill of the Priest, one of the oldest working windmills in the Dodecanese. Thick stone, wood, weight and wind all meet here.",
+      "details": [
+        "The windmill is more than 400 years old and worked daily until 1987. Today it still preserves the craft of grinding wheat into flour, a task that once helped feed much of the village.",
+        "At the entrance, traditional signs of blessing and protection welcome visitors. The stone walls are about 1.2 meters thick, built to stand against strong sea winds and to hold the power of the mechanism above.",
+        {
+          "type": "heading",
+          "text": "Notice this"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Working objects",
+              "text": "Storage areas, a wooden saddle, a threshing sledge, scales and weights connect the miller to rural labor."
+            },
+            {
+              "label": "Practical fireplace",
+              "text": "Fat was warmed here and used to lubricate parts of the mechanism."
+            },
+            {
+              "label": "First brake",
+              "text": "A small rope lifted the heavy millstones slightly so the sails could be handled more safely outside."
+            },
+            {
+              "label": "Wider memory",
+              "text": "Photographs of windmills across Greece place this mill inside a larger island tradition."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Next stop"
+        },
+        "Move carefully upward to the second floor of the windmill, where work and family life came surprisingly close together."
+      ],
+      "challenge": {
+        "label": "For young visitors",
+        "title": "Find stone and wood",
+        "items": [
+          {
+            "text": "Look around the room."
+          },
+          {
+            "text": "Point to one thing made of stone."
+          },
+          {
+            "text": "Point to one thing made of wood."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/en/section-03.mp3",
+        "ready": true
+      },
+      "imageAlt": "Windmill Base"
+    },
+    {
+      "id": "windmill-second-floor",
+      "title": "Sleeping Area",
+      "navigationTitle": "Sleeping Area",
+      "preview": "On the second floor, the windmill becomes intimate. This was not only a working building, but also a place where the miller's family rested beside the stored wheat and flour.",
+      "details": [
+        "Please watch your step on the wooden stairs and mind the low timber above you. The windmill was built for work first, so every movement inside it asks for attention.",
+        "On one side, historic images show windmills from across Greece. On the other, the room recalls a more personal truth: the miller and his family slept close to the sound, movement and responsibility of the mill.",
+        {
+          "type": "heading",
+          "text": "Why it mattered"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Stored wheat",
+              "text": "Bags of raw wheat and fresh flour stayed nearby because flour meant food, income and security."
+            },
+            {
+              "label": "Shared space",
+              "text": "Rest, storage and responsibility had to fit inside the same small working building."
+            },
+            {
+              "label": "Family life",
+              "text": "The room shows how private life and labor could meet closely in an island household."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Next stop"
+        },
+        "Continue upward to the machinery, where the wooden structure and stone wheels reveal how wind became flour."
+      ],
+      "challenge": {
+        "label": "For young visitors",
+        "title": "Imagine sleeping here",
+        "items": [
+          {
+            "text": "Look around this small space."
+          },
+          {
+            "text": "Where would you put a pillow?"
+          },
+          {
+            "text": "Point to a quiet corner."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/en/section-04.mp3",
+        "ready": true
+      },
+      "imageAlt": "Wooden sleeping platform inside the Mylotopi windmill"
+    },
+    {
+      "id": "windmill-third-floor",
+      "title": "Machinery",
+      "navigationTitle": "Machinery",
+      "preview": "At the upper level, the windmill shows its intelligence. Wooden beams, gears, ropes and stone wheels translated the force of the wind into the flour that sustained village life.",
+      "details": [
+        "Please move slowly and mind your head. The mechanism above and around you is the heart of the mill, joining the sails outside with the grinding stones inside.",
+        "The two millstones weigh more than two tons together and came from Nisyros, an island known for strong stone suited to milling. Raw wheat was poured into the feeder above the stones.",
+        {
+          "type": "heading",
+          "text": "How the machinery worked"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Feeder and bell",
+              "text": "A small bell helped the miller hear when the wheat was running low."
+            },
+            {
+              "label": "Flour path",
+              "text": "Finished flour passed through a pipe to the lower floor, where the miller could keep a share as payment."
+            },
+            {
+              "label": "Ropes and brakes",
+              "text": "Levers slowed the stones or stopped the work quickly when needed."
+            },
+            {
+              "label": "Boat-like ceiling",
+              "text": "The shape reflects local intelligence shaped by wind, wood, sea and daily work."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Next stop"
+        },
+        "Return outside toward the threshing floor, where wheat was prepared before it reached the mill."
+      ],
+      "challenge": {
+        "label": "For young visitors",
+        "title": "Find the bell",
+        "items": [
+          {
+            "text": "Look for a small bell."
+          },
+          {
+            "text": "What sound would it make?"
+          },
+          {
+            "text": "Show it to your family."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/en/section-05.mp3",
+        "ready": true
+      },
+      "imageAlt": "Machinery"
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "title": "Threshing Floor and Donkeys",
+      "navigationTitle": "Threshing Floor",
+      "preview": "Back outside, the stone circle tells the story of wheat before milling. Here, harvest, animal strength and patient hands prepared grain for the windmill.",
+      "details": [
+        "The threshing floor was an essential outdoor workspace. Wheat and other crops were spread across the stone circle, then pressed and broken so the useful grain could be separated.",
+        "In the past, a donkey walked around the center post, helping loosen the harvested crop. Afterward, people continued the work by separating and cleaning the wheat.",
+        {
+          "type": "heading",
+          "text": "Why it mattered"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Before milling",
+              "text": "Flour began with fields, weather, harvesters and repeated work before it ever reached the windmill."
+            },
+            {
+              "label": "Shared labor",
+              "text": "Animals and people worked together to prepare grain for daily food."
+            },
+            {
+              "label": "Village memory",
+              "text": "Mylotopi keeps the memory of rural animals close to the visitor experience."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Next stop"
+        },
+        "Continue toward the Italian tunnel and cellar, where the atmosphere changes from open rural work to cool stone and wartime memory."
+      ],
+      "challenge": {
+        "label": "For young visitors",
+        "title": "Find the circle",
+        "items": [
+          {
+            "text": "Look at the round floor."
+          },
+          {
+            "text": "Find the middle."
+          },
+          {
+            "text": "Follow the circle with your eyes."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/en/section-06.mp3",
+        "ready": true
+      },
+      "imageAlt": "Threshing Floor and Donkeys"
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "title": "Italian Tunnel and Cellar",
+      "navigationTitle": "Tunnel and Cellar",
+      "preview": "Enter a cooler, quieter part of Mylotopi. The tunnel and cellar connect stone, wine and the more hidden history of the 1940s.",
+      "details": [
+        "As you step underground, notice the temperature, the curve of the walls and the way sound changes inside the stone passage.",
+        "Today, the cellar presents wine and atmosphere as part of the Mylotopi experience. The cool stone setting also reminds visitors that the same space once belonged to a different moment in history.",
+        {
+          "type": "heading",
+          "text": "What this stop reveals"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Cool stone",
+              "text": "The tunnel changes the pace of the visit through temperature, sound and enclosure."
+            },
+            {
+              "label": "Wartime shelter",
+              "text": "In the 1940s, the passage was connected with Italian soldiers and the needs of defense."
+            },
+            {
+              "label": "Wine cellar",
+              "text": "The same space now holds hospitality, wine and atmosphere."
+            },
+            {
+              "label": "Strong contrast",
+              "text": "The route leads from protection and defense back toward food, welcome and the view over Kefalos."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Next stop"
+        },
+        "When you leave the tunnel, continue toward the traditional house and bakery to return to the domestic life of the old village."
+      ],
+      "challenge": {
+        "label": "For young visitors",
+        "title": "Feel the cool air",
+        "items": [
+          {
+            "text": "Stand quietly for a moment."
+          },
+          {
+            "text": "Does it feel cooler here?"
+          },
+          {
+            "text": "Count three bottles or stones."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/en/section-07.mp3",
+        "ready": true
+      },
+      "imageAlt": "Italian Tunnel and Cellar"
+    },
+    {
+      "id": "traditional-house",
+      "title": "The Traditional House",
+      "navigationTitle": "Traditional House",
+      "preview": "The traditional house shows the intelligence of a small island home. In less than 20 square meters, family life, cooking, storage, sleep and craft all had their place.",
+      "details": [
+        "This house is more than 130 years old. Families of many generations could share one compact room, arranging each object with care because space was precious.",
+        "The fireplace was the heart of the home, used for cooking, warmth and gathering. Nearby objects such as the hand mill, plates and kitchenware show the daily rhythm of preparing food.",
+        {
+          "type": "heading",
+          "text": "How people used the space"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Rest and storage",
+              "text": "Beds, storage spaces, a cradle and a hanging bread keeper solved practical needs in a crowded household."
+            },
+            {
+              "label": "Food keeping",
+              "text": "Before electric refrigeration, ice and clever airflow helped keep food cool and water fresh."
+            },
+            {
+              "label": "Work and identity",
+              "text": "The loom, chest, uniforms, photographs and religious images speak about work, ceremony, memory and belonging."
+            },
+            {
+              "label": "Careful design",
+              "text": "Nothing was accidental; each object had a place and a purpose."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Next stop"
+        },
+        "Continue to the bakery, where the village story moves from the family hearth to the communal stone oven."
+      ],
+      "challenge": {
+        "label": "For young visitors",
+        "title": "Find three things",
+        "items": [
+          {
+            "text": "Find something for cooking."
+          },
+          {
+            "text": "Find something for sleeping."
+          },
+          {
+            "text": "Find something for storing food."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/en/section-08.mp3",
+        "ready": true
+      },
+      "imageAlt": "The Traditional House"
+    },
+    {
+      "id": "bakery",
+      "title": "The Stone Oven",
+      "navigationTitle": "Stone Oven",
+      "preview": "The bakery completes the story of wheat and flour. Here, the village gathered around bread, fire, patience and the shared work of daily nourishment.",
+      "details": [
+        "The stone oven is more than 150 years old. In the past, many women of the village brought bread here for their families, making the bakery a practical and social center.",
+        "Bread was not rushed. Dough was mixed and shaped the day before, then left to rest. Early the next morning, the oven was heated carefully before the loaves were placed inside.",
+        {
+          "type": "heading",
+          "text": "Why it mattered"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Shared oven",
+              "text": "The village gathered around bread, fire, patience and the work of daily nourishment."
+            },
+            {
+              "label": "Slow process",
+              "text": "After one or two hours of baking, the smell of fresh bread would move through the village."
+            },
+            {
+              "label": "Complete cycle",
+              "text": "Bread joined home, field, mill and oven into one cycle of island life."
+            },
+            {
+              "label": "Place to pause",
+              "text": "At the end of the walk, the restaurant-cafe offers a natural moment to look back across the village."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Thank you"
+        },
+        "Thank you for walking through Mylotopi and the memory of old Kefalos with us."
+      ],
+      "challenge": {
+        "label": "For young visitors",
+        "title": "Follow the bread",
+        "items": [
+          {
+            "text": "Point to the oven."
+          },
+          {
+            "text": "Imagine warm bread inside."
+          },
+          {
+            "text": "Tell your family what it might smell like."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/en/section-09.mp3",
+        "ready": true
+      },
+      "imageAlt": "The Stone Oven"
+    }
+  ]
+}

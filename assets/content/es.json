@@ -1,0 +1,698 @@
+{
+  "code": "es",
+  "nativeName": "Español",
+  "aliases": [
+    "es",
+    "spanish",
+    "español",
+    "espanol",
+    "es-es",
+    "es_es"
+  ],
+  "ui": {
+    "pageTitle": "¡Bienvenido a la Experiencia del Molino de Viento!",
+    "intro": "Viaja en el tiempo: ¡Prepárate para adentrarte en el pasado! No necesitarás una máquina del tiempo para este viaje, solo unos zapatos cómodos.",
+    "languageLabel": "Idioma",
+    "sectionsLabel": "Paradas de la guía",
+    "audioHeading": "Audioguía",
+    "readMore": "Leer más",
+    "readLess": "Mostrar menos",
+    "challengeLabel": "Para visitantes jóvenes",
+    "previousSection": "Parada anterior",
+    "nextSection": "Parada siguiente",
+    "kicker": "Guía QR de Mylotopi",
+    "navigationLabel": "Navegación de la audioguía",
+    "currentSectionLabel": "Parada actual",
+    "miniMapTitle": "MINI MAPA",
+    "miniMapDescription": "Consulta la ruta antes de continuar.",
+    "miniMapTapHint": "Toca el mapa para abrirlo",
+    "miniMapOpen": "Abrir mapa",
+    "miniMapDownload": "Descargar mapa",
+    "miniMapModalClose": "Cerrar mapa",
+    "miniMapImageAlt": "Mini mapa de Mylotopi con las nueve paradas del recorrido",
+    "sectionSelectorLabel": "Parada",
+    "sectionSelectorPlaceholder": "Elige una parada",
+    "audioTitleLabel": "Escuchando",
+    "audioAriaLabel": "{label}: {title}",
+    "selectedBadge": "Parada actual",
+    "imagePlaceholderLabel": "Imagen",
+    "imagePlaceholderHint": "Aquí se puede añadir una foto del lugar.",
+    "audioFallback": "El audio no está disponible en este idioma.",
+    "announcerPrefix": "Parada actual",
+    "galleryPrevious": "Imagen anterior",
+    "galleryNext": "Imagen siguiente",
+    "imageCounter": "{current} / {total}",
+    "challengeTitle": "Mira con atención",
+    "previousSectionAria": "Ir a la parada anterior: {title}",
+    "nextSectionAria": "Ir a la parada siguiente: {title}",
+    "sectionLabelSeparator": " · ",
+    "loadErrorTitle": "No se pudo cargar la guía.",
+    "loadErrorBody": "Sirve esta carpeta como sitio estático y recarga la página.",
+    "heroTitle": "¡Bienvenido a la Experiencia del Molino de Viento!"
+  },
+  "miniMap": {
+    "path": "./assets/maps/es/minimap.jpg"
+  },
+  "sections": [
+    {
+      "id": "welcome",
+      "title": "¡Bienvenido a la Experiencia del Molino de Viento!",
+      "navigationTitle": "Bienvenida",
+      "preview": "Viaja en el tiempo: ¡Prepárate para adentrarte en el pasado! No necesitarás una máquina del tiempo para este viaje, solo unos zapatos cómodos.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Un pueblo restaurado",
+              "text": "Gracias a la hermosa restauración realizada por la familia Voudouris, verás exactamente cómo vivían los isleños hace más de un siglo, mucho antes de que se inventara el Wi-Fi. ¡También podrás curiosear y descubrir un poco de historia secreta de la década de 1940!"
+            },
+            {
+              "label": "La vida del molinero",
+              "text": "Hoy podrás ponerte en los zapatos de un verdadero molinero. Alerta de spoiler: su rutina diaria de ejercicios consistía en levantar pesados sacos de harina todo el día solo para alimentar a la mayor parte del pueblo."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Lo que explorarás:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "El molino de viento gigante",
+              "text": "Explora un molino de viento real y en funcionamiento desde la base hasta la cima."
+            },
+            {
+              "label": "La vida del pueblo",
+              "text": "Echa un vistazo al interior de la casa tradicional y la panadería."
+            },
+            {
+              "label": "Naturaleza y animales",
+              "text": "Huele las maravillosas hierbas de nuestros jardines, visita la era y saluda a nuestros adorables burros."
+            },
+            {
+              "label": "Secretos subterráneos",
+              "text": "¡Camina directamente a través de un túnel militar real!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Cómo escuchar el recorrido:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Es súper fácil",
+              "text": "Adultos, simplemente escaneen los códigos QR que encuentren usando la cámara de su teléfono. ¡No necesitan descargar ninguna aplicación!"
+            },
+            {
+              "label": "Escuchen juntos",
+              "text": "Solo suban el volumen de su teléfono o compartan unos auriculares, y sigan los números por todo el pueblo."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Próximo destino:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "A continuación",
+              "text": "¡Dirígete a nuestros jardines de hierbas aromáticas!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "¡Una misión secreta para los jóvenes exploradores!",
+        "items": [
+          {
+            "label": "Toma tu equipo artístico",
+            "text": "Te daremos un boceto especial de Mylotopi y algunos lápices de colores para que te los lleves."
+          },
+          {
+            "label": "Observa todo",
+            "text": "¡Mientras paseas hoy, mantén los ojos bien abiertos! Mira muy de cerca el molino de viento gigante, las piedras pesadas y las herramientas antiguas. Trata de memorizar todos los hermosos colores que veas."
+          },
+          {
+            "label": "Crea una obra maestra",
+            "text": "Cuando termines tu aventura y te sientes a relajarte en nuestro restaurante-café, ¡podrás colorear tu dibujo y convertirlo en una verdadera obra maestra!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/es/section-01.mp3",
+        "ready": true
+      },
+      "imageAlt": "¡Bienvenido a la Experiencia del Molino de Viento!"
+    },
+    {
+      "id": "herb-garden",
+      "title": "¡Nuestro jardín con nuestras hierbas aromáticas!",
+      "navigationTitle": "Jardín de hierbas",
+      "preview": "¿Cocina o farmacia? ¡Respira profundo! ¿Huele a una cocina gigante al aire libre o a la farmacia del pueblo? En realidad, ¡es ambas cosas!",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "El kit de supervivencia definitivo",
+              "text": "Antes de la medicina moderna y los supermercados, estos jardines eran el kit de supervivencia de la isla. Estas parcelas están llenas de las mismas hierbas exactas que han crecido aquí durante siglos."
+            },
+            {
+              "label": "El médico de la naturaleza",
+              "text": "Las hierbas como el tomillo, el orégano y la mejorana no solo se usaban para hacer que la cena supiera increíble, ¡eran el médico local! Si a alguien le dolía el estómago, la familia del molinero no corría a la farmacia a por un jarabe rosa de mal sabor; venían aquí mismo a recoger hojas para hacer un remedio natural."
+            },
+            {
+              "label": "Una paleta de pintor",
+              "text": "¡Mira la hermosa lavanda morada y la brillante menta verde! Parece como si alguien las hubiera pintado directamente en el jardín. ¡Presta mucha atención a esos colores brillantes!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Próximo destino:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "A continuación",
+              "text": "¡Dirígete al molino de viento histórico!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "¡Una misión para nuestros jóvenes detectives de plantas y adultos!",
+        "items": [
+          {
+            "label": "Diversión a la antigua",
+            "text": "¡Guarden los teléfonos por un segundo, vamos a volver totalmente a la vieja escuela! ¿Ven las piezas físicas del rompecabezas esparcidas por ahí?"
+          },
+          {
+            "label": "Usa tus sentidos",
+            "text": "Tu trabajo es descubrir qué palabra pertenece a qué planta. ¡Tendrás que usar tus ojos y tu nariz!"
+          },
+          {
+            "label": "Frota y huele",
+            "text": "Adelante, frota las hojas de forma muy suave y huélelas (pero, por favor, nada de pastar: ¡no se coman el jardín antes del almuerzo!)."
+          },
+          {
+            "label": "Resuelve el rompecabezas",
+            "text": "¿Puedes mover las piezas del rompecabezas para que coincidan con las hierbas correctas? A ver si puedes descubrir la diferencia entre la menta y el orégano. ¿Cuál huele a una deliciosa pizza y cuál huele a una siesta acogedora?"
+          },
+          {
+            "label": "Recordatorio para el cuaderno de bocetos",
+            "text": "¡Mantengan los ojos bien abiertos, detectives de plantas! Recuerden los diferentes colores verde, gris y morado para colorear su boceto de Mylotopi más tarde."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/es/section-02.mp3",
+        "ready": true
+      },
+      "imageAlt": "¡Nuestro jardín con nuestras hierbas aromáticas!"
+    },
+    {
+      "id": "windmill-first-floor",
+      "title": "La base del molino de viento (1er piso)",
+      "navigationTitle": "La base del molino de viento (1er piso)",
+      "preview": "Una leyenda viva: ¡Bienvenido al \"Molino del Sacerdote\"! Te encuentras dentro del molino de viento en funcionamiento más antiguo de toda la isla y de todo el complejo del Dodecaneso. ¡Tiene más de 400 años, funcionó a diario hasta 1987 y sigue siendo una máquina viva que muele harina hoy en día!",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "En la entrada",
+              "text": "Al cruzar la puerta, observa la tradicional granada colgada para la buena suerte, junto a una pequeña botella de agua bendita del Monte Athos que tiene más de 9 años."
+            },
+            {
+              "label": "Construido para las tormentas",
+              "text": "Esta máquina gigante mide 6,2 metros de altura, y los muros de piedra que te rodean tienen 1,2 metros de grosor para mantener el edificio a salvo de las fuertes tormentas marinas."
+            },
+            {
+              "label": "Maquinaria enorme",
+              "text": "En los pisos superiores, hay dos enormes piedras de moler que pesan una tonelada cada una, ¡eso es más de dos toneladas en total!"
+            },
+            {
+              "label": "Madera antigua",
+              "text": "El 80% de la madera de este edificio es original, y el resto fue traído desde el Monte Athos. Sorprendentemente, ¡algunas de las piezas de madera reutilizadas que giran arriba tienen entre 1.000 y 1.300 años de antigüedad!"
+            },
+            {
+              "label": "A tu derecha",
+              "text": "¿Ves el área cubierta con un trapo? Ese era el almacén del molinero. Junto a él, verás una montura de madera para burro y un trineo de trilla que el burro del molinero tiraba para separar el trigo. También puedes ver herramientas de madera de uso diario y hermosas fotos de otros molinos de viento en toda Grecia."
+            },
+            {
+              "label": "La chimenea",
+              "text": "¡El molinero no solo la usaba para calentarse! Mira de cerca en su interior: ¿ves una lata? Contiene grasa de vaca, que el molinero derretía para lubricar las partes móviles del molino y evitar que rechinaran. Justo encima de la chimenea hay una fotografía de Kostas Politis, el querido propietario de este molino, cuyo legado sigue vivo aquí mismo."
+            },
+            {
+              "label": "A tu izquierda",
+              "text": "Verás una balanza tradicional y pesas, que se usaban para pesar cuidadosamente la harina fresca."
+            },
+            {
+              "label": "Los primeros frenos",
+              "text": "Busca la pequeña cuerda que cuelga. Lo creas o no, ¡esa cuerda fue el primer sistema de frenado del molino! El molinero tiraba de ella para levantar un poquito esas piedras de moler de dos toneladas, lo que le permitía salir con seguridad a desenrollar las velas."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Próximo destino:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "A continuación",
+              "text": "¡Dirígete al segundo piso del molino de viento!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "¡Una misión para nuestros jóvenes exploradores y adultos!",
+        "items": [
+          {
+            "label": "Pon a prueba los muros",
+            "text": "¡Veamos qué tan gruesos son realmente esos muros! Ve a pararte junto a la puerta y estira los brazos lo más que puedas. ¿Tus brazos son más largos que el grosor del muro, o gana el molino de viento?"
+          },
+          {
+            "label": "Espía",
+            "text": "¡Mira alrededor de la habitación y ve si puedes encontrar la montura de madera para burros!"
+          },
+          {
+            "label": "Encuentra la grasa",
+            "text": "Asómate a la chimenea, ¿puedes ver la lata oculta de grasa de vaca?"
+          },
+          {
+            "label": "Encuentra los frenos",
+            "text": "¡Busca la pequeña cuerda colgante que actuaba como el sistema de frenado del molino!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/es/section-03.mp3",
+        "ready": true
+      },
+      "imageAlt": "La base del molino de viento (1er piso)"
+    },
+    {
+      "id": "windmill-second-floor",
+      "title": "La zona de descanso del molino de viento (2º piso)",
+      "navigationTitle": "Zona de descanso",
+      "preview": "Cuidado por dónde pisas: ¡Bienvenido al segundo piso! Ten cuidado al pisar las escaleras de madera y vigila tu cabeza con las vigas de arriba. Prepárate para una gran sorpresa sobre cómo vivía la familia.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "A tu derecha",
+              "text": "En las paredes, verás unas hermosas fotos que muestran diferentes molinos de viento históricos de toda Grecia. ¡Pero este espacio no era solo una galería!"
+            },
+            {
+              "label": "Un dormitorio muy ruidoso",
+              "text": "¡Justo aquí, en el lado derecho, es en realidad donde el molinero y toda su familia solían dormir! ¿Te imaginas intentar tomar una siesta tranquila mientras todo el edificio temblaba, el viento aullaba y la pesada maquinaria trituraba ruidosamente el trigo a solo unos metros de distancia? ¡Debían tener un sueño muy profundo!"
+            },
+            {
+              "label": "A tu izquierda",
+              "text": "Ahora, mira hacia el lado izquierdo. Este era un espacio de almacenamiento muy importante y concurrido."
+            },
+            {
+              "label": "Protegiendo la harina",
+              "text": "El molinero usaba este lado de la habitación para apilar de forma segura todos los pesados sacos de trigo crudo que esperaban ser molidos, junto a los sacos recién llenados de harina blanca y esponjosa que estaban listos para salir a alimentar al pueblo. ¡Los guardaba justo aquí, cerca de su cama, para poder protegerlos!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Próximo destino:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "A continuación",
+              "text": "¡Dirígete al tercer piso del molino de viento!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "¡Una pregunta para nuestros jóvenes exploradores y adultos!",
+        "items": [
+          {
+            "label": "Imagina esto",
+            "text": "¿Podrías imaginarte durmiendo en el segundo piso exactamente como solían hacerlo ellos?"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/es/section-04.mp3",
+        "ready": true
+      },
+      "imageAlt": "La zona de descanso del molino de viento (2º piso)"
+    },
+    {
+      "id": "windmill-third-floor",
+      "title": "La maquinaria del molino de viento (3er piso)",
+      "navigationTitle": "Maquinaria del molino",
+      "preview": "Cuidado con la cabeza: ¡Bienvenido al tercer piso! Por favor, ten cuidado al pisar la escalera y vigila tu cabeza mientras exploras.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "El músculo del molino",
+              "text": "Ahora estás viendo el verdadero poder del molino de viento. Mira esa enorme viga de madera sobre las piedras. ¡Es el conector principal que une las pesadas piedras del interior, los engranajes y las gigantescas velas giratorias del exterior!"
+            },
+            {
+              "label": "Piedras de dos toneladas",
+              "text": "¡Estas enormes piedras de moler pesan más de dos toneladas juntas! Fueron importadas desde la isla de Nísiros, que es famosa por producir una piedra única y súper resistente, perfecta para la molienda."
+            },
+            {
+              "label": "El alimentador y la campana",
+              "text": "Mira justo encima de las piedras para buscar una caja de madera llamada El Alimentador, donde el molinero vertía el trigo crudo. Pero, ¿cómo sabía cuándo estaba vacía con todo ese ruido fuerte? ¡Busca con cuidado una pequeña campana! Sonaba automáticamente cuando el trigo se agotaba para avisar al molinero de que debía rellenarlo."
+            },
+            {
+              "label": "El primer freno",
+              "text": "¿Ves esa palanca de madera conectada a una pequeña cuerda? Se conecta hasta el primer piso y es el primer sistema de frenado del que hablamos abajo."
+            },
+            {
+              "label": "La caída de la harina",
+              "text": "Mira hacia abajo cerca de la palanca para encontrar una trampilla que se conecta a un tubo. ¡Tan pronto como la harina estaba perfectamente triturada, caía directamente por ese tubo hasta la planta baja!"
+            },
+            {
+              "label": "La \"propina\" del molinero",
+              "text": "Justo al lado del tubo principal hay una segunda trampilla, más pequeña. En los viejos tiempos, la gente no siempre pagaba con dinero. En su lugar, el molinero usaba esta puerta para recolectar su \"propina\": ¡se quedaba con un pequeño porcentaje de la harina para su propia familia como pago por su duro trabajo!"
+            },
+            {
+              "label": "Giro suave",
+              "text": "Localiza la pequeña lata cerca de las trampillas. Abajo usaba grasa de vaca, pero aquí arriba, usaba una mezcla especial de aceite de oliva y jabón para que los engranajes superiores funcionaran sin problemas."
+            },
+            {
+              "label": "El freno de emergencia",
+              "text": "Busca junto a la escalera una cuerda muy gruesa. Si el molinero necesitaba detener por completo la producción de harina a toda prisa, tiraba de esta cuerda: ¡el segundo sistema de frenado!"
+            },
+            {
+              "label": "El techo de un barco",
+              "text": "Por último, mira hacia el techo. ¿A qué te recuerda? ¡En realidad está diseñado con la forma de un barco para aumentar la potencia del mecanismo y producir harina más rápidamente!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Próximo destino:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "A continuación",
+              "text": "¡Dirígete a la era y a la zona de los burros!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "¡Una misión para nuestros jóvenes exploradores y adultos!",
+        "items": [
+          {
+            "label": "Encuentra la campana y hazla sonar",
+            "text": "¿Puedes encontrar la pequeña campana que advertía al molinero cuando se acababa el trigo? ¿Puedes hacerla sonar?"
+          },
+          {
+            "label": "Encuentra la harina oculta",
+            "text": "¡Examina el suelo y mira si puedes encontrar la trampilla especial de la \"propina\" donde el molinero guardaba su pago ganado con tanto esfuerzo!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/es/section-05.mp3",
+        "ready": true
+      },
+      "imageAlt": "La maquinaria del molino de viento (3er piso)"
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "title": "¡La era y los burros!",
+      "navigationTitle": "¡La era y los burros!",
+      "preview": "Aire fresco y suelos de piedra: ¡Bienvenido de nuevo al exterior! Respira profundo el aire fresco. Ahora te encuentras cerca de la era tradicional, que se parece mucho a una gran pista de baile redonda de piedra.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "El burro mareado",
+              "text": "Mira justo en el medio del círculo hacia el poste de madera. En los viejos tiempos, el molinero ataba sin apretar una cuerda desde ese poste al cuello de un burro. ¡El trabajo del burro consistía en caminar dando vueltas en un gran círculo, usando sus pesadas patas para pisotear y aplastar los cultivos cosechados para liberar las semillas!"
+            },
+            {
+              "label": "Separando el trigo",
+              "text": "Después de que el trabajador burro terminaba todo este pisoteo mareador, el molinero intervenía para separar cuidadosamente el trigo blanco del trigo marrón. (¡Hoy en día, no usamos este método; compramos nuestro trigo directamente a los productores locales de la isla!)."
+            },
+            {
+              "label": "Conoce a las verdaderas estrellas",
+              "text": "¡No tienes que imaginarte a los animales! Mira cerca y conocerás a las verdaderas estrellas de la granja: nuestras dos adorables burras. La orgullosa mamá se llama Melina, que tiene 6 años, y su dulce hijita se llama Katie, que tiene solo 2 añitos."
+            },
+            {
+              "label": "El papá desaparecido",
+              "text": "En cuanto al papá de Katie... bueno, ¡nadie sabe realmente a dónde se fue! Le encantaba cantar muy fuerte, ¡así que creemos que caminó hasta el pueblo de al lado para formar una banda de rock de burros!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Próximo destino:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "A continuación",
+              "text": "¡Dirígete a la bodega / túnel italiano!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "¡Una misión para nuestros jóvenes exploradores y adultos!",
+        "items": [
+          {
+            "label": "El baile del burro",
+            "text": "¡Acércate al borde de la era! ¿Puedes fingir que estás atado al poste de madera central y caminar en un círculo perfecto tal como lo hacía un burro?"
+          },
+          {
+            "label": "Di hola",
+            "text": "¡Después de tu baile mareador, asegúrate de ir a saludar a Melina y Katie! ¡Por favor, admira a nuestras encantadoras burras desde la distancia! Se ven dulces, pero podrían confundir tus dedos con mini zanahorias. ¡Preferimos no averiguarlo!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/es/section-06.mp3",
+        "ready": true
+      },
+      "imageAlt": "¡La era y los burros!"
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "title": "El túnel secreto y la bodega",
+      "navigationTitle": "El túnel secreto y la bodega",
+      "preview": "Un cambio de escenario: ¡Prepárense para un cambio total de escenario mientras nos dirigimos bajo tierra! Al descender hacia el aire fresco, echen un vistazo a su izquierda y derecha.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Botellas decorativas",
+              "text": "Verán filas de vino local de la bodega Skevofilax en Kos. ¡Mantenemos estas botellas aquí como decoración! Nuestros vinos reales para beber se guardan de forma segura en la bodega principal, donde la temperatura es perfectamente adecuada para ellos."
+            },
+            {
+              "label": "Historia de la Segunda Guerra Mundial",
+              "text": "En la década de 1940, durante la Segunda Guerra Mundial, este espacio no era para el vino, era para la supervivencia. Este túnel de 20 metros fue construido por soldados italianos durante la guerra."
+            },
+            {
+              "label": "El túnel de emergencia",
+              "text": "Los soldados usaban este pasaje como un túnel de emergencia, un atajo secreto para huir y esconderse de sus oponentes. La bodega en sí se usaba como un refugio seguro donde podían dormir, relajarse y mantenerse protegidos de las batallas en el exterior."
+            },
+            {
+              "label": "Una fortaleza oculta",
+              "text": "Al final del túnel, saldrán a nuestro patio trasero, que ahora es nuestro tranquilo restaurante. ¡Pero miren hacia atrás al techo de piedra antes de salir! En la década de 1940, toda esta zona era un campo de tiro. La parte superior estaba cubierta de piedra pesada para proteger a los soldados, y justo en el borde, tenían ametralladoras para defender la ladera. ¡Es difícil creer que este lugar tranquilo y hermoso para comer fuera el lugar más vigilado de la isla!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Próximo destino:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "A continuación",
+              "text": "¡Cuando terminen de explorar el túnel, por favor regresen y busquen a nuestro guía turístico para que les muestre el camino a sus próximas paradas increíbles: la casa tradicional y la panadería!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "¡Una misión para nuestros jóvenes exploradores y adultos!",
+        "items": [
+          {
+            "label": "Alto secreto",
+            "text": "¡Ahora están en una misión secreta! Mientras caminan por el túnel de los soldados, ¿pueden calcular exactamente cuántas botellas de vino bordean las paredes?"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/es/section-07.mp3",
+        "ready": true
+      },
+      "imageAlt": "El túnel secreto y la bodega"
+    },
+    {
+      "id": "traditional-house",
+      "title": "La casa tradicional",
+      "navigationTitle": "La casa tradicional",
+      "preview": "Un hogar diminuto y abarrotado: ¡Bienvenido a la casa tradicional! Este increíble y pequeño hogar tiene más de 130 años. Mide menos de 20 metros cuadrados, pero lo creas o no, ¡de 8 a 10 personas solían vivir aquí! Los abuelos, los padres y todos sus hijos compartían esta única habitación.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "¿Dónde dormían todos? Los abuelos dormían justo al lado de la cálida chimenea. Los padres dormían en lo alto, en la cama altillo del lado opuesto, mientras que los niños mayores dormían en las camas contiguas y en el sofá."
+            },
+            {
+              "label": "A mecer al bebé",
+              "text": "¿Y el bebé? ¡Busca la pequeña cuna de madera! Para ayudar al bebé a dormirse, alguien solo tenía que tirar suavemente de esa pequeña cuerda colgante para mecerlo."
+            },
+            {
+              "label": "Almacenamiento inteligente",
+              "text": "Observa el espacio debajo de las camas familiares: esa era su sala de almacenamiento principal."
+            },
+            {
+              "label": "Tareas diarias y decoración",
+              "text": "En el lado izquierdo, puedes ver un gran telar de madera que usaban para hacer ropa nueva y reparar la vieja, junto a un baúl donde guardaban sus objetos personales. También verás un tamiz usado para la harina, y hermosas fotografías antiguas e imágenes religiosas en las paredes."
+            },
+            {
+              "label": "Jarrones y uniformes",
+              "text": "Junto al baúl, busca dos jarrones: el grande era para el vino y el pequeño para el agua. Justo encima de ellos cuelgan dos hermosos uniformes tradicionales que las damas de la casa usaban para bodas y eventos especiales."
+            },
+            {
+              "label": "El corazón del hogar",
+              "text": "Como la casa no estaba restaurada como los hogares modernos, la chimenea se usaba para cocinar todas sus comidas y mantener a toda la familia abrigada. Justo al lado hay un pequeño molino manual para moler harina, junto con sus utensilios de cocina diarios y platos tradicionales decorados con bonitas flores pintadas."
+            },
+            {
+              "label": "El columpio colgante",
+              "text": "¡Mira hacia el techo! ¿Ves algo colgando que se parece un poco a un columpio? ¡No es para jugar! Guardaban su pan fresco en la parte superior para mantenerlo a salvo de los ratones hambrientos. En la parte inferior, almacenaban algarrobas. En aquel entonces no tenían barras de chocolate, ¡así que les daban dulces algarrobas a los niños como una deliciosa golosina de chocolate!"
+            },
+            {
+              "label": "Un refrigerador tradicional",
+              "text": "Por último, busca el armario de madera. Lo creas o no, ¡este es un refrigerador tradicional! Tiene dos partes. Ponían grandes cubos de hielo en la parte superior y, a medida que el hielo se derretía, podían abrir un pequeño grifo para beber agua helada. ¡El frío de la parte superior también enfriaba perfectamente la sección inferior para mantener su comida fresca!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Próximo destino:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "A continuación",
+              "text": "¡Dirígete a la panadería!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "¡Una misión para nuestros jóvenes exploradores y adultos!",
+        "items": [
+          {
+            "label": "Gira el molino",
+            "text": "¡Tienes mucho que hacer en esta pequeña y ajetreada casa! Primero, ¿puedes encontrar el molino manual? ¡Intenta colocar el mango de madera en el hueco y mira si puedes hacerlo girar!"
+          },
+          {
+            "label": "Mira arriba y abajo",
+            "text": "Después de tu arduo trabajo, ¿puedes encontrar el columpio colgante que mantenía el pan lejos de los ratones?"
+          },
+          {
+            "label": "Mece al bebé",
+            "text": "¿Y la pequeña cuerda de la que tiraban para mecer al bebé y que se durmiera? ¿Puedes hacer que el bebé se duerma meciendo la cuerda? ¿Te resulta difícil?"
+          },
+          {
+            "label": "Imagina esto",
+            "text": "Una vez que los hayas encontrado todos, ¡imagina cómo sería compartir esta pequeña habitación con 8 o 10 miembros de tu familia!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/es/section-08.mp3",
+        "ready": true
+      },
+      "imageAlt": "La casa tradicional"
+    },
+    {
+      "id": "bakery",
+      "title": "La panadería",
+      "navigationTitle": "La panadería",
+      "preview": "Un centro comunitario: ¡Bienvenido al horno tradicional! Este hermoso horno de piedra tiene más de 150 años. En aquel entonces, la mayoría de las mujeres del pueblo venían justo aquí para hornear el pan diario para sus familias.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Un proceso de dos días",
+              "text": "¡Hornear pan en aquella época no era tan rápido como simplemente ir corriendo al supermercado! En realidad, era un proceso de dos días. La noche anterior, las mujeres mezclaban y daban forma cuidadosamente a la masa, dejándola descansar y leudar durante toda la noche."
+            },
+            {
+              "label": "Recién horneado",
+              "text": "A la mañana siguiente, cuando la masa estaba lista, encendían un buen fuego para calentar el horno. Una vez que la temperatura era la adecuada, colocaban la masa dentro. Después de hornear durante una o dos horas, ¡todo el pueblo se llenaba con el delicioso olor a pan fresco y calientito, listo para comer!"
+            },
+            {
+              "label": "Fotos históricas",
+              "text": "Si miras a tu alrededor, puedes ver algunas fotografías maravillosas en exhibición que muestran exactamente cómo hacían todo este procedimiento."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "¡Una pregunta para nuestros jóvenes exploradores y los adultos!"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Al que madruga",
+              "text": "Todo el pueblo necesitaba pan fresco. ¿Puedes adivinar a qué hora tenía que despertarse el panadero cada mañana para empezar a preparar la masa? (Pista: ¡era mucho antes de que saliera el sol!)"
+            },
+            {
+              "label": "Observa con atención",
+              "text": "Mira de cerca las fotos para ver cómo las mujeres del pueblo trabajaban antiguamente en la panadería."
+            },
+            {
+              "label": "Hora de relajarse",
+              "text": "¡Ahora es el momento de dirigirse al restaurante-café! Toma tus lápices de colores, disfruta de un merecido refrigerio y termina de convertir tu boceto de Mylotopi (Mylotopi Sketch) en una colorida obra maestra."
+            },
+            {
+              "label": "Gracias",
+              "text": "¡Gracias por explorar con nosotros hoy!"
+            }
+          ]
+        }
+      ],
+      "audio": {
+        "path": "./assets/audio/es/section-09.mp3",
+        "ready": true
+      },
+      "imageAlt": "La panadería"
+    }
+  ]
+}

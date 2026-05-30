@@ -6,8 +6,50 @@ import { fileURLToPath } from "node:url";
 const scriptPath = fileURLToPath(import.meta.url);
 const repoRoot = path.resolve(path.dirname(scriptPath), "..");
 const metaPath = path.join(repoRoot, "assets/js/content-meta.js");
+const contentDirectory = path.join(repoRoot, "assets/content");
 const validFits = new Set(["cover", "contain"]);
 const sanePositionPattern = /^[a-z0-9.%\-\s]+$/i;
+const requiredUiFields = [
+  "pageTitle",
+  "heroTitle",
+  "intro",
+  "languageLabel",
+  "sectionsLabel",
+  "audioHeading",
+  "readMore",
+  "readLess",
+  "challengeLabel",
+  "previousSection",
+  "nextSection",
+  "kicker",
+  "navigationLabel",
+  "currentSectionLabel",
+  "miniMapTitle",
+  "miniMapDescription",
+  "miniMapTapHint",
+  "miniMapOpen",
+  "miniMapDownload",
+  "miniMapModalClose",
+  "miniMapImageAlt",
+  "sectionSelectorLabel",
+  "sectionSelectorPlaceholder",
+  "audioTitleLabel",
+  "audioAriaLabel",
+  "selectedBadge",
+  "imagePlaceholderLabel",
+  "imagePlaceholderHint",
+  "audioFallback",
+  "announcerPrefix",
+  "galleryPrevious",
+  "galleryNext",
+  "imageCounter",
+  "challengeTitle",
+  "previousSectionAria",
+  "nextSectionAria",
+  "sectionLabelSeparator",
+  "loadErrorTitle",
+  "loadErrorBody",
+];
 
 const errors = new Map();
 const warnings = new Map();
@@ -53,6 +95,18 @@ function listDirectories(directory) {
   return fs
     .readdirSync(directory, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name)
+    .sort();
+}
+
+function listJsonFiles(directory) {
+  if (!fs.existsSync(directory)) {
+    return [];
+  }
+
+  return fs
+    .readdirSync(directory, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
     .map((entry) => entry.name)
     .sort();
 }
@@ -149,10 +203,8 @@ function loadGuideMeta() {
 
 function validateLanguageRegistry(meta) {
   const activeLanguages = Array.isArray(meta.languages) ? meta.languages : [];
-  const stagedLanguages = Array.isArray(meta.stagedLanguages) ? meta.stagedLanguages : [];
-  const contentDirectory = path.join(repoRoot, "assets/content");
-  const contentLanguages = listDirectories(contentDirectory);
-  const registeredLanguages = new Set([...activeLanguages, ...stagedLanguages]);
+  const contentFiles = listJsonFiles(contentDirectory);
+  const contentLanguageCodes = contentFiles.map((fileName) => fileName.replace(/\.json$/, ""));
 
   if (!activeLanguages.length) {
     addError("Languages", "MYLOTOPI_GUIDE_META.languages must list at least one active runtime language.");
@@ -162,85 +214,116 @@ function validateLanguageRegistry(meta) {
     addError("Languages", `Active language is listed more than once: ${lang}`);
   });
 
-  findDuplicates(stagedLanguages).forEach((lang) => {
-    addError("Languages", `Staged language is listed more than once: ${lang}`);
-  });
-
-  activeLanguages.forEach((lang) => {
-    if (stagedLanguages.includes(lang)) {
-      addError("Languages", `Language cannot be both active and staged: ${lang}`);
-    }
-  });
-
   if (meta.defaultLanguage && !activeLanguages.includes(meta.defaultLanguage)) {
     addError("Languages", `Default language is not active: ${meta.defaultLanguage}`);
   }
 
-  contentLanguages.forEach((lang) => {
-    if (!registeredLanguages.has(lang)) {
-      addError("Languages", `Content folder is neither active nor staged in content-meta.js: assets/content/${lang}`);
+  activeLanguages.forEach((lang) => {
+    const expectedFile = `${lang}.json`;
+    if (!contentFiles.includes(expectedFile)) {
+      addError("Content", `Active language is missing assets/content/${expectedFile}.`);
     }
   });
 
-  stagedLanguages.forEach((lang) => {
-    if (!contentLanguages.includes(lang)) {
-      addWarning("Languages", `Staged language has no content folder yet: ${lang}`);
+  contentLanguageCodes.forEach((lang) => {
+    if (!activeLanguages.includes(lang)) {
+      addError("Content", `Content file is not listed as active in content-meta.js: assets/content/${lang}.json`);
     }
   });
-
-  if (stagedLanguages.length) {
-    addWarning("Languages", `Staged language folders are documented but not runtime-active: ${stagedLanguages.join(", ")}`);
-  }
 
   return activeLanguages;
 }
 
-function validateSpots(meta) {
-  const spotOrder = Array.isArray(meta.spotOrder) ? meta.spotOrder : [];
-  const spots = isPlainObject(meta.spots) ? meta.spots : {};
+function validateNoOldContentTree() {
+  listDirectories(contentDirectory).forEach((directoryName) => {
+    const directoryPath = path.join(contentDirectory, directoryName);
+    const oldIndexPath = path.join(directoryPath, "index.json");
+    const oldSectionsPath = path.join(directoryPath, "sections");
 
-  if (!spotOrder.length) {
-    addError("Spots", "spotOrder must contain at least one canonical spot id.");
+    if (fs.existsSync(oldIndexPath) || fs.existsSync(oldSectionsPath)) {
+      addError(
+        "Content",
+        `Old content layout is no longer supported. Remove assets/content/${directoryName}/index.json and sections/*.json.`
+      );
+    } else {
+      addWarning("Content", `Unexpected directory remains under assets/content: assets/content/${directoryName}`);
+    }
+  });
+
+  const localesDirectory = path.join(repoRoot, "assets/locales");
+  if (fs.existsSync(localesDirectory)) {
+    const localeScripts = fs
+      .readdirSync(localesDirectory, { withFileTypes: true })
+      .filter((entry) => entry.isFile() && entry.name.endsWith(".js"));
+
+    localeScripts.forEach((entry) => {
+      addError("Content", `assets/locales/*.js is not part of this architecture: assets/locales/${entry.name}`);
+    });
+  }
+}
+
+function validateSectionsMeta(meta) {
+  const sectionOrder = Array.isArray(meta.sectionOrder) ? meta.sectionOrder : [];
+  const sections = isPlainObject(meta.sections) ? meta.sections : {};
+
+  if (Object.prototype.hasOwnProperty.call(meta, "spotOrder") || Object.prototype.hasOwnProperty.call(meta, "spots")) {
+    addError("Metadata", "Use sectionOrder and sections in content-meta.js; spotOrder/spots belong to the old architecture.");
   }
 
-  findDuplicates(spotOrder).forEach((spotId) => {
-    addError("Spots", `spotOrder contains a duplicate spot id: ${spotId}`);
+  if (!sectionOrder.length) {
+    addError("Sections", "sectionOrder must contain at least one canonical section id.");
+  }
+
+  findDuplicates(sectionOrder).forEach((sectionId) => {
+    addError("Sections", `sectionOrder contains a duplicate section id: ${sectionId}`);
   });
 
-  spotOrder.forEach((spotId) => {
-    if (!isPlainObject(spots[spotId])) {
-      addError("Spots", `spotOrder references a missing spot: ${spotId}`);
+  sectionOrder.forEach((sectionId) => {
+    if (!isPlainObject(sections[sectionId])) {
+      addError("Sections", `sectionOrder references a missing metadata section: ${sectionId}`);
     }
   });
 
-  Object.keys(spots).forEach((spotId) => {
-    if (!spotOrder.includes(spotId)) {
-      addWarning("Spots", `Spot exists in metadata but is not in spotOrder: ${spotId}`);
+  Object.keys(sections).forEach((sectionId) => {
+    if (!sectionOrder.includes(sectionId)) {
+      addWarning("Sections", `Section exists in metadata but is not in sectionOrder: ${sectionId}`);
     }
   });
 
-  spotOrder.forEach((spotId) => {
-    const spot = spots[spotId];
-    if (!isPlainObject(spot)) {
+  sectionOrder.forEach((sectionId) => {
+    const section = sections[sectionId];
+    if (!isPlainObject(section)) {
       return;
     }
 
-    if (!Array.isArray(spot.images)) {
-      addError("Images", `${spotId} must define images as an array.`);
+    if (typeof section.accent !== "string" || !section.accent.trim()) {
+      addError("Sections", `${sectionId} must define an accent color.`);
+    }
+
+    if (typeof section.accentSoft !== "string" || !section.accentSoft.trim()) {
+      addError("Sections", `${sectionId} must define an accentSoft color.`);
+    }
+
+    if (!Array.isArray(section.images)) {
+      addError("Images", `${sectionId} must define images as an array.`);
       return;
     }
 
-    if (!spot.images.length) {
-      addWarning("Images", `${spotId} has images: []; the runtime placeholder will be shown intentionally.`);
+    if (!section.images.length) {
+      addWarning("Images", `${sectionId} has images: []; the runtime placeholder will be shown intentionally.`);
       return;
     }
 
-    spot.images.forEach((image, imageIndex) => {
-      const label = `${spotId} image ${imageIndex + 1}`;
+    section.images.forEach((image, imageIndex) => {
+      const label = `${sectionId} image ${imageIndex + 1}`;
 
       if (!isPlainObject(image)) {
         addError("Images", `${label} must be an object with a src value.`);
         return;
+      }
+
+      if (Object.prototype.hasOwnProperty.call(image, "alt")) {
+        addError("Images", `${label} must not contain localized alt text; keep imageAlt in assets/content/{lang}.json.`);
       }
 
       assertFileExists(image.src, "Images", `${label} src`);
@@ -255,121 +338,154 @@ function validateSpots(meta) {
     });
   });
 
-  return spotOrder;
+  return sectionOrder;
 }
 
-function validateAudio(manifest, lang, spotId) {
-  const audio = manifest.audio || {};
+function validateTextField(value, group, label) {
+  if (typeof value !== "string" || !value.trim()) {
+    addError(group, `${label} must be a non-empty string.`);
+  }
+}
+
+function validateUi(content, lang, contentPath) {
+  if (!isPlainObject(content.ui)) {
+    addError("Content", `${formatRelative(contentPath)} must define a ui object.`);
+    return;
+  }
+
+  requiredUiFields.forEach((field) => {
+    validateTextField(content.ui[field], "Content", `${lang} ui.${field}`);
+  });
+}
+
+function validateDetails(details, lang, sectionId) {
+  if (!Array.isArray(details) || !details.length) {
+    addError("Content", `${lang}/${sectionId} details must be a non-empty array.`);
+    return;
+  }
+
+  details.forEach((block, index) => {
+    const label = `${lang}/${sectionId} details[${index}]`;
+    if (typeof block === "string") {
+      if (!block.trim()) {
+        addError("Content", `${label} must not be an empty string.`);
+      }
+      return;
+    }
+
+    if (!isPlainObject(block)) {
+      addError("Content", `${label} must be a string or structured object.`);
+      return;
+    }
+
+    if (block.type === "heading") {
+      validateTextField(block.text, "Content", `${label}.text`);
+      return;
+    }
+
+    if (block.type === "list") {
+      if (!Array.isArray(block.items) || !block.items.length) {
+        addError("Content", `${label}.items must be a non-empty array.`);
+      }
+      return;
+    }
+
+    if (!block.text) {
+      addError("Content", `${label} has an unsupported detail block shape.`);
+    }
+  });
+}
+
+function validateAudio(section, lang, sectionId) {
+  const audio = section.audio || {};
+
+  if (!isPlainObject(audio)) {
+    addError("Audio", `${lang}/${sectionId} audio must be an object.`);
+    return;
+  }
 
   if (audio.ready !== true) {
     return;
   }
 
-  const audioPath = assertFileExists(audio.path, "Audio", `${lang}/${spotId} audio.path`);
+  const audioPath = assertFileExists(audio.path, "Audio", `${lang}/${sectionId} audio.path`);
   if (!audioPath) {
     return;
   }
 
   if (fs.statSync(audioPath).size === 0) {
-    addError("Audio", `${lang}/${spotId} audio file is zero bytes: ${audio.path}`);
+    addError("Audio", `${lang}/${sectionId} audio file is zero bytes: ${audio.path}`);
   }
 }
 
-function validateSectionFields(section, lang, spotId, sectionPath) {
-  ["title", "navigationTitle", "preview"].forEach((field) => {
-    if (typeof section[field] !== "string" || !section[field].trim()) {
-      addError("Content", `${lang}/${spotId} section ${field} must be a non-empty string: ${formatRelative(sectionPath)}`);
-    }
-  });
-
-  if (!Array.isArray(section.details) || !section.details.length) {
-    addError("Content", `${lang}/${spotId} section details must be a non-empty array: ${formatRelative(sectionPath)}`);
-  }
-}
-
-function validateLanguageContent(meta, lang, spotOrder) {
-  const indexPath = path.join(repoRoot, "assets/content", lang, "index.json");
-  const indexLabel = `assets/content/${lang}/index.json`;
-
-  if (!fs.existsSync(indexPath)) {
-    addError("Content", `${indexLabel} is missing.`);
+function validateMiniMap(content, lang) {
+  const miniMap = content.miniMap || {};
+  if (!miniMap.path) {
     return;
   }
 
-  const index = readJsonFile(indexPath, "Content", indexLabel);
-  if (!index) {
-    return;
-  }
-
-  if (index.code !== lang) {
-    addError("Content", `${indexLabel} has code "${index.code}", expected "${lang}".`);
-  }
-
-  if (!Array.isArray(index.sections)) {
-    addError("Content", `${indexLabel} must define a sections array.`);
-    return;
-  }
-
-  if (Array.isArray(index.sectionOrder) && !arraysMatch(index.sectionOrder, spotOrder)) {
-    addError("Content", `${indexLabel} sectionOrder must match MYLOTOPI_GUIDE_META.spotOrder.`);
-  }
-
-  const manifestIds = index.sections.map((section) => section && section.id);
-  findDuplicates(manifestIds).forEach((spotId) => {
-    addError("Content", `${indexLabel} contains duplicate section manifest id: ${spotId}`);
-  });
-
-  const missingSections = spotOrder.filter((spotId) => !manifestIds.includes(spotId));
-  const extraSections = manifestIds.filter((spotId) => spotId && !spotOrder.includes(spotId));
-
-  missingSections.forEach((spotId) => {
-    addError("Content", `${indexLabel} is missing a section manifest for canonical spot: ${spotId}`);
-  });
-
-  extraSections.forEach((spotId) => {
-    addError("Content", `${indexLabel} contains a non-canonical section manifest: ${spotId}`);
-  });
-
-  const miniMap = index.miniMap || {};
-  if (miniMap.path) {
-    assertFileExists(miniMap.path, "Mini-maps", `${lang} miniMap.path`);
-  }
+  assertFileExists(miniMap.path, "Mini-maps", `${lang} miniMap.path`);
 
   if (miniMap.fallback === true) {
     addWarning("Mini-maps", `${lang} uses a documented fallback mini-map.`);
   }
+}
 
-  spotOrder.forEach((spotId) => {
-    const manifest = index.sections.find((section) => section && section.id === spotId);
-    if (!manifest) {
+function validateLanguageContent(lang, sectionOrder) {
+  const contentPath = path.join(contentDirectory, `${lang}.json`);
+  const contentLabel = `assets/content/${lang}.json`;
+
+  if (!fs.existsSync(contentPath)) {
+    addError("Content", `${contentLabel} is missing.`);
+    return;
+  }
+
+  const content = readJsonFile(contentPath, "Content", contentLabel);
+  if (!content) {
+    return;
+  }
+
+  if (content.code !== lang) {
+    addError("Content", `${contentLabel} has code "${content.code}", expected "${lang}".`);
+  }
+
+  validateTextField(content.nativeName, "Content", `${lang} nativeName`);
+  validateUi(content, lang, contentPath);
+  validateMiniMap(content, lang);
+
+  if (!Array.isArray(content.sections)) {
+    addError("Content", `${contentLabel} must define a sections array.`);
+    return;
+  }
+
+  const sectionIds = content.sections.map((section) => section && section.id);
+  findDuplicates(sectionIds).forEach((sectionId) => {
+    addError("Content", `${contentLabel} contains duplicate section id: ${sectionId}`);
+  });
+
+  if (!arraysMatch(sectionIds, sectionOrder)) {
+    addError("Content", `${contentLabel} sections must match MYLOTOPI_GUIDE_META.sectionOrder exactly.`);
+  }
+
+  content.sections.forEach((section, index) => {
+    const expectedSectionId = sectionOrder[index];
+    const sectionId = section && section.id ? section.id : expectedSectionId || `index ${index}`;
+
+    if (!isPlainObject(section)) {
+      addError("Content", `${lang} section ${index + 1} must be an object.`);
       return;
     }
 
-    if (typeof manifest.path !== "string" || !manifest.path.trim()) {
-      addError("Content", `${indexLabel} manifest for ${spotId} must define a section path.`);
-      return;
+    if (section.id !== expectedSectionId) {
+      addError("Content", `${lang} section ${index + 1} id "${section.id}" must be "${expectedSectionId}".`);
     }
 
-    const sectionPath = path.join(repoRoot, "assets/content", lang, manifest.path);
-    if (!fs.existsSync(sectionPath)) {
-      addError("Content", `${lang}/${spotId} section file is missing: assets/content/${lang}/${manifest.path}`);
-      return;
-    }
+    ["id", "title", "navigationTitle", "preview"].forEach((field) => {
+      validateTextField(section[field], "Content", `${lang}/${sectionId} ${field}`);
+    });
 
-    const section = readJsonFile(sectionPath, "Content", `assets/content/${lang}/${manifest.path}`);
-    if (!section) {
-      return;
-    }
-
-    if (section.id !== manifest.id) {
-      addError(
-        "Content",
-        `${lang}/${spotId} section id "${section.id}" does not match manifest id "${manifest.id}": ${formatRelative(sectionPath)}`
-      );
-    }
-
-    validateSectionFields(section, lang, spotId, sectionPath);
-    validateAudio(manifest, lang, spotId);
+    validateDetails(section.details, lang, sectionId);
+    validateAudio(section, lang, sectionId);
   });
 }
 
@@ -387,14 +503,15 @@ function printFindings(title, collection, log) {
   });
 }
 
+validateNoOldContentTree();
 const meta = loadGuideMeta();
 
 if (meta) {
   const activeLanguages = validateLanguageRegistry(meta);
-  const spotOrder = validateSpots(meta);
+  const sectionOrder = validateSectionsMeta(meta);
 
   activeLanguages.forEach((lang) => {
-    validateLanguageContent(meta, lang, spotOrder);
+    validateLanguageContent(lang, sectionOrder);
   });
 }
 
@@ -409,9 +526,6 @@ console.log("Mylotopi content validation passed.");
 
 if (meta) {
   console.log(`Active languages: ${meta.languages.join(", ")}`);
-  if (Array.isArray(meta.stagedLanguages) && meta.stagedLanguages.length) {
-    console.log(`Staged languages: ${meta.stagedLanguages.join(", ")}`);
-  }
 }
 
 printFindings("\nWarnings", warnings, console.warn);

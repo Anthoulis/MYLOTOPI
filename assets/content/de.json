@@ -1,0 +1,582 @@
+{
+  "code": "de",
+  "nativeName": "Deutsch",
+  "aliases": [
+    "de",
+    "german",
+    "deutsch",
+    "de-de",
+    "de_de"
+  ],
+  "ui": {
+    "pageTitle": "Windmühlen-Erlebnis",
+    "heroTitle": "Windmühlen-Erlebnis",
+    "intro": "Ein begleitender Rundgang durch das restaurierte Dorf Mylotopi: Windmühle, Stein, Brot, Kräuter, Familienerinnerung und der Rhythmus des alten Kefalos.",
+    "languageLabel": "Sprache",
+    "sectionsLabel": "Stationen der Führung",
+    "audioHeading": "Audioguide",
+    "readMore": "Die ganze Geschichte lesen",
+    "readLess": "Einklappen",
+    "challengeLabel": "Für junge Besucher",
+    "previousSection": "Vorherige Station",
+    "nextSection": "Nächste Station",
+    "kicker": "Kefalos, Kos · Audioguide",
+    "navigationLabel": "Audioguide-Navigation",
+    "currentSectionLabel": "Aktuelle Station",
+    "miniMapTitle": "MINI-KARTE",
+    "miniMapDescription": "Sehen Sie sich die Route an, bevor Sie weitergehen.",
+    "miniMapTapHint": "Karte antippen, um die Route zu öffnen",
+    "miniMapView": "Karte ansehen",
+    "miniMapOpen": "Karte öffnen",
+    "miniMapDownload": "Karte herunterladen",
+    "miniMapModalClose": "Karte schließen",
+    "miniMapImageAlt": "Mylotopi-Miniplan mit den neun Stationen der Führung",
+    "sectionSelectorLabel": "Station",
+    "sectionSelectorPlaceholder": "Station wählen",
+    "audioTitleLabel": "Jetzt hören",
+    "audioAriaLabel": "{label}: {title}",
+    "selectedBadge": "Aktuelle Station",
+    "imagePlaceholderLabel": "Bild",
+    "imagePlaceholderHint": "Ein Bild dieser Station kann ergänzt werden, sobald es verfügbar ist.",
+    "audioFallback": "Die Audiodatei ist in dieser Sprache noch nicht verfügbar.",
+    "announcerPrefix": "Aktive Station",
+    "galleryPrevious": "Vorheriges Bild",
+    "galleryNext": "Nächstes Bild",
+    "imageCounter": "{current} von {total}",
+    "challengeTitle": "Genauer hinsehen",
+    "previousSectionAria": "Zur vorherigen Station: {title}",
+    "nextSectionAria": "Zur nächsten Station: {title}",
+    "sectionLabelSeparator": " · ",
+    "loadErrorTitle": "Der Guide-Inhalt konnte nicht geladen werden.",
+    "loadErrorBody": "Bitte stellen Sie diesen Ordner als statische Website bereit und laden Sie die Seite erneut."
+  },
+  "miniMap": {
+    "path": "./assets/maps/de/minimap.jpg"
+  },
+  "sections": [
+    {
+      "id": "welcome",
+      "title": "Willkommen beim Windmühlen-Erlebnis",
+      "navigationTitle": "Willkommen",
+      "preview": "Beginnen Sie den Rundgang in einem restaurierten Dorf, das die Erinnerung an das alte Kefalos bewahrt: Windmühle, Familienhaus, Backofen, Kräuter, Tunnel und die tägliche Arbeit des Insellebens.",
+      "details": [
+        "Mylotopi verbindet Räume, die einst den Alltag in Kefalos geprägt haben. Steinmauern, hölzerne Mechanismen, Familienobjekte und Werkzeuge erscheinen hier als lebendige Geschichte.",
+        "Die Familie Voudouris hat diesen Ort mit Respekt vor der lokalen Erinnerung restauriert, damit Besucher verstehen können, wie Menschen arbeiteten, kochten, schliefen, Vorräte aufbewahrten und das Dorfleben teilten.",
+        {
+          "type": "heading",
+          "text": "Was der Rundgang zeigt"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Die Windmühle",
+              "text": "Ein lebendiges Wahrzeichen, verbunden mit Weizen, Mehl, Wetter, Handwerk und dem Rhythmus des Dorfes."
+            },
+            {
+              "label": "Das Dorfleben",
+              "text": "Haus, Backofen, Garten und Dreschplatz zeigen, wie Familien mit Sorgfalt und praktischer Klugheit lebten."
+            },
+            {
+              "label": "Verborgene Geschichte",
+              "text": "Der italienische Tunnel und der Keller erzählen eine ruhigere Geschichte aus den 1940er Jahren."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "So nutzen Sie den Audioguide"
+        },
+        "Wählen Sie Ihre Sprache, wählen Sie die Station, an der Sie stehen, und starten Sie den Ton, wenn Sie bereit sind. Der Guide ist für einen ruhigen Rundgang im Freien gedacht, mit Zeit zum Anhalten und Beobachten."
+      ],
+      "challenge": {
+        "label": "Für junge Besucher",
+        "title": "Schau und finde",
+        "items": [
+          {
+            "text": "Schau dich um."
+          },
+          {
+            "text": "Findest du etwas aus Stein?"
+          },
+          {
+            "text": "Wähle ein Detail und zeig es deiner Familie."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/de/section-01.mp3",
+        "ready": true
+      },
+      "imageAlt": "Willkommen beim Windmühlen-Erlebnis"
+    },
+    {
+      "id": "herb-garden",
+      "title": "Kräutergarten",
+      "navigationTitle": "Kräutergarten",
+      "preview": "Verweilen Sie zwischen den Kräutern der Insel. Thymian, Oregano, Minze, Majoran und Lavendel verbinden Küche, Hausmittel und die Erinnerung an das Familienleben in Kefalos.",
+      "details": [
+        "Bevor moderne Geschäfte und Apotheken zum Alltag gehörten, konnte ein kleiner Garten zugleich Küche und Hausapotheke sein. Kräuter gaben Speisen Geschmack, dem Haus Duft und dem Körper einfache Hilfe.",
+        "In Mylotopi zeigen diese Pflanzen die praktische Weisheit von Inselfamilien. Einige Blätter konnten Brot, Fleisch oder Gemüse würzen und zugleich als einfacher Aufguss dienen.",
+        {
+          "type": "heading",
+          "text": "Was diese Station zeigt"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Küchenwissen",
+              "text": "Thymian, Oregano, Minze, Majoran und Lavendel verbanden das tägliche Kochen mit der Landschaft der Insel."
+            },
+            {
+              "label": "Hausmittel",
+              "text": "Vertraute Pflanzen gaben einfache Hilfe, bevor moderne Medizin leicht erreichbar war."
+            },
+            {
+              "label": "Stille Schönheit",
+              "text": "Grüntöne, silbrige Blätter und violetter Lavendel zeigen eine ruhigere Seite des Dorflebens."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nächste Station"
+        },
+        "Gehen Sie weiter zur historischen Windmühle, wo die Geschichte vom Garten und der Fürsorge der Familie zu Weizen, Mehl und körperlicher Arbeit führt."
+      ],
+      "challenge": {
+        "label": "Für junge Besucher",
+        "title": "Riech an einem Kraut",
+        "items": [
+          {
+            "text": "Frag zuerst, ob du ein Blatt berühren darfst."
+          },
+          {
+            "text": "Riech vorsichtig daran."
+          },
+          {
+            "text": "Sag deiner Familie, woran es dich erinnert."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/de/section-02.mp3",
+        "ready": true
+      },
+      "imageAlt": "Kräutergarten"
+    },
+    {
+      "id": "windmill-first-floor",
+      "title": "Basis der Windmühle",
+      "navigationTitle": "Basis der Windmühle",
+      "preview": "Treten Sie in die Basis der Mühle des Priesters ein, eine der ältesten funktionierenden Windmühlen des Dodekanes. Hier treffen Stein, Holz, Gewicht und Wind aufeinander.",
+      "details": [
+        "Die Windmühle ist über 400 Jahre alt und arbeitete täglich bis 1987. Heute bewahrt sie das Handwerk, Weizen zu Mehl zu mahlen, eine Arbeit, die einst einen großen Teil des Dorfes ernährte.",
+        "Am Eingang begrüßen traditionelle Zeichen von Segen und Schutz die Besucher. Die Steinmauern sind etwa 1,2 Meter dick, gebaut gegen starke Meereswinde und für die Kraft des Mechanismus darüber.",
+        {
+          "type": "heading",
+          "text": "Achten Sie darauf"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Arbeitsobjekte",
+              "text": "Lagerflächen, hölzerner Sattel, Dreschschlitten, Waagen und Gewichte verbinden den Müller mit ländlicher Arbeit."
+            },
+            {
+              "label": "Praktischer Kamin",
+              "text": "Erwärmtes Fett diente dazu, Teile des Mechanismus zu schmieren."
+            },
+            {
+              "label": "Erste Bremse",
+              "text": "Ein kleines Seil hob die schweren Mühlsteine leicht an, damit die Segel draußen sicherer bedient werden konnten."
+            },
+            {
+              "label": "Größere Erinnerung",
+              "text": "Fotografien von Windmühlen in Griechenland zeigen diese Mühle als Teil einer größeren Inseltradition."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nächste Station"
+        },
+        "Gehen Sie vorsichtig hinauf zum Schlafbereich, wo Arbeit und Familienleben überraschend nahe beieinander lagen."
+      ],
+      "challenge": {
+        "label": "Für junge Besucher",
+        "title": "Finde Stein und Holz",
+        "items": [
+          {
+            "text": "Schau dich im Raum um."
+          },
+          {
+            "text": "Zeig auf etwas aus Stein."
+          },
+          {
+            "text": "Zeig auf etwas aus Holz."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/de/section-03.mp3",
+        "ready": true
+      },
+      "imageAlt": "Basis der Windmühle"
+    },
+    {
+      "id": "windmill-second-floor",
+      "title": "Schlafbereich",
+      "navigationTitle": "Schlafbereich",
+      "preview": "Im Schlafbereich wird die Windmühle persönlicher. Sie war nicht nur ein Arbeitsgebäude, sondern auch ein Ort, an dem die Familie des Müllers neben Weizen und Mehl ruhte.",
+      "details": [
+        "Achten Sie auf die Holzstufen und das niedrige Holz über Ihrem Kopf. Die Windmühle wurde zuerst für die Arbeit gebaut, deshalb verlangt jede Bewegung Aufmerksamkeit.",
+        "Auf einer Seite zeigen historische Bilder Windmühlen aus Griechenland. Auf der anderen erinnert der Raum an eine sehr menschliche Wahrheit: Der Müller und seine Familie schliefen nah am Klang und an der Verantwortung der Mühle.",
+        {
+          "type": "heading",
+          "text": "Warum es wichtig war"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Gelagerter Weizen",
+              "text": "Säcke mit rohem Weizen und frischem Mehl blieben in der Nähe, weil Mehl Nahrung, Einkommen und Sicherheit bedeutete."
+            },
+            {
+              "label": "Geteilter Raum",
+              "text": "Ruhe, Vorräte und Verantwortung mussten in dasselbe kleine Arbeitsgebäude passen."
+            },
+            {
+              "label": "Familienleben",
+              "text": "Der Raum zeigt, wie eng private Zeit und Arbeit in einem Inselhaushalt verbunden sein konnten."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nächste Station"
+        },
+        "Gehen Sie weiter zur Mechanik, wo Holz und Stein zeigen, wie Wind zu Mehl wurde."
+      ],
+      "challenge": {
+        "label": "Für junge Besucher",
+        "title": "Stell dir vor, hier zu schlafen",
+        "items": [
+          {
+            "text": "Schau dir den kleinen Raum an."
+          },
+          {
+            "text": "Wo würdest du ein Kissen hinlegen?"
+          },
+          {
+            "text": "Zeig auf eine ruhige Ecke."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/de/section-04.mp3",
+        "ready": true
+      },
+      "imageAlt": "Hölzerner Schlafbereich im Inneren der Mylotopi-Windmühle"
+    },
+    {
+      "id": "windmill-third-floor",
+      "title": "Mechanik",
+      "navigationTitle": "Mechanik",
+      "preview": "Auf der oberen Ebene zeigt die Windmühle ihre Intelligenz. Holzbalken, Zahnräder, Seile und Mühlsteine verwandelten die Kraft des Windes in Mehl.",
+      "details": [
+        "Bewegen Sie sich langsam und achten Sie auf Ihren Kopf. Der Mechanismus um Sie herum ist das Herz der Mühle und verbindet die Segel draußen mit den Mühlsteinen innen.",
+        "Die beiden Mühlsteine wiegen zusammen mehr als zwei Tonnen und stammen von Nisyros, einer Insel, die für besonders widerstandsfähigen Stein bekannt ist.",
+        {
+          "type": "heading",
+          "text": "Wie die Mechanik arbeitete"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Trichter und Glocke",
+              "text": "Eine kleine Glocke half dem Müller zu hören, wann im Trichter wenig Weizen übrig war."
+            },
+            {
+              "label": "Weg des Mehls",
+              "text": "Fertiges Mehl fiel durch ein Rohr nach unten, wo der Müller einen Anteil als Bezahlung behalten konnte."
+            },
+            {
+              "label": "Seile und Bremsen",
+              "text": "Hebel verlangsamten die Steine oder konnten die Arbeit schnell stoppen."
+            },
+            {
+              "label": "Bootsähnliche Decke",
+              "text": "Die Form spricht von lokalem Wissen über Wind, Holz, Meer und Arbeit."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nächste Station"
+        },
+        "Gehen Sie wieder hinaus zum Dreschplatz, wo der Weizen vorbereitet wurde, bevor er die Mühle erreichte."
+      ],
+      "challenge": {
+        "label": "Für junge Besucher",
+        "title": "Finde die Glocke",
+        "items": [
+          {
+            "text": "Such nach einer kleinen Glocke."
+          },
+          {
+            "text": "Welchen Klang hätte sie?"
+          },
+          {
+            "text": "Zeig sie deiner Familie."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/de/section-05.mp3",
+        "ready": true
+      },
+      "imageAlt": "Mechanik"
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "title": "Dreschplatz und Esel",
+      "navigationTitle": "Dreschplatz",
+      "preview": "Zurück im Freien erzählt der Steinkreis die Geschichte des Weizens vor dem Mahlen. Hier bereiteten Ernte, Tierkraft und geduldige Hände das Korn vor.",
+      "details": [
+        "Der Dreschplatz war ein wichtiger Arbeitsort im Freien. Weizen und andere Feldfrüchte wurden auf dem Steinkreis ausgebreitet, damit die Körner gelöst und getrennt werden konnten.",
+        "Früher lief ein Esel um den Mittelpfosten und half, die Ernte aufzubrechen. Danach setzten Menschen die Arbeit fort, reinigten und trennten den Weizen.",
+        {
+          "type": "heading",
+          "text": "Warum es wichtig war"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Vor dem Mahlen",
+              "text": "Mehl begann mit Feldern, Wetter, Ernte und wiederholter Arbeit, bevor es je die Windmühle erreichte."
+            },
+            {
+              "label": "Gemeinsame Arbeit",
+              "text": "Tiere und Menschen arbeiteten zusammen, um Korn für das tägliche Brot vorzubereiten."
+            },
+            {
+              "label": "Dorfgedächtnis",
+              "text": "Mylotopi hält die Erinnerung an ländliche Tiere nah an der Besuchererfahrung."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nächste Station"
+        },
+        "Gehen Sie weiter zum italienischen Tunnel und Keller, wo sich die Atmosphäre von offener Landarbeit zu kühlem Stein und Kriegserinnerung verändert."
+      ],
+      "challenge": {
+        "label": "Für junge Besucher",
+        "title": "Finde den Kreis",
+        "items": [
+          {
+            "text": "Schau auf den runden Boden."
+          },
+          {
+            "text": "Finde die Mitte."
+          },
+          {
+            "text": "Folge dem Kreis mit deinen Augen."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/de/section-06.mp3",
+        "ready": true
+      },
+      "imageAlt": "Dreschplatz und Esel"
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "title": "Italienischer Tunnel und Keller",
+      "navigationTitle": "Tunnel und Keller",
+      "preview": "Betreten Sie einen kühleren und stilleren Teil von Mylotopi. Tunnel und Keller verbinden Stein, Wein und die verborgenere Geschichte der 1940er Jahre.",
+      "details": [
+        "Achten Sie beim Hinabgehen auf die Temperatur, die Rundung der Wände und darauf, wie sich der Klang im Stein verändert.",
+        "Heute präsentiert der Keller Wein und Atmosphäre als Teil des Mylotopi-Erlebnisses. Der kühle Steinraum erinnert aber auch an einen anderen Moment der Geschichte.",
+        {
+          "type": "heading",
+          "text": "Was diese Station zeigt"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Kühler Stein",
+              "text": "Der Tunnel verändert den Rhythmus des Besuchs durch Temperatur, Klang und Enge."
+            },
+            {
+              "label": "Schutz im Krieg",
+              "text": "In den 1940er Jahren war der Durchgang mit italienischen Soldaten und den Bedürfnissen der Verteidigung verbunden."
+            },
+            {
+              "label": "Weinkeller",
+              "text": "Derselbe Raum steht heute für Gastfreundschaft, Wein und Atmosphäre."
+            },
+            {
+              "label": "Starker Kontrast",
+              "text": "Der Weg führt von Schutz und Verteidigung zurück zu Essen, Willkommen und Aussicht über Kefalos."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nächste Station"
+        },
+        "Wenn Sie den Tunnel verlassen, gehen Sie weiter zum traditionellen Haus und zur Bäckerei, zurück in das häusliche Leben des alten Dorfes."
+      ],
+      "challenge": {
+        "label": "Für junge Besucher",
+        "title": "Spür die kühle Luft",
+        "items": [
+          {
+            "text": "Bleib kurz ganz ruhig stehen."
+          },
+          {
+            "text": "Ist es hier kühler?"
+          },
+          {
+            "text": "Zähle drei Flaschen oder drei Steine."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/de/section-07.mp3",
+        "ready": true
+      },
+      "imageAlt": "Italienischer Tunnel und Keller"
+    },
+    {
+      "id": "traditional-house",
+      "title": "Das traditionelle Haus",
+      "navigationTitle": "Traditionelles Haus",
+      "preview": "Das traditionelle Haus zeigt die Intelligenz eines kleinen Inselhauses. Auf weniger als 20 Quadratmetern fanden Familie, Kochen, Vorräte, Schlaf und Handwerk ihren Platz.",
+      "details": [
+        "Das Haus ist mehr als 130 Jahre alt. Mehrere Generationen konnten einen engen Raum teilen, wobei jedes Objekt sorgfältig platziert wurde, weil Platz wertvoll war.",
+        "Der Kamin war das Herz des Hauses, zum Kochen, Wärmen und Zusammenkommen. Handmühle, Teller und Küchengeräte zeigen den täglichen Rhythmus der Speisezubereitung.",
+        {
+          "type": "heading",
+          "text": "Wie der Raum genutzt wurde"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Schlafen und Aufbewahren",
+              "text": "Betten, Stauraum, Wiege und aufgehängter Brotkorb lösten praktische Bedürfnisse in einem vollen Haushalt."
+            },
+            {
+              "label": "Lebensmittel kühl halten",
+              "text": "Vor elektrischer Kühlung halfen Eis und kluge Luftführung, Lebensmittel und Wasser frisch zu halten."
+            },
+            {
+              "label": "Arbeit und Identität",
+              "text": "Webstuhl, Truhe, Trachten, Fotografien und religiöse Bilder sprechen von Arbeit, Festen, Erinnerung und Zugehörigkeit."
+            },
+            {
+              "label": "Sorgfältige Ordnung",
+              "text": "Nichts war zufällig; jedes Objekt hatte einen Platz und einen Zweck."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nächste Station"
+        },
+        "Gehen Sie weiter zur Bäckerei, wo die Geschichte vom Herd der Familie zum gemeinschaftlichen Steinofen führt."
+      ],
+      "challenge": {
+        "label": "Für junge Besucher",
+        "title": "Finde drei Dinge",
+        "items": [
+          {
+            "text": "Finde etwas zum Kochen."
+          },
+          {
+            "text": "Finde etwas zum Schlafen."
+          },
+          {
+            "text": "Finde etwas zum Aufbewahren von Essen."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/de/section-08.mp3",
+        "ready": true
+      },
+      "imageAlt": "Das traditionelle Haus"
+    },
+    {
+      "id": "bakery",
+      "title": "Der Steinofen",
+      "navigationTitle": "Steinofen",
+      "preview": "Der Steinofen vollendet die Geschichte von Weizen und Mehl. Hier versammelte sich das Dorf um Brot, Feuer, Geduld und die gemeinsame Arbeit der täglichen Versorgung.",
+      "details": [
+        "Der Steinofen ist mehr als 150 Jahre alt. Früher brachten viele Frauen des Dorfes hier das Brot für ihre Familien, sodass der Ofen ein praktisches und soziales Zentrum wurde.",
+        "Brot wurde nicht hastig gemacht. Der Teig wurde am Vortag gemischt und geformt, dann ruhte er. Früh am nächsten Morgen wurde der Ofen sorgfältig erhitzt, bevor die Laibe hineinkamen.",
+        {
+          "type": "heading",
+          "text": "Warum es wichtig war"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Gemeinsamer Ofen",
+              "text": "Das Dorf versammelte sich um Brot, Feuer, Geduld und die tägliche Versorgung."
+            },
+            {
+              "label": "Langsamer Prozess",
+              "text": "Nach ein bis zwei Stunden Backzeit zog der Duft von frischem Brot durch das Dorf."
+            },
+            {
+              "label": "Vollständiger Kreislauf",
+              "text": "Brot verband Haus, Feld, Mühle und Ofen zu einem Kreislauf des Insellebens."
+            },
+            {
+              "label": "Ort zum Innehalten",
+              "text": "Am Ende des Rundgangs bietet das Restaurant-Cafe einen natürlichen Moment, um über das Dorf zurückzublicken."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Danke"
+        },
+        "Vielen Dank, dass Sie mit uns durch Mylotopi und die Erinnerung an das alte Kefalos gegangen sind."
+      ],
+      "challenge": {
+        "label": "Für junge Besucher",
+        "title": "Folge dem Brot",
+        "items": [
+          {
+            "text": "Zeig auf den Ofen."
+          },
+          {
+            "text": "Stell dir warmes Brot darin vor."
+          },
+          {
+            "text": "Sag deiner Familie, wie es riechen könnte."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/de/section-09.mp3",
+        "ready": true
+      },
+      "imageAlt": "Der Steinofen"
+    }
+  ]
+}

@@ -13,9 +13,9 @@ Because runtime content is loaded from JSON files, local manual testing should s
 
 ## JavaScript
 
-- `assets/js/content-meta.js`: global metadata, active language list, content base path, canonical spot order, accent colors, and image metadata.
-- `assets/js/i18n.js`: JSON content loading, language normalization, content fallback, UI text lookup, spot text lookup, image alt fallback, and audio fallback helpers.
-- `assets/js/app.js`: runtime state, rendering, inline SVG language flags, URL/deep-link behavior, Mini-map modal, stop dropdown navigation, language switching, audio lifecycle, gallery behavior, focus handling, and announcements.
+- `assets/js/content-meta.js`: non-text runtime metadata, active language list, canonical section order, accent colors, and shared image metadata.
+- `assets/js/i18n.js`: `GuideContentLoader` and selected-language content service. It loads `assets/content/<language>.json` on demand and caches only requested languages.
+- `assets/js/app.js`: object-oriented runtime state, rendering, inline SVG language flags, URL/deep-link behavior, Mini-map modal, section dropdown navigation, language switching, audio lifecycle, gallery behavior, focus handling, and announcements.
 - `scripts/validate-content.mjs`: Node-based deployment validator for active runtime content and media references.
 
 ## Styles
@@ -27,10 +27,11 @@ Because runtime content is loaded from JSON files, local manual testing should s
 - Active runtime languages: `en`, `el`, `de`, `fr`, `it`, `es`, `nl`, `pl`, `ru`, `tr`.
 - Default language: `en`.
 - Staged content folders: none currently.
-- `assets/content/<language>/index.json`: per-language manifest with language code, UI labels, Mini-map path, section order, section file paths, and audio paths.
-- `assets/content/<language>/sections/*.json`: one localized JSON file per tour section.
+- `assets/content/<language>.json`: one complete localized JSON file per active language, including UI labels, section text, image alt text, and language-specific audio paths.
 
-Only languages listed in `MYLOTOPI_GUIDE_META.languages` are exposed in the language switcher. `MYLOTOPI_GUIDE_META.stagedLanguages` is reserved for future content folders that exist in the repository but are not ready for runtime exposure.
+Only languages listed in `MYLOTOPI_GUIDE_META.languages` are exposed in the language switcher.
+
+The public QR code should open the tour from the beginning. Section query params such as `?spot=welcome` remain supported as optional direct links, not as separate QR destinations.
 
 Language flags are centralized in `assets/js/app.js` as inline SVGs using the same `0 0 24 16` viewBox. Do not store emoji flags in content manifests.
 
@@ -49,7 +50,7 @@ Run:
 npm run validate
 ```
 
-The validator loads `assets/js/content-meta.js` in a sandbox, checks all active language manifests and sections, verifies ready audio paths, verifies Mini-map paths, verifies spot/image metadata, and warns about intentional image placeholders and documented Mini-map fallbacks.
+The validator loads `assets/js/content-meta.js` in a sandbox, checks all active language files, verifies canonical section order, verifies ready audio paths, verifies Mini-map paths, verifies section/image metadata, and warns about intentional image placeholders and documented Mini-map fallbacks.
 
 ## Documentation
 

@@ -1,6 +1,6 @@
 # Mylotopi QR Guide
 
-Mylotopi QR Guide is a lightweight static microsite for the visitor audio/text tour at Mylotopi. It is a single-page guide with query-param deep linking, structured multilingual content, per-stop audio, a Mini-map, and per-stop gallery support.
+Mylotopi QR Guide is a lightweight static microsite for the visitor audio/text tour at Mylotopi. It is a single-page guide with URL language selection, optional section deep linking, structured multilingual content, per-section audio, a Mini-map, and per-section gallery support.
 
 ## Current Status
 
@@ -8,23 +8,24 @@ Production-active runtime languages are English (`en`), Greek (`el`), German (`d
 
 English is the default language. The language selector renders fixed inline SVG flags for all active languages; English uses a UK flag, and unknown future language codes use a neutral fallback icon.
 
-Final section-specific image sets are still incomplete. When a stop does not have a suitable image, the guide intentionally shows a clean placeholder instead of an unrelated photo.
+Final section-specific image sets are still incomplete. When a section does not have a suitable image, the guide intentionally shows a clean placeholder instead of an unrelated photo.
 
 Turkish is active and currently uses a documented fallback mini-map copied from the default map. Replace it with a Turkish-specific source map when one is available.
+
+The public QR code should open the tour from the beginning. Sections are internal navigation within the same page; `?spot=...` remains supported only as an optional deep link.
 
 ## App Structure
 
 - `index.html`: static entry point.
 - `qr-guide.html`: compatibility redirect to `index.html` that preserves query params in JavaScript.
 - `assets/css/main.css`: visual system and responsive layout.
-- `assets/js/content-meta.js`: global metadata, runtime language list, canonical spot order, and image metadata.
-- `assets/js/i18n.js`: JSON content loading, language normalization, fallback logic, and content helpers.
-- `assets/js/app.js`: rendering, navigation, URL state, Mini-map, audio lifecycle, and gallery behavior.
-- `assets/content/<language>/index.json`: language manifest, UI labels, Mini-map path, section order, section file paths, and audio paths.
-- `assets/content/<language>/sections/*.json`: per-section localized visitor content.
+- `assets/js/content-meta.js`: non-text metadata, runtime language list, canonical section order, accent colors, and shared image metadata.
+- `assets/js/i18n.js`: selected-language JSON loading, language normalization, caching, and content helpers.
+- `assets/js/app.js`: object-oriented runtime state, rendering, navigation, URL state, Mini-map, audio lifecycle, and gallery behavior.
+- `assets/content/<language>.json`: complete localized guide content for one language, including UI labels, section text, image alt text, and language-specific audio paths.
 - `assets/audio/`: MP3 audio files organized by language.
 - `assets/maps/`: per-language Mini-map JPGs.
-- `assets/images/`: stop image assets and current active gallery images.
+- `assets/images/`: section image assets and current active gallery images.
 - `assets/print/`: print and operations source/reference assets.
 - `docs/`: internal project documentation.
 
@@ -48,7 +49,7 @@ Run the deployment validator before publishing:
 npm run validate
 ```
 
-The validator checks active language manifests, section JSON files, audio paths, Mini-map paths, spot metadata, and referenced images.
+The validator checks active language files, canonical section order, required UI and section fields, ready audio paths, Mini-map paths, section metadata, and referenced images.
 
 ## Runtime Languages
 
@@ -68,10 +69,10 @@ Active:
 ## Tour Stops
 
 1. Welcome / Introduction (`welcome`)
-2. Garden / Herbs (`garden-herbs`)
-3. Windmill base (`windmill-base`)
-4. Sleeping area (`sleeping-area`)
-5. Machinery (`machinery`)
+2. Herb Garden (`herb-garden`)
+3. Windmill First Floor (`windmill-first-floor`)
+4. Windmill Second Floor (`windmill-second-floor`)
+5. Windmill Third Floor (`windmill-third-floor`)
 6. Threshing floor and donkeys (`threshing-floor-donkeys`)
 7. Cellar / Italian tunnel (`cellar-italian-tunnel`)
 8. Traditional house (`traditional-house`)
@@ -79,11 +80,11 @@ Active:
 
 ## Replacing Content
 
-- Text: update the matching section JSON file in `assets/content/<language>/sections/`.
+- Text: update the matching language file, for example `assets/content/en.json`.
 - Audio: replace files in `assets/audio/<language>/` using `section-01.mp3` through `section-09.mp3`.
-- Audio paths: update the matching language manifest in `assets/content/<language>/index.json`.
+- Audio paths: update the matching section object inside `assets/content/<language>.json`.
 - Mini-maps: replace `assets/maps/<language>/minimap.jpg`.
-- Images: add final images to `assets/images/stops/<numbered-stop>/` and wire display metadata through `assets/js/content-meta.js`.
+- Images: add final images under `assets/images/stops/` and wire display metadata through `assets/js/content-meta.js`.
 - Print materials: update files in `assets/print/`, keeping stable filenames where possible.
 
 See `docs/CONTENT_REPLACEMENT_GUIDE.md` for the full replacement checklist.

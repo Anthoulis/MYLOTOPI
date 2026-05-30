@@ -1,0 +1,697 @@
+{
+  "code": "nl",
+  "nativeName": "Nederlands",
+  "aliases": [
+    "nl",
+    "dutch",
+    "nederlands",
+    "nl-nl",
+    "nl_nl"
+  ],
+  "ui": {
+    "pageTitle": "Welkom bij de Windmill Experience!",
+    "intro": "Reis terug in de tijd: Maak je klaar om het verleden in te stappen! Je hebt voor deze reis geen tijdmachine nodig, alleen een paar comfortabele schoenen.",
+    "languageLabel": "Taal",
+    "sectionsLabel": "Haltes van de gids",
+    "audioHeading": "Audiogids",
+    "readMore": "Lees meer",
+    "readLess": "Minder tonen",
+    "challengeLabel": "Voor jonge bezoekers",
+    "previousSection": "Vorige stop",
+    "nextSection": "Volgende stop",
+    "kicker": "Mylotopi QR-gids",
+    "navigationLabel": "Navigatie van de audiogids",
+    "currentSectionLabel": "Huidige stop",
+    "miniMapTitle": "MINIKAART",
+    "miniMapDescription": "Bekijk de route voordat je verdergaat.",
+    "miniMapTapHint": "Tik op de kaart om te openen",
+    "miniMapOpen": "Kaart openen",
+    "miniMapDownload": "Kaart downloaden",
+    "miniMapModalClose": "Kaart sluiten",
+    "miniMapImageAlt": "Minikaart van Mylotopi met de negen stops van de route",
+    "sectionSelectorLabel": "Stop",
+    "sectionSelectorPlaceholder": "Kies een stop",
+    "audioTitleLabel": "Nu te beluisteren",
+    "audioAriaLabel": "{label}: {title}",
+    "selectedBadge": "Huidige stop",
+    "imagePlaceholderLabel": "Afbeelding",
+    "imagePlaceholderHint": "Hier kan een foto van deze plek worden toegevoegd.",
+    "audioFallback": "De audio is niet beschikbaar in deze taal.",
+    "announcerPrefix": "Huidige stop",
+    "galleryPrevious": "Vorige afbeelding",
+    "galleryNext": "Volgende afbeelding",
+    "imageCounter": "{current} / {total}",
+    "challengeTitle": "Kijk goed",
+    "previousSectionAria": "Ga naar vorige stop: {title}",
+    "nextSectionAria": "Ga naar volgende stop: {title}",
+    "sectionLabelSeparator": " · ",
+    "loadErrorTitle": "De gids kan niet worden geladen.",
+    "loadErrorBody": "Serveer deze map als statische website en laad de pagina opnieuw.",
+    "heroTitle": "Welkom bij de Windmill Experience!"
+  },
+  "miniMap": {
+    "path": "./assets/maps/nl/minimap.jpg"
+  },
+  "sections": [
+    {
+      "id": "welcome",
+      "title": "Welkom bij de Windmill Experience!",
+      "navigationTitle": "Welkom bij de Windmill Experience!",
+      "preview": "Reis terug in de tijd: Maak je klaar om het verleden in te stappen! Je hebt voor deze reis geen tijdmachine nodig, alleen een paar comfortabele schoenen.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Een gerestaureerd dorp",
+              "text": "Dankzij de prachtige restauratie door de familie Voudouris zie je precies hoe de eilandbewoners meer dan een eeuw geleden leefden, lang voordat wifi überhaupt was uitgevonden. Je krijgt ook de kans om rond te neuzen en geheime geschiedenis uit de jaren 40 te ontdekken!"
+            },
+            {
+              "label": "Het leven van de molenaar",
+              "text": "Vandaag kruip je in de huid van een echte molenaar. Spoiler alert: zijn dagelijkse trainingsroutine bestond uit het de hele dag tillen van zware zakken meel om het grootste deel van het dorp te voeden."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Wat je gaat ontdekken:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "De gigantische windmolen",
+              "text": "Verken een echte, werkende windmolen van de onderkant tot helemaal aan de top."
+            },
+            {
+              "label": "Het dorpsleven",
+              "text": "Neem een kijkje in het traditionele huis en de bakkerij."
+            },
+            {
+              "label": "Natuur & dieren",
+              "text": "Snuif de heerlijke kruiden op in onze tuinen, bezoek de dorsvloer en zeg hallo tegen onze lieve ezels."
+            },
+            {
+              "label": "Ondergrondse geheimen",
+              "text": "Loop dwars door een echte militaire tunnel!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Hoe je de tour kunt beluisteren:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Het is supermakkelijk",
+              "text": "Volwassenen kunnen simpelweg de QR-codes scannen met de camera van hun telefoon. Je hoeft geen apps te downloaden!"
+            },
+            {
+              "label": "Luister samen",
+              "text": "Zet het volume van je telefoon harder of deel een koptelefoon, en volg de nummers door het dorp."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Volgende bestemming:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Binnenkort",
+              "text": "Ga verder naar onze kruidentuinen!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Een geheime missie voor jonge ontdekkingsreizigers!",
+        "items": [
+          {
+            "label": "Pak je kunstuitrusting",
+            "text": "We geven je een speciale Mylotopi-schets en een paar kleurpotloden mee om mee te nemen."
+          },
+          {
+            "label": "Observeer alles",
+            "text": "Houd vandaag je ogen wijd open terwijl je rondloopt! Kijk heel goed naar de gigantische windmolen, de zware stenen en het oude gereedschap. Probeer alle prachtige kleuren die je ziet te onthouden."
+          },
+          {
+            "label": "Maak een meesterwerk",
+            "text": "Wanneer je je avontuur hebt voltooid en gaat ontspannen in ons restaurant-café, kun je je tekening inkleuren en er een echt meesterwerk van maken!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/nl/section-01.mp3",
+        "ready": true
+      },
+      "imageAlt": "Welkom bij de Windmill Experience!"
+    },
+    {
+      "id": "herb-garden",
+      "title": "Onze Tuin met Onze Kruiden!",
+      "navigationTitle": "Onze Tuin met Onze Kruiden!",
+      "preview": "Keuken of Apotheek? Haal diep adem! Ruikt het naar een gigantische buitenkeuken of een dorpsapotheek? Eigenlijk is het allebei!",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "De Ultieme Overlevingskit",
+              "text": "Vóór de moderne geneeskunde en supermarkten waren deze tuinen een overlevingskit voor het eiland. Deze percelen staan vol met precies dezelfde kruiden die hier al eeuwenlang groeien."
+            },
+            {
+              "label": "De Dokter van de Natuur",
+              "text": "Kruiden zoals Tijm, Oregano en Marjolein werden niet alleen gebruikt om het avondeten heerlijk te laten smaken; ze waren de lokale dokter! Als iemand buikpijn had, rende de familie van de molenaar niet naar de apotheek voor vies smakende roze siroop – ze kwamen direct hierheen om blaadjes te plukken voor een natuurlijk medicijn."
+            },
+            {
+              "label": "Het Palet van een Schilder",
+              "text": "Bekijk de prachtige paarse Lavendel en heldergroene Munt! Het lijkt wel of iemand ze zo in de tuin heeft geschilderd. Let goed op die heldere kleuren!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Volgende Bestemming:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Binnenkort",
+              "text": "Ga daarna verder naar de Historische Windmolen!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Een Missie voor onze Jonge Plantendetectives en Volwassenen!",
+        "items": [
+          {
+            "label": "Ouderwets Plezier",
+            "text": "Leg de telefoons even weg – we gaan helemaal 'old-school'! Zie je de fysieke puzzelstukjes die hier rondslingeren?"
+          },
+          {
+            "label": "Gebruik je Zintuigen",
+            "text": "Het is jouw taak om uit te zoeken welk woord bij welke plant hoort. Je zult je ogen en je neus moeten gebruiken!"
+          },
+          {
+            "label": "Wrijf en Snuif",
+            "text": "Ga je gang, wrijf heel zachtjes over de blaadjes en ruik eraan (maar alsjeblieft, niet grazen – eet de tuin niet op voor de lunch!)."
+          },
+          {
+            "label": "Los de Puzzel op",
+            "text": "Kun jij de puzzelstukjes verplaatsen om ze bij de juiste kruiden te laten passen? Kijk of je het verschil tussen de Munt en de Oregano kunt ontdekken. Welke ruikt naar een heerlijke pizza en welke ruikt naar een knus dutje?"
+          },
+          {
+            "label": "Herinnering voor het Schetsboek",
+            "text": "Houd je ogen open, Plantendetectives! Onthoud de verschillende kleuren groen, grijs en paars om later je Mylotopi-schets in te kleuren."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/nl/section-02.mp3",
+        "ready": true
+      },
+      "imageAlt": "Onze Tuin met Onze Kruiden!"
+    },
+    {
+      "id": "windmill-first-floor",
+      "title": "De Molenvoet (1e verdieping)",
+      "navigationTitle": "De Molenvoet (1e verdieping)",
+      "preview": "Een Levende Legende: Welkom in de \"Molen van de Priester\"! Je staat in de oudste nog werkende windmolen van het hele eiland en de gehele Dodekanesos-archipel. De molen is meer dan 400 jaar oud, was tot 1987 dagelijks in gebruik en is nog steeds een levende machine die vandaag de dag meel maalt!",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Bij de Entree",
+              "text": "Let bij het binnenstappen op de traditionele granaatappel die er hangt voor geluk, samen met een klein flesje heilig water van de berg Athos dat al meer dan 9 jaar oud is."
+            },
+            {
+              "label": "Gebouwd voor Stormen",
+              "text": "Deze gigantische machine is 6,2 meter hoog en de stenen muren om je heen zijn 1,2 meter dik om het gebouw te beschermen tegen woeste zeestormen."
+            },
+            {
+              "label": "Enorme Machines",
+              "text": "Op de bovenverdiepingen liggen twee enorme maalstenen die elk een ton wegen – dat is samen meer dan twee ton!"
+            },
+            {
+              "label": "Eeuwenoud Hout",
+              "text": "80% van het hout in dit gebouw is origineel; de rest is helemaal van de berg Athos gekomen. Wonderbaarlijk genoeg zijn sommige hergebruikte houten onderdelen die boven je draaien tussen de 1.000 en 1.300 jaar oud!"
+            },
+            {
+              "label": "Aan je Rechterkant",
+              "text": "Zie je het gedeelte dat met een doek is afgedekt? Dat was de opslagruimte van de molenaar. Daarnaast zie je een houten ezelzadel en een dorsslee die de ezel van de molenaar trok om de tarwe te scheiden. Je kunt hier ook alledaags houten gereedschap en prachtige foto's van andere windmolens in Griekenland ontdekken."
+            },
+            {
+              "label": "De Open Haard",
+              "text": "De molenaar gebruikte deze niet alleen voor de warmte! Kijk goed naar binnen: zie je een blik? Daarin zit koeienvet, dat de molenaar smolt om de bewegende delen van de windmolen te smeren, zodat ze niet zouden piepen. Net boven de open haard hangt een foto van Kostas Politis, de geliefde eigenaar van deze windmolen wiens nalatenschap hier voortleeft."
+            },
+            {
+              "label": "Aan je Linkerkant",
+              "text": "Hier zie je een traditionele weegschaal met gewichten, die werd gebruikt om het verse meel zorgvuldig te wegen."
+            },
+            {
+              "label": "De Eerste Rem",
+              "text": "Zoek naar het kleine touwtje dat naar beneden hangt. Geloof het of niet, dat touw was het eerste remsysteem van de windmolen! De molenaar trok eraan om die twee ton wegende molenstenen een klein stukje op te tillen, zodat hij veilig naar buiten kon gaan om de zeilen uit te rollen."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Volgende bestemming:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Binnenkort",
+              "text": "Ga daarna verder naar de tweede verdieping van de windmolen!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Een missie voor onze jonge ontdekkingsreizigers en volwassenen!",
+        "items": [
+          {
+            "label": "Test de Muren",
+            "text": "Laten we eens kijken hoe dik die muren echt zijn! Ga naast de deuropening staan en strek je armen zo wijd mogelijk uit. Zijn je armen langer dan de muur dik is, of wint de windmolen?"
+          },
+          {
+            "label": "Spion",
+            "text": "Kijk rond in de kamer en probeer het houten ezelzadel te vinden!"
+          },
+          {
+            "label": "Zoek het Vet",
+            "text": "Tuur in de open haard – kun je het verborgen blik met koeienvet vinden?"
+          },
+          {
+            "label": "Spot de Rem",
+            "text": "Vind het kleine hangende touwtje dat diende als het remsysteem van de windmolen!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/nl/section-03.mp3",
+        "ready": true
+      },
+      "imageAlt": "De Molenvoet (1e verdieping)"
+    },
+    {
+      "id": "windmill-second-floor",
+      "title": "Het Slaapgedeelte van de Molen (2e verdieping)",
+      "navigationTitle": "Slaapgedeelte",
+      "preview": "Pas op waar je loopt: Welkom op de tweede verdieping! Pas goed op waar je loopt op de houten trap en let op je hoofd voor de houten balken boven je. Maak je klaar voor een grote verrassing over hoe het gezin hier vroeger leefde.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Aan je rechterkant",
+              "text": "Aan de muren zie je enkele prachtige foto's van verschillende historische windmolens uit heel Griekenland. Maar deze ruimte was niet alleen een galerie!"
+            },
+            {
+              "label": "Een erg luidruchtige slaapkamer",
+              "text": "Precies hier aan de rechterkant is de plek waar de molenaar en zijn hele gezin vroeger sliepen! Kun je je voorstellen dat je een rustig dutje probeert te doen terwijl het hele gebouw trilde, de wind gierde en de zware machines slechts een paar meter verderop luidruchtig tarwe vermaalden? Ze moeten wel erg vaste slapers zijn geweest!"
+            },
+            {
+              "label": "Aan je linkerkant",
+              "text": "Kijk nu naar de linkerkant. Dit was een zeer belangrijke en drukke opslagruimte."
+            },
+            {
+              "label": "Het meel beschermen",
+              "text": "De molenaar gebruikte deze kant van de kamer om alle zware zakken ongemalen tarwe die wachtten om gemalen te worden veilig op te stapelen, samen met de vers gevulde zakken luchtig wit meel die klaar waren om het dorp te voeden. Hij bewaarde ze hier vlak bij zijn bed, zodat hij ze kon beschermen!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Volgende bestemming:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Binnenkort",
+              "text": "Ga daarna verder naar de derde verdieping van de windmolen!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Een vraag voor onze jonge ontdekkingsreizigers en volwassenen!",
+        "items": [
+          {
+            "label": "Stel je voor",
+            "text": "Zou jij je kunnen voorstellen dat je hier op de tweede verdieping slaapt, precies zoals zij dat vroeger deden?"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/nl/section-04.mp3",
+        "ready": true
+      },
+      "imageAlt": "Het Slaapgedeelte van de Molen (2e verdieping)"
+    },
+    {
+      "id": "windmill-third-floor",
+      "title": "De Molenmachines (3e verdieping)",
+      "navigationTitle": "De Molenmachines (3e verdieping)",
+      "preview": "Pas op je hoofd: Welkom op de derde verdieping! Let alsjeblieft goed op waar je loopt op de ladder en pas op je hoofd terwijl je op ontdekking gaat.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "De spierballen van de molen",
+              "text": "Je kijkt nu naar de echte kracht van de windmolen. Kijk eens naar die enorme houten balk boven de stenen. Dit is de belangrijkste verbinding tussen de zware stenen binnenin, de tandwielen en de gigantische draaiende zeilen buiten!"
+            },
+            {
+              "label": "Stenen van twee ton",
+              "text": "Deze enorme maalstenen wegen samen meer dan twee ton! Ze werden helemaal geïmporteerd vanaf het eiland Nisyros, dat beroemd is om de productie van een unieke, supersterke steen die perfect is voor het malen."
+            },
+            {
+              "label": "De Voeder & De Bel",
+              "text": "Zoek net boven de stenen naar een houten kist die \"De Voeder\" wordt genoemd; hier stortte de molenaar de rauwe tarwe in. Maar hoe wist hij boven al het lawaai uit dat de kist leeg was? Zoek goed naar een klein belletje! Dit rinkelde automatisch wanneer de tarwe bijna op was om de molenaar te vertellen dat hij hem moest bijvullen."
+            },
+            {
+              "label": "De eerste rem",
+              "text": "Zie je die houten hendel die verbonden is met een klein touwtje? Dat staat in verbinding met de eerste verdieping en is het eerste remsysteem waar we beneden over hebben gepraat."
+            },
+            {
+              "label": "Het meel laten vallen",
+              "text": "Kijk naar beneden bij de hendel om een valluik te vinden dat is aangesloten op een buis. Zodra het meel perfect vermalen was, viel het rechtstreeks door die buis naar de onderste verdieping!"
+            },
+            {
+              "label": "De \"fooi\" van de molenaar",
+              "text": "Direct naast de hoofdbuis zit een tweede, kleiner valluik. Vroeger betaalden mensen niet altijd met geld. In plaats daarvan gebruikte de molenaar dit luik om zijn \"fooi\" te innen: hij hield een klein percentage van het meel voor zijn eigen gezin als betaling voor zijn harde werk!"
+            },
+            {
+              "label": "Soepel draaien",
+              "text": "Zoek het kleine blikje bij de valluiken. Beneden gebruikte hij koeienvet, maar hierboven gebruikte hij een speciaal mengsel van olijfolie en zeep om de bovenste tandwielen soepel te laten draaien."
+            },
+            {
+              "label": "De noodrem",
+              "text": "Zoek naast de ladder naar een heel dik touw. Als de molenaar in allerijl moest stoppen met het malen van meel, trok hij aan dit touw: het tweede remsysteem!"
+            },
+            {
+              "label": "Een scheepsplafond",
+              "text": "Kijk tot slot omhoog naar het plafond. Waar doet het je aan denken? Het is eigenlijk ontworpen in de vorm van een schip om de kracht van het mechanisme te vergroten en sneller meel te produceren!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Volgende bestemming:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Binnenkort",
+              "text": "Ga daarna verder naar de dorsvloer en het ezelgedeelte!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Een missie voor onze jonge ontdekkingsreizigers en volwassenen!",
+        "items": [
+          {
+            "label": "Luister naar de bel en laat hem luiden",
+            "text": "Kun jij het kleine belletje vinden dat de molenaar waarschuwde wanneer de tarwe opraakte? Kun je hem luiden?"
+          },
+          {
+            "label": "Zoek het verborgen meel",
+            "text": "Scan de vloer en kijk of je het speciale \"fooi\"-luikje kunt vinden waar de molenaar zijn welverdiende loon bewaarde!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/nl/section-05.mp3",
+        "ready": true
+      },
+      "imageAlt": "De Molenmachines (3e verdieping)"
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "title": "De dorsvloer en de ezels!",
+      "navigationTitle": "De dorsvloer en de ezels!",
+      "preview": "Frisse lucht en stenen vloeren: Welkom terug buiten! Haal diep adem in de frisse lucht. Je staat nu bij de traditionele dorsvloer, die veel weg heeft van een grote, ronde, stenen dansvloer.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "De duizelige ezel",
+              "text": "Kijk naar de houten paal precies in het midden van de cirkel. Vroeger bond de molenaar een touw vanaf die paal losjes om de nek van een ezel. Het was de taak van de ezel om rondjes te lopen in een grote cirkel, waarbij zijn zware hoeven de geoogste gewassen stampten en verpletterden om de zaden vrij te maken!"
+            },
+            {
+              "label": "De tarwe scheiden",
+              "text": "Nadat de hardwerkende ezel al dat duizelige stampwerk had verricht, kwam de molenaar in actie om de witte tarwe zorgvuldig van de bruine tarwe te scheiden. (Tegenwoordig gebruiken we deze methode niet meer – we kopen onze tarwe rechtstreeks van lokale producenten op het eiland!)"
+            },
+            {
+              "label": "Ontmoet de echte sterren",
+              "text": "Je hoeft je de dieren niet alleen maar voor te stellen! Kijk in de buurt en je ontmoet de echte sterren van de boerderij: onze twee lieve ezels. De trotse mama heet Melina en is 6 jaar oud, en haar lieve kleine dochter heet Katie, die pas 2 jaar oud is."
+            },
+            {
+              "label": "De vermiste vader",
+              "text": "Wat betreft de vader van Katie... tja, niemand weet eigenlijk waar hij heen is! Hij hield ervan om heel hard te zingen, dus we denken dat hij naar het volgende dorp is gelopen om een ezel-rockband te beginnen!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Volgende bestemming:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Binnenkort",
+              "text": "Ga dan verder naar de kelder/Italiaanse tunnel!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Een missie voor onze jonge ontdekkingsreizigers en volwassenen!",
+        "items": [
+          {
+            "label": "De ezel-dans",
+            "text": "Stap naar de rand van de dorsvloer! Kun je doen alsof je vastzit aan de houten paal in het midden en in een perfecte cirkel lopen, net zoals een ezel dat deed?"
+          },
+          {
+            "label": "Zeg hallo",
+            "text": "Vergeet na je duizelige dans niet om even te zwaaien naar Melina en Katie! Bewonder onze lieve ezels wel van een afstandje; ze zien er schattig uit, maar ze zouden je vingers wel eens voor babyworteltjes kunnen aanzien. Dat zoeken we liever niet uit!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/nl/section-06.mp3",
+        "ready": true
+      },
+      "imageAlt": "De dorsvloer en de ezels!"
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "title": "De Geheime Tunnel & Kelder",
+      "navigationTitle": "De Geheime Tunnel & Kelder",
+      "preview": "Een verandering van omgeving: Bereid je voor op een totale verandering van omgeving terwijl we ondergronds gaan! Terwijl je afdaalt in de koele lucht, kijk dan goed naar links en naar rechts.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Decoratieve flessen",
+              "text": "Je ziet rijen lokale wijn van de Skevofilax-wijnmakerij op Kos. We bewaren deze flessen hier als decoratie! Onze eigen drinkwijnen worden veilig bewaard in de hoofdkelder, waar de temperatuur perfect voor ze is."
+            },
+            {
+              "label": "Geschiedenis uit de Tweede Wereldoorlog",
+              "text": "In de jaren 40, tijdens de Tweede Wereldoorlog, was deze ruimte niet bedoeld voor wijn, maar om te overleven. Deze 20 meter lange tunnel werd tijdens de oorlog gebouwd door Italiaanse soldaten."
+            },
+            {
+              "label": "De 'Haast-tunnel'",
+              "text": "De soldaten gebruikten deze gang als een 'haast-tunnel', een geheime kortere weg om te vluchten en zich te verbergen voor hun tegenstanders. De kelder zelf werd gebruikt als een veilige schuilplaats waar ze konden slapen, ontspannen en beschermd bleven tegen de gevechten buiten."
+            },
+            {
+              "label": "Een verborgen vesting",
+              "text": "Aan het einde van de tunnel kom je uit in onze achtertuin, wat nu ons vredige restaurant is. Maar kijk nog eens terug naar het stenen dak voordat je naar buiten gaat! In de jaren 40 was dit hele gebied een schietbaan. De bovenkant was bedekt met zware stenen om de soldaten te beschermen, en precies aan de rand stonden machinegeweren om de heuvel te verdedigen. Het is nauwelijks te geloven dat deze rustige, mooie plek voor een maaltijd ooit de best bewaakte plek van het eiland was!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Volgende bestemming:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Binnenkort",
+              "text": "Als je klaar bent met het verkennen van de tunnel, kom dan terug naar onze gids. Deze kan je de weg wijzen naar je volgende geweldige stops: het Traditionele Huis en de Bakkerij!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Een missie voor onze jonge ontdekkingsreizigers en volwassenen!",
+        "items": [
+          {
+            "label": "Strikt geheim",
+            "text": "Je bent nu op een geheime missie! Kun jij, terwijl je door de soldatentunnel loopt, precies berekenen hoeveel flessen wijn er langs de muren staan?"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/nl/section-07.mp3",
+        "ready": true
+      },
+      "imageAlt": "De Geheime Tunnel & Kelder"
+    },
+    {
+      "id": "traditional-house",
+      "title": "Het Traditionele Huis",
+      "navigationTitle": "Het Traditionele Huis",
+      "preview": "Een Piepklein, Overvol Huis: Welkom in het traditionele huis! Dit geweldige huisje is meer dan 130 jaar oud. Het is minder dan 20 vierkante meter groot, maar geloof het of niet: vroeger woonden hier 8 tot 10 mensen! De grootouders, de ouders en al hun kinderen deelden deze ene kamer.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Waar Sliep Iedereen? De grootouders sliepen vlak bij de warme open haard. De ouders sliepen hoog in het hoogslaperbed aan de overkant, terwijl de oudere kinderen in de bedden daarnaast en op de bank sliepen."
+            },
+            {
+              "label": "Slaap, Kindje, Slaap",
+              "text": "En de baby? Zoek de kleine houten wieg! Om de baby te helpen in slaap te vallen, kon iemand voorzichtig aan dat kleine hangende touwtje trekken om de wieg te laten schommelen."
+            },
+            {
+              "label": "Slimme Opbergruimte",
+              "text": "Let op de ruimte onder de familiebedden; dat was hun belangrijkste opslagruimte."
+            },
+            {
+              "label": "Dagelijkse Klusjes & Decoratie",
+              "text": "Aan de linkerkant zie je een groot houten weefgetouw dat ze gebruikten om nieuwe kleren te maken en oude te repareren, naast een kist waarin ze hun persoonlijke spullen bewaarden. Je ziet ook een zeef voor het meel, en prachtige oude foto's en religieuze afbeeldingen aan de muren."
+            },
+            {
+              "label": "Vazen & Uniformen",
+              "text": "Zoek naast de kist naar twee vazen: de grote was voor wijn en de kleine voor water. Vlak daarboven hangen twee prachtige traditionele uniformen die de dames van het huis droegen voor bruiloften en speciale gelegenheden."
+            },
+            {
+              "label": "Het Hart van het Huis",
+              "text": "Omdat het huis niet is gerestaureerd zoals moderne woningen, werd de open haard gebruikt om alle maaltijden te bereiden en het hele gezin warm te houden. Direct daarnaast staat een kleine handmolen voor het malen van meel, samen met hun dagelijkse keukengerei en traditionele borden versierd met mooie geschilderde bloemen."
+            },
+            {
+              "label": "De Hangende Schommel",
+              "text": "Kijk eens omhoog naar het plafond! Zie je iets hangen dat een beetje op een schommel lijkt? Het is niet om mee te spelen! In het bovenste gedeelte bewaarden ze vers brood om het veilig weg te houden van hongerige muizen. Onderin bewaarden ze johannesbrood (carobs). Omdat ze vroeger geen snoeprepen hadden, kregen de kinderen zoet johannesbrood als een heerlijke chocoladetraktatie!"
+            },
+            {
+              "label": "Een Traditionele Koelkast",
+              "text": "Zoek ten slotte naar de houten kast. Geloof het of niet, dit is een traditionele koelkast! Deze bestaat uit twee delen: bovenin legden ze grote ijsblokken en terwijl het ijs smolt, konden ze een kraantje opendraaien om ijskoud water te drinken. De kou van het bovenste gedeelte koelde ook het onderste gedeelte perfect om hun eten vers te houden!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Volgende Bestemming:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Binnenkort",
+              "text": "Ga daarna verder naar de Bakkerij!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Een Missie voor onze Jonge Ontdekkingsreizigers en Volwassenen!",
+        "items": [
+          {
+            "label": "Draai aan de Molen",
+            "text": "Je hebt veel te doen in dit drukke huisje! Kun je eerst de handmolen vinden? Probeer de houten hendel in de opening te steken en kijk of je hem rond kunt draaien!"
+          },
+          {
+            "label": "Kijk Omhoog & Omlaag",
+            "text": "Kun je na je harde werk de hangende schommel vinden die het brood uit de buurt van de muizen hield?"
+          },
+          {
+            "label": "Wieg de Baby",
+            "text": "En hoe zit het met het kleine touwtje waaraan ze trokken om de baby in slaap te wiegen? Kun jij de baby in slaap laten vallen door aan het touwtje te trekken? Is het lastig voor je?"
+          },
+          {
+            "label": "Stel je Voor",
+            "text": "Als je ze allemaal gevonden hebt, stel je dan eens voor hoe het zou zijn om deze kleine kamer te delen met 8 tot 10 gezinsleden!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/nl/section-08.mp3",
+        "ready": true
+      },
+      "imageAlt": "Het Traditionele Huis"
+    },
+    {
+      "id": "bakery",
+      "title": "De Bakkerij",
+      "navigationTitle": "De Bakkerij",
+      "preview": "Een ontmoetingsplek: Welkom bij de traditionele oven! Deze prachtige stenen oven is meer dan 150 jaar oud. Vroeger kwamen de meeste vrouwen uit het dorp hierheen om hun dagelijks brood voor hun gezin te bakken.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Een proces van twee dagen",
+              "text": "Brood bakken was toen niet zo snel als even naar de supermarkt rennen! Het was eigenlijk een proces van twee dagen. De avond van tevoren mengden en vormden de dames het deeg zorgvuldig, waarna het een nacht bleef rusten en rijzen."
+            },
+            {
+              "label": "Vers gebakken",
+              "text": "De volgende ochtend, als het deeg klaar was, maakten ze een heet vuur om de oven op te warmen. Zodra de temperatuur precies goed was, plaatsten ze het deeg erin. Na één tot twee uur bakken rook het hele dorp naar de heerlijke geur van vers, warm brood dat klaar was om opgegeten te worden!"
+            },
+            {
+              "label": "Historische foto's",
+              "text": "Als je rondkijkt, zie je een aantal prachtige foto's die precies laten zien hoe zij deze procedure uitvoerden."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Een Vraag voor onze Jonge Ontdekkingsreizigers en Volwassenen!"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "De Vroege Vogel",
+              "text": "Het hele dorp had vers brood nodig. Kun jij raden hoe laat de bakker elke ochtend wakker moest worden om te beginnen met het maken van het deeg? (Hint: Het was lang voordat de zon opkwam!)"
+            },
+            {
+              "label": "Kijk Goed",
+              "text": "Kijk goed naar de foto's om te zien hoe de vrouwen uit het dorp vroeger in de bakkerij werkten."
+            },
+            {
+              "label": "Kijk Goed",
+              "text": "Kijk goed naar de foto's om te zien hoe de vrouwen uit het dorp vroeger in de bakkerij werkten."
+            },
+            {
+              "label": "Bedankt",
+              "text": "Bedankt dat jullie vandaag samen met ons op ontdekking zijn gegaan!"
+            }
+          ]
+        }
+      ],
+      "audio": {
+        "path": "./assets/audio/nl/section-09.mp3",
+        "ready": true
+      },
+      "imageAlt": "De Bakkerij"
+    }
+  ]
+}

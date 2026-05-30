@@ -1,0 +1,697 @@
+{
+  "code": "pl",
+  "nativeName": "Polski",
+  "aliases": [
+    "pl",
+    "polish",
+    "polski",
+    "pl-pl",
+    "pl_pl"
+  ],
+  "ui": {
+    "pageTitle": "Witamy w Wiatrakowej Przygodzie!",
+    "intro": "Podróż w czasie: Przygotujcie się na krok w przeszłość! Do tej podróży nie będziecie potrzebować wehikułu czasu, wystarczą tylko wygodne buty.",
+    "languageLabel": "Język",
+    "sectionsLabel": "Punkty przewodnika",
+    "audioHeading": "Audioprzewodnik",
+    "readMore": "Czytaj więcej",
+    "readLess": "Pokaż mniej",
+    "challengeLabel": "Dla młodych gości",
+    "previousSection": "Poprzedni punkt",
+    "nextSection": "Następny punkt",
+    "kicker": "Przewodnik QR Mylotopi",
+    "navigationLabel": "Nawigacja audioprzewodnika",
+    "currentSectionLabel": "Aktualny punkt",
+    "miniMapTitle": "MINI MAPA",
+    "miniMapDescription": "Sprawdź trasę przed dalszym zwiedzaniem.",
+    "miniMapTapHint": "Dotknij mapy, aby ją otworzyć",
+    "miniMapOpen": "Otwórz mapę",
+    "miniMapDownload": "Pobierz mapę",
+    "miniMapModalClose": "Zamknij mapę",
+    "miniMapImageAlt": "Mini mapa Mylotopi pokazująca dziewięć punktów trasy",
+    "sectionSelectorLabel": "Punkt",
+    "sectionSelectorPlaceholder": "Wybierz punkt",
+    "audioTitleLabel": "Teraz słuchasz",
+    "audioAriaLabel": "{label}: {title}",
+    "selectedBadge": "Aktualny punkt",
+    "imagePlaceholderLabel": "Zdjęcie",
+    "imagePlaceholderHint": "Tutaj można dodać zdjęcie tego miejsca.",
+    "audioFallback": "Audio nie jest dostępne w tym języku.",
+    "announcerPrefix": "Aktualny punkt",
+    "galleryPrevious": "Poprzednie zdjęcie",
+    "galleryNext": "Następne zdjęcie",
+    "imageCounter": "{current} / {total}",
+    "challengeTitle": "Przyjrzyj się",
+    "previousSectionAria": "Przejdź do poprzedniego punktu: {title}",
+    "nextSectionAria": "Przejdź do następnego punktu: {title}",
+    "sectionLabelSeparator": " · ",
+    "loadErrorTitle": "Nie można załadować przewodnika.",
+    "loadErrorBody": "Udostępnij ten folder jako statyczną stronę i odśwież.",
+    "heroTitle": "Witamy w Wiatrakowej Przygodzie!"
+  },
+  "miniMap": {
+    "path": "./assets/maps/pl/minimap.jpg"
+  },
+  "sections": [
+    {
+      "id": "welcome",
+      "title": "Witamy w Wiatrakowej Przygodzie!",
+      "navigationTitle": "Witamy w Wiatrakowej Przygodzie!",
+      "preview": "Podróż w czasie: Przygotujcie się na krok w przeszłość! Do tej podróży nie będziecie potrzebować wehikułu czasu, wystarczą tylko wygodne buty.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Odrestaurowana wioska",
+              "text": "Dzięki pięknej renowacji przeprowadzonej przez rodzinę Voudouris, zobaczycie dokładnie, jak żyli wyspiarze ponad wiek temu, na długo przed wynalezieniem Wi-Fi. Będziecie mieli również okazję pomyszkować i odkryć tajną historię z lat 40. XX wieku!"
+            },
+            {
+              "label": "Życie młynarza",
+              "text": "Dziś możecie wejść w buty prawdziwego młynarza. Uwaga, spoiler: jego codzienny trening polegał na podnoszeniu ciężkich worków z mąką przez cały dzień, tylko po to, aby wykarmić większość wioski."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Co będziecie odkrywać:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Gigantyczny Wiatrak",
+              "text": "Zwiedźcie prawdziwy, działający wiatrak od samego dołu aż na sam szczyt."
+            },
+            {
+              "label": "Życie w wiosce",
+              "text": "Zajrzyjcie do tradycyjnego domu i piekarni."
+            },
+            {
+              "label": "Przyroda i zwierzęta",
+              "text": "Poczujcie zapach wspaniałych ziół w naszych ogrodach, odwiedźcie klepisko i przywitajcie się z naszymi uroczymi osiołkami."
+            },
+            {
+              "label": "Podziemne sekrety",
+              "text": "Przejdźcie prosto przez prawdziwy tunel wojskowy!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak słuchać przewodnika:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "To super proste",
+              "text": "Dorośli, po prostu zeskanujcie kody QR, które znajdziecie, używając aparatu w telefonie. Nie musicie pobierać żadnych aplikacji!"
+            },
+            {
+              "label": "Słuchajcie razem",
+              "text": "Wystarczy podgłośnić telefon lub podzielić się słuchawkami i podążać za numerami rozmieszczonymi po wiosce."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Następny cel:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Kolejny punkt",
+              "text": "Przejdźcie dalej do naszych ogrodów z ziołami!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Tajna Misja dla Młodych Odkrywców!",
+        "items": [
+          {
+            "label": "Chwyćcie swój sprzęt artystyczny",
+            "text": "Damy Wam specjalny Szkic Mylotopi i kilka kredek do zabrania ze sobą."
+          },
+          {
+            "label": "Obserwujcie wszystko",
+            "text": "Spacerując dzisiaj, miejcie oczy szeroko otwarte! Przyjrzyjcie się bardzo uważnie gigantycznemu wiatrakowi, ciężkim kamieniom i starym narzędziom. Spróbujcie zapamiętać wszystkie piękne kolory, które widzicie."
+          },
+          {
+            "label": "Stwórzcie arcydzieło",
+            "text": "Kiedy zakończycie swoją przygodę i usiądziecie, aby odpocząć w naszej restauracji-kawiarni, będziecie mogli pokolorować swój rysunek i zamienić go w prawdziwe arcydzieło!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/pl/section-01.mp3",
+        "ready": true
+      },
+      "imageAlt": "Witamy w Wiatrakowej Przygodzie!"
+    },
+    {
+      "id": "herb-garden",
+      "title": "Nasz ogród z naszymi ziołami!",
+      "navigationTitle": "Nasz ogród z naszymi ziołami!",
+      "preview": "Kuchnia czy apteka? Weźcie głęboki oddech! Czy pachnie tu jak w gigantycznej kuchni na świeżym powietrzu, czy jak w wiejskiej aptece? Właściwie to i jedno, i drugie!",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Najlepszy zestaw przetrwania",
+              "text": "Zanim pojawiła się współczesna medycyna i supermarkety, te ogrody były wyspiarskim zestawem przetrwania. Te grządki są pełne dokładnie tych samych ziół, które rosną tu od wieków."
+            },
+            {
+              "label": "Naturalny lekarz",
+              "text": "Zioła takie jak tymianek, oregano i majeranek nie służyły tylko do tego, by obiad smakował wyśmienicie – były lokalnym lekarzem! Jeśli kogoś bolał brzuch, rodzina młynarza nie biegła do apteki po niesmaczny różowy syrop – przychodzili właśnie tutaj, aby zebrać liście na naturalne lekarstwo."
+            },
+            {
+              "label": "Paleta malarza",
+              "text": "Spójrzcie na piękną fioletową lawendę i jaskrawozieloną miętę! Wyglądają tak, jakby ktoś je namalował prosto w ogrodzie. Zwróćcie szczególną uwagę na te żywe kolory!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Następny cel:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Kolejny punkt",
+              "text": "Następnie przejdźcie dalej do Historycznego Wiatraka!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Misja dla naszych Młodych Roślinnych Detektywów i Dorosłych!",
+        "items": [
+          {
+            "label": "Zabawa w starym stylu",
+            "text": "Odłóżcie na chwilę telefony – wracamy do całkowitej klasyki! Czy widzicie rozsypane dookoła elementy fizycznej układanki?"
+          },
+          {
+            "label": "Użyjcie zmysłów",
+            "text": "Waszym zadaniem jest odgadnięcie, które słowo pasuje do której rośliny. Będziecie musieli użyć swoich oczu i nosów!"
+          },
+          {
+            "label": "Potrzyj i powąchaj",
+            "text": "Śmiało, potrzyjcie delikatnie liście i powąchajcie je (ale prosimy, bez wypasania – nie zjedzcie ogrodu przed obiadem!)."
+          },
+          {
+            "label": "Ułóżcie układankę",
+            "text": "Czy potraficie dopasować elementy układanki do właściwych ziół? Sprawdźcie, czy potraficie odkryć różnicę między miętą a oregano. Które z nich pachnie jak pyszna pizza, a które jak przyjemna drzemka?"
+          },
+          {
+            "label": "Przypomnienie o szkicowniku",
+            "text": "Miejcie oczy szeroko otwarte, Roślinni Detektywi! Zapamiętajcie różne odcienie zieleni, szarości i fioletu, aby później pokolorować swój Szkic Mylotopi."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/pl/section-02.mp3",
+        "ready": true
+      },
+      "imageAlt": "Nasz ogród z naszymi ziołami!"
+    },
+    {
+      "id": "windmill-first-floor",
+      "title": "Podstawa Wiatraka (1. piętro)",
+      "navigationTitle": "Podstawa Wiatraka (1. piętro)",
+      "preview": "Żywa legenda: Witamy w „Młynie Księdza”! Stoisz wewnątrz najstarszego działającego wiatraka na całej wyspie i w całym archipelagu Dodekanezu. Ma ponad 400 lat, działał codziennie aż do 1987 roku i wciąż jest żywą maszyną, która do dziś miele mąkę!",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Przy wejściu",
+              "text": "Kiedy przechodzisz przez drzwi, zwróć uwagę na tradycyjny owoc granatu zawieszony na szczęście, obok małej butelki Wody Święconej z góry Athos, która ma ponad 9 lat."
+            },
+            {
+              "label": "Zbudowany na sztormy",
+              "text": "Ta gigantyczna maszyna ma 6,2 metra wysokości, a kamienne ściany wokół Ciebie mają 1,2 metra grubości, aby chronić budynek przed dzikimi morskimi sztormami."
+            },
+            {
+              "label": "Masywne maszyny",
+              "text": "Na wyższych piętrach znajdują się dwa masywne kamienie młyńskie, z których każdy waży jedną tonę – to ponad dwie tony łącznie!"
+            },
+            {
+              "label": "Starożytne drewno",
+              "text": "W 80% drewno w tym budynku jest oryginalne, a reszta została sprowadzona aż z góry Athos. O dziwo, niektóre z ponownie wykorzystanych drewnianych części obracających się w górze mają od 1000 do 1300 lat!"
+            },
+            {
+              "label": "Po Twojej prawej",
+              "text": "Widzisz obszar przykryty szmatą? To był magazyn młynarza. Obok niego zobaczysz drewniane siodło dla osła i sanie młockarskie, które ciągnął osioł młynarza, aby oddzielać ziarna pszenicy. Możesz również dostrzec codzienne drewniane narzędzia i piękne zdjęcia innych wiatraków z całej Grecji."
+            },
+            {
+              "label": "Kominek",
+              "text": "Młynarz nie używał go tylko do ogrzewania! Przyjrzyj się uważnie wnętrzu – czy widzisz puszkę? Zawiera ona krowi tłuszcz, który młynarz topił, aby smarować ruchome części wiatraka, żeby nie skrzypiały. Tuż nad kominkiem znajduje się fotografia Kostasa Politisa, ukochanego właściciela tego wiatraka, którego dziedzictwo wciąż tu żyje."
+            },
+            {
+              "label": "Po Twojej lewej",
+              "text": "Zobaczysz tradycyjną wagę i odważniki, których używano do ostrożnego ważenia świeżej mąki."
+            },
+            {
+              "label": "Pierwsze hamulce",
+              "text": "Poszukaj małej, zwisającej liny. Wierz lub nie, ale ta lina była pierwszym systemem hamulcowym wiatraka! Młynarz pociągał za nią, aby podnieść te dwutonowe kamienie młyńskie zaledwie o odrobinę, co pozwalało mu bezpiecznie wyjść na zewnątrz i rozwinąć żagle."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Następny cel:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Kolejny punkt",
+              "text": "Następnie przejdźcie dalej na drugie piętro Wiatraka!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Misja dla naszych Młodych Odkrywców i Dorosłych!",
+        "items": [
+          {
+            "label": "Przetestuj ściany",
+            "text": "Sprawdźmy, jak grube są te ściany w rzeczywistości! Stań obok drzwi i wyciągnij ramiona najszerzej jak potrafisz. Czy Twoje ramiona są dłuższe niż grubość ściany, czy wiatrak wygrywa?"
+          },
+          {
+            "label": "Szpieg",
+            "text": "Rozejrzyj się po pokoju i sprawdź, czy potrafisz dostrzec drewniane siodło dla osła!"
+          },
+          {
+            "label": "Znajdź tłuszcz",
+            "text": "Zajrzyj do kominka – czy potrafisz dostrzec ukrytą puszkę z krowim tłuszczem?"
+          },
+          {
+            "label": "Zauważ hamulce",
+            "text": "Znajdź małą wiszącą linę, która służyła jako system hamulcowy wiatraka!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/pl/section-03.mp3",
+        "ready": true
+      },
+      "imageAlt": "Podstawa Wiatraka (1. piętro)"
+    },
+    {
+      "id": "windmill-second-floor",
+      "title": "Sypialnia w Wiatraku (2. piętro)",
+      "navigationTitle": "Sypialnia w Wiatraku (2. piętro)",
+      "preview": "Uważajcie pod nogi: Witamy na drugim piętrze! Uważajcie pod nogi na drewnianych schodach i na głowy pod drewnianym stropem. Przygotujcie się na dużą niespodziankę dotyczącą tego, jak żyła tu rodzina.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Po Twojej prawej",
+              "text": "Na ścianach zobaczycie piękne zdjęcia przedstawiające różne historyczne wiatraki z całej Grecji. Ale ta przestrzeń nie była tylko galerią!"
+            },
+            {
+              "label": "Bardzo hałaśliwa sypialnia",
+              "text": "To właśnie tutaj, po prawej stronie, młynarz i cała jego rodzina spali! Czy wyobrażacie sobie próbę ucięcia sobie spokojnej drzemki, podczas gdy cały budynek trząsł się, wiatr wył, a ciężkie maszyny głośno miażdżyły pszenicę zaledwie kilka kroków dalej? Musieli mieć naprawdę mocny sen!"
+            },
+            {
+              "label": "Po Twojej lewej",
+              "text": "Teraz spójrzcie na lewą stronę. To była bardzo ważna i intensywnie wykorzystywana przestrzeń magazynowa."
+            },
+            {
+              "label": "Ochrona mąki",
+              "text": "Młynarz używał tej części pomieszczenia, aby bezpiecznie układać w stosy wszystkie ciężkie worki z surową pszenicą czekającą na zmielenie, obok świeżo napełnionych worków z puszystą białą mąką, które były gotowe do wysłania, by wykarmić wioskę. Trzymał je dokładnie tutaj, blisko swojego łóżka, aby móc ich strzec!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Następny cel:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Kolejny punkt",
+              "text": "Następnie przejdźcie dalej na trzecie piętro wiatraka!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Pytanie dla naszych Młodych Odkrywców i Dorosłych!",
+        "items": [
+          {
+            "label": "Wyobraźcie to sobie",
+            "text": "Czy potraficie wyobrazić sobie spanie na drugim piętrze dokładnie w taki sposób, w jaki oni to robili?"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/pl/section-04.mp3",
+        "ready": true
+      },
+      "imageAlt": "Sypialnia w Wiatraku (2. piętro)"
+    },
+    {
+      "id": "windmill-third-floor",
+      "title": "Mechanizmy Wiatraka (3. piętro)",
+      "navigationTitle": "Mechanizmy Wiatraka (3. piętro)",
+      "preview": "Uważajcie na głowy: Witamy na trzecim piętrze! Prosimy uważać pod nogi na drabinie i uważać na głowy podczas zwiedzania.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Muskuły Młyna",
+              "text": "Patrzycie teraz na prawdziwą moc wiatraka. Spójrzcie na tę masywną drewnianą belkę nad kamieniami. To główny łącznik między ciężkimi kamieniami wewnątrz, przekładniami zębatymi i gigantycznymi, obracającymi się żaglami na zewnątrz!"
+            },
+            {
+              "label": "Dwutonowe kamienie",
+              "text": "Te masywne kamienie młyńskie ważą razem ponad dwie tony! Zostały sprowadzone aż z wyspy Nisyros, która słynie z wydobycia unikalnego, super mocnego kamienia, idealnego do mielenia."
+            },
+            {
+              "label": "Podajnik i Dzwonek",
+              "text": "Poszukajcie tuż nad kamieniami drewnianego pudła zwanego Podajnikiem, do którego młynarz wsypywał surową pszenicę. Ale skąd wiedział, że jest puste, przy całym tym hałasie? Przyjrzyjcie się uważnie, a znajdziecie maleńki dzwonek! Dzwonił on automatycznie, gdy kończyła się pszenica, aby poinformować młynarza, że czas ją uzupełnić."
+            },
+            {
+              "label": "Pierwszy hamulec",
+              "text": "Widzicie tę drewnianą dźwignię połączoną z małą liną? Łączy się ona z samym dołem, z pierwszym piętrem i jest pierwszym systemem hamulcowym, o którym rozmawialiśmy na dole."
+            },
+            {
+              "label": "Zrzucanie mąki",
+              "text": "Spójrzcie w dół obok dźwigni, aby znaleźć klapę łączącą się z rurą. Gdy tylko mąka była idealnie zmielona, spadała prosto w dół tą rurą na najniższe piętro!"
+            },
+            {
+              "label": "„Napiwek” młynarza",
+              "text": "Tuż obok głównej rury znajduje się druga, mniejsza klapa. W dawnych czasach ludzie nie zawsze płacili pieniędzmi. Zamiast tego młynarz używał tych drzwiczek, aby zebrać swój „napiwek” – zatrzymując niewielki procent mąki dla własnej rodziny jako zapłatę za swoją ciężką pracę!"
+            },
+            {
+              "label": "Płynne obroty",
+              "text": "Zlokalizujcie małą puszkę w pobliżu klap. Na dole używał krowiego tłuszczu, ale tutaj na górze używał specjalnej mieszanki oliwy z oliwek i mydła, aby górne przekładnie działały płynnie."
+            },
+            {
+              "label": "Hamulec awaryjny",
+              "text": "Poszukajcie naprawdę grubej liny obok drabiny. Jeśli młynarz musiał w pośpiechu całkowicie przestać produkować mąkę, pociągał za tę linę – to drugi system hamulcowy!"
+            },
+            {
+              "label": "Sufit jak statek",
+              "text": "Na koniec spójrzcie w górę na sufit. Co Wam przypomina? W rzeczywistości został zaprojektowany w kształcie statku, aby zwiększyć moc mechanizmu i szybciej produkować mąkę!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Następny cel:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Kolejny punkt",
+              "text": "Następnie przejdźcie dalej na Klepisko i do Strefy Osiołków!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Misja dla naszych Młodych Odkrywców i Dorosłych!",
+        "items": [
+          {
+            "label": "Nasłuchujcie Dzwonka i Zadzwońcie nim",
+            "text": "Czy potraficie znaleźć maleńki dzwonek, który ostrzegał młynarza, gdy kończyła się pszenica? Czy możecie nim zadzwonić?"
+          },
+          {
+            "label": "Znajdź ukrytą mąkę",
+            "text": "Przeskanujcie podłogę i sprawdźcie, czy dacie radę dostrzec specjalne drzwiczki na „napiwek”, w których młynarz trzymał swoją ciężko zarobioną zapłatę!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/pl/section-05.mp3",
+        "ready": true
+      },
+      "imageAlt": "Mechanizmy Wiatraka (3. piętro)"
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "title": "Klepisko i Osiołki!",
+      "navigationTitle": "Klepisko i Osiołki!",
+      "preview": "Świeże powietrze i kamienne posadzki: Witamy z powrotem na zewnątrz! Weźcie głęboki oddech świeżego powietrza. Stoicie teraz w pobliżu tradycyjnego klepiska, które wygląda trochę jak duży, okrągły, kamienny parkiet do tańca.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Osioł z zawrotami głowy",
+              "text": "Spójrzcie dokładnie w środek koła na drewniany słup. W dawnych czasach młynarz luźno przywiązywał linę od tego słupa do szyi osła. Zadaniem osła było chodzenie w kółko po dużym okręgu, używając swoich ciężkich kopyt do deptania i miażdżenia zebranych plonów, aby uwolnić nasiona!"
+            },
+            {
+              "label": "Oddzielanie pszenicy",
+              "text": "Po tym, jak pracowity osioł wykonał całe to przyprawiające o zawrót głowy deptanie, wkraczał młynarz, aby ostrożnie oddzielić białą pszenicę od brązowej. (Obecnie nie używamy tej metody – kupujemy naszą pszenicę bezpośrednio od lokalnych producentów z wyspy!)"
+            },
+            {
+              "label": "Poznajcie Prawdziwe Gwiazdy",
+              "text": "Nie musicie sobie tylko wyobrażać tych zwierząt! Rozejrzyjcie się w pobliżu, a spotkacie prawdziwe gwiazdy farmy: nasze dwa urocze osiołki. Dumną mamą jest Melina, która ma 6 lat, a jej słodka mała córeczka ma na imię Katie i ma zaledwie 2 latka."
+            },
+            {
+              "label": "Zaginiony Tata",
+              "text": "Jeśli chodzi o tatę Katie... cóż, tak naprawdę nikt nie wie, dokąd poszedł! Bardzo lubił głośno śpiewać, więc myślimy, że powędrował do sąsiedniego miasta, aby założyć oślą kapelę rockową!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Następny cel:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Kolejny punkt",
+              "text": "Następnie przejdźcie dalej do Piwnicy / Włoskiego Tunelu!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Misja dla naszych Młodych Odkrywców i Dorosłych!",
+        "items": [
+          {
+            "label": "Ośli Taniec",
+            "text": "Podejdźcie na sam brzeg klepiska! Czy potraficie udawać, że jesteście przywiązani do środkowego drewnianego słupa i iść w idealnym okręgu, dokładnie tak, jak robił to osioł?"
+          },
+          {
+            "label": "Przywitajcie się",
+            "text": "Po Waszym przyprawiającym o zawrót głowy tańcu, koniecznie idźcie pomachać na powitanie Melinie i Katie! Prosimy o podziwianie naszych uroczych osiołków z dystansu! Wyglądają słodko, ale mogą pomylić Wasze palce z małymi marchewkami. Wolelibyśmy się o tym nie przekonać!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/pl/section-06.mp3",
+        "ready": true
+      },
+      "imageAlt": "Klepisko i Osiołki!"
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "title": "Tajny Tunel i Piwnica",
+      "navigationTitle": "Tajny Tunel i Piwnica",
+      "preview": "Zmiana otoczenia: Przygotujcie się na całkowitą zmianę otoczenia, gdy schodzimy pod ziemię! Schodząc w chłodne powietrze, spójrzcie w lewo i w prawo.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Dekoracyjne butelki",
+              "text": "Zobaczycie rzędy lokalnego wina z winnicy Skevofilax na Kos. Trzymamy tu te butelki w celach dekoracyjnych! Nasze wina przeznaczone do picia są bezpiecznie przechowywane w głównej piwnicy, gdzie temperatura jest dla nich idealnie dopasowana."
+            },
+            {
+              "label": "Historia II wojny światowej",
+              "text": "W latach 40. XX wieku, podczas II wojny światowej, to miejsce nie służyło do przechowywania wina – służyło przetrwaniu. Ten 20-metrowy tunel został zbudowany przez włoskich żołnierzy podczas wojny."
+            },
+            {
+              "label": "Tunel Ucieczkowy",
+              "text": "Żołnierze używali tego przejścia jako „tunelu ucieczkowego” – tajnego skrótu, by uciec i ukryć się przed przeciwnikami. Sama piwnica służyła jako bezpieczne schronienie, w którym mogli spać, odpoczywać i pozostać chronieni przed bitwami toczącymi się na zewnątrz."
+            },
+            {
+              "label": "Ukryta forteca",
+              "text": "Na końcu tunelu wyjdziecie na nasze podwórko, które obecnie jest naszą spokojną restauracją. Ale zanim wyjdziecie, spójrzcie za siebie na kamienny dach! W latach 40. cały ten obszar był strzelnicą. Szczyt był pokryty ciężkim kamieniem, aby chronić żołnierzy, a na samym skraju znajdowały się karabiny maszynowe do obrony zbocza. Aż trudno uwierzyć, że to ciche, piękne miejsce na posiłek było strzeżonym miejscem na wyspie!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Następny cel:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Kolejny punkt",
+              "text": "Kiedy skończycie zwiedzanie tunelu, prosimy o powrót i odnalezienie naszego przewodnika, aby mógł pokazać Wam drogę do kolejnych niesamowitych przystanków: Tradycyjnego Domu i Piekarni"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Misja dla naszych Młodych Odkrywców i Dorosłych!",
+        "items": [
+          {
+            "label": "Ściśle tajne",
+            "text": "Jesteście teraz na tajnej misji! Czy przechodząc przez tunel żołnierzy, potraficie dokładnie policzyć, ile butelek wina znajduje się na ścianach?"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/pl/section-07.mp3",
+        "ready": true
+      },
+      "imageAlt": "Tajny Tunel i Piwnica"
+    },
+    {
+      "id": "traditional-house",
+      "title": "Tradycyjny Dom",
+      "navigationTitle": "Tradycyjny Dom",
+      "preview": "Maleńki, zatłoczony dom: Witamy w tradycyjnym domu! Ten niesamowity mały dom ma ponad 130 lat. Ma mniej niż 20 metrów kwadratowych, ale wierzcie lub nie, mieszkało tu od 8 do 10 osób! Dziadkowie, rodzice i wszystkie ich dzieci dzielili ten jeden pojedynczy pokój.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Gdzie wszyscy spali? Dziadkowie spali tuż obok ciepłego kominka. Rodzice spali wysoko w łóżku na antresoli po przeciwnej stronie, podczas gdy starsze dzieci spały w łóżkach obok i na kanapie."
+            },
+            {
+              "label": "Kołysanie maluszka",
+              "text": "A co z dzieckiem? Poszukajcie małej drewnianej kołyski! Aby pomóc dziecku zasnąć, ktoś mógł po prostu delikatnie pociągnąć za tę małą, wiszącą linę, aby ją rozbujać."
+            },
+            {
+              "label": "Sprytne przechowywanie",
+              "text": "Zwróćcie uwagę na przestrzeń pod rodzinnymi łóżkami – to było ich główne pomieszczenie do przechowywania."
+            },
+            {
+              "label": "Codzienne obowiązki i wystrój",
+              "text": "Po lewej stronie widać duże drewniane krosno, którego używali do robienia nowych ubrań i naprawiania starych, obok skrzyni, w której trzymali swoje rzeczy osobiste. Zauważycie też sito używane do mąki oraz piękne stare fotografie i religijne obrazki na ścianach."
+            },
+            {
+              "label": "Wazony i stroje",
+              "text": "Obok skrzyni poszukajcie dwóch wazonów: duży był na wino, a mały na wodę. Tuż nad nimi wiszą dwa piękne tradycyjne stroje, które panie domu nosiły na wesela i specjalne wydarzenia."
+            },
+            {
+              "label": "Serce domu",
+              "text": "Ponieważ dom nie był odrestaurowany tak jak współczesne domy, kominek służył do gotowania wszystkich ich posiłków i ogrzewania całej rodziny. Tuż obok znajduje się mały ręczny młynek do mielenia mąki, wraz z ich codziennymi naczyniami kuchennymi i tradycyjnymi talerzami ozdobionymi ładnymi, malowanymi kwiatami."
+            },
+            {
+              "label": "Wisząca huśtawka",
+              "text": "Spójrzcie w górę na sufit! Czy widzicie coś wiszącego, co wygląda trochę jak huśtawka? To nie służy do zabawy! W górnej części trzymali świeży chleb, aby bezpiecznie uchronić go przed głodnymi myszami. W dolnej części przechowywali karob (chleb świętojański). W tamtych czasach nie było batoników, więc słodki karob dawano dzieciom jako pyszną czekoladową przekąskę!"
+            },
+            {
+              "label": "Tradycyjna lodówka",
+              "text": "Na koniec poszukajcie drewnianej szafki. Wierzcie lub nie, ale to jest tradycyjna lodówka! Składa się z dwóch części. Na górze kładli duże kostki lodu, a gdy lód topniał, mogli otworzyć mały kranik, aby napić się lodowatej wody. Chłód z górnej części idealnie chłodził również dolną sekcję, aby zachować świeżość ich jedzenia!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Następny cel:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Kolejny punkt",
+              "text": "Następnie przejdźcie dalej do Piekarni!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Misja dla naszych Młodych Odkrywców i Dorosłych!",
+        "items": [
+          {
+            "label": "Zakręć młynkiem",
+            "text": "Macie wiele do zrobienia w tym tętniącym życiem małym domku! Po pierwsze, czy potraficie znaleźć ręczny młynek? Spróbujcie włożyć drewnianą rączkę w szczelinę i sprawdźcie, czy dacie radę go zakręcić!"
+          },
+          {
+            "label": "Spójrzcie w górę i w dół",
+            "text": "Po ciężkiej pracy, czy potraficie dostrzec wiszącą huśtawkę, która chroniła chleb przed myszami?"
+          },
+          {
+            "label": "Ukołyszcie dziecko",
+            "text": "A co z maleńką liną, za którą pociągali, aby ukołysać dziecko do snu? Czy potraficie uśpić dziecko, bujając liną? Czy to dla Was trudne?"
+          },
+          {
+            "label": "Wyobraźcie to sobie",
+            "text": "Kiedy już wszystko znajdziecie, wyobraźcie sobie, jak by to było dzielić ten mały pokój z 8 do 10 członkami Waszej rodziny!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/pl/section-08.mp3",
+        "ready": true
+      },
+      "imageAlt": "Tradycyjny Dom"
+    },
+    {
+      "id": "bakery",
+      "title": "Piekarnia",
+      "navigationTitle": "Piekarnia",
+      "preview": "Centrum społeczności: Witamy przy tradycyjnym piecu! Ten piękny kamienny piec ma ponad 150 lat. W dawnych czasach większość kobiet w wiosce przychodziła właśnie tutaj, aby piec codzienny chleb dla swoich rodzin.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Dwudniowy proces",
+              "text": "Pieczenie chleba w tamtych czasach nie było tak szybkie, jak zwykłe wyjście do supermarketu! W rzeczywistości był to proces dwudniowy. Poprzedniego wieczoru kobiety starannie mieszały i formowały ciasto, zostawiając je na noc, by odpoczęło i wyrosło."
+            },
+            {
+              "label": "Świeżo upieczone",
+              "text": "Następnego ranka, gdy ciasto było gotowe, rozpalały gorący ogień, by nagrzać piec. Kiedy temperatura była idealna, wkładały ciasto do środka. Po pieczeniu przez jedną do dwóch godzin, cała wioska wypełniała się pysznym zapachem świeżego, ciepłego chleba, gotowego do zjedzenia!"
+            },
+            {
+              "label": "Historyczne zdjęcia",
+              "text": "Jeśli rozejrzycie się dookoła, możecie zobaczyć kilka wspaniałych wyeksponowanych zdjęć, które dokładnie pokazują, jak przeprowadzały całą tę procedurę."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pytanie dla naszych Młodych Odkrywców i Dorosłych!"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Ranny Ptaszek",
+              "text": "Cała wioska potrzebowała świeżego chleba. Czy potraficie zgadnąć, o której godzinie piekarz musiał budzić się każdego ranka, aby zacząć wyrabiać ciasto? (Wskazówka: To było na długo przed wschodem słońca!)"
+            },
+            {
+              "label": "Przyjrzyjcie się Uważnie",
+              "text": "Przyjrzyjcie się uważnie zdjęciom, aby zobaczyć, jak dawniej pracowały w piekarni kobiety z wioski."
+            },
+            {
+              "label": "Czas na Relaks",
+              "text": "Teraz nadszedł czas, aby udać się do restauracji-kawiarni! Weźcie swoje kredki, cieszcie się zasłużoną przekąską i dokończcie swój Szkic Mylotopi (Mylotopi Sketch), zamieniając go w kolorowe arcydzieło!"
+            },
+            {
+              "label": "Dziękujemy",
+              "text": "Dziękujemy za dzisiejsze wspólne odkrywanie!"
+            }
+          ]
+        }
+      ],
+      "audio": {
+        "path": "./assets/audio/pl/section-09.mp3",
+        "ready": true
+      },
+      "imageAlt": "Piekarnia"
+    }
+  ]
+}

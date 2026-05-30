@@ -1,0 +1,700 @@
+{
+  "code": "tr",
+  "nativeName": "Türkçe",
+  "aliases": [
+    "tr",
+    "turkish",
+    "türkçe",
+    "turkce",
+    "tr-tr",
+    "tr_tr"
+  ],
+  "ui": {
+    "pageTitle": "Yel Değirmeni Deneyimine Hoş Geldiniz!",
+    "intro": "Zamanda Yolculuk: Geçmişe adım atmaya hazır olun! Bu yolculuk için bir zaman makinesine ihtiyacınız olmayacak, sadece rahat ayakkabılara ihtiyacınız var.",
+    "languageLabel": "Dil",
+    "sectionsLabel": "Rehber durakları",
+    "audioHeading": "Sesli rehber",
+    "readMore": "Daha fazla oku",
+    "readLess": "Daha az göster",
+    "challengeLabel": "Genç ziyaretçiler için",
+    "previousSection": "Önceki durak",
+    "nextSection": "Sonraki durak",
+    "kicker": "Mylotopi QR Rehberi",
+    "navigationLabel": "Sesli rehber gezintisi",
+    "currentSectionLabel": "Geçerli durak",
+    "miniMapTitle": "MİNİ HARİTA",
+    "miniMapDescription": "Devam etmeden önce rotaya bakın.",
+    "miniMapTapHint": "Haritayı açmak için dokunun",
+    "miniMapOpen": "Haritayı aç",
+    "miniMapDownload": "Haritayı indir",
+    "miniMapModalClose": "Haritayı kapat",
+    "miniMapImageAlt": "Dokuz tur durağını gösteren Mylotopi mini haritası",
+    "sectionSelectorLabel": "Durak",
+    "sectionSelectorPlaceholder": "Bir durak seçin",
+    "audioTitleLabel": "Şimdi dinleniyor",
+    "audioAriaLabel": "{label}: {title}",
+    "selectedBadge": "Geçerli durak",
+    "imagePlaceholderLabel": "Görsel",
+    "imagePlaceholderHint": "Bu konum için bir fotoğraf buraya eklenebilir.",
+    "audioFallback": "Ses dosyası bu dilde mevcut değil.",
+    "announcerPrefix": "Geçerli durak",
+    "galleryPrevious": "Önceki görsel",
+    "galleryNext": "Sonraki görsel",
+    "imageCounter": "{current} / {total}",
+    "challengeTitle": "Daha yakından bak",
+    "previousSectionAria": "Önceki durağa git: {title}",
+    "nextSectionAria": "Sonraki durağa git: {title}",
+    "sectionLabelSeparator": " · ",
+    "loadErrorTitle": "Rehber içeriği yüklenemedi.",
+    "loadErrorBody": "Bu klasörü statik bir site olarak sunun ve sayfayı yenileyin.",
+    "heroTitle": "Yel Değirmeni Deneyimine Hoş Geldiniz!"
+  },
+  "miniMap": {
+    "path": "./assets/maps/tr/minimap.jpg",
+    "fallback": true,
+    "fallbackReason": "Uses the default mini-map until a Turkish-specific source image is provided."
+  },
+  "sections": [
+    {
+      "id": "welcome",
+      "title": "Yel Değirmeni Deneyimine Hoş Geldiniz!",
+      "navigationTitle": "Yel Değirmeni Deneyimine Hoş Geldiniz!",
+      "preview": "Zamanda Yolculuk: Geçmişe adım atmaya hazır olun! Bu yolculuk için bir zaman makinesine ihtiyacınız olmayacak, sadece rahat ayakkabılara ihtiyacınız var.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Restore Edilmiş Bir Köy",
+              "text": "Voudouris ailesinin yaptığı güzel restorasyon sayesinde, Wi-Fi icat edilmeden çok önce, yüzyılı aşkın bir süre önce adalıların tam olarak nasıl yaşadığını göreceksiniz. Ayrıca etrafta gizlice dolaşıp 1940'lardan kalma bazı gizli tarihi sırları ortaya çıkarma fırsatınız da olacak!"
+            },
+            {
+              "label": "Değirmencinin Hayatı",
+              "text": "Bugün gerçek bir yel değirmencisinin yerine geçeceksiniz. Sürprizbozan (Spoiler) uyarısı: günlük egzersiz rutini, köyün çoğunu doyurmak için bütün gün ağır un çuvallarını kaldırmaktan ibaretti."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Neleri Keşfedeceksiniz:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Dev Yel Değirmeni",
+              "text": "Gerçek ve çalışan bir yel değirmenini en altından en üstüne kadar keşfedin."
+            },
+            {
+              "label": "Köy Hayatı",
+              "text": "Geleneksel evin ve fırının içine göz atın."
+            },
+            {
+              "label": "Doğa ve Hayvanlar",
+              "text": "Bahçelerimizdeki harika aromatik bitkileri koklayın, harman yerini ziyaret edin ve sevimli eşeklerimize merhaba deyin."
+            },
+            {
+              "label": "Yeraltı Sırları",
+              "text": "Gerçek bir askeri tünelin içinden yürüyüp geçin!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Turu Nasıl Dinleyebilirsiniz:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Çok Kolay",
+              "text": "Yetişkinler, telefonunuzun kamerasını kullanarak bulduğunuz QR kodlarını okutmanız yeterli. Herhangi bir uygulama indirmenize gerek yok!"
+            },
+            {
+              "label": "Birlikte Dinleyin",
+              "text": "Sadece telefonunuzun sesini açın veya kulaklığınızı paylaşın ve köydeki numaraları takip edin."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Sıradaki Durak:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Sırada",
+              "text": "Aromatik bitkilerimizin bulunduğu bahçelere doğru ilerleyin!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Genç Kaşifler İçin Gizli Bir Görev!",
+        "items": [
+          {
+            "label": "Sanat Ekipmanlarınızı Alın",
+            "text": "Yanınıza almanız için size özel bir Mylotopi Eskizi ve birkaç renkli kalem vereceğiz."
+          },
+          {
+            "label": "Her Şeyi Gözlemleyin",
+            "text": "Bugün etrafta dolaşırken gözlerinizi dört açın! Dev yel değirmenine, ağır taşlara ve eski aletlere çok yakından bakın. Gördüğünüz tüm güzel renkleri hafızanıza kazımaya çalışın."
+          },
+          {
+            "label": "Bir Şaheser Yaratın",
+            "text": "Maceranızı bitirip restoran-kafemizde dinlenmek için oturduğunuzda, çiziminizi boyayabilir ve onu gerçek bir şahesere dönüştürebilirsiniz!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/tr/section-01.mp3",
+        "ready": true
+      },
+      "imageAlt": "Yel Değirmeni Deneyimine Hoş Geldiniz!"
+    },
+    {
+      "id": "herb-garden",
+      "title": "Bahçemiz ve Aromatik Bitkilerimiz!",
+      "navigationTitle": "Bahçemiz ve Aromatik Bitkilerimiz!",
+      "preview": "Mutfak mı Yoksa Eczane mi? Derin bir nefes alın! Burası devasa bir açık hava mutfağı gibi mi yoksa köy eczanesi gibi mi kokuyor? Aslında ikisi birden!",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Nihai Hayatta Kalma Kiti",
+              "text": "Modern tıp ve süpermarketlerden önce, bu bahçeler adanın hayatta kalma kitiydi. Bu parseller, yüzyıllardır burada yetişen aromatik bitkilerin aynısıyla dolu."
+            },
+            {
+              "label": "Doğanın Doktoru",
+              "text": "Kekik, Dağ Kekiği ve Mercanköşk gibi bitkiler sadece akşam yemeğinin tadını muhteşem yapmak için kullanılmıyordu; onlar aynı zamanda yerel doktordu! Birinin karnı ağrıdığında, değirmencinin ailesi tadı kötü olan pembe bir şurup almak için eczaneye koşmazdı; doğal bir ilaç yapmak için yaprak toplamak üzere hemen buraya gelirlerdi."
+            },
+            {
+              "label": "Bir Ressamın Paleti",
+              "text": "Şu güzel mor Lavantaya ve parlak yeşil Naneye bir bakın! Sanki birisi onları doğrudan bahçeye resmetmiş gibi görünüyorlar. Bu parlak renklere çok dikkat edin!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Sıradaki Durak:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Sırada",
+              "text": "Tarihi Yel Değirmenine doğru ilerleyin!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Genç Bitki Dedektiflerimiz ve Yetişkinler İçin Bir Görev!",
+        "items": [
+          {
+            "label": "Eski Usul Eğlence",
+            "text": "Telefonları bir saniyeliğine bir kenara bırakın, tamamen eski usule dönüyoruz! Etrafa saçılmış fiziksel yapboz parçalarını görüyor musunuz?"
+          },
+          {
+            "label": "Duyularınızı Kullanın",
+            "text": "Göreviniz hangi kelimenin hangi bitkiye ait olduğunu bulmak. Gözlerinizi ve burnunuzu kullanmanız gerekecek!"
+          },
+          {
+            "label": "Ovalayın ve Koklayın",
+            "text": "Hadi durmayın, yaprakları hafifçe ve nazikçe ovalayın ve koklayın (ama lütfen otlanmak yok; öğle yemeğinden önce bahçeyi yemeyin!)."
+          },
+          {
+            "label": "Yapbozu Çözün",
+            "text": "Yapboz parçalarını hareket ettirerek doğru bitkilerle eşleştirebilir misiniz? Nane ve Kekik arasındaki farkı bulabilecek misiniz bir bakalım. Hangisi lezzetli bir pizza gibi, hangisi ise rahat bir şekerleme gibi kokuyor?"
+          },
+          {
+            "label": "Eskiz Defteri Hatırlatması",
+            "text": "Gözlerinizi dört açın, Bitki Dedektifleri! Mylotopi Eskizinizi daha sonra boyamak için farklı yeşil, gri ve mor tonlarını aklınızda tutmayı unutmayın."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/tr/section-02.mp3",
+        "ready": true
+      },
+      "imageAlt": "Bahçemiz ve Aromatik Bitkilerimiz!"
+    },
+    {
+      "id": "windmill-first-floor",
+      "title": "Yel Değirmeni Tabanı (1. Kat)",
+      "navigationTitle": "Yel Değirmeni Tabanı (1. Kat)",
+      "preview": "Yaşayan Bir Efsane: \"Rahibin Değirmeni\"ne hoş geldiniz! Şu anda tüm adadaki ve tüm On İki Ada kompleksindeki çalışan en eski yel değirmeninin içinde duruyorsunuz. 400 yaşından büyük, 1987 yılına kadar her gün aralıksız çalıştı ve bugün hala un öğüten yaşayan bir makine!",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Girişte",
+              "text": "Kapıdan içeri adımınızı atarken, iyi şans getirmesi için asılmış geleneksel narı ve onun hemen yanındaki, Aynaroz'dan (Athos Dağı) getirilmiş 9 yıldan daha eski küçük Kutsal Su şişesini fark edin."
+            },
+            {
+              "label": "Fırtınalar İçin İnşa Edilmiş",
+              "text": "Bu devasa makine 6,2 metre yüksekliğindedir ve etrafınızdaki taş duvarlar, binayı vahşi deniz fırtınalarından korumak için 1,2 metre kalınlığındadır."
+            },
+            {
+              "label": "Devasa Makine Aksamı",
+              "text": "Üst katlarda, her biri bir ton ağırlığında olan iki devasa öğütme taşı var; ikisi birlikte iki tondan fazla ediyor!"
+            },
+            {
+              "label": "Antika Ahşap",
+              "text": "Bu binadaki ahşabın %80'i orijinaldir ve geri kalanı ta Aynaroz'dan getirilmiştir. Şaşırtıcı bir şekilde, yukarıda dönen yeniden kullanılmış ahşap parçalardan bazıları 1.000 ila 1.300 yıllıktır!"
+            },
+            {
+              "label": "Sağınızda",
+              "text": "Bir bezle örtülü olan alanı görüyor musunuz? Orası değirmencinin deposuydu. Yanında, değirmencinin eşeğinin buğdayı ayırmak için çekeceği ahşap bir eşek semeri ve bir döven (harman kızağı) göreceksiniz. Ayrıca günlük ahşap aletleri ve Yunanistan'ın dört bir yanındaki diğer yel değirmenlerinin güzel fotoğraflarını da görebilirsiniz."
+            },
+            {
+              "label": "Şömine",
+              "text": "Değirmenci burayı sadece ısınmak için kullanmıyordu! İçine yakından bakın; bir teneke kutu görüyor musunuz? İçinde, değirmencinin yel değirmeninin hareketli parçalarını gıcırdamamaları için yağlamak üzere erittiği inek yağı var. Şöminenin hemen üzerinde, mirası tam burada yaşamaya devam eden bu yel değirmeninin sevgili sahibi Kostas Politis'in bir fotoğrafı bulunuyor."
+            },
+            {
+              "label": "Solunuzda",
+              "text": "Taze unu dikkatlice tartmak için kullanılan geleneksel bir terazi ve ağırlıklar göreceksiniz."
+            },
+            {
+              "label": "İlk Frenler",
+              "text": "Aşağı sarkan küçük ipi arayın. İster inanın ister inanmayın, o ip yel değirmeninin ilk fren sistemiydi! Değirmenci, o iki tonluk değirmen taşlarını çok azıcık kaldırmak için onu çekerdi, böylece dışarı çıkıp yelkenleri açması onun için güvenli hale gelirdi."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Sıradaki Durak:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Sırada",
+              "text": "Ardından Yel Değirmeninin ikinci katına doğru ilerleyin!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Görev!",
+        "items": [
+          {
+            "label": "Duvarları Test Edin",
+            "text": "Bakalım o duvarlar gerçekten ne kadar kalınmış! Gidip kapının yanına geçin ve kollarınızı açabildiğiniz kadar geniş açın. Kollarınız duvarın kalınlığından daha mı uzun, yoksa yel değirmeni mi kazanıyor?"
+          },
+          {
+            "label": "Casusluk Yapın",
+            "text": "Odaya şöyle bir bakın ve ahşap eşek semerini bulabilecek misiniz bir görün!"
+          },
+          {
+            "label": "Yağı Bulun",
+            "text": "Şöminenin içine göz atın; gizli inek yağı tenekesini bulabilecek misiniz?"
+          },
+          {
+            "label": "Frenleri Fark Edin",
+            "text": "Yel değirmeninin fren sistemi olarak işlev gören, sarkan o küçük ipi bulun!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/tr/section-03.mp3",
+        "ready": true
+      },
+      "imageAlt": "Yel Değirmeni Tabanı (1. Kat)"
+    },
+    {
+      "id": "windmill-second-floor",
+      "title": "Yel Değirmeni Uyku Alanı (2. Kat)",
+      "navigationTitle": "Yel Değirmeni Uyku Alanı (2. Kat)",
+      "preview": "Adımlarınıza Dikkat Edin: İkinci kata hoş geldiniz! Ahşap merdivenlerde adımlarınıza dikkat edin ve başınızı yukarıdaki ahşaplara çarpmamaya özen gösterin. Ailenin nasıl yaşadığına dair büyük bir sürprize hazır olun.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Sağınızda",
+              "text": "Duvarlarda, Yunanistan'ın dört bir yanından farklı tarihi yel değirmenlerini gösteren bazı güzel resimler göreceksiniz. Ancak bu alan sadece bir galeri değildi!"
+            },
+            {
+              "label": "Çok Gürültülü Bir Yatak Odası",
+              "text": "Tam burada, sağ tarafta aslında yel değirmencisi ve tüm ailesi uyurdu! Bütün bina titrerken, rüzgar uğuldarken ve sadece birkaç adım ötede ağır makineler gürültüyle buğday ezerken huzurlu bir şekerleme yapmaya çalıştığınızı hayal edebiliyor musunuz? Uykuları çok ağır olmalı!"
+            },
+            {
+              "label": "Solunuzda",
+              "text": "Şimdi sol tarafa doğru bakın. Burası çok önemli ve yoğun bir depolama alanıydı."
+            },
+            {
+              "label": "Unu Korumak",
+              "text": "Değirmenci, odanın bu tarafını, öğütülmeyi bekleyen tüm ağır işlenmemiş buğday çuvallarını ve köyü doyurmak üzere dışarı çıkmaya hazır, taze doldurulmuş yumuşacık beyaz un çuvallarını güvenli bir şekilde istiflemek için kullanırdı. Onları koruyabilmek için tam burada, yatağının yakınında tutardı!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Sıradaki Durak:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Sırada",
+              "text": "Ardından Yel Değirmeninin üçüncü katına doğru ilerleyin!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Soru!",
+        "items": [
+          {
+            "label": "Bunu Hayal Edin",
+            "text": "İkinci katta tıpkı eskiden onların yaptığı gibi uyuduğunuzu hayal edebiliyor musunuz?"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/tr/section-04.mp3",
+        "ready": true
+      },
+      "imageAlt": "Yel Değirmeni Uyku Alanı (2. Kat)"
+    },
+    {
+      "id": "windmill-third-floor",
+      "title": "Yel Değirmeni Makine Aksamı (3. Kat)",
+      "navigationTitle": "Yel Değirmeni Makine Aksamı (3. Kat)",
+      "preview": "Başınıza Dikkat Edin: Üçüncü kata hoş geldiniz! Lütfen merdivende adımlarınıza dikkat edin ve keşfederken başınızı çarpmamaya özen gösterin.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Değirmenin Kas Gücü",
+              "text": "Şu anda yel değirmeninin gerçek gücüne bakıyorsunuz. Taşların üzerindeki o devasa ahşap kirişe bakın. O; içerideki ağır taşları, dişlileri ve dışarıdaki devasa dönen yelkenleri birbirine bağlayan ana bağlantı parçasıdır!"
+            },
+            {
+              "label": "İki Tonluk Taşlar",
+              "text": "Bu devasa öğütme taşlarının ağırlığı birlikte iki tondan fazladır! Değirmencilik için mükemmel olan benzersiz, süper güçlü bir taş üretmesiyle ünlü İncirli (Nisyros) Adası'ndan getirilmişlerdir."
+            },
+            {
+              "label": "Besleyici ve Zil",
+              "text": "Taşların hemen üstünde, değirmencinin işlenmemiş buğdayı döktüğü, Besleyici adı verilen ahşap kutuyu arayın. Peki onca gürültünün arasında kutunun boşaldığını nasıl anlıyordu? Yakından bakarsanız küçük bir zil göreceksiniz! Buğday azaldığında otomatik olarak çalarak değirmenciye yeniden doldurması gerektiğini haber verirdi."
+            },
+            {
+              "label": "İlk Fren",
+              "text": "Küçük bir ipe bağlı olan o ahşap kolu görüyor musunuz? O, ta birinci kata kadar uzanır ve aşağıda bahsettiğimiz ilk fren sistemidir."
+            },
+            {
+              "label": "Unun Dökülmesi",
+              "text": "Bir boruya bağlanan zemin kapağını bulmak için kolun yakınına, aşağıya bakın. Un mükemmel bir şekilde ezilir ezilmez, o borudan doğrudan alt kata dökülürdü!"
+            },
+            {
+              "label": "Değirmencinin \"Bahşişi\"",
+              "text": "Ana borunun hemen yanında ikinci ve daha küçük bir kapak vardır. Eski günlerde insanlar her zaman parayla ödeme yapmazlardı. Bunun yerine, değirmenci sıkı çalışmasının karşılığı olarak kendi ailesi için unun küçük bir yüzdesini kendine ayırıp \"bahşişini\" toplamak için bu kapıyı kullanırdı!"
+            },
+            {
+              "label": "Pürüzsüz Dönüş",
+              "text": "Kapakların yanındaki küçük tenekeyi bulun. Alt katta inek yağı kullanırdı, ancak burada üst dişlilerin sorunsuz çalışmasını sağlamak için özel bir zeytinyağı ve sabun karışımı kullanıyordu."
+            },
+            {
+              "label": "Acil Durum Freni",
+              "text": "Merdivenin yanında gerçekten kalın bir ip arayın. Değirmencinin acilen un yapmayı tamamen durdurması gerekirse, bu ipi çekerdi; ikinci fren sistemi!"
+            },
+            {
+              "label": "Bir Gemi Tavanı",
+              "text": "Son olarak, tavana bakın. Size neyi hatırlatıyor? Mekanizmanın gücünü artırmak ve daha hızlı un üretmek için aslında bir gemi şeklinde tasarlanmıştır!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Sıradaki Durak:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Sırada",
+              "text": "Ardından Harman Yerine ve Eşeklerin Alanına doğru ilerleyin!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Görev!",
+        "items": [
+          {
+            "label": "Zili Dinleyin ve Çalın",
+            "text": "Buğday bittiğinde değirmenciyi uyaran o küçük zili bulabilir misiniz? Onu çalabilir misiniz?"
+          },
+          {
+            "label": "Gizli Unu Bulun",
+            "text": "Yeri inceleyin ve değirmencinin zorlukla kazandığı ödemesini sakladığı özel \"bahşiş\" kapağını bulup bulamayacağınıza bir bakın!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/tr/section-05.mp3",
+        "ready": true
+      },
+      "imageAlt": "Yel Değirmeni Makine Aksamı (3. Kat)"
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "title": "Harman Yeri ve Eşekler!",
+      "navigationTitle": "Harman Yeri ve Eşekler!",
+      "preview": "Temiz Hava ve Taş Zeminler: Tekrar dışarıya hoş geldiniz! Derin bir nefes alıp tertemiz havayı içinize çekin. Şu anda, büyük, yuvarlak taştan bir dans pistine çok benzeyen geleneksel harman yerinin yakınında duruyorsunuz.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Başı Dönen Eşek",
+              "text": "Dairenin tam ortasındaki ahşap direğe bakın. Eski günlerde değirmenci, o direkten eşeğin boynuna gevşekçe bir ip bağlardı. Eşeğin görevi, tohumları serbest bırakmak için hasat edilmiş ekinleri ağır ayaklarıyla ezip parçalayarak büyük bir daire etrafında döne döne yürümekti!"
+            },
+            {
+              "label": "Buğdayı Ayırmak",
+              "text": "Çalışkan eşek baş döndürücü bu ezme işleminin tamamını yaptıktan sonra, değirmenci araya girer ve beyaz buğdayı kahverengi buğdaydan dikkatlice ayırırdı. (Bugün bu yöntemi kullanmıyoruz; buğdayımızı doğrudan adadaki yerel üreticilerden satın alıyoruz!)"
+            },
+            {
+              "label": "Gerçek Yıldızlarla Tanışın",
+              "text": "Hayvanları sadece hayal etmek zorunda değilsiniz! Yakınlara bakın ve çiftliğin gerçek yıldızlarıyla tanışın: iki sevimli eşeğimiz. Gururlu annenin adı 6 yaşındaki Melina ve onun tatlı küçük kızının adı ise henüz 2 yaşındaki Katie."
+            },
+            {
+              "label": "Kayıp Baba",
+              "text": "Katie'nin babasına gelince... şey, aslında kimse onun nereye gittiğini tam olarak bilmiyor! Yüksek sesle şarkı söylemeyi çok severdi, bu yüzden bir eşek rock grubu kurmak için yandaki kasabaya yürüdüğünü düşünüyoruz!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Sıradaki Durak:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Sırada",
+              "text": "Ardından Mahzene / İtalyan Tüneline doğru ilerleyin!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Görev!",
+        "items": [
+          {
+            "label": "Eşek Dansı",
+            "text": "Harman yerinin hemen kenarına gelin! Ortadaki ahşap direğe bağlıymış gibi davranıp tıpkı bir eşeğin yaptığı gibi kusursuz bir daire çizerek yürüyebilir misiniz?"
+          },
+          {
+            "label": "Merhaba Deyin",
+            "text": "Baş döndürücü dansınızdan sonra gidip Melina ve Katie'ye el sallayarak merhaba demeyi unutmayın! Lütfen sevimli eşeklerimizi uzaktan sevin! Tatlı görünüyorlar ama parmaklarınızı bebek havuç sanabilirler. Bunu deneyimleyip öğrenmeyi hiç istemeyiz!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/tr/section-06.mp3",
+        "ready": true
+      },
+      "imageAlt": "Harman Yeri ve Eşekler!"
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "title": "Gizli Tünel ve Mahzen",
+      "navigationTitle": "Gizli Tünel ve Mahzen",
+      "preview": "Manzara Değişimi: Yeraltına doğru ilerlerken manzarada tam bir değişime kendinizi hazırlayın! Serin havaya doğru adım atarken solunuza ve sağınıza bir göz atın.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Dekoratif Şişeler",
+              "text": "İstanköy'deki (Kos) Skevofilax şaraphanesinden gelen yerel şarap dizilerini göreceksiniz. Bu şişeleri burada dekorasyon amacıyla tutuyoruz! İçtiğimiz asıl şaraplar, sıcaklığın onlar için mükemmel bir şekilde uygun olduğu ana mahzende güvenle saklanıyor."
+            },
+            {
+              "label": "İkinci Dünya Savaşı Tarihi",
+              "text": "1940'lara, İkinci Dünya Savaşı yıllarına dönersek, bu alan şarap için değil hayatta kalmak içindi. Bu 20 metrelik tünel savaş sırasında İtalyan askerleri tarafından inşa edilmişti."
+            },
+            {
+              "label": "Kaçış Tüneli",
+              "text": "Askerler bu geçidi bir kaçış tüneli, rakiplerinden kaçıp saklanmak için gizli bir kısayol olarak kullanıyorlardı. Mahzenin kendisi de uyuyabilecekleri, dinlenebilecekleri ve dışarıdaki savaşlardan korunabilecekleri güvenli bir sığınak olarak kullanılıyordu."
+            },
+            {
+              "label": "Gizli Bir Kale",
+              "text": "Tünelin sonunda, şu anda huzurlu restoranımız olan arka bahçemize çıkacaksınız. Ancak çıkmadan önce arkanıza dönüp taş çatıya bir bakın! 1940'larda bu alanın tamamı bir atış alanıydı. Askerleri korumak için üst kısmı ağır taşlarla kaplıydı ve yamacı savunmak için tam uçta makineli tüfekleri vardı. Yemek yediğiniz bu sessiz ve güzel noktanın adadaki en sıkı korunan yer olduğuna inanmak gerçekten zor!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Sıradaki Durak:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Sırada",
+              "text": "Tüneli keşfetmeyi bitirdiğinizde, lütfen geri dönün ve bir sonraki harika duraklarınız olan Geleneksel Ev ve Fırın'a giden yolu gösterebilmeleri için tur rehberimizi bulun!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Görev!",
+        "items": [
+          {
+            "label": "Çok Gizli",
+            "text": "Artık gizli bir görevdesiniz! Askerlerin tünelinden geçerken, duvarlarda tam olarak kaç şişe şarap dizili olduğunu hesaplayabilir misiniz?"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/tr/section-07.mp3",
+        "ready": true
+      },
+      "imageAlt": "Gizli Tünel ve Mahzen"
+    },
+    {
+      "id": "traditional-house",
+      "title": "Geleneksel Ev",
+      "navigationTitle": "Geleneksel Ev",
+      "preview": "Küçük, Kalabalık Bir Yuva: Geleneksel eve hoş geldiniz! Bu şaşırtıcı küçük ev 130 yaşından daha büyük. 20 metrekareden daha küçük, ama inanın ya da inanmayın, eskiden burada 8 ila 10 kişi yaşardı! Büyükanne ve büyükbabalar, ebeveynler ve tüm çocukları bu tek bir odayı paylaşırdı.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Herkes Nerede Uyuyordu? Büyükanne ve büyükbaba hemen sıcak şöminenin yanında uyurdu. Ebeveynler karşı taraftaki yüksek asma yatakta uyurken, büyük çocuklar onun yanındaki yataklarda ve kanepede uyurdu."
+            },
+            {
+              "label": "Pış Pış Bebek",
+              "text": "Peki ya bebek? Küçük ahşap beşiği arayın! Bebeğin uykuya dalmasına yardımcı olmak için, birisi onu sallamak üzere sarkan o küçük ipi nazikçe çekebilirdi."
+            },
+            {
+              "label": "Akıllıca Depolama",
+              "text": "Aile yataklarının altındaki boşluğa dikkat edin; orası onların ana depolama alanıydı."
+            },
+            {
+              "label": "Günlük Ev İşleri ve Dekorasyon",
+              "text": "Sol tarafta, eski kıyafetleri onarmak ve yenilerini yapmak için kullandıkları büyük bir ahşap dokuma tezgahını ve yanında kişisel eşyalarını sakladıkları bir sandığı görebilirsiniz. Ayrıca un için kullanılan bir elek ve duvarlarda güzel eski fotoğraflar ile dini resimler de göreceksiniz."
+            },
+            {
+              "label": "Vazolar ve Üniformalar",
+              "text": "Sandığın yanında iki vazo arayın: büyük olan şarap içindi, küçük olan ise su için. Hemen üzerlerinde evdeki hanımların düğünlerde ve özel etkinliklerde giydiği iki güzel geleneksel üniforma asılıdır."
+            },
+            {
+              "label": "Evin Kalbi",
+              "text": "Ev modern evler gibi restore edilmediği için, şömine tüm yemeklerini pişirmek ve tüm aileyi sıcak tutmak için kullanılıyordu. Hemen yanında un öğütmek için küçük bir el değirmeni ile birlikte günlük mutfak eşyaları ve güzel boyanmış çiçeklerle süslenmiş geleneksel tabaklar bulunur."
+            },
+            {
+              "label": "Asılı Salıncak",
+              "text": "Tavana bakın! Salıncağa benzeyen asılı bir şey görüyor musunuz? Oynamak için değil! Aç farelerden güvenle uzak tutmak için taze ekmeklerini üst kısmında saklarlardı. Alt kısmında ise keçiboynuzu depolarlardı. O zamanlar çikolata barları yoktu, bu yüzden tatlı keçiboynuzları çocuklara lezzetli bir çikolata ikramı olarak verilirdi!"
+            },
+            {
+              "label": "Geleneksel Bir Buzdolabı",
+              "text": "Son olarak ahşap dolabı arayın. İnanın ya da inanmayın, bu geleneksel bir buzdolabı! İki parçası var. Üstüne büyük buz küpleri koyarlardı ve buz eridikçe buz gibi suyu içmek için küçük bir musluğu açabilirlerdi. Üst kısımdan gelen soğuk, yiyeceklerini taze tutmak için alt bölümü de mükemmel bir şekilde soğuturdu!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Sıradaki Durak:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Sırada",
+              "text": "Ardından Fırına doğru ilerleyin!"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Görev!",
+        "items": [
+          {
+            "label": "Değirmeni Çevirin",
+            "text": "Bu hareketli küçük evde yapacak çok işiniz var! İlk olarak, el değirmenini bulabilir misiniz? Ahşap sapı boşluğa yerleştirmeyi deneyin ve onu döndürüp döndüremeyeceğinize bir bakın!"
+          },
+          {
+            "label": "Yukarı ve Aşağı Bakın",
+            "text": "Sıkı çalışmanızdan sonra, ekmeği farelerden uzak tutan asılı salıncağı bulabilir misiniz?"
+          },
+          {
+            "label": "Bebeği Sallayın",
+            "text": "Peki ya bebeği uyutmak için çektikleri o küçük ip? İpi sallayarak bebeğin uykuya dalmasını sağlayabilir misiniz? Sizin için zor mu?"
+          },
+          {
+            "label": "Bunu Hayal Edin",
+            "text": "Hepsini bulduğunuzda, bu küçük odayı aile üyelerinizden 8 ila 10'uyla paylaşmanın nasıl bir şey olacağını hayal edin!"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/tr/section-08.mp3",
+        "ready": true
+      },
+      "imageAlt": "Geleneksel Ev"
+    },
+    {
+      "id": "bakery",
+      "title": "Fırın",
+      "navigationTitle": "Fırın",
+      "preview": "Bir Topluluk Merkezi: Geleneksel fırına hoş geldiniz! Bu güzel taş fırın 150 yaşından daha büyük. Eski günlerde, köydeki hanımların çoğu aileleri için günlük ekmeklerini pişirmek üzere tam buraya gelirdi.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "İki Günlük Bir Süreç",
+              "text": "O zamanlar ekmek pişirmek sadece süpermarkete koşmak kadar hızlı değildi! Aslında iki günlük bir süreçti. Önceki gece hanımlar hamuru dikkatlice karıştırıp şekillendirir, gece boyunca dinlenmeye ve kabararak mayalanmaya bırakırlardı."
+            },
+            {
+              "label": "Taze Pişmiş",
+              "text": "Ertesi sabah hamur hazır olduğunda, fırını ısıtmak için harlı bir ateş yakarlardı. Sıcaklık tam kıvama geldiğinde hamuru içeri yerleştirirlerdi. Bir ila iki saat piştikten sonra, tüm köy yemeye hazır taze, sıcak ekmeğin lezzetli kokusuyla dolardı!"
+            },
+            {
+              "label": "Tarihi Fotoğraflar",
+              "text": "Etrafınıza bakarsanız, tüm bu işlemi tam olarak nasıl yaptıklarını gösteren bazı harika fotoğrafların sergilendiğini görebilirsiniz."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Genç Kaşiflerimiz ve Yetişkinler İçin Bir Soru!"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Erkenci Kuş",
+              "text": "Bütün köyün taze ekmeğe ihtiyacı vardı. Fırıncının hamur yapmaya başlamak için her sabah saat kaçta uyanmak zorunda olduğunu tahmin edebilir misiniz? (İpucu: Güneş doğmadan çok önceydi!)"
+            },
+            {
+              "label": "Yakından Bakın",
+              "text": "Köylü kadınların eskiden fırında nasıl çalıştıklarını görmek için fotoğraflara yakından bakın."
+            },
+            {
+              "label": "Dinlenme Vakti",
+              "text": "Şimdi restoran-kafeye gitme vakti geldi! Renkli kalemlerinizi alın, hak ettiğiniz atıştırmalığın tadını çıkarın ve Mylotopi Eskizinizi (Mylotopi Sketch) renkli bir şahesere dönüştürmeyi tamamlayın!"
+            },
+            {
+              "label": "Teşekkürler",
+              "text": "Bugün bizimle birlikte keşfettiğiniz için teşekkür ederiz!"
+            }
+          ]
+        }
+      ],
+      "audio": {
+        "path": "./assets/audio/tr/section-09.mp3",
+        "ready": true
+      },
+      "imageAlt": "Fırın"
+    }
+  ]
+}

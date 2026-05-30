@@ -1,0 +1,698 @@
+{
+  "code": "fr",
+  "nativeName": "Français",
+  "aliases": [
+    "fr",
+    "french",
+    "français",
+    "francais",
+    "fr-fr",
+    "fr_fr"
+  ],
+  "ui": {
+    "pageTitle": "Bienvenue à l'expérience du moulin à vent !",
+    "intro": "Voyage dans le temps : Préparez-vous à faire un saut dans le passé ! Vous n'aurez pas besoin de machine à remonter le temps pour ce voyage, juste de chaussures confortables.",
+    "languageLabel": "Langue",
+    "sectionsLabel": "Arrêts du guide",
+    "audioHeading": "Guide audio",
+    "readMore": "Lire la suite",
+    "readLess": "Réduire",
+    "challengeLabel": "Pour les jeunes visiteurs",
+    "previousSection": "Arrêt précédent",
+    "nextSection": "Arrêt suivant",
+    "kicker": "Guide QR Mylotopi",
+    "navigationLabel": "Navigation du guide audio",
+    "currentSectionLabel": "Arrêt actuel",
+    "miniMapTitle": "MINI-CARTE",
+    "miniMapDescription": "Consultez le parcours avant de continuer.",
+    "miniMapTapHint": "Touchez la carte pour l'ouvrir",
+    "miniMapOpen": "Ouvrir la carte",
+    "miniMapDownload": "Télécharger la carte",
+    "miniMapModalClose": "Fermer la carte",
+    "miniMapImageAlt": "Mini-carte de Mylotopi montrant les neuf arrêts de la visite",
+    "sectionSelectorLabel": "Arrêt",
+    "sectionSelectorPlaceholder": "Choisir un arrêt",
+    "audioTitleLabel": "À écouter",
+    "audioAriaLabel": "{label} : {title}",
+    "selectedBadge": "Arrêt actuel",
+    "imagePlaceholderLabel": "Image",
+    "imagePlaceholderHint": "Une photo du lieu peut être ajoutée ici.",
+    "audioFallback": "L'audio n'est pas disponible dans cette langue.",
+    "announcerPrefix": "Arrêt actuel",
+    "galleryPrevious": "Image précédente",
+    "galleryNext": "Image suivante",
+    "imageCounter": "{current} / {total}",
+    "challengeTitle": "Observe bien",
+    "previousSectionAria": "Aller à l'arrêt précédent : {title}",
+    "nextSectionAria": "Aller à l'arrêt suivant : {title}",
+    "sectionLabelSeparator": " · ",
+    "loadErrorTitle": "Impossible de charger le guide.",
+    "loadErrorBody": "Servez ce dossier comme site statique, puis rechargez la page.",
+    "heroTitle": "Bienvenue à l'expérience du moulin à vent !"
+  },
+  "miniMap": {
+    "path": "./assets/maps/fr/minimap.jpg"
+  },
+  "sections": [
+    {
+      "id": "welcome",
+      "title": "Bienvenue à l'Expérience du Moulin à Vent !",
+      "navigationTitle": "Bienvenue à l'Expérience du Moulin à Vent !",
+      "preview": "Voyage dans le temps : Préparez-vous à faire un saut dans le passé ! Vous n'aurez pas besoin de machine à remonter le temps pour ce voyage, juste de chaussures confortables.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Un village restauré",
+              "text": "Grâce à la magnifique restauration effectuée par la famille Voudouris, vous découvrirez exactement comment vivaient les insulaires il y a plus d'un siècle, bien avant l'invention du Wi-Fi. Vous aurez également l'occasion de fouiner et de découvrir une histoire secrète datant des années 1940 !"
+            },
+            {
+              "label": "La vie du meunier",
+              "text": "Aujourd'hui, vous allez vous mettre dans la peau d'un véritable meunier. Alerte divulgâchis (spoiler) : son entraînement quotidien consistait à soulever de lourds sacs de farine toute la journée, tout simplement pour nourrir la majeure partie du village."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Ce que vous allez explorer :"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Le moulin géant",
+              "text": "Explorez un véritable moulin en activité, de la base jusqu'au sommet."
+            },
+            {
+              "label": "La vie du village",
+              "text": "Jetez un coup d'œil à l'intérieur de la maison traditionnelle et de la boulangerie."
+            },
+            {
+              "label": "Nature et animaux",
+              "text": "Humez les merveilleuses herbes de nos jardins, visitez l'aire de battage et dites bonjour à nos adorables ânes."
+            },
+            {
+              "label": "Secrets souterrains",
+              "text": "Traversez un véritable tunnel militaire !"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Comment écouter la visite :"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "C'est super facile",
+              "text": "Les adultes, il vous suffit de scanner les codes QR que vous trouverez à l'aide de l'appareil photo de votre téléphone. Vous n'avez besoin de télécharger aucune application !"
+            },
+            {
+              "label": "Écoutez ensemble",
+              "text": "Augmentez simplement le volume de votre téléphone ou partagez des écouteurs, et suivez les numéros à travers le village."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prochaine destination :"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "À venir",
+              "text": "Dirigez-vous vers nos jardins d'herbes aromatiques !"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Une mission secrète pour les jeunes explorateurs !",
+        "items": [
+          {
+            "label": "Prenez votre matériel d'artiste",
+            "text": "Nous vous remettrons un croquis spécial Mylotopi et quelques crayons de couleur à emporter avec vous."
+          },
+          {
+            "label": "Observez tout",
+            "text": "Tout au long de votre promenade aujourd'hui, gardez les yeux grands ouverts ! Observez de très près le moulin géant, les pierres lourdes et les vieux outils. Essayez de mémoriser toutes les belles couleurs que vous voyez."
+          },
+          {
+            "label": "Créez un chef-d'œuvre",
+            "text": "Lorsque vous aurez terminé votre aventure et que vous vous asseoirez pour vous détendre à notre restaurant-café, vous pourrez colorier votre dessin et le transformer en un véritable chef-d'œuvre !"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/fr/section-01.mp3",
+        "ready": true
+      },
+      "imageAlt": "Bienvenue à l'Expérience du Moulin à Vent !"
+    },
+    {
+      "id": "herb-garden",
+      "title": "Notre jardin et ses herbes aromatiques !",
+      "navigationTitle": "Notre jardin et ses herbes aromatiques !",
+      "preview": "Cuisine ou pharmacie ? Prenez une grande inspiration ! Est-ce que cela sent la cuisine géante en plein air ou la pharmacie de village ? En réalité, c’est un peu les deux !",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Le kit de survie ultime",
+              "text": "Avant l'arrivée de la médecine moderne et des supermarchés, ces jardins constituaient le kit de survie de l'île. Ces parcelles sont remplies des mêmes herbes qui poussent ici depuis des siècles."
+            },
+            {
+              "label": "Le docteur de la nature",
+              "text": "Des herbes comme le thym, l'origan et la marjolaine n'étaient pas seulement utilisées pour donner un goût incroyable aux repas : elles faisaient office de médecin local ! Si quelqu'un avait mal au ventre, la famille du meunier ne courait pas à la pharmacie pour un sirop rose au goût désagréable ; elle venait ici même cueillir des feuilles pour un remède naturel."
+            },
+            {
+              "label": "Une palette de peintre",
+              "text": "Admirez la magnifique lavande violette et la menthe d'un vert éclatant ! On dirait que quelqu'un les a peintes directement dans le jardin. Prêtez une attention particulière à ces couleurs vives !"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prochaine destination :"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "À venir",
+              "text": "Dirigez-vous ensuite vers le moulin à vent historique !"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Une mission pour nos jeunes détectives des plantes et les adultes !",
+        "items": [
+          {
+            "label": "Amusement à l'ancienne",
+            "text": "Rangez vos téléphones un instant, nous revenons aux méthodes classiques ! Voyez-vous les pièces de puzzle physiques éparpillées tout autour ?"
+          },
+          {
+            "label": "Utilisez vos sens",
+            "text": "Votre mission est de deviner quel mot correspond à quelle plante. Vous devrez utiliser vos yeux et votre nez !"
+          },
+          {
+            "label": "Frottez et sentez",
+            "text": "Allez-y, frottez délicatement les feuilles et sentez-les (mais s'il vous plaît, ne broutez pas : ne mangez pas le jardin avant le déjeuner !)."
+          },
+          {
+            "label": "Résolvez le puzzle",
+            "text": "Pouvez-vous déplacer les pièces du puzzle pour les associer aux bonnes herbes ? Essayez de faire la différence entre la menthe et l'origan. Laquelle sent la délicieuse pizza, et laquelle sent la sieste douillette ?"
+          },
+          {
+            "label": "Rappel pour le carnet de croquis",
+            "text": "Gardez l'œil ouvert, détectives des plantes ! Mémorisez les différentes nuances de vert, de gris et de violet pour colorier votre croquis Mylotopi plus tard."
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/fr/section-02.mp3",
+        "ready": true
+      },
+      "imageAlt": "Notre jardin et ses herbes aromatiques !"
+    },
+    {
+      "id": "windmill-first-floor",
+      "title": "La Base du Moulin à Vent (1er Étage)",
+      "navigationTitle": "La Base du Moulin à Vent (1er Étage)",
+      "preview": "Une légende vivante : Bienvenue au « Moulin du Prêtre » ! Vous vous trouvez à l'intérieur du plus ancien moulin à vent en activité de toute l'île et de tout l'archipel du Dodécanèse. Il a plus de 400 ans, a fonctionné quotidiennement jusqu'en 1987 et est toujours une machine vivante qui moud de la farine aujourd'hui !",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "À l'entrée",
+              "text": "En franchissant la porte, remarquez la grenade traditionnelle suspendue pour porter chance, ainsi qu'une petite bouteille d'eau bénite du Mont Athos qui a plus de 9 ans."
+            },
+            {
+              "label": "Construit pour les tempêtes",
+              "text": "Cette machine géante mesure 6,2 mètres de haut, et les murs de pierre qui vous entourent font 1,2 mètre d'épaisseur pour protéger le bâtiment des violentes tempêtes marines."
+            },
+            {
+              "label": "Une machinerie massive",
+              "text": "Aux étages supérieurs, il y a deux meules massives qui pèsent une tonne chacune, soit plus de deux tonnes au total !"
+            },
+            {
+              "label": "Un bois ancien",
+              "text": "80 % du bois de ce bâtiment est d'origine, et le reste a été rapporté depuis le Mont Athos. Fait incroyable, certaines des pièces en bois réutilisées qui tournent au-dessus de vous ont entre 1 000 et 1 300 ans !"
+            },
+            {
+              "label": "Sur votre droite",
+              "text": "Voyez-vous la zone recouverte d'un chiffon ? C'était la réserve du meunier. À côté, vous verrez un bât en bois pour âne et un traîneau à dépiquer que l'âne du meunier tirait pour séparer le blé. Vous pouvez également apercevoir des outils en bois du quotidien et de magnifiques photos d'autres moulins à vent à travers la Grèce."
+            },
+            {
+              "label": "La cheminée",
+              "text": "Le meunier ne l'utilisait pas seulement pour se chauffer ! Regardez de près à l'intérieur : voyez-vous une boîte de conserve ? Elle contient de la graisse de vache, que le meunier faisait fondre pour lubrifier les pièces mobiles du moulin afin qu'elles ne grincent pas. Juste au-dessus de la cheminée se trouve une photographie de Kostas Politis, le propriétaire bien-aimé de ce moulin dont l'héritage perdure ici même."
+            },
+            {
+              "label": "Sur votre gauche",
+              "text": "Vous verrez une balance traditionnelle et des poids, qui servaient à peser soigneusement la farine fraîche."
+            },
+            {
+              "label": "Les premiers freins",
+              "text": "Cherchez la petite corde qui pend. Croyez-le ou non, cette corde était le premier système de freinage du moulin ! Le meunier tirait dessus pour soulever légèrement ces meules de deux tonnes, ce qui lui permettait de sortir en toute sécurité pour déployer les voiles."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prochaine destination :"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "À venir",
+              "text": "Dirigez-vous ensuite vers le deuxième étage du moulin à vent !"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Une mission pour nos jeunes explorateurs et les adultes !",
+        "items": [
+          {
+            "label": "Testez les murs",
+            "text": "Voyons quelle est l'épaisseur réelle de ces murs ! Placez-vous près de l'entrée et écartez les bras le plus largement possible. Vos bras sont-ils plus longs que l'épaisseur du mur, ou est-ce le moulin qui gagne ?"
+          },
+          {
+            "label": "Espionnez",
+            "text": "Regardez autour de la pièce et essayez de repérer le bât en bois de l'âne !"
+          },
+          {
+            "label": "Trouvez la graisse",
+            "text": "Regardez dans la cheminée : parviendrez-vous à repérer la boîte de graisse de vache cachée ?"
+          },
+          {
+            "label": "Repérez les freins",
+            "text": "Trouvez la petite corde suspendue qui servait de système de freinage au moulin !"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/fr/section-03.mp3",
+        "ready": true
+      },
+      "imageAlt": "La Base du Moulin à Vent (1er Étage)"
+    },
+    {
+      "id": "windmill-second-floor",
+      "title": "L'Espace Sommeil du Moulin à Vent (2e Étage)",
+      "navigationTitle": "L'Espace Sommeil du Moulin à Vent (2e Étage)",
+      "preview": "Faites attention où vous marchez : Bienvenue au deuxième étage ! Faites attention où vous posez les pieds dans les escaliers en bois et prenez garde à votre tête avec les poutres au-dessus. Préparez-vous à une grande surprise sur la façon dont vivait la famille.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Sur votre droite",
+              "text": "Sur les murs, vous verrez de magnifiques photos montrant différents moulins à vent historiques de toute la Grèce. Mais cet espace n'était pas qu'une simple galerie !"
+            },
+            {
+              "label": "Une chambre très bruyante",
+              "text": "C'est exactement ici, sur le côté droit, que le meunier et toute sa famille dormaient ! Pouvez-vous imaginer essayer de faire une sieste paisible alors que tout le bâtiment tremblait, que le vent hurlait et que la machinerie lourde broyait bruyamment le blé à quelques mètres de là ? Ils devaient avoir le sommeil très lourd !"
+            },
+            {
+              "label": "Sur votre gauche",
+              "text": "Maintenant, regardez sur le côté gauche. Il s'agissait d'un espace de stockage très important et toujours en mouvement."
+            },
+            {
+              "label": "Protéger la farine",
+              "text": "Le meunier utilisait ce côté de la pièce pour empiler en toute sécurité tous les lourds sacs de blé brut en attente d'être moulus, à côté des sacs fraîchement remplis de farine blanche et légère, prêts à partir pour nourrir le village. Il les gardait juste ici, près de son lit, pour pouvoir les protéger !"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prochaine Destination :"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "À venir",
+              "text": "Dirigez-vous ensuite vers le troisième étage du moulin à vent !"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Une Question pour nos Jeunes Explorateurs et les Adultes !",
+        "items": [
+          {
+            "label": "Imaginez ceci",
+            "text": "Pourriez-vous vous imaginer dormir au deuxième étage exactement comme ils le faisaient autrefois ?"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/fr/section-04.mp3",
+        "ready": true
+      },
+      "imageAlt": "L'Espace Sommeil du Moulin à Vent (2e Étage)"
+    },
+    {
+      "id": "windmill-third-floor",
+      "title": "La Machinerie du Moulin à Vent (3e Étage)",
+      "navigationTitle": "La Machinerie du Moulin à Vent (3e Étage)",
+      "preview": "Attention à votre tête : Bienvenue au troisième étage ! Faites attention où vous posez les pieds sur l'échelle et prenez garde à votre tête pendant votre exploration.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Le Muscle du Moulin",
+              "text": "Vous contemplez maintenant la véritable puissance du moulin à vent. Regardez cette poutre massive en bois au-dessus des meules. C'est le connecteur principal qui relie les lourdes pierres à l'intérieur, les engrenages et les ailes géantes qui tournent à l'extérieur !"
+            },
+            {
+              "label": "Des Meules de Deux Tonnes",
+              "text": "Ces meules massives pèsent plus de deux tonnes ensemble ! Elles ont été importées depuis l'île de Nisyros, célèbre pour la production d'une pierre unique et ultra-résistante, parfaite pour la mouture."
+            },
+            {
+              "label": "Le Distributeur et la Clochette",
+              "text": "Regardez juste au-dessus des meules : vous y verrez une boîte en bois appelée Le Distributeur, où le meunier versait le blé brut. Mais comment savait-il qu'il était vide avec tout ce bruit assourdissant ? Cherchez bien, il y a une petite clochette ! Elle sonnait automatiquement lorsque le blé venait à manquer pour dire au meunier de le remplir."
+            },
+            {
+              "label": "Le Premier Frein",
+              "text": "Voyez-vous ce levier en bois relié à une petite corde ? Il descend jusqu'au premier étage et constitue le premier système de freinage dont nous avons parlé en bas."
+            },
+            {
+              "label": "La Chute de la Farine",
+              "text": "Regardez en bas près du levier pour trouver une trappe reliée à un conduit. Dès que la farine était parfaitement broyée, elle tombait directement par ce tuyau jusqu'au rez-de-chaussée !"
+            },
+            {
+              "label": "Le « Pourboire » du Meunier",
+              "text": "Juste à côté du conduit principal se trouve une deuxième trappe, plus petite. Autrefois, les gens ne payaient pas toujours avec de l'argent. À la place, le meunier utilisait cette trappe pour collecter son « pourboire » : il gardait un petit pourcentage de la farine pour sa propre famille en guise de paiement pour son dur labeur !"
+            },
+            {
+              "label": "Une Rotation Fluide",
+              "text": "Repérez le petit bidon près des trappes. En bas, il utilisait de la graisse de vache, mais ici, il utilisait un mélange spécial d'huile d'olive et de savon pour que les engrenages supérieurs tournent sans accroc."
+            },
+            {
+              "label": "Le Frein d'Urgence",
+              "text": "Regardez à côté de l'échelle : il y a une corde très épaisse. Si le meunier devait arrêter d'urgence la production de farine, il tirait sur cette corde : c'est le deuxième système de freinage !"
+            },
+            {
+              "label": "Un Plafond de Navire",
+              "text": "Enfin, levez les yeux vers le plafond. À quoi vous fait-il penser ? Il est en fait conçu en forme de navire pour augmenter la puissance du mécanisme et produire la farine plus rapidement !"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prochaine Destination :"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "À venir",
+              "text": "Dirigez-vous ensuite vers l'aire de battage et l'espace des ânes !"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Une Mission pour nos Jeunes Explorateurs et les Adultes !",
+        "items": [
+          {
+            "label": "Écoutez la Clochette et Faites-la Sonner",
+            "text": "Pouvez-vous trouver la petite clochette qui avertissait le meunier lorsque le blé venait à manquer ? Pouvez-vous la faire sonner ?"
+          },
+          {
+            "label": "Trouvez la Farine Cachée",
+            "text": "Inspectez le sol et essayez de repérer la trappe spéciale du « pourboire » où le meunier gardait son paiement durement gagné !"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/fr/section-05.mp3",
+        "ready": true
+      },
+      "imageAlt": "La Machinerie du Moulin à Vent (3e Étage)"
+    },
+    {
+      "id": "threshing-floor-donkeys",
+      "title": "L'Aire de Battage et les Ânes !",
+      "navigationTitle": "L'Aire de Battage et les Ânes !",
+      "preview": "Air frais et sol en pierre : Bon retour à l'extérieur ! Respirez un grand coup d'air frais. Vous vous trouvez maintenant près de l'aire de battage traditionnelle, qui ressemble beaucoup à une grande piste de danse ronde en pierre.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "L'âne étourdi",
+              "text": "Regardez juste au milieu du cercle le poteau en bois. Autrefois, le meunier attachait sans trop serrer une corde entre ce poteau et le cou d'un âne. Le travail de l'âne consistait à tourner en rond dans un grand cercle, en utilisant ses lourds sabots pour piétiner et écraser les récoltes afin d'en libérer les graines !"
+            },
+            {
+              "label": "La séparation du blé",
+              "text": "Après que le courageux âne avait fini tout ce piétinement étourdissant, le meunier intervenait pour séparer soigneusement le blé blanc du blé brun. (De nos jours, nous n'utilisons plus cette méthode ; nous achetons notre blé directement aux producteurs locaux de l'île !)"
+            },
+            {
+              "label": "Rencontrez les véritables stars",
+              "text": "Vous n'avez pas besoin d'imaginer les animaux ! Regardez à proximité et vous rencontrerez les véritables stars de la ferme : nos deux adorables ânesses. La fière maman s'appelle Melina et elle a 6 ans, et sa douce petite fille s'appelle Katie et n'a que 2 ans."
+            },
+            {
+              "label": "Le papa disparu",
+              "text": "Quant au papa de Katie... eh bien, personne ne sait vraiment où il est parti ! Il adorait chanter très fort, alors nous pensons qu'il est allé dans la ville voisine pour monter un groupe de rock pour ânes !"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prochaine Destination :"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "À venir",
+              "text": "Dirigez-vous ensuite vers la cave / le tunnel italien !"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Une Mission pour nos Jeunes Explorateurs et les Adultes !",
+        "items": [
+          {
+            "label": "La danse de l'âne",
+            "text": "Approchez-vous du bord de l'aire de battage ! Pouvez-vous faire semblant d'être attaché au poteau central en bois et marcher en un cercle parfait, tout comme le faisait l'âne ?"
+          },
+          {
+            "label": "Dites bonjour",
+            "text": "Après votre danse étourdissante, n'oubliez pas d'aller faire un petit coucou à Melina et Katie ! S'il vous plaît, admirez nos charmantes ânesses à distance ! Elles ont l'air douces, mais elles pourraient confondre vos doigts avec des mini-carottes. On préfère ne pas vérifier !"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/fr/section-06.mp3",
+        "ready": true
+      },
+      "imageAlt": "L'Aire de Battage et les Ânes !"
+    },
+    {
+      "id": "cellar-italian-tunnel",
+      "title": "Le Tunnel Secret et la Cave",
+      "navigationTitle": "Le Tunnel Secret et la Cave",
+      "preview": "Un changement de décor : Préparez-vous à un changement total de décor alors que nous descendons sous terre ! En descendant dans l'air frais, jetez un coup d'œil à votre gauche et à votre droite.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Bouteilles décoratives",
+              "text": "Vous verrez des rangées de vins locaux de la cave Skevofilax située à Kos. Nous gardons ces bouteilles ici pour la décoration ! Nos vins destinés à la dégustation sont conservés en toute sécurité dans la cave principale, où la température est parfaitement adaptée pour eux."
+            },
+            {
+              "label": "L'histoire de la Seconde Guerre mondiale",
+              "text": "Dans les années 1940, pendant la Seconde Guerre mondiale, cet espace n'était pas destiné au vin, mais à la survie. Ce tunnel de 20 mètres a été construit par des soldats italiens pendant la guerre."
+            },
+            {
+              "label": "Le tunnel d'urgence",
+              "text": "Les soldats utilisaient ce passage comme un « tunnel d'urgence », un raccourci secret pour s'enfuir et se cacher de leurs adversaires. La cave elle-même servait d'abri sûr où ils pouvaient dormir, se détendre et rester protégés des combats à l'extérieur."
+            },
+            {
+              "label": "Une forteresse cachée",
+              "text": "À la fin du tunnel, vous sortirez dans notre arrière-cour, qui est aujourd'hui notre paisible restaurant. Mais regardez en arrière vers le toit en pierre avant de sortir ! Dans les années 1940, toute cette zone était un champ de tir. Le sommet était recouvert de pierres lourdes pour protéger les soldats, et juste au bord, ils avaient des mitrailleuses pour défendre la colline. Il est difficile de croire que cet endroit calme et magnifique pour prendre un repas était un lieu gardé sur l'île !"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prochaine Destination :"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "À venir",
+              "text": "Lorsque vous aurez terminé d'explorer le tunnel, veuillez revenir trouver notre guide afin qu'il puisse vous montrer le chemin vers vos prochains arrêts incroyables : la Maison Traditionnelle et la Boulangerie !"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Une Mission pour nos Jeunes Explorateurs et les Adultes !",
+        "items": [
+          {
+            "label": "Top Secret",
+            "text": "Vous êtes maintenant en mission secrète ! En traversant le tunnel des soldats, pouvez-vous calculer exactement combien de bouteilles de vin bordent les murs ?"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/fr/section-07.mp3",
+        "ready": true
+      },
+      "imageAlt": "Le Tunnel Secret et la Cave"
+    },
+    {
+      "id": "traditional-house",
+      "title": "La Maison Traditionnelle",
+      "navigationTitle": "La Maison Traditionnelle",
+      "preview": "Une toute petite maison surpeuplée : Bienvenue dans la maison traditionnelle ! Cette incroyable petite demeure a plus de 130 ans. Elle mesure moins de 20 mètres carrés, mais croyez-le ou non, 8 à 10 personnes y vivaient autrefois ! Les grands-parents, les parents et tous leurs enfants partageaient cette unique pièce.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Où dormait tout le monde ? Les grands-parents dormaient juste à côté de la cheminée chaleureuse. Les parents dormaient en hauteur dans le lit en mezzanine du côté opposé, tandis que les enfants plus âgés dormaient dans les lits adjacents et sur le canapé."
+            },
+            {
+              "label": "Fais dodo, mon petit bébé",
+              "text": "Et le bébé ? Cherchez le petit berceau en bois ! Pour aider le bébé à s'endormir, il suffisait de tirer doucement sur cette petite corde suspendue pour le bercer."
+            },
+            {
+              "label": "Un rangement astucieux",
+              "text": "Remarquez l'espace sous les lits familiaux : c'était leur principale pièce de rangement."
+            },
+            {
+              "label": "Tâches quotidiennes et décoration",
+              "text": "Sur le côté gauche, vous pouvez voir un grand métier à tisser en bois qu'ils utilisaient pour confectionner de nouveaux vêtements et réparer les anciens, ainsi qu'un coffre où ils gardaient leurs objets personnels. Vous apercevrez également un tamis utilisé pour la farine, et de magnifiques photos anciennes ainsi que des images religieuses sur les murs."
+            },
+            {
+              "label": "Vases et costumes",
+              "text": "À côté du coffre, cherchez deux vases : le grand servait pour le vin, et le petit pour l'eau. Juste au-dessus sont suspendus deux magnifiques costumes traditionnels que les dames de la maison portaient pour les mariages et les événements spéciaux."
+            },
+            {
+              "label": "Le cœur de la maison",
+              "text": "Comme la maison n'était pas isolée comme nos habitations modernes, la cheminée servait à cuisiner tous les repas et à garder toute la famille au chaud. Juste à côté se trouve un petit moulin manuel pour broyer la farine, ainsi que leurs ustensiles de cuisine quotidiens et des assiettes traditionnelles décorées de jolies fleurs peintes."
+            },
+            {
+              "label": "La balançoire suspendue",
+              "text": "Levez les yeux au plafond ! Voyez-vous quelque chose de suspendu qui ressemble un peu à une balançoire ? Ce n'est pas pour jouer ! Ils gardaient leur pain frais dans la partie supérieure pour le mettre à l'abri des souris affamées. Dans la partie inférieure, ils stockaient des caroubes. À l'époque, ils n'avaient pas de barres chocolatées, alors ces caroubes sucrées étaient données aux enfants comme une délicieuse friandise chocolatée !"
+            },
+            {
+              "label": "Un réfrigérateur traditionnel",
+              "text": "Enfin, cherchez l'armoire en bois. Croyez-le ou non, c'est un réfrigérateur traditionnel ! Il se compose de deux parties. Ils mettaient de gros glaçons dans la partie supérieure et, à mesure que la glace fondait, ils pouvaient ouvrir un petit robinet pour boire de l'eau glacée. Le froid de la partie supérieure refroidissait également parfaitement la section inférieure pour garder leur nourriture fraîche !"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prochaine Destination :"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "À venir",
+              "text": "Dirigez-vous ensuite vers la boulangerie !"
+            }
+          ]
+        }
+      ],
+      "challenge": {
+        "title": "Une Mission pour nos Jeunes Explorateurs et les Adultes !",
+        "items": [
+          {
+            "label": "Faites tourner le moulin",
+            "text": "Vous avez beaucoup à faire dans cette petite maison bien remplie ! Tout d'abord, pouvez-vous trouver le moulin manuel ? Essayez de placer la poignée en bois dans l'encoche et voyez si vous pouvez le faire tourner !"
+          },
+          {
+            "label": "Regardez en haut et en bas",
+            "text": "Après vos efforts, parviendrez-vous à repérer la « balançoire » suspendue qui protégeait le pain des souris ?"
+          },
+          {
+            "label": "Bercez le bébé",
+            "text": "Et la petite corde qu'ils tiraient pour bercer le bébé et l'endormir ? Arriverez-vous à faire s'endormir le bébé en actionnant la corde ? Est-ce difficile pour vous ?"
+          },
+          {
+            "label": "Imaginez ceci",
+            "text": "Une fois que vous aurez tout trouvé, imaginez ce que ce serait de partager cette petite pièce avec 8 à 10 membres de votre famille !"
+          }
+        ]
+      },
+      "audio": {
+        "path": "./assets/audio/fr/section-08.mp3",
+        "ready": true
+      },
+      "imageAlt": "La Maison Traditionnelle"
+    },
+    {
+      "id": "bakery",
+      "title": "La Boulangerie",
+      "navigationTitle": "La Boulangerie",
+      "preview": "Un lieu de rassemblement : Bienvenue au four traditionnel ! Ce magnifique four en pierre a plus de 150 ans. Autrefois, la plupart des femmes du village venaient ici même pour cuire le pain quotidien de leur famille.",
+      "details": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Un processus de deux jours",
+              "text": "Cuire le pain à l'époque n'était pas aussi rapide que de courir au supermarché ! C'était en fait un processus de deux jours. La veille, les dames mélangeaient et façonnaient soigneusement la pâte, puis la laissaient reposer et lever toute la nuit."
+            },
+            {
+              "label": "Fraîchement cuit",
+              "text": "Le lendemain matin, une fois la pâte prête, elles allumaient un feu vif pour faire chauffer le four. Dès que la température était idéale, elles y déposaient la pâte. Après une ou deux heures de cuisson, tout le village était envahi par la délicieuse odeur du pain frais et chaud, prêt à être dégusté !"
+            },
+            {
+              "label": "Photos historiques",
+              "text": "Si vous regardez autour de vous, vous verrez de magnifiques photos exposées qui montrent exactement comment elles procédaient pour toute cette préparation."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Une Question pour nos Jeunes Explorateurs et les Adultes !"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Lève-tôt",
+              "text": "Tout le village avait besoin de pain frais. Pouvez-vous deviner à quelle heure le boulanger devait se réveiller chaque matin pour commencer à préparer la pâte ? (Indice : c'était bien avant le lever du soleil !)"
+            },
+            {
+              "label": "Regardez Attentivement",
+              "text": "Regardez attentivement les photos pour voir comment les femmes du village travaillaient autrefois dans la boulangerie."
+            },
+            {
+              "label": "Place à la Détente",
+              "text": "Maintenant, il est temps de vous diriger vers le restaurant-café ! Prenez vos crayons de couleur, savourez une collation bien méritée et faites de votre croquis de Mylotopi (Mylotopi Sketch) un chef-d'œuvre coloré !"
+            },
+            {
+              "label": "Merci",
+              "text": "Merci d'avoir exploré avec nous aujourd'hui !"
+            }
+          ]
+        }
+      ],
+      "audio": {
+        "path": "./assets/audio/fr/section-09.mp3",
+        "ready": true
+      },
+      "imageAlt": "La Boulangerie"
+    }
+  ]
+}
