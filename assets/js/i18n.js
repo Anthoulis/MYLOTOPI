@@ -5,6 +5,7 @@
     throw new Error("Mylotopi guide metadata is missing.");
   }
 
+  // Runtime visitor text lives in one JSON file per language and is loaded on demand.
   const CONTENT_BASE_PATH = "./assets/content";
 
   function normalizeKey(value) {

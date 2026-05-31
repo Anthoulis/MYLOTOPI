@@ -302,7 +302,8 @@ body.is-map-modal-open {
   min-width: 0;
 }
 
-.flag-icon {
+.language-option__flag {
+  display: block;
   flex: 0 0 auto;
   width: 24px;
   height: 16px;

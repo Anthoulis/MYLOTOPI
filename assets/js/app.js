@@ -279,9 +279,10 @@
       }
 
       const labelText = typeof item.label === "string" ? item.label.trim() : "";
-      const renderedLabel = labelText && /[:?!]$/.test(labelText) ? labelText : labelText + ":";
-      const label = labelText ? '<strong class="qr-copy__item-label">' + escapeHtml(renderedLabel) + "</strong> " : "";
-      const text = item.text ? "<span>" + escapeHtml(item.text) + "</span>" : "";
+      const itemText = typeof item.text === "string" ? item.text.trim() : "";
+      const renderedLabel = labelText && itemText && !labelText.endsWith(":") ? labelText + ":" : labelText;
+      const label = renderedLabel ? '<strong class="qr-copy__item-label">' + escapeHtml(renderedLabel) + "</strong> " : "";
+      const text = itemText ? "<span>" + escapeHtml(itemText) + "</span>" : "";
 
       return "<li>" + label + text + "</li>";
     }
