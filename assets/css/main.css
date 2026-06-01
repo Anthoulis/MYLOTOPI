@@ -110,7 +110,19 @@ body.is-map-modal-open {
 }
 
 .brand {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  min-width: 0;
   color: var(--surface);
+}
+
+.brand__logo {
+  flex: 0 1 auto;
+  width: clamp(70px, 24vw, 118px);
+  height: auto;
+  max-height: 34px;
+  object-fit: contain;
 }
 
 .brand__name {
@@ -349,6 +361,15 @@ body.is-map-modal-open {
   text-wrap: balance;
 }
 
+.qr-hero__intro {
+  max-width: 42rem;
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
 .qr-hero__current {
   display: inline-flex;
   max-width: 100%;
@@ -443,13 +464,14 @@ body.is-map-modal-open {
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  background: var(--surface-soft);
+  background: linear-gradient(180deg, var(--surface), var(--surface-soft));
 }
 
 .minimap-card__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  padding: 8px;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -545,28 +567,6 @@ body.is-map-modal-open {
   align-items: center;
   justify-content: flex-end;
   margin-left: auto;
-}
-
-.minimap-modal__download {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 38px;
-  padding: 8px 11px;
-  border: 1px solid rgb(var(--accent-rgb) / 0.22);
-  border-radius: 999px;
-  background: rgb(var(--surface-soft-rgb) / 0.7);
-  color: var(--text);
-  font-size: 0.8rem;
-  font-weight: 850;
-  line-height: 1.2;
-  text-align: center;
-  text-decoration: none;
-}
-
-.minimap-modal__download:hover {
-  border-color: rgb(var(--accent-rgb) / 0.42);
-  background: rgb(var(--accent-rgb) / 0.12);
 }
 
 .minimap-modal__close {
@@ -1017,8 +1017,12 @@ body.is-map-modal-open {
 }
 
 @media (max-width: 370px) {
+  .brand__logo {
+    width: 58px;
+  }
+
   .brand__name {
-    font-size: 1.18rem;
+    font-size: 1.08rem;
   }
 
   .selector__button--language {
@@ -1087,6 +1091,11 @@ body.is-map-modal-open {
 
   .qr-hero__title {
     max-width: 18ch;
+  }
+
+  .qr-hero__intro {
+    max-width: 46rem;
+    font-size: 1.05rem;
   }
 
   .qr-main {

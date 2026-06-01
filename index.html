@@ -17,19 +17,20 @@
     <header class="site-header" id="qr-topbar">
       <nav class="container site-header__inner" id="qr-nav">
         <div class="brand" aria-label="Mylotopi">
+          <img class="brand__logo" src="./logo.png" alt="" width="1188" height="340" decoding="async">
           <span class="brand__name">Mylotopi</span>
         </div>
 
         <div class="header-controls">
-          <details class="selector selector--stop" id="spot-menu">
-            <summary class="selector__button selector__button--stop" id="spot-menu-trigger">
+          <details class="selector selector--stop" id="stop-menu">
+            <summary class="selector__button selector__button--stop" id="stop-menu-trigger">
               <span class="selector__content">
-                <span class="selector__label" id="spot-control-label"></span>
-                <span class="selector__value" id="active-spot-label"></span>
+                <span class="selector__label" id="stop-control-label"></span>
+                <span class="selector__value" id="active-stop-label"></span>
               </span>
               <span class="selector__chevron" aria-hidden="true"></span>
             </summary>
-            <div class="selector__menu selector__menu--stop" id="spot-switcher" role="group"></div>
+            <div class="selector__menu selector__menu--stop" id="stop-switcher" role="group"></div>
           </details>
 
           <details class="selector selector--language" id="language-menu">
@@ -49,6 +50,7 @@
     <header class="container qr-hero" aria-labelledby="qr-title">
       <p class="qr-hero__eyebrow" id="qr-kicker"></p>
       <h1 class="qr-hero__title" id="qr-title"></h1>
+      <p class="qr-hero__intro" id="qr-intro"></p>
       <p class="qr-hero__current" id="current-stop-label"></p>
     </header>
 

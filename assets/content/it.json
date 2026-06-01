@@ -26,7 +26,6 @@
     "miniMapDescription": "Consulta il percorso prima di continuare.",
     "miniMapTapHint": "Tocca la mappa per aprirla",
     "miniMapOpen": "Apri mappa",
-    "miniMapDownload": "Scarica mappa",
     "miniMapModalClose": "Chiudi mappa",
     "miniMapImageAlt": "Mini mappa di Mylotopi con le nove tappe del percorso",
     "sectionSelectorLabel": "Tappa",
@@ -110,7 +109,7 @@
           "items": [
             {
               "label": "È Semplicissimo",
-              "text": "Il codice QR apre il tour dall'inizio. Non è necessario scaricare alcuna app."
+              "text": "La guida si apre dall'inizio. Scegliete la vostra lingua e seguite le tappe numerate."
             },
             {
               "label": "Ascoltate Insieme",
@@ -230,7 +229,7 @@
       "imageAlt": "Il Nostro Giardino con le Nostre Erbe Aromatiche!"
     },
     {
-      "id": "windmill-first-floor",
+      "id": "windmill-base",
       "title": "La Base del Mulino a Vento (1° Piano)",
       "navigationTitle": "La Base del Mulino a Vento (1° Piano)",
       "preview": "Benvenuti al \"Mulino del Prete\"!",
@@ -319,7 +318,7 @@
       "imageAlt": "La Base del Mulino a Vento (1° Piano)"
     },
     {
-      "id": "windmill-second-floor",
+      "id": "sleeping-area",
       "title": "La Zona Notte del Mulino a Vento (2° Piano)",
       "navigationTitle": "La Zona Notte del Mulino a Vento (2° Piano)",
       "preview": "Benvenuti al secondo piano!",
@@ -380,7 +379,7 @@
       "imageAlt": "La Zona Notte del Mulino a Vento (2° Piano)"
     },
     {
-      "id": "windmill-third-floor",
+      "id": "machinery",
       "title": "I Macchinari del Mulino a Vento (3° Piano)",
       "navigationTitle": "I Macchinari del Mulino a Vento (3° Piano)",
       "preview": "Benvenuti al terzo piano! Per favore, fate attenzione a dove mettete i piedi sulla scala e state attenti alla testa mentre esplorate.",

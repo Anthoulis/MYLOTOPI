@@ -5,9 +5,9 @@
     sectionOrder: [
       "welcome",
       "herb-garden",
-      "windmill-first-floor",
-      "windmill-second-floor",
-      "windmill-third-floor",
+      "windmill-base",
+      "sleeping-area",
+      "machinery",
       "threshing-floor-donkeys",
       "cellar-italian-tunnel",
       "traditional-house",
@@ -36,7 +36,7 @@
           },
         ],
       },
-      "windmill-first-floor": {
+      "windmill-base": {
         accent: "#8f6b32",
         accentSoft: "rgba(143, 107, 50, 0.18)",
         images: [
@@ -47,7 +47,7 @@
           },
         ],
       },
-      "windmill-second-floor": {
+      "sleeping-area": {
         accent: "#8f6b32",
         accentSoft: "rgba(143, 107, 50, 0.14)",
         images: [
@@ -58,7 +58,7 @@
           },
         ],
       },
-      "windmill-third-floor": {
+      "machinery": {
         accent: "#8f6b32",
         accentSoft: "rgba(143, 107, 50, 0.12)",
         images: [

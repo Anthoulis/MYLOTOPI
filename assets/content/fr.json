@@ -27,7 +27,6 @@
     "miniMapDescription": "Consultez le parcours avant de continuer.",
     "miniMapTapHint": "Touchez la carte pour l'ouvrir",
     "miniMapOpen": "Ouvrir la carte",
-    "miniMapDownload": "Télécharger la carte",
     "miniMapModalClose": "Fermer la carte",
     "miniMapImageAlt": "Mini-carte de Mylotopi montrant les neuf arrêts de la visite",
     "sectionSelectorLabel": "Arrêt",
@@ -111,7 +110,7 @@
           "items": [
             {
               "label": "C'est super facile",
-              "text": "Le QR code ouvre la visite depuis le début. Vous n'avez pas besoin de télécharger d'application."
+              "text": "Le guide commence depuis le d?but. Choisissez votre langue et suivez les arr?ts num?rot?s."
             },
             {
               "label": "Écoutez ensemble",
@@ -231,7 +230,7 @@
       "imageAlt": "Notre jardin et ses herbes aromatiques !"
     },
     {
-      "id": "windmill-first-floor",
+      "id": "windmill-base",
       "title": "La Base du Moulin à Vent (1er Étage)",
       "navigationTitle": "La Base du Moulin à Vent (1er Étage)",
       "preview": "Bienvenue au « Moulin du Prêtre » !",
@@ -320,7 +319,7 @@
       "imageAlt": "La Base du Moulin à Vent (1er Étage)"
     },
     {
-      "id": "windmill-second-floor",
+      "id": "sleeping-area",
       "title": "L'Espace Sommeil du Moulin à Vent (2e Étage)",
       "navigationTitle": "L'Espace Sommeil du Moulin à Vent (2e Étage)",
       "preview": "Bienvenue au deuxième étage !",
@@ -381,7 +380,7 @@
       "imageAlt": "L'Espace Sommeil du Moulin à Vent (2e Étage)"
     },
     {
-      "id": "windmill-third-floor",
+      "id": "machinery",
       "title": "La Machinerie du Moulin à Vent (3e Étage)",
       "navigationTitle": "La Machinerie du Moulin à Vent (3e Étage)",
       "preview": "Bienvenue au troisième étage ! Faites attention où vous posez les pieds sur l'échelle et prenez garde à votre tête pendant votre exploration.",

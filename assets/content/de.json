@@ -26,9 +26,7 @@
     "miniMapTitle": "MINI-KARTE",
     "miniMapDescription": "Sehen Sie sich die Route an, bevor Sie weitergehen.",
     "miniMapTapHint": "Karte antippen, um die Route zu öffnen",
-    "miniMapView": "Karte ansehen",
     "miniMapOpen": "Karte öffnen",
-    "miniMapDownload": "Karte herunterladen",
     "miniMapModalClose": "Karte schließen",
     "miniMapImageAlt": "Mylotopi-Miniplan mit den neun Stationen der Führung",
     "sectionSelectorLabel": "Station",
@@ -111,7 +109,7 @@
           "items": [
             {
               "label": "Es ist super einfach",
-              "text": "Der QR-Code öffnet die Tour von Anfang an. Sie müssen keine App herunterladen."
+              "text": "Der Guide beginnt am Anfang. W?hlen Sie Ihre Sprache und folgen Sie den nummerierten Stationen."
             },
             {
               "label": "Gemeinsam zuhören",
@@ -231,7 +229,7 @@
       "imageAlt": "Kräutergarten"
     },
     {
-      "id": "windmill-first-floor",
+      "id": "windmill-base",
       "title": "Die Basis der Windmühle (1. Stock)",
       "navigationTitle": "Basis der Windmühle",
       "preview": "Willkommen in der „Mühle des Priesters“!",
@@ -320,7 +318,7 @@
       "imageAlt": "Basis der Windmühle"
     },
     {
-      "id": "windmill-second-floor",
+      "id": "sleeping-area",
       "title": "Der Schlafbereich der Windmühle (2. Stock)",
       "navigationTitle": "Schlafbereich",
       "preview": "Willkommen im zweiten Stock!",
@@ -381,7 +379,7 @@
       "imageAlt": "Hölzerner Schlafbereich im Inneren der Mylotopi-Windmühle"
     },
     {
-      "id": "windmill-third-floor",
+      "id": "machinery",
       "title": "Die Maschinen der Windmühle (3. Stock)",
       "navigationTitle": "Mechanik",
       "preview": "Willkommen im dritten Stock! Bitte passen Sie auf der Leiter auf Ihre Schritte auf und achten Sie beim Erkunden auf Ihren Kopf.",

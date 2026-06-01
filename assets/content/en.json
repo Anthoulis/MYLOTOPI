@@ -27,9 +27,7 @@
     "miniMapTitle": "MINI MAP",
     "miniMapDescription": "See the route before continuing.",
     "miniMapTapHint": "Tap to open the full route map",
-    "miniMapView": "View map",
     "miniMapOpen": "Open map",
-    "miniMapDownload": "Download map",
     "miniMapModalClose": "Close map",
     "miniMapImageAlt": "Mylotopi mini-map showing the nine tour stops",
     "sectionSelectorLabel": "Tour stop",
@@ -112,7 +110,7 @@
           "items": [
             {
               "label": "It's Super Easy",
-              "text": "The QR code opens the tour from the beginning. You do not need to download any apps."
+              "text": "The guide opens from the beginning. Choose your language and follow the numbered stops."
             },
             {
               "label": "Listen Together",
@@ -232,7 +230,7 @@
       "imageAlt": "Mylotopi herb garden"
     },
     {
-      "id": "windmill-first-floor",
+      "id": "windmill-base",
       "title": "The Windmill Base (1st Floor)",
       "navigationTitle": "Windmill 1st Floor",
       "preview": "Welcome to the \"Mill of the Priest\"!",
@@ -321,7 +319,7 @@
       "imageAlt": "Windmill base"
     },
     {
-      "id": "windmill-second-floor",
+      "id": "sleeping-area",
       "title": "The Windmill Sleeping Area (2nd Floor)",
       "navigationTitle": "Windmill 2nd Floor",
       "preview": "Welcome to the second floor! Watch your step on the wooden stairs and mind your head on the wood above. Get ready for a big surprise about how the family lived.",
@@ -382,7 +380,7 @@
       "imageAlt": "Windmill sleeping area"
     },
     {
-      "id": "windmill-third-floor",
+      "id": "machinery",
       "title": "The Windmill Machinery (3rd Floor)",
       "navigationTitle": "Windmill 3rd Floor",
       "preview": "Welcome to the third floor! Please watch your step on the ladder and mind your head as you explore.",

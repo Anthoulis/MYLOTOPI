@@ -27,7 +27,6 @@
     "miniMapDescription": "Consulta la ruta antes de continuar.",
     "miniMapTapHint": "Toca el mapa para abrirlo",
     "miniMapOpen": "Abrir mapa",
-    "miniMapDownload": "Descargar mapa",
     "miniMapModalClose": "Cerrar mapa",
     "miniMapImageAlt": "Mini mapa de Mylotopi con las nueve paradas del recorrido",
     "sectionSelectorLabel": "Parada",
@@ -111,7 +110,7 @@
           "items": [
             {
               "label": "Es súper fácil",
-              "text": "El código QR abre el recorrido desde el principio. No necesitan descargar ninguna aplicación."
+              "text": "La gu?a se abre desde el principio. Elijan su idioma y sigan las paradas numeradas."
             },
             {
               "label": "Escuchen juntos",
@@ -231,7 +230,7 @@
       "imageAlt": "¡Nuestro jardín con nuestras hierbas aromáticas!"
     },
     {
-      "id": "windmill-first-floor",
+      "id": "windmill-base",
       "title": "La base del molino de viento (1er piso)",
       "navigationTitle": "La base del molino de viento (1er piso)",
       "preview": "¡Bienvenido al \"Molino del Sacerdote\"!",
@@ -320,7 +319,7 @@
       "imageAlt": "La base del molino de viento (1er piso)"
     },
     {
-      "id": "windmill-second-floor",
+      "id": "sleeping-area",
       "title": "La zona de descanso del molino de viento (2º piso)",
       "navigationTitle": "Zona de descanso",
       "preview": "¡Bienvenido al segundo piso! Ten cuidado al pisar las escaleras de madera y vigila tu cabeza con las vigas de arriba. Prepárate para una gran sorpresa sobre cómo vivía la familia.",
@@ -381,7 +380,7 @@
       "imageAlt": "La zona de descanso del molino de viento (2º piso)"
     },
     {
-      "id": "windmill-third-floor",
+      "id": "machinery",
       "title": "La maquinaria del molino de viento (3er piso)",
       "navigationTitle": "Maquinaria del molino",
       "preview": "¡Bienvenido al tercer piso! Por favor, ten cuidado al pisar la escalera y vigila tu cabeza mientras exploras.",

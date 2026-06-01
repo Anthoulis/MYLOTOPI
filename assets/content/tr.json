@@ -27,7 +27,6 @@
     "miniMapDescription": "Devam etmeden önce rotaya bakın.",
     "miniMapTapHint": "Haritayı açmak için dokunun",
     "miniMapOpen": "Haritayı aç",
-    "miniMapDownload": "Haritayı indir",
     "miniMapModalClose": "Haritayı kapat",
     "miniMapImageAlt": "Dokuz tur durağını gösteren Mylotopi mini haritası",
     "sectionSelectorLabel": "Durak",
@@ -51,9 +50,7 @@
     "heroTitle": "Yel Değirmeni Deneyimine Hoş Geldiniz!"
   },
   "miniMap": {
-    "path": "./assets/maps/minimap-tr.jpg",
-    "fallback": true,
-    "fallbackReason": "Uses the default mini-map until a Turkish-specific source image is provided."
+    "path": "./assets/maps/minimap-tr.jpg"
   },
   "sections": [
     {
@@ -113,7 +110,7 @@
           "items": [
             {
               "label": "Çok Kolay",
-              "text": "QR kodu turu en baştan açar. Herhangi bir uygulama indirmenize gerek yok."
+              "text": "Rehber en ba?tan a??l?r. Dilinizi se?in ve numaral? duraklar? takip edin."
             },
             {
               "label": "Birlikte Dinleyin",
@@ -233,7 +230,7 @@
       "imageAlt": "Bahçemiz ve Aromatik Bitkilerimiz!"
     },
     {
-      "id": "windmill-first-floor",
+      "id": "windmill-base",
       "title": "Yel Değirmeni Tabanı (1. Kat)",
       "navigationTitle": "Yel Değirmeni Tabanı (1. Kat)",
       "preview": "\"Rahibin Değirmeni\"ne hoş geldiniz!",
@@ -322,7 +319,7 @@
       "imageAlt": "Yel Değirmeni Tabanı (1. Kat)"
     },
     {
-      "id": "windmill-second-floor",
+      "id": "sleeping-area",
       "title": "Yel Değirmeni Uyku Alanı (2. Kat)",
       "navigationTitle": "Yel Değirmeni Uyku Alanı (2. Kat)",
       "preview": "İkinci kata hoş geldiniz!",
@@ -383,7 +380,7 @@
       "imageAlt": "Yel Değirmeni Uyku Alanı (2. Kat)"
     },
     {
-      "id": "windmill-third-floor",
+      "id": "machinery",
       "title": "Yel Değirmeni Makine Aksamı (3. Kat)",
       "navigationTitle": "Yel Değirmeni Makine Aksamı (3. Kat)",
       "preview": "Üçüncü kata hoş geldiniz! Lütfen merdivende adımlarınıza dikkat edin ve keşfederken başınızı çarpmamaya özen gösterin.",

@@ -26,7 +26,6 @@
     "miniMapDescription": "Sprawdź trasę przed dalszym zwiedzaniem.",
     "miniMapTapHint": "Dotknij mapy, aby ją otworzyć",
     "miniMapOpen": "Otwórz mapę",
-    "miniMapDownload": "Pobierz mapę",
     "miniMapModalClose": "Zamknij mapę",
     "miniMapImageAlt": "Mini mapa Mylotopi pokazująca dziewięć punktów trasy",
     "sectionSelectorLabel": "Punkt",
@@ -110,7 +109,7 @@
           "items": [
             {
               "label": "To super proste",
-              "text": "Kod QR otwiera zwiedzanie od początku. Nie musicie pobierać żadnej aplikacji."
+              "text": "Przewodnik otwiera si? od pocz?tku. Wybierzcie j?zyk i pod??ajcie za ponumerowanymi punktami."
             },
             {
               "label": "Słuchajcie razem",
@@ -230,7 +229,7 @@
       "imageAlt": "Nasz ogród z naszymi ziołami!"
     },
     {
-      "id": "windmill-first-floor",
+      "id": "windmill-base",
       "title": "Podstawa Wiatraka (1. piętro)",
       "navigationTitle": "Podstawa Wiatraka (1. piętro)",
       "preview": "Witamy w „Młynie Księdza”!",
@@ -319,7 +318,7 @@
       "imageAlt": "Podstawa Wiatraka (1. piętro)"
     },
     {
-      "id": "windmill-second-floor",
+      "id": "sleeping-area",
       "title": "Sypialnia w Wiatraku (2. piętro)",
       "navigationTitle": "Sypialnia w Wiatraku (2. piętro)",
       "preview": "Witamy na drugim piętrze! Uważajcie pod nogi na drewnianych schodach i na głowy pod drewnianym stropem. Przygotujcie się na dużą niespodziankę dotyczącą tego, jak żyła tu rodzina.",
@@ -380,7 +379,7 @@
       "imageAlt": "Sypialnia w Wiatraku (2. piętro)"
     },
     {
-      "id": "windmill-third-floor",
+      "id": "machinery",
       "title": "Mechanizmy Wiatraka (3. piętro)",
       "navigationTitle": "Mechanizmy Wiatraka (3. piętro)",
       "preview": "Witamy na trzecim piętrze! Prosimy uważać pod nogi na drabinie i uważać na głowy podczas zwiedzania.",

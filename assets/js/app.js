@@ -8,12 +8,6 @@
 
   const SECTION_ORDER = Array.isArray(meta.sectionOrder) ? meta.sectionOrder.slice() : Object.keys(meta.sections || {});
   const SECTIONS_BY_ID = meta.sections || {};
-  const LEGACY_SECTION_IDS = {
-    "garden-herbs": "herb-garden",
-    "windmill-base": "windmill-first-floor",
-    "sleeping-area": "windmill-second-floor",
-    machinery: "windmill-third-floor",
-  };
   const REDUCED_MOTION_QUERY = window.matchMedia("(prefers-reduced-motion: reduce)");
   const FLAG_SVG_MARKUP = {
     en:
@@ -42,14 +36,15 @@
     nav: "qr-nav",
     kicker: "qr-kicker",
     title: "qr-title",
+    intro: "qr-intro",
     currentSectionLabel: "current-stop-label",
-    sectionControlLabel: "spot-control-label",
+    sectionControlLabel: "stop-control-label",
     languageControlLabel: "language-control-label",
-    activeSectionLabel: "active-spot-label",
+    activeSectionLabel: "active-stop-label",
     activeLanguageLabel: "active-language-label",
-    sectionMenu: "spot-menu",
-    sectionTrigger: "spot-menu-trigger",
-    sectionSwitcher: "spot-switcher",
+    sectionMenu: "stop-menu",
+    sectionTrigger: "stop-menu-trigger",
+    sectionSwitcher: "stop-switcher",
     languageMenu: "language-menu",
     languageTrigger: "language-menu-trigger",
     languageSwitcher: "language-switcher",
@@ -135,8 +130,6 @@
       this.activeSectionId = defaultSectionId;
       this.galleries = {};
       this.shouldNormalizeUrl = false;
-      this.shouldScrollToSection = false;
-      this.includeSectionInUrl = false;
     }
 
     getGalleryIndex(sectionId, totalImages) {
@@ -646,7 +639,7 @@
     renderMiniMap(ui) {
       const miniMap = this.content.getMiniMap(this.state.lang);
       const modalTitleId = "qr-map-modal-title";
-      const openLabel = ui.miniMapOpen || ui.miniMapView || ui.miniMapTitle;
+      const openLabel = ui.miniMapOpen || ui.miniMapTitle;
       const tapHint = ui.miniMapTapHint || openLabel;
       const openAriaLabel = openLabel + ": " + (ui.miniMapImageAlt || ui.miniMapTitle);
 
@@ -684,11 +677,7 @@
         escapeHtml(modalTitleId) +
         '">' +
         escapeHtml(ui.miniMapTitle) +
-        '</h2><div class="minimap-modal__actions"><a class="minimap-modal__download" href="' +
-        escapeHtml(miniMap.path) +
-        '" download>' +
-        escapeHtml(ui.miniMapDownload) +
-        '</a><button class="minimap-modal__close" type="button" data-map-close>' +
+        '</h2><div class="minimap-modal__actions"><button class="minimap-modal__close" type="button" data-map-close>' +
         escapeHtml(ui.miniMapModalClose) +
         "</button></div></div>" +
         '<img class="minimap-modal__image" src="' +
@@ -798,6 +787,7 @@
       this.elements.languageControlLabel.textContent = ui.languageLabel;
       this.elements.kicker.textContent = ui.kicker;
       this.elements.title.textContent = heroTitle;
+      this.elements.intro.textContent = ui.intro || "";
 
       this.renderLanguageButtons();
       this.renderSections();
@@ -823,6 +813,10 @@
         sectionsById: this.sectionsById,
       });
       this.audio = new AudioController(this.elements.main, (sectionId) => this.getSectionElement(sectionId));
+      this.sectionObserver = null;
+      this.observedSectionSyncHandle = null;
+      this.pendingProgrammaticSectionId = null;
+      this.pendingProgrammaticScrollDeadline = 0;
     }
 
     getDefaultSectionId() {
@@ -843,54 +837,34 @@
       }
 
       const key = normalizeQueryParam(value);
-      const canonicalKey = LEGACY_SECTION_IDS[key] || key;
-      return this.sectionOrder.includes(canonicalKey) ? canonicalKey : null;
+      return this.sectionOrder.includes(key) ? key : null;
     }
 
     getNavigationOptions() {
       return {
         behavior: REDUCED_MOTION_QUERY.matches ? "auto" : "smooth",
         focus: true,
-        updateUrl: true,
       };
     }
 
     applyLocation() {
       const params = new URLSearchParams(window.location.search);
       const rawLang = params.get("lang");
-      const rawSection = params.get("spot");
+      const queryKeys = Array.from(params.keys());
       const hasLangParam = params.has("lang");
-      const hasSectionParam = params.has("spot");
+      const hasUnsupportedParams = queryKeys.some((key) => key !== "lang");
       const canonicalRawLang = hasLangParam ? normalizeQueryParam(rawLang || "") : null;
-      const canonicalRawSection = hasSectionParam ? normalizeQueryParam(rawSection || "") : null;
       const normalizedLang = this.content.normalizeLanguage(rawLang) || this.content.defaultLanguage;
-      const requestedSectionId = hasSectionParam ? this.normalizeSection(rawSection) : null;
-      const normalizedSectionId = requestedSectionId || this.getDefaultSectionId();
 
       this.state.lang = normalizedLang;
-      this.state.activeSectionId = normalizedSectionId;
-      this.state.shouldScrollToSection = Boolean(requestedSectionId);
-      this.state.includeSectionInUrl = Boolean(requestedSectionId);
-      this.state.shouldNormalizeUrl =
-        (hasLangParam && canonicalRawLang !== normalizedLang) ||
-        (hasSectionParam && (!requestedSectionId || canonicalRawSection !== requestedSectionId));
+      this.state.activeSectionId = this.getDefaultSectionId();
+      this.state.shouldNormalizeUrl = hasUnsupportedParams || (hasLangParam && canonicalRawLang !== normalizedLang);
     }
 
-    updateUrl(options) {
-      const settings = Object.assign(
-        {
-          includeSection: this.state.includeSectionInUrl,
-        },
-        options || {}
-      );
+    updateUrl() {
       const url = new URL(window.location.href);
 
-      if (settings.includeSection && this.state.activeSectionId) {
-        url.searchParams.set("spot", this.state.activeSectionId);
-      } else {
-        url.searchParams.delete("spot");
-      }
-
+      url.search = "";
       url.searchParams.set("lang", this.state.lang);
       window.history.replaceState({}, "", url.toString());
     }
@@ -949,13 +923,135 @@
       return true;
     }
 
-    moveToSection(sectionId, options) {
+    getSectionElements() {
+      return Array.from(this.elements.main.querySelectorAll(".qr-stop[data-section]"));
+    }
+
+    getHeaderOffset() {
+      const header = this.elements.nav.closest(".site-header");
+      return header ? Math.ceil(header.getBoundingClientRect().height) : 0;
+    }
+
+    disconnectSectionObserver() {
+      if (this.sectionObserver) {
+        this.sectionObserver.disconnect();
+        this.sectionObserver = null;
+      }
+
+      if (this.observedSectionSyncHandle !== null) {
+        window.cancelAnimationFrame(this.observedSectionSyncHandle);
+        this.observedSectionSyncHandle = null;
+      }
+    }
+
+    setupActiveSectionObserver() {
+      this.disconnectSectionObserver();
+
+      if (typeof window.IntersectionObserver !== "function") {
+        return;
+      }
+
+      const sections = this.getSectionElements();
+      if (!sections.length) {
+        return;
+      }
+
+      this.sectionObserver = new IntersectionObserver(
+        () => {
+          this.requestObservedActiveSectionSync();
+        },
+        {
+          root: null,
+          rootMargin: "-" + this.getHeaderOffset() + "px 0px -35% 0px",
+          threshold: [0, 0.15, 0.35, 0.6, 0.85, 1],
+        }
+      );
+
+      sections.forEach((section) => {
+        this.sectionObserver.observe(section);
+      });
+
+      this.requestObservedActiveSectionSync();
+    }
+
+    requestObservedActiveSectionSync() {
+      if (this.observedSectionSyncHandle !== null) {
+        return;
+      }
+
+      this.observedSectionSyncHandle = window.requestAnimationFrame(() => {
+        this.observedSectionSyncHandle = null;
+        this.syncActiveSectionFromViewport();
+      });
+    }
+
+    findViewportSectionId() {
+      const sections = this.getSectionElements();
+      if (!sections.length) {
+        return null;
+      }
+
+      const headerOffset = this.getHeaderOffset();
+      const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+      const activationLine = headerOffset + Math.max(72, (viewportHeight - headerOffset) * 0.24);
+      let visibleCandidate = null;
+
+      for (const section of sections) {
+        const rect = section.getBoundingClientRect();
+
+        if (rect.top <= activationLine && rect.bottom > activationLine) {
+          return section.dataset.section || null;
+        }
+
+        const visibleTop = Math.max(rect.top, headerOffset);
+        const visibleBottom = Math.min(rect.bottom, viewportHeight);
+        const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+
+        if (visibleHeight > 0) {
+          const score = visibleHeight / Math.max(rect.height, 1);
+          if (!visibleCandidate || score > visibleCandidate.score) {
+            visibleCandidate = {
+              sectionId: section.dataset.section || null,
+              score: score,
+            };
+          }
+        }
+      }
+
+      return visibleCandidate ? visibleCandidate.sectionId : null;
+    }
+
+    syncActiveSectionFromViewport() {
+      if (this.elements.sectionMenu.open || this.elements.languageMenu.open) {
+        return;
+      }
+
+      const sectionId = this.findViewportSectionId();
+      if (!sectionId || sectionId === this.state.activeSectionId) {
+        return;
+      }
+
+      if (this.pendingProgrammaticSectionId) {
+        const isWaitingForTarget = Date.now() < this.pendingProgrammaticScrollDeadline;
+        if (isWaitingForTarget && sectionId !== this.pendingProgrammaticSectionId) {
+          return;
+        }
+
+        this.pendingProgrammaticSectionId = null;
+        this.pendingProgrammaticScrollDeadline = 0;
+      }
+
+      this.setActiveSection(sectionId, {
+        activateAudio: false,
+        announce: false,
+      });
+    }
+
+    setActiveSection(sectionId, options) {
       const settings = Object.assign(
         {
-          behavior: REDUCED_MOTION_QUERY.matches ? "auto" : "smooth",
-          focus: true,
-          updateUrl: true,
-          includeSectionInUrl: this.state.includeSectionInUrl,
+          activateAudio: true,
+          announce: true,
         },
         options || {}
       );
@@ -963,23 +1059,39 @@
       const previousSectionId = this.state.activeSectionId;
 
       if (!nextSectionId) {
-        return;
+        return false;
       }
 
       this.state.activeSectionId = nextSectionId;
 
-      if (previousSectionId !== this.state.activeSectionId) {
+      if (previousSectionId !== this.state.activeSectionId && settings.activateAudio) {
         this.audio.activate(this.state.activeSectionId);
       }
 
       this.renderer.syncActiveState();
 
-      if (settings.updateUrl) {
-        this.state.includeSectionInUrl = settings.includeSectionInUrl;
-        this.updateUrl({
-          includeSection: settings.includeSectionInUrl,
-        });
+      if (settings.announce) {
+        this.announceActiveSection();
       }
+
+      return true;
+    }
+
+    moveToSection(sectionId, options) {
+      const settings = Object.assign(
+        {
+          behavior: REDUCED_MOTION_QUERY.matches ? "auto" : "smooth",
+          focus: true,
+        },
+        options || {}
+      );
+      const didActivate = this.setActiveSection(sectionId);
+      if (!didActivate) {
+        return;
+      }
+
+      this.pendingProgrammaticSectionId = this.state.activeSectionId;
+      this.pendingProgrammaticScrollDeadline = Date.now() + (settings.behavior === "smooth" ? 1200 : 200);
 
       const section = this.getSectionElement(this.state.activeSectionId);
       if (!section) {
@@ -1000,7 +1112,12 @@
         );
       }
 
-      this.announceActiveSection();
+      window.setTimeout(
+        () => {
+          this.requestObservedActiveSectionSync();
+        },
+        settings.behavior === "smooth" ? 900 : 80
+      );
     }
 
     async changeLanguage(nextLang) {
@@ -1010,9 +1127,14 @@
         return;
       }
 
+      const preservedSectionId =
+        this.normalizeSection(this.state.activeSectionId) || this.normalizeSection(this.findViewportSectionId()) || this.getDefaultSectionId();
+
+      this.disconnectSectionObserver();
       this.audio.stopAll();
       this.state.lang = normalizedLang;
       await this.content.loadLanguage(normalizedLang);
+      this.state.activeSectionId = preservedSectionId;
 
       this.renderer.renderGuide();
       this.audio.bindPlayers();
@@ -1024,9 +1146,10 @@
         this.moveToSection(this.state.activeSectionId, {
           behavior: "auto",
           focus: false,
-          updateUrl: false,
         });
       }
+
+      this.setupActiveSectionObserver();
     }
 
     handleLanguageClick(event) {
@@ -1189,6 +1312,7 @@
 
     handleMenuToggle(event) {
       if (!event.target.open) {
+        this.requestObservedActiveSectionSync();
         return;
       }
 
@@ -1215,6 +1339,7 @@
       document.addEventListener("keydown", (event) => this.handleDocumentKeydown(event));
       this.elements.sectionMenu.addEventListener("toggle", (event) => this.handleMenuToggle(event));
       this.elements.languageMenu.addEventListener("toggle", (event) => this.handleMenuToggle(event));
+      window.addEventListener("resize", () => this.requestObservedActiveSectionSync());
     }
 
     showFatalError(error) {
@@ -1242,23 +1367,12 @@
       this.audio.loadMetadata(this.audio.getPlayerForSection(this.state.activeSectionId));
 
       if (this.state.shouldNormalizeUrl) {
-        this.updateUrl({
-          includeSection: this.state.includeSectionInUrl,
-        });
+        this.updateUrl();
         this.state.shouldNormalizeUrl = false;
       }
 
       this.bindEvents();
-
-      if (this.state.shouldScrollToSection && this.state.activeSectionId) {
-        window.setTimeout(() => {
-          this.moveToSection(this.state.activeSectionId, {
-            behavior: "auto",
-            focus: true,
-            updateUrl: false,
-          });
-        }, 90);
-      }
+      this.setupActiveSectionObserver();
     }
   }
 

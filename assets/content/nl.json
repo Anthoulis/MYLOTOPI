@@ -26,7 +26,6 @@
     "miniMapDescription": "Bekijk de route voordat je verdergaat.",
     "miniMapTapHint": "Tik op de kaart om te openen",
     "miniMapOpen": "Kaart openen",
-    "miniMapDownload": "Kaart downloaden",
     "miniMapModalClose": "Kaart sluiten",
     "miniMapImageAlt": "Minikaart van Mylotopi met de negen stops van de route",
     "sectionSelectorLabel": "Stop",
@@ -110,7 +109,7 @@
           "items": [
             {
               "label": "Het is supermakkelijk",
-              "text": "De QR-code opent de tour vanaf het begin. Je hoeft geen apps te downloaden."
+              "text": "De gids opent vanaf het begin. Kies je taal en volg de genummerde stops."
             },
             {
               "label": "Luister samen",
@@ -230,7 +229,7 @@
       "imageAlt": "Onze Tuin met Onze Kruiden!"
     },
     {
-      "id": "windmill-first-floor",
+      "id": "windmill-base",
       "title": "De Molenvoet (1e verdieping)",
       "navigationTitle": "De Molenvoet (1e verdieping)",
       "preview": "Welkom in de \"Molen van de Priester\"!",
@@ -319,7 +318,7 @@
       "imageAlt": "De Molenvoet (1e verdieping)"
     },
     {
-      "id": "windmill-second-floor",
+      "id": "sleeping-area",
       "title": "Het Slaapgedeelte van de Molen (2e verdieping)",
       "navigationTitle": "Slaapgedeelte",
       "preview": "Welkom op de tweede verdieping!",
@@ -380,7 +379,7 @@
       "imageAlt": "Het Slaapgedeelte van de Molen (2e verdieping)"
     },
     {
-      "id": "windmill-third-floor",
+      "id": "machinery",
       "title": "De Molenmachines (3e verdieping)",
       "navigationTitle": "De Molenmachines (3e verdieping)",
       "preview": "Welkom op de derde verdieping! Let alsjeblieft goed op waar je loopt op de ladder en pas op je hoofd terwijl je op ontdekking gaat.",
