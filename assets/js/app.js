@@ -36,8 +36,6 @@
     nav: "qr-nav",
     kicker: "qr-kicker",
     title: "qr-title",
-    intro: "qr-intro",
-    currentSectionLabel: "current-stop-label",
     sectionControlLabel: "stop-control-label",
     languageControlLabel: "language-control-label",
     activeSectionLabel: "active-stop-label",
@@ -273,7 +271,7 @@
 
       const labelText = typeof item.label === "string" ? item.label.trim() : "";
       const itemText = typeof item.text === "string" ? item.text.trim() : "";
-      const renderedLabel = labelText && itemText && !labelText.endsWith(":") ? labelText + ":" : labelText;
+      const renderedLabel = labelText && itemText && !/[.!?:]$/.test(labelText) ? labelText + ":" : labelText;
       const label = renderedLabel ? '<strong class="qr-copy__item-label">' + escapeHtml(renderedLabel) + "</strong> " : "";
       const text = itemText ? "<span>" + escapeHtml(itemText) + "</span>" : "";
 
@@ -305,6 +303,12 @@
         return this.renderList(block);
       }
 
+      if (block.heading || block.body) {
+        const heading = block.heading ? '<h3 class="qr-copy__heading">' + escapeHtml(block.heading) + "</h3>" : "";
+        const body = block.body ? "<p>" + escapeHtml(block.body) + "</p>" : "";
+        return '<section class="qr-copy__section">' + heading + body + "</section>";
+      }
+
       if (block.text) {
         return "<p>" + escapeHtml(block.text) + "</p>";
       }
@@ -320,20 +324,152 @@
         .join("");
     }
 
-    renderReadMore(sectionId, section, ui) {
-      const bodyMarkup = this.renderCopyBlocks(section.details || []);
+    renderStoryBlock(block) {
+      if (typeof block === "string") {
+        return '<section class="story-block"><p class="story-block__paragraph">' + escapeHtml(block) + "</p></section>";
+      }
+
+      if (!block || typeof block !== "object") {
+        return "";
+      }
+
+      const heading = block.heading || block.title || block.text || "";
+      const paragraphs = Array.isArray(block.paragraphs) ? block.paragraphs : block.body ? [block.body] : [];
+      const items = Array.isArray(block.items) ? block.items : [];
+      const headingMarkup = heading ? '<h3 class="story-block__heading">' + escapeHtml(heading) + "</h3>" : "";
+      const paragraphMarkup = paragraphs
+        .map((paragraph) => {
+          return '<p class="story-block__paragraph">' + escapeHtml(paragraph) + "</p>";
+        })
+        .join("");
+      const listMarkup = items.length
+        ? '<ul class="story-block__list">' +
+          items
+            .map((item) => {
+              return this.renderStoryItem(item);
+            })
+            .join("") +
+          "</ul>"
+        : "";
+
+      if (!headingMarkup && !paragraphMarkup && !listMarkup) {
+        return "";
+      }
+
+      return '<section class="story-block">' + headingMarkup + paragraphMarkup + listMarkup + "</section>";
+    }
+
+    renderStoryItem(item) {
+      if (typeof item === "string") {
+        return '<li class="story-block__item">' + escapeHtml(item) + "</li>";
+      }
+
+      if (!item || typeof item !== "object") {
+        return "";
+      }
+
+      const labelText = typeof item.label === "string" ? item.label.trim() : "";
+      const itemText = typeof item.text === "string" ? item.text.trim() : "";
+      const renderedLabel = labelText && itemText && !/[.!?:]$/.test(labelText) ? labelText + ":" : labelText;
+      const label = renderedLabel ? '<strong class="story-block__item-label">' + escapeHtml(renderedLabel) + "</strong> " : "";
+      const text = itemText ? '<span class="story-block__item-text">' + escapeHtml(itemText) + "</span>" : "";
+
+      return '<li class="story-block__item">' + label + text + "</li>";
+    }
+
+    renderStoryBlocks(blocks) {
+      return (blocks || [])
+        .map((block) => {
+          return this.renderStoryBlock(block);
+        })
+        .join("");
+    }
+
+    getStoryBlocks(section) {
+      if (Array.isArray(section.storyBlocks) && section.storyBlocks.length) {
+        return section.storyBlocks;
+      }
+
+      if (Array.isArray(section.story) && section.story.length) {
+        return [
+          {
+            heading: section.lead || section.title,
+            items: section.story,
+          },
+        ];
+      }
+
+      if (Array.isArray(section.details) && section.details.length) {
+        return [
+          {
+            heading: section.lead || section.title,
+            items: section.details,
+          },
+        ];
+      }
+
+      return [];
+    }
+
+    getTranscriptBlocks(section) {
+      return Array.isArray(section.transcript) ? section.transcript : [];
+    }
+
+    getVisibleStoryBlocks(section) {
+      const storyBlocks = this.getStoryBlocks(section);
+      return storyBlocks.length ? storyBlocks.slice(0, 1) : [];
+    }
+
+    getExpandableStoryBlocks(section) {
+      return this.getStoryBlocks(section).slice(1);
+    }
+
+    renderExpandableCopy(sectionId, variant, blocks, labels) {
+      const bodyMarkup = this.renderCopyBlocks(blocks);
       if (!bodyMarkup) {
         return "";
       }
 
-      const copyId = "qr-copy-" + sectionId;
+      const copyId = "qr-copy-" + variant + "-" + sectionId;
 
       return (
-        '<div class="qr-readmore" data-read-more-wrap>' +
+        '<div class="qr-readmore qr-readmore--' +
+        escapeHtml(variant) +
+        '" data-read-more-wrap>' +
+        '<button class="qr-readmore__button" type="button" data-copy-toggle aria-expanded="false" aria-controls="' +
+        escapeHtml(copyId) +
+        '" data-read-more="' +
+        escapeHtml(labels.more) +
+        '" data-read-less="' +
+        escapeHtml(labels.less) +
+        '">' +
+        '<span data-copy-toggle-label>' +
+        escapeHtml(labels.more) +
+        '</span><span class="qr-readmore__chevron" aria-hidden="true"></span>' +
+        "</button>" +
         '<div class="qr-readmore__panel" id="' +
         escapeHtml(copyId) +
         '" data-copy-panel data-expanded="false" style="max-height:0px" hidden>' +
         '<div class="qr-copy">' +
+        bodyMarkup +
+        "</div></div></div>"
+      );
+    }
+
+    renderExpandableStory(sectionId, section, ui) {
+      const bodyMarkup = this.renderStoryBlocks(this.getExpandableStoryBlocks(section));
+      if (!bodyMarkup) {
+        return "";
+      }
+
+      const copyId = "qr-copy-story-" + sectionId;
+
+      return (
+        '<div class="qr-readmore qr-readmore--story" data-read-more-wrap>' +
+        '<div class="qr-readmore__panel" id="' +
+        escapeHtml(copyId) +
+        '" data-copy-panel data-expanded="false" style="max-height:0px" hidden>' +
+        '<div class="story-expanded">' +
         bodyMarkup +
         "</div></div>" +
         '<button class="qr-readmore__button" type="button" data-copy-toggle aria-expanded="false" aria-controls="' +
@@ -350,31 +486,39 @@
       );
     }
 
-    renderActivityCard(section, ui) {
-      const challenge = section.challenge;
-      if (!challenge || !Array.isArray(challenge.items) || !challenge.items.length) {
+    renderStory(sectionId, section, ui) {
+      return this.renderExpandableStory(sectionId, section, ui);
+    }
+
+    renderTranscript(sectionId, section, ui) {
+      return this.renderExpandableCopy(sectionId, "transcript", this.getTranscriptBlocks(section), {
+        more: ui.transcriptMore,
+        less: ui.transcriptLess,
+      });
+    }
+
+    renderVisibleStory(section) {
+      const bodyMarkup = this.renderStoryBlocks(this.getVisibleStoryBlocks(section));
+      if (!bodyMarkup) {
         return "";
       }
 
-      const label = challenge.label || ui.challengeLabel;
-      const title = challenge.title || ui.challengeTitle;
-      const intro = challenge.intro ? '<p class="qr-activity__intro">' + escapeHtml(challenge.intro) + "</p>" : "";
+      return '<div class="qr-stop__story-intro">' + bodyMarkup + "</div>";
+    }
 
-      return (
-        '<aside class="qr-activity" aria-label="' +
-        escapeHtml(label) +
-        '">' +
-        '<p class="qr-activity__label">' +
-        escapeHtml(label) +
-        "</p>" +
-        '<h3 class="qr-activity__title">' +
-        escapeHtml(title) +
-        "</h3>" +
-        intro +
-        '<ul class="qr-activity__list">' +
-        challenge.items.map((item) => this.renderCopyItem(item)).join("") +
-        "</ul></aside>"
-      );
+    renderStoryPanel(sectionId, section, ui) {
+      const visibleStory = this.renderVisibleStory(section);
+      const lead = section.lead || section.preview || "";
+      const fallbackLead = !visibleStory && lead ? '<p class="qr-stop__lead">' + escapeHtml(lead) + "</p>" : "";
+      const storyToggle = this.renderStory(sectionId, section, ui);
+      const transcriptToggle = this.renderTranscript(sectionId, section, ui);
+      const contentMarkup = visibleStory + fallbackLead + storyToggle + transcriptToggle;
+
+      if (!contentMarkup) {
+        return "";
+      }
+
+      return '<div class="story-panel">' + contentMarkup + "</div>";
     }
 
     renderImageCounter(index, total, ui) {
@@ -656,7 +800,6 @@
         '<span class="minimap-card__label" id="qr-minimap-title">' +
         escapeHtml(ui.miniMapTitle) +
         "</span>" +
-        (ui.miniMapDescription ? '<span class="minimap-card__description">' + escapeHtml(ui.miniMapDescription) + "</span>" : "") +
         "</span>" +
         '<span class="minimap-card__figure"><img class="minimap-card__image" src="' +
         escapeHtml(miniMap.path) +
@@ -666,12 +809,9 @@
         escapeHtml(tapHint) +
         "</span></span>" +
         "</button>" +
-        '<div class="minimap-modal" data-map-modal role="dialog" aria-modal="true" aria-labelledby="' +
+        '<dialog class="minimap-modal" data-map-modal aria-labelledby="' +
         escapeHtml(modalTitleId) +
-        '" hidden>' +
-        '<button class="minimap-modal__backdrop" type="button" data-map-close aria-label="' +
-        escapeHtml(ui.miniMapModalClose) +
-        '"></button>' +
+        '">' +
         '<div class="minimap-modal__dialog">' +
         '<div class="minimap-modal__head"><h2 class="minimap-modal__title" id="' +
         escapeHtml(modalTitleId) +
@@ -685,7 +825,7 @@
         '" alt="' +
         escapeHtml(ui.miniMapImageAlt) +
         '" decoding="async">' +
-        "</div></div></section>"
+        "</div></dialog></section>"
       );
     }
 
@@ -729,11 +869,7 @@
             "</header>" +
             this.renderGallery(sectionId, section, ui) +
             this.renderAudioBlock(audio, section, ui) +
-            '<p class="qr-stop__preview">' +
-            escapeHtml(section.preview) +
-            "</p>" +
-            this.renderReadMore(sectionId, section, ui) +
-            this.renderActivityCard(section, ui) +
+            this.renderStoryPanel(sectionId, section, ui) +
             this.renderSectionNavigation(sectionId, ui) +
             "</article>"
           );
@@ -741,14 +877,6 @@
         .join("");
 
       this.elements.main.innerHTML = this.renderMiniMap(ui) + sectionsMarkup;
-    }
-
-    syncHeroCurrentSection() {
-      const ui = this.content.getUi(this.state.lang);
-      const label = this.state.activeSectionId
-        ? this.content.getSectionLabel(this.state.activeSectionId, this.state.lang)
-        : ui.sectionSelectorPlaceholder;
-      this.elements.currentSectionLabel.textContent = ui.currentSectionLabel + ": " + label;
     }
 
     syncActiveState() {
@@ -771,7 +899,6 @@
         }
       });
 
-      this.syncHeroCurrentSection();
       this.renderSectionButtons();
     }
 
@@ -787,12 +914,10 @@
       this.elements.languageControlLabel.textContent = ui.languageLabel;
       this.elements.kicker.textContent = ui.kicker;
       this.elements.title.textContent = heroTitle;
-      this.elements.intro.textContent = ui.intro || "";
 
       this.renderLanguageButtons();
       this.renderSections();
       this.renderSectionButtons();
-      this.syncHeroCurrentSection();
     }
   }
 
@@ -890,12 +1015,12 @@
 
     openMapModal() {
       const modal = this.getMapModal();
-      if (!modal) {
+      if (!(modal instanceof HTMLDialogElement) || modal.open) {
         return;
       }
 
       this.closeMenus();
-      modal.hidden = false;
+      modal.showModal();
       document.body.classList.add("is-map-modal-open");
 
       const closeButton = modal.querySelector(".minimap-modal__close");
@@ -906,11 +1031,11 @@
 
     closeMapModal(restoreFocus) {
       const modal = this.getMapModal();
-      if (!modal || modal.hidden) {
+      if (!(modal instanceof HTMLDialogElement) || !modal.open) {
         return false;
       }
 
-      modal.hidden = true;
+      modal.close();
       document.body.classList.remove("is-map-modal-open");
 
       if (restoreFocus) {
@@ -1183,19 +1308,14 @@
       if (closeButton) {
         event.preventDefault();
         this.closeMapModal(true);
-      }
-    }
-
-    handleMiniMapKeydown(event) {
-      const openButton = event.target.closest("[data-map-open]");
-      const isActivationKey = event.key === "Enter" || event.key === " " || event.key === "Spacebar";
-
-      if (!openButton || !isActivationKey) {
         return;
       }
 
-      event.preventDefault();
-      this.openMapModal();
+      const modal = event.target.closest("[data-map-modal]");
+      if (modal && event.target === modal) {
+        event.preventDefault();
+        this.closeMapModal(true);
+      }
     }
 
     handleSectionNavClick(event) {
@@ -1331,7 +1451,6 @@
       });
       this.elements.sectionSwitcher.addEventListener("click", (event) => this.handleSectionClick(event));
       this.elements.main.addEventListener("click", (event) => this.handleMiniMapClick(event));
-      this.elements.main.addEventListener("keydown", (event) => this.handleMiniMapKeydown(event));
       this.elements.main.addEventListener("click", (event) => this.handleSectionNavClick(event));
       this.elements.main.addEventListener("click", (event) => this.handleGalleryClick(event));
       this.elements.main.addEventListener("click", (event) => this.handleCopyToggle(event));

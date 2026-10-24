@@ -2,6 +2,18 @@
   window.MYLOTOPI_GUIDE_META = {
     defaultLanguage: "en",
     languages: ["en", "el", "de", "fr", "it", "es", "nl", "pl", "ru", "tr"],
+    languageAliases: {
+      en: ["en", "english", "en-gb", "en-us", "en_gb", "en_us"],
+      el: ["el", "gr", "greek", "el-gr", "el_gr"],
+      de: ["de", "german", "deutsch", "de-de", "de_de"],
+      fr: ["fr", "french", "français", "francais", "fr-fr", "fr_fr"],
+      it: ["it", "italian", "italiano", "it-it", "it_it"],
+      es: ["es", "spanish", "español", "espanol", "es-es", "es_es"],
+      nl: ["nl", "dutch", "nederlands", "nl-nl", "nl_nl"],
+      pl: ["pl", "polish", "polski", "pl-pl", "pl_pl"],
+      ru: ["ru", "russian", "русский", "ru-ru", "ru_ru"],
+      tr: ["tr", "turkish", "türkçe", "turkce", "tr-tr", "tr_tr"],
+    },
     sectionOrder: [
       "welcome",
       "herb-garden",
@@ -15,6 +27,7 @@
     ],
     sections: {
       welcome: {
+        displayName: "Welcome",
         accent: "#b9ad45",
         accentSoft: "rgba(185, 173, 69, 0.18)",
         images: [
@@ -26,6 +39,7 @@
         ],
       },
       "herb-garden": {
+        displayName: "Garden with Herbs",
         accent: "#667321",
         accentSoft: "rgba(102, 115, 33, 0.16)",
         images: [
@@ -37,6 +51,7 @@
         ],
       },
       "windmill-base": {
+        displayName: "Windmill Base",
         accent: "#8f6b32",
         accentSoft: "rgba(143, 107, 50, 0.18)",
         images: [
@@ -48,6 +63,7 @@
         ],
       },
       "sleeping-area": {
+        displayName: "Sleeping Area",
         accent: "#8f6b32",
         accentSoft: "rgba(143, 107, 50, 0.14)",
         images: [
@@ -59,6 +75,7 @@
         ],
       },
       "machinery": {
+        displayName: "Machinery",
         accent: "#8f6b32",
         accentSoft: "rgba(143, 107, 50, 0.12)",
         images: [
@@ -70,6 +87,7 @@
         ],
       },
       "threshing-floor-donkeys": {
+        displayName: "Threshing Floor",
         accent: "#a77733",
         accentSoft: "rgba(167, 119, 51, 0.18)",
         images: [
@@ -81,6 +99,7 @@
         ],
       },
       "cellar-italian-tunnel": {
+        displayName: "Tunnel and Cellar",
         accent: "#667321",
         accentSoft: "rgba(102, 115, 33, 0.18)",
         images: [
@@ -97,6 +116,7 @@
         ],
       },
       "traditional-house": {
+        displayName: "Traditional House",
         accent: "#8f6b32",
         accentSoft: "rgba(143, 107, 50, 0.18)",
         images: [
@@ -108,6 +128,7 @@
         ],
       },
       bakery: {
+        displayName: "Stone Oven",
         accent: "#9b6231",
         accentSoft: "rgba(155, 98, 49, 0.18)",
         images: [

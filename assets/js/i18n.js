@@ -79,7 +79,44 @@
       this.currentContent = null;
 
       this.supportedLanguages.forEach((lang) => {
-        this.aliases.set(normalizeKey(lang), lang);
+        this.registerAlias(lang, lang);
+      });
+
+      this.registerConfiguredAliases(config.languageAliases);
+    }
+
+    registerAlias(alias, lang) {
+      if (typeof alias !== "string" || !alias.trim()) {
+        throw new Error("Mylotopi language aliases must be non-empty strings.");
+      }
+
+      if (!this.supportedLanguages.includes(lang)) {
+        throw new Error("Mylotopi language alias references unsupported language " + lang + ".");
+      }
+
+      const key = normalizeKey(alias);
+      const existingLanguage = this.aliases.get(key);
+
+      if (existingLanguage && existingLanguage !== lang) {
+        throw new Error("Mylotopi language alias " + alias + " is assigned to multiple languages.");
+      }
+
+      this.aliases.set(key, lang);
+    }
+
+    registerConfiguredAliases(languageAliases) {
+      if (!languageAliases || typeof languageAliases !== "object" || Array.isArray(languageAliases)) {
+        throw new Error("Mylotopi language aliases must be configured as an object.");
+      }
+
+      Object.entries(languageAliases).forEach(([lang, aliases]) => {
+        if (!Array.isArray(aliases)) {
+          throw new Error("Mylotopi language aliases for " + lang + " must be an array.");
+        }
+
+        aliases.forEach((alias) => {
+          this.registerAlias(alias, lang);
+        });
       });
     }
 
@@ -103,10 +140,10 @@
 
     registerAliases(content) {
       const code = content.code;
-      this.aliases.set(normalizeKey(code), code);
+      this.registerAlias(code, code);
 
       (content.aliases || []).forEach((alias) => {
-        this.aliases.set(normalizeKey(alias), code);
+        this.registerAlias(alias, code);
       });
     }
 
@@ -183,6 +220,7 @@
 
   window.MYLOTOPI_GUIDE_CONTENT = {
     GuideContentLoader: GuideContentLoader,
+    GuideContentService: GuideContentService,
   };
 
   window.MYLOTOPI_GUIDE_I18N = new GuideContentService(meta);

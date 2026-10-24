@@ -10,22 +10,18 @@
     "en_us"
   ],
   "ui": {
-    "pageTitle": "Windmill Experience in Mylotopi",
-    "heroTitle": "Windmill Experience in Mylotopi",
-    "intro": "Get ready to step into the past! You won't need a time machine for this journey just some comfy shoes.",
+    "pageTitle": "Windmill Experience",
+    "heroTitle": "Windmill Experience",
     "languageLabel": "Language",
     "sectionsLabel": "Guide stops",
     "audioHeading": "Audio guide",
-    "readMore": "Read the full story",
+    "readMore": "Read the story",
     "readLess": "Show less",
-    "challengeLabel": "For young visitors",
     "previousSection": "Previous stop",
     "nextSection": "Next stop",
     "kicker": "Kefalos, Kos - Audio guide",
     "navigationLabel": "Audio-guide navigation",
-    "currentSectionLabel": "Current stop",
     "miniMapTitle": "MINI MAP",
-    "miniMapDescription": "See the route before continuing.",
     "miniMapTapHint": "Tap to open the full route map",
     "miniMapOpen": "Open map",
     "miniMapModalClose": "Close map",
@@ -42,12 +38,13 @@
     "galleryPrevious": "Previous image",
     "galleryNext": "Next image",
     "imageCounter": "{current} / {total}",
-    "challengeTitle": "Look closer",
     "previousSectionAria": "Go to previous stop: {title}",
     "nextSectionAria": "Go to next stop: {title}",
     "sectionLabelSeparator": " - ",
     "loadErrorTitle": "Unable to load guide content.",
-    "loadErrorBody": "Please serve this folder as a static website and reload the page."
+    "loadErrorBody": "Please serve this folder as a static website and reload the page.",
+    "transcriptMore": "Audio transcript",
+    "transcriptLess": "Hide transcript"
   },
   "miniMap": {
     "path": "./assets/maps/minimap-en.jpg"
@@ -55,16 +52,29 @@
   "sections": [
     {
       "id": "welcome",
-      "title": "Welcome to Windmill Experience!",
+      "title": "Welcome",
       "navigationTitle": "Welcome",
-      "preview": "Get ready to step into the past! You won't need a time machine for this journey just some comfy shoes.",
-      "details": [
+      "transcript": [
+        "Welcome to Windmill Experience!",
+        "Ready to travel back in time? (Don't worry, you won't need a time machine, just some comfy shoes!) Thanks to the Voudouris family, who beautifully restored this village, you can see exactly how islanders lived over a century ago long before Wi-Fi was even invented! You'll also get to snoop around and explore some secret history from the 1940s.",
+        "Today, you get to walk in the shoes of a real wind miller. Spoiler alert: his daily workout routine was just lifting heavy sacks of flour all day to feed the majority of the village! You will explore his giant, working windmill from bottom to top, peek inside a traditional house, bakery, sniff the wonderful herbs in our gardens, visit our threshing floor, our lovely donkeys and walk through a real military tunnel.",
+        "A Secret Mission for Young Explorers!",
+        "We will give your special Mylotopi Sketch and few colored pencils. As you walk around today, keep your eyes wide open! Look very closely at the giant windmill, the heavy stones, and the old tools. Try to memorize all the beautiful colors! When you finish your adventure and reach our restaurant-café, you can color in your drawing and make it a masterpiece!",
+        "Then move forward to our gardens with herbs!"
+      ],
+      "audio": {
+        "path": "./assets/audio/en/section-01.mp3",
+        "ready": true,
+        "duration": "1:20"
+      },
+      "imageAlt": "Welcome to Windmill Experience",
+      "storyBlocks": [
         {
-          "type": "list",
+          "heading": "Welcome to Windmill Experience!",
           "items": [
             {
               "label": "Travel Back in Time",
-              "text": "Get ready to step into the past! You won't need a time machine for this journey just some comfy shoes."
+              "text": "Get ready to step into the past! You won't need a time machine for this journey, just some comfy shoes."
             },
             {
               "label": "A Restored Village",
@@ -77,11 +87,7 @@
           ]
         },
         {
-          "type": "heading",
-          "text": "What You Will Explore"
-        },
-        {
-          "type": "list",
+          "heading": "What You Will Explore",
           "items": [
             {
               "label": "The Giant Windmill",
@@ -102,28 +108,37 @@
           ]
         },
         {
-          "type": "heading",
-          "text": "How to Listen to the Tour"
-        },
-        {
-          "type": "list",
+          "heading": "How to Listen to the Tour",
           "items": [
             {
               "label": "It's Super Easy",
-              "text": "The guide opens from the beginning. Choose your language and follow the numbered stops."
+              "text": "Grown-ups, simply scan the QR codes you find using your phone's camera. You do not need to download any apps!"
             },
             {
               "label": "Listen Together",
-              "text": "Choose your language, turn up your phone's volume or share headphones, and follow the numbers around the village."
+              "text": "Just turn up your phone's volume or share some headphones, and follow the numbers around the village."
             }
           ]
         },
         {
-          "type": "heading",
-          "text": "Next Destination"
+          "heading": "A Secret Mission for Young Explorers!",
+          "items": [
+            {
+              "label": "Grab Your Artistic Equipment",
+              "text": "We will give you a special Mylotopi Sketch and a few colored pencils to take with you."
+            },
+            {
+              "label": "Observe Everything",
+              "text": "As you walk around today, keep your eyes wide open! Look very closely at the giant windmill, the heavy stones, and the old tools. Try to memorize all the beautiful colors you see."
+            },
+            {
+              "label": "Create a Masterpiece",
+              "text": "When you finish your adventure and sit down to relax at our restaurant-café, you can color in your drawing and turn it into a true masterpiece!"
+            }
+          ]
         },
         {
-          "type": "list",
+          "heading": "Next Destination",
           "items": [
             {
               "label": "Upcoming",
@@ -131,39 +146,31 @@
             }
           ]
         }
-      ],
-      "challenge": {
-        "label": "For young visitors",
-        "title": "A Secret Mission for Young Explorers!",
-        "items": [
-          {
-            "label": "Grab Your Artistic Equipment",
-            "text": "We will give you a special Mylotopi Sketch and a few colored pencils to take with you."
-          },
-          {
-            "label": "Observe Everything",
-            "text": "As you walk around today, keep your eyes wide open! Look very closely at the giant windmill, the heavy stones, and the old tools. Try to memorize all the beautiful colors you see."
-          },
-          {
-            "label": "Create a Masterpiece",
-            "text": "When you finish your adventure and sit down to relax at our restaurant-café, you can color in your drawing and turn it into a true masterpiece!"
-          }
-        ]
-      },
-      "audio": {
-        "path": "./assets/audio/en/section-01.mp3",
-        "ready": true
-      },
-      "imageAlt": "Welcome to Windmill Experience"
+      ]
     },
     {
       "id": "herb-garden",
-      "title": "Our Garden with Our Herbs!",
-      "navigationTitle": "Herb Garden",
-      "preview": "Take a deep breath! Does it smell like a giant outdoor kitchen or a village pharmacy? Actually, it’s both!",
-      "details": [
+      "title": "Garden with Herbs",
+      "navigationTitle": "Garden with Herbs",
+      "transcript": [
+        "Our garden with our Herbs!",
+        "Take a deep breath! Does it smell like a giant outdoor kitchen or a village pharmacy? Actually, it’s both!",
+        "Before modern medicine and supermarkets, these gardens were the ultimate island survival kit. These plots are filled with the exact same herbs that have grown here for centuries. Herbs like Thyme, Oregano, and Marjoram weren’t just used to make dinner taste amazing; they were the local doctor! If someone had a stomach ache, the windmiller’s family wouldn't run to the pharmacy for bad-tasting pink syrup they would come right here to pick leaves for a natural remedy. Check out the beautiful purple Lavender and bright green Mint! They look like someone painted them right into the garden. Pay close attention to those bright colors!",
+        "A Mission for our Young Plant Detectives and Adults:",
+        "Put the phones away for a second we are going completely old-school! Do you see the physical puzzle pieces scattered around?",
+        "Your job is to figure out which picture belongs to which plant. You will have to use your eyes and your nose! Go ahead, give the leaves a tiny, gentle rub and a sniff (but please, no grazing don't eat the garden before lunch!). Can you move the puzzle pieces to match the correct herbs? See if you can figure out the difference between the Mint and the Oregano. Which one smells like a delicious pizza, and which one smells like a cozy nap?",
+        "Keep your eyes open, Plant Detectives remember the different colors of green, grey, and purple to color your Mylotopi Sketch later!",
+        "Once you have solved the physical puzzle and your nose is happy, follow the scent of the sea breeze over to the star of the show: The Historic Windmill."
+      ],
+      "audio": {
+        "path": "./assets/audio/en/section-02.mp3",
+        "ready": true,
+        "duration": "1:43"
+      },
+      "imageAlt": "Mylotopi herb garden",
+      "storyBlocks": [
         {
-          "type": "list",
+          "heading": "Our Garden with Our Herbs!",
           "items": [
             {
               "label": "Kitchen or Pharmacy?",
@@ -184,11 +191,32 @@
           ]
         },
         {
-          "type": "heading",
-          "text": "Next Destination"
+          "heading": "A Mission for our Young Plant Detectives and Adults!",
+          "items": [
+            {
+              "label": "Old-School Fun",
+              "text": "Put the phones away for a second we are going completely old-school! Do you see the physical puzzle pieces scattered around?"
+            },
+            {
+              "label": "Use Your Senses",
+              "text": "Your job is to figure out which word belongs to which plant. You will have to use your eyes and your nose!"
+            },
+            {
+              "label": "Rub and Sniff",
+              "text": "Go ahead, give the leaves a tiny, gentle rub and a sniff (but please, no grazing don't eat the garden before lunch!)."
+            },
+            {
+              "label": "Solve the Puzzle",
+              "text": "Can you move the puzzle pieces to match the correct herbs? See if you can figure out the difference between the Mint and the Oregano. Which one smells like a delicious pizza, and which one smells like a cozy nap?"
+            },
+            {
+              "label": "Sketchbook Reminder",
+              "text": "Keep your eyes open, Plant Detectives! Remember the different colors of green, grey, and purple to color your Mylotopi Sketch later."
+            }
+          ]
         },
         {
-          "type": "list",
+          "heading": "Next Destination",
           "items": [
             {
               "label": "Upcoming",
@@ -196,47 +224,33 @@
             }
           ]
         }
-      ],
-      "challenge": {
-        "label": "For young visitors",
-        "title": "A Mission for our Young Plant Detectives and Adults!",
-        "items": [
-          {
-            "label": "Old-School Fun",
-            "text": "Put the phones away for a second we are going completely old-school! Do you see the physical puzzle pieces scattered around?"
-          },
-          {
-            "label": "Use Your Senses",
-            "text": "Your job is to figure out which word belongs to which plant. You will have to use your eyes and your nose!"
-          },
-          {
-            "label": "Rub and Sniff",
-            "text": "Go ahead, give the leaves a tiny, gentle rub and a sniff (but please, no grazing don't eat the garden before lunch!)."
-          },
-          {
-            "label": "Solve the Puzzle",
-            "text": "Can you move the puzzle pieces to match the correct herbs? See if you can figure out the difference between the Mint and the Oregano. Which one smells like a delicious pizza, and which one smells like a cozy nap?"
-          },
-          {
-            "label": "Sketchbook Reminder",
-            "text": "Keep your eyes open, Plant Detectives! Remember the different colors of green, grey, and purple to color your Mylotopi Sketch later."
-          }
-        ]
-      },
-      "audio": {
-        "path": "./assets/audio/en/section-02.mp3",
-        "ready": true
-      },
-      "imageAlt": "Mylotopi herb garden"
+      ]
     },
     {
       "id": "windmill-base",
-      "title": "The Windmill Base (1st Floor)",
-      "navigationTitle": "Windmill 1st Floor",
-      "preview": "Welcome to the \"Mill of the Priest\"!",
-      "details": [
+      "title": "Windmill Base",
+      "navigationTitle": "Windmill Base",
+      "transcript": [
+        "Welcome to the 'Mill of the Priest'! You are standing inside the oldest working windmill on the entire island and in the whole Dodecanese complex. It is over 400 years old! It operated daily all the way up until 1987, and the most amazing part? It is a living machine that still grinds flour today!",
+        "Before we look around the room, let's talk about the giant machine you are standing inside. It is 6.2 meters tall, and the stone walls around you are 1.2 meters thick to keep the building safe from the wild sea storms. Up on the higher floors, there are two massive grinding stones that weigh one ton each that's over two tons together! And the wood? 80% of the wood in this building is original, and the rest was brought all the way from Mount Anthos. In fact, some of the reused wooden parts spinning above you are between 1,000 and 1,300 years old!",
+        "Now, let's look around this first floor. As you stepped through the doorway, did you notice the traditional pomegranate hanging for good luck? Next to it is a small bottle of Holy Water from Mount Anthos that is over 9 years old!",
+        "Look to your right. See the area covered with a rag? That was the miller's storage room. Next to it, you will see a 'threshing sledge' and a wooden donkey saddle. The miller's donkey would pull that sledge to separate the wheat! You can also see some old wooden tools the miller used every day, and some beautiful photos of other windmills across Greece.",
+        "Now, look at the fireplace. The miller didn't just use this to keep the house warm. Look closely inside the fireplace do you see a can? That can holds cow fat! The miller would melt the fat and use it to lubricate the moving parts of the windmill so they wouldn't squeak. Just above the fireplace is a photograph of Kostas Politis, the beloved owner of this windmill, who is sadly no longer with us but whose legacy lives on right here.",
+        "Now, look to your left. You will see a traditional scale and weights, which were used to carefully weigh the fresh flour.",
+        "Finally, look for the tiny rope hanging down. Believe it or not, that rope was the windmill's first braking system! The miller would pull it to lift those two-ton millstones just a tiny bit, which made it safe for him to go outside and unwrap the sails.",
+        "A Mission for our Young Explorers and Adults:",
+        "You have a lot to see in this room! Let's see just how thick those walls really are! Go stand next to the doorway and stretch your arms out as wide as you can. Are your arms longer than the wall is thick, or does the windmill win? Can you spot the donkey’s saddle? What about the can of cow fat in the fireplace, or the tiny rope that acted as the brakes? Let's see just how thick those walls really are!",
+        "Then move forward to the second floor of the Windmill!"
+      ],
+      "audio": {
+        "path": "./assets/audio/en/section-03.mp3",
+        "ready": true,
+        "duration": "2:58"
+      },
+      "imageAlt": "Windmill base",
+      "storyBlocks": [
         {
-          "type": "list",
+          "heading": "The Windmill Base (1st Floor)",
           "items": [
             {
               "label": "A Living Legend",
@@ -277,11 +291,28 @@
           ]
         },
         {
-          "type": "heading",
-          "text": "Next Destination"
+          "heading": "A mission for our Young Explorers and Adults!",
+          "items": [
+            {
+              "label": "Test the Walls",
+              "text": "Let's see just how thick those walls really are! Go stand next to the doorway and stretch your arms out as wide as you can. Are your arms longer than the wall is thick, or does the windmill win?"
+            },
+            {
+              "label": "Spy",
+              "text": "Look around the room and see if you can spot the wooden donkey’s saddle!"
+            },
+            {
+              "label": "Find the Fat",
+              "text": "Peer into the fireplace can you spot the hidden can of cow fat?"
+            },
+            {
+              "label": "Spot the Brakes",
+              "text": "Find the tiny hanging rope that acted as the windmill's braking system!"
+            }
+          ]
         },
         {
-          "type": "list",
+          "heading": "Next Destination",
           "items": [
             {
               "label": "Upcoming",
@@ -289,43 +320,29 @@
             }
           ]
         }
-      ],
-      "challenge": {
-        "label": "For young visitors",
-        "title": "A mission for our Young Explorers and Adults!",
-        "items": [
-          {
-            "label": "Test the Walls",
-            "text": "Let's see just how thick those walls really are! Go stand next to the doorway and stretch your arms out as wide as you can. Are your arms longer than the wall is thick, or does the windmill win?"
-          },
-          {
-            "label": "Spy",
-            "text": "Look around the room and see if you can spot the wooden donkey’s saddle!"
-          },
-          {
-            "label": "Find the Fat",
-            "text": "Peer into the fireplace can you spot the hidden can of cow fat?"
-          },
-          {
-            "label": "Spot the Brakes",
-            "text": "Find the tiny hanging rope that acted as the windmill's braking system!"
-          }
-        ]
-      },
-      "audio": {
-        "path": "./assets/audio/en/section-03.mp3",
-        "ready": true
-      },
-      "imageAlt": "Windmill base"
+      ]
     },
     {
       "id": "sleeping-area",
-      "title": "The Windmill Sleeping Area (2nd Floor)",
-      "navigationTitle": "Windmill 2nd Floor",
-      "preview": "Welcome to the second floor! Watch your step on the wooden stairs and mind your head on the wood above. Get ready for a big surprise about how the family lived.",
-      "details": [
+      "title": "Sleeping Area",
+      "navigationTitle": "Sleeping Area",
+      "transcript": [
+        "Welcome to the second floor! Watch your step on the wooden stairs and your head to the wood above, and get ready for a surprise about how the family lived.",
+        "Look over to the right side. On the walls, you will see some beautiful pictures showing different historic windmills from all across Greece. But this space wasn't just a gallery right here on the right side is actually where the wind miller and his entire family used to sleep! Can you imagine trying to take a peaceful nap while the whole building was shaking, the wind was howling, and the heavy machinery was loudly crushing wheat just a few feet away? They must have been very heavy sleepers!",
+        "Now, look over to the left side. This was a very important and busy storage space. The miller used this side of the room to safely stack all the heavy bags of raw wheat waiting to be ground, alongside the freshly filled bags of fluffy white flour that were ready to go out and feed the village. He kept them right here near his bed so he could protect them!",
+        "Question for our Young Explorers and Adults:",
+        "Could you imagine yourself sleeping to the second floor how they used to do?",
+        "Then move forward to the third floor of the windmill!"
+      ],
+      "audio": {
+        "path": "./assets/audio/en/section-04.mp3",
+        "ready": true,
+        "duration": "1:13"
+      },
+      "imageAlt": "Windmill sleeping area",
+      "storyBlocks": [
         {
-          "type": "list",
+          "heading": "The Windmill Sleeping Area (2nd Floor)",
           "items": [
             {
               "label": "Watch Your Step",
@@ -350,11 +367,16 @@
           ]
         },
         {
-          "type": "heading",
-          "text": "Next Destination"
+          "heading": "A Question for our Young Explorers and Adults!",
+          "items": [
+            {
+              "label": "Imagine This",
+              "text": "Could you imagine yourself sleeping on the second floor exactly how they used to do?"
+            }
+          ]
         },
         {
-          "type": "list",
+          "heading": "Next Destination",
           "items": [
             {
               "label": "Upcoming",
@@ -362,31 +384,31 @@
             }
           ]
         }
-      ],
-      "challenge": {
-        "label": "For young visitors",
-        "title": "A Question for our Young Explorers and Adults!",
-        "items": [
-          {
-            "label": "Imagine This",
-            "text": "Could you imagine yourself sleeping on the second floor exactly how they used to do?"
-          }
-        ]
-      },
-      "audio": {
-        "path": "./assets/audio/en/section-04.mp3",
-        "ready": true
-      },
-      "imageAlt": "Windmill sleeping area"
+      ]
     },
     {
       "id": "machinery",
-      "title": "The Windmill Machinery (3rd Floor)",
-      "navigationTitle": "Windmill 3rd Floor",
-      "preview": "Welcome to the third floor! Please watch your step on the ladder and mind your head as you explore.",
-      "details": [
+      "title": "Machinery",
+      "navigationTitle": "Machinery",
+      "transcript": [
+        "Welcome to the third floor! Please watch your step and mind your head!",
+        "You are now looking at the real muscle of the windmill. Look at that massive wooden beam above the stones. That piece of wood is the main connector between the heavy stones inside, the gears, and the giant spinning sails outside!",
+        "Let's talk about those massive stones. Together, they weigh over two tons! They were actually imported from Nisyros Island, an island famous for producing a unique, super-strong stone that was perfect for windmills.",
+        "Now, look just above the stones, next to the connecting wood. Do you see a wooden box? That is called the The Feeder. The miller would pour the raw wheat in there. But how did he know when the box was empty while the noisy machine was running? Look closely next to it there is a tiny bell! When the wheat ran out, the bell would ring automatically to tell the miller it was time to refill it.",
+        "Let's look around at a few more secrets on this floor. See that wooden lever connected to a tiny rope? That connects all the way down to the first floor and is the first braking system we talked about earlier. Look down near the lever, and you will see a trap door connecting to a pipe. When the flour was crushed and ready, it dropped straight down that pipe! Right next to it is a second, smaller trap door. In the old days, people didn't always pay with money, so the miller used this door to collect his 'tip' he kept a small percentage of the flour for his own family as payment for his hard work! Next to the trap doors, spot the little can. Downstairs he used cow fat, but up here, he used a special mixture of olive oil and soap to keep the gears running smoothly. Finally, look next to the ladder. See that really thick rope? If the miller needed to completely stop making flour in a hurry, he pulled this rope the second braking system! Lastly, look at that ceiling what does it remind you of? Believe it or not, it’s designed in the shape of a ship to enhance the power of the mechanism and produce flour more quickly.",
+        "A Mission for our Young Explorers and Adults:",
+        "Can you find the tiny bell that warned the miller? Can you spot the special 'tip' door where he kept his flour?",
+        "Then move forward to the Threshing floor and to the Donkeys Area!"
+      ],
+      "audio": {
+        "path": "./assets/audio/en/section-05.mp3",
+        "ready": true,
+        "duration": "2:28"
+      },
+      "imageAlt": "Windmill machinery",
+      "storyBlocks": [
         {
-          "type": "list",
+          "heading": "The Windmill Machinery (3rd Floor)",
           "items": [
             {
               "label": "Mind Your Head",
@@ -431,11 +453,20 @@
           ]
         },
         {
-          "type": "heading",
-          "text": "Next Destination"
+          "heading": "A Mission for our Young Explorers and Adults!",
+          "items": [
+            {
+              "label": "Listen for the Bell and Ring it",
+              "text": "Can you find the tiny bell that warned the miller when the wheat was running out? Can you ring it?"
+            },
+            {
+              "label": "Find the Hidden Flour",
+              "text": "Scan the floor and see if you can spot the special \"tip\" door where the miller kept his hard-earned payment!"
+            }
+          ]
         },
         {
-          "type": "list",
+          "heading": "Next Destination",
           "items": [
             {
               "label": "Upcoming",
@@ -443,35 +474,29 @@
             }
           ]
         }
-      ],
-      "challenge": {
-        "label": "For young visitors",
-        "title": "A Mission for our Young Explorers and Adults!",
-        "items": [
-          {
-            "label": "Listen for the Bell and Ring it",
-            "text": "Can you find the tiny bell that warned the miller when the wheat was running out? Can you ring it?"
-          },
-          {
-            "label": "Find the Hidden Flour",
-            "text": "Scan the floor and see if you can spot the special \"tip\" door where the miller kept his hard-earned payment!"
-          }
-        ]
-      },
-      "audio": {
-        "path": "./assets/audio/en/section-05.mp3",
-        "ready": true
-      },
-      "imageAlt": "Windmill machinery"
+      ]
     },
     {
       "id": "threshing-floor-donkeys",
-      "title": "Threshing Floor & the Donkeys!",
+      "title": "Threshing Floor",
       "navigationTitle": "Threshing Floor",
-      "preview": "Welcome back outside! Take a deep breath of fresh air. You are now standing near the traditional threshing floor, which looks a lot like a big, round stone dance floor.",
-      "details": [
+      "transcript": [
+        "Welcome back outside! Take a deep breath of fresh air. You are now standing near the traditional threshing floor. It looks like a big, round stone dance floor, right?",
+        "Look right in the middle of the circle. Do you see that wooden post sticking out of the ground? In the old days, the wind miller would loosely tie a rope from that post around a donkey's neck. The donkey's job was to walk round and round in a big circle. As the donkey walked, its heavy feet would stomp and smash the harvested crops to break the seeds free! After the hardworking donkey did all of this dizzy stomping, the miller would step in to carefully separate the white wheat from the brown wheat. In nowadays we don’t use this method we buy wheat from the local producers of the island.",
+        "And guess what? You don't just have to imagine the animals! If you look nearby, you will meet the real stars of the farm: our two lovely donkeys. The proud mama is named Melina, and she is 6 years old. Her sweet little daughter is named Katie, and she is just 2 years old. As for Katie's dad... well, nobody actually knows where he went! He loved to sing really loud, so we think he walked to the next town to start a donkey rock band!",
+        "A Mission for our Young Explorers and Adults:",
+        "Step right up to the edge of the threshing floor! Can you pretend you are attached to the center wooden post and walk in a perfect circle just like a donkey did? After your dizzy dance, make sure to go wave hello to Melina and Katie. Please admire our lovely donkeys from a distance! They look sweet, but they might mistake your fingers for baby carrots. We’d rather not find out!",
+        "Then come down to the Tunnel and Cellar"
+      ],
+      "audio": {
+        "path": "./assets/audio/en/section-06.mp3",
+        "ready": true,
+        "duration": "1:43"
+      },
+      "imageAlt": "Threshing floor and donkeys",
+      "storyBlocks": [
         {
-          "type": "list",
+          "heading": "Threshing Floor & the Donkeys!",
           "items": [
             {
               "label": "Fresh Air & Stone Floors",
@@ -496,47 +521,50 @@
           ]
         },
         {
-          "type": "heading",
-          "text": "Next Destination"
+          "heading": "A Mission for our Young Explorers and Adults!",
+          "items": [
+            {
+              "label": "The Donkey Dance",
+              "text": "Step right up to the edge of the threshing floor! Can you pretend you are attached to the center wooden post and walk in a perfect circle just like a donkey did?"
+            },
+            {
+              "label": "Say Hello",
+              "text": "After your dizzy dance, make sure to go wave hello to Melina and Katie! Please admire our lovely donkeys from a distance! They look sweet, but they might mistake your fingers for baby carrots. We’d rather not find out!"
+            }
+          ]
         },
         {
-          "type": "list",
+          "heading": "Next Destination",
           "items": [
             {
               "label": "Upcoming",
-              "text": "Then move forward to the Cellar/Italian Tunnel!"
+              "text": "Then move forward to the Tunnel and Cellar!"
             }
           ]
         }
-      ],
-      "challenge": {
-        "label": "For young visitors",
-        "title": "A Mission for our Young Explorers and Adults!",
-        "items": [
-          {
-            "label": "The Donkey Dance",
-            "text": "Step right up to the edge of the threshing floor! Can you pretend you are attached to the center wooden post and walk in a perfect circle just like a donkey did?"
-          },
-          {
-            "label": "Say Hello",
-            "text": "After your dizzy dance, make sure to go wave hello to Melina and Katie! Please admire our lovely donkeys from a distance! They look sweet, but they might mistake your fingers for baby carrots. We’d rather not find out!"
-          }
-        ]
-      },
-      "audio": {
-        "path": "./assets/audio/en/section-06.mp3",
-        "ready": true
-      },
-      "imageAlt": "Threshing floor and donkeys"
+      ]
     },
     {
       "id": "cellar-italian-tunnel",
-      "title": "The Secret Tunnel & Cellar",
-      "navigationTitle": "Tunnel & Cellar",
-      "preview": "Prepare yourselves for a total change of scenery as we head underground! As you step down into the cool air, take a look to your left and right.",
-      "details": [
+      "title": "Tunnel and Cellar",
+      "navigationTitle": "Tunnel and Cellar",
+      "transcript": [
+        "Now, prepare yourselves for a total change of scenery as we head underground. As you step down into the cool air, take a look to your left and right. You will see rows of local wine from the Skevofilax winery over in Kos. We keep the bottles here for design. Week keep our wines in the cellar as it has suitable and appropriate temperature for them. But back in the 1940s, during World War II, this space wasn't for wine it was for survival.",
+        "This 20-meter tunnel was built by Italian soldiers during the war. They used it as a 'hurry tunnel' a secret shortcut to run away and hide from their opponents. This cellar used as a shelter to sleep, relax, and stay safe from the battles outside.",
+        "At the end, you will come out into our backyard, which is now our peaceful restaurant. But look back at the stone roof before you exit. In the 1940s, this entire area was a shooting range! The top was covered in heavy stone to protect the soldiers, and right at the edge, they had machine gun nests to defend the hillside. It’s hard to believe that this quiet, beautiful spot for a meal was once the most guarded place on the island!",
+        "A Mission for our Young Explorers and Adults:",
+        "You are now on a secret mission! As you walk through the soldiers' tunnel, can you calculate how many bottles of wine are there?",
+        "When you visit come back in order to our tour guide show you the way for the Traditional House and Stone Oven"
+      ],
+      "audio": {
+        "path": "./assets/audio/en/section-07.mp3",
+        "ready": true,
+        "duration": "1:28"
+      },
+      "imageAlt": "Tunnel and Cellar",
+      "storyBlocks": [
         {
-          "type": "list",
+          "heading": "Tunnel and Cellar",
           "items": [
             {
               "label": "A Change of Scenery",
@@ -561,43 +589,49 @@
           ]
         },
         {
-          "type": "heading",
-          "text": "Next Destination"
+          "heading": "A Mission for our Young Explorers and Adults!",
+          "items": [
+            {
+              "label": "Top Secret",
+              "text": "You are now on a secret mission! As you walk through the soldiers' tunnel, can you calculate exactly how many bottles of wine are lining the walls?"
+            }
+          ]
         },
         {
-          "type": "list",
+          "heading": "Next Destination",
           "items": [
             {
               "label": "Upcoming",
-              "text": "When you finish exploring the tunnel, please come back and find our tour guide so they can show you the way to your next amazing stops the Traditional House and the Bakery!"
+              "text": "When you finish exploring the tunnel, please come back and find our tour guide so they can show you the way to your next amazing stops the Traditional House and the Stone Oven!"
             }
           ]
         }
-      ],
-      "challenge": {
-        "label": "For young visitors",
-        "title": "A Mission for our Young Explorers and Adults!",
-        "items": [
-          {
-            "label": "Top Secret",
-            "text": "You are now on a secret mission! As you walk through the soldiers' tunnel, can you calculate exactly how many bottles of wine are lining the walls?"
-          }
-        ]
-      },
-      "audio": {
-        "path": "./assets/audio/en/section-07.mp3",
-        "ready": true
-      },
-      "imageAlt": "Secret tunnel and cellar"
+      ]
     },
     {
       "id": "traditional-house",
-      "title": "The Traditional House",
+      "title": "Traditional House",
       "navigationTitle": "Traditional House",
-      "preview": "Welcome to the traditional house!",
-      "details": [
+      "transcript": [
+        "Welcome to the traditional house! This amazing little home is over 130 years old. As you look around, try to guess how many people lived in this tiny space, which is less than 20 square meters. Two? Four? Actually, they used to fit 8 to 10 people in here! The grandparents, the parents, and all of their children shared this one single room.",
+        "Let's look at how they all managed to fit. The grandparents slept right over by the warm fireplace. The parents slept up high in the loft bed on the opposite side, while the older children slept in the beds next to it and on the couch. And what about the baby? Look for the little wooden cradle! To help the baby fall asleep, someone could just gently pull that tiny hanging rope to rock it.",
+        "Notice the space underneath the family beds that was their main storage room. Over on the left side, you can see a large wooden loom they used to make new clothes and repair old ones, alongside a chest where they kept their personal items. You’ll also spot a sifter used for flour, and beautiful old photographs and religious pictures on the walls. Next to the chest, look for two vases: the large one was for wine, and the small one was for water. Just above them hang two beautiful traditional uniforms that the ladies of the house wore for weddings and special events.",
+        "Now, look over at the fireplace. Since the house wasn't insulated like modern homes, this fire was used to cook all their meals and keep the whole family warm. Right next to it is a small hand-grinder mill for grinding flour, along with their daily kitchenware and traditional plates decorated with pretty painted flowers.",
+        "Now, look up at the ceiling! Do you see something hanging that looks a bit like a swing? It’s not for playing! They kept their fresh bread in the top part of it to keep it safely away from the hungry mice. In the bottom part, they stored carobs. Back then, they didn't have candy bars, so sweet carobs were given to the children as a delicious chocolate treat!",
+        "Lastly, look for the wooden cabinet. Believe it or not, this is a traditional refrigerator! It has two parts. They put big ice cubes in the top, and as the ice melted, they could open a little tap to drink the ice-cold water. The cold from the top part also chilled the bottom section perfectly to keep their food fresh!",
+        "A Mission for our Young Explorers and Adults:",
+        "You have a lot to do in this busy little house! First, can you find the hand-grinder mill? Try putting the wooden handle into the gap and see if you can spin it around! After your hard work, can you spot the hanging 'swing' that kept the bread away from the mice? What about the tiny rope they pulled to rock the baby to sleep, can you make the maybe fall asleep by rocking the rope, is it hard for you? Once you have found them all, imagine what it would be like sharing this small room with 8 to 10 of your family members!",
+        "Then move forward to Stone Oven!"
+      ],
+      "audio": {
+        "path": "./assets/audio/en/section-08.mp3",
+        "ready": true,
+        "duration": "3:06"
+      },
+      "imageAlt": "Traditional house",
+      "storyBlocks": [
         {
-          "type": "list",
+          "heading": "The Traditional House",
           "items": [
             {
               "label": "A Tiny, Crowded Home",
@@ -638,55 +672,57 @@
           ]
         },
         {
-          "type": "heading",
-          "text": "Next Destination"
+          "heading": "A Mission for our Young Explorers and Adults!",
+          "items": [
+            {
+              "label": "Spin the Mill",
+              "text": "You have a lot to do in this busy little house! First, can you find the hand-grinder mill? Try putting the wooden handle into the gap and see if you can spin it around!"
+            },
+            {
+              "label": "Look Up & Down",
+              "text": "After your hard work, can you spot the hanging swing that kept the bread away from the mice?"
+            },
+            {
+              "label": "Rock the Baby",
+              "text": "What about the tiny rope they pulled to rock the baby to sleep? Can you make the baby fall asleep by rocking the rope? Is it hard for you?"
+            },
+            {
+              "label": "Imagine This",
+              "text": "Once you have found them all, imagine what it would be like sharing this small room with 8 to 10 of your family members!"
+            }
+          ]
         },
         {
-          "type": "list",
+          "heading": "Next Destination",
           "items": [
             {
               "label": "Upcoming",
-              "text": "Then move forward to Bakery!"
+              "text": "Then move forward to Stone Oven!"
             }
           ]
         }
-      ],
-      "challenge": {
-        "label": "For young visitors",
-        "title": "A Mission for our Young Explorers and Adults!",
-        "items": [
-          {
-            "label": "Spin the Mill",
-            "text": "You have a lot to do in this busy little house! First, can you find the hand-grinder mill? Try putting the wooden handle into the gap and see if you can spin it around!"
-          },
-          {
-            "label": "Look Up & Down",
-            "text": "After your hard work, can you spot the hanging swing that kept the bread away from the mice?"
-          },
-          {
-            "label": "Rock the Baby",
-            "text": "What about the tiny rope they pulled to rock the baby to sleep? Can you make the baby fall asleep by rocking the rope? Is it hard for you?"
-          },
-          {
-            "label": "Imagine This",
-            "text": "Once you have found them all, imagine what it would be like sharing this small room with 8 to 10 of your family members!"
-          }
-        ]
-      },
-      "audio": {
-        "path": "./assets/audio/en/section-08.mp3",
-        "ready": true
-      },
-      "imageAlt": "Traditional house"
+      ]
     },
     {
       "id": "bakery",
-      "title": "The Bakery",
-      "navigationTitle": "Bakery",
-      "preview": "Welcome to the traditional oven!",
-      "details": [
+      "title": "Stone Oven",
+      "navigationTitle": "Stone Oven",
+      "transcript": [
+        "Welcome to the Stone Oven! This beautiful stone oven is over 150 years old. Back in the day, the majority of the ladies in the village would come right here to bake their daily bread for their families.",
+        "Baking bread back then wasn't as fast as just running to the supermarket! It was actually a two-day process. The night before, the ladies would carefully mix and shape the dough, leaving it to rest and rise up overnight. The next morning, when the dough was done, they would build a hot fire to warm up the oven. Once the temperature was just right, they placed the dough inside. After baking for one to two hours, the entire village would be filled with the delicious smell of fresh, warm bread ready to be eaten!",
+        "If you look around, you can see some wonderful pictures on display that show exactly how they did this whole procedure.",
+        "A Mission for our Young Explorers:",
+        "Take a close look at the pictures to see how the village ladies baked their bread! Now, it's your turn to be the baker. Can you rub your hands together and pretend to knead the heavy dough? Once you have finished baking your imaginary bread, it is time to head to the restaurant-café. Grab your colored pencils, enjoy a well-deserved snack, and finish making your Mylotopi Sketch a colorful masterpiece! Thank you for exploring with us today!"
+      ],
+      "audio": {
+        "path": "./assets/audio/en/section-09.mp3",
+        "ready": true,
+        "duration": "1:22"
+      },
+      "imageAlt": "Stone Oven",
+      "storyBlocks": [
         {
-          "type": "list",
+          "heading": "Stone Oven",
           "items": [
             {
               "label": "A Community Hub",
@@ -705,35 +741,29 @@
               "text": "If you look around, you can see some wonderful pictures on display that show exactly how they did this whole procedure."
             }
           ]
+        },
+        {
+          "heading": "A Mission for our Young Explorers!",
+          "items": [
+            {
+              "label": "Learn from the Pros",
+              "text": "Take a close look at the pictures to see how the village ladies baked their bread!"
+            },
+            {
+              "label": "Be the Baker",
+              "text": "Now, it's your turn to be the baker. Can you rub your hands together and pretend to knead the heavy dough?"
+            },
+            {
+              "label": "Time to Relax",
+              "text": "Once you have finished baking your imaginary bread, it is time to head to the restaurant-café. Grab your colored pencils, enjoy a well-deserved snack, and finish making your Mylotopi Sketch a colorful masterpiece!"
+            },
+            {
+              "label": "Thank You",
+              "text": "Thank you for exploring with us today!"
+            }
+          ]
         }
-      ],
-      "challenge": {
-        "label": "For young visitors",
-        "title": "A Question for our Young Explorers and Adults!",
-        "items": [
-          {
-            "label": "The Early Bird",
-            "text": "The whole village needed fresh bread. Can you guess what time the baker had to wake up every morning to start making the dough? (Hint: It was long before the sun came up!)"
-          },
-          {
-            "label": "Look Closely",
-            "text": "Take a close look at the pictures to see how the village ladies used to work in the bakery."
-          },
-          {
-            "label": "Time to Relax",
-            "text": "Now, it is time to head to the restaurant-café! Grab your colored pencils, enjoy a well-deserved snack, and finish making your Mylotopi Sketch a colorful masterpiece!"
-          },
-          {
-            "label": "Thank You",
-            "text": "Thank you for exploring with us today!"
-          }
-        ]
-      },
-      "audio": {
-        "path": "./assets/audio/en/section-09.mp3",
-        "ready": true
-      },
-      "imageAlt": "Traditional bakery"
+      ]
     }
   ]
 }

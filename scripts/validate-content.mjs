@@ -20,23 +20,32 @@ const EXPECTED_SECTION_ORDER = [
   "traditional-house",
   "bakery",
 ];
+const EXPECTED_SECTION_DISPLAY_NAMES = {
+  welcome: "Welcome",
+  "herb-garden": "Garden with Herbs",
+  "windmill-base": "Windmill Base",
+  "sleeping-area": "Sleeping Area",
+  machinery: "Machinery",
+  "threshing-floor-donkeys": "Threshing Floor",
+  "cellar-italian-tunnel": "Tunnel and Cellar",
+  "traditional-house": "Traditional House",
+  bakery: "Stone Oven",
+};
 const REQUIRED_UI_KEYS = [
   "pageTitle",
   "heroTitle",
-  "intro",
   "languageLabel",
   "sectionsLabel",
   "audioHeading",
   "readMore",
   "readLess",
-  "challengeLabel",
+  "transcriptMore",
+  "transcriptLess",
   "previousSection",
   "nextSection",
   "kicker",
   "navigationLabel",
-  "currentSectionLabel",
   "miniMapTitle",
-  "miniMapDescription",
   "miniMapTapHint",
   "miniMapOpen",
   "miniMapModalClose",
@@ -53,7 +62,6 @@ const REQUIRED_UI_KEYS = [
   "galleryPrevious",
   "galleryNext",
   "imageCounter",
-  "challengeTitle",
   "previousSectionAria",
   "nextSectionAria",
   "sectionLabelSeparator",
@@ -73,6 +81,7 @@ const LEGACY_STOP_PARAM = "sp" + "ot";
 const SOURCE_TEXTS_NAME = ["source", "texts"].join("-");
 const OLD_QR_COPY = ["QR code", "opens"].join(" ");
 const TEXT_FILE_EXTENSIONS = new Set([".css", ".html", ".js", ".json", ".md", ".mjs", ".txt"]);
+const CORRUPTED_TEXT_PATTERN = /\?{3,}|\uFFFD/;
 
 const errors = {
   content: [],
@@ -82,8 +91,16 @@ const errors = {
   runtime: [],
 };
 
+const warnings = {
+  translations: [],
+};
+
 function addError(group, message) {
   errors[group].push(message);
+}
+
+function addWarning(group, message) {
+  warnings[group].push(message);
 }
 
 function formatRelative(filePath) {
@@ -96,6 +113,10 @@ function arraysEqual(left, right) {
 
 function unique(values) {
   return Array.from(new Set(values));
+}
+
+function normalizeAlias(value) {
+  return value.toString().trim().toLowerCase().replace(/\s+/g, "").replace(/_/g, "-");
 }
 
 function escapeRegExp(value) {
@@ -231,12 +252,24 @@ function validateDetails(details, owner) {
       return;
     }
 
+    if (Object.prototype.hasOwnProperty.call(block, "heading") || Object.prototype.hasOwnProperty.call(block, "body")) {
+      if (Object.prototype.hasOwnProperty.call(block, "heading")) {
+        expectString(block.heading, `${blockOwner}.heading`, "sections");
+      }
+
+      if (Object.prototype.hasOwnProperty.call(block, "body")) {
+        expectString(block.body, `${blockOwner}.body`, "sections");
+      }
+
+      return;
+    }
+
     if (Object.prototype.hasOwnProperty.call(block, "text")) {
       expectString(block.text, `${blockOwner}.text`, "sections");
       return;
     }
 
-    addError("sections", `${blockOwner} must be a text block, heading, or list.`);
+    addError("sections", `${blockOwner} must be a text block, heading/body block, heading, or list.`);
   });
 }
 
@@ -260,6 +293,48 @@ function validateChallenge(challenge, owner) {
   }
 
   challenge.items.forEach((item, index) => validateCopyItem(item, `${owner}.items[${index}]`));
+}
+
+function validateStoryBlock(block, owner) {
+  if (typeof block === "string") {
+    addError("sections", `${owner} must be an object with heading and paragraphs or items.`);
+    return;
+  }
+
+  if (!expectObject(block, owner, "sections")) {
+    return;
+  }
+
+  expectString(block.heading, `${owner}.heading`, "sections");
+
+  if (Object.prototype.hasOwnProperty.call(block, "paragraphs")) {
+    if (expectArray(block.paragraphs, `${owner}.paragraphs`, "sections")) {
+      block.paragraphs.forEach((paragraph, index) => expectString(paragraph, `${owner}.paragraphs[${index}]`, "sections"));
+    }
+  }
+
+  if (Object.prototype.hasOwnProperty.call(block, "items")) {
+    if (expectArray(block.items, `${owner}.items`, "sections")) {
+      block.items.forEach((item, index) => validateCopyItem(item, `${owner}.items[${index}]`));
+    }
+  }
+
+  if (!Object.prototype.hasOwnProperty.call(block, "paragraphs") && !Object.prototype.hasOwnProperty.call(block, "items")) {
+    addError("sections", `${owner} must contain paragraphs or items.`);
+  }
+}
+
+function validateStoryBlocks(storyBlocks, owner) {
+  if (!expectArray(storyBlocks, owner, "sections")) {
+    return;
+  }
+
+  if (!storyBlocks.length) {
+    addError("sections", `${owner} must contain at least one block.`);
+    return;
+  }
+
+  storyBlocks.forEach((block, index) => validateStoryBlock(block, `${owner}[${index}]`));
 }
 
 function validateAudio(audio, owner, lang, sectionIndex) {
@@ -335,6 +410,67 @@ function validateContentFiles(meta) {
   return contentByLanguage;
 }
 
+function validateLanguageAliases(contentByLanguage, meta) {
+  if (!expectObject(meta.languageAliases, "metadata.languageAliases", "runtime")) {
+    return;
+  }
+
+  const configuredLanguages = Object.keys(meta.languageAliases);
+  configuredLanguages
+    .filter((lang) => !EXPECTED_LANGUAGES.includes(lang))
+    .forEach((lang) => addError("runtime", `metadata.languageAliases has unsupported language ${lang}.`));
+
+  const aliasOwners = new Map();
+
+  EXPECTED_LANGUAGES.forEach((lang) => {
+    const metadataOwner = `metadata.languageAliases.${lang}`;
+    const configuredAliases = meta.languageAliases[lang];
+
+    if (!expectArray(configuredAliases, metadataOwner, "runtime")) {
+      return;
+    }
+
+    const normalizedConfiguredAliases = unique(
+      configuredAliases
+        .filter((alias, index) => expectString(alias, `${metadataOwner}[${index}]`, "runtime"))
+        .map((alias) => normalizeAlias(alias)),
+    ).sort();
+
+    if (!normalizedConfiguredAliases.includes(normalizeAlias(lang))) {
+      addError("runtime", `${metadataOwner} must include the canonical language code ${lang}.`);
+    }
+
+    normalizedConfiguredAliases.forEach((alias) => {
+      const existingLanguage = aliasOwners.get(alias);
+      if (existingLanguage && existingLanguage !== lang) {
+        addError("runtime", `Language alias ${alias} is assigned to both ${existingLanguage} and ${lang}.`);
+        return;
+      }
+      aliasOwners.set(alias, lang);
+    });
+
+    const content = contentByLanguage.get(lang);
+    if (!content || !expectArray(content.aliases, `${lang}.json.aliases`, "content")) {
+      return;
+    }
+
+    const normalizedContentAliases = unique(
+      content.aliases
+        .filter((alias, index) => expectString(alias, `${lang}.json.aliases[${index}]`, "content"))
+        .map((alias) => normalizeAlias(alias)),
+    ).sort();
+
+    if (!arraysEqual(normalizedConfiguredAliases, normalizedContentAliases)) {
+      addError(
+        "content",
+        `${lang}.json.aliases must match ${metadataOwner}; metadata has ${normalizedConfiguredAliases.join(
+          ", ",
+        )}, content has ${normalizedContentAliases.join(", ")}.`,
+      );
+    }
+  });
+}
+
 function validateMetadata(meta) {
   if (!expectObject(meta, "content metadata", "runtime")) {
     return;
@@ -363,6 +499,16 @@ function validateMetadata(meta) {
     const sectionMeta = meta.sections[sectionId];
     if (!expectObject(sectionMeta, `metadata.sections.${sectionId}`, "runtime")) {
       return;
+    }
+
+    expectString(sectionMeta.displayName, `metadata.sections.${sectionId}.displayName`, "runtime");
+    if (sectionMeta.displayName !== EXPECTED_SECTION_DISPLAY_NAMES[sectionId]) {
+      addError(
+        "runtime",
+        `metadata.sections.${sectionId}.displayName must be ${EXPECTED_SECTION_DISPLAY_NAMES[sectionId]}, got ${
+          sectionMeta.displayName || "<missing>"
+        }.`,
+      );
     }
 
     expectString(sectionMeta.accent, `metadata.sections.${sectionId}.accent`, "runtime");
@@ -438,6 +584,66 @@ function validateUi(contentByLanguage) {
   }
 }
 
+function collectCorruptedTextPaths(value, owner, results) {
+  if (typeof value === "string") {
+    if (CORRUPTED_TEXT_PATTERN.test(value)) {
+      results.push(owner);
+    }
+    return;
+  }
+
+  if (Array.isArray(value)) {
+    value.forEach((item, index) => collectCorruptedTextPaths(item, `${owner}[${index}]`, results));
+    return;
+  }
+
+  if (value && typeof value === "object") {
+    Object.entries(value).forEach(([key, item]) => collectCorruptedTextPaths(item, `${owner}.${key}`, results));
+  }
+}
+
+function validateTextIntegrity(contentByLanguage) {
+  for (const [lang, content] of contentByLanguage.entries()) {
+    const corruptedPaths = [];
+    collectCorruptedTextPaths(content, `${lang}.json`, corruptedPaths);
+
+    corruptedPaths.forEach((corruptedPath) => {
+      addError("content", `${corruptedPath} contains corrupted placeholder text.`);
+    });
+  }
+
+  const englishContent = contentByLanguage.get("en");
+  if (!englishContent || !Array.isArray(englishContent.sections)) {
+    return;
+  }
+
+  for (const [lang, content] of contentByLanguage.entries()) {
+    if (lang === "en" || !Array.isArray(content.sections)) {
+      continue;
+    }
+
+    let identicalStoryBlockCount = 0;
+    content.sections.forEach((section, sectionIndex) => {
+      const englishSection = englishContent.sections[sectionIndex];
+      if (!section || !englishSection || !Array.isArray(section.storyBlocks) || !Array.isArray(englishSection.storyBlocks)) {
+        return;
+      }
+
+      section.storyBlocks.forEach((block, blockIndex) => {
+        const englishBlock = englishSection.storyBlocks[blockIndex];
+        if (englishBlock && JSON.stringify(block) === JSON.stringify(englishBlock)) {
+          identicalStoryBlockCount += 1;
+        }
+      });
+    });
+
+    if (identicalStoryBlockCount) {
+      const storyBlockLabel = identicalStoryBlockCount === 1 ? "story block" : "story blocks";
+      addWarning("translations", `${lang}.json still has ${identicalStoryBlockCount} ${storyBlockLabel} identical to English.`);
+    }
+  }
+}
+
 function validateSections(contentByLanguage, meta) {
   for (const [lang, content] of contentByLanguage.entries()) {
     const owner = `${lang}.json.sections`;
@@ -465,11 +671,42 @@ function validateSections(contentByLanguage, meta) {
         return;
       }
 
-      ["id", "title", "navigationTitle", "preview"].forEach((key) => {
+      ["id", "title", "navigationTitle"].forEach((key) => {
         expectString(section[key], `${sectionOwner}.${key}`, "sections");
       });
 
-      validateDetails(section.details, `${sectionOwner}.details`);
+      const expectedDisplayName = EXPECTED_SECTION_DISPLAY_NAMES[section.id];
+      if (lang === "en" && expectedDisplayName) {
+        if (section.title !== expectedDisplayName) {
+          addError("sections", `${sectionOwner}.title must be ${expectedDisplayName}, got ${section.title || "<missing>"}.`);
+        }
+
+        if (section.navigationTitle !== expectedDisplayName) {
+          addError(
+            "sections",
+            `${sectionOwner}.navigationTitle must be ${expectedDisplayName}, got ${section.navigationTitle || "<missing>"}.`,
+          );
+        }
+      }
+
+      if (Object.prototype.hasOwnProperty.call(section, "preview")) {
+        expectString(section.preview, `${sectionOwner}.preview`, "sections");
+      }
+
+      validateStoryBlocks(section.storyBlocks, `${sectionOwner}.storyBlocks`);
+      validateDetails(section.transcript, `${sectionOwner}.transcript`);
+
+      if (Object.prototype.hasOwnProperty.call(section, "lead")) {
+        expectString(section.lead, `${sectionOwner}.lead`, "sections");
+      }
+
+      if (Object.prototype.hasOwnProperty.call(section, "story")) {
+        validateDetails(section.story, `${sectionOwner}.story`);
+      }
+
+      if (Object.prototype.hasOwnProperty.call(section, "details")) {
+        validateDetails(section.details, `${sectionOwner}.details`);
+      }
       validateAudio(section.audio, `${sectionOwner}.audio`, lang, index);
       validateChallenge(section.challenge, `${sectionOwner}.challenge`);
 
@@ -597,6 +834,18 @@ function validateRuntimeReferences() {
 
 function printResults() {
   const failedGroups = Object.entries(errors).filter(([, groupErrors]) => groupErrors.length);
+  const warningGroups = Object.entries(warnings).filter(([, groupWarnings]) => groupWarnings.length);
+
+  if (warningGroups.length) {
+    console.log("Mylotopi validation warnings:");
+    warningGroups.forEach(([group, groupWarnings]) => {
+      console.log(`\n${group.toUpperCase()}`);
+      groupWarnings.forEach((message) => {
+        console.log(`- ${message}`);
+      });
+    });
+    console.log("");
+  }
 
   if (!failedGroups.length) {
     console.log(`Mylotopi content validation passed: ${EXPECTED_LANGUAGES.length} languages, ${EXPECTED_SECTION_ORDER.length} sections, assets verified.`);
@@ -618,7 +867,9 @@ const meta = readMetadata();
 if (meta) {
   validateMetadata(meta);
   const contentByLanguage = validateContentFiles(meta);
+  validateLanguageAliases(contentByLanguage, meta);
   validateUi(contentByLanguage);
+  validateTextIntegrity(contentByLanguage);
   validateSections(contentByLanguage, meta);
   validateMiniMaps(contentByLanguage);
   validateRequiredAudioFiles(meta);
