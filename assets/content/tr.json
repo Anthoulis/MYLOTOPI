@@ -41,7 +41,7 @@
     "backToStart": "Başa dön"
   },
   "miniMap": {
-    "path": "./assets/maps/minimap-tr.jpg"
+    "path": "./originals/maps/minimap-tr.jpg"
   },
   "sections": [
     {

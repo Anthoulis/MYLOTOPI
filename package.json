@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "media": "node scripts/media-build.mjs",
     "build": "node scripts/build.mjs",
     "validate": "node scripts/validate-content.mjs",
     "test": "node --test",

@@ -217,6 +217,7 @@ function openMap() {
   const image = mapDialog.querySelector("img[data-src]");
   // The large map image loads only when someone asks for it.
   if (!image.getAttribute("src")) {
+    image.srcset = image.dataset.srcset;
     image.src = image.dataset.src;
   }
 

@@ -4,6 +4,7 @@ import path from "node:path";
 import test from "node:test";
 
 import { createLanguageResolver, resolveEntryTarget } from "../assets/js/language.mjs";
+import { imageVariants } from "../scripts/media.mjs";
 import { ROOT, loadSite, renderEntryPage, renderLanguagePage, renderSite } from "../scripts/site.mjs";
 
 const site = loadSite();
@@ -79,11 +80,29 @@ test("every language page holds all stops, in order, with its own language", () 
   });
 });
 
+test("image copies never upscale and never repeat a width", () => {
+  const widths = (originalWidth) => imageVariants("./originals/x/photo.jpg", "photo", originalWidth).map((copy) => copy.width);
+
+  assert.deepEqual(widths(559), [480, 559]);
+  assert.deepEqual(widths(800), [480, 800]);
+  assert.deepEqual(widths(1402), [480, 800, 1200, 1402]);
+  assert.deepEqual(widths(1920), [480, 800, 1200, 1600]);
+  assert.deepEqual(widths(300), [300]);
+  assert.equal(imageVariants("./originals/x/photo.jpg", "photo", 1402)[0].path, "./assets/x/photo-480.webp");
+  assert.throws(() => imageVariants("./assets/x/photo.jpg", "photo", 800), /originals/);
+});
+
 test("every local file a page refers to exists", () => {
   for (const [relativePath, html] of renderSite(site)) {
     const pageDir = path.dirname(path.join(ROOT, relativePath));
     const references = Array.from(html.matchAll(/(?:src|href|data-src)="(\.{1,2}\/[^"#]*)/g), (match) => match[1]);
+    // Every candidate of every srcset, e.g. "../assets/x-480.webp 480w, ../assets/x-800.webp 800w".
+    Array.from(html.matchAll(/(?:srcset|data-srcset)="([^"]+)"/g), (match) => match[1]).forEach((srcset) => {
+      srcset.split(",").forEach((candidate) => references.push(candidate.trim().split(/\s+/)[0]));
+    });
 
+    // Pages are served from the site; the full-quality originals never are.
+    references.forEach((reference) => assert.doesNotMatch(reference, /originals\//, `${relativePath} → ${reference}`));
     references
       .filter((reference) => !reference.endsWith("/"))
       .forEach((reference) => assert.ok(fs.existsSync(path.join(pageDir, reference)), `${relativePath} → ${reference}`));

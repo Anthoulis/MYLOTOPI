@@ -40,7 +40,7 @@
     "backToStart": "Torna all'inizio"
   },
   "miniMap": {
-    "path": "./assets/maps/minimap-it.jpg"
+    "path": "./originals/maps/minimap-it.jpg"
   },
   "sections": [
     {

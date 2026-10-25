@@ -105,7 +105,7 @@
       "accent": "#b9ad45",
       "images": [
         {
-          "src": "./assets/images/stops/01-welcome/01-windmill-sunset.jpg",
+          "src": "./originals/images/stops/01-welcome/01-windmill-sunset.jpg",
           "fit": "cover",
           "position": "center"
         }
@@ -116,7 +116,7 @@
       "accent": "#667321",
       "images": [
         {
-          "src": "./assets/images/stops/02-herb-garden/01-garden-canopy.jpg",
+          "src": "./originals/images/stops/02-herb-garden/01-garden-canopy.jpg",
           "fit": "cover",
           "position": "center"
         }
@@ -127,7 +127,7 @@
       "accent": "#8f6b32",
       "images": [
         {
-          "src": "./assets/images/stops/03-windmill-base/01-historic-windmill.jpg",
+          "src": "./originals/images/stops/03-windmill-base/01-historic-windmill.jpg",
           "fit": "contain",
           "position": "center"
         }
@@ -138,7 +138,7 @@
       "accent": "#8f6b32",
       "images": [
         {
-          "src": "./assets/images/stops/04-sleeping-area/01-sleeping-area-interior.jpg",
+          "src": "./originals/images/stops/04-sleeping-area/01-sleeping-area-interior.jpg",
           "fit": "contain",
           "position": "center"
         }
@@ -149,7 +149,7 @@
       "accent": "#8f6b32",
       "images": [
         {
-          "src": "./assets/images/stops/05-machinery/01-machinery-detail.jpg",
+          "src": "./originals/images/stops/05-machinery/01-machinery-detail.jpg",
           "fit": "cover",
           "position": "center"
         }
@@ -160,7 +160,7 @@
       "accent": "#a77733",
       "images": [
         {
-          "src": "./assets/images/stops/06-threshing-floor-donkeys/01-threshing-floor.jpg",
+          "src": "./originals/images/stops/06-threshing-floor-donkeys/01-threshing-floor.jpg",
           "fit": "cover",
           "position": "center"
         }
@@ -171,12 +171,12 @@
       "accent": "#667321",
       "images": [
         {
-          "src": "./assets/images/stops/07-cellar-italian-tunnel/04-official-tunnel.jpg",
+          "src": "./originals/images/stops/07-cellar-italian-tunnel/04-official-tunnel.jpg",
           "fit": "contain",
           "position": "center"
         },
         {
-          "src": "./assets/images/stops/07-cellar-italian-tunnel/05-wine-cellar.jpg",
+          "src": "./originals/images/stops/07-cellar-italian-tunnel/05-wine-cellar.jpg",
           "fit": "contain",
           "position": "center"
         }
@@ -187,7 +187,7 @@
       "accent": "#8f6b32",
       "images": [
         {
-          "src": "./assets/images/stops/08-traditional-house/01-traditional-house.jpg",
+          "src": "./originals/images/stops/08-traditional-house/01-traditional-house.jpg",
           "fit": "cover",
           "position": "center"
         }
@@ -198,12 +198,12 @@
       "accent": "#9b6231",
       "images": [
         {
-          "src": "./assets/images/stops/09-bakery/01-stone-oven.jpg",
+          "src": "./originals/images/stops/09-bakery/01-stone-oven.jpg",
           "fit": "cover",
           "position": "center"
         },
         {
-          "src": "./assets/images/stops/09-bakery/02-bread-oven.jpg",
+          "src": "./originals/images/stops/09-bakery/02-bread-oven.jpg",
           "fit": "cover",
           "position": "center"
         }

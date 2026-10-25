@@ -3,12 +3,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { formatDuration, readImageSize, readMp3Duration } from "./media.mjs";
+import { formatDuration, iconCopies, imageVariants, readImageSize, readMp3Duration } from "./media.mjs";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const LOGO_PATH = "./logo-header-light-full.png";
-const FONTS_URL =
-  "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap";
+export const LOGO_ORIGINAL = "./originals/logo/logo-header-light-full.png";
 const THEME_COLOR = "#1f2210";
 const END_ID = "tour-end";
 
@@ -191,17 +189,39 @@ function renderLanguageMenu(site, lang) {
   );
 }
 
+// The light WebP copies of an original image (scripts/media.mjs), for a language page.
+// `sizes` tells the phone how wide the image is drawn, so it downloads only the copy it needs.
+function responsiveImage(site, originalPath, kind, sizes) {
+  const { width, height } = site.imageSize(originalPath);
+  const variants = imageVariants(originalPath, kind, width);
+  const fallback = variants.find((variant) => variant.width >= 800) || variants.at(-1);
+
+  return {
+    src: fromLanguagePage(fallback.path),
+    srcset: variants.map((variant) => `${fromLanguagePage(variant.path)} ${variant.width}w`).join(", "),
+    largest: fromLanguagePage(variants.at(-1).path),
+    sizes,
+    width,
+    height,
+  };
+}
+
+// A stop photo spans the stop card: the column (760px at most) minus the card padding and border.
+const PHOTO_SIZES = "(min-width: 792px) 710px, calc(100vw - 66px)";
+const MAP_SIZES = "(min-width: 792px) 736px, calc(100vw - 56px)";
+
 function renderHeader(site, lang) {
   const { ui, miniMap } = site.content.get(lang);
-  const logo = site.imageSize(LOGO_PATH);
+  const logo = responsiveImage(site, LOGO_ORIGINAL, "logo", "150px");
+  const map = responsiveImage(site, miniMap.path, "map", MAP_SIZES);
 
   // Without JavaScript the map button is a plain link to the map image.
   return (
     `<header class="site-header"><nav class="container site-header__inner" aria-label="${escapeHtml(ui.navigationLabel)}">` +
-    `<span class="brand"><img class="brand__logo" src="${fromLanguagePage(LOGO_PATH)}" alt="Mylotopi" translate="no" ` +
-    `width="${logo.width}" height="${logo.height}" decoding="async"></span>` +
+    `<span class="brand"><img class="brand__logo" src="${logo.src}" srcset="${logo.srcset}" sizes="${logo.sizes}" ` +
+    `alt="Mylotopi" translate="no" width="${logo.width}" height="${logo.height}" decoding="async"></span>` +
     `<div class="header-actions">` +
-    `<a class="header-button" href="${fromLanguagePage(miniMap.path)}" data-map-open>${icon("map")}<span class="header-button__text">${escapeHtml(ui.mapButton)}</span></a>` +
+    `<a class="header-button" href="${map.largest}" data-map-open>${icon("map")}<span class="header-button__text">${escapeHtml(ui.mapButton)}</span></a>` +
     renderLanguageMenu(site, lang) +
     `</div></nav></header>`
   );
@@ -209,15 +229,16 @@ function renderHeader(site, lang) {
 
 function renderMapDialog(site, lang) {
   const { ui, miniMap } = site.content.get(lang);
-  const size = site.imageSize(miniMap.path);
+  const map = responsiveImage(site, miniMap.path, "map", MAP_SIZES);
 
+  // The map image loads only when the dialog opens: guide.js moves data-* into the real attributes.
   return (
     `<dialog class="minimap-modal" data-map-modal aria-labelledby="minimap-modal-title">` +
     `<div class="minimap-modal__dialog"><div class="minimap-modal__head">` +
     `<h2 class="minimap-modal__title" id="minimap-modal-title">${escapeHtml(ui.mapButton)}</h2>` +
     `<button class="minimap-modal__close" type="button" data-map-close>${escapeHtml(ui.miniMapModalClose)}</button>` +
-    `</div><img class="minimap-modal__image" data-src="${fromLanguagePage(miniMap.path)}" alt="${escapeHtml(ui.miniMapImageAlt)}" ` +
-    `width="${size.width}" height="${size.height}" decoding="async">` +
+    `</div><img class="minimap-modal__image" data-src="${map.src}" data-srcset="${map.srcset}" sizes="${map.sizes}" ` +
+    `alt="${escapeHtml(ui.miniMapImageAlt)}" width="${map.width}" height="${map.height}" decoding="async">` +
     `</div></dialog>`
   );
 }
@@ -238,11 +259,11 @@ function renderGallery(site, lang, section, index) {
 
   const frames = images
     .map((image) => {
-      const size = site.imageSize(image.src);
+      const photo = responsiveImage(site, image.src, "photo", PHOTO_SIZES);
       return (
         `<div class="qr-media qr-carousel__frame" data-image-fit="${image.fit}">` +
-        `<img class="qr-carousel__image" src="${fromLanguagePage(image.src)}" alt="${escapeHtml(alt)}" ` +
-        `width="${size.width}" height="${size.height}" loading="${index === 0 ? "eager" : "lazy"}" decoding="async"></div>`
+        `<img class="qr-carousel__image" src="${photo.src}" srcset="${photo.srcset}" sizes="${photo.sizes}" alt="${escapeHtml(alt)}" ` +
+        `width="${photo.width}" height="${photo.height}" loading="${index === 0 ? "eager" : "lazy"}" decoding="async"></div>`
       );
     })
     .join("");
@@ -408,7 +429,10 @@ export function renderStopStyles(site) {
   return `/* Generated by npm run build from assets/content/meta.json. Do not edit. */\n${rules.join("")}`;
 }
 
-function renderHead({ lang, title, cssPath }) {
+// `assets` is the path to assets/ from the page: "../assets/" for a language page, "./assets/" at the root.
+function renderHead({ lang, title, assets }) {
+  const [tabIcon, homeIcon] = iconCopies().map((copy) => copy.path.replace("./assets/", assets));
+
   return (
     `<!DOCTYPE html>\n<html lang="${lang}">\n<head>\n` +
     `<meta charset="utf-8">\n` +
@@ -416,11 +440,10 @@ function renderHead({ lang, title, cssPath }) {
     `<meta name="theme-color" content="${THEME_COLOR}">\n` +
     `<meta name="color-scheme" content="light">\n` +
     `<title>${escapeHtml(title)}</title>\n` +
-    `<link rel="preconnect" href="https://fonts.googleapis.com">\n` +
-    `<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n` +
-    `<link rel="stylesheet" href="${FONTS_URL}">\n` +
-    `<link rel="stylesheet" href="${cssPath}main.css">\n` +
-    `<link rel="stylesheet" href="${cssPath}stops.css">\n`
+    `<link rel="icon" type="image/png" sizes="32x32" href="${tabIcon}">\n` +
+    `<link rel="apple-touch-icon" href="${homeIcon}">\n` +
+    `<link rel="stylesheet" href="${assets}css/main.css">\n` +
+    `<link rel="stylesheet" href="${assets}css/stops.css">\n`
   );
 }
 
@@ -430,7 +453,7 @@ export function renderLanguagePage(site, lang) {
   const { ui, sections } = site.content.get(lang);
 
   return (
-    renderHead({ lang, title: `${ui.heroTitle} | Mylotopi`, cssPath: "../assets/css/" }) +
+    renderHead({ lang, title: `${ui.heroTitle} | Mylotopi`, assets: "../assets/" }) +
     `<script type="module" src="../assets/js/guide.js"></script>\n` +
     `</head>\n<body>\n<div class="qr-page">\n` +
     renderHeader(site, lang) +
@@ -466,7 +489,7 @@ export function renderEntryPage(site) {
     .join("");
 
   return (
-    renderHead({ lang: meta.defaultLanguage, title: "Mylotopi", cssPath: "./assets/css/" }) +
+    renderHead({ lang: meta.defaultLanguage, title: "Mylotopi", assets: "./assets/" }) +
     `<script type="application/json" id="site-config">${JSON.stringify(config)}</script>\n` +
     `<script type="module" src="./assets/js/entry.js"></script>\n` +
     `</head>\n<body>\n<div class="qr-page">\n<main class="container qr-entry">\n` +

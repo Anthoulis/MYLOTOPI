@@ -5,7 +5,7 @@
 #   bash tools/deploy.sh
 #
 # Only committed files go up (git archive HEAD), and only the public ones: the entry pages, the
-# language pages and assets/ without the content sources. The Caddy site file lives in the varon
+# language pages and assets/ without the content sources. The full-quality originals/ never go up. The Caddy site file lives in the varon
 # repository (server/caddy/sites/mylotopi.caddy) and goes up with its push-caddy.sh.
 # The new files land next to the old ones and replace them in one move, so nothing deleted here
 # lingers on the server and no visitor sees half an upload.
@@ -24,8 +24,8 @@ fi
 
 languages=$(node -e 'process.stdout.write(require("./assets/content/meta.json").languages.join(" "))')
 # shellcheck disable=SC2086
-git archive --format=tar HEAD -- index.html qr-guide.html logo-header-light-full.png $languages \
-  assets/css assets/js assets/images assets/maps assets/audio |
+git archive --format=tar HEAD -- index.html qr-guide.html $languages \
+  assets/css assets/js assets/fonts assets/icons assets/logo assets/images assets/maps assets/audio |
   ssh "$host" "set -e
     sudo rm -rf '$target.new' '$target.old'
     sudo mkdir -p '$target.new'

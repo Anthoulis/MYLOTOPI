@@ -71,6 +71,50 @@ export function readMp3Duration(filePath) {
   return seconds;
 }
 
+// ---------------------------------------------------------------- derived files
+//
+// The originals (originals/) are kept at full quality; the site serves light copies made from them
+// by `npm run media` (media-build.mjs). This plan is the single place that says which copies exist,
+// so the pages and the media build always agree.
+
+// Widths in CSS pixels times the screen density they cover: a phone at 3x needs about 1200 px for a
+// full-width photo, a desktop column about 1600.
+export const IMAGE_WIDTHS = {
+  photo: [480, 800, 1200, 1600],
+  map: [600, 1000, 1400],
+  logo: [320, 480],
+};
+export const ICON_SIZES = [32, 180];
+export const AUDIO_BITRATE = "64k";
+
+// "./originals/images/stops/01-welcome/x.jpg" → "./assets/images/stops/01-welcome/x"
+function derivedBase(originalPath) {
+  if (!originalPath.startsWith("./originals/")) {
+    throw new Error(`Media must come from ./originals/: ${originalPath}`);
+  }
+  return originalPath.replace("./originals/", "./assets/").replace(/\.[a-z0-9]+$/i, "");
+}
+
+// The WebP copies of one original. Never wider than the original: no upscaling.
+export function imageVariants(originalPath, kind, originalWidth) {
+  // Every listed width the original can fill, and the original's own width when it is smaller than
+  // the largest listed one.
+  const widths = IMAGE_WIDTHS[kind].filter((width) => width < originalWidth);
+  if (originalWidth <= IMAGE_WIDTHS[kind].at(-1)) {
+    widths.push(originalWidth);
+  }
+  return widths.map((width) => ({ width, path: `${derivedBase(originalPath)}-${width}.webp` }));
+}
+
+// The narration the site plays: same place as in the content, same name as the original.
+export function audioCopy(originalPath) {
+  return `${derivedBase(originalPath)}.mp3`;
+}
+
+export function iconCopies() {
+  return ICON_SIZES.map((size) => ({ size, path: `./assets/icons/icon-${size}.png` }));
+}
+
 export function formatDuration(seconds) {
   const whole = Math.round(seconds);
   return `${Math.floor(whole / 60)}:${String(whole % 60).padStart(2, "0")}`;

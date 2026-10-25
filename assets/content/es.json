@@ -41,7 +41,7 @@
     "backToStart": "Volver al inicio"
   },
   "miniMap": {
-    "path": "./assets/maps/minimap-es.jpg"
+    "path": "./originals/maps/minimap-es.jpg"
   },
   "sections": [
     {
