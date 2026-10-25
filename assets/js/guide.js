@@ -26,7 +26,14 @@ const player = {
   loadedStop: null,
   // A position chosen on the seek bar before the narration knew its length.
   pendingSeek: null,
+  // Paused and scrolled away: the player leaves the screen but keeps its place, and the stop's
+  // Listen button resumes from there (the owner, 25/10/2026).
+  dismissed: false,
+  pausedAtScroll: null,
 };
+
+// How far the visitor scrolls after a pause before the player steps aside.
+const DISMISS_AFTER_PX = 48;
 
 function formatTime(seconds) {
   const whole = Math.max(0, Math.floor(seconds || 0));
@@ -80,7 +87,7 @@ function renderPlayer() {
   const stop = player.loadedStop;
   const playing = Boolean(stop) && !player.audio.paused;
 
-  showPlayer(Boolean(stop));
+  showPlayer(Boolean(stop) && !player.dismissed);
   if (stop) {
     player.number.textContent = stop.dataset.number;
     player.title.textContent = titleOf(stop);
@@ -102,6 +109,7 @@ function renderPlayer() {
 function load(stop) {
   player.loadedStop = stop;
   player.pendingSeek = null;
+  player.dismissed = false;
   player.audio.src = listenOf(stop).href;
 
   // Lock-screen and headphone controls show what is playing.
@@ -121,6 +129,7 @@ function load(stop) {
 function rest() {
   player.loadedStop = null;
   player.pendingSeek = null;
+  player.dismissed = false;
   player.audio.removeAttribute("src");
   player.audio.load();
   player.toggle.classList.remove("is-waiting");
@@ -219,6 +228,15 @@ function findStopInView() {
 // While a link scrolls to a stop, the stops it passes are not "current".
 const navigation = { targetId: null, timer: 0 };
 
+// A paused player steps aside once the visitor scrolls on; Listen brings it back where it was.
+function dismissPausedPlayer() {
+  const paused = player.loadedStop && player.audio.paused && player.pausedAtScroll !== null;
+  if (paused && !player.dismissed && Math.abs(window.scrollY - player.pausedAtScroll) > DISMISS_AFTER_PX) {
+    player.dismissed = true;
+    renderPlayer();
+  }
+}
+
 let scrollFrame = 0;
 function onScroll() {
   if (scrollFrame) {
@@ -227,6 +245,7 @@ function onScroll() {
 
   scrollFrame = window.requestAnimationFrame(() => {
     scrollFrame = 0;
+    dismissPausedPlayer();
     if (navigation.targetId) {
       return;
     }
@@ -414,6 +433,13 @@ player.toggle.addEventListener("click", () => playStop(player.loadedStop));
 player.seek.addEventListener("input", seek);
 player.audio.addEventListener("loadedmetadata", onMetadata);
 player.audio.addEventListener("timeupdate", renderTime);
+player.audio.addEventListener("pause", () => {
+  player.pausedAtScroll = window.scrollY;
+});
+player.audio.addEventListener("play", () => {
+  player.pausedAtScroll = null;
+  player.dismissed = false;
+});
 ["play", "pause"].forEach((type) => player.audio.addEventListener(type, renderPlayer));
 // "waiting" is the narration buffering; "playing" is sound again.
 player.audio.addEventListener("waiting", () => player.toggle.classList.add("is-waiting"));
