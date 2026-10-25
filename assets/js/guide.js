@@ -35,6 +35,39 @@ const player = {
 // How far the visitor scrolls after a pause before the player steps aside.
 const DISMISS_AFTER_PX = 48;
 
+// Where each narration was left, so going back to a stop resumes it (the owner, 25/10/2026).
+// Kept for the life of the tab, so a phone that reloads the page after locking keeps it too.
+// A narration heard to the end starts again from the beginning.
+const POSITIONS_KEY = "mylotopi-positions";
+const positions = (() => {
+  try {
+    return new Map(Object.entries(JSON.parse(window.sessionStorage.getItem(POSITIONS_KEY) || "{}")));
+  } catch (error) {
+    return new Map(); // Storage blocked or unreadable: positions last until the page closes.
+  }
+})();
+
+function storePositions() {
+  try {
+    window.sessionStorage.setItem(POSITIONS_KEY, JSON.stringify(Object.fromEntries(positions)));
+  } catch (error) {
+    // Storage blocked or full: the positions still hold in memory.
+  }
+}
+
+function rememberPosition() {
+  const stop = player.loadedStop;
+  if (stop && player.audio.currentTime > 0 && !player.audio.ended) {
+    positions.set(listenOf(stop).href, player.audio.currentTime);
+    storePositions();
+  }
+}
+
+function forgetPosition(stop) {
+  positions.delete(listenOf(stop).href);
+  storePositions();
+}
+
 function formatTime(seconds) {
   const whole = Math.max(0, Math.floor(seconds || 0));
   return `${Math.floor(whole / 60)}:${String(whole % 60).padStart(2, "0")}`;
@@ -111,6 +144,11 @@ function load(stop) {
   player.pendingSeek = null;
   player.dismissed = false;
   player.audio.src = listenOf(stop).href;
+  // Resumes where this narration was left; applied once it knows its length (onMetadata).
+  const resumeAt = positions.get(listenOf(stop).href);
+  if (resumeAt) {
+    player.pendingSeek = resumeAt;
+  }
 
   // Lock-screen and headphone controls show what is playing.
   if ("mediaSession" in navigator) {
@@ -160,6 +198,7 @@ function playStop(stop) {
     return;
   }
 
+  rememberPosition(); // The narration being left, before another takes its place.
   load(stop);
   begin(stop);
   renderPlayer();
@@ -178,7 +217,8 @@ function seek() {
 function onMetadata() {
   player.seek.max = String(Math.floor(player.audio.duration));
   if (player.pendingSeek !== null) {
-    player.audio.currentTime = player.pendingSeek;
+    // A place in the last two seconds means the narration was as good as finished: from the start.
+    player.audio.currentTime = player.pendingSeek < player.audio.duration - 2 ? player.pendingSeek : 0;
     player.pendingSeek = null;
   }
   renderTime();
@@ -435,7 +475,10 @@ player.audio.addEventListener("loadedmetadata", onMetadata);
 player.audio.addEventListener("timeupdate", renderTime);
 player.audio.addEventListener("pause", () => {
   player.pausedAtScroll = window.scrollY;
+  rememberPosition();
 });
+// The phone may drop the page while it is in the background: the place is kept first.
+window.addEventListener("pagehide", rememberPosition);
 player.audio.addEventListener("play", () => {
   player.pausedAtScroll = null;
   player.dismissed = false;
@@ -445,7 +488,10 @@ player.audio.addEventListener("play", () => {
 player.audio.addEventListener("waiting", () => player.toggle.classList.add("is-waiting"));
 ["playing", "pause"].forEach((type) => player.audio.addEventListener(type, () => player.toggle.classList.remove("is-waiting")));
 // A finished narration does not start the next one.
-player.audio.addEventListener("ended", rest);
+player.audio.addEventListener("ended", () => {
+  forgetPosition(player.loadedStop); // Heard to the end: next time from the beginning.
+  rest();
+});
 // A narration that cannot load (no signal, never kept) must not leave the player "playing".
 player.audio.addEventListener("error", () => {
   if (player.loadedStop) {
