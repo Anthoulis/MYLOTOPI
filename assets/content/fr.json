@@ -10,7 +10,6 @@
     "fr_fr"
   ],
   "ui": {
-    "pageTitle": "Expérience du moulin à vent",
     "languageLabel": "Langue",
     "sectionsLabel": "Arrêts du guide",
     "audioHeading": "Guide audio",
@@ -20,31 +19,26 @@
     "nextSection": "Arrêt suivant",
     "kicker": "Guide QR Mylotopi",
     "navigationLabel": "Navigation du guide audio",
-    "miniMapTitle": "MINI-CARTE",
-    "miniMapTapHint": "Touchez la carte pour l'ouvrir",
-    "miniMapOpen": "Ouvrir la carte",
     "miniMapModalClose": "Fermer la carte",
     "miniMapImageAlt": "Mini-carte de Mylotopi montrant les neuf arrêts de la visite",
-    "sectionSelectorLabel": "Arrêt",
-    "sectionSelectorPlaceholder": "Choisir un arrêt",
-    "audioTitleLabel": "À écouter",
-    "audioAriaLabel": "{label} : {title}",
-    "selectedBadge": "Arrêt actuel",
     "imagePlaceholderLabel": "Image",
     "imagePlaceholderHint": "Une photo du lieu peut être ajoutée ici.",
     "audioFallback": "L'audio n'est pas disponible dans cette langue.",
-    "announcerPrefix": "Arrêt actuel",
     "galleryPrevious": "Image précédente",
     "galleryNext": "Image suivante",
     "imageCounter": "{current} / {total}",
     "previousSectionAria": "Aller à l'arrêt précédent : {title}",
     "nextSectionAria": "Aller à l'arrêt suivant : {title}",
-    "sectionLabelSeparator": " · ",
-    "loadErrorTitle": "Impossible de charger le guide.",
-    "loadErrorBody": "Servez ce dossier comme site statique, puis rechargez la page.",
     "heroTitle": "Expérience du moulin à vent",
     "transcriptMore": "Transcription audio",
-    "transcriptLess": "Masquer la transcription"
+    "transcriptLess": "Masquer la transcription",
+    "listen": "Écouter",
+    "play": "Lecture",
+    "pause": "Pause",
+    "seekLabel": "Position de lecture",
+    "mapButton": "Carte",
+    "tourEndTitle": "Fin de la visite",
+    "backToStart": "Retour au début"
   },
   "miniMap": {
     "path": "./assets/maps/minimap-fr.jpg"
@@ -107,7 +101,7 @@
           "items": [
             {
               "label": "C'est super facile",
-          "text": "Le guide commence depuis le début. Choisissez votre langue et suivez les arrêts numérotés."
+              "text": "Le guide commence depuis le début. Choisissez votre langue et suivez les arrêts numérotés."
             },
             {
               "label": "Écoutez ensemble",

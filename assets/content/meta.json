@@ -1,0 +1,213 @@
+{
+  "defaultLanguage": "en",
+  "languages": [
+    "en",
+    "el",
+    "de",
+    "fr",
+    "it",
+    "es",
+    "nl",
+    "pl",
+    "ru",
+    "tr"
+  ],
+  "languageAliases": {
+    "en": [
+      "en",
+      "english",
+      "en-gb",
+      "en-us",
+      "en_gb",
+      "en_us"
+    ],
+    "el": [
+      "el",
+      "gr",
+      "greek",
+      "el-gr",
+      "el_gr"
+    ],
+    "de": [
+      "de",
+      "german",
+      "deutsch",
+      "de-de",
+      "de_de"
+    ],
+    "fr": [
+      "fr",
+      "french",
+      "français",
+      "francais",
+      "fr-fr",
+      "fr_fr"
+    ],
+    "it": [
+      "it",
+      "italian",
+      "italiano",
+      "it-it",
+      "it_it"
+    ],
+    "es": [
+      "es",
+      "spanish",
+      "español",
+      "espanol",
+      "es-es",
+      "es_es"
+    ],
+    "nl": [
+      "nl",
+      "dutch",
+      "nederlands",
+      "nl-nl",
+      "nl_nl"
+    ],
+    "pl": [
+      "pl",
+      "polish",
+      "polski",
+      "pl-pl",
+      "pl_pl"
+    ],
+    "ru": [
+      "ru",
+      "russian",
+      "русский",
+      "ru-ru",
+      "ru_ru"
+    ],
+    "tr": [
+      "tr",
+      "turkish",
+      "türkçe",
+      "turkce",
+      "tr-tr",
+      "tr_tr"
+    ]
+  },
+  "sectionOrder": [
+    "welcome",
+    "herb-garden",
+    "windmill-base",
+    "sleeping-area",
+    "machinery",
+    "threshing-floor-donkeys",
+    "cellar-italian-tunnel",
+    "traditional-house",
+    "bakery"
+  ],
+  "sections": {
+    "welcome": {
+      "displayName": "Welcome",
+      "accent": "#b9ad45",
+      "images": [
+        {
+          "src": "./assets/images/stops/01-welcome/01-windmill-sunset.jpg",
+          "fit": "cover",
+          "position": "center"
+        }
+      ]
+    },
+    "herb-garden": {
+      "displayName": "Garden with Herbs",
+      "accent": "#667321",
+      "images": [
+        {
+          "src": "./assets/images/stops/02-herb-garden/01-garden-canopy.jpg",
+          "fit": "cover",
+          "position": "center"
+        }
+      ]
+    },
+    "windmill-base": {
+      "displayName": "Windmill Base",
+      "accent": "#8f6b32",
+      "images": [
+        {
+          "src": "./assets/images/stops/03-windmill-base/01-historic-windmill.jpg",
+          "fit": "contain",
+          "position": "center"
+        }
+      ]
+    },
+    "sleeping-area": {
+      "displayName": "Sleeping Area",
+      "accent": "#8f6b32",
+      "images": [
+        {
+          "src": "./assets/images/stops/04-sleeping-area/01-sleeping-area-interior.jpg",
+          "fit": "contain",
+          "position": "center"
+        }
+      ]
+    },
+    "machinery": {
+      "displayName": "Machinery",
+      "accent": "#8f6b32",
+      "images": [
+        {
+          "src": "./assets/images/stops/05-machinery/01-machinery-detail.jpg",
+          "fit": "cover",
+          "position": "center"
+        }
+      ]
+    },
+    "threshing-floor-donkeys": {
+      "displayName": "Threshing Floor",
+      "accent": "#a77733",
+      "images": [
+        {
+          "src": "./assets/images/stops/06-threshing-floor-donkeys/01-threshing-floor.jpg",
+          "fit": "cover",
+          "position": "center"
+        }
+      ]
+    },
+    "cellar-italian-tunnel": {
+      "displayName": "Tunnel and Cellar",
+      "accent": "#667321",
+      "images": [
+        {
+          "src": "./assets/images/stops/07-cellar-italian-tunnel/04-official-tunnel.jpg",
+          "fit": "contain",
+          "position": "center"
+        },
+        {
+          "src": "./assets/images/stops/07-cellar-italian-tunnel/05-wine-cellar.jpg",
+          "fit": "contain",
+          "position": "center"
+        }
+      ]
+    },
+    "traditional-house": {
+      "displayName": "Traditional House",
+      "accent": "#8f6b32",
+      "images": [
+        {
+          "src": "./assets/images/stops/08-traditional-house/01-traditional-house.jpg",
+          "fit": "cover",
+          "position": "center"
+        }
+      ]
+    },
+    "bakery": {
+      "displayName": "Stone Oven",
+      "accent": "#9b6231",
+      "images": [
+        {
+          "src": "./assets/images/stops/09-bakery/01-stone-oven.jpg",
+          "fit": "cover",
+          "position": "center"
+        },
+        {
+          "src": "./assets/images/stops/09-bakery/02-bread-oven.jpg",
+          "fit": "cover",
+          "position": "center"
+        }
+      ]
+    }
+  }
+}

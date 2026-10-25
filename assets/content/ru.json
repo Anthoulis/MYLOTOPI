@@ -9,7 +9,6 @@
     "ru_ru"
   ],
   "ui": {
-    "pageTitle": "Экскурсия по ветряной мельнице",
     "languageLabel": "Язык",
     "sectionsLabel": "Остановки гида",
     "audioHeading": "Аудиогид",
@@ -19,31 +18,26 @@
     "nextSection": "Следующая остановка",
     "kicker": "QR-гид Mylotopi",
     "navigationLabel": "Навигация аудиогида",
-    "miniMapTitle": "МИНИ-КАРТА",
-    "miniMapTapHint": "Нажмите, чтобы открыть карту",
-    "miniMapOpen": "Открыть карту",
     "miniMapModalClose": "Закрыть карту",
     "miniMapImageAlt": "Мини-карта Mylotopi с девятью остановками маршрута",
-    "sectionSelectorLabel": "Остановка",
-    "sectionSelectorPlaceholder": "Выберите остановку",
-    "audioTitleLabel": "Сейчас звучит",
-    "audioAriaLabel": "{label}: {title}",
-    "selectedBadge": "Текущая остановка",
     "imagePlaceholderLabel": "Изображение",
     "imagePlaceholderHint": "Здесь можно добавить фото этого места.",
     "audioFallback": "Аудио недоступно на этом языке.",
-    "announcerPrefix": "Текущая остановка",
     "galleryPrevious": "Предыдущее изображение",
     "galleryNext": "Следующее изображение",
     "imageCounter": "{current} / {total}",
     "previousSectionAria": "Перейти к предыдущей остановке: {title}",
     "nextSectionAria": "Перейти к следующей остановке: {title}",
-    "sectionLabelSeparator": " · ",
-    "loadErrorTitle": "Не удалось загрузить гид.",
-    "loadErrorBody": "Запустите эту папку как статический сайт и обновите страницу.",
     "heroTitle": "Экскурсия по ветряной мельнице",
     "transcriptMore": "Расшифровка аудио",
-    "transcriptLess": "Скрыть расшифровку"
+    "transcriptLess": "Скрыть расшифровку",
+    "listen": "Слушать",
+    "play": "Воспроизвести",
+    "pause": "Пауза",
+    "seekLabel": "Позиция воспроизведения",
+    "mapButton": "Карта",
+    "tourEndTitle": "Конец экскурсии",
+    "backToStart": "Вернуться к началу"
   },
   "miniMap": {
     "path": "./assets/maps/minimap-ru.jpg"
@@ -106,7 +100,7 @@
           "items": [
             {
               "label": "Это очень просто",
-          "text": "Гид открывается с самого начала. Выберите язык и следуйте по пронумерованным остановкам."
+              "text": "Гид открывается с самого начала. Выберите язык и следуйте по пронумерованным остановкам."
             },
             {
               "label": "Слушайте вместе",

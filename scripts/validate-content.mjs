@@ -2,11 +2,11 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import vm from "node:vm";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CONTENT_DIR = path.join(ROOT, "assets", "content");
-const META_PATH = path.join(ROOT, "assets", "js", "content-meta.js");
+const META_FILE_NAME = "meta.json";
+const META_PATH = path.join(CONTENT_DIR, META_FILE_NAME);
 const VALIDATOR_PATH = path.join(ROOT, "scripts", "validate-content.mjs");
 const EXPECTED_LANGUAGES = ["en", "el", "de", "fr", "it", "es", "nl", "pl", "ru", "tr"];
 const EXPECTED_SECTION_ORDER = [
@@ -32,41 +32,35 @@ const EXPECTED_SECTION_DISPLAY_NAMES = {
   bakery: "Stone Oven",
 };
 const REQUIRED_UI_KEYS = [
-  "pageTitle",
   "heroTitle",
+  "kicker",
+  "navigationLabel",
   "languageLabel",
+  "mapButton",
+  "miniMapModalClose",
+  "miniMapImageAlt",
   "sectionsLabel",
+  "imagePlaceholderLabel",
+  "imagePlaceholderHint",
+  "galleryPrevious",
+  "galleryNext",
+  "imageCounter",
   "audioHeading",
+  "audioFallback",
+  "listen",
+  "play",
+  "pause",
+  "seekLabel",
   "readMore",
   "readLess",
   "transcriptMore",
   "transcriptLess",
   "previousSection",
   "nextSection",
-  "kicker",
-  "navigationLabel",
-  "miniMapTitle",
-  "miniMapTapHint",
-  "miniMapOpen",
-  "miniMapModalClose",
-  "miniMapImageAlt",
-  "sectionSelectorLabel",
-  "sectionSelectorPlaceholder",
-  "audioTitleLabel",
-  "audioAriaLabel",
-  "selectedBadge",
-  "imagePlaceholderLabel",
-  "imagePlaceholderHint",
-  "audioFallback",
-  "announcerPrefix",
-  "galleryPrevious",
-  "galleryNext",
-  "imageCounter",
   "previousSectionAria",
   "nextSectionAria",
-  "sectionLabelSeparator",
-  "loadErrorTitle",
-  "loadErrorBody",
+  "tourEndTitle",
+  "backToStart",
 ];
 const REMOVED_UI_KEYS = [
   ["mini", "Map", "Download"].join(""),
@@ -134,13 +128,9 @@ function readJson(filePath) {
 
 function readMetadata() {
   try {
-    const sandbox = { window: {} };
-    vm.runInNewContext(fs.readFileSync(META_PATH, "utf8"), sandbox, {
-      filename: META_PATH,
-    });
-    return sandbox.window.MYLOTOPI_GUIDE_META || null;
+    return JSON.parse(fs.readFileSync(META_PATH, "utf8"));
   } catch (error) {
-    addError("runtime", `${formatRelative(META_PATH)} could not be evaluated: ${error.message}`);
+    addError("runtime", `${formatRelative(META_PATH)} could not be read: ${error.message}`);
     return null;
   }
 }
@@ -363,7 +353,7 @@ function validateAudio(audio, owner, lang, sectionIndex) {
 
 function validateContentFiles(meta) {
   const contentFiles = fs.existsSync(CONTENT_DIR)
-    ? fs.readdirSync(CONTENT_DIR).filter((fileName) => fileName.endsWith(".json")).sort()
+    ? fs.readdirSync(CONTENT_DIR).filter((fileName) => fileName.endsWith(".json") && fileName !== META_FILE_NAME).sort()
     : [];
 
   if (!contentFiles.length) {
@@ -512,7 +502,6 @@ function validateMetadata(meta) {
     }
 
     expectString(sectionMeta.accent, `metadata.sections.${sectionId}.accent`, "runtime");
-    expectString(sectionMeta.accentSoft, `metadata.sections.${sectionId}.accentSoft`, "runtime");
 
     if (!expectArray(sectionMeta.images, `metadata.sections.${sectionId}.images`, "runtime")) {
       return;
@@ -810,12 +799,13 @@ function validateRuntimeReferences() {
     });
   });
 
+  // assets/js/language.mjs is left out on purpose: it forwards the legacy parameter of old printed QR codes.
   const runtimeFiles = [
     path.join(ROOT, "index.html"),
+    path.join(ROOT, "qr-guide.html"),
     path.join(ROOT, "assets", "css", "main.css"),
-    path.join(ROOT, "assets", "js", "app.js"),
-    path.join(ROOT, "assets", "js", "content-meta.js"),
-    path.join(ROOT, "assets", "js", "i18n.js"),
+    path.join(ROOT, "assets", "js", "guide.js"),
+    path.join(ROOT, "assets", "js", "entry.js"),
   ];
   const legacyParamPattern = new RegExp(`\\b${escapeRegExp(LEGACY_STOP_PARAM)}\\b|${escapeRegExp(LEGACY_STOP_PARAM)}[-_]`, "i");
 

@@ -10,7 +10,6 @@
     "es_es"
   ],
   "ui": {
-    "pageTitle": "Experiencia del Molino de Viento",
     "languageLabel": "Idioma",
     "sectionsLabel": "Paradas de la guía",
     "audioHeading": "Audioguía",
@@ -20,31 +19,26 @@
     "nextSection": "Parada siguiente",
     "kicker": "Guía QR de Mylotopi",
     "navigationLabel": "Navegación de la audioguía",
-    "miniMapTitle": "MINI MAPA",
-    "miniMapTapHint": "Toca el mapa para abrirlo",
-    "miniMapOpen": "Abrir mapa",
     "miniMapModalClose": "Cerrar mapa",
     "miniMapImageAlt": "Mini mapa de Mylotopi con las nueve paradas del recorrido",
-    "sectionSelectorLabel": "Parada",
-    "sectionSelectorPlaceholder": "Elige una parada",
-    "audioTitleLabel": "Escuchando",
-    "audioAriaLabel": "{label}: {title}",
-    "selectedBadge": "Parada actual",
     "imagePlaceholderLabel": "Imagen",
     "imagePlaceholderHint": "Aquí se puede añadir una foto del lugar.",
     "audioFallback": "El audio no está disponible en este idioma.",
-    "announcerPrefix": "Parada actual",
     "galleryPrevious": "Imagen anterior",
     "galleryNext": "Imagen siguiente",
     "imageCounter": "{current} / {total}",
     "previousSectionAria": "Ir a la parada anterior: {title}",
     "nextSectionAria": "Ir a la parada siguiente: {title}",
-    "sectionLabelSeparator": " · ",
-    "loadErrorTitle": "No se pudo cargar la guía.",
-    "loadErrorBody": "Sirve esta carpeta como sitio estático y recarga la página.",
     "heroTitle": "Experiencia del Molino de Viento",
     "transcriptMore": "Transcripción de audio",
-    "transcriptLess": "Ocultar transcripción"
+    "transcriptLess": "Ocultar transcripción",
+    "listen": "Escuchar",
+    "play": "Reproducir",
+    "pause": "Pausa",
+    "seekLabel": "Posición de reproducción",
+    "mapButton": "Mapa",
+    "tourEndTitle": "Fin del recorrido",
+    "backToStart": "Volver al inicio"
   },
   "miniMap": {
     "path": "./assets/maps/minimap-es.jpg"
@@ -107,7 +101,7 @@
           "items": [
             {
               "label": "Es súper fácil",
-          "text": "La guía se abre desde el principio. Elijan su idioma y sigan las paradas numeradas."
+              "text": "La guía se abre desde el principio. Elijan su idioma y sigan las paradas numeradas."
             },
             {
               "label": "Escuchen juntos",

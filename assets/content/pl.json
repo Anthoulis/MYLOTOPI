@@ -9,7 +9,6 @@
     "pl_pl"
   ],
   "ui": {
-    "pageTitle": "Wiatrakowa Przygoda",
     "languageLabel": "Język",
     "sectionsLabel": "Punkty przewodnika",
     "audioHeading": "Audioprzewodnik",
@@ -19,31 +18,26 @@
     "nextSection": "Następny punkt",
     "kicker": "Przewodnik QR Mylotopi",
     "navigationLabel": "Nawigacja audioprzewodnika",
-    "miniMapTitle": "MINI MAPA",
-    "miniMapTapHint": "Dotknij mapy, aby ją otworzyć",
-    "miniMapOpen": "Otwórz mapę",
     "miniMapModalClose": "Zamknij mapę",
     "miniMapImageAlt": "Mini mapa Mylotopi pokazująca dziewięć punktów trasy",
-    "sectionSelectorLabel": "Punkt",
-    "sectionSelectorPlaceholder": "Wybierz punkt",
-    "audioTitleLabel": "Teraz słuchasz",
-    "audioAriaLabel": "{label}: {title}",
-    "selectedBadge": "Aktualny punkt",
     "imagePlaceholderLabel": "Zdjęcie",
     "imagePlaceholderHint": "Tutaj można dodać zdjęcie tego miejsca.",
     "audioFallback": "Audio nie jest dostępne w tym języku.",
-    "announcerPrefix": "Aktualny punkt",
     "galleryPrevious": "Poprzednie zdjęcie",
     "galleryNext": "Następne zdjęcie",
     "imageCounter": "{current} / {total}",
     "previousSectionAria": "Przejdź do poprzedniego punktu: {title}",
     "nextSectionAria": "Przejdź do następnego punktu: {title}",
-    "sectionLabelSeparator": " · ",
-    "loadErrorTitle": "Nie można załadować przewodnika.",
-    "loadErrorBody": "Udostępnij ten folder jako statyczną stronę i odśwież.",
     "heroTitle": "Wiatrakowa Przygoda",
     "transcriptMore": "Transkrypcja audio",
-    "transcriptLess": "Ukryj transkrypcję"
+    "transcriptLess": "Ukryj transkrypcję",
+    "listen": "Posłuchaj",
+    "play": "Odtwórz",
+    "pause": "Wstrzymaj",
+    "seekLabel": "Pozycja odtwarzania",
+    "mapButton": "Mapa",
+    "tourEndTitle": "Koniec zwiedzania",
+    "backToStart": "Wróć na początek"
   },
   "miniMap": {
     "path": "./assets/maps/minimap-pl.jpg"
@@ -106,7 +100,7 @@
           "items": [
             {
               "label": "To super proste",
-          "text": "Przewodnik otwiera się od początku. Wybierzcie język i podążajcie za ponumerowanymi punktami."
+              "text": "Przewodnik otwiera się od początku. Wybierzcie język i podążajcie za ponumerowanymi punktami."
             },
             {
               "label": "Słuchajcie razem",

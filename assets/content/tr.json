@@ -10,7 +10,6 @@
     "tr_tr"
   ],
   "ui": {
-    "pageTitle": "Yel Değirmeni Deneyimi",
     "languageLabel": "Dil",
     "sectionsLabel": "Rehber durakları",
     "audioHeading": "Sesli rehber",
@@ -20,31 +19,26 @@
     "nextSection": "Sonraki durak",
     "kicker": "Mylotopi QR Rehberi",
     "navigationLabel": "Sesli rehber gezintisi",
-    "miniMapTitle": "MİNİ HARİTA",
-    "miniMapTapHint": "Haritayı açmak için dokunun",
-    "miniMapOpen": "Haritayı aç",
     "miniMapModalClose": "Haritayı kapat",
     "miniMapImageAlt": "Dokuz tur durağını gösteren Mylotopi mini haritası",
-    "sectionSelectorLabel": "Durak",
-    "sectionSelectorPlaceholder": "Bir durak seçin",
-    "audioTitleLabel": "Şimdi dinleniyor",
-    "audioAriaLabel": "{label}: {title}",
-    "selectedBadge": "Geçerli durak",
     "imagePlaceholderLabel": "Görsel",
     "imagePlaceholderHint": "Bu konum için bir fotoğraf buraya eklenebilir.",
     "audioFallback": "Ses dosyası bu dilde mevcut değil.",
-    "announcerPrefix": "Geçerli durak",
     "galleryPrevious": "Önceki görsel",
     "galleryNext": "Sonraki görsel",
     "imageCounter": "{current} / {total}",
     "previousSectionAria": "Önceki durağa git: {title}",
     "nextSectionAria": "Sonraki durağa git: {title}",
-    "sectionLabelSeparator": " · ",
-    "loadErrorTitle": "Rehber içeriği yüklenemedi.",
-    "loadErrorBody": "Bu klasörü statik bir site olarak sunun ve sayfayı yenileyin.",
     "heroTitle": "Yel Değirmeni Deneyimi",
     "transcriptMore": "Ses metni",
-    "transcriptLess": "Ses metnini gizle"
+    "transcriptLess": "Ses metnini gizle",
+    "listen": "Dinle",
+    "play": "Oynat",
+    "pause": "Duraklat",
+    "seekLabel": "Oynatma konumu",
+    "mapButton": "Harita",
+    "tourEndTitle": "Turun sonu",
+    "backToStart": "Başa dön"
   },
   "miniMap": {
     "path": "./assets/maps/minimap-tr.jpg"
@@ -107,7 +101,7 @@
           "items": [
             {
               "label": "Çok Kolay",
-          "text": "Rehber en baştan açılır. Dilinizi seçin ve numaralı durakları takip edin."
+              "text": "Rehber en baştan açılır. Dilinizi seçin ve numaralı durakları takip edin."
             },
             {
               "label": "Birlikte Dinleyin",
