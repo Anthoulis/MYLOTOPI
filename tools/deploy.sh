@@ -24,7 +24,7 @@ fi
 
 languages=$(node -e 'process.stdout.write(require("./assets/content/meta.json").languages.join(" "))')
 # shellcheck disable=SC2086
-git archive --format=tar HEAD -- index.html qr-guide.html $languages \
+git archive --format=tar HEAD -- index.html qr-guide.html sw.js $languages \
   assets/css assets/js assets/fonts assets/icons assets/logo assets/images assets/maps assets/audio |
   ssh "$host" "set -e
     sudo rm -rf '$target.new' '$target.old'

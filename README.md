@@ -31,9 +31,10 @@
 | `scripts/site.mjs` | Φτιάχνει το HTML κάθε σελίδας από το περιεχόμενο (καθαρές συναρτήσεις). |
 | `scripts/media.mjs` | Διαβάζει διαστάσεις εικόνων και διάρκεια MP3, και ορίζει ποια ελαφριά αντίγραφα υπάρχουν. |
 | `scripts/media-build.mjs` | Φτιάχνει τα ελαφριά αντίγραφα από τα αυθεντικά (`npm run media`, θέλει `ffmpeg`). |
+| `scripts/service-worker.mjs` | Ο service worker του «χωρίς σήμα»· το build τον γράφει ως `sw.js`, με έκδοση από όσα σερβίρει το site. |
 | `scripts/build.mjs` | Γράφει τις σελίδες· με `--check` ελέγχει ότι είναι ενημερωμένες. |
 | `scripts/validate-content.mjs` | Έλεγχος δομής περιεχομένου και αναφορών assets. |
-| `en/` … `tr/`, `index.html`, `qr-guide.html`, `assets/css/stops.css` | Ό,τι παράγεται: οι σελίδες, και τα χρώματα και οι θέσεις φωτογραφιών κάθε στάσης. Δεν τα αλλάζουμε με το χέρι. |
+| `en/` … `tr/`, `index.html`, `qr-guide.html`, `sw.js`, `assets/css/stops.css` | Ό,τι παράγεται: οι σελίδες, και τα χρώματα και οι θέσεις φωτογραφιών κάθε στάσης. Δεν τα αλλάζουμε με το χέρι. |
 | `assets/js/guide.js` | Ο player, η στάση που φαίνεται, τα μενού, ο χάρτης, οι φωτογραφίες. |
 | `assets/js/entry.js`, `assets/js/language.mjs` | Η είσοδος: στέλνει κάθε παλιά και νέα διεύθυνση στη σωστή γλώσσα. |
 | `assets/css/main.css` | Εμφάνιση, responsive layout και προσβασιμότητα. |

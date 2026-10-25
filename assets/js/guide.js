@@ -83,11 +83,25 @@ function load(stop) {
   }
 }
 
+// Without signal, a narration that was never played (so never kept) cannot start: the player goes
+// back to rest instead of staying on a narration that will not come.
+function start(stop) {
+  player.audio.play().catch((error) => {
+    if (error.name === "AbortError" || player.loadedStop !== stop) {
+      return; // Another narration was chosen meanwhile.
+    }
+    player.loadedStop = null;
+    player.audio.removeAttribute("src");
+    player.audio.load();
+    renderPlayer();
+  });
+}
+
 // Plays the given stop, or pauses it if it is the one playing.
 function playStop(stop) {
   if (stop === player.loadedStop) {
     if (player.audio.paused) {
-      player.audio.play();
+      start(stop);
     } else {
       player.audio.pause();
     }
@@ -95,7 +109,7 @@ function playStop(stop) {
   }
 
   load(stop);
-  player.audio.play();
+  start(stop);
   renderPlayer();
 }
 
@@ -356,6 +370,76 @@ const bars = new ResizeObserver(syncBars);
 bars.observe(header);
 bars.observe(player.root);
 window.addEventListener("scroll", onScroll, { passive: true });
+
+// ---------------------------------------------------------------- without signal
+
+// The copy of an image this screen needs: the first in its srcset at least as wide as it is drawn.
+function copyFor(image, drawnWidth) {
+  const candidates = (image.getAttribute("srcset") || image.dataset.srcset || "")
+    .split(",")
+    .map((candidate) => candidate.trim().split(/\s+/))
+    .map(([url, width]) => ({ url, width: parseInt(width, 10) }))
+    .filter((candidate) => candidate.url && candidate.width);
+  if (!candidates.length) {
+    return image.getAttribute("src") || image.dataset.src;
+  }
+  const needed = drawnWidth * (window.devicePixelRatio || 1);
+  return (candidates.find((candidate) => candidate.width >= needed) || candidates.at(-1)).url;
+}
+
+// Asks, one at a time, for everything this language needs without signal, so sw.js keeps it:
+// this page, the entry pages of the QR codes, the files already loaded, every photo and the map.
+// Narration is kept only when played. Nothing extra is fetched when the phone saves data.
+async function keepForOffline() {
+  if (navigator.connection && navigator.connection.saveData) {
+    return;
+  }
+
+  await navigator.serviceWorker.ready;
+  if (!navigator.serviceWorker.controller) {
+    await new Promise((resolve) => {
+      navigator.serviceWorker.addEventListener("controllerchange", resolve, { once: true });
+    });
+  }
+
+  // The entry pages and their scripts too: a QR code scanned again without signal must still open.
+  const entry = ["../", "../index.html", "../qr-guide.html", "../assets/js/entry.js", "../assets/js/language.mjs"];
+  const urls = new Set([window.location.pathname, ...entry].map((url) => new URL(url, window.location.href).href));
+  performance.getEntriesByType("resource").forEach((entry) => {
+    const url = new URL(entry.name);
+    if (url.origin === window.location.origin && !url.pathname.startsWith("/assets/audio/")) {
+      urls.add(url.href);
+    }
+  });
+  document.querySelectorAll(".qr-carousel__image").forEach((image) => {
+    urls.add(new URL(copyFor(image, image.clientWidth), window.location.href).href);
+  });
+  const mapImage = mapDialog.querySelector("img");
+  urls.add(new URL(copyFor(mapImage, Math.min(736, window.innerWidth - 56)), window.location.href).href);
+
+  for (const url of urls) {
+    try {
+      await fetch(url, { priority: "low" });
+    } catch (error) {
+      return; // The signal dropped; the next visit carries on.
+    }
+  }
+}
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("../sw.js").then(
+    () => {
+      const whenIdle = window.requestIdleCallback || ((callback) => window.setTimeout(callback, 2000));
+      const start = () => whenIdle(() => keepForOffline());
+      if (document.readyState === "complete") {
+        start();
+      } else {
+        window.addEventListener("load", start, { once: true });
+      }
+    },
+    (error) => console.warn("The guide will not work without signal:", error),
+  );
+}
 
 const initialStop = stops.find((stop) => `#${stop.id}` === window.location.hash);
 if (initialStop) {

@@ -5,7 +5,8 @@ import test from "node:test";
 
 import { createLanguageResolver, resolveEntryTarget } from "../assets/js/language.mjs";
 import { imageVariants } from "../scripts/media.mjs";
-import { ROOT, loadSite, renderEntryPage, renderLanguagePage, renderSite } from "../scripts/site.mjs";
+import { serviceWorkerSource } from "../scripts/service-worker.mjs";
+import { ROOT, loadSite, renderEntryPage, renderLanguagePage, renderSite, siteVersion } from "../scripts/site.mjs";
 
 const site = loadSite();
 const { meta } = site;
@@ -153,4 +154,57 @@ test("the entry page lists every language for visitors without JavaScript", () =
   const html = renderEntryPage(site);
   meta.languages.forEach((lang) => assert.match(html, new RegExp(`href="\\./${lang}/"`)));
   assert.match(html, /<script type="module" src="\.\/assets\/js\/entry\.js"><\/script>/);
+});
+
+// ---------------------------------------------------------------- without signal
+
+// Runs the service worker's code with a stand-in for the browser's `self`, and returns its helpers.
+function serviceWorkerHelpers() {
+  const listeners = {};
+  globalThis.self = { addEventListener: (type, listener) => (listeners[type] = listener), location: { origin: "https://example.test" } };
+  try {
+    return { ...serviceWorkerSource("test", 4000), listeners };
+  } finally {
+    delete globalThis.self;
+  }
+}
+
+test("kept narration answers range requests like the server", async () => {
+  const { rangeResponse, listeners } = serviceWorkerHelpers();
+  const body = new Blob([new Uint8Array(100).map((_, index) => index)]);
+  const bytes = async (response) => Array.from(new Uint8Array(await response.arrayBuffer()));
+
+  const whole = rangeResponse(body, null, "audio/mpeg");
+  assert.equal(whole.status, 200);
+  assert.equal((await bytes(whole)).length, 100);
+
+  const start = rangeResponse(body, "bytes=0-", "audio/mpeg");
+  assert.equal(start.status, 206);
+  assert.equal(start.headers.get("Content-Range"), "bytes 0-99/100");
+
+  const middle = rangeResponse(body, "bytes=10-19", "audio/mpeg");
+  assert.equal(middle.headers.get("Content-Range"), "bytes 10-19/100");
+  assert.deepEqual(await bytes(middle), [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]);
+
+  const probe = rangeResponse(body, "bytes=0-1", "audio/mpeg");
+  assert.deepEqual(await bytes(probe), [0, 1]);
+
+  const tail = rangeResponse(body, "bytes=-5", "audio/mpeg");
+  assert.equal(tail.headers.get("Content-Range"), "bytes 95-99/100");
+
+  assert.equal(rangeResponse(body, "bytes=100-", "audio/mpeg").status, 416);
+  assert.deepEqual(Object.keys(listeners).sort(), ["activate", "fetch", "install"]);
+});
+
+test("any change to what the site serves makes a new service worker version", () => {
+  const files = renderSite(site);
+  const version = files.get("sw.js").match(/\("([0-9a-f]{12})", \d+\)/)[1];
+  const changed = new Map(files);
+  changed.delete("sw.js");
+  changed.set("el/index.html", `${changed.get("el/index.html")}<!-- changed -->`);
+
+  assert.notEqual(siteVersion(site, changed), version);
+  const same = new Map(files);
+  same.delete("sw.js");
+  assert.equal(siteVersion(site, same), version);
 });

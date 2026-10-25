@@ -24,7 +24,7 @@
   δεν τεκμηριώνονται εδώ. Το `mylotopi.varon.gr` σερβίρει τον `develop` και ανεβαίνει
   με `bash tools/deploy.sh`, μόνο από commit και μόνο με ρητή εντολή του ιδιοκτήτη
   ([PROJECT_RULES](docs/PROJECT_RULES.md#hosting)).
-- Οι σελίδες `en/` … `tr/`, `index.html`, `qr-guide.html` και το `assets/css/stops.css`
+- Οι σελίδες `en/` … `tr/`, `index.html`, `qr-guide.html`, το `sw.js` και το `assets/css/stops.css`
   παράγονται με `npm run build` από το περιεχόμενο. Δεν τα αλλάζουμε με το χέρι.
 
 ## Διαδικασία εργασίας

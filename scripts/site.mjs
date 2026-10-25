@@ -1,9 +1,11 @@
 // Turns the content (assets/content/*.json) into the static pages of the guide.
 // Pure functions only: reading happens in loadSite, writing in build.mjs.
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { audioCopy, formatDuration, iconCopies, imageVariants, readImageSize, readMp3Duration } from "./media.mjs";
+import { renderServiceWorker } from "./service-worker.mjs";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 export const LOGO_ORIGINAL = "./originals/logo/logo-header-light-full.png";
@@ -509,6 +511,33 @@ export function renderSite(site) {
   files.set("index.html", entry);
   files.set("qr-guide.html", entry);
   site.meta.languages.forEach((lang) => files.set(`${lang}/index.html`, renderLanguagePage(site, lang)));
+  files.set("sw.js", renderServiceWorker(siteVersion(site, files)));
 
   return files;
+}
+
+// Hand-written files the pages load, and the folders of media copies (whose names change with them).
+const RUNTIME_FILES = ["assets/css/main.css", "assets/js/guide.js", "assets/js/entry.js", "assets/js/language.mjs"];
+const MEDIA_DIRS = ["assets/audio", "assets/images", "assets/maps", "assets/fonts", "assets/icons", "assets/logo"];
+
+function listFiles(root, dir) {
+  const full = path.join(root, dir);
+  if (!fs.existsSync(full)) {
+    return [];
+  }
+  return fs
+    .readdirSync(full, { withFileTypes: true })
+    .flatMap((entry) => (entry.isDirectory() ? listFiles(root, `${dir}/${entry.name}`) : [`${dir}/${entry.name}`]))
+    .sort();
+}
+
+// One short hash of everything the site serves: any change to a page, the CSS, the JavaScript or the
+// set of media copies makes a new service worker, and phones drop what they kept before.
+// Line endings are ignored, so a Windows checkout gives the same version.
+export function siteVersion(site, files) {
+  const hash = crypto.createHash("sha256");
+  [...files.entries()].sort(([a], [b]) => a.localeCompare(b)).forEach(([name, text]) => hash.update(`${name}\n${text}\n`));
+  RUNTIME_FILES.forEach((name) => hash.update(`${name}\n${fs.readFileSync(path.join(site.root, name), "utf8").replace(/\r\n/g, "\n")}\n`));
+  MEDIA_DIRS.forEach((dir) => hash.update(`${listFiles(site.root, dir).join("\n")}\n`));
+  return hash.digest("hex").slice(0, 12);
 }
