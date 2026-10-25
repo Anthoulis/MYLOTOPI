@@ -3,11 +3,11 @@
 
 const header = document.querySelector(".site-header");
 const stops = Array.from(document.querySelectorAll("[data-stop]"));
+const firstStop = stops[0];
 const menus = Array.from(document.querySelectorAll("[data-menu]"));
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-let activeId = stops[0].id;
-let navigationTargetId = null;
+let activeId = firstStop.id;
 
 const titleOf = (stop) => stop.querySelector(".qr-stop__name").textContent;
 const listenOf = (stop) => stop.querySelector("[data-listen]");
@@ -25,7 +25,9 @@ const player = {
   // The stop whose narration is loaded; null while nothing has been started.
   loadedStop: null,
   // The stop the player shows: the loaded one, or the one on screen.
-  shownStop: stops[0],
+  shownStop: firstStop,
+  // A position chosen on the seek bar before the narration knew its length.
+  pendingSeek: null,
 };
 
 function formatTime(seconds) {
@@ -37,6 +39,21 @@ function isPlaying() {
   return player.loadedStop !== null && !player.audio.paused;
 }
 
+// Time and position change many times a second; only they are redrawn on timeupdate.
+function renderTime() {
+  const stop = player.shownStop;
+  const isLoaded = stop === player.loadedStop;
+  const text = isLoaded ? `${formatTime(player.audio.currentTime)} / ${stop.dataset.duration}` : stop.dataset.duration;
+
+  player.time.textContent = text;
+  player.seek.setAttribute("aria-valuetext", text);
+  if (isLoaded && player.audio.duration && player.pendingSeek === null) {
+    player.seek.value = String(Math.floor(player.audio.currentTime));
+  } else if (!isLoaded) {
+    player.seek.value = "0";
+  }
+}
+
 function renderPlayer() {
   const stop = player.shownStop;
   const isLoaded = stop === player.loadedStop;
@@ -44,31 +61,27 @@ function renderPlayer() {
 
   player.number.textContent = stop.dataset.number;
   player.title.textContent = titleOf(stop);
-  player.time.textContent = isLoaded
-    ? `${formatTime(player.audio.currentTime)} / ${stop.dataset.duration}`
-    : stop.dataset.duration;
   player.toggle.classList.toggle("is-playing", playing);
   player.toggle.setAttribute("aria-label", playing ? player.toggle.dataset.labelPause : player.toggle.dataset.labelPlay);
+  // A stop whose narration is not ready has nothing to play.
+  player.toggle.setAttribute("aria-disabled", String(!listenOf(stop)));
   player.root.classList.toggle("is-loaded", isLoaded);
-
-  if (isLoaded && player.audio.duration) {
-    player.seek.value = String(Math.round((player.audio.currentTime / player.audio.duration) * 1000));
-  } else if (!isLoaded) {
-    player.seek.value = "0";
-  }
 
   stops.forEach((candidate) => {
     const listen = listenOf(candidate);
     if (listen) {
-      listen.classList.toggle("is-playing", candidate === player.loadedStop && !player.audio.paused);
-      listen.setAttribute("aria-pressed", String(candidate === player.loadedStop && !player.audio.paused));
+      const pressed = candidate === player.loadedStop && !player.audio.paused;
+      listen.classList.toggle("is-playing", pressed);
+      listen.setAttribute("aria-pressed", String(pressed));
     }
   });
+  renderTime();
 }
 
 function load(stop) {
   player.loadedStop = stop;
   player.shownStop = stop;
+  player.pendingSeek = null;
   player.audio.src = listenOf(stop).href;
 
   // Lock-screen and headphone controls show what is playing.
@@ -83,25 +96,36 @@ function load(stop) {
   }
 }
 
-// Without signal, a narration that was never played (so never kept) cannot start: the player goes
-// back to rest instead of staying on a narration that will not come.
-function start(stop) {
+// Back to rest, on the stop on screen: after the end of a narration, or when one cannot play
+// (without signal, a narration never played was never kept). Never stuck on "playing" in silence.
+function rest() {
+  player.loadedStop = null;
+  player.pendingSeek = null;
+  player.shownStop = document.getElementById(activeId);
+  player.audio.removeAttribute("src");
+  player.audio.load();
+  player.toggle.classList.remove("is-waiting");
+  renderPlayer();
+}
+
+function begin(stop) {
   player.audio.play().catch((error) => {
     if (error.name === "AbortError" || player.loadedStop !== stop) {
       return; // Another narration was chosen meanwhile.
     }
-    player.loadedStop = null;
-    player.audio.removeAttribute("src");
-    player.audio.load();
-    renderPlayer();
+    rest();
   });
 }
 
 // Plays the given stop, or pauses it if it is the one playing.
 function playStop(stop) {
+  if (!listenOf(stop)) {
+    return;
+  }
+
   if (stop === player.loadedStop) {
     if (player.audio.paused) {
-      start(stop);
+      begin(stop);
     } else {
       player.audio.pause();
     }
@@ -109,7 +133,7 @@ function playStop(stop) {
   }
 
   load(stop);
-  start(stop);
+  begin(stop);
   renderPlayer();
 }
 
@@ -120,6 +144,25 @@ function followStop(stop) {
   }
   player.shownStop = stop;
   renderPlayer();
+}
+
+// The seek bar counts seconds. Before the narration knows its length, the choice waits for it.
+function seek() {
+  const seconds = Number(player.seek.value);
+  if (player.audio.duration) {
+    player.audio.currentTime = seconds;
+  } else {
+    player.pendingSeek = seconds;
+  }
+}
+
+function onMetadata() {
+  player.seek.max = String(Math.floor(player.audio.duration));
+  if (player.pendingSeek !== null) {
+    player.audio.currentTime = player.pendingSeek;
+    player.pendingSeek = null;
+  }
+  renderTime();
 }
 
 // ---------------------------------------------------------------- current stop
@@ -136,9 +179,13 @@ function setActiveStop(id) {
     link.setAttribute("aria-current", String(link.hash === `#${id}`));
   });
   followStop(stop);
+  rememberStop();
+}
 
-  // The address remembers the stop, so a reload or a language change returns to it.
-  const hash = id === stops[0].id ? "" : `#${id}`;
+// The address remembers the stop, so a reload or a language change returns to it.
+// The first stop has no "#": the page then opens at its top, with the title.
+function rememberStop() {
+  const hash = activeId === firstStop.id ? "" : `#${activeId}`;
   history.replaceState(null, "", window.location.pathname + hash);
 }
 
@@ -160,6 +207,9 @@ function findStopInView() {
   return stop ? stop.id : null;
 }
 
+// While a link scrolls to a stop, the stops it passes are not "current".
+const navigation = { targetId: null, timer: 0 };
+
 let scrollFrame = 0;
 function onScroll() {
   if (scrollFrame) {
@@ -168,8 +218,7 @@ function onScroll() {
 
   scrollFrame = window.requestAnimationFrame(() => {
     scrollFrame = 0;
-    // While a link scrolls to a stop, the stops it passes are not "current".
-    if (navigationTargetId) {
+    if (navigation.targetId) {
       return;
     }
     const id = findStopInView();
@@ -192,7 +241,8 @@ function closeMenus({ restoreFocus = false } = {}) {
     if (menu.open) {
       menu.open = false;
       if (restoreFocus) {
-        menu.querySelector("summary").focus();
+        // preventScroll: the menus live in the fixed bars; focusing them must not move the page.
+        menu.querySelector("summary").focus({ preventScroll: true });
       }
     }
   });
@@ -200,26 +250,29 @@ function closeMenus({ restoreFocus = false } = {}) {
 
 // ---------------------------------------------------------------- navigation
 
+function releaseNavigation() {
+  navigation.targetId = null;
+  window.clearTimeout(navigation.timer);
+  window.removeEventListener("scrollend", releaseNavigation);
+}
+
 function goTo(id) {
   const target = document.getElementById(id);
   const smooth = !reducedMotion.matches;
 
   closeMenus();
+  releaseNavigation();
   if (target.matches("[data-stop]")) {
     setActiveStop(id);
   }
 
-  navigationTargetId = id;
+  navigation.targetId = id;
   target.scrollIntoView({ behavior: smooth ? "smooth" : "auto", block: "start" });
   target.focus({ preventScroll: true });
 
-  const release = () => {
-    navigationTargetId = null;
-    window.removeEventListener("scrollend", release);
-  };
-  window.addEventListener("scrollend", release);
+  window.addEventListener("scrollend", releaseNavigation);
   // Browsers without the scrollend event, or a scroll that never moves.
-  window.setTimeout(release, smooth ? 1200 : 100);
+  navigation.timer = window.setTimeout(releaseNavigation, smooth ? 1200 : 100);
 }
 
 // ---------------------------------------------------------------- map
@@ -294,8 +347,8 @@ document.addEventListener("click", (event) => {
   }
 
   const languageLink = event.target.closest("[data-language-link]");
-  if (languageLink && activeId !== stops[0].id) {
-    languageLink.hash = activeId;
+  if (languageLink) {
+    languageLink.hash = activeId === firstStop.id ? "" : activeId;
   }
 
   if (event.target.closest("[data-map-open]")) {
@@ -320,6 +373,13 @@ document.addEventListener("click", (event) => {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && menus.some((menu) => menu.open)) {
     closeMenus({ restoreFocus: true });
+    return;
+  }
+
+  // Links that act as buttons answer Space too, as buttons do.
+  if (event.key === " " && event.target.matches("[data-listen], [data-map-open]")) {
+    event.preventDefault();
+    event.target.click();
   }
 });
 
@@ -336,24 +396,20 @@ menus.forEach((menu) => {
 });
 
 player.toggle.addEventListener("click", () => playStop(player.shownStop));
-player.seek.addEventListener("input", () => {
-  if (player.shownStop !== player.loadedStop) {
-    load(player.shownStop);
+player.seek.addEventListener("input", seek);
+player.audio.addEventListener("loadedmetadata", onMetadata);
+player.audio.addEventListener("timeupdate", renderTime);
+["play", "pause"].forEach((type) => player.audio.addEventListener(type, renderPlayer));
+// "waiting" is the narration buffering; "playing" is sound again.
+player.audio.addEventListener("waiting", () => player.toggle.classList.add("is-waiting"));
+["playing", "pause"].forEach((type) => player.audio.addEventListener(type, () => player.toggle.classList.remove("is-waiting")));
+// A finished narration does not start the next one.
+player.audio.addEventListener("ended", rest);
+// A narration that cannot load (no signal, never kept) must not leave the player "playing".
+player.audio.addEventListener("error", () => {
+  if (player.loadedStop) {
+    rest();
   }
-  const apply = () => (player.audio.currentTime = (Number(player.seek.value) / 1000) * player.audio.duration);
-  if (player.audio.duration) {
-    apply();
-  } else {
-    player.audio.addEventListener("loadedmetadata", apply, { once: true });
-    player.audio.load();
-  }
-});
-["play", "pause", "timeupdate", "loadedmetadata"].forEach((type) => player.audio.addEventListener(type, renderPlayer));
-player.audio.addEventListener("ended", () => {
-  // A finished narration does not start the next one; the player returns to the stop on screen.
-  player.loadedStop = null;
-  player.shownStop = document.getElementById(activeId);
-  renderPlayer();
 });
 
 mapDialog.addEventListener("close", () => {
@@ -363,6 +419,11 @@ mapDialog.addEventListener("close", () => {
 
 document.querySelectorAll("[data-gallery]").forEach(setupGallery);
 document.querySelectorAll("[data-listen]").forEach((link) => link.setAttribute("role", "button"));
+mapOpener.setAttribute("role", "button");
+mapOpener.setAttribute("aria-haspopup", "dialog");
+
+// iOS Safari shows :active (the press feedback of the buttons) only when a touch listener exists.
+document.addEventListener("touchstart", () => {}, { passive: true });
 
 player.root.hidden = false;
 document.body.classList.add("has-player");
@@ -374,6 +435,7 @@ window.addEventListener("scroll", onScroll, { passive: true });
 // ---------------------------------------------------------------- without signal
 
 // The copy of an image this screen needs: the first in its srcset at least as wide as it is drawn.
+// The service worker also answers with a kept sibling when the browser picks another width.
 function copyFor(image, drawnWidth) {
   const candidates = (image.getAttribute("srcset") || image.dataset.srcset || "")
     .split(",")
@@ -403,10 +465,10 @@ async function keepForOffline() {
   }
 
   // The entry pages and their scripts too: a QR code scanned again without signal must still open.
-  const entry = ["../", "../index.html", "../qr-guide.html", "../assets/js/entry.js", "../assets/js/language.mjs"];
-  const urls = new Set([window.location.pathname, ...entry].map((url) => new URL(url, window.location.href).href));
-  performance.getEntriesByType("resource").forEach((entry) => {
-    const url = new URL(entry.name);
+  const entryFiles = ["../", "../index.html", "../qr-guide.html", "../assets/js/entry.js", "../assets/js/language.mjs"];
+  const urls = new Set([window.location.pathname, ...entryFiles].map((url) => new URL(url, window.location.href).href));
+  performance.getEntriesByType("resource").forEach((resource) => {
+    const url = new URL(resource.name);
     if (url.origin === window.location.origin && !url.pathname.startsWith("/assets/audio/")) {
       urls.add(url.href);
     }
@@ -430,11 +492,11 @@ if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("../sw.js").then(
     () => {
       const whenIdle = window.requestIdleCallback || ((callback) => window.setTimeout(callback, 2000));
-      const start = () => whenIdle(() => keepForOffline());
+      const startKeeping = () => whenIdle(() => keepForOffline());
       if (document.readyState === "complete") {
-        start();
+        startKeeping();
       } else {
-        window.addEventListener("load", start, { once: true });
+        window.addEventListener("load", startKeeping, { once: true });
       }
     },
     (error) => console.warn("The guide will not work without signal:", error),
@@ -444,5 +506,9 @@ if ("serviceWorker" in navigator) {
 const initialStop = stops.find((stop) => `#${stop.id}` === window.location.hash);
 if (initialStop) {
   setActiveStop(initialStop.id);
+}
+// An address that names the first stop loses its "#", as every other way to that stop does.
+if (window.location.hash === `#${firstStop.id}`) {
+  rememberStop();
 }
 renderPlayer();

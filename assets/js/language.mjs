@@ -51,7 +51,8 @@ export function resolveEntryTarget({ search, browserLanguages, config }) {
 
   const spot = params.get("spot");
   const stopId = spot ? normalizeKey(spot) : "";
-  const hash = config.stopIds.includes(stopId) ? `#${stopId}` : "";
+  // The first stop is the top of the page, which needs no "#".
+  const hash = config.stopIds.includes(stopId) && stopId !== config.stopIds[0] ? `#${stopId}` : "";
 
   return `./${lang}/${hash}`;
 }

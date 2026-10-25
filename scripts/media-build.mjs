@@ -36,8 +36,12 @@ function make(outputPath, buildArgs) {
 
   fs.mkdirSync(path.dirname(target), { recursive: true });
   const temporary = target.replace(/(\.[a-z0-9]+)$/i, ".tmp$1");
-  run([...buildArgs(temporary)]);
-  fs.renameSync(temporary, target);
+  try {
+    run([...buildArgs(temporary)]);
+    fs.renameSync(temporary, target);
+  } finally {
+    fs.rmSync(temporary, { force: true });
+  }
   made += 1;
   console.log(`made ${outputPath}`);
 }

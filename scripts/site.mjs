@@ -261,12 +261,15 @@ function renderGallery(site, lang, section, index) {
   }
 
   const frames = images
-    .map((image) => {
+    .map((image, position) => {
       const photo = responsiveImage(site, image.src, "photo", PHOTO_SIZES);
       return (
-        `<div class="qr-media qr-carousel__frame" data-image-fit="${image.fit}">` +
+        `<div class="qr-media qr-carousel__frame" data-image-fit="${image.fit || "cover"}">` +
         `<img class="qr-carousel__image" src="${photo.src}" srcset="${photo.srcset}" sizes="${photo.sizes}" alt="${escapeHtml(alt)}" ` +
-        `width="${photo.width}" height="${photo.height}" loading="${index === 0 ? "eager" : "lazy"}" decoding="async"></div>`
+        `width="${photo.width}" height="${photo.height}" ` +
+        // The first photo of the first stop is the largest thing on the first screen.
+        (index === 0 ? `loading="eager"${position === 0 ? ' fetchpriority="high"' : ""}` : `loading="lazy"`) +
+        ` decoding="async"></div>`
       );
     })
     .join("");
@@ -274,15 +277,19 @@ function renderGallery(site, lang, section, index) {
   // Swiping works without JavaScript; the buttons and the counter are added by guide.js.
   const controls =
     images.length > 1
-      ? `<figcaption class="qr-carousel__controls" hidden>` +
+      ? `<div class="qr-carousel__controls" hidden>` +
         `<button class="qr-carousel__button" type="button" data-gallery-step="-1" aria-label="${escapeHtml(ui.galleryPrevious)}">${icon("left")}</button>` +
-        `<span class="qr-carousel__counter" data-gallery-counter data-template="${escapeHtml(ui.imageCounter)}">` +
+        `<span class="qr-carousel__counter" data-gallery-counter aria-live="polite" data-template="${escapeHtml(ui.imageCounter)}">` +
         `${escapeHtml(formatTemplate(ui.imageCounter, { current: "1", total: String(images.length) }))}</span>` +
         `<button class="qr-carousel__button" type="button" data-gallery-step="1" aria-label="${escapeHtml(ui.galleryNext)}">${icon("right")}</button>` +
-        `</figcaption>`
+        `</div>`
       : "";
 
-  return `<figure class="qr-carousel" data-gallery><div class="qr-carousel__track" data-gallery-track>${frames}</div>${controls}</figure>`;
+  // The track can be scrolled with the keyboard too, so it carries a name.
+  return (
+    `<figure class="qr-carousel" data-gallery>` +
+    `<div class="qr-carousel__track" data-gallery-track role="group" aria-label="${escapeHtml(alt)}">${frames}</div>${controls}</figure>`
+  );
 }
 
 // The listen button feeds the player at the bottom of the screen. Without JavaScript it is
@@ -353,10 +360,10 @@ function renderStop(site, lang, section, index) {
     renderGallery(site, lang, section, index) +
     renderListen(site, lang, section, duration) +
     renderStory(site, lang, section, isLast) +
-    `<nav class="qr-stop-nav" aria-label="${escapeHtml(ui.sectionsLabel)}">` +
+    `<div class="qr-stop-nav">` +
     renderStopNavLink(lang, ui, -1, sections[index - 1]) +
     renderStopNavLink(lang, ui, 1, next) +
-    `</nav></article>`
+    `</div></article>`
   );
 }
 
@@ -393,14 +400,17 @@ function renderPlayer(site, lang) {
     `data-label-play="${escapeHtml(ui.play)}" data-label-pause="${escapeHtml(ui.pause)}">` +
     `${icon("play", "icon icon--play")}${icon("pause", "icon icon--pause")}</button>` +
     `<details class="player__stops" data-menu>` +
-    `<summary class="player__stop" aria-label="${escapeHtml(ui.sectionsLabel)}">` +
-    `<span class="player__number" data-player-number>1</span>` +
-    `<span class="player__title" data-player-title${englishAttr(lang)}>${escapeHtml(first.navigationTitle)}</span>` +
-    `<span class="player__time" data-player-time>${site.audioDuration(first.audio.path)}</span>` +
+    // The visible stop and time stay the button's name; the hidden words say what it opens.
+    `<summary class="player__stop"><span class="visually-hidden">${escapeHtml(ui.sectionsLabel)}: </span>` +
+    // The spaces between the parts are for screen readers ("1 Welcome 1:25"); the grid ignores them.
+    `<span class="player__number" data-player-number>1</span> ` +
+    `<span class="player__title" data-player-title${englishAttr(lang)}>${escapeHtml(first.navigationTitle)}</span> ` +
+    `<span class="player__time" data-player-time>${site.audioDuration(first.audio.path)}</span> ` +
     `${icon("up", "player__chevron")}</summary>` +
     `<div class="selector__menu selector__menu--stops" role="group" aria-label="${escapeHtml(ui.sectionsLabel)}">${stops}</div>` +
     `</details>` +
-    `<input class="player__seek" type="range" min="0" max="1000" step="1" value="0" data-player-seek aria-label="${escapeHtml(ui.seekLabel)}">` +
+    // Counted in seconds; guide.js sets the maximum once the narration knows its length.
+    `<input class="player__seek" type="range" min="0" max="0" step="1" value="0" data-player-seek aria-label="${escapeHtml(ui.seekLabel)}">` +
     `</div>` +
     `<audio data-player-audio preload="none"></audio>` +
     `</div>`
@@ -433,7 +443,15 @@ export function renderStopStyles(site) {
 }
 
 // `assets` is the path to assets/ from the page: "../assets/" for a language page, "./assets/" at the root.
-function renderHead({ lang, title, assets }) {
+// A stylesheet or script address carries a short hash of its content ("main.css?v=1a2b3c4d5e"), so
+// no cache between the server and the phone keeps an old copy next to a new page.
+function versioned(site, relativePath, content) {
+  const text = content ?? fs.readFileSync(path.join(site.root, relativePath), "utf8").replace(/\r\n/g, "\n");
+  return `${relativePath}?v=${crypto.createHash("sha256").update(text).digest("hex").slice(0, 10)}`;
+}
+
+function renderHead({ site, lang, title, assets }) {
+  const css = (name, content) => versioned(site, `assets/css/${name}`, content).replace("assets/", assets);
   const [tabIcon, homeIcon] = iconCopies().map((copy) => copy.path.replace("./assets/", assets));
 
   return (
@@ -445,8 +463,8 @@ function renderHead({ lang, title, assets }) {
     `<title>${escapeHtml(title)}</title>\n` +
     `<link rel="icon" type="image/png" sizes="32x32" href="${tabIcon}">\n` +
     `<link rel="apple-touch-icon" href="${homeIcon}">\n` +
-    `<link rel="stylesheet" href="${assets}css/main.css">\n` +
-    `<link rel="stylesheet" href="${assets}css/stops.css">\n`
+    `<link rel="stylesheet" href="${css("main.css")}">\n` +
+    `<link rel="stylesheet" href="${css("stops.css", renderStopStyles(site))}">\n`
   );
 }
 
@@ -456,8 +474,8 @@ export function renderLanguagePage(site, lang) {
   const { ui, sections } = site.content.get(lang);
 
   return (
-    renderHead({ lang, title: `${ui.heroTitle} | Mylotopi`, assets: "../assets/" }) +
-    `<script type="module" src="../assets/js/guide.js"></script>\n` +
+    renderHead({ site, lang, title: `${ui.heroTitle} | Mylotopi`, assets: "../assets/" }) +
+    `<script type="module" src="../${versioned(site, "assets/js/guide.js")}"></script>\n` +
     `</head>\n<body>\n<div class="qr-page">\n` +
     renderHeader(site, lang) +
     `\n<main class="container qr-main">\n` +
@@ -492,9 +510,9 @@ export function renderEntryPage(site) {
     .join("");
 
   return (
-    renderHead({ lang: meta.defaultLanguage, title: "Mylotopi", assets: "./assets/" }) +
+    renderHead({ site, lang: meta.defaultLanguage, title: "Mylotopi", assets: "./assets/" }) +
     `<script type="application/json" id="site-config">${JSON.stringify(config)}</script>\n` +
-    `<script type="module" src="./assets/js/entry.js"></script>\n` +
+    `<script type="module" src="./${versioned(site, "assets/js/entry.js")}"></script>\n` +
     `</head>\n<body>\n<div class="qr-page">\n<main class="container qr-entry">\n` +
     `<h1 class="qr-hero__title" translate="no">Mylotopi</h1>\n` +
     `<nav class="qr-entry__languages" aria-label="Language">${links}</nav>\n` +
@@ -516,9 +534,11 @@ export function renderSite(site) {
   return files;
 }
 
-// Hand-written files the pages load, and the folders of media copies (whose names change with them).
+// Hand-written files the pages load, and the folders of media copies.
 const RUNTIME_FILES = ["assets/css/main.css", "assets/js/guide.js", "assets/js/entry.js", "assets/js/language.mjs"];
 const MEDIA_DIRS = ["assets/audio", "assets/images", "assets/maps", "assets/fonts", "assets/icons", "assets/logo"];
+// A copy that npm run media is still writing, or left behind after a failure: never part of the site.
+const TEMPORARY = /\.tmp\.[a-z0-9]+$/i;
 
 function listFiles(root, dir) {
   const full = path.join(root, dir);
@@ -528,16 +548,21 @@ function listFiles(root, dir) {
   return fs
     .readdirSync(full, { withFileTypes: true })
     .flatMap((entry) => (entry.isDirectory() ? listFiles(root, `${dir}/${entry.name}`) : [`${dir}/${entry.name}`]))
+    .filter((name) => !TEMPORARY.test(name))
     .sort();
 }
 
-// One short hash of everything the site serves: any change to a page, the CSS, the JavaScript or the
-// set of media copies makes a new service worker, and phones drop what they kept before.
-// Line endings are ignored, so a Windows checkout gives the same version.
+// One short hash of everything the site serves: any change to a page, the CSS, the JavaScript or a
+// media copy (its bytes, not only its name) makes a new service worker, and phones drop what they
+// kept before. Text is hashed without line endings, so a Windows checkout gives the same version;
+// plain sort, so every machine orders the same way.
 export function siteVersion(site, files) {
   const hash = crypto.createHash("sha256");
-  [...files.entries()].sort(([a], [b]) => a.localeCompare(b)).forEach(([name, text]) => hash.update(`${name}\n${text}\n`));
+  [...files.keys()].sort().forEach((name) => hash.update(`${name}\n${files.get(name)}\n`));
   RUNTIME_FILES.forEach((name) => hash.update(`${name}\n${fs.readFileSync(path.join(site.root, name), "utf8").replace(/\r\n/g, "\n")}\n`));
-  MEDIA_DIRS.forEach((dir) => hash.update(`${listFiles(site.root, dir).join("\n")}\n`));
+  MEDIA_DIRS.flatMap((dir) => listFiles(site.root, dir)).forEach((name) => {
+    hash.update(`${name}\n`);
+    hash.update(fs.readFileSync(path.join(site.root, name)));
+  });
   return hash.digest("hex").slice(0, 12);
 }

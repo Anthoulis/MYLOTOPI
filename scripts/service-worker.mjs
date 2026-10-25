@@ -4,6 +4,7 @@
 //
 // - Pages: from the network, or from the phone after NAVIGATION_TIMEOUT_MS without an answer.
 // - Everything else under /assets/: from the phone when it has it, otherwise fetched and kept.
+//   CSS and JavaScript are always checked with the server first, whatever a cache in between holds.
 // - Narration: the whole MP3 is kept the first time it plays; the player's range requests are then
 //   answered from it, so it plays again without signal.
 // guide.js asks for the photos and the map in the background, so they are kept before they are seen.
@@ -47,27 +48,62 @@ function serviceWorkerSource(VERSION, NAVIGATION_TIMEOUT_MS) {
     });
   }
 
-  async function fromCacheOrNetwork(request) {
+  // Keeps a copy without making the visitor wait for it; waitUntil lets the browser finish it.
+  function keep(event, cache, key, response) {
+    event.waitUntil(cache.put(key, response).catch(() => {}));
+  }
+
+  // Photos and maps come in several widths. Without signal, a width that was never kept is
+  // answered with the widest kept width of the same picture.
+  async function keptSibling(cache, url) {
+    const base = url.pathname.replace(/-\d+\.webp$/, "-");
+    if (base === url.pathname) {
+      return null;
+    }
+    const widest = (await cache.keys())
+      .map((request) => new URL(request.url))
+      .filter((candidate) => candidate.pathname.startsWith(base) && /^\d+\.webp$/.test(candidate.pathname.slice(base.length)))
+      .sort((a, b) => parseInt(b.pathname.slice(base.length), 10) - parseInt(a.pathname.slice(base.length), 10))[0];
+    return widest ? cache.match(widest.href) : null;
+  }
+
+  async function asset(event) {
+    const { request } = event;
+    const url = new URL(request.url);
     const cache = await caches.open(CACHE);
-    const kept = await cache.match(request);
+    // The cache belongs to one version of the site, so the "?v=" of a stylesheet or script can be ignored.
+    const kept = await cache.match(request, { ignoreSearch: true });
     if (kept) {
       return kept;
     }
-    const response = await fetch(request);
-    if (response.ok && response.status === 200) {
-      await cache.put(request, response.clone());
+
+    const checkWithServer = /\.(css|js|mjs)$/.test(url.pathname);
+    try {
+      const response = await fetch(request, checkWithServer ? { cache: "no-cache" } : {});
+      if (response.status === 200) {
+        keep(event, cache, request, response.clone());
+      }
+      return response;
+    } catch (error) {
+      const sibling = await keptSibling(cache, url);
+      if (sibling) {
+        return sibling;
+      }
+      throw error;
     }
-    return response;
   }
 
-  async function page(request) {
+  async function page(event) {
+    const { request } = event;
     const cache = await caches.open(CACHE);
-    const network = fetch(request).then(async (response) => {
+    // A navigation request takes no options; the pages guide.js asks for are checked with the server.
+    const network = fetch(request, request.mode === "navigate" ? undefined : { cache: "no-cache" }).then((response) => {
       if (response.ok) {
-        await cache.put(request, response.clone());
+        keep(event, cache, request, response.clone());
       }
       return response;
     });
+    network.catch(() => {}); // A late failure, after the timeout answered, is not an error.
     const timeout = new Promise((resolve) => setTimeout(resolve, NAVIGATION_TIMEOUT_MS));
 
     try {
@@ -86,7 +122,8 @@ function serviceWorkerSource(VERSION, NAVIGATION_TIMEOUT_MS) {
   // Narrations being kept right now, so a second request does not download the file again.
   const keeping = new Set();
 
-  async function narration(request) {
+  async function narration(event) {
+    const { request } = event;
     const cache = await caches.open(CACHE);
     const url = request.url;
     const range = request.headers.get("Range");
@@ -94,38 +131,41 @@ function serviceWorkerSource(VERSION, NAVIGATION_TIMEOUT_MS) {
     if (kept) {
       return rangeResponse(await kept.blob(), range, kept.headers.get("Content-Type") || "audio/mpeg");
     }
-
-    // A seek, or a probe such as Safari's "bytes=0-1", before the file is kept: straight to the network.
-    const fromStart = !range || /^bytes=0-$/.test(range);
-    if (!fromStart || keeping.has(url)) {
+    if (keeping.has(url)) {
       return fetch(request);
     }
 
-    // First play from the start: one download that plays and is kept at the same time.
-    const response = await fetch(url);
-    const size = response.headers.get("Content-Length");
-    if (response.status !== 200 || !size || response.headers.get("Content-Encoding")) {
-      return response;
-    }
-
     keeping.add(url);
-    cache
-      .put(url, response.clone())
-      .catch(() => {})
-      .finally(() => keeping.delete(url));
+    const done = () => keeping.delete(url);
 
-    if (!range) {
-      return response;
+    // Playing from the start (Chrome, Firefox): one download that plays and is kept at the same time.
+    if (!range || /^bytes=0-$/.test(range)) {
+      const response = await fetch(url);
+      const size = response.headers.get("Content-Length");
+      if (response.status !== 200 || !size || response.headers.get("Content-Encoding")) {
+        done();
+        return response;
+      }
+
+      event.waitUntil(cache.put(url, response.clone()).catch(() => {}).finally(done));
+      if (!range) {
+        return response;
+      }
+      return new Response(response.body, {
+        status: 206,
+        headers: {
+          "Content-Type": response.headers.get("Content-Type") || "audio/mpeg",
+          "Content-Length": size,
+          "Content-Range": `bytes 0-${Number(size) - 1}/${size}`,
+          "Accept-Ranges": "bytes",
+        },
+      });
     }
-    return new Response(response.body, {
-      status: 206,
-      headers: {
-        "Content-Type": response.headers.get("Content-Type") || "audio/mpeg",
-        "Content-Length": size,
-        "Content-Range": `bytes 0-${Number(size) - 1}/${size}`,
-        "Accept-Ranges": "bytes",
-      },
-    });
+
+    // Any other range (Safari asks "bytes=0-1" first, then exact ranges): play from the network,
+    // and keep the whole file with one more download in the background.
+    event.waitUntil(cache.add(url).catch(() => {}).finally(done));
+    return fetch(request);
   }
 
   self.addEventListener("install", () => self.skipWaiting());
@@ -148,15 +188,15 @@ function serviceWorkerSource(VERSION, NAVIGATION_TIMEOUT_MS) {
 
     // Pages: opened by the visitor, or asked for by guide.js to keep them.
     if (request.mode === "navigate" || url.pathname.endsWith("/") || url.pathname.endsWith(".html")) {
-      event.respondWith(page(request));
+      event.respondWith(page(event));
     } else if (url.pathname.startsWith("/assets/audio/")) {
-      event.respondWith(narration(request));
+      event.respondWith(narration(event));
     } else if (url.pathname.startsWith("/assets/")) {
-      event.respondWith(fromCacheOrNetwork(request));
+      event.respondWith(asset(event));
     }
   });
 
-  return { rangeResponse };
+  return { rangeResponse, keptSibling };
 }
 
 export function renderServiceWorker(version) {

@@ -124,8 +124,15 @@
 
 html {
   -webkit-text-size-adjust: 100%;
-  scroll-padding-top: calc(var(--header-height) + 12px);
-  scroll-padding-bottom: calc(var(--player-height) + 12px);
+}
+
+/* Whatever is scrolled or focused into view inside the page stays clear of the fixed bars. Set on
+   the content, not as scroll-padding on html: that also moved the page when a bar's own control
+   took focus. */
+main,
+main * {
+  scroll-margin-top: calc(var(--header-height) + 12px);
+  scroll-margin-bottom: calc(var(--player-height) + 12px);
 }
 
 body {
@@ -199,6 +206,25 @@ summary::-webkit-details-marker {
   outline-color: var(--accent-soft);
 }
 
+/* The menus are light panels inside the dark bars: their focus ring goes back to dark. */
+.selector__menu :focus-visible {
+  outline-color: var(--olive);
+}
+
+.selector__menu [aria-current="true"]:focus-visible,
+.selector__menu [aria-current="page"]:focus-visible {
+  outline-color: var(--charcoal);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .icon {
   flex: 0 0 auto;
   width: 22px;
@@ -206,7 +232,7 @@ summary::-webkit-details-marker {
 }
 
 .container {
-  width: min(100% - 32px, 760px);
+  width: min(100% - 32px - env(safe-area-inset-left, 0px) - env(safe-area-inset-right, 0px), 760px);
   margin-inline: auto;
 }
 
@@ -383,6 +409,8 @@ summary::-webkit-details-marker {
 
 .qr-main {
   display: grid;
+  /* One column that never grows past the screen, even for a long word such as "Windmolenervaring". */
+  grid-template-columns: minmax(0, 1fr);
   gap: 16px;
   padding: 24px 0 24px;
 }
@@ -401,6 +429,8 @@ summary::-webkit-details-marker {
   font-weight: 700;
   line-height: 1;
   text-wrap: balance;
+  overflow-wrap: anywhere;
+  hyphens: auto;
 }
 
 .qr-hero__place {
@@ -446,6 +476,8 @@ summary::-webkit-details-marker {
   color: var(--text);
   font-size: clamp(1.6rem, 7vw, 2.4rem);
   text-wrap: balance;
+  overflow-wrap: anywhere;
+  hyphens: auto;
 }
 
 /* ---------------------------------------------------------------- photos */
@@ -567,7 +599,7 @@ summary::-webkit-details-marker {
 }
 
 .qr-listen:active {
-  transform: scale(0.98);
+  transform: scale(0.97);
 }
 
 .qr-listen__icon {
@@ -629,7 +661,8 @@ summary::-webkit-details-marker {
 .story-block__list,
 .qr-copy p,
 .qr-copy__list {
-  max-width: 68ch;
+  /* About 65–70 characters a line in Manrope. */
+  max-width: 34em;
   margin: 0;
   font-size: 1.0625rem;
   line-height: 1.65;
@@ -763,6 +796,7 @@ a.qr-stop-nav__button--next {
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 8vw, 2.4rem);
   line-height: 1.1;
+  text-wrap: balance;
 }
 
 .qr-end__restart {
@@ -816,7 +850,16 @@ a.qr-stop-nav__button--next {
 }
 
 .player__toggle:active {
-  transform: scale(0.95);
+  transform: scale(0.97);
+}
+
+/* Buffering: the narration was asked for and has not started to sound yet. */
+.player__toggle.is-waiting {
+  opacity: 0.6;
+}
+
+.player__toggle[aria-disabled="true"] {
+  opacity: 0.4;
 }
 
 .player__toggle .icon {
@@ -884,8 +927,9 @@ a.qr-stop-nav__button--next {
   display: none;
   grid-column: 1 / -1;
   width: 100%;
-  height: 20px;
-  margin: 0;
+  /* A thin track with a taller touch area, for a thumb outdoors. */
+  height: 36px;
+  margin: -6px 0 -8px;
   accent-color: var(--accent-soft);
 }
 
@@ -935,9 +979,11 @@ a.qr-stop-nav__button--next {
   width: min(760px, calc(100vw - 32px));
   max-height: calc(100dvh - 32px);
   padding: 12px;
+  overscroll-behavior: contain;
   border-radius: var(--radius-lg);
   background: var(--surface);
   box-shadow: 0 24px 70px rgb(38 37 18 / 0.35);
+  color: var(--text);
 }
 
 .minimap-modal__head {

@@ -61,6 +61,7 @@ test("old printed addresses keep working", () => {
   assert.equal(target("?lang=xx"), "./en/", "an unknown ?lang falls back to the default, as before");
   assert.equal(target("?lang=el&spot=bakery"), "./el/#bakery");
   assert.equal(target("?spot=Machinery"), "./de/#machinery");
+  assert.equal(target("?lang=el&spot=welcome"), "./el/", "the first stop is the top of the page, without #");
   assert.equal(target("?lang=el&spot=nowhere&utm_source=x"), "./el/");
 });
 
@@ -96,7 +97,8 @@ test("image copies never upscale and never repeat a width", () => {
 test("every local file a page refers to exists", () => {
   for (const [relativePath, html] of renderSite(site)) {
     const pageDir = path.dirname(path.join(ROOT, relativePath));
-    const references = Array.from(html.matchAll(/(?:src|href|data-src)="(\.{1,2}\/[^"#]*)/g), (match) => match[1]);
+    // The "?v=" of stylesheets and scripts is not part of the file name.
+    const references = Array.from(html.matchAll(/(?:src|href|data-src)="(\.{1,2}\/[^"#?]*)/g), (match) => match[1]);
     // Every candidate of every srcset, e.g. "../assets/x-480.webp 480w, ../assets/x-800.webp 800w".
     Array.from(html.matchAll(/(?:srcset|data-srcset)="([^"]+)"/g), (match) => match[1]).forEach((srcset) => {
       srcset.split(",").forEach((candidate) => references.push(candidate.trim().split(/\s+/)[0]));
@@ -153,7 +155,7 @@ test("the map opens in a native dialog and loads its image only on demand", () =
 test("the entry page lists every language for visitors without JavaScript", () => {
   const html = renderEntryPage(site);
   meta.languages.forEach((lang) => assert.match(html, new RegExp(`href="\\./${lang}/"`)));
-  assert.match(html, /<script type="module" src="\.\/assets\/js\/entry\.js"><\/script>/);
+  assert.match(html, /<script type="module" src="\.\/assets\/js\/entry\.js\?v=[0-9a-f]{10}"><\/script>/);
 });
 
 // ---------------------------------------------------------------- without signal
@@ -207,4 +209,34 @@ test("any change to what the site serves makes a new service worker version", ()
   const same = new Map(files);
   same.delete("sw.js");
   assert.equal(siteVersion(site, same), version);
+});
+
+test("a copy left half-written by npm run media does not change the version", () => {
+  const files = renderSite(site);
+  files.delete("sw.js");
+  const before = siteVersion(site, files);
+  const leftover = path.join(ROOT, "assets", "images", "leftover.tmp.webp");
+  fs.writeFileSync(leftover, "half a copy");
+  try {
+    assert.equal(siteVersion(site, files), before);
+  } finally {
+    fs.rmSync(leftover, { force: true });
+  }
+});
+
+test("without signal, a photo width never kept is answered with the widest kept width", async () => {
+  const { keptSibling } = serviceWorkerHelpers();
+  const kept = new Map([
+    ["https://example.test/assets/images/stops/x/photo-480.webp", "small"],
+    ["https://example.test/assets/images/stops/x/photo-1200.webp", "large"],
+    ["https://example.test/assets/images/stops/y/other-1600.webp", "other"],
+  ]);
+  const cache = {
+    keys: async () => [...kept.keys()].map((url) => ({ url })),
+    match: async (url) => kept.get(url) ?? null,
+  };
+
+  assert.equal(await keptSibling(cache, new URL("https://example.test/assets/images/stops/x/photo-800.webp")), "large");
+  assert.equal(await keptSibling(cache, new URL("https://example.test/assets/images/stops/z/none-800.webp")), null);
+  assert.equal(await keptSibling(cache, new URL("https://example.test/assets/css/main.css")), null);
 });
