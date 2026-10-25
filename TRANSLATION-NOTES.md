@@ -1,9 +1,27 @@
-# Audio and translation follow-up
+# Εκκρεμότητες ήχου και μεταφράσεων
 
-Audio is the source of truth for the visitor-facing section copy. The August 7, 2026 develop-branch review repaired the corrupted text in Greek, German, French, Spanish, Polish, Russian, and Turkish, and restored the Greek Stone Oven story from its Greek audio.
+Οι μόνιμοι κανόνες περιεχομένου βρίσκονται στο
+[docs/PROJECT_RULES.md](docs/PROJECT_RULES.md). Εδώ καταγράφονται οι εκκρεμότητες
+και το ιστορικό τους, χωρίς δεύτερο αντίγραφο των κανόνων.
 
-Remaining user-owned task:
+## Ανοιχτή εκκρεμότητα: τουρκικά, στάση 05
 
-- Replace Turkish section 5 with the correct audio and then align its Turkish text to that recording.
+- Στάση: `machinery` / Machinery.
+- Αρχείο: `assets/audio/tr/section-05.mp3`.
+- Χρειάζεται η σωστή τουρκική αφήγηση από τον ιδιοκτήτη και κατόπιν προσαρμογή
+  του αντίστοιχου κειμένου στο `assets/content/tr.json`.
+- Η εκκρεμότητα κλείνει μετά από ακρόαση και επιβεβαίωση γλώσσας/στάσης,
+  συμφωνία ιστορίας και απομαγνητοφώνησης, `npm run check` και έλεγχο σε browser.
+- Η ύπαρξη του MP3 και το επιτυχές validation δεν αποδεικνύουν ότι η αφήγηση
+  είναι η σωστή. Δεν έχει γίνει νέα ακρόαση κατά την ενοποίηση της τεκμηρίωσης.
 
-The English stop names in `title` and `navigationTitle` are intentional across all languages. Have revised visitor-facing copy reviewed by a native speaker where possible, then run `npm run check`.
+## Ιστορικό
+
+Η προϋπάρχουσα σημείωση ανέφερε ότι στις 7 Αυγούστου 2026 διορθώθηκαν αλλοιωμένα
+κείμενα σε ελληνικά, γερμανικά, γαλλικά, ισπανικά, πολωνικά, ρωσικά και τουρκικά
+και αποκαταστάθηκε η ελληνική ιστορία Stone Oven από την ελληνική αφήγηση.
+Η αναφορά διατηρείται ως ιστορικό και όχι ως νέα πιστοποίηση όλων των μεταφράσεων.
+
+Στο commit `acb8769` διορθώθηκαν επίσης τρεις αλλοιωμένες πολωνικές ετικέτες UI.
+Η γλωσσική επιμέλεια από φυσικούς ομιλητές δεν έχει καταγραφεί ως ολοκληρωμένη
+για το σύνολο του περιεχομένου.
