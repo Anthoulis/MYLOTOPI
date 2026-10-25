@@ -234,6 +234,18 @@ function renderMapDialog(site, lang) {
   const { ui, miniMap } = site.content.get(lang);
   const map = responsiveImage(site, miniMap.path, "map", MAP_SIZES);
 
+  // The map and the list of stops answer the same question, "where am I", so they open together:
+  // the visitor sees the route and goes to any stop from here.
+  const stops = site.content
+    .get(lang)
+    .sections.map(
+      (section, index) =>
+        `<a class="selector__option selector__option--stop" href="#${section.id}" data-stop-link aria-current="${index === 0}">` +
+        `<span class="selector__option-number">${index + 1}</span>` +
+        `<span${englishAttr(lang)}>${escapeHtml(section.navigationTitle)}</span></a>`,
+    )
+    .join("");
+
   // The map image loads only when the dialog opens: guide.js moves data-* into the real attributes.
   return (
     `<dialog class="minimap-modal" data-map-modal aria-labelledby="minimap-modal-title">` +
@@ -242,6 +254,7 @@ function renderMapDialog(site, lang) {
     `<button class="minimap-modal__close" type="button" data-map-close>${escapeHtml(ui.miniMapModalClose)}</button>` +
     `</div><img class="minimap-modal__image" data-src="${map.src}" data-srcset="${map.srcset}" sizes="${map.sizes}" ` +
     `alt="${escapeHtml(ui.miniMapImageAlt)}" width="${map.width}" height="${map.height}" decoding="async">` +
+    `<nav class="minimap-modal__stops" aria-label="${escapeHtml(ui.sectionsLabel)}">${stops}</nav>` +
     `</div></dialog>`
   );
 }
@@ -380,18 +393,11 @@ function renderTourEnd(site, lang) {
 
 // The player stays at the bottom, in reach of the thumb. It shows the narration that is
 // playing, or the stop on screen when nothing plays; its title opens the list of stops.
+// The player appears only while a narration is loaded (the owner, 25/10/2026: «Μόνο όταν ακούω»):
+// at rest each stop's Listen button says the same, and the screen belongs to the text.
 function renderPlayer(site, lang) {
   const { ui, sections } = site.content.get(lang);
   const first = sections[0];
-
-  const stops = sections
-    .map(
-      (section, index) =>
-        `<a class="selector__option selector__option--stop" href="#${section.id}" data-stop-link aria-current="${index === 0}">` +
-        `<span class="selector__option-number">${index + 1}</span>` +
-        `<span${englishAttr(lang)}>${escapeHtml(section.navigationTitle)}</span></a>`,
-    )
-    .join("");
 
   return (
     `<div class="player" data-player hidden role="region" aria-label="${escapeHtml(ui.audioHeading)}">` +
@@ -399,16 +405,10 @@ function renderPlayer(site, lang) {
     `<button class="player__toggle" type="button" data-player-toggle aria-label="${escapeHtml(ui.play)}" ` +
     `data-label-play="${escapeHtml(ui.play)}" data-label-pause="${escapeHtml(ui.pause)}">` +
     `${icon("play", "icon icon--play")}${icon("pause", "icon icon--pause")}</button>` +
-    `<details class="player__stops" data-menu>` +
-    // The visible stop and time stay the button's name; the hidden words say what it opens.
-    `<summary class="player__stop"><span class="visually-hidden">${escapeHtml(ui.sectionsLabel)}: </span>` +
-    // The spaces between the parts are for screen readers ("1 Welcome 1:25"); the grid ignores them.
-    `<span class="player__number" data-player-number>1</span> ` +
+    // The spaces between the parts are for screen readers ("1 Welcome 0:12 / 1:25"); the grid ignores them.
+    `<p class="player__stop"><span class="player__number" data-player-number>1</span> ` +
     `<span class="player__title" data-player-title${englishAttr(lang)}>${escapeHtml(first.navigationTitle)}</span> ` +
-    `<span class="player__time" data-player-time>${site.audioDuration(first.audio.path)}</span> ` +
-    `${icon("up", "player__chevron")}</summary>` +
-    `<div class="selector__menu selector__menu--stops" role="group" aria-label="${escapeHtml(ui.sectionsLabel)}">${stops}</div>` +
-    `</details>` +
+    `<span class="player__time" data-player-time>${site.audioDuration(first.audio.path)}</span></p>` +
     // Counted in seconds; guide.js sets the maximum once the narration knows its length.
     `<input class="player__seek" type="range" min="0" max="0" step="1" value="0" data-player-seek aria-label="${escapeHtml(ui.seekLabel)}">` +
     `</div>` +

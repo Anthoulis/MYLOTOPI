@@ -22,10 +22,8 @@ const player = {
   title: document.querySelector("[data-player-title]"),
   time: document.querySelector("[data-player-time]"),
   seek: document.querySelector("[data-player-seek]"),
-  // The stop whose narration is loaded; null while nothing has been started.
+  // The stop whose narration is loaded; null at rest, when the player is not on screen.
   loadedStop: null,
-  // The stop the player shows: the loaded one, or the one on screen.
-  shownStop: firstStop,
   // A position chosen on the seek bar before the narration knew its length.
   pendingSeek: null,
 };
@@ -35,37 +33,60 @@ function formatTime(seconds) {
   return `${Math.floor(whole / 60)}:${String(whole % 60).padStart(2, "0")}`;
 }
 
-function isPlaying() {
-  return player.loadedStop !== null && !player.audio.paused;
-}
-
 // Time and position change many times a second; only they are redrawn on timeupdate.
 function renderTime() {
-  const stop = player.shownStop;
-  const isLoaded = stop === player.loadedStop;
-  const text = isLoaded ? `${formatTime(player.audio.currentTime)} / ${stop.dataset.duration}` : stop.dataset.duration;
+  const stop = player.loadedStop;
+  if (!stop) {
+    return;
+  }
 
+  const text = `${formatTime(player.audio.currentTime)} / ${stop.dataset.duration}`;
   player.time.textContent = text;
   player.seek.setAttribute("aria-valuetext", text);
-  if (isLoaded && player.audio.duration && player.pendingSeek === null) {
+  if (player.audio.duration && player.pendingSeek === null) {
     player.seek.value = String(Math.floor(player.audio.currentTime));
-  } else if (!isLoaded) {
-    player.seek.value = "0";
   }
 }
 
-function renderPlayer() {
-  const stop = player.shownStop;
-  const isLoaded = stop === player.loadedStop;
-  const playing = isLoaded && !player.audio.paused;
+// The player slides up from the bottom when a narration starts and down when it is over.
+function showPlayer(open) {
+  if (open === !player.root.hidden && open === player.root.classList.contains("is-open")) {
+    return;
+  }
 
-  player.number.textContent = stop.dataset.number;
-  player.title.textContent = titleOf(stop);
+  if (open) {
+    player.root.hidden = false;
+    // One frame on screen in the closed position, so the slide has a start.
+    window.requestAnimationFrame(() => player.root.classList.add("is-open"));
+  } else {
+    player.root.classList.remove("is-open");
+    const hide = () => {
+      if (!player.root.classList.contains("is-open")) {
+        player.root.hidden = true;
+        syncBars();
+      }
+    };
+    if (reducedMotion.matches) {
+      hide();
+    } else {
+      player.root.addEventListener("transitionend", hide, { once: true });
+      window.setTimeout(hide, 400); // In case the transition never runs.
+    }
+  }
+  syncBars();
+}
+
+function renderPlayer() {
+  const stop = player.loadedStop;
+  const playing = Boolean(stop) && !player.audio.paused;
+
+  showPlayer(Boolean(stop));
+  if (stop) {
+    player.number.textContent = stop.dataset.number;
+    player.title.textContent = titleOf(stop);
+  }
   player.toggle.classList.toggle("is-playing", playing);
   player.toggle.setAttribute("aria-label", playing ? player.toggle.dataset.labelPause : player.toggle.dataset.labelPlay);
-  // A stop whose narration is not ready has nothing to play.
-  player.toggle.setAttribute("aria-disabled", String(!listenOf(stop)));
-  player.root.classList.toggle("is-loaded", isLoaded);
 
   stops.forEach((candidate) => {
     const listen = listenOf(candidate);
@@ -80,7 +101,6 @@ function renderPlayer() {
 
 function load(stop) {
   player.loadedStop = stop;
-  player.shownStop = stop;
   player.pendingSeek = null;
   player.audio.src = listenOf(stop).href;
 
@@ -96,12 +116,11 @@ function load(stop) {
   }
 }
 
-// Back to rest, on the stop on screen: after the end of a narration, or when one cannot play
-// (without signal, a narration never played was never kept). Never stuck on "playing" in silence.
+// Back to rest, and the player leaves the screen: after the end of a narration, or when one cannot
+// play (without signal, a narration never played was never kept). Never stuck on "playing" in silence.
 function rest() {
   player.loadedStop = null;
   player.pendingSeek = null;
-  player.shownStop = document.getElementById(activeId);
   player.audio.removeAttribute("src");
   player.audio.load();
   player.toggle.classList.remove("is-waiting");
@@ -119,7 +138,7 @@ function begin(stop) {
 
 // Plays the given stop, or pauses it if it is the one playing.
 function playStop(stop) {
-  if (!listenOf(stop)) {
+  if (!stop || !listenOf(stop)) {
     return;
   }
 
@@ -134,15 +153,6 @@ function playStop(stop) {
 
   load(stop);
   begin(stop);
-  renderPlayer();
-}
-
-// When nothing plays, the player follows the stop on screen.
-function followStop(stop) {
-  if (isPlaying() || (player.loadedStop && player.audio.currentTime > 0)) {
-    return;
-  }
-  player.shownStop = stop;
   renderPlayer();
 }
 
@@ -178,7 +188,6 @@ function setActiveStop(id) {
   document.querySelectorAll(".selector__option--stop").forEach((link) => {
     link.setAttribute("aria-current", String(link.hash === `#${id}`));
   });
-  followStop(stop);
   rememberStop();
 }
 
@@ -231,7 +240,9 @@ function onScroll() {
 // Sticky header and player sizes feed the CSS, so a stop never hides behind either.
 function syncBars() {
   document.documentElement.style.setProperty("--header-height", `${header.offsetHeight}px`);
-  document.documentElement.style.setProperty("--player-height", `${player.root.offsetHeight}px`);
+  // A closed player takes no room.
+  const playerHeight = player.root.hidden ? 0 : player.root.offsetHeight;
+  document.documentElement.style.setProperty("--player-height", `${playerHeight}px`);
 }
 
 // ---------------------------------------------------------------- menus
@@ -261,6 +272,10 @@ function goTo(id) {
   const smooth = !reducedMotion.matches;
 
   closeMenus();
+  if (mapDialog.open) {
+    mapDialog.dataset.navigating = "true";
+    mapDialog.close();
+  }
   releaseNavigation();
   if (target.matches("[data-stop]")) {
     setActiveStop(id);
@@ -395,7 +410,7 @@ menus.forEach((menu) => {
   });
 });
 
-player.toggle.addEventListener("click", () => playStop(player.shownStop));
+player.toggle.addEventListener("click", () => playStop(player.loadedStop));
 player.seek.addEventListener("input", seek);
 player.audio.addEventListener("loadedmetadata", onMetadata);
 player.audio.addEventListener("timeupdate", renderTime);
@@ -414,6 +429,11 @@ player.audio.addEventListener("error", () => {
 
 mapDialog.addEventListener("close", () => {
   document.body.classList.remove("is-map-modal-open");
+  // A stop chosen in the map's list takes the focus itself.
+  if (mapDialog.dataset.navigating) {
+    delete mapDialog.dataset.navigating;
+    return;
+  }
   mapOpener.focus({ preventScroll: true });
 });
 
@@ -425,8 +445,6 @@ mapOpener.setAttribute("aria-haspopup", "dialog");
 // iOS Safari shows :active (the press feedback of the buttons) only when a touch listener exists.
 document.addEventListener("touchstart", () => {}, { passive: true });
 
-player.root.hidden = false;
-document.body.classList.add("has-player");
 const bars = new ResizeObserver(syncBars);
 bars.observe(header);
 bars.observe(player.root);
