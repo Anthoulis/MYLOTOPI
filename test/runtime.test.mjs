@@ -99,6 +99,26 @@ test("language links point at every language page, and stop links at real stops"
     .forEach((id) => assert.ok(meta.sectionOrder.includes(id), `#${id}`));
 });
 
+// The server's Content-Security-Policy refuses inline styles and inline scripts (only JSON data blocks pass).
+test("no page carries inline styles or inline scripts", () => {
+  for (const [relativePath, html] of renderSite(site)) {
+    if (!relativePath.endsWith(".html")) {
+      continue;
+    }
+    assert.doesNotMatch(html, /\sstyle="/, `${relativePath}: style attribute`);
+    assert.doesNotMatch(html, /<style[\s>]/, `${relativePath}: <style> block`);
+    assert.doesNotMatch(html, /\son[a-z]+="/, `${relativePath}: inline event handler`);
+    Array.from(html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)).forEach(([, attributes, body]) => {
+      assert.ok(/\bsrc="/.test(attributes) || /type="application\/json"/.test(attributes), `${relativePath}: inline script ${body.slice(0, 40)}`);
+    });
+  }
+});
+
+test("each stop takes its colour from the generated stylesheet", () => {
+  const css = renderSite(site).get("assets/css/stops.css");
+  meta.sectionOrder.forEach((id) => assert.match(css, new RegExp(`#${id} \\{ --stop-accent: ${meta.sections[id].accent}; \\}`)));
+});
+
 test("a label ending in the Greek question mark gets no extra colon", () => {
   const html = renderLanguagePage(site, "el");
   assert.doesNotMatch(html, /;:</);

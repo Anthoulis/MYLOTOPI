@@ -87,7 +87,9 @@
 - Τα κοινά στοιχεία (γλώσσες, aliases, σειρά στάσεων, φωτογραφίες, χρώματα) ανήκουν
   στο `assets/content/meta.json`.
 - Το HTML το φτιάχνει μόνο το `scripts/site.mjs`· οι σελίδες `en/` … `tr/`,
-  `index.html` και `qr-guide.html` δεν αλλάζουν με το χέρι. Η συμπεριφορά στο κινητό
+  `index.html`, `qr-guide.html` και το `assets/css/stops.css` δεν αλλάζουν με το χέρι.
+  Καμία σελίδα δεν έχει inline style ή inline script, γιατί το CSP του server τα
+  απορρίπτει· το ελέγχει test. Η συμπεριφορά στο κινητό
   ανήκει στο `assets/js/guide.js`, η είσοδος στο `entry.js` και `language.mjs`, η
   εμφάνιση στο `main.css`.
 - Διάρκειες ήχου και διαστάσεις εικόνων τις διαβάζει το build από τα ίδια τα αρχεία
