@@ -141,7 +141,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/pl/section-01.mp3",
+        "path": "./originals/audio/pl/section-01.mp3",
         "ready": true
       },
       "imageAlt": "Witamy w Wiatrakowej Przygodzie!",
@@ -309,7 +309,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/pl/section-02.mp3",
+        "path": "./originals/audio/pl/section-02.mp3",
         "ready": true
       },
       "imageAlt": "Nasz ogród z naszymi ziołami!",
@@ -464,7 +464,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/pl/section-03.mp3",
+        "path": "./originals/audio/pl/section-03.mp3",
         "ready": true
       },
       "imageAlt": "Podstawa Wiatraka (1. piętro)",
@@ -612,7 +612,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/pl/section-04.mp3",
+        "path": "./originals/audio/pl/section-04.mp3",
         "ready": true
       },
       "imageAlt": "Sypialnia w Wiatraku (2. piętro)",
@@ -752,7 +752,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/pl/section-05.mp3",
+        "path": "./originals/audio/pl/section-05.mp3",
         "ready": true
       },
       "imageAlt": "Mechanizmy Wiatraka (3. piętro)",
@@ -901,7 +901,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/pl/section-06.mp3",
+        "path": "./originals/audio/pl/section-06.mp3",
         "ready": true
       },
       "imageAlt": "Klepisko i Osiołki!",
@@ -1021,7 +1021,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/pl/section-07.mp3",
+        "path": "./originals/audio/pl/section-07.mp3",
         "ready": true
       },
       "imageAlt": "Tajny Tunel i Piwnica",
@@ -1165,7 +1165,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/pl/section-08.mp3",
+        "path": "./originals/audio/pl/section-08.mp3",
         "ready": true
       },
       "imageAlt": "Tradycyjny Dom",
@@ -1286,7 +1286,7 @@
         }
       ],
       "audio": {
-        "path": "./assets/audio/pl/section-09.mp3",
+        "path": "./originals/audio/pl/section-09.mp3",
         "ready": true
       },
       "imageAlt": "Piekarnia",

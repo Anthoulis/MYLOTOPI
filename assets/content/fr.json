@@ -142,7 +142,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/fr/section-01.mp3",
+        "path": "./originals/audio/fr/section-01.mp3",
         "ready": true
       },
       "imageAlt": "Bienvenue à l'Expérience du Moulin à Vent !",
@@ -310,7 +310,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/fr/section-02.mp3",
+        "path": "./originals/audio/fr/section-02.mp3",
         "ready": true
       },
       "imageAlt": "Notre jardin et ses herbes aromatiques !",
@@ -465,7 +465,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/fr/section-03.mp3",
+        "path": "./originals/audio/fr/section-03.mp3",
         "ready": true
       },
       "imageAlt": "La Base du Moulin à Vent (1er Étage)",
@@ -613,7 +613,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/fr/section-04.mp3",
+        "path": "./originals/audio/fr/section-04.mp3",
         "ready": true
       },
       "imageAlt": "L'Espace Sommeil du Moulin à Vent (2e Étage)",
@@ -753,7 +753,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/fr/section-05.mp3",
+        "path": "./originals/audio/fr/section-05.mp3",
         "ready": true
       },
       "imageAlt": "La Machinerie du Moulin à Vent (3e Étage)",
@@ -902,7 +902,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/fr/section-06.mp3",
+        "path": "./originals/audio/fr/section-06.mp3",
         "ready": true
       },
       "imageAlt": "L'Aire de Battage et les Ânes !",
@@ -1022,7 +1022,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/fr/section-07.mp3",
+        "path": "./originals/audio/fr/section-07.mp3",
         "ready": true
       },
       "imageAlt": "Le Tunnel Secret et la Cave",
@@ -1166,7 +1166,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/fr/section-08.mp3",
+        "path": "./originals/audio/fr/section-08.mp3",
         "ready": true
       },
       "imageAlt": "La Maison Traditionnelle",
@@ -1287,7 +1287,7 @@
         }
       ],
       "audio": {
-        "path": "./assets/audio/fr/section-09.mp3",
+        "path": "./originals/audio/fr/section-09.mp3",
         "ready": true
       },
       "imageAlt": "La Boulangerie",

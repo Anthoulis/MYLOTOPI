@@ -345,7 +345,7 @@ function validateAudio(audio, owner, lang, sectionIndex) {
     expectString(audio.caption, `${owner}.caption`, "sections");
   }
 
-  const expectedPath = `./assets/audio/${lang}/section-${String(sectionIndex + 1).padStart(2, "0")}.mp3`;
+  const expectedPath = `./originals/audio/${lang}/section-${String(sectionIndex + 1).padStart(2, "0")}.mp3`;
   if (audio.path !== expectedPath) {
     addError("assets", `${owner}.path should be ${expectedPath}, got ${audio.path || "<empty>"}.`);
   }
@@ -744,9 +744,9 @@ function validateRequiredAudioFiles(meta) {
   languages.forEach((lang) => {
     for (let index = 1; index <= EXPECTED_SECTION_ORDER.length; index += 1) {
       const fileName = `section-${String(index).padStart(2, "0")}.mp3`;
-      const audioPath = path.join(ROOT, "assets", "audio", lang, fileName);
+      const audioPath = path.join(ROOT, "originals", "audio", lang, fileName);
       if (!fs.existsSync(audioPath)) {
-        addError("assets", `Missing required audio file assets/audio/${lang}/${fileName}.`);
+        addError("assets", `Missing required audio file originals/audio/${lang}/${fileName}.`);
       }
     }
   });

@@ -106,9 +106,10 @@ export function imageVariants(originalPath, kind, originalWidth) {
   return widths.map((width) => ({ width, path: `${derivedBase(originalPath)}-${width}.webp` }));
 }
 
-// The narration the site plays: same place as in the content, same name as the original.
+// The narration the site plays. Its name carries the bitrate, so a copy made differently is a new
+// address and no cache (the phone's, Cloudflare's) keeps serving the old one.
 export function audioCopy(originalPath) {
-  return `${derivedBase(originalPath)}.mp3`;
+  return `${derivedBase(originalPath)}-${AUDIO_BITRATE}.mp3`;
 }
 
 export function iconCopies() {

@@ -87,12 +87,8 @@ for (const icon of iconCopies()) {
 // Every narration, as speech-quality mono MP3.
 for (const lang of site.meta.languages) {
   for (const section of site.content.get(lang).sections) {
-    const original = section.audio.path.replace("./assets/", "./originals/");
-    if (audioCopy(original) !== section.audio.path) {
-      throw new Error(`${lang}: ${section.audio.path} does not match its original ${original}`);
-    }
-    make(section.audio.path, (out) => [
-      "-i", absolute(original),
+    make(audioCopy(section.audio.path), (out) => [
+      "-i", absolute(section.audio.path),
       "-map_metadata", "-1",
       "-ac", "1", "-ar", "44100",
       "-c:a", "libmp3lame", "-b:a", AUDIO_BITRATE,

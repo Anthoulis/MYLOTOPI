@@ -3,7 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { formatDuration, iconCopies, imageVariants, readImageSize, readMp3Duration } from "./media.mjs";
+import { audioCopy, formatDuration, iconCopies, imageVariants, readImageSize, readMp3Duration } from "./media.mjs";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 export const LOGO_ORIGINAL = "./originals/logo/logo-header-light-full.png";
@@ -55,7 +55,8 @@ export function loadSite(root = ROOT) {
     meta,
     content,
     imageSize: (assetPath) => readImageSize(path.join(root, assetPath)),
-    audioDuration: (assetPath) => formatDuration(readMp3Duration(path.join(root, assetPath))),
+    // The duration of the copy the visitor hears, read from the file itself.
+    audioDuration: (originalPath) => formatDuration(readMp3Duration(path.join(root, audioCopy(originalPath)))),
   };
 }
 
@@ -292,7 +293,7 @@ function renderListen(site, lang, section, duration) {
   }
 
   return (
-    `<a class="qr-listen" href="${fromLanguagePage(section.audio.path)}" data-listen>` +
+    `<a class="qr-listen" href="${fromLanguagePage(audioCopy(section.audio.path))}" data-listen>` +
     `<span class="qr-listen__icon">${icon("play", "icon icon--play")}${icon("pause", "icon icon--pause")}</span>` +
     `<span class="qr-listen__label">${escapeHtml(ui.listen)}</span>` +
     `<span class="qr-listen__time">${duration}</span></a>` +

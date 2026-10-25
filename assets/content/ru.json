@@ -141,7 +141,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/ru/section-01.mp3",
+        "path": "./originals/audio/ru/section-01.mp3",
         "ready": true
       },
       "imageAlt": "Добро пожаловать в Windmill Experience!",
@@ -309,7 +309,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/ru/section-02.mp3",
+        "path": "./originals/audio/ru/section-02.mp3",
         "ready": true
       },
       "imageAlt": "Наш сад с травами!",
@@ -464,7 +464,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/ru/section-03.mp3",
+        "path": "./originals/audio/ru/section-03.mp3",
         "ready": true
       },
       "imageAlt": "Основание мельницы (1-й этаж)",
@@ -612,7 +612,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/ru/section-04.mp3",
+        "path": "./originals/audio/ru/section-04.mp3",
         "ready": true
       },
       "imageAlt": "Спальная зона мельницы (2-й этаж)",
@@ -752,7 +752,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/ru/section-05.mp3",
+        "path": "./originals/audio/ru/section-05.mp3",
         "ready": true
       },
       "imageAlt": "Механизмы мельницы (3-й этаж)",
@@ -901,7 +901,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/ru/section-06.mp3",
+        "path": "./originals/audio/ru/section-06.mp3",
         "ready": true
       },
       "imageAlt": "Гумно и ослики!",
@@ -1021,7 +1021,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/ru/section-07.mp3",
+        "path": "./originals/audio/ru/section-07.mp3",
         "ready": true
       },
       "imageAlt": "Секретный туннель и погреб",
@@ -1165,7 +1165,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/ru/section-08.mp3",
+        "path": "./originals/audio/ru/section-08.mp3",
         "ready": true
       },
       "imageAlt": "Традиционный дом",
@@ -1286,7 +1286,7 @@
         }
       ],
       "audio": {
-        "path": "./assets/audio/ru/section-09.mp3",
+        "path": "./originals/audio/ru/section-09.mp3",
         "ready": true
       },
       "imageAlt": "Пекарня",

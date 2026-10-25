@@ -39,4 +39,4 @@ git archive --format=tar HEAD -- index.html qr-guide.html $languages \
 echo "Deployed $(git rev-parse --short HEAD) to $target."
 
 # Checked on the server itself, over HTTPS, so the origin certificate is tested too.
-ssh "$host" 'for path in / /qr-guide.html?lang=el /el/ /en/ /assets/js/guide.js /assets/audio/el/section-01.mp3; do printf "%-36s -> " "$path"; curl -sk -o /dev/null -m 10 -w "%{http_code}\n" --resolve mylotopi.varon.gr:443:127.0.0.1 "https://mylotopi.varon.gr$path"; done'
+ssh "$host" 'for path in / /qr-guide.html?lang=el /el/ /en/ /assets/js/guide.js /assets/audio/el/section-01-64k.mp3; do printf "%-36s -> " "$path"; curl -sk -o /dev/null -m 10 -w "%{http_code}\n" --resolve mylotopi.varon.gr:443:127.0.0.1 "https://mylotopi.varon.gr$path"; done'

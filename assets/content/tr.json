@@ -142,7 +142,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/tr/section-01.mp3",
+        "path": "./originals/audio/tr/section-01.mp3",
         "ready": true
       },
       "imageAlt": "Yel Değirmeni Deneyimine Hoş Geldiniz!",
@@ -310,7 +310,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/tr/section-02.mp3",
+        "path": "./originals/audio/tr/section-02.mp3",
         "ready": true
       },
       "imageAlt": "Bahçemiz ve Aromatik Bitkilerimiz!",
@@ -465,7 +465,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/tr/section-03.mp3",
+        "path": "./originals/audio/tr/section-03.mp3",
         "ready": true
       },
       "imageAlt": "Yel Değirmeni Tabanı (1. Kat)",
@@ -613,7 +613,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/tr/section-04.mp3",
+        "path": "./originals/audio/tr/section-04.mp3",
         "ready": true
       },
       "imageAlt": "Yel Değirmeni Uyku Alanı (2. Kat)",
@@ -753,7 +753,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/tr/section-05.mp3",
+        "path": "./originals/audio/tr/section-05.mp3",
         "ready": true
       },
       "imageAlt": "Yel Değirmeni Makine Aksamı (3. Kat)",
@@ -902,7 +902,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/tr/section-06.mp3",
+        "path": "./originals/audio/tr/section-06.mp3",
         "ready": true
       },
       "imageAlt": "Harman Yeri ve Eşekler!",
@@ -1022,7 +1022,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/tr/section-07.mp3",
+        "path": "./originals/audio/tr/section-07.mp3",
         "ready": true
       },
       "imageAlt": "Gizli Tünel ve Mahzen",
@@ -1166,7 +1166,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/tr/section-08.mp3",
+        "path": "./originals/audio/tr/section-08.mp3",
         "ready": true
       },
       "imageAlt": "Geleneksel Ev",
@@ -1287,7 +1287,7 @@
         }
       ],
       "audio": {
-        "path": "./assets/audio/tr/section-09.mp3",
+        "path": "./originals/audio/tr/section-09.mp3",
         "ready": true
       },
       "imageAlt": "Fırın",

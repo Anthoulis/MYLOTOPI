@@ -141,7 +141,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/nl/section-01.mp3",
+        "path": "./originals/audio/nl/section-01.mp3",
         "ready": true
       },
       "imageAlt": "Welkom bij de Windmill Experience!",
@@ -309,7 +309,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/nl/section-02.mp3",
+        "path": "./originals/audio/nl/section-02.mp3",
         "ready": true
       },
       "imageAlt": "Onze Tuin met Onze Kruiden!",
@@ -464,7 +464,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/nl/section-03.mp3",
+        "path": "./originals/audio/nl/section-03.mp3",
         "ready": true
       },
       "imageAlt": "De Molenvoet (1e verdieping)",
@@ -612,7 +612,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/nl/section-04.mp3",
+        "path": "./originals/audio/nl/section-04.mp3",
         "ready": true
       },
       "imageAlt": "Het Slaapgedeelte van de Molen (2e verdieping)",
@@ -752,7 +752,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/nl/section-05.mp3",
+        "path": "./originals/audio/nl/section-05.mp3",
         "ready": true
       },
       "imageAlt": "De Molenmachines (3e verdieping)",
@@ -901,7 +901,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/nl/section-06.mp3",
+        "path": "./originals/audio/nl/section-06.mp3",
         "ready": true
       },
       "imageAlt": "De dorsvloer en de ezels!",
@@ -1021,7 +1021,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/nl/section-07.mp3",
+        "path": "./originals/audio/nl/section-07.mp3",
         "ready": true
       },
       "imageAlt": "De Geheime Tunnel & Kelder",
@@ -1165,7 +1165,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/nl/section-08.mp3",
+        "path": "./originals/audio/nl/section-08.mp3",
         "ready": true
       },
       "imageAlt": "Het Traditionele Huis",
@@ -1286,7 +1286,7 @@
         }
       ],
       "audio": {
-        "path": "./assets/audio/nl/section-09.mp3",
+        "path": "./originals/audio/nl/section-09.mp3",
         "ready": true
       },
       "imageAlt": "De Bakkerij",

@@ -123,7 +123,7 @@
         }
       ],
       "audio": {
-        "path": "./assets/audio/el/section-01.mp3",
+        "path": "./originals/audio/el/section-01.mp3",
         "ready": true
       },
       "imageAlt": "Καλώς ήρθατε στην Εμπειρία του Ανεμόμυλου",
@@ -270,7 +270,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/el/section-02.mp3",
+        "path": "./originals/audio/el/section-02.mp3",
         "ready": true
       },
       "imageAlt": "Κήπος με Βότανα",
@@ -420,7 +420,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/el/section-03.mp3",
+        "path": "./originals/audio/el/section-03.mp3",
         "ready": true
       },
       "imageAlt": "Βάση του Ανεμόμυλου",
@@ -567,7 +567,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/el/section-04.mp3",
+        "path": "./originals/audio/el/section-04.mp3",
         "ready": true
       },
       "imageAlt": "Ξύλινος χώρος ύπνου μέσα στον ανεμόμυλο του Μυλοτόπι",
@@ -707,7 +707,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/el/section-05.mp3",
+        "path": "./originals/audio/el/section-05.mp3",
         "ready": true
       },
       "imageAlt": "Μηχανισμός",
@@ -856,7 +856,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/el/section-06.mp3",
+        "path": "./originals/audio/el/section-06.mp3",
         "ready": true
       },
       "imageAlt": "Αλώνι και Γαϊδουράκια",
@@ -976,7 +976,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/el/section-07.mp3",
+        "path": "./originals/audio/el/section-07.mp3",
         "ready": true
       },
       "imageAlt": "Ιταλικό Τούνελ και Κελάρι",
@@ -1120,7 +1120,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/el/section-08.mp3",
+        "path": "./originals/audio/el/section-08.mp3",
         "ready": true
       },
       "imageAlt": "Παραδοσιακό Σπίτι",
@@ -1263,7 +1263,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/el/section-09.mp3",
+        "path": "./originals/audio/el/section-09.mp3",
         "ready": true
       },
       "imageAlt": "Ο Πετρόχτιστος Φούρνος",

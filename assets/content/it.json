@@ -141,7 +141,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/it/section-01.mp3",
+        "path": "./originals/audio/it/section-01.mp3",
         "ready": true
       },
       "imageAlt": "Benvenuti alla Windmill Experience!",
@@ -309,7 +309,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/it/section-02.mp3",
+        "path": "./originals/audio/it/section-02.mp3",
         "ready": true
       },
       "imageAlt": "Il Nostro Giardino con le Nostre Erbe Aromatiche!",
@@ -464,7 +464,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/it/section-03.mp3",
+        "path": "./originals/audio/it/section-03.mp3",
         "ready": true
       },
       "imageAlt": "La Base del Mulino a Vento (1° Piano)",
@@ -612,7 +612,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/it/section-04.mp3",
+        "path": "./originals/audio/it/section-04.mp3",
         "ready": true
       },
       "imageAlt": "La Zona Notte del Mulino a Vento (2° Piano)",
@@ -752,7 +752,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/it/section-05.mp3",
+        "path": "./originals/audio/it/section-05.mp3",
         "ready": true
       },
       "imageAlt": "I Macchinari del Mulino a Vento (3° Piano)",
@@ -901,7 +901,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/it/section-06.mp3",
+        "path": "./originals/audio/it/section-06.mp3",
         "ready": true
       },
       "imageAlt": "L'Aia e gli Asini!",
@@ -1021,7 +1021,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/it/section-07.mp3",
+        "path": "./originals/audio/it/section-07.mp3",
         "ready": true
       },
       "imageAlt": "Il Tunnel Segreto e la Cantina",
@@ -1165,7 +1165,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/it/section-08.mp3",
+        "path": "./originals/audio/it/section-08.mp3",
         "ready": true
       },
       "imageAlt": "La Casa Tradizionale",
@@ -1286,7 +1286,7 @@
         }
       ],
       "audio": {
-        "path": "./assets/audio/it/section-09.mp3",
+        "path": "./originals/audio/it/section-09.mp3",
         "ready": true
       },
       "imageAlt": "La Panetteria",

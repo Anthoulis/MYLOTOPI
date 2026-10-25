@@ -141,7 +141,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/de/section-01.mp3",
+        "path": "./originals/audio/de/section-01.mp3",
         "ready": true
       },
       "imageAlt": "Willkommen beim Windmühlen-Erlebnis",
@@ -309,7 +309,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/de/section-02.mp3",
+        "path": "./originals/audio/de/section-02.mp3",
         "ready": true
       },
       "imageAlt": "Kräutergarten",
@@ -464,7 +464,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/de/section-03.mp3",
+        "path": "./originals/audio/de/section-03.mp3",
         "ready": true
       },
       "imageAlt": "Basis der Windmühle",
@@ -612,7 +612,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/de/section-04.mp3",
+        "path": "./originals/audio/de/section-04.mp3",
         "ready": true
       },
       "imageAlt": "Hölzerner Schlafbereich im Inneren der Mylotopi-Windmühle",
@@ -752,7 +752,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/de/section-05.mp3",
+        "path": "./originals/audio/de/section-05.mp3",
         "ready": true
       },
       "imageAlt": "Mechanik",
@@ -901,7 +901,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/de/section-06.mp3",
+        "path": "./originals/audio/de/section-06.mp3",
         "ready": true
       },
       "imageAlt": "Dreschplatz und Esel",
@@ -1021,7 +1021,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/de/section-07.mp3",
+        "path": "./originals/audio/de/section-07.mp3",
         "ready": true
       },
       "imageAlt": "Italienischer Tunnel und Keller",
@@ -1165,7 +1165,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/de/section-08.mp3",
+        "path": "./originals/audio/de/section-08.mp3",
         "ready": true
       },
       "imageAlt": "Das traditionelle Haus",
@@ -1308,7 +1308,7 @@
         ]
       },
       "audio": {
-        "path": "./assets/audio/de/section-09.mp3",
+        "path": "./originals/audio/de/section-09.mp3",
         "ready": true
       },
       "imageAlt": "Der Steinofen",
